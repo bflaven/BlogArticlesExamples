@@ -4,7 +4,7 @@
 define('SOURCE_EXTENSION', 'csv');
 
 
-// ---- File outut
+// ---- File output
 /* For symfony, do not put full extension, just put what is behind the dot (.) eg .xliff it becomes xliff */
 /*
 define('TARGET_EXTENSION', 'xliff');

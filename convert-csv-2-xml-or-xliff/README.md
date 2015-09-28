@@ -18,7 +18,7 @@ Download the directory convert-csv-2-xml-or-xliff.
 NOTE: I have left a sample data in csv folder and in the dest folder. The dest folder is where the .xml or .xliff will be outputted.
 
 1. **Add your own CSV** with your own columns eg TYPE,STRING,FR,EN
-2. **Define the configuration you want.** See // ---- File outut. You can choose between .xml or .xliff. Feel free to add your template in the folder <b>template</b>
+2. **Define the configuration you want.** See // ---- File output. You can choose between .xml or .xliff. Feel free to add your template in the folder <b>template</b>
 3. **Define the parameters for reading your CSV.** See // ---- Reading the CSV
 4. **Open the console and go the folder**
 ```
