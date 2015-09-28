@@ -1,0 +1,7 @@
+TYPE,STRING,FR,EN
+1,kw_see_it,Voir le mot-clé,See the keyword
+2,cat_display, Afficher la catégorie,Display category
+1,kw_update,Mettre à jour le mot-clé,Update the keyword
+2,cat_update,Mettre à jour la catégorie,Update the category
+1,kw_add_new,Ajouter un nouveau mot-clé,Add new tag
+2,cat_add_new,Ajouter une nouvelle catégorie,Add a new category

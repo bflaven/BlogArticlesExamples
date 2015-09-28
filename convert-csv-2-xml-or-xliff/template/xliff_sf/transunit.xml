@@ -1,0 +1,4 @@
+      <trans-unit id="{ID}" resname="{RESNAME}">
+        <source>{KEY}</source>
+        <target>{VALUE}</target>
+      </trans-unit>

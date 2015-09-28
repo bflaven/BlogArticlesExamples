@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2014-09-22T17:36:52Z" source-language="en" target-language="fr" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="33b7f5c667ee06ffbff6e61d4f967c9c81acbd3d" resname="kw_see_it">
+        <source>kw_see_it</source>
+        <target> See the keyword</target>
+      </trans-unit>
+      <trans-unit id="f39103e6c227350d4f18b78d32d94ee6fae4c0c3" resname="cat_display">
+        <source>cat_display</source>
+        <target> Display category</target>
+      </trans-unit>
+      <trans-unit id="f383b1301b33b90e5994c49dd52af8feeb04c00c" resname="kw_update">
+        <source>kw_update</source>
+        <target> Update the keyword</target>
+      </trans-unit>
+      <trans-unit id="cbb8f413ede1fb71bdb17e06070a9acc0af879f4" resname="cat_update">
+        <source>cat_update</source>
+        <target> Update the category</target>
+      </trans-unit>
+      <trans-unit id="d06eac45c4463991a01d115d874a2e0c60ec3c54" resname="kw_add_new">
+        <source>kw_add_new</source>
+        <target> Add new tag</target>
+      </trans-unit>
+      <trans-unit id="e731355b793f459197234f43dee7f3070d192287" resname="cat_add_new">
+        <source>cat_add_new</source>
+        <target> Add a new category</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

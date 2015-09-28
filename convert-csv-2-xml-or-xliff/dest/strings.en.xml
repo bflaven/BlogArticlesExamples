@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	  <string name="kw_see_it"> See the keyword</string>
+	  <string name="cat_display"> Display category</string>
+	  <string name="kw_update"> Update the keyword</string>
+	  <string name="cat_update"> Update the category</string>
+	  <string name="kw_add_new"> Add new tag</string>
+	  <string name="cat_add_new"> Add a new category</string>
+</resources>
