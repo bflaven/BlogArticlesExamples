@@ -1,0 +1,50 @@
+#!/bin/bash
+# USAGE
+# In the mac console, use the following command line
+# sh [path-to-the-script]/split_file
+
+
+
+
+### CONFIG ####
+
+# Path to the source file
+SOURCE="[path-to-the-source]/[source-file].sql";
+
+# Path to the destiantion directory and basename for files
+DEST="[path-to-the-source]/[source-destination]_"; 
+
+
+# Number of lines to put in each file
+NB_LINES="5000";
+
+# File extension for each file .sql, .csv, .txt
+NEW_FILE_EXTENSION=".sql"
+
+### // CONFIG ####
+
+
+echo "\033[1;33m ### START STEP 1 ### \033[0m"
+
+echo "\n"
+	split -l $NB_LINES $SOURCE $DEST 
+	echo "$SOURCE" "has been split"
+	echo "\n"
+echo "\033[1;33m ### END STEP 1 ### \033[0m"
+
+
+echo "\033[1;33m ### START STEP 2 ### \033[0m"
+echo "\n"
+
+for file in $DEST*
+do
+    mv "$file" "$file.$NEW_FILE_EXTENSION"
+	echo "$file" "has been renamed"
+done
+
+echo "\n"
+echo "\033[1;33m ### END STEP 2 ### \033[0m"
+echo "\n"
+echo "\033[1;30;47m ### ALL DONE !!! ### \033[0;32m"
+echo "\n\n"
+exit 0;
