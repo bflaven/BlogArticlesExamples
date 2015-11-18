@@ -23,7 +23,7 @@ Download the directory split_file
 # Path to the source file
 SOURCE="[path-to-the-source]/[source-file].sql";
 
-# Path to the destiantion directory and basename for files
+# Path to the destination directory and basename for files
 DEST="[path-to-the-source]/[source-destination]_"; 
 
 
