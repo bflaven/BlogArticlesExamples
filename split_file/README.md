@@ -2,7 +2,7 @@
 # Split huge file into smaller files
 =============================================
 
-This very simple script, using bash in command line, enables to convert split any kind of huge file into smaller file.
+This very simple script, using bash in command line, enables to split any kind of huge file (.sql, .csv, .txt) into smaller files.
 
 
 
@@ -15,7 +15,7 @@ Download the directory split_file
 ## Usage
 --------------
 
-**@ the beginning of the script, you can define the parameters to your own needs in order to make it work in your environment. See below
+*@ the beginning of the script, you can define the parameters to your own needs in order to make it work in your environment. See below*
 
 ```
 ### CONFIG ####
