@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet Quick Start Guide Example</title>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+</head>
+<body>
+	<div id="map" style="width: 1000px; height: 800px"></div>
+
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<script>
+		/* center in London */
+		var map = L.map('map').setView([51.5, -0.09], 3);
+
+		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+		}).addTo(map);
+
+		var LeafIcon = L.Icon.extend({
+			options: {
+				shadowUrl: 'icons/leaf-shadow.png',
+				iconSize:     [38, 95],
+				shadowSize:   [50, 64],
+				iconAnchor:   [22, 94],
+				shadowAnchor: [4, 62],
+				popupAnchor:  [-3, -76]
+			}
+		});
+
+		var greenIcon = new LeafIcon({iconUrl: 'icons/leaf-green.png'}),
+			redIcon = new LeafIcon({iconUrl: 'icons/leaf-red.png'}),
+			orangeIcon = new LeafIcon({iconUrl: 'icons/leaf-orange.png'});
+		/* Test 1 3 countries */
+		/*
+		L.marker([33.0000000, 65.0000000], {icon: greenIcon}).bindPopup("Afghanistan").addTo(map);
+		L.marker([-27.0000000, 133.0000000], {icon: redIcon}).bindPopup("Australia").addTo(map);
+		L.marker([-10.0000000, -55.0000000], {icon: orangeIcon}).bindPopup("Brazil").addTo(map);
+		*/
+ 		/* Test 2 */
+			L.marker([33.0000000, 65.0000000], {icon: greenIcon}).bindPopup("Afghanistan").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: redIcon}).bindPopup("Iles Aland").addTo(map);      
+		    L.marker([41.0000000, 20.0000000], {icon: orangeIcon}).bindPopup("Albanie").addTo(map);      
+		    L.marker([28.0000000, 3.0000000], {icon: greenIcon}).bindPopup("Algérie").addTo(map);      
+		    L.marker([-14.3333000, -170.0000000], {icon: redIcon}).bindPopup("Samoa Américaines").addTo(map);      
+		    L.marker([42.5000000, 1.5000000], {icon: redIcon}).bindPopup("Andorre").addTo(map);      
+		    L.marker([-12.5000000, 18.5000000], {icon: redIcon}).bindPopup("Angola").addTo(map);      
+		    L.marker([18.2500000, -63.1666985], {icon: greenIcon}).bindPopup("Anguilla").addTo(map);      
+		    L.marker([-90.0000000, 0.0000000], {icon: redIcon}).bindPopup("Antarctique").addTo(map);      
+		    L.marker([17.0500000, -61.7999992], {icon: orangeIcon}).bindPopup("Antigua-et-Barbuda").addTo(map);      
+		    L.marker([-34.0000000, -64.0000000], {icon: orangeIcon}).bindPopup("Argentine").addTo(map);      
+		    L.marker([40.0000000, 45.0000000], {icon: orangeIcon}).bindPopup("Arménie").addTo(map);      
+		    L.marker([12.5000000, -69.9666977], {icon: orangeIcon}).bindPopup("Aruba").addTo(map);      
+		    L.marker([-27.0000000, 133.0000000], {icon: orangeIcon}).bindPopup("Australie").addTo(map);      
+		    L.marker([47.3333000, 13.3332996], {icon: orangeIcon}).bindPopup("Autriche").addTo(map);      
+		    L.marker([40.5000000, 47.5000000], {icon: redIcon}).bindPopup("Azerbaïdjan").addTo(map);      
+		    L.marker([24.2500000, -76.0000000], {icon: greenIcon}).bindPopup("Bahamas").addTo(map);      
+		    L.marker([26.0000000, 50.5499992], {icon: redIcon}).bindPopup("Bahreïn").addTo(map);      
+		    L.marker([24.0000000, 90.0000000], {icon: greenIcon}).bindPopup("Bangladesh").addTo(map);      
+		    L.marker([13.1667000, -59.5332985], {icon: redIcon}).bindPopup("Barbade").addTo(map);      
+		    L.marker([53.0000000, 28.0000000], {icon: greenIcon}).bindPopup("Biélorussie").addTo(map);      
+		    L.marker([50.8333000, 4.0000000], {icon: redIcon}).bindPopup("Belgique").addTo(map);      
+		    L.marker([17.2500000, -88.7500000], {icon: greenIcon}).bindPopup("Belize").addTo(map);      
+		    L.marker([9.5000000, 2.2500000], {icon: orangeIcon}).bindPopup("Bénin").addTo(map);      
+		    L.marker([32.3333000, -64.7500000], {icon: greenIcon}).bindPopup("Bermuda").addTo(map);      
+		    L.marker([27.5000000, 90.5000000], {icon: orangeIcon}).bindPopup("Bhoutan").addTo(map);      
+		    L.marker([-17.0000000, -65.0000000], {icon: greenIcon}).bindPopup("Bolivie").addTo(map);  
+			
+			/* Not shown but avalaible if needed */
+			/*    
+		    L.marker([0.0000000, 0.0000000], {icon: orangeIcon}).bindPopup("Bonaire, Saint-Eustache et Saba").addTo(map);      
+			L.marker([44.0000000, 18.0000000], {icon: greenIcon}).bindPopup("Bosnie-Herzégovine").addTo(map);      
+		    L.marker([-22.0000000, 24.0000000], {icon: greenIcon}).bindPopup("Botswana").addTo(map);      
+		    L.marker([-54.4333000, 3.4000001], {icon: greenIcon}).bindPopup("Île Bouvet").addTo(map);      
+		    L.marker([-10.0000000, -55.0000000], {icon: greenIcon}).bindPopup("Brésil").addTo(map);      
+		    L.marker([-6.0000000, 71.5000000], {icon: greenIcon}).bindPopup("Territoire britannique de l'océan Indien").addTo(map);      
+		    L.marker([18.5000000, -64.5000000], {icon: greenIcon}).bindPopup("Îles Vierges britanniques").addTo(map);      
+		    L.marker([4.5000000, 114.6667023], {icon: greenIcon}).bindPopup("Brunei").addTo(map);      
+		    L.marker([43.0000000, 25.0000000], {icon: greenIcon}).bindPopup("Bulgarie").addTo(map);      
+		    L.marker([13.0000000, -2.0000000], {icon: greenIcon}).bindPopup("Burkina Faso").addTo(map);      
+		    L.marker([-3.5000000, 30.0000000], {icon: greenIcon}).bindPopup("Burundi").addTo(map);      
+		    L.marker([13.0000000, 105.0000000], {icon: greenIcon}).bindPopup("Cambodge").addTo(map);      
+		    L.marker([6.0000000, 12.0000000], {icon: greenIcon}).bindPopup("Cameroun").addTo(map);      
+		    L.marker([60.0000000, -95.0000000], {icon: greenIcon}).bindPopup("Canada").addTo(map);      
+		    L.marker([16.0000000, -24.0000000], {icon: greenIcon}).bindPopup("Cap-Vert").addTo(map);      
+		    L.marker([19.5000000, -80.5000000], {icon: greenIcon}).bindPopup("Îles Caïmans").addTo(map);      
+		    L.marker([7.0000000, 21.0000000], {icon: greenIcon}).bindPopup("République centrafricaine").addTo(map);      
+		    L.marker([15.0000000, 19.0000000], {icon: greenIcon}).bindPopup("Tchad").addTo(map);      
+		    L.marker([-30.0000000, -71.0000000], {icon: greenIcon}).bindPopup("Chili").addTo(map);      
+		    L.marker([35.0000000, 105.0000000], {icon: greenIcon}).bindPopup("Chine").addTo(map);      
+		    L.marker([-10.5000000, 105.6667023], {icon: greenIcon}).bindPopup("île de noël").addTo(map);      
+		    L.marker([-12.5000000, 96.8332977], {icon: greenIcon}).bindPopup("Îles Cocos").addTo(map);      
+		    L.marker([4.0000000, -72.0000000], {icon: greenIcon}).bindPopup("Colombie").addTo(map);      
+		    L.marker([-12.1667000, 44.2500000], {icon: greenIcon}).bindPopup("Les Comores").addTo(map);      
+		    L.marker([-21.2333000, -159.7666931], {icon: greenIcon}).bindPopup("Îles Cook").addTo(map);      
+		    L.marker([10.0000000, -84.0000000], {icon: greenIcon}).bindPopup("Costa Rica").addTo(map);      
+		    L.marker([45.1667000, 15.5000000], {icon: greenIcon}).bindPopup("Croatie").addTo(map);      
+		    L.marker([21.5000000, -80.0000000], {icon: greenIcon}).bindPopup("Cuba").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: greenIcon}).bindPopup("Curacao").addTo(map);      
+		    L.marker([35.0000000, 33.0000000], {icon: greenIcon}).bindPopup("Chypre").addTo(map);      
+		    L.marker([49.7500000, 15.5000000], {icon: greenIcon}).bindPopup("République Tchèque").addTo(map);      
+		    L.marker([0.0000000, 25.0000000], {icon: greenIcon}).bindPopup("République démocratique du Congo").addTo(map);      
+		    L.marker([56.0000000, 10.0000000], {icon: greenIcon}).bindPopup("Danemark").addTo(map);      
+		    L.marker([11.5000000, 43.0000000], {icon: greenIcon}).bindPopup("Djibouti").addTo(map);      
+		    L.marker([15.4167000, -61.3333015], {icon: greenIcon}).bindPopup("Dominique").addTo(map);      
+		    L.marker([19.0000000, -70.6667023], {icon: greenIcon}).bindPopup("République Dominicaine").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: greenIcon}).bindPopup("Timor oriental").addTo(map);      
+		    L.marker([-2.0000000, -77.5000000], {icon: greenIcon}).bindPopup("Equateur").addTo(map);      
+		    L.marker([27.0000000, 30.0000000], {icon: greenIcon}).bindPopup("Egypte").addTo(map);      
+		    L.marker([13.8333000, -88.9167023], {icon: greenIcon}).bindPopup("El Salvador").addTo(map);      
+		    L.marker([2.0000000, 10.0000000], {icon: greenIcon}).bindPopup("Guinée Équatoriale").addTo(map);      
+		    L.marker([15.0000000, 39.0000000], {icon: greenIcon}).bindPopup("Érythrée").addTo(map);      
+		    L.marker([59.0000000, 26.0000000], {icon: greenIcon}).bindPopup("Estonie").addTo(map);      
+		    L.marker([8.0000000, 38.0000000], {icon: greenIcon}).bindPopup("Ethiopie").addTo(map);      
+		    L.marker([-51.7500000, -59.0000000], {icon: greenIcon}).bindPopup("Îles Malouines").addTo(map);      
+		    L.marker([62.0000000, -7.0000000], {icon: greenIcon}).bindPopup("Îles Féroé").addTo(map);      
+		    L.marker([-18.0000000, 175.0000000], {icon: greenIcon}).bindPopup("Fidji").addTo(map);      
+		    L.marker([64.0000000, 26.0000000], {icon: greenIcon}).bindPopup("Finlande").addTo(map);      
+		    L.marker([46.0000000, 2.0000000], {icon: greenIcon}).bindPopup("France").addTo(map);      
+		    L.marker([4.0000000, -53.0000000], {icon: greenIcon}).bindPopup("Guinée Française").addTo(map);      
+		    L.marker([-15.0000000, -140.0000000], {icon: greenIcon}).bindPopup("Polynésie française").addTo(map);      
+		    L.marker([-43.0000000, 67.0000000], {icon: greenIcon}).bindPopup("Terres australes et antarctiques françaises").addTo(map);      
+		    L.marker([-1.0000000, 11.7500000], {icon: greenIcon}).bindPopup("Gabon").addTo(map);      
+		    L.marker([13.4667000, -16.5667000], {icon: greenIcon}).bindPopup("Gambie").addTo(map);      
+		    L.marker([42.0000000, 43.5000000], {icon: greenIcon}).bindPopup("Géorgie").addTo(map);      
+		    L.marker([51.0000000, 9.0000000], {icon: greenIcon}).bindPopup("Allemagne").addTo(map);      
+		    L.marker([8.0000000, -2.0000000], {icon: greenIcon}).bindPopup("Ghana").addTo(map);      
+		    L.marker([36.1833000, -5.3667002], {icon: greenIcon}).bindPopup("Gibraltar").addTo(map);      
+		    L.marker([39.0000000, 22.0000000], {icon: greenIcon}).bindPopup("Grèce").addTo(map);      
+		    L.marker([72.0000000, -40.0000000], {icon: greenIcon}).bindPopup("Groenland").addTo(map);      
+		    L.marker([12.1167000, -61.6666985], {icon: greenIcon}).bindPopup("Grenade").addTo(map);      
+		    L.marker([16.2500000, -61.5833015], {icon: greenIcon}).bindPopup("Guadeloupe").addTo(map);      
+		    L.marker([13.4667000, 144.7832947], {icon: greenIcon}).bindPopup("Guam").addTo(map);      
+		    L.marker([15.5000000, -90.2500000], {icon: greenIcon}).bindPopup("Guatemala").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: greenIcon}).bindPopup("Guernsey").addTo(map);      
+		    L.marker([11.0000000, -10.0000000], {icon: greenIcon}).bindPopup("Guinée").addTo(map);      
+		    L.marker([12.0000000, -15.0000000], {icon: greenIcon}).bindPopup("Guinée-Bissau").addTo(map);      
+		    L.marker([5.0000000, -59.0000000], {icon: greenIcon}).bindPopup("Guyane").addTo(map);      
+		    L.marker([19.0000000, -72.4167023], {icon: greenIcon}).bindPopup("Haïti").addTo(map);      
+		    L.marker([-53.1000000, 72.5167007], {icon: greenIcon}).bindPopup("Îles Heard et McDonald").addTo(map);      
+		    L.marker([15.0000000, -86.5000000], {icon: greenIcon}).bindPopup("Honduras").addTo(map);      
+		    L.marker([22.2500000, 114.1667023], {icon: greenIcon}).bindPopup("Hong Kong").addTo(map);      
+		    L.marker([47.0000000, 20.0000000], {icon: greenIcon}).bindPopup("Hongrie").addTo(map);      
+		    L.marker([65.0000000, -18.0000000], {icon: greenIcon}).bindPopup("Islande").addTo(map);      
+		    L.marker([20.0000000, 77.0000000], {icon: greenIcon}).bindPopup("Inde").addTo(map);      
+		    L.marker([-5.0000000, 120.0000000], {icon: greenIcon}).bindPopup("Indonésie").addTo(map);      
+		    L.marker([32.0000000, 53.0000000], {icon: greenIcon}).bindPopup("Iran").addTo(map);      
+		    L.marker([33.0000000, 44.0000000], {icon: greenIcon}).bindPopup("Irak").addTo(map);      
+		    L.marker([53.0000000, -8.0000000], {icon: greenIcon}).bindPopup("Irlande").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: greenIcon}).bindPopup("Île de Man").addTo(map);      
+		    L.marker([31.5000000, 34.7500000], {icon: greenIcon}).bindPopup("Israël").addTo(map);      
+		    L.marker([42.8333000, 12.8332996], {icon: greenIcon}).bindPopup("Italie").addTo(map);      
+		    L.marker([8.0000000, -5.0000000], {icon: greenIcon}).bindPopup("Côte d'Ivoire").addTo(map);      
+		    L.marker([18.2500000, -77.5000000], {icon: greenIcon}).bindPopup("Jamaïque").addTo(map);      
+		    L.marker([36.0000000, 138.0000000], {icon: greenIcon}).bindPopup("Japon").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: greenIcon}).bindPopup("Jersey").addTo(map);      
+		    L.marker([31.0000000, 36.0000000], {icon: greenIcon}).bindPopup("Jordanie").addTo(map);      
+		    L.marker([48.0000000, 68.0000000], {icon: greenIcon}).bindPopup("Kazakhstan").addTo(map);      
+		    L.marker([1.0000000, 38.0000000], {icon: greenIcon}).bindPopup("Kenya").addTo(map);      
+		    L.marker([1.4167000, 173.0000000], {icon: greenIcon}).bindPopup("Kiribati").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: greenIcon}).bindPopup("Kosovo").addTo(map);      
+		    L.marker([29.3375000, 47.6581001], {icon: greenIcon}).bindPopup("Koweit").addTo(map);      
+		    L.marker([41.0000000, 75.0000000], {icon: greenIcon}).bindPopup("Kirghizistan").addTo(map);      
+		    L.marker([18.0000000, 105.0000000], {icon: greenIcon}).bindPopup("Laos").addTo(map);      
+		    L.marker([57.0000000, 25.0000000], {icon: greenIcon}).bindPopup("Lettonie").addTo(map);      
+		    L.marker([33.8333000, 35.8333015], {icon: greenIcon}).bindPopup("Liban").addTo(map);      
+		    L.marker([-29.5000000, 28.5000000], {icon: greenIcon}).bindPopup("Lesotho").addTo(map);      
+		    L.marker([6.5000000, -9.5000000], {icon: greenIcon}).bindPopup("Libéria").addTo(map);      
+		    L.marker([25.0000000, 17.0000000], {icon: greenIcon}).bindPopup("Libye").addTo(map);      
+		    L.marker([47.1667000, 9.5333004], {icon: greenIcon}).bindPopup("Liechtenstein").addTo(map);      
+		    L.marker([56.0000000, 24.0000000], {icon: greenIcon}).bindPopup("Lituanie").addTo(map);      
+		    L.marker([49.7500000, 6.1666999], {icon: greenIcon}).bindPopup("Luxembourg").addTo(map);      
+		    L.marker([22.1667000, 113.5500031], {icon: greenIcon}).bindPopup("Macao").addTo(map);      
+		    L.marker([41.8333000, 22.0000000], {icon: greenIcon}).bindPopup("Macédoine").addTo(map);      
+		    L.marker([-20.0000000, 47.0000000], {icon: greenIcon}).bindPopup("Madagascar").addTo(map);      
+		    L.marker([-13.5000000, 34.0000000], {icon: greenIcon}).bindPopup("Malawi").addTo(map);      
+		    L.marker([2.5000000, 112.5000000], {icon: greenIcon}).bindPopup("Malaisie").addTo(map);      
+		    L.marker([3.2500000, 73.0000000], {icon: greenIcon}).bindPopup("Maldives").addTo(map);      
+		    L.marker([17.0000000, -4.0000000], {icon: greenIcon}).bindPopup("Mali").addTo(map);      
+		    L.marker([35.8333000, 14.5832996], {icon: greenIcon}).bindPopup("Malte").addTo(map);      
+		    L.marker([9.0000000, 168.0000000], {icon: greenIcon}).bindPopup("Iles Marshall").addTo(map);      
+		    L.marker([14.6667000, -61.0000000], {icon: greenIcon}).bindPopup("Martinique").addTo(map);      
+		    L.marker([20.0000000, -12.0000000], {icon: greenIcon}).bindPopup("Mauritanie").addTo(map);      
+		    L.marker([-20.2833000, 57.5499992], {icon: greenIcon}).bindPopup("Ile Maurice").addTo(map);      
+		    L.marker([-12.8333000, 45.1666985], {icon: greenIcon}).bindPopup("Mayotte").addTo(map);      
+		    L.marker([23.0000000, -102.0000000], {icon: greenIcon}).bindPopup("Mexique").addTo(map);      
+		    L.marker([6.9167000, 158.2500000], {icon: greenIcon}).bindPopup("Micronésie").addTo(map);      
+		    L.marker([47.0000000, 29.0000000], {icon: greenIcon}).bindPopup("Moldova").addTo(map);      
+		    L.marker([43.7333000, 7.4000001], {icon: greenIcon}).bindPopup("Monaco").addTo(map);      
+		    L.marker([46.0000000, 105.0000000], {icon: greenIcon}).bindPopup("Mongolie").addTo(map);      
+		    L.marker([42.0000000, 19.0000000], {icon: greenIcon}).bindPopup("Monténégro").addTo(map);      
+		    L.marker([16.7500000, -62.2000008], {icon: greenIcon}).bindPopup("Montserrat").addTo(map);      
+		    L.marker([32.0000000, -5.0000000], {icon: greenIcon}).bindPopup("Maroc").addTo(map);      
+		    L.marker([-18.2500000, 35.0000000], {icon: greenIcon}).bindPopup("Mozambique").addTo(map);      
+		    L.marker([22.0000000, 98.0000000], {icon: greenIcon}).bindPopup("Myanmar").addTo(map);      
+		    L.marker([-22.0000000, 17.0000000], {icon: greenIcon}).bindPopup("Namibie").addTo(map);      
+		    L.marker([-0.5333000, 166.9167023], {icon: greenIcon}).bindPopup("Nauru").addTo(map);      
+		    L.marker([28.0000000, 84.0000000], {icon: greenIcon}).bindPopup("Népal").addTo(map);      
+		    L.marker([52.5000000, 5.7500000], {icon: greenIcon}).bindPopup("Pays-Bas").addTo(map);      
+		    L.marker([12.2500000, -68.7500000], {icon: greenIcon}).bindPopup("Antilles néerlandaises").addTo(map);      
+		    L.marker([-21.5000000, 165.5000000], {icon: greenIcon}).bindPopup("Nouvelle-Calédonie").addTo(map);      
+		    L.marker([-41.0000000, 174.0000000], {icon: greenIcon}).bindPopup("Nouvelle-Zélande").addTo(map);      
+		    L.marker([13.0000000, -85.0000000], {icon: greenIcon}).bindPopup("Nicaragua").addTo(map);      
+		    L.marker([16.0000000, 8.0000000], {icon: greenIcon}).bindPopup("Niger").addTo(map);      
+		    L.marker([10.0000000, 8.0000000], {icon: greenIcon}).bindPopup("Nigeria").addTo(map);      
+		    L.marker([-19.0333000, -169.8666992], {icon: greenIcon}).bindPopup("Niue").addTo(map);      
+		    L.marker([-29.0333000, 167.9499969], {icon: greenIcon}).bindPopup("Île Norfolk").addTo(map);      
+		    L.marker([40.0000000, 127.0000000], {icon: greenIcon}).bindPopup("Corée du Nord").addTo(map);      
+		    L.marker([15.2000000, 145.7500000], {icon: greenIcon}).bindPopup("Îles Mariannes du Nord").addTo(map);      
+		    L.marker([62.0000000, 10.0000000], {icon: greenIcon}).bindPopup("Norvège").addTo(map);      
+		    L.marker([21.0000000, 57.0000000], {icon: greenIcon}).bindPopup("Oman").addTo(map);      
+		    L.marker([30.0000000, 70.0000000], {icon: greenIcon}).bindPopup("Pakistan").addTo(map);      
+		    L.marker([7.5000000, 134.5000000], {icon: greenIcon}).bindPopup("Palau").addTo(map);      
+		    L.marker([32.0000000, 35.2500000], {icon: greenIcon}).bindPopup("Territoire Palestinien").addTo(map);      
+		    L.marker([9.0000000, -80.0000000], {icon: greenIcon}).bindPopup("Panama").addTo(map);      
+		    L.marker([-6.0000000, 147.0000000], {icon: greenIcon}).bindPopup("Papouasie Nouvelle Guinée").addTo(map);      
+		    L.marker([-23.0000000, -58.0000000], {icon: greenIcon}).bindPopup("Paraguay").addTo(map);      
+		    L.marker([-10.0000000, -76.0000000], {icon: greenIcon}).bindPopup("Pérou").addTo(map);      
+		    L.marker([13.0000000, 122.0000000], {icon: greenIcon}).bindPopup("Philippines").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: greenIcon}).bindPopup("Pitcairn").addTo(map);      
+		    L.marker([52.0000000, 20.0000000], {icon: greenIcon}).bindPopup("Pologne").addTo(map);      
+		    L.marker([39.5000000, -8.0000000], {icon: greenIcon}).bindPopup("Portugal").addTo(map);      
+		    L.marker([18.2500000, -66.5000000], {icon: greenIcon}).bindPopup("Porto Rico").addTo(map);      
+		    L.marker([25.5000000, 51.2500000], {icon: greenIcon}).bindPopup("Qatar").addTo(map);      
+		    L.marker([-1.0000000, 15.0000000], {icon: greenIcon}).bindPopup("République du Congo").addTo(map);      
+		    L.marker([-21.1000000, 55.5999985], {icon: greenIcon}).bindPopup("La Réunion").addTo(map);      
+		    L.marker([46.0000000, 25.0000000], {icon: greenIcon}).bindPopup("Roumanie").addTo(map);      
+		    L.marker([60.0000000, 100.0000000], {icon: greenIcon}).bindPopup("Russie").addTo(map);      
+		    L.marker([-2.0000000, 30.0000000], {icon: greenIcon}).bindPopup("Rwanda").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: greenIcon}).bindPopup("Saint-Barthélemy").addTo(map);      
+		    L.marker([-15.9333000, -5.6999998], {icon: greenIcon}).bindPopup("Sainte-Hélène").addTo(map);      
+		    L.marker([17.3333000, -62.7500000], {icon: greenIcon}).bindPopup("Saint-Christophe-et-Niévè").addTo(map);      
+		    L.marker([13.8833000, -61.1333008], {icon: greenIcon}).bindPopup("Sainte-Lucie").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: greenIcon}).bindPopup("Saint Martin").addTo(map);      
+		    L.marker([46.8333000, -56.3333015], {icon: greenIcon}).bindPopup("Saint-Pierre-et-Miquelon").addTo(map);      
+		    L.marker([13.2500000, -61.2000008], {icon: greenIcon}).bindPopup("Saint-Vincent-et-les-Grenadines").addTo(map);      
+		    L.marker([-13.5833000, -172.3332977], {icon: greenIcon}).bindPopup("Samoa").addTo(map);      
+		    L.marker([43.7667000, 12.4167004], {icon: greenIcon}).bindPopup("Saint Marin").addTo(map);      
+		    L.marker([1.0000000, 7.0000000], {icon: greenIcon}).bindPopup("Sao Tomé-et-Principe").addTo(map);      
+		    L.marker([25.0000000, 45.0000000], {icon: greenIcon}).bindPopup("Arabie Saoudite").addTo(map);      
+		    L.marker([14.0000000, -14.0000000], {icon: greenIcon}).bindPopup("Sénégal").addTo(map);      
+		    L.marker([44.0000000, 21.0000000], {icon: greenIcon}).bindPopup("Serbie").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: greenIcon}).bindPopup("Serbie et Monténégro").addTo(map);      
+		    L.marker([-4.5833000, 55.6666985], {icon: greenIcon}).bindPopup("les Seychelles").addTo(map);      
+		    L.marker([8.5000000, -11.5000000], {icon: greenIcon}).bindPopup("Sierra Leone").addTo(map);      
+		    L.marker([1.3667000, 103.8000031], {icon: greenIcon}).bindPopup("Singapour").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: greenIcon}).bindPopup("Sint Maarten").addTo(map);      
+		    L.marker([48.6667000, 19.5000000], {icon: greenIcon}).bindPopup("Slovaquie").addTo(map);      
+		    L.marker([46.0000000, 15.0000000], {icon: greenIcon}).bindPopup("Slovénie").addTo(map);      
+		    L.marker([-8.0000000, 159.0000000], {icon: greenIcon}).bindPopup("Les îles Salomon").addTo(map);      
+		    L.marker([10.0000000, 49.0000000], {icon: greenIcon}).bindPopup("Somalie").addTo(map);      
+		    L.marker([-29.0000000, 24.0000000], {icon: greenIcon}).bindPopup("Afrique du Sud").addTo(map);      
+		    L.marker([-54.5000000, -37.0000000], {icon: greenIcon}).bindPopup("Géorgie du Sud-et-les Îles Sandwich du Sud").addTo(map);      
+		    L.marker([37.0000000, 127.5000000], {icon: greenIcon}).bindPopup("Corée du Sud").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: greenIcon}).bindPopup("Soudan du sud").addTo(map);      
+		    L.marker([40.0000000, -4.0000000], {icon: greenIcon}).bindPopup("Espagne").addTo(map);      
+		    L.marker([7.0000000, 81.0000000], {icon: greenIcon}).bindPopup("Sri Lanka").addTo(map);      
+		    L.marker([15.0000000, 30.0000000], {icon: greenIcon}).bindPopup("Soudan").addTo(map);      
+		    L.marker([4.0000000, -56.0000000], {icon: greenIcon}).bindPopup("Suriname").addTo(map);      
+		    L.marker([78.0000000, 20.0000000], {icon: greenIcon}).bindPopup("Svalbard et Jan Mayen").addTo(map);      
+		    L.marker([-26.5000000, 31.5000000], {icon: greenIcon}).bindPopup("Swaziland").addTo(map);      
+		    L.marker([62.0000000, 15.0000000], {icon: greenIcon}).bindPopup("Suède").addTo(map);      
+		    L.marker([47.0000000, 8.0000000], {icon: greenIcon}).bindPopup("Suisse").addTo(map);      
+		    L.marker([35.0000000, 38.0000000], {icon: greenIcon}).bindPopup("Syrie").addTo(map);      
+		    L.marker([23.5000000, 121.0000000], {icon: greenIcon}).bindPopup("Taïwan").addTo(map);      
+		    L.marker([39.0000000, 71.0000000], {icon: greenIcon}).bindPopup("Tadjikistan").addTo(map);      
+		    L.marker([-6.0000000, 35.0000000], {icon: greenIcon}).bindPopup("Tanzanie").addTo(map);      
+		    L.marker([15.0000000, 100.0000000], {icon: greenIcon}).bindPopup("Thaïlande").addTo(map);      
+		    L.marker([8.0000000, 1.1667000], {icon: greenIcon}).bindPopup("Togo").addTo(map);      
+		    L.marker([-9.0000000, -172.0000000], {icon: greenIcon}).bindPopup("Tokelau").addTo(map);      
+		    L.marker([-20.0000000, -175.0000000], {icon: greenIcon}).bindPopup("Tonga").addTo(map);      
+		    L.marker([11.0000000, -61.0000000], {icon: greenIcon}).bindPopup("Trinité-et-Tobago").addTo(map);      
+		    L.marker([34.0000000, 9.0000000], {icon: greenIcon}).bindPopup("Tunisie").addTo(map);      
+		    L.marker([39.0000000, 35.0000000], {icon: greenIcon}).bindPopup("Turquie").addTo(map);      
+		    L.marker([40.0000000, 60.0000000], {icon: greenIcon}).bindPopup("Turkménistan").addTo(map);      
+		    L.marker([21.7500000, -71.5832977], {icon: greenIcon}).bindPopup("îles Turques-et-Caïques").addTo(map);      
+		    L.marker([-8.0000000, 178.0000000], {icon: greenIcon}).bindPopup("Tuvalu").addTo(map);      
+		    L.marker([18.3333000, -64.8332977], {icon: greenIcon}).bindPopup("Îles Vierges américaines").addTo(map);      
+		    L.marker([1.0000000, 32.0000000], {icon: greenIcon}).bindPopup("Ouganda").addTo(map);      
+		    L.marker([49.0000000, 32.0000000], {icon: greenIcon}).bindPopup("Ukraine").addTo(map);      
+		    L.marker([24.0000000, 54.0000000], {icon: greenIcon}).bindPopup("Emirats Arabes Unis").addTo(map);      
+		    L.marker([54.0000000, -2.0000000], {icon: greenIcon}).bindPopup("Royaume-Uni").addTo(map);      
+		    L.marker([37.7510000, -97.8219986], {icon: greenIcon}).bindPopup("Etats-Unis").addTo(map);      
+		    L.marker([19.2833000, 166.6000061], {icon: greenIcon}).bindPopup("Îles mineures éloignées des États-Unis").addTo(map);      
+		    L.marker([-33.0000000, -56.0000000], {icon: greenIcon}).bindPopup("Uruguay").addTo(map);      
+		    L.marker([41.0000000, 64.0000000], {icon: greenIcon}).bindPopup("Ouzbékistan").addTo(map);      
+		    L.marker([-16.0000000, 167.0000000], {icon: greenIcon}).bindPopup("Vanuatu").addTo(map);      
+		    L.marker([41.9000000, 12.4499998], {icon: greenIcon}).bindPopup("Vatican").addTo(map);      
+		    L.marker([8.0000000, -66.0000000], {icon: greenIcon}).bindPopup("Venezuela").addTo(map);      
+		    L.marker([16.0000000, 106.0000000], {icon: greenIcon}).bindPopup("Viêt-Nam").addTo(map);      
+		    L.marker([-13.3000000, -176.1999969], {icon: greenIcon}).bindPopup("Wallis et Futuna").addTo(map);      
+		    L.marker([24.5000000, -13.0000000], {icon: greenIcon}).bindPopup("Sahara occidental").addTo(map);      
+		    L.marker([15.0000000, 48.0000000], {icon: greenIcon}).bindPopup("Yémen").addTo(map);      
+		    L.marker([-15.0000000, 30.0000000], {icon: greenIcon}).bindPopup("Zambie").addTo(map);      
+		    L.marker([-20.0000000, 30.0000000], {icon: greenIcon}).bindPopup("Zimbabwe").addTo(map);      
+		    L.marker([0.0000000, 25.0000000], {icon: greenIcon}).bindPopup("Congo Brazzaville").addTo(map);   
+			L.marker([33.0000000, 65.0000000], {icon: greenIcon}).bindPopup("Afghanistan").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: redIcon}).bindPopup("Iles Aland").addTo(map);      
+		    L.marker([41.0000000, 20.0000000], {icon: orangeIcon}).bindPopup("Albanie").addTo(map);      
+		    L.marker([28.0000000, 3.0000000], {icon: greenIcon}).bindPopup("Algérie").addTo(map);      
+		    L.marker([-14.3333000, -170.0000000], {icon: redIcon}).bindPopup("Samoa Américaines").addTo(map);      
+		    L.marker([42.5000000, 1.5000000], {icon: redIcon}).bindPopup("Andorre").addTo(map);      
+		    L.marker([-12.5000000, 18.5000000], {icon: redIcon}).bindPopup("Angola").addTo(map);      
+		    L.marker([18.2500000, -63.1666985], {icon: greenIcon}).bindPopup("Anguilla").addTo(map);      
+		    L.marker([-90.0000000, 0.0000000], {icon: redIcon}).bindPopup("Antarctique").addTo(map);      
+		    L.marker([17.0500000, -61.7999992], {icon: orangeIcon}).bindPopup("Antigua-et-Barbuda").addTo(map);      
+		    L.marker([-34.0000000, -64.0000000], {icon: orangeIcon}).bindPopup("Argentine").addTo(map);      
+		    L.marker([40.0000000, 45.0000000], {icon: orangeIcon}).bindPopup("Arménie").addTo(map);      
+		    L.marker([12.5000000, -69.9666977], {icon: orangeIcon}).bindPopup("Aruba").addTo(map);      
+		    L.marker([-27.0000000, 133.0000000], {icon: orangeIcon}).bindPopup("Australie").addTo(map);      
+		    L.marker([47.3333000, 13.3332996], {icon: orangeIcon}).bindPopup("Autriche").addTo(map);      
+		    L.marker([40.5000000, 47.5000000], {icon: redIcon}).bindPopup("Azerbaïdjan").addTo(map);      
+		    L.marker([24.2500000, -76.0000000], {icon: greenIcon}).bindPopup("Bahamas").addTo(map);      
+		    L.marker([26.0000000, 50.5499992], {icon: redIcon}).bindPopup("Bahreïn").addTo(map);      
+		    L.marker([24.0000000, 90.0000000], {icon: greenIcon}).bindPopup("Bangladesh").addTo(map);      
+		    L.marker([13.1667000, -59.5332985], {icon: redIcon}).bindPopup("Barbade").addTo(map);      
+		    L.marker([53.0000000, 28.0000000], {icon: greenIcon}).bindPopup("Biélorussie").addTo(map);      
+		    L.marker([50.8333000, 4.0000000], {icon: redIcon}).bindPopup("Belgique").addTo(map);      
+		    L.marker([17.2500000, -88.7500000], {icon: greenIcon}).bindPopup("Belize").addTo(map);      
+		    L.marker([9.5000000, 2.2500000], {icon: orangeIcon}).bindPopup("Bénin").addTo(map);      
+		    L.marker([32.3333000, -64.7500000], {icon: greenIcon}).bindPopup("Bermuda").addTo(map);      
+		    L.marker([27.5000000, 90.5000000], {icon: orangeIcon}).bindPopup("Bhoutan").addTo(map);      
+		    L.marker([-17.0000000, -65.0000000], {icon: greenIcon}).bindPopup("Bolivie").addTo(map);      
+		    L.marker([0.0000000, 0.0000000], {icon: orangeIcon}).bindPopup("Bonaire, Saint-Eustache et Saba").addTo(map);    
+			*/  
+			
+	</script>
+</body>
+</html>
