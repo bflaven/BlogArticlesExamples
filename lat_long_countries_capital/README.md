@@ -1,7 +1,7 @@
 # lat_long_countries_capital
 =============================================
 
-Some explanations in connection with a POC on leaflet.js
+Some explanations in connection with a POC on leaflet.js  
 
 ## Explanations
 ---------------------
@@ -18,7 +18,7 @@ I add the MySQL table and a integration of an example with a custom marker.
 	The French translation eg Australie  
 	Average latitude and longitude of the country  
 2. **countries_capitals_location_fr_en.json**: A json output of the MySQL Table.
-3. **custom-icons-example.html with the directory icons**: An example of integration with a custom marker with leaftlet.js
+3. **custom-icons-example.html with the directory icons**: An example of integration with a custom marker with leaftlet.js  
 
 
 
