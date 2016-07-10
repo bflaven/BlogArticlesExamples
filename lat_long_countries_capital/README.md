@@ -18,8 +18,8 @@ I add the MySQL table and a integration of an example with a custom marker.
 	The French translation eg Australie  
 	Average latitude and longitude of the country  
 2. **countries_capitals_location_fr_en.json**: A json output of the MySQL Table.
-3. **custom-icons-example.html with the directory icons**: An example of integration with a custom marker with leaftlet.js 
-4 **countries_capitals_location_fr_en_full.sql**: Another MySQL table that provides additional columns to handle these languages: Swahili, Arabic, Persian, Russian, English, Chinese, French, Cambodian, Brazilian Portuguese, Vietnamese, Hausa, Spanish. Some translations are missing!
+3. **custom-icons-example.html with the directory icons**: An example of integration with a custom marker with leaftlet.js  
+4. **countries_capitals_location_fr_en_full.sql**: Another MySQL table that provides additional columns to handle these languages: Swahili, Arabic, Persian, Russian, English, Chinese, French, Cambodian, Brazilian Portuguese, Vietnamese, Hausa, Spanish. Some translations are missing!
  
 
 
