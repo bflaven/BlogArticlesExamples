@@ -1,6 +1,7 @@
 
 # Slim Fast Poc
 =============================================
+
 Proof of concept to create a small Rest API with Slim, the minimalist PHP framework
 
 
@@ -8,6 +9,7 @@ Proof of concept to create a small Rest API with Slim, the minimalist PHP framew
 
 ## Installation
 ---------------------
+
 You need to have a local or a remote web server to see the file working
 
 
