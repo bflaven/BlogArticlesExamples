@@ -3,6 +3,7 @@
 =============================================
 
 Proof of concept to create a small Rest API with Slim, the minimalist PHP framework.
+Using based on Slim version 2.2.0
 
 
 
@@ -19,7 +20,11 @@ See extra-files/demo_dump_2.sql
 
 ## Usage
 --------------
+Install the database.
+See extra-files/demo_dump_2.sql
 
+Do not forget to install the project in MAMP for instance and use .htaccess
+See extra-files/htacces.txt to .htaccess
 
 
 ## For more information
