@@ -5,7 +5,6 @@ Using based on Slim version 2.2.0
 
 
 
-
 ## Installation
 
 You need to have a local or a remote web server to see the file working.
