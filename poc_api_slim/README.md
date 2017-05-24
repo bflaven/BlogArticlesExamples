@@ -1,7 +1,5 @@
 
 # Slim Fast Poc
-=============================================
-
 Proof of concept to create a small Rest API with Slim, the minimalist PHP framework.
 Using based on Slim version 2.2.0
 
