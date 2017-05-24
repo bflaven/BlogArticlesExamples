@@ -9,7 +9,6 @@ Using based on Slim version 2.2.0
 
 
 ## Installation
----------------------
 
 You need to have a local or a remote web server to see the file working.
 You need to have postman the yopu can use poc_api_slim.postman_collection.json
@@ -19,7 +18,7 @@ For the database, you can use the following file
 See extra-files/demo_dump_2.sql
 
 ## Usage
---------------
+
 Install the database.
 See extra-files/demo_dump_2.sql
 
@@ -28,7 +27,7 @@ See extra-files/htacces.txt to .htaccess
 
 
 ## For more information
-------------------------------------
+
 Feel free to check in English and in French some articles @
 [Flaven.net](http://flaven.fr//)
 
