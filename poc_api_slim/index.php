@@ -1,5 +1,12 @@
 <?php
 /**
+ * SLIM FAST API V1
+ * The « rudimentary » API
+ * More @flaven.fr on http://bit.ly/2qZ7Krf
+ */
+
+
+/**
  * ----------- REQUIRE
 ---------------------------------
  */
