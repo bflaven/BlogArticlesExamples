@@ -24,7 +24,7 @@ See extra-files/demo_dump_2.sql
 
 Do not forget to install the project in MAMP or equivalent.
 
-Add in the project directory the .htaccess so you will abele to access to the API without index.php in your queries.
+Add in the project directory the .htaccess so you will able to access to the API without index.php in your queries.
 See extra-files/htacces.txt to .htaccess
 
 
