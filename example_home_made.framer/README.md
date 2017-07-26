@@ -14,7 +14,7 @@ Require or look more in http://projects.framerjs.com/
 
 ## Usage
 --------------
-
+To help you to see the example, put in it on a server
 
 ## For more information
 ------------------------------------
