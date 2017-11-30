@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "F24 News Reader",
+  "author": "Bruno Flaven <info@flaven.fr>",
+  "version": "1.0",
+  "homepage_url": "https://github.com/bflaven",
+  "description": "Displays items from the France 24 in English from a RSS feed in a popup.",
+  "icons": {
+    "128": "icons/icon_128x128.png",
+    "91": "icons/icon_91x91.png",
+    "19": "icons/icon_19x19.png"
+  },
+  "browser_action": {
+    "default_title": "F24 EN News",
+    "default_icon": "icons/icon_19x19.png",
+    "default_popup": "feed.html"
+  },
+  "permissions": [
+    "tabs",
+    "http://www.france24.com/en/top-stories/rss"
+  ],
+  "content_security_policy": "img-src 'self' http://* https://*; script-src 'self'; connect-src http://www.france24.com/en/top-stories/rss;object-src 'self'; frame-src data:"
+}

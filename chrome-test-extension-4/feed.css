@@ -1,0 +1,149 @@
+/**
+ * Copyright (c) 2011 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+  /* overflow: hidden; */
+}
+
+a {
+  color:#000000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.open_box {
+  display: block;
+  overflow: hidden;
+  margin-right: 4px;
+  margin-top: 2px;
+  height: 12px;
+  width: 12px;
+  float: left;
+  clear: left;
+  background-image: url(sprite_arrows.gif);
+  background-position: 0px -24px;
+  cursor: pointer;
+}
+
+.opened .open_box {
+  background-position:-12px -24px;
+}
+
+.itemDivImg {
+  padding: 2px 0px;
+  border: 0px red solid;
+  float:left;
+}
+/*
+.item {
+  padding: 2px 0px;
+  border: 1px red solid;
+  position: relative;
+  height: 81px;
+  width: 376px;
+  overflow: hidden;
+  float:right;
+}
+*/
+#feed li {
+position: relative;
+min-height: 67px;
+overflow: hidden;
+list-style-type: none;
+padding: 6px 8px 6px 147px;
+/*
+margin-bottom: 3px;
+
+*/
+}
+
+#feed li img {
+position: absolute;
+top: 6px;
+left: 6px;
+width: 147px;
+height: 111px;
+}
+
+#feed li b {
+font: normal 14px/16px 'Arial', sans-serif;
+color: #134685;
+position: relative;
+top: -3px;
+}
+
+#feed li:hover {
+background-color: #EEEEEE;
+}
+
+#feed li:hover b {
+color: #0080ff;
+}
+
+#feed li span {
+display: block;
+font: normal 13px/16px 'Arial', sans-serif;
+color: #888;
+position: relative;
+top: -2px;
+}
+
+#feed li {
+margin-bottom: 3px;
+padding: 6px 8px 6px 133px;
+/*border: 1px red solid;*/
+}
+/*
+#feed .item_title {
+  display: block;
+  min-width: 300px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+*/
+#feed .item_title {
+font-size: 14px;
+color: #000000;
+/*position: absolute;*/
+/*z-index: 3;*/
+width: 376px;
+height: 81px;
+display: block;
+min-width: 300px;
+padding: 6px 8px 6px 60px;
+}
+
+
+
+.item_desc {
+  min-width: 500px;
+  height: 0px;
+  display: block;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  transition: height 0.2s ease-out;
+}
+
+#title {
+  display: block;
+  margin-left: auto;
+}
+
+.error {
+  white-space: nowrap;
+  color: red;
+}
+
+.more {
+  display: block;
+  text-align: right;
+  padding-top: 20px;
+  padding-right: 10px;
+  color: #88C;
+}
