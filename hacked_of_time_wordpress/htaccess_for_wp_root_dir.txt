@@ -1,0 +1,190 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c> 
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule> 
+# END WordPress
+ 
+# BEGIN SECURITY
+ 
+# BEGIN ENVIRONMENT 
+# SET register_globals to off security
+SetEnv REGISTER_GLOBALS 0
+# END ENVIRONMENT 
+ 
+# NO listing for directories
+Options All -Indexes
+ 
+# NO listing for directories
+IndexIgnore *
+ 
+# Hide server informations
+ServerSignature Off
+ 
+# Enabling the tracking of symbolic links
+Options +FollowSymLinks
+ 
+# Time zone selection
+SetEnv TZ Europe/Paris
+ 
+# Default encoding of text and HTML files
+AddDefaultCharset UTF-8
+ 
+# protect wp-config.php
+<Files wp-config.php> 
+    order deny,allow
+    deny from all
+</Files>
+ 
+# Protect .htaccess and .htpasswds files
+<Files ~ "^.*\.([Hh][Tt][AaPp])"> 
+	order allow,deny
+	deny from all
+	satisfy all
+</Files> 
+ 
+# Protect wp-login.php
+<Files wp-login.php>
+AuthUserFile [path-out-the-wp-dir]/.htpasswd
+AuthName "Access Restricted"
+AuthType Basic
+require valid-user
+</Files>
+ 
+# Avoid comment spam
+<IfModule mod_rewrite.c> 
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{REQUEST_URI} .wp-comments-post\.php*
+RewriteCond %{HTTP_REFERER} !.your-site-domain.com.* [OR]
+RewriteCond %{HTTP_USER_AGENT} ^$
+RewriteRule (.*) ^http://%{REMOTE_ADDR}/$ [R=301,L]
+</IfModule> 
+ 
+ 
+ 
+ 
+# Avoid discovering an author's ID
+<IfModule mod_rewrite.c> 
+RewriteCond %{QUERY_STRING} ^author=([0-9]*)
+RewriteRule .* - [F]
+</IfModule> 
+ 
+# Disable the hot-linking of your images
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?your-site-domain.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ https://fakeimg.pl/400x200/?text=no-way [NC,R,L]
+ 
+ 
+ 
+# Caching files in the browser
+<IfModule mod_expires.c> 
+ExpiresActive On
+ExpiresDefault "access plus 1 month"
+ 
+ExpiresByType text/html "access plus 0 seconds"
+ExpiresByType text/xml "access plus 0 seconds"
+ExpiresByType application/xml "access plus 0 seconds"
+ExpiresByType application/json "access plus 0 seconds"
+ExpiresByType application/pdf "access plus 0 seconds"
+ 
+ExpiresByType application/rss+xml "access plus 1 hour"
+ExpiresByType application/atom+xml "access plus 1 hour"
+ 
+ExpiresByType application/x-font-ttf "access plus 1 month"
+ExpiresByType font/opentype "access plus 1 month"
+ExpiresByType application/x-font-woff "access plus 1 month"
+ExpiresByType application/x-font-woff2 "access plus 1 month"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+ 
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ 
+ExpiresByType video/ogg "access plus 1 month"
+ExpiresByType audio/ogg "access plus 1 month"
+ExpiresByType video/mp4 "access plus 1 month"
+ExpiresByType video/webm "access plus 1 month"
+ 
+ExpiresByType text/css "access plus 6 month"
+ExpiresByType application/javascript "access plus 6 month"
+ 
+ExpiresByType application/x-shockwave-flash "access plus 1 week"
+ExpiresByType image/x-icon "access plus 1 week"
+ 
+</IfModule> 
+ 
+# kill them etags
+Header unset ETag
+FileETag None
+ 
+<ifModule mod_headers.c>  
+<filesMatch "\.(ico|jpe?g|png|gif|swf)$">   
+    Header set Cache-Control "public"  
+</filesMatch>  
+<filesMatch "\.(css)$">  
+    Header set Cache-Control "public"  
+</filesMatch>   
+<filesMatch "\.(js)$">   
+    Header set Cache-Control "private"  
+</filesMatch>   
+<filesMatch "\.(x?html?|php)$">   
+    Header set Cache-Control "private, must-revalidate"
+</filesMatch> 
+</ifModule> 
+ 
+ 
+# Compressions of static files
+<IfModule mod_deflate.c> 
+    AddOutputFilterByType DEFLATE text/xhtml text/html text/plain text/xml text/javascript application/x-javascript text/css 
+    BrowserMatch ^Mozilla/4 gzip-only-text/html 
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip 
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html 
+    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary 
+    Header append Vary User-Agent env=!dont-vary 
+</IfModule>   
+ 
+AddOutputFilterByType DEFLATE text/html  
+AddOutputFilterByType DEFLATE text/plain  
+AddOutputFilterByType DEFLATE text/xml  
+AddOutputFilterByType DEFLATE text/css  
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE font/opentype
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/json  
+ 
+ 
+ 
+# Block the use of certain scripts
+RewriteEngine On
+RewriteBase /
+RewriteRule ^wp-admin/includes/ - [F,L]
+RewriteRule !^wp-includes/ - [S=3]
+RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
+RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
+RewriteRule ^wp-includes/theme-compat/ - [F,L]
+ 
+ 
+# Protection against file injections
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=http:// [OR]
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=(\.\.//?)+ [OR]
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=/([a-z0-9_.]//?)+ [NC]
+RewriteRule .* - [F]
+ 
+ 
+# Protections diverses (XSS, clickjacking et MIME-Type sniffing)
+<ifModule mod_headers.c> 
+Header set X-XSS-Protection "1; mode=block"
+Header always append X-Frame-Options SAMEORIGIN
+Header set X-Content-Type-Options: "nosniff”
+</ifModule> 
+ 
+# END SECURITY

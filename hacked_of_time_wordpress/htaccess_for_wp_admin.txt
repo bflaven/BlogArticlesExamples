@@ -1,0 +1,6 @@
+# SECURITY WORDPRESS for wp-admin
+AuthUserFile [path-out-the-wp-dir]/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Access Restricted"
+AuthType Basic
+require valid-user
