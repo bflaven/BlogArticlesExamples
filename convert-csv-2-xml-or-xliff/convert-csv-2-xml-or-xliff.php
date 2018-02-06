@@ -13,17 +13,23 @@ define('TARGET_SUB_TEMPLATE', __DIR__.'/template/xliff_sf/transunit.xml');
 */
 
 /* For mobile, do not put full extension, just put what is behind the dot (.) eg .xml it becomes xml */
-define('TARGET_EXTENSION', 'xml');
-define('TARGET_TEMPLATE', __DIR__.'/template/xml_mobile/template.xml');
-define('TARGET_SUB_TEMPLATE', __DIR__.'/template/xml_mobile/transunit.xml');
+// define('TARGET_EXTENSION', 'xml');
+// define('TARGET_TEMPLATE', __DIR__.'/template/xml_mobile/template.xml');
+// define('TARGET_SUB_TEMPLATE', __DIR__.'/template/xml_mobile/transunit.xml');
 
-
+/* For mobile iOS, do not put full extension, just put what is behind the dot (.) eg .strings it becomes strings */
+define('TARGET_EXTENSION', 'strings');
+define('TARGET_TEMPLATE', __DIR__.'/template/ios_string_mobile/template.xml');
+define('TARGET_SUB_TEMPLATE', __DIR__.'/template/ios_string_mobile/transunit.xml');
 
 
 // ---- Reading the CSV
 define('SOURCE_DELIMITER', ',');
+// ---- choose the column for the key
 define('SOURCE_KEY_COL', 1);
+// ---- choose the column for the value
 define('SOURCE_VALUE_COL', 3);
+
 
 // ---- Other values
 define('SOURCE_DIR', __DIR__.'/'.SOURCE_EXTENSION);
