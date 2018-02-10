@@ -10,13 +10,14 @@ You need a LAMP environment with PHP/MySQL to install this POC : a mini CRUD wit
 
 ## Usage
 --------------
-The original article was @ [webslesson.info] (http://www.webslesson.info/2017/12/encryption-and-decryption-form-data-in-php.html)
+The original article was @ [webslesson.info](http://www.webslesson.info/2017/12/encryption-and-decryption-form-data-in-php.html)
+
 
 
 ## For more information
 ------------------------------------
 Feel free to check in French some articles @
-[Flaven.net](http://flaven.fr//)
+[Flaven.net](http://flaven.fr/2018/02/mysql-encrypt-decrypt-encryption-decryption-data-in-php-mysql-and-some-elements-on-the-gdpr-compliance/)
 
 
 
