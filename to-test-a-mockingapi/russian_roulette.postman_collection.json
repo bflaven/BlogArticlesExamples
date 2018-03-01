@@ -1,0 +1,152 @@
+{
+	"info": {
+		"name": "russian_roulette",
+		"_postman_id": "b4fbc451-83ca-d3d8-17d3-1ac16900eb40",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01_install_postman_bdd",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"// If the \"postman_bdd_path\" environment variable is set, then we'll use it.",
+							"// Otherwise, we'll default to the published version",
+							"if (!environment.postman_bdd_path) {",
+							"    postman.setGlobalVariable('postman_bdd_path', 'http://bigstickcarpet.com/postman-bdd/dist/postman-bdd.min.js');",
+							"}",
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"// \"install\" Postman BDD",
+							"postman.setGlobalVariable('postmanBDD', responseBody);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{postman_bdd_path}}",
+					"host": [
+						"{{postman_bdd_path}}"
+					]
+				},
+				"description": "This request downloads [Postman BDD](https://github.com/BigstickCarpet/postman-bdd) and then \"installs\" it by setting a global variable\n"
+			},
+			"response": []
+		},
+		{
+			"name": "02_JSON_response",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d61cffa5-e31d-47e0-abaf-f61298236828",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "91807847-9ca0-4e8f-8248-0f5ed1697ba4",
+						"type": "text/javascript",
+						"exec": [
+							"eval(globals.postmanBDD);",
+							"",
+							"it('Hey 1 - should return JSON', () => {",
+							"    response.should.be.json;",
+							"    // response.should.have.header('Content-Type', 'application/json');",
+							"    // response.type.should.equal('application/json');",
+							"});",
+							"/*",
+							"it('should match against a JSON Schema', () => {",
+							"    response.body.should.have.schema({",
+							"    });",
+							"});",
+							"*/",
+							"",
+							"it('Hey 2 - should return a valid response', () => {",
+							"    response.should.have.status(200);",
+							"    response.should.be.json;",
+							"    response.body.should.not.be.empty;",
+							"  });",
+							"  ",
+							"  // Define the JSON Schema",
+							"const customerSchema = {",
+							"  \"required\": [\"id\"],",
+							"  \"properties\": {",
+							"    \"id\": {",
+							"      \"type\": \"integer\",",
+							"      \"minimum\": 100,",
+							"      \"maximum\": 1000",
+							"    },",
+							"    \"first_name\": {",
+							"      \"type\": \"string\",",
+							"      \"minLength\": 1,",
+							"      \"maxLength\": 25",
+							"    },",
+							"    \"last_name\": {",
+							"      \"type\": \"string\",",
+							"      \"minLength\": 1,",
+							"      \"maxLength\": 25",
+							"    }",
+							"  }",
+							"};",
+							"",
+							"// Test whether the response matches the schema",
+							"var customer = JSON.parse(responseBody);",
+							"tests[\"Hey 3 - Russian Customer is ok\"] = tv4.validate(customer, customerSchema);",
+							"",
+							"",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": "Test russians users with Chai not a russian roulette"
+			},
+			"response": []
+		}
+	]
+}
