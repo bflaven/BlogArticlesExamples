@@ -1,0 +1,9 @@
+{
+    "name": "Yallah Yallah, Welcome to Country Light App",
+    "version": "1.0.1",
+    "description": "Country Light App, a prototype to play with Countries",
+    "template": {
+        "forceLanguage": "en"
+    }
+}
+
