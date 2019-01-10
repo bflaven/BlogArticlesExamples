@@ -10,7 +10,7 @@ I made recently a small introduction on how to implement the Universal Links Dee
 
 ## For more information
 ------------------------------------
-Feel free to check in French some articles @
+Feel free to check in English some articles @
 [Deeplinks, iOS, Android, QR code – Operational testing on Universal Links Deeplinks in Android or iOS applications with QR code](http://flaven.fr/2019/01/deeplinks-ios-android-qr-code-operational-testing-on-universal-links-deeplinks-in-android-or-ios-applications-with-qr-code/)
 
 
