@@ -2,7 +2,7 @@
 ## Using Pandoc to generate documentation, manuals in pdf, docx, html from markdown documents
 A quick introduction to Pandoc to generate documentation files in mots common format e.g. pdf, docx, html
 
-[Read more on flaven.fr](http://flaven.fr/2018/05/node-api-postman-buid-a-simple-but-complete-rest-api-with-node-tested-with-chai-and-newman-documented-with-apidoc/)
+[Read more on flaven.fr](http://flaven.fr/2019/07/using-pandoc-to-generate-documentation-manuals-in-pdf-docx-html-from-markdown-documents)
 
 
 ### Requirements
@@ -59,4 +59,4 @@ pandoc --toc --latex-engine=xelatex --epub-cover-image=images/cover_1563x2500.jp
 ```
 
 
-**You can have a look to the main article on my blog** @ [flaven.fr](http://flaven.fr/xxx/)
+**You can have a look to the main article on my blog** @ [flaven.fr](http://flaven.fr/2019/07/using-pandoc-to-generate-documentation-manuals-in-pdf-docx-html-from-markdown-documents)
