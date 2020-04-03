@@ -157,19 +157,19 @@ There are two ways to create links.
 Or leave it empty and use the [link text itself].
 
 URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
+https://www.flaven.fr or <https://www.flaven.fr> and sometimes 
 example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
 
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[arbitrary case-insensitive reference text]: https://www.flaven.fr
 [1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
+[link text itself]: https://www.flaven.fr
 ```
 
-[I'm an inline-style link](https://www.google.com)
+[I'm an "egotic" inline-style link](https://www.flaven.fr)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+[I'm an "egotic" inline-style link](https://www.flaven.fr "My website")
 
 [I'm a reference-style link][Arbitrary case-insensitive reference text]
 
@@ -180,14 +180,14 @@ Some text to show that the reference links can follow later.
 Or leave it empty and use the [link text itself].
 
 URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
+https://www.flaven.fr or <https://www.flaven.fr> and sometimes 
 example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
 
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[arbitrary case-insensitive reference text]: https://www.flaven.fr
 [1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
+[link text itself]: https://www.flaven.fr
 
 <a id="markdown_5"></a>
 ### Images
