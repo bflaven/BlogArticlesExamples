@@ -219,8 +219,16 @@ Inline `code` has `back-ticks around` it.
 Inline code has back-ticks around it.
 
 
-I only use the three back-ticks ``` and add the language if required e.g ```ruby``` ```php```
+I only use the three back-ticks ``` and add the language if required e.g 
+```
 
+```php
+```ruby #use it for gherkin feature
+```javascript
+
+```
+
+**ruby but use for gherkin feature**
 ``` ruby
 # testing the baseline on the frontoffice
 Feature: Checking website made with WordPress
@@ -259,6 +267,7 @@ I need to see the default WordPress site description
 
 ```
 
+**php**
 ``` php
 class FirstCest
 {
@@ -273,7 +282,7 @@ class FirstCest
 }
 ```
 
-
+**javascript**
 ```javascript
 exports.config = {
   tests: './*_test.js',
@@ -294,7 +303,7 @@ exports.config = {
 }
 ```
 
-
+**html**
 ``` html
 <!--
 I select the option "Copy selector"
@@ -331,8 +340,7 @@ But let's throw in a <b>tag</b>.
 
 <a id="markdown_7"></a>
 ### Tables
-
-Tables aren't part of the core Markdown spec, but they are part of GFM and Markdown Here supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
+Nice to make table to present in columns and rows. Like a a table in HTML.
 
 
 ```
@@ -354,6 +362,7 @@ Colons can be used to align columns.
 
 <a id="markdown_8"></a>
 ### Blockquotes
+Not my favorite, but useful.
 
 ```
 > Blockquotes are very handy in email to emulate reply text.
@@ -393,8 +402,23 @@ Quote break.
  
 <a id="markdown_9"></a>
 ### Horizontal Rule
+Useless to me, found it ugly too in HTML and so in markdown but I cannot pretend that I did use it!```
+Three or more...
+
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores
 
 ```
+
 Three or more...
 
 ---
@@ -410,22 +434,10 @@ ___
 Underscores
 ```
 
-Three or more...
-
----
-
-Hyphens
-
-***
-
-Asterisks
-
-___
-
-Underscores
 
 <a id="markdown_10"></a>
 ### YouTube Videos
+I have discovered this chunk and it is useful. As nobody read anymore but rather spoil their time on YouTube, adults and kids included. You’d better know how to make video.
 
 ```
 - [Video #3 Testing Post creation with Tags & Categories](https://www.youtube.com/watch?v=Iixub4_aiLM)
@@ -437,6 +449,7 @@ Underscores
 
 <a id="markdown_11"></a>
 ### Directory tree
+This one I like the most with color coding or syntax highlight.
 
 ``` bash
 .
@@ -509,7 +522,8 @@ Underscores
 
 <a id="markdown_12"></a>
 ### ASCII Art
-Confined, shut in,  I am dreaming of nature... I am a mother nature son!
+unnecessary, pointless, needless, superfluous but so cool.
+Confined, shut in, I am dreaming of nature... I am a mother nature son in a front of computer!
 
 **Mountains...**
 ```
