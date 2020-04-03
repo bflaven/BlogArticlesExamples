@@ -200,7 +200,6 @@ The reference here is different. Here is an image with a link and an alt message
 
 [![The good and small "Zambian" guide for WordPress. How to run a News Website with WordPress?](cover_book-small-guide-zambia-wordpress-running-news-website_400x640.png)](https://www.amazon.com/dp/B08645F8DZ/)
 
-
 <a id="markdown_6"></a>
 ### Code and Syntax Highlighting
 
