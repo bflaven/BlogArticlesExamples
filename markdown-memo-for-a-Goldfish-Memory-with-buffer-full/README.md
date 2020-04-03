@@ -362,7 +362,7 @@ Colons can be used to align columns.
 
 <a id="markdown_8"></a>
 ### Blockquotes
-Not my favorite, but useful.
+Not my favorite, but useful sometimes.
 
 ```
 > Blockquotes are very handy in email to emulate reply text.
@@ -402,8 +402,7 @@ Quote break.
  
 <a id="markdown_9"></a>
 ### Horizontal Rule
-Useless to me, found it ugly too in HTML and so in markdown but I cannot pretend that I did use it!```
-Three or more...
+Useless to me, found it ugly too in HTML and so in markdown but I cannot pretend that I did use it!
 
 ---
 
