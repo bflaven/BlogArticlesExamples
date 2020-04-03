@@ -418,8 +418,6 @@ Underscores
 
 ```
 
-Three or more...
-
 ---
 
 Hyphens
