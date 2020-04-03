@@ -58,6 +58,11 @@ Alt-H2
 <a id="markdown_2"></a>
 ### Emphasis <a href="#top">&#8593;</a>
 
+Nothing to add to this. It is just to benefit from basic layout with markdown.
+
+*Directly cut and paste from [Markdown Cheatsheet- List of all the markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) by Adam Pritchard aka adam-p from memo [https://crypti.cc/](https://crypti.cc/). Thanks Adam for the work you have done!*
+
+
 ```
 Emphasis, aka italics, with *asterisks* or _underscores_.
 
@@ -92,22 +97,24 @@ Strikethrough uses two tildes. Scratch this.
 
 <a id="markdown_3"></a>
 ### Lists <a href="#top">&#8593;</a>
+
+*Directly cut and paste from [Markdown Cheatsheet- List of all the markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) by Adam Pritchard aka adam-p from memo [https://crypti.cc/](https://crypti.cc/). Thanks Adam for the work you have done!*
+
 (In this example, leading and trailing spaces are shown with with dots: ⋅)
 
 ```
 1. First ordered list item
 2. Another item
-⋅⋅* Unordered sub-list. 
+  * Unordered sub-list. 
 1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
+  1. Ordered sub-list
 4. And another item.
 
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
 
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-
+   To have a line break without a paragraph, you will need to use two trailing spaces.  
+   Note that this line is separate, but within the same paragraph.  
+   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
 * Unordered list can use asterisks
 - Or minuses
 + Or pluses
@@ -131,6 +138,9 @@ Strikethrough uses two tildes. Scratch this.
 
 <a id="markdown_4"></a>
 ### Links
+
+Same. Thanks Adam for [Markdown Cheatsheet- List of all the markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
 There are two ways to create links.
 
 ```
@@ -181,8 +191,7 @@ Some text to show that the reference links can follow later.
 
 <a id="markdown_5"></a>
 ### Images
-
-Here is an image with a link and an alt message for the image:
+The reference here is different. Here is an image with a link and an alt message for the image:
 
 ```
 [![The good and small "Zambian" guide for WordPress. How to run a News Website with WordPress?](cover_book-small-guide-zambia-wordpress-running-news-website_400x640.png)](https://www.amazon.com/dp/B08645F8DZ/)
@@ -200,7 +209,8 @@ Here is an image with a link and an alt message for the image:
 ```
 <a id="markdown_6"></a>
 ### Code and Syntax Highlighting
-Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and Markdown Here -- support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. Markdown Here supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the highlight.js demo page.
+
+Le truc le meixu du Markdown, le syntax highlighting qui eclaire parfois un code cryptic.
 
 ```
 Inline `code` has `back-ticks around` it.
@@ -208,7 +218,8 @@ Inline `code` has `back-ticks around` it.
 
 Inline code has back-ticks around it.
 
-Blocks of code are either fenced by lines with three back-ticks ```, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
+
+I only use the three back-ticks ``` and add the language if required e.g ```ruby``` ```php```
 
 ``` ruby
 # testing the baseline on the frontoffice
