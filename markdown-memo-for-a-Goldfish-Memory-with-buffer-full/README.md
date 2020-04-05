@@ -333,14 +333,13 @@ But let's throw in a <b>tag</b>.
 
 <a id="markdown_7"></a>
 ### Tables
-Nice to make table to present in columns and rows. Like a a table in HTML.
-
+Nice to make a table to present in columns and rows your content when necessary. It is handy like a table in HTML.
 
 ```
 Colons can be used to align columns.
 
 | Source               | Abbreviation  | Filename                          |
-| -------------        | ------------- | -------------                     |
+| :-------------     : |: ------------:|: --------------                  :|
 | WordpressFrontOffice | WpFront       | WpFrontCest.php                   |
 | WordpressBackOffice  | WpBack        | WpBackCest.php or WpAdminCest.php |
 
