@@ -201,9 +201,9 @@ The reference here is different. Here is an image with a link and an alt message
 [![The good and small "Zambian" guide for WordPress. How to run a News Website with WordPress?](cover_book-small-guide-zambia-wordpress-running-news-website_400x640.png)](https://www.amazon.com/dp/B08645F8DZ/)
 
 *Extract form BOOK #2 "The good and small "Zambian" guide for WordPress. How to run a News Website with WordPress?"*
-[Amazon:]( https://www.amazon.com/dp/B08645F8DZ/)
-[Github:]( https://bit.ly/2IPYu0a)
-[Youtube:]( https://bit.ly/3bDSF2x)
+- [Amazon:]( https://www.amazon.com/dp/B08645F8DZ/)
+- [Github:]( https://bit.ly/2IPYu0a)
+- [Youtube:]( https://bit.ly/3bDSF2x)
 
 
 <a id="markdown_6"></a>
@@ -266,9 +266,9 @@ I need to see the default WordPress site description
 
 ```
 *Extract from BOOK #2 "Defining a testing automation strategy for a P.O. with CODECEPTION_ & WordPress"*
-[Amazon:]( https://www.amazon.com/dp/B0864VS2Y6/)
-[Github:]( https://bit.ly/3cYu5L3)
-[Youtube:]( https://bit.ly/2UAGTic)
+- [Amazon:]( https://www.amazon.com/dp/B0864VS2Y6/)
+- [Github:]( https://bit.ly/3cYu5L3)
+- [Youtube:]( https://bit.ly/2UAGTic)
 
 
 **php**
@@ -286,9 +286,9 @@ class FirstCest
 }
 ```
 *Extract from BOOK #2 "Defining a testing automation strategy for a P.O. with CODECEPTION_ & WordPress"*
-[Amazon:]( https://www.amazon.com/dp/B0864VS2Y6/)
-[Github:]( https://bit.ly/3cYu5L3)
-[Youtube:]( https://bit.ly/2UAGTic)
+- [Amazon:]( https://www.amazon.com/dp/B0864VS2Y6/)
+- [Github:]( https://bit.ly/3cYu5L3)
+- [Youtube:]( https://bit.ly/2UAGTic)
 
 
 **javascript**
@@ -313,9 +313,9 @@ exports.config = {
 ```
 
 *Extract from BOOK #3 "Redefining a testing automation strategy for a P.O. with CodeceptJS & WordPress"*
-[Amazon:]( https://www.amazon.com/dp/B0865TT96K/)
-[Github:]( https://bit.ly/2wUoAfU)
-[Youtube:]( https://bit.ly/2UpWsdZ)
+- [Amazon:]( https://www.amazon.com/dp/B0865TT96K/)
+- [Github:]( https://bit.ly/2wUoAfU)
+- [Youtube:]( https://bit.ly/2UpWsdZ)
 
 **html**
 ``` html
@@ -347,9 +347,9 @@ XPATH selector for site description: //*[@id="masthead"]/div/div/p
 ```
 
 *Extract from BOOK #2 "Defining a testing automation strategy for a P.O. with CODECEPTION_ & WordPress"*
-[Amazon:]( https://www.amazon.com/dp/B0864VS2Y6/)
-[Github:]( https://bit.ly/3cYu5L3)
-[Youtube:]( https://bit.ly/2UAGTic)
+- [Amazon:]( https://www.amazon.com/dp/B0864VS2Y6/)
+- [Github:]( https://bit.ly/3cYu5L3)
+- [Youtube:]( https://bit.ly/2UAGTic)
 
 ```
 No language indicated, so no syntax highlighting in Markdown Here (varies on Github). 
@@ -377,11 +377,11 @@ Colons can be used to align columns.
 | WordpressBackOffice  | WpBack        | WpBackCest.php or WpAdminCest.php |
 
 
-| Source        | Abbreviation           | Filename  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Source               | Abbreviation    | Filename                          | 
+| -------------        | :-------------: | ----------:                       | 
+| WordpressFrontOffice | WpFront         | WpFrontCest.php                   | 
+| WordpressBackOffice  | WpBack          | WpBackCest.php or WpAdminCest.php | 
+
 
 ```
 
@@ -393,17 +393,16 @@ Colons can be used to align columns.
 
 Colons can be used to align columns.
 
-| Source        | Abbreviation           | Filename  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
+| Source               | Abbreviation    | Filename                          | 
+| -------------        | :-------------: | ----------:                       | 
+| WordpressFrontOffice | WpFront         | WpFrontCest.php                   | 
+| WordpressBackOffice  | WpBack          | WpBackCest.php or WpAdminCest.php | 
+  
 
 *Extract from BOOK #2 "Defining a testing automation strategy for a P.O. with CODECEPTION_ & WordPress"*
-[Amazon:]( https://www.amazon.com/dp/B0864VS2Y6/)
-[Github:]( https://bit.ly/3cYu5L3)
-[Youtube:]( https://bit.ly/2UAGTic)
+- [Amazon:]( https://www.amazon.com/dp/B0864VS2Y6/)
+- [Github:]( https://bit.ly/3cYu5L3)
+- [Youtube:]( https://bit.ly/2UAGTic)
 
 
 <a id="markdown_8"></a>
@@ -492,9 +491,9 @@ I have discovered this chunk and it is useful. As nobody read anymore but rather
 
 
 *Extract from BOOK #3 "Redefining a testing automation strategy for a P.O. with CodeceptJS & WordPress"*
-[Amazon:]( https://www.amazon.com/dp/B0865TT96K/)
-[Github:]( https://bit.ly/2wUoAfU)
-[Youtube:]( https://bit.ly/2UpWsdZ)
+- [Amazon:]( https://www.amazon.com/dp/B0865TT96K/)
+- [Github:]( https://bit.ly/2wUoAfU)
+- [Youtube:]( https://bit.ly/2UpWsdZ)
 
 <a id="markdown_11"></a>
 ### Directory tree
@@ -570,9 +569,9 @@ This one I like the most with color coding or syntax highlight.
 ```
 
 *Extract from BOOK #2 "Defining a testing automation strategy for a P.O. with CODECEPTION_ & WordPress"*
-[Amazon:]( https://www.amazon.com/dp/B0864VS2Y6/)
-[Github:]( https://bit.ly/3cYu5L3)
-[Youtube:]( https://bit.ly/2UAGTic)
+- [Amazon:]( https://www.amazon.com/dp/B0864VS2Y6/)
+- [Github:]( https://bit.ly/3cYu5L3)
+- [Youtube:]( https://bit.ly/2UAGTic)
 
 <a id="markdown_12"></a>
 ### ASCII Art
