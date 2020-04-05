@@ -377,6 +377,12 @@ Colons can be used to align columns.
 | WordpressBackOffice  | WpBack        | WpBackCest.php or WpAdminCest.php |
 
 
+| Source        | Abbreviation           | Filename  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 ```
 
 | Source               | Abbreviation  | Filename                          |
@@ -387,11 +393,11 @@ Colons can be used to align columns.
 
 Colons can be used to align columns.
 
-| Source               | Abbreviation  | Filename                          |
-| -------------        |: -----------: | -------------                    :|
-| WordpressFrontOffice | WpFront       | WpFrontCest.php                   |
-| WordpressBackOffice  | WpBack        | WpBackCest.php or WpAdminCest.php |
-
+| Source        | Abbreviation           | Filename  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 
 *Extract from BOOK #2 "Defining a testing automation strategy for a P.O. with CODECEPTION_ & WordPress"*
