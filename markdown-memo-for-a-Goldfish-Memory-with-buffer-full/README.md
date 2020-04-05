@@ -429,7 +429,7 @@ Colons can be used to align columns or shoeing a title on the left or right for 
 Not my favorite, but useful sometimes.
 
 ```
-> Blockquotes are very handy in email to emulate reply text.
+> Blockquotes are very handy underline a specific text or a quote from a major author for instance
 > 
 > S'éprouver dans l’injonction à parler de soi est une manière d’obéir.
 > 
@@ -448,9 +448,9 @@ Quote break.
 ```
 
 
-> Blockquotes are very handy in email to emulate reply text.
+> Blockquotes are very handy underline a specific text or a quote from a major author for instance
 > 
-> S'éprouver dans l’injonction à parler de soi est une manière d’obéir.
+> S'éprouver dans l'injonction à parler de soi est une manière d’obéir.
 > 
 > **Michel Foucault**
 
@@ -463,6 +463,7 @@ Quote break.
 
 > _Il s'est marié par raison et est tombé amoureux de son argent_ **Un ami lucide**
 > 
+
  
 <a id="markdown_9"></a>
 ### Horizontal Rule
