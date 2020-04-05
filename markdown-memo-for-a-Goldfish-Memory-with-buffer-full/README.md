@@ -1,6 +1,6 @@
 <a id="top"></a>
 # Markdown memo for a "Goldfish Memory" with buffer full
-So here is the principles cute-and-paste that I am awlays looking as I have a Goldfish memory for everything, including markdown.
+So here are the principles "cute-and-paste" that I am always looking as I have a Goldfish memory for everything, including Markdown.
 
 
 **The memo is a copycat of the excellent memo done by Adam Pritchard aka adam-p from [https://crypti.cc/](https://crypti.cc/). Thanks Adam for the work you have done!**
@@ -163,7 +163,7 @@ example.com (but not on Github, for example).
 Some text to show that the reference links can follow later.
 
 [arbitrary case-insensitive reference text]: https://www.flaven.fr
-[1]: http://slashdot.org
+[1]: https://www.flaven.fr
 [link text itself]: https://www.flaven.fr
 ```
 
@@ -186,7 +186,7 @@ example.com (but not on Github, for example).
 Some text to show that the reference links can follow later.
 
 [arbitrary case-insensitive reference text]: https://www.flaven.fr
-[1]: http://slashdot.org
+[1]: https://www.flaven.fr
 [link text itself]: https://www.flaven.fr
 
 <a id="markdown_5"></a>
@@ -203,7 +203,7 @@ The reference here is different. Here is an image with a link and an alt message
 <a id="markdown_6"></a>
 ### Code and Syntax Highlighting
 
-Le truc le meixu du Markdown, le syntax highlighting qui eclaire parfois un code cryptic.
+The best thing about Markdown, the highlighting syntax or color syntax that sometimes lights up a cryptic code. A an eternal Rookie Code, I love this feature.
 
 ```
 Inline `code` has `back-ticks around` it.
