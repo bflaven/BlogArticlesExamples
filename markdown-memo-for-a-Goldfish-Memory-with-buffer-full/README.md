@@ -348,7 +348,7 @@ Colons can be used to align columns.
 Colons can be used to align columns.
 
 | Source               | Abbreviation  | Filename                          |
-| -------------        | ------------- | -------------                     |
+| :-------------     : |: ------------:|: --------------                  :|
 | WordpressFrontOffice | WpFront       | WpFrontCest.php                   |
 | WordpressBackOffice  | WpBack        | WpBackCest.php or WpAdminCest.php |
 
