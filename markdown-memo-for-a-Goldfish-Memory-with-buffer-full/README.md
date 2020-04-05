@@ -363,38 +363,60 @@ Nice to make a table to present in columns and rows your content when necessary.
 
 ```
 
+
+*Table_1*
 | Source               | Abbreviation  | Filename                          |
 | -------------        | ------------- | -------------                     |
 | WordpressFrontOffice | WpFront       | WpFrontCest.php                   |
 | WordpressBackOffice  | WpBack        | WpBackCest.php or WpAdminCest.php |
 
 
-Colons can be used to align columns.
+
+Colons can be used to align columns or shoeing a title on the left or right for example
 
 
+*Table_2*
 | Source               | Abbreviation    | Filename                          | 
-| -------------        | :-------------: | ----------:                       | 
+| -------------        | :-------------: |:----------:                       | 
 | WordpressFrontOffice | WpFront         | WpFrontCest.php                   | 
 | WordpressBackOffice  | WpBack          | WpBackCest.php or WpAdminCest.php | 
+
+
+*Table_3*
+| Source               | Abbreviation   | Filename                          | 
+| -------------:       | -------------: | ----------:                       | 
+| WordpressFrontOffice | WpFront        | WpFrontCest.php                   | 
+| WordpressBackOffice  | WpBack         | WpBackCest.php or WpAdminCest.php | 
 
 
 ```
 
 
+*Table_1*
 | Source               | Abbreviation  | Filename                          |
 | -------------        | ------------- | -------------                     |
 | WordpressFrontOffice | WpFront       | WpFrontCest.php                   |
 | WordpressBackOffice  | WpBack        | WpBackCest.php or WpAdminCest.php |
 
 
-Colons can be used to align columns.
+
+Colons can be used to align columns or shoeing a title on the left or right for example
 
 
+*Table_2*
 | Source               | Abbreviation    | Filename                          | 
 | -------------        | :-------------: |:----------:                       | 
 | WordpressFrontOffice | WpFront         | WpFrontCest.php                   | 
 | WordpressBackOffice  | WpBack          | WpBackCest.php or WpAdminCest.php | 
-  
+
+
+*Table_3*
+| Source               | Abbreviation   | Filename                          | 
+| -------------:       | -------------: | ----------:                       | 
+| WordpressFrontOffice | WpFront        | WpFrontCest.php                   | 
+| WordpressBackOffice  | WpBack         | WpBackCest.php or WpAdminCest.php | 
+
+
 
 *Extract from BOOK #2 "Defining a testing automation strategy for a P.O. with CODECEPTION_ & WordPress"*
 - [Amazon:]( https://www.amazon.com/dp/B0864VS2Y6/)
