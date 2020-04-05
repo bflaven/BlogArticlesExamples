@@ -394,7 +394,7 @@ Colons can be used to align columns.
 
 
 
-*Extract form BOOK #2 "Defining a testing automation strategy for a P.O. with CODECEPTION_ & WordPress"*
+*Extract from BOOK #2 "Defining a testing automation strategy for a P.O. with CODECEPTION_ & WordPress"*
 [Amazon:]( https://www.amazon.com/dp/B0864VS2Y6/)
 [Github:]( https://bit.ly/3cYu5L3)
 [Youtube:]( https://bit.ly/2UAGTic)
@@ -563,7 +563,7 @@ This one I like the most with color coding or syntax highlight.
 
 ```
 
-*Extract form BOOK #2 "Defining a testing automation strategy for a P.O. with CODECEPTION_ & WordPress"*
+*Extract from BOOK #2 "Defining a testing automation strategy for a P.O. with CODECEPTION_ & WordPress"*
 [Amazon:]( https://www.amazon.com/dp/B0864VS2Y6/)
 [Github:]( https://bit.ly/3cYu5L3)
 [Youtube:]( https://bit.ly/2UAGTic)
