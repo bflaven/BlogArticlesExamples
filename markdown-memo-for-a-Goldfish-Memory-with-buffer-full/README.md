@@ -371,11 +371,6 @@ Nice to make a table to present in columns and rows your content when necessary.
 
 Colons can be used to align columns.
 
-| Source               | Abbreviation  | Filename                          |
-| -------------        |: -----------: | -------------                    :|
-| WordpressFrontOffice | WpFront       | WpFrontCest.php                   |
-| WordpressBackOffice  | WpBack        | WpBackCest.php or WpAdminCest.php |
-
 
 | Source               | Abbreviation    | Filename                          | 
 | -------------        | :-------------: | ----------:                       | 
@@ -385,6 +380,7 @@ Colons can be used to align columns.
 
 ```
 
+
 | Source               | Abbreviation  | Filename                          |
 | -------------        | ------------- | -------------                     |
 | WordpressFrontOffice | WpFront       | WpFrontCest.php                   |
@@ -392,6 +388,7 @@ Colons can be used to align columns.
 
 
 Colons can be used to align columns.
+
 
 | Source               | Abbreviation    | Filename                          | 
 | -------------        | :-------------: | ----------:                       | 
