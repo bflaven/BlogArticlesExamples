@@ -3,11 +3,11 @@
 
 
 ## take-aways, benefits
-- image quality: no trade-off with image quality and time-consuming task to work on image. 
-- docker: automation, industrialization, CI, sharable and maintainable.
-- open source: imagemagick free saving money and time, less training, no licensing
-- user-experience: Above saving time to work for the editorial team, time to write and think. Same usages allow better support. 
-- illusration:  show progress from craft usage to industrial usage. How Docker can help you in that?
+**- Image quality:** no trade-off with image quality and reducing time-consuming task to work on image. 
+**- Docker:** good empiric introduction to automation, industrialization, CI, with a sharable and maintainable environment.
+**- Open Source:** imagemagick, Docker are free. It is saving money and time, less training, no licensing. There is only the learning curb that may cost you time. No Pain No Gain!
+**- User-Experience:** above all saving time to work for the editorial team, time to write and think. Same usages allow better support. 
+**- Textbook case:** It is a pragmatic textbook case to show progress from craft usage to industrial usage and how Docker can help you in that?
 
 
 
