@@ -15,6 +15,34 @@
 
 *Extra: An extra manual written for the training in Zambia, one year ago, on Imagemagick and Photoshop. See images_treatment_photoshop_imagemagick_docker*
 
+## videos
+
+**All the videos are available on YouTube in this playlist: [https://cutt.ly/Mt8EIW6](https://cutt.ly/Mt8EIW6)**
+
+
+- [Video #1 Quick intro on Bulk processing images, DevOps solution (Imagemagick, Docker) vs Craft solution (Photoshop)](https://www.youtube.com/watch?v=jh7WwTrfH8o)
+[![Video #1 Quick intro on Bulk processing images, DevOps solution (Imagemagick, Docker) vs Craft solution (Photoshop)](001_bulk_image_intro.png)](https://www.youtube.com/watch?v=jh7WwTrfH8o)
+
+
+- [Video #2 Bulk processing images using a Craft solution with Photoshop & AppleScript](https://www.youtube.com/watch?v=Xm_r_f25tVE)
+[![Video #2 Bulk processing images using a Craft solution with Photoshop & AppleScript](002_bulk_image_photoshop.png)](https://www.youtube.com/watch?v=Xm_r_f25tVE)
+
+
+- [Video #3 Bulk processing images using a semi-automated solution with Imagemagick & Homebrew](https://www.youtube.com/watch?v=YTnU4R89Oho)
+[![Video #3 Bulk processing images using a semi-automated solution with Imagemagick & Homebrew](003_bulk_image_local_homebrew_imagemagick.png)](https://www.youtube.com/watch?v=YTnU4R89Oho)
+
+
+
+- [Video #4 Bulk processing images using a DevOps solution Imagemagick & Docker](https://www.youtube.com/watch?v=riegHyfg1FA)
+[![Video #4 Bulk processing images using a DevOps solution Imagemagick & Docker](004_bulk_image_local_imagemagick_docker_pull_dpokidov_imagemagick.png)](https://www.youtube.com/watch?v=riegHyfg1FA)
+
+
+
+- [Video #5 Bulk processing images advanced practices for a DevOps solution, using Imagemagick & Docker, insights on Makefile, Dockerfile](https://www.youtube.com/watch?v=mPxrV51lRkw)
+[![Video #5 Bulk processing images advanced practices for a DevOps solution, using Imagemagick & Docker, insights on Makefile, Dockerfile](005_bulk_image_local_imagemagick_docker_pull_dpokidov_imagemagick.png)](https://www.youtube.com/watch?v=mPxrV51lRkw)
+
+
+
 
 ## Create the environment
 **1. launch the console**
