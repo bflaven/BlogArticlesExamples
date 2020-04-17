@@ -4,11 +4,14 @@
 
 ## take-aways, benefits
 **- Image quality:** no trade-off with image quality and reducing time-consuming task to work on image.
-**- Docker:** good empiric introduction to automation, industrialization, CI, with a sharable and maintainable environment.
-**- Open Source:** imagemagick, Docker are free. It is saving money and time, less training, no licensing. There is only the learning curb that may cost you time. No Pain No Gain!
-**- User-Experience:** above all saving time to work for the editorial team, time to write and think. Same usages allow better support.
-**- Textbook case:** It is a pragmatic textbook case to show progress from craft usage to industrial usage and how Docker can help you in that?
 
+**- Docker:** good empiric introduction to automation, industrialization, CI, with a sharable and maintainable environment.
+
+**- Open Source:** imagemagick, Docker are free. It is saving money and time, less training, no licensing. There is only the learning curb that may cost you time. No Pain No Gain!
+
+**- User-Experience:** above all saving time to work for the editorial team, time to write and think. Same usages allow better support.
+
+**- Textbook case:** It is a pragmatic textbook case to show progress from craft usage to industrial usage and how Docker can help you in that?
 
 *Extra: An extra manual written for the training in Zambia, one year ago, on Imagemagick and Photoshop. See images_treatment_photoshop_imagemagick_docker*
 
