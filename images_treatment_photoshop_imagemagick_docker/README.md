@@ -10,6 +10,8 @@
 **- Textbook case:** It is a pragmatic textbook case to show progress from craft usage to industrial usage and how Docker can help you in that?
 
 
+*Extra: An extra manual written for the training in Zambia, one year ago, on Imagemagick and Photoshop. See images_treatment_photoshop_imagemagick_docker*
+
 
 ## Create the environment
 **1. launch the console**
