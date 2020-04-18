@@ -41,21 +41,21 @@ listq:
 
 # make stop (stop all containers)
 stop:
-	@echo "\n--- stop all containers ---\n\n"
-	# docker stop $(docker ps -a -q)
-	@docker stop $$(docker images -aq)
+	@echo "\n--- copy and paste manually the command to stop all containers ---\n\n"
+	# docker stop $(docker ps -a -q) ## you can type manually this command :)
+	## @docker stop $$(docker images -aq) ## not working
 
 # make rmc (remove all containers)
 rmc:
-	@echo "\n--- remove all containers ---\n\n"
-	# docker rm -f $(docker ps -aq)
-	@docker rm -f $$(docker ps -aq)
+	@echo "\n--- copy and paste manually the command to remove all containers ---\n\n"
+	# docker rm -f $(docker ps -aq) ## you can type manually this command :)
+	# @docker rm -f $$(docker ps -aq) ## not working
 
 # make rmi (remove all containers)
 rmi:
-	@echo "\n--- remove all images ---\n\n"
-	# docker rmi -f $(docker images -aq)
-	@docker rmi -f $$(docker images -aq)
+	@echo "\n--- copy and paste manually the command to remove all images ---\n\n"
+	# docker rmi -f $(docker images -aq) ## you can type manually this command :)
+	# @docker rmi -f $$(docker images -aq) ## not working
 
 # make prune (nuke them all)
 prune:
