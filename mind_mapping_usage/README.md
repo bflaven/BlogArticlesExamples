@@ -10,16 +10,13 @@ Some info about Mind Mapping and practical advice to use it. Tht is the stuff us
 
 ## Some take-aways
 
+
+**What could be better than Mind Mapping to answer the question "What is Mind Mapping?".**
+
 **mm_by_mm_good.png made with a tool called [Brainio](https://brainio.com/)**
 [![What is Mind Mapping explained by MM itself (french)](mm_by_mm_good.png)](http://flaven.fr/2020/05/mind-mapping-learn-better-and-be-more-creative-with-mind-mapping-a-small-introduction-to-mind-mapping/)
 
-
-
-**mm_mindmap_nice_example_time_management_good.png: nice association of MM and graphic facilitation. &copy; mindmapsunleashed.com**
-[![text](mm_mindmap_nice_example_time_management_good.png)](http://flaven.fr/2020/05/mind-mapping-learn-better-and-be-more-creative-with-mind-mapping-a-small-introduction-to-mind-mapping/)
-
-
-**ugly_map_good.png: The "ugly" readme file.**
+**ugly_map_good.png: The "ugly" readme file that need to be replaced by MM.**
 [![text](ugly_map_good.png)](http://flaven.fr/2020/05/mind-mapping-learn-better-and-be-more-creative-with-mind-mapping-a-small-introduction-to-mind-mapping/)
 
 ## Idea for workshop
@@ -54,3 +51,8 @@ Some info about Mind Mapping and practical advice to use it. Tht is the stuff us
 
 **mm_whatis_apple_mm.png: What is an apple? (Qu'est-ce qu'une pomme ?) Good exercise to introduce MM principles: imagination and association**
 [![text](mm_whatis_apple_mm.png)](http://flaven.fr/2020/05/mind-mapping-learn-better-and-be-more-creative-with-mind-mapping-a-small-introduction-to-mind-mapping/)
+
+## artwork
+
+**mm_mindmap_nice_example_time_management_good.png: nice association of MM and graphic facilitation. &copy; mindmapsunleashed.com**
+[![text](mm_mindmap_nice_example_time_management_good.png)](http://flaven.fr/2020/05/mind-mapping-learn-better-and-be-more-creative-with-mind-mapping-a-small-introduction-to-mind-mapping/)
