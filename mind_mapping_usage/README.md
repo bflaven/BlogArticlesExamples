@@ -8,8 +8,7 @@ Some info about Mind Mapping and practical advice to use it. Tht is the stuff us
 **Thanks to Prisca for her question on MM.**
 
 
-## take-aways, benefits
-
+## Some take-aways
 
 **mm_by_mm_good.png made with a tool called [Brainio](https://brainio.com/)**
 [![What is Mind Mapping explained by MM itself (french)](mm_by_mm_good.png)](http://flaven.fr/2020/05/mind-mapping-learn-better-and-be-more-creative-with-mind-mapping-a-small-introduction-to-mind-mapping/)
@@ -20,19 +19,17 @@ Some info about Mind Mapping and practical advice to use it. Tht is the stuff us
 [![text](mm_mindmap_nice_example_time_management_good.png)](http://flaven.fr/2020/05/mind-mapping-learn-better-and-be-more-creative-with-mind-mapping-a-small-introduction-to-mind-mapping/)
 
 
-**mm_whatis_apple_mm.png: What is an apple? (Qu'est-ce qu'une pomme ?) Good exercise to introduce MM principles: imagination and association**
-[![text](mm_whatis_apple_mm.png)](http://flaven.fr/2020/05/mind-mapping-learn-better-and-be-more-creative-with-mind-mapping-a-small-introduction-to-mind-mapping/)
+**ugly_map_good.png: The "ugly" readme file.**
+[![text](ugly_map_good.png)](http://flaven.fr/2020/05/mind-mapping-learn-better-and-be-more-creative-with-mind-mapping-a-small-introduction-to-mind-mapping/)
 
+## Idea for workshop
+**To experiment imagination and association**
 
-**nice_map_inside.png: Even though I am absolute fanatic of readme I must admit that with a MM drawing it is much appealing, I should even say sexy.**
+**nice_map_inside.png: Even though I am absolute fanatic of readme I must admit that with a MM drawing it is much appealing, I should even say sexy, much more glamourous and quite effective. Made with a tool called [Brainio](https://brainio.com/)**
 [![text](nice_map_inside.png)](http://flaven.fr/2020/05/mind-mapping-learn-better-and-be-more-creative-with-mind-mapping-a-small-introduction-to-mind-mapping/)
 
 
-**ugly_map_good.png: Ah, much more glamourous and quite effective.**
-[![text](ugly_map_good.png)](http://flaven.fr/2020/05/mind-mapping-learn-better-and-be-more-creative-with-mind-mapping-a-small-introduction-to-mind-mapping/)
-
-
-**mm_whatis_apple_mm_brainio.md: The "ugly" readme file that is the source in French of What is an apple? (Qu'est-ce qu'une pomme ?) Good exercise to introduce MM principles: imagination and association**
+**mm_whatis_apple_mm_brainio.md: The "ugly" readme file that is the source in French of What is an apple? (Qu'est-ce qu'une pomme ?) Good exercise to introduce MM principles: imagination and association. Made with a tool called [Brainio](https://brainio.com/)**
 
 ```
 # Qu'est-ce qu'une pomme ?
@@ -55,3 +52,5 @@ Some info about Mind Mapping and practical advice to use it. Tht is the stuff us
 ```
 
 
+**mm_whatis_apple_mm.png: What is an apple? (Qu'est-ce qu'une pomme ?) Good exercise to introduce MM principles: imagination and association**
+[![text](mm_whatis_apple_mm.png)](http://flaven.fr/2020/05/mind-mapping-learn-better-and-be-more-creative-with-mind-mapping-a-small-introduction-to-mind-mapping/)
