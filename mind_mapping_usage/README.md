@@ -16,7 +16,7 @@ Some info about Mind Mapping and practical advice to use it. Tht is the stuff us
 
 
 
-**mm_mindmap_nice_example_time_management_good.png: nice association of MM and graphic facilitation**
+**mm_mindmap_nice_example_time_management_good.png: nice association of MM and graphic facilitation. &copy; mindmapsunleashed.com**
 [![text](mm_mindmap_nice_example_time_management_good.png)](http://flaven.fr/2020/05/mind-mapping-learn-better-and-be-more-creative-with-mind-mapping-a-small-introduction-to-mind-mapping/)
 
 
