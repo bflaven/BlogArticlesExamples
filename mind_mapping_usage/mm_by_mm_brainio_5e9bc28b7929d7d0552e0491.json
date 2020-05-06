@@ -1,0 +1,384 @@
+{
+  "name": "Qu'est-ce que le MindMapping ?",
+  "children": [
+    {
+      "name": "THÉORIE",
+      "children": [
+        {
+          "name": "Double Objectif",
+          "children": [
+            {
+              "name": "S'améliorer",
+              "children": [
+                {
+                  "name": "Capacités",
+                  "children": [
+                    {
+                      "name": "Expliquer",
+                      "children": [],
+                      "metadata": {
+                        "type": "list",
+                        "level": 1
+                      }
+                    }
+                  ],
+                  "metadata": {
+                    "type": "header",
+                    "level": 5,
+                    "classList": [
+                      "highlight-4"
+                    ]
+                  }
+                },
+                {
+                  "name": "Efficacité",
+                  "children": [
+                    {
+                      "name": "Apprendre",
+                      "children": [],
+                      "metadata": {
+                        "type": "list"
+                      }
+                    }
+                  ],
+                  "metadata": {
+                    "type": "header",
+                    "level": 5,
+                    "classList": [
+                      "highlight-4"
+                    ]
+                  }
+                }
+              ],
+              "collapsed": false,
+              "metadata": {
+                "type": "header",
+                "level": 4,
+                "classList": [
+                  "highlight-5"
+                ]
+              }
+            },
+            {
+              "name": "Simultané",
+              "children": [
+                {
+                  "name": "Faire",
+                  "children": [
+                    {
+                      "name": "Action",
+                      "children": [],
+                      "metadata": {
+                        "type": "list",
+                        "level": 1
+                      }
+                    },
+                    {
+                      "name": "Mouvement",
+                      "children": [],
+                      "metadata": {
+                        "type": "list"
+                      }
+                    }
+                  ],
+                  "metadata": {
+                    "type": "header",
+                    "level": 5,
+                    "classList": [
+                      "highlight-4"
+                    ]
+                  }
+                },
+                {
+                  "name": "Penser",
+                  "children": [
+                    {
+                      "name": "Visuel",
+                      "children": [],
+                      "metadata": {
+                        "type": "list",
+                        "level": 1
+                      }
+                    },
+                    {
+                      "name": "Image",
+                      "children": [],
+                      "metadata": {
+                        "type": "list"
+                      }
+                    }
+                  ],
+                  "metadata": {
+                    "type": "header",
+                    "level": 5,
+                    "classList": [
+                      "highlight-4"
+                    ]
+                  }
+                }
+              ],
+              "metadata": {
+                "type": "header",
+                "level": 4,
+                "classList": [
+                  "highlight-5"
+                ]
+              }
+            }
+          ],
+          "collapsed": false,
+          "metadata": {
+            "type": "header",
+            "level": 3,
+            "classList": [
+              "highlight-2"
+            ]
+          }
+        },
+        {
+          "name": "Cerveau",
+          "children": [
+            {
+              "name": "Aider",
+              "children": [
+                {
+                  "name": "Libre",
+                  "children": [],
+                  "metadata": {
+                    "type": "list",
+                    "level": 1,
+                    "classList": [
+                      "highlight-4"
+                    ]
+                  }
+                },
+                {
+                  "name": "Personel",
+                  "children": [],
+                  "metadata": {
+                    "type": "list",
+                    "level": 1,
+                    "classList": [
+                      "highlight-4"
+                    ]
+                  }
+                }
+              ],
+              "collapsed": false,
+              "metadata": {
+                "type": "header",
+                "level": 4,
+                "classList": [
+                  "highlight-5"
+                ]
+              }
+            },
+            {
+              "name": "Jouer",
+              "children": [
+                {
+                  "name": "Imagination",
+                  "children": [],
+                  "metadata": {
+                    "type": "list",
+                    "level": 1,
+                    "classList": [
+                      "highlight-4"
+                    ]
+                  }
+                },
+                {
+                  "name": "Association",
+                  "children": [],
+                  "metadata": {
+                    "type": "list",
+                    "classList": [
+                      "highlight-4"
+                    ]
+                  }
+                }
+              ],
+              "metadata": {
+                "type": "header",
+                "level": 4,
+                "classList": [
+                  "highlight-5"
+                ]
+              }
+            }
+          ],
+          "metadata": {
+            "type": "header",
+            "level": 3,
+            "classList": [
+              "highlight-2"
+            ]
+          }
+        }
+      ],
+      "metadata": {
+        "type": "header",
+        "level": 2,
+        "classList": [
+          "highlight-1"
+        ]
+      }
+    },
+    {
+      "name": "PRATIQUE",
+      "children": [
+        {
+          "name": "Comment ?",
+          "children": [
+            {
+              "name": "Feuille Blanche",
+              "children": [
+                {
+                  "name": "Horizontale",
+                  "children": [],
+                  "metadata": {
+                    "classList": [
+                      "highlight-4"
+                    ]
+                  }
+                },
+                {
+                  "name": "Sujet",
+                  "children": [
+                    {
+                      "name": "Centre",
+                      "children": [],
+                      "metadata": {}
+                    }
+                  ],
+                  "metadata": {
+                    "classList": [
+                      "highlight-4"
+                    ],
+                    "type": "header",
+                    "level": 5
+                  }
+                },
+                {
+                  "name": "Mots-Clés",
+                  "children": [
+                    {
+                      "name": "Rayon",
+                      "children": [],
+                      "metadata": {}
+                    }
+                  ],
+                  "metadata": {
+                    "classList": [
+                      "highlight-4"
+                    ],
+                    "type": "header",
+                    "level": 5
+                  }
+                },
+                {
+                  "name": "Connections",
+                  "children": [
+                    {
+                      "name": "Branches",
+                      "children": [],
+                      "metadata": {}
+                    }
+                  ],
+                  "metadata": {
+                    "classList": [
+                      "highlight-4"
+                    ],
+                    "type": "header",
+                    "level": 5
+                  }
+                }
+              ],
+              "collapsed": false,
+              "metadata": {
+                "type": "header",
+                "level": 4,
+                "classList": [
+                  "highlight-5"
+                ]
+              }
+            }
+          ],
+          "metadata": {
+            "type": "header",
+            "level": 3,
+            "classList": [
+              "highlight-2"
+            ]
+          }
+        },
+        {
+          "name": "Pourquoi ?",
+          "children": [
+            {
+              "name": "\"Couteau Suisse\"",
+              "children": [
+                {
+                  "name": "Récupération",
+                  "children": [],
+                  "metadata": {
+                    "classList": [
+                      "highlight-4"
+                    ]
+                  }
+                },
+                {
+                  "name": "Situations",
+                  "children": [],
+                  "metadata": {
+                    "classList": [
+                      "highlight-4"
+                    ]
+                  }
+                },
+                {
+                  "name": "Explications",
+                  "children": [],
+                  "metadata": {
+                    "classList": [
+                      "highlight-4"
+                    ]
+                  }
+                }
+              ],
+              "metadata": {
+                "type": "header",
+                "level": 4,
+                "classList": [
+                  "highlight-5"
+                ]
+              }
+            }
+          ],
+          "metadata": {
+            "type": "header",
+            "level": 3,
+            "classList": [
+              "highlight-2"
+            ]
+          }
+        }
+      ],
+      "metadata": {
+        "type": "header",
+        "level": 2,
+        "classList": [
+          "highlight-1"
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "type": "header",
+    "level": 1,
+    "mode": "split",
+    "classList": [
+      "highlight-4"
+    ]
+  }
+}
