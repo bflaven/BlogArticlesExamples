@@ -1,4 +1,3 @@
-
 # Python, Anaconda, Worpress, JSON, JSON-SCHEMA - Messy post with few practices and feedback from my P.O experience.
 
 Some eclectic feedback, mix of files, comments and experiments.
