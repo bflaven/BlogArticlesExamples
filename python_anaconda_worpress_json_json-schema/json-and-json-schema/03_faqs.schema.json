@@ -1,0 +1,68 @@
+{
+    "type": "object",
+    "required": [
+        "items"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "items": {
+            "$id": "#/properties/items",
+            "type": "object",
+            "required": [
+                "item"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "item": {
+                    "type": "array",
+                    "additionalItems": true,
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/items/properties/item/items/anyOf/0",
+                                "type": "object",
+                                "required": [
+                                    "id",
+                                    "title",
+                                    "content",
+                                    "keywords",
+                                    "isVisible"
+                                ],
+                                "additionalProperties": true,
+                                "properties": {
+                                    "id": {
+                                        "$id": "#/properties/items/properties/item/items/anyOf/0/properties/id",
+                                        "type": "string"                                    },
+                                    "title": {
+                                        "$id": "#/properties/items/properties/item/items/anyOf/0/properties/title",
+                                        "type": "string"                                    },
+                                    "content": {
+                                        "$id": "#/properties/items/properties/item/items/anyOf/0/properties/content",
+                                        "type": "string"                                    },
+                                    "keywords": {
+                                        "$id": "#/properties/items/properties/item/items/anyOf/0/properties/keywords",
+                                        "type": "array",
+                                        "additionalItems": true,
+                                        "items": {
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/items/properties/item/items/anyOf/0/properties/keywords/items/anyOf/0",
+                                                    "type": "string"                                                }
+                                            ],
+                                            "$id": "#/properties/items/properties/item/items/anyOf/0/properties/keywords/items"
+                                        }
+                                    },
+                                    "isVisible": {
+                                        "$id": "#/properties/items/properties/item/items/anyOf/0/properties/isVisible",
+                                        "enum": ["true", "false"],
+                                        "type": "boolean"                                    }
+                                }
+                            }
+                        ],
+                        "$id": "#/properties/items/properties/item/items"
+                    }
+                }
+            }
+        }
+    }
+}
