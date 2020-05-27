@@ -1,4 +1,3 @@
-
 # Mind Mapping, learn better and be more creative with Mind Mapping, a small introduction to Mind Map
 
 Some info about Mind Mapping and practical advice to use it. Tht is the stuff used in the article.
