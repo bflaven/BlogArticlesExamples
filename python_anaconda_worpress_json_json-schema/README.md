@@ -1,10 +1,9 @@
-# Python, Anaconda, Worpress, JSON, JSON-SCHEMA - Messy post with few practices and feedback from my P.O experience.
+# Python, Anaconda, WordPress, JSON, JSON-SCHEMA - Messy post with few practices and feedback from my P.O experience.
 
-Some eclectic feedback, mix of files, comments and experiments.
+Some eclectic feedback, mix of files, comments and experiments from my P.O point of view aka P.O.P.O.V :)
 
-<!-- 
-[title](link)
- -->
+[Python, Anaconda, WordPress, JSON, JSON-SCHEMA – Messy post with few practices and feedback from my P.O experience.](http://flaven.fr/2020/05/python-anaconda-worpress-json-json-schema-messy-post-with-few-practices-and-feedback-from-my-p-o-experience/)
+
 
 
 ## Some take-aways
