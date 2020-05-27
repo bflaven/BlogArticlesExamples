@@ -82,6 +82,7 @@ jsonschema -i 03_faqs.json 03_faqs.schema.json
 
 ```
 
+
 ###Some elements in PHP for WordPress
 The plugin Pippin Williamson's WP plugin. See Pippin Williamson's WP plugin in pippinsplugins_import_export_feature_3.php or the article at [Building a settings import and export feature](http://pippinsplugins.com/building-settings-import-export-feature/)
 
