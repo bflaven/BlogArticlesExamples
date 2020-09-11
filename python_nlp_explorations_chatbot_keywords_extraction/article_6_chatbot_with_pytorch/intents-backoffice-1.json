@@ -1,0 +1,103 @@
+{
+  "intents": [{
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "tutorials",
+      "patterns": [
+        "Existe-t-il des tutoriaux vidéo ?",
+        "Y-a-t-il une aide en ligne tutoriaux vidéo ?",
+        "Y-a-t-il des tutoriaux vidéo ?",
+        "J'ai besoin d'aide",
+        "Je ne me souviens plus de comment le backoffice fonctionne ",
+        "Peut-on avoir une formation au backoffice ?",
+        "Comment comprendre le fonctionnement du backoffice ?"
+      ],
+      "responses": [
+        "Oui, à ce jour il existe 3 playlists Youtube",
+        "Oui, vous avez des videos en français et en anglais",
+        "Oui, à ce jour, il existe plus de 50 vidéos d'aide en ligne"
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "Est-ce que l'on poser une question ?",
+        "J'ai vu un bug",
+        "Comment signaler un bug ?",
+        "Je veux vous signaler un bug",
+        "Il y a un truc qui marche pas",
+        "Y-a-t-il une méthode à suivre pour nous signaler un bug ?",
+        "Comment fait-on pour vous signaler un bug ?",
+        "Comment nous remonter un bug ?"
+      ],
+      "responses": [
+        "Oui, vous pouvez nous envoyer un mail avec votre question",
+        "Oui, pour les bugs envoyez-nous un mail",
+        "Oui, Si vous voyez un bug, vous pouvez nous le signaler par mail.",
+        "Oui, envoyer un mail avec votre question avec une explication succincte c’est à dire pas plus de 5 lignes pour décrire votre problème."
+      ]
+    },
+
+    {
+      "tag": "frontend",
+      "patterns": [
+        "Comme auteur, pourquoi mon nom n'est pas cliquable sur site web ?",
+        "Comme auteur, pourquoi je n'ai ni photo, ni mon compte twitter sur ma page de résultat de tag sur le Site web ?",
+        "Comme auteur, pourquoi je ne vois pas toutes mes créations de contenu (articles, éditions) attachés à mon nom ?",
+        "Comme auteur, je ne vois pas le contenu à mon nom",
+        "Où est ma page auteur ?",
+        "Comme auteur, où je suis sur le site front ?",
+        "Comme auteur, je veux un lien sur mon nom",
+        "Est-il possible de rajouter son compte twitter",
+        "Est-il possible de rajouter son compte facebook",
+        "Pourquoi ma page auteur n'a pas un bon SEO",
+        "Où puis-je mettre ma biographie ?",
+        "Je ne me trouve pas dans Google en tapant mon nom",
+        "Dans les moteurs de recherche on, me trouve",
+        "Mon référencement sur le site est nul"
+      ],
+      "responses": [
+        "Comme auteur, vous devez créer un contenu type TagMetadata attaché à votre nom (Tag Auteur).",
+        "Pour le SEO, en créant un contenu de type TagMetadata dans le backoffice attaché à votre nom (Tag Auteur), votre nom deviendra cliquable.",
+        "Pour créer un contenu type TagMetadata, il faut avoir le rôle ADMINISTRATEUR dans backoffice.",
+        "Votre nom est désormais cliquable car vous avez créée et attaché à votre tag auteur un contenu type TagMetadata.",
+        "Vous pouvez désormais augmenter votre page TagMetadata avec votre compte Twitter, une biographie ainsi qu'une photo.",
+        "Une fois enregistrés, tous ces éléments apparaitront ensuite sur votre de page de résultat de tag auteur avec les contenus attachés à votre nom.",
+        "Historiquement, il est possible que deux tags auteurs existent.",
+        "Il faut donc transférer tout le contenu attaché à un tag vers le tag que vous souhaitez conserver à l'aide de l’outil de fusion de tags.",
+        "Seuls les administrateurs ont accès à cette fonctionnalité de fusion des tags."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    }
+
+
+  ]
+}
