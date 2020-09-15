@@ -52,7 +52,8 @@ def bag_of_words(tokenized_sentence, words):
 
     return bag
 
-sentence = "J’aimais manger le cul de Prisca, puis délicatement glisser ma bite dans son anus humecté. Je poussais mon chibre loin à l’intérieur afin que mes couilles viennent se lovés dans la crevasse de son postérieur. Ne tenant plus, je la pressais de se retourner et je jouissais abondamment dans sa bouche, insouciante qu'elle de sa propre merde! Qui éventuellement marbrait le gland de la dite-bite."
+
+sentence = "No way man. Let me explain the situation. In the Backoffice, which I am dealing with, is hosting thousand of “unqualified” images that contains faces of: Donald Trump, Xi Jinping, Angela Merkel, Boris Johnson, Emmanuel Macron, Vladimir Poutine, Recep Tayyip Erdoğan or less kwnown poeple in an european centric point of view: Macky Sall, Rodrigo Duterte, Ramzan Kadyrov, Hun Sen, Narendra Modi, Hassan Rohani, Stevo Pendarovski, Nicolás Maduro, Edgar Lungu…"
 
 print ("\n --- HUMAN \,,/(^_^)\,,/ --- \n")
 print(sentence)
