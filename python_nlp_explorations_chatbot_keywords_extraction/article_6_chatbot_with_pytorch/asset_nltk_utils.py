@@ -53,10 +53,10 @@ def bag_of_words(tokenized_sentence, words):
     return bag
 
 
-sentence = "No way man. Let me explain the situation. In the Backoffice, which I am dealing with, is hosting thousand of \"unqualified\" images that contains faces of: Donald Trump, Xi Jinping, Angela Merkel, Boris Johnson, Emmanuel Macron, Vladimir Poutine, Recep Tayyip Erdoğan or less kwnown poeple in an european centric point of view: Macky Sall, Rodrigo Duterte, Ramzan Kadyrov, Hun Sen, Narendra Modi, Hassan Rohani, Stevo Pendarovski, Nicolás Maduro, Edgar Lungu…"
+sentence = "[...] Let me explain the situation. In the Backoffice, which I am dealing with, is hosting thousand of “unqualified” images that contains faces of: Donald Trump, Xi Jinping, Angela Merkel, Boris Johnson, Emmanuel Macron, Vladimir Poutine, Recep Tayyip Erdoğan or less kwnown poeple in an european centric point of view: Macky Sall, Rodrigo Duterte, Ramzan Kadyrov, Hun Sen, Narendra Modi, Hassan Rohani, Stevo Pendarovski, Nicolás Maduro, Edgar Lungu…"
 
 print ("\n --- HUMAN \,,/(^_^)\,,/ --- \n")
-print(sentence)
+#print(sentence)
 
 
 
@@ -64,7 +64,7 @@ print ("\n --- ROBOT d[ o_0 ]b --- \n")
 
 # tokenize
 sentence = tokenize(sentence)
-print(sentence)
+#print(sentence)
 print ("\n")
 
 # stem
