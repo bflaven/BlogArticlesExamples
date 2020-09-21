@@ -1,5 +1,6 @@
 {
-  "intents": [{
+  "intents": [
+    {
       "tag": "greeting",
       "patterns": [
         "Hi",
@@ -19,73 +20,76 @@
     {
       "tag": "tutorials",
       "patterns": [
-        "Existe-t-il des tutoriaux vidéo ?",
-        "Y-a-t-il une aide en ligne tutoriaux vidéo ?",
-        "Y-a-t-il des tutoriaux vidéo ?",
-        "J'ai besoin d'aide",
-        "Je ne me souviens plus de comment le backoffice fonctionne ",
-        "Peut-on avoir une formation au backoffice ?",
-        "Comment comprendre le fonctionnement du backoffice ?"
+        "Are there video tutorials?",
+        "Is there a video tutorial online help?",
+        "Are there video tutorials?",
+        "I need help",
+        "I don't remember how the backoffice works",
+        "Can we have training at the back office?",
+        "How to understand the functioning of the back office?"
       ],
       "responses": [
-        "Oui, à ce jour il existe 3 playlists Youtube",
-        "Oui, vous avez des videos en français et en anglais",
-        "Oui, à ce jour, il existe plus de 50 vidéos d'aide en ligne"
+        "Yes, to date there are 3 Youtube playlists",
+        "Yes, you have videos in French and in English",
+        "Yes, to date there are over 50 online help videos"
       ]
     },
     {
       "tag": "feedback",
       "patterns": [
-        "Est-ce que l'on poser une question ?",
-        "J'ai vu un bug",
-        "Comment signaler un bug ?",
-        "Je veux vous signaler un bug",
-        "Il y a un truc qui marche pas",
-        "Y-a-t-il une méthode à suivre pour nous signaler un bug ?",
-        "Comment fait-on pour vous signaler un bug ?",
-        "Comment nous remonter un bug ?"
+        "Shall we ask a question?",
+        "I saw a bug",
+        "How do I report a bug?",
+        "I want to report a bug",
+        "There is something that doesn't work",
+        "Is there a method for reporting a bug?",
+        "How do we report a bug?",
+        "How do we report a bug?"
       ],
       "responses": [
-        "Oui, vous pouvez nous envoyer un mail avec votre question",
-        "Oui, pour les bugs envoyez-nous un mail",
-        "Oui, Si vous voyez un bug, vous pouvez nous le signaler par mail.",
-        "Oui, envoyer un mail avec votre question avec une explication succincte c’est à dire pas plus de 5 lignes pour décrire votre problème."
+        "Yes, you can send us an email with your question",
+        "Yes, for bugs send us an email",
+        "Yes, if you see a bug you can report it to us by email.",
+        "Yes, send an email with your question with a short explanation, ie no more than 5 lines to describe your problem."
       ]
     },
-
     {
       "tag": "frontend",
       "patterns": [
-        "Comme auteur, pourquoi mon nom n'est pas cliquable sur site web ?",
-        "Comme auteur, pourquoi je n'ai ni photo, ni mon compte twitter sur ma page de résultat de tag sur le Site web ?",
-        "Comme auteur, pourquoi je ne vois pas toutes mes créations de contenu (articles, éditions) attachés à mon nom ?",
-        "Comme auteur, je ne vois pas le contenu à mon nom",
-        "Où est ma page auteur ?",
-        "Comme auteur, où je suis sur le site front ?",
-        "Comme auteur, je veux un lien sur mon nom",
-        "Est-il possible de rajouter son compte twitter",
-        "Est-il possible de rajouter son compte facebook",
-        "Pourquoi ma page auteur n'a pas un bon SEO",
-        "Où puis-je mettre ma biographie ?",
-        "Je ne me trouve pas dans Google en tapant mon nom",
-        "Dans les moteurs de recherche on, me trouve",
-        "Mon référencement sur le site est nul"
+        "As an author, why is my name not clickable on the website?",
+        "As an author, why do I have neither a photo nor my twitter account on my tag result page on the Website?",
+        "As an author, why don't I see all my content creations (articles, editions) attached to my name?",
+        "As an author, I do not see the content in my name",
+        "Where is my author page?",
+        "As an author, where am I on the front site?",
+        "As an author, I want a link on my name",
+        "Is it possible to add your twitter account",
+        "Is it possible to add your facebook account",
+        "Why does my author page not have good SEO",
+        "Where can I put my biography?",
+        "I can't find myself in Google by typing my name",
+        "In search engines like Google you can find me",
+        "My referencing on the site sucks"
       ],
       "responses": [
-        "Comme auteur, vous devez créer un contenu type TagMetadata attaché à votre nom (Tag Auteur).",
-        "Pour le SEO, en créant un contenu de type TagMetadata dans le backoffice attaché à votre nom (Tag Auteur), votre nom deviendra cliquable.",
-        "Pour créer un contenu type TagMetadata, il faut avoir le rôle ADMINISTRATEUR dans backoffice.",
-        "Votre nom est désormais cliquable car vous avez créée et attaché à votre tag auteur un contenu type TagMetadata.",
-        "Vous pouvez désormais augmenter votre page TagMetadata avec votre compte Twitter, une biographie ainsi qu'une photo.",
-        "Une fois enregistrés, tous ces éléments apparaitront ensuite sur votre de page de résultat de tag auteur avec les contenus attachés à votre nom.",
-        "Historiquement, il est possible que deux tags auteurs existent.",
-        "Il faut donc transférer tout le contenu attaché à un tag vers le tag que vous souhaitez conserver à l'aide de l’outil de fusion de tags.",
-        "Seuls les administrateurs ont accès à cette fonctionnalité de fusion des tags."
+        "As an author, you must create a TagMetadata type content attached to your name (Author Tag).",
+        "For SEO, by creating TagMetadata type content in the backoffice attached to your name (Author Tag), your name will become clickable.",
+        "To create a TagMetadata type content, you must have the ADMINISTRATOR role in the backoffice.",
+        "Your name is now clickable because you have created and attached a TagMetadata type content to your author tag.",
+        "You can now expand your TagMetadata page with your Twitter account, a biography and a photo.",
+        "Once saved, all of these will then appear on your author tag result page with the content attached to your name.",
+        "Historically, it is possible that two author tags exist.",
+        "You must therefore transfer all the content attached to a tag to the tag you want to keep using the tag merge tool.",
+        "Only administrators have access to this tag merge feature."
       ]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
       "responses": [
         "See you later, thanks for visiting",
         "Have a nice day",
@@ -94,10 +98,17 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ]
     }
-
-
   ]
 }
