@@ -9,6 +9,25 @@ After facial recognition, I am tackling language issues with Python. Indeed, aft
 Source: <a href="http://flaven.fr/2020/09/quick-overview-about-using-nlp-for-a-cms-customer-support-faqs-turn-to-a-chatbot-or-cms-editorial-features-for-journalist-keywords-extraction-using-spacy-rake-tensorflow-pytorch/" target="_blank">http://flaven.fr/2020/09/quick-overview-about-using-nlp-for-a-cms-customer-support-faqs-turn-to-a-chatbot-or-cms-editorial-features-for-journalist-keywords-extraction-using-spacy-rake-tensorflow-pytorch/</a>
 
 
+## Videos
+
+**All the videos are available on YouTube in this playlist: [https://cutt.ly/Mt8EIW6](https://cutt.ly/Mt8EIW6)**
+
+- [Video #9 Part 1, Quick overview about using NLP for a CMS Customer Support (FAQs turn to a Chatbot) or CMS editorial features for Journalist (Keywords Extraction) using spaCy, Rake, TensorFlow, Pytorch](https://www.youtube.com/watch?v=LNqYJzeHhPw)
+[![Video #9 Part 1, Quick overview about using NLP for a CMS Customer Support (FAQs turn to a Chatbot) or CMS editorial features for Journalist (Keywords Extraction) using spaCy, Rake, TensorFlow, Pytorch](python_nlp_explorations_chatbot_keywords_extraction_part_1_9.png)](https://www.youtube.com/watch?v=LNqYJzeHhPw)
+
+
+- [Video #10 Part 2, Quick overview about using NLP for a CMS Customer Support (FAQs turn to a Chatbot) or CMS editorial features for Journalist (Keywords Extraction) using spaCy, Rake, TensorFlow, Pytorch](https://www.youtube.com/watch?v=g1B8kxQrhh0)
+[![Video #10 Part 2, Quick overview about using NLP for a CMS Customer Support (FAQs turn to a Chatbot) or CMS editorial features for Journalist (Keywords Extraction) using spaCy, Rake, TensorFlow, Pytorch](python_nlp_explorations_chatbot_keywords_extraction_part_2_10.png)](https://www.youtube.com/watch?v=g1B8kxQrhh0)
+
+
+
+- [Video #11 - Part 3, Quick overview about using NLP for a CMS Customer Support (FAQs turn to a Chatbot) or CMS editorial features for Journalist (Keywords Extraction) using spaCy, Rake, TensorFlow, Pytorch](https://www.youtube.com/watch?v=h5RELqZV2AU)
+[![Video #11 - Part 3, Quick overview about using NLP for a CMS Customer Support (FAQs turn to a Chatbot) or CMS editorial features for Journalist (Keywords Extraction) using spaCy, Rake, TensorFlow, Pytorch](python_nlp_explorations_chatbot_keywords_extraction_part_3_11.png)](https://www.youtube.com/watch?v=h5RELqZV2AUs)
+
+
+
+
 
 
 
