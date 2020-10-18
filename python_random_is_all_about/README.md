@@ -1,4 +1,4 @@
-# random_is_all_about
+# Python, Randomization, E2E - it's all about Random and some good reasons to learn and leverage on Python (random_is_all_about)
 
 **Some files extracted from the post on how to introduce easily randomization in a e2E2 testing suite.**
 
