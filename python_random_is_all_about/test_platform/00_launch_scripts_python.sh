@@ -8,8 +8,13 @@ echo "\n"
 echo "\033[1;33m ### START ### \033[0m"
 echo "\n"
 
-# lauch the script
+# LAUCH THE SCRIPT
+
+echo "\n python 01_shuffle_array.py"
 python 01_shuffle_array.py
+
+echo "\n python 02_shuffle_array.py"
+python 02_shuffle_array.py
 
 echo "\n"
 echo "\033[1;33m ### ALL DONE ### \033[0m"
