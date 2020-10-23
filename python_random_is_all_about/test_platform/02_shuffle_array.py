@@ -7,7 +7,7 @@
 
 
 cd /Users/brunoflaven/Documents/02_copy/_random_is_all_about
-python3 01_shuffle_array.py
+python3 02_shuffle_array.py
 
 
 """
@@ -16,6 +16,11 @@ import os
 import sys
 import random
 
+# import files
+from insert_filenames_list import file_names
+
+
+
 # Set the correct values for your path and script
 #VALUES
 my_path = '/Users/brunoflaven/Documents/02_copy/_random_is_all_about/test_platform/e2e/'
@@ -23,8 +28,6 @@ my_path = '/Users/brunoflaven/Documents/02_copy/_random_is_all_about/test_platfo
 
 
 # print('\n ORIGINAL')
-file_names = ['file_1.py', 'file_2.py',
-                 'file_3.py', 'file_4.py', 'file_5.py']
 # print("Original list:", file_names)
 
 # print('\n SHUFFLE')
