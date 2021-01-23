@@ -1,5 +1,7 @@
 # Fake News Detection in Python using Natural language processing - Can applied computing help a journalist in automatic fact-checking ?
 
+
+## Explanations
 **A quick intro on how to use more specifically Natural Language Processing (NLP) to detect Fake News for a possibles journalist usage.**
 
 
@@ -28,17 +30,20 @@
 └── picture_6_output_words_per_article.png # script's output
 ```
 
-- [Fake News Detection Using NLP](https://medium.com/swlh/fake-news-detection-using-nlp-e744a6909276)
 
-- [FAKE NEWS DETECTION USING NLP AND MACHINE LEARNING IN PYTHON](https://wisdomml.com/fake-news-detection-using-nlp-and-machine-learning/)
+## Sources
+- Fake News Detection Using NLP (https://medium.com/swlh/fake-news-detection-using-nlp-e744a6909276)
 
-
-*The dataset can be found at https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset (https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)*
-
-
-*Thanks to Chase Thompson for sharing this post. Connect with Chase Thompson on LinkedIn: https://www.linkedin.com/in/wchasethompson (https://www.linkedin.com/in/wchasethompson)*
+- FAKE NEWS DETECTION USING NLP AND MACHINE LEARNING IN PYTHON (https://wisdomml.com/fake-news-detection-using-nlp-and-machine-learning/)
 
 
+- *The dataset can be found at https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset (https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)*
+
+
+- *Thanks to Chase Thompson for sharing this post. Connect with Chase Thompson on LinkedIn: https://www.linkedin.com/in/wchasethompson (https://www.linkedin.com/in/wchasethompson)*
+
+
+## Script comments for fake_news_nlp_detection_2.py
 
 1. I have reduced the sample just because my mac is almost dyinh when I am loading the dataset.
 ```python
