@@ -1,4 +1,4 @@
-# Fake News Detection in Python using Natural language processing - Can applied computing help a journalist in automatic fact-checking ?
+# Fake News Detection in Python using Natural language processing - Can applied computing help a journalist in automatic fact-checking?
 
 
 ## Explanations
@@ -43,7 +43,7 @@
 - *Thanks to Chase Thompson for sharing this post. Connect with Chase Thompson on LinkedIn: https://www.linkedin.com/in/wchasethompson (https://www.linkedin.com/in/wchasethompson)*
 
 
-## Script comments for fake_news_nlp_detection_2.py
+## Script's comments for fake_news_nlp_detection_2.py
 
 1. I have reduced the sample just because my mac is almost dyinh when I am loading the dataset.
 ```python
