@@ -1,15 +1,14 @@
 # Fake News Detection in Python using Natural language processing - Can applied computing help a journalist in automatic fact-checking?
 
+**A quick intro on how to use more specifically Natural Language Processing (NLP) to detect Fake News for a possible journalist usage. The post is available at http://flaven.fr/2021/01/fake-news-detection-in-python-using-natural-language-processing-can-applied-computing-help-a-journalist-in-automatic-fact-checking/ (http://flaven.fr/2021/01/fake-news-detection-in-python-using-natural-language-processing-can-applied-computing-help-a-journalist-in-automatic-fact-checking/).**
 
-## Explanations
-**A quick intro on how to use more specifically Natural Language Processing (NLP) to detect Fake News for a possibles journalist usage.**
+## Files Info
 
+The files are the following. Due to the size of the dataset, I remove it from the directory TrueBigSample.csv, FakeBigSample.csv. The dataset can be found at https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset (https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset).
 
-**The files are the following. Due to the size of the dataset, I remove it from the directory TrueBigSample.csv, FakeBigSample.csv. The dataset can be found at https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset (https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset).**
+The images picture_1 to picture_6 have been generated with this BIG dataset (TrueBigSample.csv, FakeBigSample.csv)
 
-**The images picture_1 to picture_6 have been generated with this BIG dataset (TrueBigSample.csv, FakeBigSample.csv)**
-
-**The small and medium dataset are here just to perform quickly the script without burning down my Mac.**
+The small and medium dataset are here just to perform quickly the script without burning down my Mac.
 
 
 ```
@@ -91,4 +90,14 @@ print (sample_true)
 print("\n--- sample_true only 20")
 print(sample_true)
 ```
+
+## Screen captures
+
+
+- Screen capture #1 for fake_news_nlp_detection_2.py[![Screen capture #1 for fake_news_nlp_detection_2.py](fake_news_nlp_detection_2_screencapture_1.png)](http://flaven.fr/2021/01/fake-news-detection-in-python-using-natural-language-processing-can-applied-computing-help-a-journalist-in-automatic-fact-checking/)
+
+
+- Screen capture #2 for fake_news_nlp_detection_2.py [![Screen capture #2 for fake_news_nlp_detection_2.py](fake_news_nlp_detection_2_screencapture_2.png)](http://flaven.fr/2021/01/fake-news-detection-in-python-using-natural-language-processing-can-applied-computing-help-a-journalist-in-automatic-fact-checking/)
+
+
 
