@@ -20,7 +20,7 @@ If you want to leverage on MySQL, you have to create a DB named `yolo_images` an
 
 ```
 ├── README.md
-├── config # all confg for YOLO
+├── config # all confg for YOLO. Do not forget to REPLACE_IT_yolov3.weights.txt by the real yolov3.weights
 ├── images # images used in Object Detection with YOLO
 ├── mysql_yolo_advanced_images_1.sql # the MySQL DB dump
 ├── python_mysql_1.py # how-to insert a MySQL record in python
