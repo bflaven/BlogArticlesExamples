@@ -25,8 +25,8 @@ db = mysql.connect(
 
 
 # -- MySQL ROOT Password local
-# root: A*lmT8DePan08Wdiqg
-# 127.0.0.1
+# root: xxx
+# 127.0.0.1 b better used localhost
 
 cursor = db.cursor()
 
