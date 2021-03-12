@@ -127,8 +127,8 @@ def post_process(img, outputs, conf):
 
 
 # -- MySQL ROOT Password local
-# root: xxx
-# 127.0.0.1 b better used localhost
+# root: put-your-mysql-password
+# 127.0.0.1 b better use localhost
 
             cursor = db.cursor()
             # print(cursor)
