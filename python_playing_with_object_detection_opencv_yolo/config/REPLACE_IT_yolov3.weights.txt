@@ -1,1 +1,2 @@
 File_1 : In order to run the network, you will have to download the pre-trained YOLO weight file (237 MB) at https://pjreddie.com/media/files/yolov3.weights
+The filename must be yolov3.weights
