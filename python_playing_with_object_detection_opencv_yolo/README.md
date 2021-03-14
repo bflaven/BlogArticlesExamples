@@ -37,8 +37,6 @@ If you want to leverage on MySQL, you have to create a DB named `yolo_images` an
 
 **The video about this article is available on YouTube: [https://bit.ly/2WPlpAU]**
 
-
-
 - [Video #12 - Improve a CMS's photos library with AI Object Detection with OpenCv and YOLO](https://www.youtube.com/watch?v=6wgrY8YC4QQ)
 [![Video #12 - Improve a CMS's photos library with AI Object Detection with OpenCv and YOLO](video_object_detection_from_images_in_python_with_opencv_and_yolo.png)](https://www.youtube.com/watch?v=6wgrY8YC4QQ)
 
