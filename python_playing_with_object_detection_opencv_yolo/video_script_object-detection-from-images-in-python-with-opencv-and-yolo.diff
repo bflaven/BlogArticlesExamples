@@ -1,0 +1,135 @@
+
++ (1) MORE :: Illustration to further than the article's conclusion
+
+Let's see how-to install and use the YOLO library like I explain in my article.
+
+- HOW-TO
+Open the console, go to the dir...
+cd /Users/brunoflaven/Documents/01_work/demo/python_playing_with_object_detection_opencv_yolo
+
+
+--- Source: http://flaven.fr/2021/03/improve-a-cmss-photos-library-qualification-with-ai-object-detection-from-images-in-python-with-opencv-and-yolo/
+
+--- Github: https://github.com/bflaven/BlogArticlesExamples/tree/master/python_playing_with_object_detection_opencv_yolo
+
+
++ (2) WHAT IS YOLO?
+- YOLO is an extremely fast multi object detection algorithm which uses convolutional neural network (CNN) to detect and identify objects. Maybe less sexy than the first definition but pretty useful when like me you try to increase the images library relevance categorization...
+
++ (3) FEW COMMANDS IN PYTHON
+# YOLO object detection requirements
+import cv2 as cv
+import numpy as np
+import time
+
+# to parse the directory
+import os
+
+# to import in mysql
+import mysql.connector as mysql
+</pre>
+
+I just advise to use this command to install opencv.
+<pre lang="python">
+# to install cv2 or opencv use this command
+pip install opencv-python
+
+# this command is not working
+pip install opencv
+
+
+
++ (4) REQUIREMENTS FOR YOLO: 3 FILES
+
+--- So easy to get YOLO, it requires 3 files to download:
+
+- 1. File_1 : In order to run the network, you will have to download the pre-trained YOLO weight file (237 MB). https://pjreddie.com/media/files/yolov3.weights - Download yolov3.weights
+
+
+- 2. File_2 : You have also download the the YOLO configuration file: yolov3.cfg - https://opencv-tutorial.readthedocs.io/en/latest/_downloads/10e685aad953495a95c17bfecd1649e5/yolov3.cfg - Download yolov3.cfg
+
+- 3. File_3 : Get the 80 COCO class names: coco.names - https://opencv-tutorial.readthedocs.io/en/latest/_downloads/a9fb13cbea0745f3d11da9017d1b8467/coco.names - Download coco.names
+
+--- Source: https://opencv-tutorial.readthedocs.io/en/latest/yolo/yolo.html
+
++ (5) FEW COMMANDS TO USE MYSQL
+# to connect to the db
+mysql -u root -p 
+
+# commands select and use db
+SHOW DATABASES;
+USE yolo_images;
+
+# commands select and use db
+SHOW TABLES;
+
+# describe yolo_advanced_images
+DESCRIBE yolo_advanced_images;
+DESCRIBE yolo_advanced_multilingual_images;
+
+# select a dump .sql
+SOURCE /Users/brunoflaven/Documents/01_work/demo/python_playing_with_object_detection_opencv_yolo/mysql_yolo_advanced_images_1.sql;
+
+
+
+# select all records
+SELECT COUNT(*) FROM yolo_advanced_images;
+
+# select all records
+SELECT * FROM yolo_advanced_images;
+
+# delete single image with the help of the id
+DELETE FROM yolo_advanced_images WHERE id = '96';	
+DELETE FROM yolo_advanced_images WHERE id = '97';
+
+
+# empty table
+TRUNCATE TABLE yolo_advanced_images;
+
+# drop table
+DROP TABLE yolo_advanced_images;
+DROP TABLE yolo_advanced_multilingual_images;
+
+
++ (6) VIDEO SETTINGS
+Video #12 - Improve a CMS's photos library qualification with AI Object Detection from images in Python with OpenCv and YOLO
+
+Video #12 - Improve a CMS's photos library
+qualification with AI Object Detection
+Python with OpenCv and YOLO
+
+
+	It was "Improve a CMS's photos library 
+qualification with AI, 
+Object Detection from images 
+in Python with OpenCv and YOLO" 
+
+Commented by Bruno Flaven
+http://flaven.fr/
+
+Plus que jamais, prenez soin de vous et des vôtres.
+More than ever, take care of yourself and yours.
+
+MUSIC
+"Make Love Not War" royalty free music
+Music by Patiño
+
+
+Flaven.fr March 2021
+
++ (7) IMAGE SETTINGS
+Improve a CMS's photos library 
+qualification with AI, 
+Object Detection from images 
+in Python with OpenCv and YOLO
+
+
+
+
+
+
+
+
+
+
+
