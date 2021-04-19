@@ -102,12 +102,12 @@ ludwig -h
 ## VIDEOS
 
 
-[How to build a text classifier with Ludwig](https://www.youtube.com/watch?v=Iixub4_aiLM)
-[![How to build a text classifier with Ludwig](001_using_ludwig_discovering_ia.png)](https://www.youtube.com/watch?v=Iixub4_aiLM)
+[How to build a text classifier with Ludwig](https://www.youtube.com/watch?v=YRfu23idn6Y)
+[![How to build a text classifier with Ludwig](001_using_ludwig_discovering_ia.png)](https://www.youtube.com/watch?v=YRfu23idn6Y)
 
 
-[Using a new model for a text classifier & leveraging on Ludwig Programmatic API](https://www.youtube.com/watch?v=Iixub4_aiLM)
-[![Using a new model for a text classifier & leveraging on Ludwig Programmatic API](002_using_ludwig_discovering_ia.png)](https://www.youtube.com/watch?v=Iixub4_aiLM)
+[Using a new model for a text classifier & leveraging on Ludwig Programmatic API](https://www.youtube.com/watch?v=nOW94SPo29s)
+[![Using a new model for a text classifier & leveraging on Ludwig Programmatic API](002_using_ludwig_discovering_ia.png)](https://www.youtube.com/watch?v=nOW94SPo29s)
 
 
 [Predicting a passenger's surviving probability to the Titanic disaster with Ludwig](https://www.youtube.com/watch?v=Iixub4_aiLM)
