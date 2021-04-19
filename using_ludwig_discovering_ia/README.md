@@ -102,12 +102,18 @@ ludwig -h
 ## VIDEOS
 
 
-[title](https://www.youtube.com/watch?v=Iixub4_aiLM)
-[![title](003_book_redefining_testing_strategy_agile_po_codeceptjs_usecase_4.png)](https://www.youtube.com/watch?v=Iixub4_aiLM)
+[How to build a text classifier with Ludwig](https://www.youtube.com/watch?v=Iixub4_aiLM)
+[![How to build a text classifier with Ludwig](001_using_ludwig_discovering_ia.png)](https://www.youtube.com/watch?v=Iixub4_aiLM)
 
 
-[title](https://www.youtube.com/watch?v=Iixub4_aiLM)
-[![title](003_book_redefining_testing_strategy_agile_po_codeceptjs_usecase_4.png)](https://www.youtube.com/watch?v=Iixub4_aiLM)
+[Using a new model for a text classifier & leveraging on Ludwig Programmatic API](https://www.youtube.com/watch?v=Iixub4_aiLM)
+[![Using a new model for a text classifier & leveraging on Ludwig Programmatic API](002_using_ludwig_discovering_ia.png)](https://www.youtube.com/watch?v=Iixub4_aiLM)
+
+
+[Predicting a passenger's surviving probability to the Titanic disaster with Ludwig](https://www.youtube.com/watch?v=Iixub4_aiLM)
+[![Predicting a passenger's surviving probability to the Titanic disaster with Ludwig](003_using_ludwig_discovering_ia.png)](https://www.youtube.com/watch?v=Iixub4_aiLM)
+
+
 
 
 ## EXAMPLES
