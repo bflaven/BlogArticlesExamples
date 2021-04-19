@@ -5,7 +5,7 @@
 - **Deep Learning experimentation toolbox based on TensorFlow**
 - **No coding required**
 
-## PLAY WITH LUDWIG
+## PLAYING WITH LUDWIG
 
 **Some good ressources**
 
@@ -28,7 +28,7 @@ https://w4nderlu.st/media/pages/projects/ludwig/2515616521-1603992934/ludwig_pre
     - [https://www.kaggle.com/c/titanic/data](https://www.kaggle.com/c/titanic/data)
     - [https://github.com/topics/ludwig](https://github.com/topics/ludwig)
 
-## INSTALL LUDWIG
+## LUDWIG INSTALL
 
 - Ludwig requires you to use Python 3.6+. If you don't have Python 3 installed, install it by running:
 
@@ -52,7 +52,7 @@ pip install ludwig
 ludwig -h
 ```
 
-## QUICK EXPLANATATIONS
+## FEW DEFINITIONS
 
 #### EPOCH, BATCHES... etc
 
@@ -71,7 +71,7 @@ ludwig -h
 > Suppose we have a dataset of 42,000 training examples and we divide it into batches of 600. To complete 1 epoch, it would have taken 70 (42,000 divided by 600) iterations.
 
 
-#### REQUIREMENTS FOR LUDWIG, BATCHES
+#### REQUIREMENTS FOR LUDWIG (csv + yaml)
 
 - You do not need to code to test training models. What is required by Ludwig is input and output? As an input, you need to have dataset in a .csv format plus a declarative model definition in .yaml format.
 
@@ -91,16 +91,12 @@ ludwig -h
 
 
 
-#### EXTRAS STUFF
+#### EXTRA STUFF
 - You can also visualize to compare models among them with the `visualize` command.
 
 - There is also a Programmatic API that can be used directly in python script like any python library. Check [https://ludwig-ai.github.io/ludwig-docs/api/LudwigModel/](https://ludwig-ai.github.io/ludwig-docs/api/LudwigModel/)
 
-
-
-
 ## VIDEOS
-
 [Using Ludwig, Introduction to Deep Learning - How to build a text classifier with Ludwig](https://www.youtube.com/watch?v=KtlvwtOaF8M)
 [![Using Ludwig, Introduction to Deep Learning - How to build a text classifier with Ludwig](001_using_ludwig_introduction_to_deep_learning.png)](https://www.youtube.com/watch?v=KtlvwtOaF8M)
 
@@ -111,8 +107,6 @@ ludwig -h
 
 [Using Ludwig, Introduction to Deep Learning - Predicting a passenger's surviving probability to the Titanic disaster with Ludwig](https://www.youtube.com/watch?v=dvYjpeFOk3Q)
 [![Using Ludwig, Introduction to Deep Learning - Predicting a passenger's surviving probability to the Titanic disaster with Ludwig](003_using_ludwig_introduction_to_deep_learning.png)](https://www.youtube.com/watch?v=dvYjpeFOk3Q)
-
-
 
 
 ## EXAMPLES
