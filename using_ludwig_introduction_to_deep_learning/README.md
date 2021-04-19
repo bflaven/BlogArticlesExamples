@@ -101,17 +101,16 @@ ludwig -h
 
 ## VIDEOS
 
-
-[How to build a text classifier with Ludwig](https://www.youtube.com/watch?v=xxx)
-[![How to build a text classifier with Ludwig](001_using_ludwig_discovering_ia.png)](https://www.youtube.com/watch?v=xxx)
-
-
-[Using a new model for a text classifier & leveraging on Ludwig Programmatic API](https://www.youtube.com/watch?v=xxx)
-[![Using a new model for a text classifier & leveraging on Ludwig Programmatic API](002_using_ludwig_discovering_ia.png)](https://www.youtube.com/watch?v=xxx)
+[Using Ludwig, Introduction to Deep Learning - How to build a text classifier with Ludwig](https://www.youtube.com/watch?v=KtlvwtOaF8M)
+[![Using Ludwig, Introduction to Deep Learning - How to build a text classifier with Ludwig](001_using_ludwig_discovering_ia.png)](https://www.youtube.com/watch?v=KtlvwtOaF8M)
 
 
-[Predicting a passenger's surviving probability to the Titanic disaster with Ludwig](https://www.youtube.com/watch?v=xxx)
-[![Predicting a passenger's surviving probability to the Titanic disaster with Ludwig](003_using_ludwig_discovering_ia.png)](https://www.youtube.com/watch?v=xxx)
+[Using Ludwig, Introduction to Deep Learning - Using a new model for a text classifier & leveraging on Ludwig Programmatic API](https://www.youtube.com/watch?v=MAXENuxETao)
+[![Using Ludwig, Introduction to Deep Learning - Using a new model for a text classifier & leveraging on Ludwig Programmatic API](002_using_ludwig_discovering_ia.png)](https://www.youtube.com/watch?v=MAXENuxETao)
+
+
+[Using Ludwig, Introduction to Deep Learning - Predicting a passenger's surviving probability to the Titanic disaster with Ludwig](https://www.youtube.com/watch?v=dvYjpeFOk3Q)
+[![Using Ludwig, Introduction to Deep Learning - Predicting a passenger's surviving probability to the Titanic disaster with Ludwig](003_using_ludwig_discovering_ia.png)](https://www.youtube.com/watch?v=dvYjpeFOk3Q)
 
 
 
