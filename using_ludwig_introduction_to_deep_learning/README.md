@@ -1,4 +1,4 @@
-# using_ludwig_discovering_ia
+# Using Ludwig, Introduction to Deep Learning
 
 ## QUICK DEFINITION LUDWIG
 
