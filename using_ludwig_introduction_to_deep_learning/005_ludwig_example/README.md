@@ -16,6 +16,7 @@ We will use these following commands
 
 
 **OTHER COMMANDS**
+``` bash
 evaluate :: Evaluate a pretrained model's performance
 experiment :: Runs a full experiment training a model and evaluating it
 hyperopt :: Perform hyperparameter optimization
@@ -27,7 +28,7 @@ export_savedmodel :: Exports Ludwig models to SavedModel
 export_neuropod :: Exports Ludwig models to Neuropod
 preprocess :: Preprocess data and saves it into HDF5 and JSON format
 synthesize_dataset :: Creates synthetic data for tesing purposes
-
+```
 
 - **2. experiment**
 ``` bash

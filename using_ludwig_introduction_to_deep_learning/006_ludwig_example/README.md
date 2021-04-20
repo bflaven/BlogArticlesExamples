@@ -1,8 +1,7 @@
 # 006_ludwig_example (Kaggle's Titanic)
-The famous Kaggle's Titanic: Predicting survivors with Ludwig.
-This example describes how to use Ludwig to train a model for the kaggle competition, on predicting a passenger's probability of surviving the Titanic disaster. Here's a sample of the data:
+**The famous Kaggle's Titanic: Predicting survivors with Ludwig.**
 
-*A jupyter notebook and data plus python script leveraging on the Ludwig Programmatic API.*
+This example describes how to use Ludwig to train a model for the kaggle competition, on predicting a passenger's probability of surviving the Titanic disaster. Here's the code sample with a jupyter notebook and data plus python script leveraging on the Ludwig Programmatic API.*
 
 
 **Some good ressources**
