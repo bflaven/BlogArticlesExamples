@@ -1,0 +1,21 @@
+I wanted to integrate some of the videos released since the very first lockdown on YouTube. At the least, the best I can do, it is simply publishing these personal videos to increase: brand awareness, SERP, SEO...
+
+Unfortunately, due to some security issues, I cannot inflate my personal YouTube channel with numerous videos that I made professionally so it may increase the anemic number of views 🙂
+
+You do not have to be a brilliant expert to know that Google Search Engine has taken note that videos are being among the most effective content types to reach and engage audience.
+
+I was wondering how to proceed with the minimum of work! Efficiency with less waste possible was my objective and without butchering the job!
+
+I started with a project based on JSON youtube API Calls and it end up with a WordPress Plugin made up in more or less 2 hours.
+Well, there is several explanations to the mutation:
+
+I have unemployed plugin source code for quotes that was easily converted to videos management. Massive replacement is key, just check the readme on Github.
+Leveraging on YT API was a potentiality but it means that most of the work was dedicated to coding and not to content management itself, smooth integration and user experience inside WordPress as I am running my own theme named Zaatar.
+For these 2 main reasons, I decided to go for a simple WP plugin. You can find more information on the readme on the GitHub directory.
+There is a third reason, I start to have a keen interest on Python but it is no help in dealing with my WP blog!
+
+One last word...
+I know it is a “cheap” post but after all that the purpose of this blog to keep track of what was one of my preoccupations for the last week. It is also to save some works (files essentially) on GitHub instead of deleting its when the job is done.
+
+Also, having the plugin installed online forced me to rework the design video output as the result was at first very ugly. So, some editorial ideas came out… It reminds me that issuing quickly the feature is always better than keep it until it is supposed to be perfect and most of the work was indeed on look and feel and content.
+
