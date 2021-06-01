@@ -1,10 +1,20 @@
 ## Exploring Streamlit or Dash to build specific Interactive Web Applications
 
-A quick introduction to [Streamlit](https://streamlit.io/) and [Dash](https://dash.plotly.com/)
 
-Du to the size of the CSV, you can replace accidents_2012_to_2014.csv with the real file that can be found on kaggle [@ https://www.kaggle.com/daveianhickey/2000-16-traffic-flow-england-scotland-wales?select=accidents_2012_to_2014.csv](https://www.kaggle.com/daveianhickey/2000-16-traffic-flow-england-scotland-wales?select=accidents_2012_to_2014.csv)
 
-[Read more on flaven.fr](http://flaven.fr/2021/05/exploring-streamlit-or-dash-to-build-specific-interactive-web-applications/)
+
+A quick introduction to [Streamlit](https://streamlit.io/) and [Dash](https://dash.plotly.com/). 
+
+There are 3 main objectives that are to:
+- Leveraging intensively on a low-code with library like Streamlit or Plotly Dash
+- Quickly and gently retrieving and consolidating heterogeneous data from different sources : mysql dump, csv, pickle, static json file, WP API…
+- Focusing on a very SPA (Single Page Application) approach, respecting the single idea rule: one need, one feature, one screen, one application.
+
+[Read more on flaven.fr: http://flaven.fr/2021/05/exploring-streamlit-or-dash-to-build-specific-interactive-web-applications/](http://flaven.fr/2021/05/exploring-streamlit-or-dash-to-build-specific-interactive-web-applications/)
+
+
+<i>Du to the size of the CSV, you can replace accidents_2012_to_2014.csv with the real file that can be found on kaggle [@ https://www.kaggle.com/daveianhickey/2000-16-traffic-flow-england-scotland-wales?select=accidents_2012_to_2014.csv](https://www.kaggle.com/daveianhickey/2000-16-traffic-flow-england-scotland-wales?select=accidents_2012_to_2014.csv)</i>
+
 
 
 ### install streamlit
