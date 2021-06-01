@@ -20,7 +20,7 @@ There are 3 main objectives that are to:
 ### install streamlit
 ```bash
 
-# to load te list of module install
+# to load the installed modules list 
 pip list
 
 # to install streamlit
@@ -39,7 +39,7 @@ pip install streamlit --upgrade
 ### install dash
 ```bash
 
-# to load te list of module install
+# to load the installed modules list
 pip list
 
 # to install streamlit
