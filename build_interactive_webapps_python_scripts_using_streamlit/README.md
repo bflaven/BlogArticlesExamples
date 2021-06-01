@@ -140,3 +140,14 @@ conda install -c anaconda gensim
 pip install gensim==3.8.3
 
 ```
+
+
+## VIDEOS
+[Part 1 - Exploring Streamlit or Dash to build specific Interactive Web Applications](https://www.youtube.com/watch?v=jCmL4YMQ_rs)
+[![Part 1 - Exploring Streamlit or Dash to build specific Interactive Web Applications](streamlit_build_interactive_webapps_python_scripts_using_streamlit.png)](https://www.youtube.com/watch?v=jCmL4YMQ_rs)
+
+
+[Part 2 - Exploring Streamlit or Dash to build specific Interactive Web Applications](https://www.youtube.com/watch?v=swiHcsVTxGo)
+[![Part 2 - Exploring Streamlit or Dash to build specific Interactive Web Applications](dash_build_interactive_webapps_python_scripts_using_streamlit.png)](https://www.youtube.com/watch?v=swiHcsVTxGo)
+
+
