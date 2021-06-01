@@ -13,9 +13,62 @@ There are 3 main objectives that are to:
 [Read more on flaven.fr: http://flaven.fr/2021/05/exploring-streamlit-or-dash-to-build-specific-interactive-web-applications/](http://flaven.fr/2021/05/exploring-streamlit-or-dash-to-build-specific-interactive-web-applications/)
 
 
-<i>Du to the size of the CSV, you can replace accidents_2012_to_2014.csv with the real file that can be found on kaggle [@ https://www.kaggle.com/daveianhickey/2000-16-traffic-flow-england-scotland-wales?select=accidents_2012_to_2014.csv](https://www.kaggle.com/daveianhickey/2000-16-traffic-flow-england-scotland-wales?select=accidents_2012_to_2014.csv)</i>
+*Du to the size of the CSV, you can replace accidents_2012_to_2014.csv with the real file that can be found on kaggle [@ https://www.kaggle.com/daveianhickey/2000-16-traffic-flow-england-scotland-wales?select=accidents_2012_to_2014.csv](https://www.kaggle.com/daveianhickey/2000-16-traffic-flow-england-scotland-wales?select=accidents_2012_to_2014.csv)*
+
+**Files in `02_interactive_webapps_streamlit_pandas`**
+
+```bash
+├── 001_interactive_webapps_streamlit_pandas.py
+├── 003_interactive_webapps_streamlit_pandas.py 
+├── 003a_interactive_webapps_streamlit_pandas.py 
+├── 003b_interactive_webapps_streamlit_pandas.py 
+├── 003c_interactive_webapps_streamlit_pandas.py 
+├── 004d_interactive_webapps_streamlit_pandas.py 
+├── 006_interactive_webapps_streamlit_pandas.py
+├── 007_interactive_webapps_streamlit_pandas.py
+└── data
+```
+
+**Files in `03_interactive_webapps_streamlit_nlp`**
+
+```bash
+├── 002_streamlit_for_nlp_projects_streamlit_spacy.py
+├── 003_streamlit_for_nlp_projects_text_summarization.py 
+├── bf_sample_text_1.txt # sample text
+├── capture_1_003_streamlit_for_nlp_projects_text_summarization.png
+├── capture_2_003_streamlit_for_nlp_projects_text_summarization.png
+├── capture_streamlit_for_nlp_projects_streamlit_spacy.png 
+└── cowboy_silhouette_2.png # sample image
+```
 
 
+**Files in `build_interactive_webapps_python_scripts_using_dash`**
+
+```bash
+├── 002_streamlit_for_nlp_projects_streamlit_spacy.py
+├── 003_streamlit_for_nlp_projects_text_summarization.py 
+├── bf_sample_text_1.txt # sample text
+├── capture_1_003_streamlit_for_nlp_projects_text_summarization.png
+├── capture_2_003_streamlit_for_nlp_projects_text_summarization.png
+├── capture_streamlit_for_nlp_projects_streamlit_spacy.png 
+└── cowboy_silhouette_2.png # sample image
+```
+
+
+**Files in `build_interactive_webapps_python_scripts_using_dash`**
+
+```bash
+├── 001b_plotly_interactive_webapps_dash.py
+├── 003_interactive_webapps_dash.py 
+├── 003_plotly_interactive_webapps_dash.py
+├── 004_interactive_webapps_dash.py
+├── 005_interactive_webapps_dash.py
+├── 006_interactive_webapps_dash.py 
+├── 007_interactive_webapps_dash.py 
+├── 008_interactive_webapps_dash.py 
+├── 009_interactive_webapps_dash.py
+└── README.md
+```
 
 ### install streamlit
 ```bash
