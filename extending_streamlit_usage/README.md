@@ -41,16 +41,10 @@ Some examples to see the Streamlit UX potential.
 ## VIDEOS
 [Part 1 Extending Streamlit Usage - Discovering and using Python with SQlite through the console and with sqlitebrowser](https://www.youtube.com/watch?v=QDd5QyVJIO0)[![Part 1 Extending Streamlit Usage - Discovering and using Python with SQlite through the console and with sqlitebrowser](009_countries_crud_streamlit_app_using_sqlite_1.png)](https://www.youtube.com/watch?v=QDd5QyVJIO0)
 
-
-[Part 1 Extending Streamlit Usage - Discovering and using Python with SQlite through the console and with sqlitebrowser](https://www.youtube.com/watch?v=QDd5QyVJIO0)[![Part 1 Extending Streamlit Usage - Discovering and using Python with SQlite through the console and with sqlitebrowser](009_countries_crud_streamlit_app_playing_app_2.png)](https://www.youtube.com/watch?v=QDd5QyVJIO0)
-
-[Part 1 Extending Streamlit Usage - Discovering and using Python with SQlite through the console and with sqlitebrowser](https://www.youtube.com/watch?v=QDd5QyVJIO0)[![Part 1 Extending Streamlit Usage - Discovering and using Python with SQlite through the console and with sqlitebrowser](009_countries_crud_streamlit_app_using_sqlite_1.png)](https://www.youtube.com/watch?v=QDd5QyVJIO0)
+[Part 2 Extending Streamlit Usage - Create a CRUD countries manager with Streamlit](https://www.youtube.com/watch?v=pyLvMEmcVwo)[![Part 2 Extending Streamlit Usage - Create a CRUD countries manager with Streamlit](009_countries_crud_streamlit_app_playing_app_2.png)](https://www.youtube.com/watch?v=pyLvMEmcVwo)
 
 
-<!-- [Part 2 Extending Streamlit Usage - Create a CRUD countries manager with Streamlit](https://www.youtube.com/watch?v=pyLvMEmcVwo)[![Part 2 Extending Streamlit Usage - Create a CRUD countries manager with Streamlit](009_countries_crud_streamlit_app_playing_app_2.png)](https://www.youtube.com/watch?v=pyLvMEmcVwo)
-
-
-[Part 3 Extending Streamlit Usage - Using Streamlit as a Wireframing Tool](https://www.youtube.com/watch?v=dUe_QObNXTw)[![Part 3 Extending Streamlit Usage - Using Streamlit as a Wireframing Tool](009_countries_crud_streamlit_app_playing_app_3.png)](https://www.youtube.com/watch?v=dUe_QObNXTw) -->
+[Part 3 Extending Streamlit Usage - Using Streamlit as a Wireframing Tool](https://www.youtube.com/watch?v=dUe_QObNXTw)[![Part 3 Extending Streamlit Usage - Using Streamlit as a Wireframing Tool](009_countries_crud_streamlit_app_playing_app_3.png)](https://www.youtube.com/watch?v=dUe_QObNXTw)
 
 
 
