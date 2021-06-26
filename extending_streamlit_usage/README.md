@@ -44,7 +44,7 @@ Some examples to see the Streamlit UX potential.
 [Part 2 Extending Streamlit Usage - Create a CRUD countries manager with Streamlit](https://www.youtube.com/watch?v=pyLvMEmcVwo)[![Part 2 Extending Streamlit Usage - Create a CRUD countries manager with Streamlit](009_countries_crud_streamlit_app_playing_app_2.png)](https://www.youtube.com/watch?v=pyLvMEmcVwo)
 
 
-[Part 3 Extending Streamlit Usage - Using Streamlit as a Wireframing Tool](https://www.youtube.com/watch?v=dUe_QObNXTw)[![Part 3 Extending Streamlit Usage - Using Streamlit as a Wireframing Tool](009_countries_crud_streamlit_app_playing_app_3.png)](https://www.youtube.com/watch?v=dUe_QObNXTw)
+[Part 3 Extending Streamlit Usage - Using Streamlit as a Wireframing Tool](https://www.youtube.com/watch?v=8qmKQ1nlIoA)[![Part 3 Extending Streamlit Usage - Using Streamlit as a Wireframing Tool](009_countries_crud_streamlit_app_playing_app_3.png)](https://www.youtube.com/watch?v=8qmKQ1nlIoA)
 
 
 
