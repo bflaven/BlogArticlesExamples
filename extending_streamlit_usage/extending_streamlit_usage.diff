@@ -29,7 +29,6 @@ as a Wireframing Tool
 
 - 009_countries_crud_streamlit_app
 It is to create a CRUD countries manager with Streamlit so this usecase give the main concepts to create a CRUD web application for any kind of content. It is a POC that is a proof concept that Streamlit can be used far beyond only ML or Data science application. You can make the best of it!
-
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/009_countries_crud_streamlit_app/
 
 
@@ -65,13 +64,11 @@ https://sqlite.org/index.html
 
 - 010_streamlit_design
 Some examples to see the Streamlit UX potential.
-
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/006_script_in_script/
 
 
 - 006_script_in_script
 A modest start with some Streamlit basic diversion examples. The POC is there, it remains to sophisticated the usecases. In practic, the objective should be to quickly design a web interface on the tasks management scripts to ease handling, execution and automation. A kind of Capistrano or Jenkins imitation for Newbies.
-
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/010_streamlit_design
 
 ! OTHER
