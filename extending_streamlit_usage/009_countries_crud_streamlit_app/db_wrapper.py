@@ -42,11 +42,13 @@ def get_country_by_name(name):
 	data = c.fetchall()
 	return data
 
+	
 # capital
 def get_country_by_capital(capital):
-	c.execute('SELECT * FROM countries WHERE capital="{}"'.format(capital))
-	data = c.fetchall()
-	return data
+    c.execute('SELECT * FROM countries WHERE capital="{}"'.format(capital))
+    # c.execute('SELECT * FROM countries WHERE capital LIKE "{}"'.format(capital))
+    data = c.fetchall()
+    return data
 
 # tld
 def get_country_by_tld(tld):

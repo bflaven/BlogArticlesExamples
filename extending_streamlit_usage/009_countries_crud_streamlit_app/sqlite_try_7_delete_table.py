@@ -4,7 +4,7 @@
 
 """
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/extending_streamlit_usage/009_countries_crud_streamlit_app/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/
 
 [file]
 python sqlite_try_7_delete_table.py
@@ -65,7 +65,7 @@ def delete_all_tasks(conn):
 
 def main():
     
-    database = r"/Users/brunoflaven/Documents/01_work/blog_articles/extending_streamlit_usage/009_countries_crud_streamlit_app/countries/source.db"
+    database = r"data/source.db"
 
     # create a database connection
     conn = create_connection(database)

@@ -4,7 +4,7 @@
 
 """
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/extending_streamlit_usage/009_countries_crud_streamlit_app/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/
 
 
 [file]

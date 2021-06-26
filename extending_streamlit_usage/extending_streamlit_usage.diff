@@ -1,0 +1,78 @@
++ VIDEOS
+
+
+
+! ON STAGE
+
+- 009_countries_crud_streamlit_app
+It is to create a CRUD countries manager with Streamlit so this usecase give the main concepts to create a CRUD web application for any kind of content. It is a POC that is a proof concept that Streamlit can be used far beyond only ML or Data science application. You can make the best of it!
+
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/009_countries_crud_streamlit_app/
+
++ playing with SQlite
+
+- using the console
+--- select
+sqlite3
+--- open db
+.open /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/009_countries_crud_streamlit_app/data/source.db
+--- show infos
+.tables
+.schema countries
+.dbinfo
+--- select
+SELECT * FROM countries;
+SELECT COUNT(*) FROM countries;
+--- drop tables
+DROP TABLE  countries;
+DROP TABLE  EMPLOYEE;
+--- dump
+.output /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/009_countries_crud_streamlit_app/data/source_dump_6.sql
+.dump
+
+--- import .sql
+.read /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/009_countries_crud_streamlit_app/data/source_dump_6.sql
+
++ tools for SQLite
+- DB Browser for SQLite
+https://sqlitebrowser.org/
+https://sqlite.org/index.html
+
+
+
+
+--- 009_countries_crud_streamlit_app_using_sqlite_1.mov
+--- 009_countries_crud_streamlit_app_playing_app_2.mov
+
+! OTHER
+- 001_nlp_spacy_python_realp
+A bunch of scripts extracted from an excellent article "Natural Language Processing With spaCy in Python"
+
+- 002_wamp_mysql_python
+Some experiments with WP hosted locally with XAMP and Spacy retrieving Posts from the WP MySQL database.
+
+- 003_99_ambitieuses_derwenai_spacy_tutorials
+This quick POC was made for a theater play made by in a 99 projects about Women Ambition. This analysis was made with Spacy, Pandas, Seaborn... a real case. *I have replaced the real text with article from by blog du the fact that the text was not officially released.*
+
+- 003_99_ambitieuses_text_data_analysis_for_comedians_nlp_project
+An exploration of this project that gives a lot of insights on how to cleanup text to load in a pandas dataframe.
+
+- 005_other_nlp_attempts
+An advanced NLP text classification that require a lot of install. Caution, if you do not have the correct environment it won’t work properly, it will not work especially gensim library corpus for instance e.g. glove-wiki-gigaword-50.gz
+
+
+- 006_script_in_script
+A modest start with some Streamlit basic diversion examples. The POC is there, it remains to sophisticated the usecases. In practic, the objective should be to quickly design a web interface on the tasks management scripts to ease handling, execution and automation. A kind of Capistrano or Jenkins imitation for Newbies.
+
+- 007_explore_spacy_streamlit_application
+Some nice examples using spaCy. According to Spacy, it contains "utilities for visualizing spaCy models and building interactive spaCy-powered apps with Streamlit. It includes various building blocks you can use in your own Streamlit app, like visualizers for syntactic dependencies, named entities, text classification, semantic similarity via word vectors, token attributes, and more".
+
+- 008_simple_app_spacy_example
+Some examples with Spacy only.
+
+
+
+- 010_streamlit_design
+Some examples to see the Streamlit UX potential.
+
+

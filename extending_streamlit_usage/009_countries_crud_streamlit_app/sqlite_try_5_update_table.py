@@ -4,7 +4,7 @@
 
 """
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/extending_streamlit_usage/009_countries_crud_streamlit_app/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/
 
 
 [file]
@@ -25,10 +25,6 @@ import sqlite3
 from sqlite3 import Error
 
 
-import sqlite3
-from sqlite3 import Error
-
-
 def create_connection(db_file):
     """ create a database connection to the SQLite database
         specified by the db_file
@@ -44,7 +40,7 @@ def create_connection(db_file):
     return conn
 
 
-def update_task(conn, task):
+def update_country(conn, task):
     """
     update name, tld, cca2, capital, callingCode
     :param conn:
@@ -71,7 +67,7 @@ def main():
     # create a database connection
     conn = create_connection(database)
     with conn:
-        update_task(conn, ('Nepal', '.np', 'NP', 'Kathmandu', 977, 10))
+        update_country(conn, ('Nepal', '.np', 'NP', 'Kathmandu', 977, 9))
         print("SUCCESS :: update executed with success in countries table.")
 
 

@@ -4,7 +4,7 @@
 
 """
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/extending_streamlit_usage/009_countries_crud_streamlit_app/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/
 
 
 [file]
@@ -80,11 +80,8 @@ def main():
     conn = create_connection(database)
     with conn:
         print("\n --- 1. Query country by callingcode:")
-        # Afghanistan
         # select_country_by_callingcode(conn, 93)
-        
-        # 2|Italy|.it|IT|Rome|39
-        select_country_by_callingcode(conn, 39)
+        select_country_by_callingcode(conn, 977)
         
         print("\n --- 2. Query all countries")
         select_all_countries(conn)
