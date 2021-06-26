@@ -4,7 +4,7 @@
 
 """
 [path]
-cd  /Users/brunoflaven/Documents/01_work/blog_articles/extending_streamlit_usage/streamlit_design/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/010_streamlit_design/
 
 
 [file]
@@ -69,7 +69,7 @@ with st.sidebar:
     
 st.title("Using image")
 # image Use columns to compare things side-by-side
-image = "/Users/brunoflaven/Documents/01_work/blog_articles/_010_spacy_streamlit_dataScience_apps/streamlit_app_with_spacy_nlp/garden_mountain_and_river_20.jpg"
+image = "garden_mountain_and_river_20.jpg"
 col1, col2 = st.beta_columns(2)
 
 original = Image.open(image)

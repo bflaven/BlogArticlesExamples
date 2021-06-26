@@ -4,7 +4,7 @@
 
 """
 [path]
-cd  /Users/brunoflaven/Documents/01_work/blog_articles/script_in_script/
+cd  /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/006_script_in_script/
 
 [file]
 streamlit run streamlit_command_app_7.py

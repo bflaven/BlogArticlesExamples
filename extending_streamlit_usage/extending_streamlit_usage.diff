@@ -26,6 +26,7 @@ Extending Streamlit Usage
 Using Streamlit 
 as a Wireframing Tool
 
+
 - 009_countries_crud_streamlit_app
 It is to create a CRUD countries manager with Streamlit so this usecase give the main concepts to create a CRUD web application for any kind of content. It is a POC that is a proof concept that Streamlit can be used far beyond only ML or Data science application. You can make the best of it!
 
@@ -65,6 +66,13 @@ https://sqlite.org/index.html
 - 010_streamlit_design
 Some examples to see the Streamlit UX potential.
 
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/006_script_in_script/
+
+
+- 006_script_in_script
+A modest start with some Streamlit basic diversion examples. The POC is there, it remains to sophisticated the usecases. In practic, the objective should be to quickly design a web interface on the tasks management scripts to ease handling, execution and automation. A kind of Capistrano or Jenkins imitation for Newbies.
+
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/010_streamlit_design
 
 ! OTHER
 - 001_nlp_spacy_python_realp
@@ -90,5 +98,30 @@ Some nice examples using spaCy. According to Spacy, it contains "utilities for v
 
 - 008_simple_app_spacy_example
 Some examples with Spacy only.
+
+! CREDITS
+
+Thanks for watching.
+
+Extending Streamlit Usage
+
+This video is part of the post 
+"Extending Streamlit usage to 
+create data science applications 
+and other type of applications"
+
+Check my blog @ http://www.flaven.fr
+Check my Github @ http://github.com/bflaven/
+
+Music by bensound.com
+Bensound Ukulele
+Royalty Free Music
+Visit https://www.bensound.com
+
+Plus que jamais, prenez soin de vous et des vôtres,
+Take care of yourself and the ones you loved.
+
+Flaven.fr June 2021
+
 
 

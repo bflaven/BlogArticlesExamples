@@ -11,7 +11,7 @@ cd  /Users/brunoflaven/Documents/01_work/blog_articles/script_in_script/
 [file]
 python myscriptB.py
 python myscriptB.py first 2 third 4.5
-python myscriptB.py bruno anne arthur louise
+python myscriptB.py tom bruno don marcel
 """
 
 import sys

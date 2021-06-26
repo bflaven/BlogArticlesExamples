@@ -7,16 +7,10 @@
 cd /Users/brunoflaven/Documents/01_work/blog_articles/script_in_script/
 
 [file]
-python datacamp_parsing_python_1.py abc 123
-
-(OK)
-python datacamp_parsing_python_1.py Bruno Salomon Moshe Yacov
-
-(OK)
-python datacamp_parsing_python_1.py Bruno Salomon Moshe Yacov Toto 
-
-(KO)
-python datacamp_parsing_python_1.py Bruno Salomon Moshe 
+python datacamp_parsing_python_2.py abc 123
+python datacamp_parsing_python_2.py Tom Bruno Don Marcel
+python datacamp_parsing_python_2.py Tom Bruno Don Marcel Salomon
+python datacamp_parsing_python_2.py Tom Bruno Don
 
 Source: https://www.datacamp.com/community/tutorials/argument-parsing-in-python
 
