@@ -2,6 +2,12 @@
 
 **A list of directories with dirrents type of attempts based on Streamlit**
 
+Find the article on my blog @ "Extending Streamlit usage to create data science applications and other type of applications" :: [https://flaven.fr/2021/06/extending-streamlit-usage-to-create-data-science-applications-and-other-type-of-applications/](https://flaven.fr/2021/06/extending-streamlit-usage-to-create-data-science-applications-and-other-type-of-applications/)
+
+
+
+
+
 ### 001_nlp_spacy_python_realp
 A bunch of scripts extracted from an excellent article "Natural Language Processing With spaCy in Python"
 
