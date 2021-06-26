@@ -1,15 +1,38 @@
-+ VIDEOS
-
-
++ VIDEOS Extending Streamlit Usage
 
 ! ON STAGE
+
+--- video_1
+Extending Streamlit Usage
+
+Create a CRUD countries manager 
+with Streamlit so this usecase 
+give the main concepts 
+to create a CRUD web application 
+for any kind of content
+
+--- video_2
+Extending Streamlit Usage
+
+Discovering and using 
+Python with SQlite 
+through the console 
+and with sqlitebrowser
+
+
+--- video_3
+Extending Streamlit Usage
+
+Using Streamlit 
+as a Wireframing Tool
 
 - 009_countries_crud_streamlit_app
 It is to create a CRUD countries manager with Streamlit so this usecase give the main concepts to create a CRUD web application for any kind of content. It is a POC that is a proof concept that Streamlit can be used far beyond only ML or Data science application. You can make the best of it!
 
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/009_countries_crud_streamlit_app/
 
-+ playing with SQlite
+
++ 1. playing with SQlite
 
 - using the console
 --- select
@@ -33,10 +56,14 @@ DROP TABLE  EMPLOYEE;
 --- import .sql
 .read /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/extending_streamlit_usage/009_countries_crud_streamlit_app/data/source_dump_6.sql
 
-+ tools for SQLite
++ 2. tools for SQLite
 - DB Browser for SQLite
 https://sqlitebrowser.org/
 https://sqlite.org/index.html
+
+
+- 010_streamlit_design
+Some examples to see the Streamlit UX potential.
 
 
 ! OTHER
@@ -55,7 +82,6 @@ An exploration of this project that gives a lot of insights on how to cleanup te
 - 005_other_nlp_attempts
 An advanced NLP text classification that require a lot of install. Caution, if you do not have the correct environment it won’t work properly, it will not work especially gensim library corpus for instance e.g. glove-wiki-gigaword-50.gz
 
-
 - 006_script_in_script
 A modest start with some Streamlit basic diversion examples. The POC is there, it remains to sophisticated the usecases. In practic, the objective should be to quickly design a web interface on the tasks management scripts to ease handling, execution and automation. A kind of Capistrano or Jenkins imitation for Newbies.
 
@@ -64,10 +90,5 @@ Some nice examples using spaCy. According to Spacy, it contains "utilities for v
 
 - 008_simple_app_spacy_example
 Some examples with Spacy only.
-
-
-
-- 010_streamlit_design
-Some examples to see the Streamlit UX potential.
 
 
