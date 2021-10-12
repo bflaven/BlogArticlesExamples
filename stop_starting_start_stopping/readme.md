@@ -49,7 +49,6 @@ The more ironical on cognitive bias known as a Law of the instrument by Abraham 
 │   ├── data
 │   │   ├── 202110120506_fake_PublicationStat.csv
 │   │   ├── 202110120527_fake_PublicationStat.csv
-│   │   ├── News_Category_Dataset_v2.json
 │   │   ├── chrisalbon_data.json
 │   │   ├── fake-links-menu_6.json
 │   │   ├── fake_stats_response_1631779452059.json
