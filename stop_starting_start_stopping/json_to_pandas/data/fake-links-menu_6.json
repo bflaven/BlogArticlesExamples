@@ -1,0 +1,45 @@
+{
+  "F24": {
+    "FR": [{
+        "report_title": "Link 1 Report F24 ALL",
+        "report_iframe_url": "https://datastudio.google.com/embed/reporting/9c0fd975-7952-4317-9442-3c8153ad50d6/page/4VDGB",
+        "report_display_roles": ["ADMINISTRATEUR"]
+      }, {
+        "report_title": "Link 2 Report F24 FR ONLY",
+        "report_iframe_url": "https://datastudio.google.com/embed/reporting/9c0fd975-7952-4317-9442-3c8153ad50d6/page/4VDGB",
+        "report_display_roles": ["ADMINISTRATEUR", "JOURNALISTE", "RESPONSABLEDITORIAL"]
+      }
+
+    ],
+    "EN": [{
+        "report_title": "Link 1 Report F24 ALL",
+        "report_iframe_url": "https://datastudio.google.com/embed/reporting/9c0fd975-7952-4317-9442-3c8153ad50d6/page/4VDGB",
+        "report_display_roles": ["ADMINISTRATEUR"]
+      }, {
+        "report_title": "Link 2 Report F24 FR ONLY",
+        "report_iframe_url": "https://datastudio.google.com/embed/reporting/9c0fd975-7952-4317-9442-3c8153ad50d6/page/4VDGB",
+        "report_display_roles": ["ADMINISTRATEUR", "JOURNALISTE", "RESPONSABLEDITORIAL"]
+      }
+    ],
+    "AR": [{
+        "report_title": "Link 1 Report F24 ALL",
+        "report_iframe_url": "https://datastudio.google.com/embed/reporting/9c0fd975-7952-4317-9442-3c8153ad50d6/page/4VDGB",
+        "report_display_roles": ["ADMINISTRATEUR"]
+      }, {
+        "report_title": "Link 2 Report F24 FR ONLY",
+        "report_iframe_url": "https://datastudio.google.com/embed/reporting/9c0fd975-7952-4317-9442-3c8153ad50d6/page/4VDGB",
+        "report_display_roles": ["ADMINISTRATEUR", "JOURNALISTE", "RESPONSABLEDITORIAL"]
+      }
+    ],
+    "ES": [{
+        "report_title": "Link 1 Report F24 ALL",
+        "report_iframe_url": "https://datastudio.google.com/embed/reporting/9c0fd975-7952-4317-9442-3c8153ad50d6/page/4VDGB",
+        "report_display_roles": ["ADMINISTRATEUR"]
+      }, {
+        "report_title": "Link 2 Report F24 FR ONLY",
+        "report_iframe_url": "https://datastudio.google.com/embed/reporting/9c0fd975-7952-4317-9442-3c8153ad50d6/page/4VDGB",
+        "report_display_roles": ["ADMINISTRATEUR", "JOURNALISTE", "RESPONSABLEDITORIAL"]
+      }
+    ]
+  }
+}
