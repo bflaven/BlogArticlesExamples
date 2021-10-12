@@ -33,10 +33,6 @@ def main():
     # News_Category_Dataset_v2_light_7.json for test
     # News_Category_Dataset_v2_light.json only 10 records
     
-    # with open('data/bach-editorial-stats_6.json') as file:
-    #     data = json.load(file)
-    #     # DEBUG
-    #     print(data)
     
 
     # # some JSON:
