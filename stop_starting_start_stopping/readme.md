@@ -5,6 +5,8 @@ Like anyone, I have my small number of wise quotes or practical aphorisms that r
 The simple and mindful "Stop Starting, Start Stopping....for getting shit done!"
 The more ironical on cognitive bias known as a Law of the instrument by Abraham Maslow. "I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail."
 
+Read more on [Stop Starting, Start Stopping – Wandering from Google Tag Manager to Google Analytics API, through Pandas and JSON](http://flaven.fr/2021/10/stop-starting-start-stopping-wandering-from-google-tag-manager-to-google-analytics-api-through-pandas-and-json/)
+
 ```bash
 .
 ├── google_analytics_api_pandas_reporting

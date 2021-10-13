@@ -40,7 +40,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 ```
 
-## 3. Does it works?
+## 3. Does it work?
 - In the console if you need to access to the google_tag_manager type the following command:
 ```javascript
 // type in the console to laod GTM
@@ -55,7 +55,7 @@ dataLayer;
 
 ## 4. Example for a WP
 Do not tinkering your theme, make a basic plugin!
-A quick and dirty plugin that hack any theme to implement GTM or GA. It change the footer, header and body of WP, use native WP function. Used Namespace and Class. Check directory `ga-gtml-hack-bf`.
+A quick and dirty plugin that hack any theme to implement GTM or GA. It changes the footer, header and body of WP, use native WP function. Used Namespace and Class. Check directory `ga-gtml-hack-bf`.
 
 
 
@@ -79,7 +79,7 @@ add_action( 'wp_footer', [ 'GaGtmHackBf\Insert\Models\GaGtmHackBfDisplayFooter',
 # 2. USING GTM
 
 
-In an ecommerce site, implementing GTM will enable to custom tracking for any action that lead users down to purchase. So, the focus will be on tracking for instance the Checkout Path. Even though you are not running an ecommerce, you can rely on the best practices and focus described below in each video (naming convention, method, tools...)
+In an ecommerce site, implementing GTM will enable custom tracking for any action that lead users down to purchase. So, the focus will be on tracking for instance the Checkout Path. Even though you are not running an ecommerce website, you can rely on the best practices and focus described below in each video (naming convention, method, tools...)
 
 
 **The idea is how to leverage on these best practises,tools and apply them to a general Website Strategy or a Conversion Strategy if you are a ecommerce website.**
