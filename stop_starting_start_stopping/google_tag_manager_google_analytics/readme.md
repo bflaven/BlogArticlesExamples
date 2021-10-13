@@ -79,10 +79,10 @@ add_action( 'wp_footer', [ 'GaGtmHackBf\Insert\Models\GaGtmHackBfDisplayFooter',
 # 2. USING GTM
 
 
-In an ecommerce site, implementing GTM will enable custom tracking for any action that lead users down to purchase. So, the focus will be on tracking for instance the Checkout Path. Even though you are not running an ecommerce website, you can rely on the best practices and focus described below in each video (naming convention, method, tools...)
+In an ecommerce site, implementing GTM will enable custom tracking for any action that lead users down to purchase. So, the focus will be on tracking for instance the Checkout Path. Even though you are not running an ecommerce website, you can rely on the best practices and focus that are described below for each video (naming convention, method, tools...)
 
 
-**The idea is how to leverage on these best practises,tools and apply them to a general Website Strategy or a Conversion Strategy if you are a ecommerce website.**
+**The idea is how to leverage on these best practises, tools and apply them to a general Website Strategy or a Conversion Strategy if you are a ecommerce website.**
 
 
 
@@ -100,7 +100,7 @@ Remember the 3 KWs before starting with GTMA. The order to start with GTMA is : 
 
 
 **quick definition for variables:**
-Variables is anything can be retrieve uniquely from a website eg price of a product, id of product...
+Variables is anything that can be retrieved uniquely from a website e.g. product's price, product's id...
 
 ### 2.2.1 Video_2 7 Types of Triggers for Google Tag Manager
 Source: https://www.youtube.com/watch?v=osnWOkppXvU&list=PLpjwMOKO8Jz5hk4vFsc5hKsOMNLMVHflT&index=4
@@ -118,14 +118,15 @@ Event Triggers - Click, very useful for conversion
 
 
 ### 2.2.2 Video_4 Sources Of Custom Event Data in Google Analytics
-! Google Analytics Event Tagging
 
-In GTMA category is called product page 
-Event category (big bucket e.g. product)
-Event action (unique action e.g. clicking on a specific image in a slideshow to determine which is the more appealing)
+**About Google Analytics Event Tagging**
 
-What is Slicing and Dicing?
-Slicing and Dicing refers to a way of segmenting, viewing and comprehending data in a database.
+- In GTMA category is called product page 
+- Event category (big bucket e.g. product)
+- Event action (unique action e.g. clicking on a specific image in a slideshow to determine which is the more appealing)
+
+**What is Slicing and Dicing?**
+Slicing and Dicing refers to a way of segmenting, viewing and comprehending data in a database, it also apply for any data investigation.
 
 ### 2.2.3 Video_8 :: 3 Ways to Create Click Triggers in Google Tag Manager
 - Source: https://www.youtube.com/watch?v=z49SmubDyLI&list=PLpjwMOKO8Jz5hk4vFsc5hKsOMNLMVHflT&index=8
@@ -147,14 +148,14 @@ TAG :: GA Event - Lead Magnet Click
 Trigger :: Click - Lead Magnet Click
 ```
 
-define the rules for this trigger
-
 ### 2.2.4 Video_9 :: 5 Real Life Examples of 3rd Party Features to Tag
 
 Source: https://www.youtube.com/watch?v=EukqOblMX5I&list=PLpjwMOKO8Jz5hk4vFsc5hKsOMNLMVHflT&index=9
 
 
 **How to create an Event into GTMA?**
+
+Some examples of naming convention.
 
 **Example for Naming convention fo Event**
 ```bash
@@ -243,9 +244,6 @@ In your GTM account, go to Variables, and in the Built-in Variables section clic
 **Objective:**
 A process that you can take to evaluate your current site, the questions you want to answer, tagging you site, queuing it and polish it so you can start extracting insights on what users are doing on your site and apply it your own conversion optimization strategy...
 
- 
-
-
 - **Step #1 : Build a list of events or questions that you want to answer.**
 
 
@@ -323,8 +321,6 @@ Name your stuff like if you were he next oerson coming after you that is invited
 Naming should be foolproof as possible.
 
 Be descriptive on event action name because then you do not have to guess...
-
-
 
 **(i) How do you name Tag? Tag Example Configuration**
 
