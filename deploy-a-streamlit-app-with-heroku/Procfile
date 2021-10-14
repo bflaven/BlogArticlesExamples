@@ -1,0 +1,5 @@
+# Procfile required to deploy your streamlit app to heroku
+# web: sh setup.sh && streamlit run <name-of-streamlit-app>.py
+# replace with your correct filename's streamlit app e.g app.py, my_super_app.py
+# mine is called first_app_heroku_deploy.py
+web: sh setup.sh && streamlit run first_app_heroku_deploy.py
