@@ -8,7 +8,7 @@ mkdir -p ~/.streamlit/
 # you can put a fake or real email, it has nothing with registration on heroku
 echo "\
 [general]\n\
-email = \"info@flaven.fr\"\n\
+email = \"your@domain.com\"\n\
 " > ~/.streamlit/credentials.toml
 
 # the config file for your streamlit app
