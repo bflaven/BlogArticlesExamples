@@ -1,6 +1,7 @@
 # python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly
 
 
+### 1. Intro
 **My objective was to build a dashboard with Streamlit that automate Screaming Frog SEO Spider for large time saves and fast audits then manage the output (csv reports), save it into an SQLite database and analyze them to create graphics.**
 
 **3 different projects are issued from this objective: `date_time_sqlite`, `sqlalchemy_guide_database`, `streamlit_app_crawl_screamingfrog`**
@@ -12,8 +13,7 @@
 
 You will have to create an environment for the app, I am using Anaconda (Conda) to manage python and the packages.
 
- 
-### 1. Create your environment with Conda
+### 2. Create your environment with Conda
 
 **Go to the dir**
 It is just I found easier to be in same git directory to create my environment with Conda because I know better what are the packages required by the streamlit app.
