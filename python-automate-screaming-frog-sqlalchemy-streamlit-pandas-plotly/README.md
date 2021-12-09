@@ -1,7 +1,7 @@
 # python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly
 
 
-3 different projects
+3 different projects: `date_time_sqlite`, `sqlalchemy_guide_database`, ``
 
 
 ### 1. Create your environment with Conda
