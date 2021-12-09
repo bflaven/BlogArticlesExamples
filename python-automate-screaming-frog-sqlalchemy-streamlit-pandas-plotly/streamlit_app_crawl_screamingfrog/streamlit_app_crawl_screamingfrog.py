@@ -64,8 +64,9 @@ import config_values.values_conf as conf
 engine = create_engine(
     'sqlite:///sqlalchemy_data/screamingfrog_websites_crawls_all_new_1.sqlite3', connect_args={'check_same_thread': False}, echo=False)
 
-# conn = sqlite3.connect('your.db', check_same_thread=False)
-# engine = create_engine('sqlite:///dir_graph.sqlite', connect_args={'check_same_thread': False}, echo=True)
+# examples to connect to db
+# conn = sqlite3.connect('db_name.db', check_same_thread=False)
+# engine = create_engine('sqlite:///db_name.sqlite', connect_args={'check_same_thread': False}, echo=True)
 
 # connect to database
 Session = sessionmaker(bind=engine)
