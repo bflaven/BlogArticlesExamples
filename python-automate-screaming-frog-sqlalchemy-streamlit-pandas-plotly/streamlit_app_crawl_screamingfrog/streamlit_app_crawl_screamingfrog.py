@@ -62,9 +62,10 @@ import config_values.values_conf as conf
 # I use .sqlite3 as extension because i can edit through Visual Code Studio editor
 # use the same db file and path for database file
 engine = create_engine(
-    'sqlite:///sqlalchemy_data/screamingfrog_websites_crawls_all_new_1.sqlite3')
-# use in analyse
-connection = engine.raw_connection()
+    'sqlite:///sqlalchemy_data/screamingfrog_websites_crawls_all_new_1.sqlite3', connect_args={'check_same_thread': False}, echo=False)
+
+# conn = sqlite3.connect('your.db', check_same_thread=False)
+# engine = create_engine('sqlite:///dir_graph.sqlite', connect_args={'check_same_thread': False}, echo=True)
 
 # connect to database
 Session = sessionmaker(bind=engine)
@@ -139,6 +140,7 @@ def main():
                     entry = Websites(name=name, url=url)
                     se.add(entry)
                     se.commit()
+                    se.close()
                     st.success("The data added to the database")
                 except Exception as e:
                     st.error(f"some error occurred: {e}")
@@ -436,6 +438,7 @@ def main():
                         # st.code(entry)
                         se.add(entry)
                         se.commit()
+                        se.close()
                         st.success('Crawl added to database')
 
             else:
@@ -444,6 +447,11 @@ def main():
             
             
         elif choice == "Analyze":
+            
+            # use in analyse
+            connection = engine.raw_connection()
+
+ 
             st.subheader("Analyze")
             # SCREEN
             all_crawls = pd.read_sql_query('SELECT * FROM crawls', connection)

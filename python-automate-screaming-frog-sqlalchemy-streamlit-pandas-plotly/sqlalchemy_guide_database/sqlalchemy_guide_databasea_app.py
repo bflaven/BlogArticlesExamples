@@ -101,6 +101,7 @@ def main():
             entry = Ingredientes(nombre=nombre, precio=precio)
             se.add(entry)
             se.commit()
+            # se.close()
             st.success("The data added to the database")
         except Exception as e:
             st.error(f"some error occurred: {e}")
