@@ -3,7 +3,7 @@
 A POC All-in-one that provides a Streamlit SEO dashboard with Screaming Frog automation, storing in a Database (SQLite) and create data-analysis with Pandas for SEO reports.
 
 
-**An article is avaliable at flaven.fr**
+**An article is avalaible at flaven.fr**
 
 **This app leverage on Streamlit, SQlite and Screaming Frog SEO Spider**
 
@@ -13,11 +13,11 @@ A POC All-in-one that provides a Streamlit SEO dashboard with Screaming Frog aut
 **Go to the dir**
 It is just I found easier to be in same git directory to create my environment with Conda because I know better what are the packages required by the streamlit app.
 
+
+
 ```bash
 # go to your directory
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly
-
-
 ```
 
 **Create your dev env with conda**
@@ -66,12 +66,10 @@ pip install watchdog
 **Save python requirements in a file name `requirements.txt`**
 ```bash
 # show what the requirements
-pip freeze > requirements_1_heroku_python_getting_started_3.txt
-pip freeze > requirements_2_heroku_python_getting_started_3.txt
-pip freeze > requirements_3_heroku_python_getting_started_3.txt
+pip freeze > automate_screaming_frog_1.txt
 
-# rename the last version with the correct name requirements.txt, heroku only accept the filename requirements.txt
-mv requirements_1_heroku_python_getting_started_3.txt requirements.txt
+# to rename the last version with the correct name requirements.txt, if you deploy on heroku for instance, heroku only accept the filename requirements.txt
+mv automate_screaming_frog_3.txt requirements.txt
 
 ```
 
@@ -81,8 +79,11 @@ pip install pandas
 pip install numpy
 pip install matplotlib
 pip install plotly-express
-pip install matplotlib
 pip install altair
+
+# to install SQLAlchemy
+# SQLAlchemy is the Python SQL toolkit and Object Relational Mapper
+pip install SQLAlchemy
 ```
 
 **Extra info for the app**

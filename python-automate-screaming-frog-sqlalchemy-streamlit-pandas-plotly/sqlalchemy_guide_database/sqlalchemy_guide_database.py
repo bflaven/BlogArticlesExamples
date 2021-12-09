@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 """
 [env]
-conda create --name crawl_screamingfrog python=3.9.7
+conda create --name automate_screaming_frog python=3.9.7
 conda info --envs
-source activate crawl_screamingfrog
+source activate automate_screaming_frog
 conda deactivate
 
 [path]
-cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly/sqlalchemy_guide_database/
 
 
 
