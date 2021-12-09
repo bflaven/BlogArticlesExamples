@@ -2,6 +2,18 @@
 
 
 
+**Another application which leverage on Streamlit and focus again on the connection to SQlite database. This a practical introduction to SQlite and playing with Streamlit**
+
+
+```bash
+.
+├── README.md
+├── automate_screaming_frog_1.txt
+├── sqlalchemy_data
+│   └── streamlit_sqlalchemy_guia_database_example.sqlite3
+├── sqlalchemy_guide_database.py
+└── sqlalchemy_guide_databasea_app.py
+```
 
 
 

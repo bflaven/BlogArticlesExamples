@@ -4,14 +4,17 @@
 An attempt extracted from a POC All-in-one that provides a Streamlit SEO dashboard with Screaming Frog automation, storing in a Database (SQLite) and create data-analysis with Pandas for SEO reports.
 
 
+**This app leverage on Streamlit and focus on the connection to SQlite database. This a practical introduction to SQlite and playing with Streamlit**
 
 
-**This app leverage on Streamlit and focus on the connection to SQlite**
-
-
-
-
-
+```bash
+.
+├── 001_date_time_sqlite.py
+├── README.md
+├── automate_screaming_frog_1.txt
+└── data
+    └── StudentAssignment_1.sqlite3
+```
 
 ### 1. Create your environment with Conda
 
