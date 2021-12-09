@@ -16,6 +16,10 @@ An attempt extracted from a POC All-in-one that provides a Streamlit SEO dashboa
     └── StudentAssignment_1.sqlite3
 ```
 
+You will have to create an environment for the app, I am using Anaconda (Conda) to manage python and the packages.
+
+
+
 ### 1. Create your environment with Conda
 
 **Go to the dir**
