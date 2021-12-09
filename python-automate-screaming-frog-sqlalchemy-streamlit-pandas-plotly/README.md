@@ -1,5 +1,9 @@
 # python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly
 
+
+3 different projects
+
+
 ### 1. Create your environment with Conda
 
 **Go to the dir**

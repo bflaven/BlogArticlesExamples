@@ -1,6 +1,11 @@
 # sqlalchemy_guide_database
 
 
+
+
+
+
+
 ### 1. Create your environment with Conda
 
 **Go to the dir**

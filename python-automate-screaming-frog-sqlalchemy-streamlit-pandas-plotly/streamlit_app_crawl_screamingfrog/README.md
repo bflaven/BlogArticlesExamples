@@ -3,11 +3,9 @@
 A POC All-in-one that provides a Streamlit SEO dashboard with Screaming Frog automation, storing in a Database (SQLite) and create data-analysis with Pandas for SEO reports.
 
 
-**An article is avalaible at flaven.fr**
+**An article will be soon avalaible on flaven.fr**
 
-**This app leverage on Streamlit, SQlite and Screaming Frog SEO Spider**
-
-
+**This webapp leverage on Streamlit, SQlite and Screaming Frog SEO Spider to make**
 ### 1. Create your environment with Conda
 
 **Go to the dir**
