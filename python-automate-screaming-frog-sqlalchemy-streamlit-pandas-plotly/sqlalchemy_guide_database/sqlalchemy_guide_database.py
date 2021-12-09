@@ -1,0 +1,46 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+"""
+[env]
+conda create --name crawl_screamingfrog python=3.9.7
+conda info --envs
+source activate crawl_screamingfrog
+conda deactivate
+
+[path]
+cd /Users/brunoflaven/Documents/01_work/blog_articles/python-automate-screaming-frog/_git/sqlalchemy_guide_database/
+
+
+
+[file]
+python sqlalchemy_guide_database.py
+    
+# more on infos and apps on
+https://j2logo.com/python/sqlalchemy-tutorial-de-python-sqlalchemy-guia-de-inicio/
+
+"""
+
+
+import sqlalchemy
+from sqlalchemy import create_engine, Column, Integer, String, Float
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
+
+
+class Ingredientes(Base):
+
+    __tablename__ = "ingredientes"
+
+    id = Column(Integer, primary_key=True)
+    nombre = Column(String, nullable=False)
+    precio = Column(Float)
+
+# I use .sqlite3 as extension because i can edit through Visual Code Studio editor
+if __name__ == "__main__":
+    engine = create_engine(
+        'sqlite:///sqlalchemy_data/streamlit_sqlalchemy_guia_database_example.sqlite3')
+    # this line create the empty tables
+    Base.metadata.create_all(engine)
+
+
