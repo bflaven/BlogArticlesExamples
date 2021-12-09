@@ -20,7 +20,7 @@ It is just I found easier to be in same git directory to create my environment w
 
 ```bash
 # go to your directory
-cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly/
 
 ```
 
