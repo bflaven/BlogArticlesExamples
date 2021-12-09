@@ -1,5 +1,8 @@
 # streamlit_app_crawl_screamingfrog
 
+
+### 1. Intro
+
 The real POC All-in-one that provides a Streamlit SEO dashboard with Screaming Frog automation, storing in a Database (SQLite) and create data-analysis with Pandas for SEO reports.
 
 
@@ -8,7 +11,7 @@ The real POC All-in-one that provides a Streamlit SEO dashboard with Screaming F
 **This webapp leverage on Streamlit, SQlite and Screaming Frog SEO Spider to make SEO reports and show in graphics the SEO KPIs.**
 
 
-### 1. Create your environment with Conda
+### 2. Create your environment with Conda
 
 **Go to the dir**
 It is just I found easier to be in same git directory to create my environment with Conda because I know better what are the packages required by the streamlit app.

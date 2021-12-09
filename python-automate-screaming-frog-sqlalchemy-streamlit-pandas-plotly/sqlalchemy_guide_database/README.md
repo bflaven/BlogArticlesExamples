@@ -1,6 +1,6 @@
 # sqlalchemy_guide_database
 
-
+### 1. Intro
 
 **Another application which leverage on Streamlit and focus again on the connection to SQlite database. This a practical introduction to SQlite and playing with Streamlit**
 
@@ -23,7 +23,7 @@ You will have to create an environment for the app, I am using Anaconda (Conda) 
 
 
 
-### 1. Create your environment with Conda
+### 2. Create your environment with Conda
 
 **Go to the dir**
 It is just I found easier to be in same git directory to create my environment with Conda because I know better what are the packages required by the streamlit app.

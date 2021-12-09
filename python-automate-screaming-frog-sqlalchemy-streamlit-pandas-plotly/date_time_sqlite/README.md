@@ -1,5 +1,6 @@
 # date_time_sqlite
 
+### 1. Intro
 
 An attempt extracted from a POC All-in-one that provides a Streamlit SEO dashboard with Screaming Frog automation, storing in a Database (SQLite) and create data-analysis with Pandas for SEO reports.
 
@@ -21,7 +22,7 @@ You will have to create an environment for the app, I am using Anaconda (Conda) 
 
 
 
-### 1. Create your environment with Conda
+### 2. Create your environment with Conda
 
 **Go to the dir**
 It is just I found easier to be in same git directory to create my environment with Conda because I know better what are the packages required by the streamlit app.
