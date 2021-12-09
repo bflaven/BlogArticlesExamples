@@ -78,6 +78,7 @@ mv automate_screaming_frog_3.txt requirements.txt
 pip install pandas
 pip install numpy
 pip install matplotlib
+pip install plotly
 pip install plotly-express
 pip install altair
 
