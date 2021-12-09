@@ -4,7 +4,7 @@
 ### 1. Intro
 **My objective was to build a dashboard with Streamlit that automate Screaming Frog SEO Spider for large time saves and fast audits then manage the output (csv reports), save it into an SQLite database and analyze them to create graphics.**
 
-**3 different projects are issued from this objective: `date_time_sqlite`, `sqlalchemy_guide_database`, `streamlit_app_crawl_screamingfrog`**
+*3 different projects are issued from this objective: `date_time_sqlite`, `sqlalchemy_guide_database`, `streamlit_app_crawl_screamingfrog`*
 
 
 - `date_time_sqlite`: First introduction to manage an SQLite database with Streamlit
