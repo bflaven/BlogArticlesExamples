@@ -157,19 +157,7 @@ def main():
     
         elif choice == "Crawl":
             st.subheader("Crawl")
-            
-            # QUERY_1
-            # Obtener un objeto a partir de su id
-            # ob = se.query(Ingredientes).get(3)
-            # st.markdown("### "+ob.nombre+"")
-            # st.write(f"precio: {ob.precio}")
-            
-            # QUERY_2
-            # Obtener los objetos de una consulta
-            # productos = se.query(Ingredientes).all()
-            # for item in productos:
-            #     st.markdown("### "+item.nombre+"")
-            #     st.write(f"precio: {item.precio}")
+        
 
             num_results = se.query(Websites).count()
             st.info(f"Websites's number in database: {num_results}")
