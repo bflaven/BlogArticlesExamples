@@ -1,9 +1,11 @@
 # sqlalchemy_data
 
+A POC All-in-one that provides a Streamlit SEO dashboard with Screaming Frog automation, storing in a Database (SQLite) and create data-analysis with Pandas for SEO reports.
 
 
+**An article is avaliable at flaven.fr**
 
-
+**This app leverage on Streamlit, SQlite and Screaming Frog SEO Spider**
 
 
 ### 1. Create your environment with Conda
@@ -15,6 +17,7 @@ It is just I found easier to be in same git directory to create my environment w
 # go to your directory
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly
 
+
 ```
 
 **Create your dev env with conda**
@@ -24,7 +27,7 @@ cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-scre
 conda info --envs
 
 # create the env for your streamlit app
-conda create --name deploy_getting_started python=3.9.7
+conda create --name automate_screaming_frog python=3.9.7
 ```
 
 **Get into your dev env**
@@ -35,17 +38,17 @@ How to create a development environment and also list and deactivate some dev en
 ```bash
 
 # go into the env
-conda activate deploy_getting_started
+conda activate automate_screaming_frog
 
 
 # Let's say you create a environment with this version of python (3.8.3) if you need yo update the python version of your env
 # upgrade python version in your env heroku_python_getting_started_3a
-conda create --name heroku_python_getting_started_3a python=3.8.3
+conda create --name automate_screaming_frog python=3.8.3
 conda install python=3.9.7
 
 # listing the envs
 conda info --envs
-conda remove --name heroku_python_getting_started_3b --all
+conda remove --name automate_screaming_frog --all
 
 
 # get from the current env

@@ -1,6 +1,15 @@
 # date_time_sqlite
 
 
+An attempt extracted from a POC All-in-one that provides a Streamlit SEO dashboard with Screaming Frog automation, storing in a Database (SQLite) and create data-analysis with Pandas for SEO reports.
+
+
+
+
+**This app leverage on Streamlit and focus on the connection to SQlite**
+
+
+
 
 
 
