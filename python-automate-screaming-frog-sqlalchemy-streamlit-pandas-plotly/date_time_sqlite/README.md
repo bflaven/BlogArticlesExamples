@@ -6,6 +6,7 @@ An attempt extracted from a POC All-in-one that provides a Streamlit SEO dashboa
 
 **This app leverage on Streamlit and focus on the connection to SQlite database. This a practical introduction to SQlite and playing with Streamlit**
 
+**Tree directory for the project `date_time_sqlite`**
 
 ```bash
 .

@@ -5,6 +5,8 @@
 **Another application which leverage on Streamlit and focus again on the connection to SQlite database. This a practical introduction to SQlite and playing with Streamlit**
 
 
+**Tree directory for the project `sqlalchemy_guide_database`**
+
 ```bash
 .
 ├── README.md
