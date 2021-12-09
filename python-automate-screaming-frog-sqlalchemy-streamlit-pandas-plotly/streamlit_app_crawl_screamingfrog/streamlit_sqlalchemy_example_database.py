@@ -8,11 +8,12 @@ source activate crawl_screamingfrog
 conda deactivate
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/python-automate-screaming-frog/streamlit_sqlalchemy_example/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly/
+
 
 
 [file]
-python streamlit_sqlalchemy_example_database_five.py
+python streamlit_sqlalchemy_example_database.py
     
 # more on infos and apps on
 https://discuss.streamlit.io/t/how-to-use-st-cache-with-sqlalchemy-orm-objects/3329/5

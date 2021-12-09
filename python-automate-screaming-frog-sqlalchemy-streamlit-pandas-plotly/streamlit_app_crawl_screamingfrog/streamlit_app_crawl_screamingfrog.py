@@ -8,7 +8,8 @@ source activate crawl_screamingfrog
 conda deactivate
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/python-automate-screaming-frog/_git/streamlit_app_crawl_screamingfrog/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly/
+
 
 
 [file]

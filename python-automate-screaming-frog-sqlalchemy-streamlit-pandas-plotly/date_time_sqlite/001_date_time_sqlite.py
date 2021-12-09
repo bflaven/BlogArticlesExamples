@@ -8,7 +8,7 @@ source activate crawl_screamingfrog
 conda deactivate
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/python-automate-screaming-frog/date_time_sqlite/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly/
 
 
 [file]
