@@ -10,8 +10,6 @@ conda deactivate
 [path]
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly/sqlalchemy_guide_database/
 
-
-
 [file]
 streamlit run sqlalchemy_guide_databasea_app.py
 
@@ -29,8 +27,6 @@ https://towardsdatascience.com/sqlalchemy-python-tutorial-79a577141a91
 https://github.com/digipodium/streamlit_sqlalchemy_example
 
 https://docs.streamlit.io/library/api-reference/
-streamlit_sqlalchemy_guia_database_example
-
 
 
 """

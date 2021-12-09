@@ -10,14 +10,11 @@ conda deactivate
 [path]
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly/date_time_sqlite/
 
-
 [file]
 streamlit run 001_date_time_sqlite.py
 
 # more on infos and apps on
 https://fr.acervolima.com/python-sqlite-travailler-avec-la-date-et-la-date-et-l-heure/
-
-
 
 """
 
