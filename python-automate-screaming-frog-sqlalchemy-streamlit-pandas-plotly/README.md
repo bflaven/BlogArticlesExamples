@@ -1,7 +1,7 @@
 # python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly
 
 
-```python
+```bash
 .
 ├── README.md
 ├── date_time_sqlite
@@ -33,4 +33,4 @@
     │   └── screamingfrog_websites_crawls_all_new_1.sqlite3
     ├── streamlit_app_crawl_screamingfrog.py
     └── streamlit_sqlalchemy_example_database.py
-    ```
+```
