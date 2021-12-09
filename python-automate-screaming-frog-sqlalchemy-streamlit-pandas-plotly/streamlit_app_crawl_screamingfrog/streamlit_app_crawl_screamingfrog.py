@@ -55,7 +55,7 @@ from streamlit_sqlalchemy_example_database import Websites, Crawls
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-# Check mycreds.py for credentials file
+# Check values_conf.py for credentials file
 import config_values.values_conf as conf
 
 
