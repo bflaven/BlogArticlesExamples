@@ -7,6 +7,9 @@
 *3 different projects are issued from this objective: `date_time_sqlite`, `sqlalchemy_guide_database`, `streamlit_app_crawl_screamingfrog`*
 
 
+**The background idea is always to chain actions between them in order to improve productivity and facilitate decision-making... The application created is more on processing and automation than in data science using algorithms... but indeed this experience can be the base on which you can improve your statistics on SEO and take actions...**
+
+
 - `date_time_sqlite`: First introduction to manage an SQLite database with Streamlit
 - `sqlalchemy_guide_database`: Second introduction to manage an SQLite database with Streamlit
 - `streamlit_app_crawl_screamingfrog`: The real POC with Streamlit that automate Screaming Frog SEO Spider
