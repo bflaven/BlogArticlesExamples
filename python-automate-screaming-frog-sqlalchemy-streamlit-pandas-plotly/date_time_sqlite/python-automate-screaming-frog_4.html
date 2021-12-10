@@ -1,0 +1,564 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>matrix model article MMArt</title>
+        
+    </head>
+    <body>
+        
+
+
+<!--  Quick POC for a All-in-one that provides a Streamlit SEO dashboard with Screaming Frog automation, storing in a Database (SQLite) and create data-analysis graphics for SEO reports -->
+
+<!-- Python, Pandas, Screaming Frog, SEO, sqlite, Automate, P.O, experimentation, POC -->
+
+<!-- #################### // article #################### -->
+
+This time, my objective was to build a dashboard with Streamlit that automate Screaming Frog SEO Spider for large time saves and fast audits then manage the output (csv reports), save it into a SQLite database and analyse it with creating
+graphics.
+
+<b>You can find all the code on my github account at <a href="https://bit.ly/3oAPuBP"
+            target="_blank">https://bit.ly/3oAPuBP</a></b>
+
+
+
+<H2>I. SEO POC "Bowl"</H2>
+
+<H3>1. Methodology</H3>
+Like always I am heading for a POC (Proof of Concept). So, pragmatism over theory. POC does not have to be perfect or compliant to some coding best practices or even logical at some point! The real value occurs often during the POC in some low noise signals, so be open minded and listen... As it is said "Knowledge speaks, Wisdom listens". <b>In this exploration phase, the purpose remains to achieve a fixed goal in a limited amount of time, avoiding spending 2 years for instance on a POC! :)</b>
+<b>That's it for the methodology.</b>
+
+<H3>2. Value</H3>
+As a PO, sometime for website, I need to have an eye on SEO KPIs. Even so, I am far from being a specialist, I need to grab and quickly overview key indicators (kinda a PO data-science oriented) and henceforth gather SEO best practices to fine-tune the website eventually.
+
+
+<b>But, as far as possible, it has to be made by a "tool" that ease these processes so it should be industrialized and automatized. The background idea is always to chain actions between them in order to improve productivity and facilitate decision-making.</b>
+
+
+<b>That's it for the value proposal. Just remember that learning has a cost and experimental work is expensive! So, Timeboxing exploration is a duty!</b>
+
+<H3>3. Individual</H3>
+What about my objectives me as an individual, they are several:
+<ul>
+    <li>Delegate tedious work to machines in order to give me more free time</li>
+    <li>Improving my Python's practice</li> 
+    <li>Give a more data-science flavor to my resume to become a mixed flavored data-science PO for digital! By the way, for me, Streamlit has solved this paradox between investing on web or data-science. With Streamlit I can do both: (1) IA or Machine learning web tools or (2) handy Web Tools for other dedicated job's purposes.</li>
+</ul>
+
+
+<b>This POC is definitely in the second category</b>
+<b>That's it for my personal investment</b>
+
+<b>As a first conclusion, I will say that any POC is a always a good tradeoffs between personal and professional objectives.</b>
+
+
+<H3>4. Sources</H3>
+This post has been also inspired by these 2 posts but I believe I have taken in a more personal direction the challenge exposed in these 2 posts.
+
+<ul>
+    <li>An SEO guide for automating Screaming Frog with Python<br><a
+            href="https://www.rocketclicks.com/client-education/an-seo-guide-for-automating-screaming-frog-with-python/"
+            target="_blank">https://www.rocketclicks.com/client-education/an-seo-guide-for-automating-screaming-frog-with-python/</a>
+    </li>
+    <li>Badass SEO: Automate Screaming Frog For Large Time Saves and Fast Audits<br><a
+            href="https://cometfuel.com/learn/automate-screaming-frog/#using-terminal-mac"
+            target="_blank">https://cometfuel.com/learn/automate-screaming-frog/#using-terminal-mac</a></li>
+</ul>
+
+
+I quote this post cause I need to remember it, about the inadequacies sometimes between tech and reality.
+
+<blockquote>
+The first job of an application architect is to "right size" the business or enterprise with the most efficient technology for their use case; not just saddle them with your pet preferences because it's the latest "fad-tech" from Google or it’s what they taught you in school.</blockquote>
+
+Source: <a href="https://beau-beauchamp.medium.com/php-is-killing-python-2be459364284"
+    target="_blank">https://beau-beauchamp.medium.com/php-is-killing-python-2be459364284</a>
+
+
+<H2>II. Build up the app (the POC)</H2>
+Ok let's build our dashboard! Like many softwares, Screaming Frog SEO Spider offers the ability to run without User Interface via Command line. With help of Streamlit, you can build your own webapp (GUI) to industrialize, automate repetitive tasks then transform raw data into useful information. That is my objective.
+
+<H3>1. Guidelines</H3>
+
+So, let's build this GUI with these 3 simple guidelines defined earlier:
+
+<ul>
+    <li>Streamlit library will be the "wrapper" for our application. (<a href="https://streamlit.io/" target="_blank">https://streamlit.io/</a>)</li>
+    <li>SQLite will be used as database. I gave up completely MySQL as SQLite is a serverless database. It gives more flexibility to implement a database behind an app, that is the main reason why SQLite is often used in mobile development. (<a href="https://sqlite.org/index.html" target="_blank">https://sqlite.org</a>)</li>
+    <li>SQLAlchemy will be use to query the database to offer again flexibility and minimize the written code in Python. Thanks to this abstraction (ORM), it is possible to connect to a large number of databases (Firebird, Microsoft SQL Server, MySQL, Oracle, PostgreSQL, SQLite, Sybase) and above all to standardize and considerably minimize your code in order to make it readable by other people and finally reusable. That's savvy! (<a href="https://www.sqlalchemy.org/" target="_blank">https://www.sqlalchemy.org/</a>)</li>
+</ul>
+
+<b>Behind all these technical recommendations, there are few key ideas that again should be exposed because these ideas have also prevailed in this POC.</b>
+
+<H3>2. Few more ideas</H3>
+
+<b>2.1 praise for simplicity</b>
+As a PO, you might suffer from the information and tools dissemination that prevent you from having a big picture of your products. So handling everything in the same screen helps to minimize information's confusion. It should be the target of any monitoring application. I will call it praise for simplicity.
+
+
+<b>For an application, think to centralize and to minify the info, never unnecessarily expand it. That's a waste of time for user.</b>
+
+
+<b>2.2 use cases decision matrix</b>
+Always think of the most extreme use cases and the non-user use cases for your web application. It will force you to
+look beyond the objective and look for the most attractive use cases. That is also a practical strategy to shorten the exploration phase to look for attractive use cases in order to save time on the primary exploration phase.
+
+<b>What the purpose of building an application that won't be use ?</b>
+
+
+<b>2.3 code prospecting for usages</b>
+Capture the most possible information about similar existing web application like the one you want to create. For
+instance, browsing through Git to grab some code you will prevent you from reinventing the wheel. <b>That's a usages benchmark that can be withdrawn from existing codes.</b>
+
+
+
+<b>2.4 collect user feedback first then analyse</b>
+Like for any data science project, try to collect the data yourself by mingling with other users than you. One advice if looking user feedback, be sure to record everything of their responses. While you are listening, your bandwidth is very low and it is almost impossible to detect the relevant vs the irrelevant in their feedback. You will make analysis it but later!
+
+<H3>3. The DB: using SQLITE</H3>
+Instead of MySQL, I am using SQLITE and like I said before: it is easier to implement but the syntax slightly differs from MySQL.
+
+
+<b>3.1 Advices</b>
+You can name your database with both extension <code>.sqlite3</code> or <code>.db</code>
+e.g. streamlit_sqlalchemy_example.sqlite3 or streamlit_sqlalchemy_example.db
+
+<pre lang="python">
+# name of your database
+engine = create_engine(
+        'sqlite:///data/streamlit_sqlalchemy_example.sqlite3')
+</pre>
+
+A good practice is to put the db file in a directory then you find it easily e.g. data is my directory name for db
+files.
+
+<pre lang="python">
+# Valid SQLite URL forms are:
+sqlite:///:memory: (or, sqlite://)
+sqlite:///relative/path/to/file.db
+sqlite:////absolute/path/to/file.db
+</pre>
+
+
+2 important lines to stress how to connect, for the rest, you can check the files available on my github account.
+<pre lang="python">
+# this line create the empty tables
+    Base.metadata.create_all(engine)
+
+# it imports the table that you need e.g Products
+from streamlit_sqlalchemy_database import Products
+
+
+</pre>
+
+
+
+<b>3.2 SQLite command reminder</b>
+
+Some useful commands for SQLite
+
+<pre lang="sql">
+# to get into SQLITE3, just type the command sqlite3 in the console
+sqlite3
+
+#.open /your-path/source.db
+# open a connection extension can be .db
+.open /Users/brunoflaven/Documents/01_work/blog_articles/python-automate-screaming-frog/data/screamingfrog_websites_crawls_all.db
+
+# open a connection extension can be .sqlite3
+.open /Users/brunoflaven/Documents/01_work/blog_articles/python-automate-screaming-frog/streamlit_sqlalchemy_example/data/screamingfrog_websites_crawls_all_new_1.sqlite3
+
+# show tables
+.tables
+
+
+# make a dump
+.output /Users/brunoflaven/Documents/01_work/blog_articles/python-automate-screaming-frog/sqlite_source_dump_2.sql
+.dump
+
+
+# read dump
+.read /Users/brunoflaven/Documents/01_work/blog_articles/python-automate-screaming-frog/sqlite_source_dump_2.sql
+
+
+- command
+SELECT COUNT(*) FROM websites;
+SELECT * FROM websites;
+
+SELECT COUNT(*) FROM crawls;
+SELECT * FROM crawls;
+
+- delete tables
+DROP TABLE websites;
+DROP TABLE crawls;
+
+
+- delete
+# DELETE FROM table_name;
+DELETE FROM websites;
+VACUUM;
+</pre>
+
+
+<H3>4. Describing Wireframe Screens</H3>
+<b>My app project is divided in 4 main screens and here is the navigation chosen below:</b>
+
+<ul>
+    <li>screen_1 :: General</li> 
+    <li>screen_2 :: Crawl</li> 
+    <li>screen_3 :: Parse and Insert</li>
+    <li>screen_4 :: Analyze</li>
+
+</ul>
+
+Making a Wireframe, in addition to being time consuming, also presents the disadvantage that you must define different screen status every time the user is
+hitting a button! Honestly, it is obvious that the screens resemblance between the Wireframe and the real application mitigate this step interest. <b>In a way, design screens for your web-application is useless as Streamlit is so quick to build up the screens itself.</b> 
+
+
+<b>To illustrate this non-interest, I put side by side Wireframe (made quickly with Balsamiq) and the real app (made quickly also with Streamlit). The only thing that may have a real interest is to summarize for each screen, with simple words, the User Experience expected like a User Story. I know Graphic Designers or UX Designers may hate me for this. Below my app User Stories.</b>
+
+<ul>
+    <li>navigation :: As a user, I can select
+            destination in a main navigation dropdown menu on the left.</li>
+    <li>screen_1 :: General :: As a user, I can add into the database a website (title, url) to be crawled later.</li>
+    <li>screen_2 :: Crawl :: As a user, I can launch the crawl with Screaming Frog by selecting a website in a drop-down menu. By clicking on a button to launch the crawl, it will be print out the Screaming Frog command-line and executed it.</li>
+    <li>screen_3 :: Parse and Insert :: As a user, I can parse Screaming Frog's CVS "reports" directory, select a file and launch computation then insert data into the SQLite database.</li>
+    <li>screen_4 :: Analyze :: As a user, I can load graphics that analyzed Screaming Frog's SEO KPIs taken from the SQLite database.</li>
+</ul>
+
+
+<b>(Screen_1) General</b>
+
+<i>Wireframe (Balsamiq)</i>
+<img src="screen_1_general_balsamiq.png" data-src="screen_1_general_balsamiq.png" alt="" width="585" height="330">
+
+<i>Real app (Streamlit)</i>
+<img src="screen_1_general_streamlit_screaming_frog.png"
+    data-src="screen_1_general_streamlit_screaming_frog.png" alt="" width="585" height="330">
+
+
+<b>(Screen_2) Crawl</b>
+
+<i>Wireframe (Balsamiq)</i>
+<img src="screen_2_crawl_balsamiq.png" data-src="screen_2_crawl_balsamiq.png" alt="" width="585" height="330">
+
+<i>Real app (Streamlit)</i>
+<img src="screen_2_crawl_streamlit_screaming_frog.png" data-src="screen_2_crawl_streamlit_screaming_frog.png" alt=""
+    width="585" height="330">
+
+    
+<b>(Screen_3) Parse and Insert</b>
+
+<i>Wireframe (Balsamiq)</i>
+<img src="screen_3_parse_insert_balsamiq.png" data-src="screen_3_parse_insert_balsamiq.png" alt="" width="585" height="330">
+
+<i>Real app (Streamlit)</i>
+<img src="screen_3_parse_insert_streamlit_screaming_frog.png" data-src="screen_3_parse_insert_streamlit_screaming_frog.png" alt=""
+    width="585" height="330">
+
+
+<b>(Screen_4) Analyze</b>
+
+<i>Wireframe (Balsamiq)</i>
+<img src="screen_4_analyse_balsamiq.png" data-src="screen_4_analyse_balsamiq.png" alt="" width="585" height="330">
+
+<i>Real app (Streamlit)</i>
+<img src="screen_4_analyze_streamlit_screaming_frog.png" data-src="screen_4_analyze_streamlit_screaming_frog.png" alt=""
+    width="585" height="330">
+
+
+
+<H3>5. Create alias for your favorite application in the MAC console</H3>
+
+<b>I love todo-list because I always forget how to do things. It is nice to have somewhere a little helping note that shed some light on actions that you seldom do. That is the purpose of the lines below even.</b>
+
+So, in order to simplify the command-line, I made a alias to be able to call screaming frog application with the alias
+<code>froggy</code>. Unfortunately it is working in the console but it does not work when you use it into your python scripts. Anyway I bypass this obstacle by using the direct path to the screaming frog application.
+
+
+<b>5.1 Make a shortcut on a MAC for Screaming Frog SEO</b>
+Source : <a href="https://cometfuel.com/learn/automate-screaming-frog/#using-terminal-mac"
+    target="_blank">https://cometfuel.com/learn/automate-screaming-frog/#using-terminal-mac</a>
+
+<b>As a shortcut, you can use whatever you want! Make it simple and meaningful e.g. <code>screamingfrogseospider</code>, <code>screaminjayhawkins</code> or <code>ranagritando</code> or a more basic sf (careful to not confuse with symfony for instance...). I will gone with <code>froggy</code> as a shortcut.</b>
+
+
+<b>Command only working on the console</b>
+<pre lang="bash">
+# full command working in the console
+froggy --crawl http://flaven.fr --headless --save-crawl --output-folder
+"/Users/brunoflaven/Documents/01_work/blog_articles/python-automate-screaming-frog/reports/" --export-tabs
+"Internal:HTML" --overwrite --config
+"/Users/brunoflaven/Documents/01_work/blog_articles/python-automate-screaming-frog/seo_spider_config_3.seospiderconfig"
+</pre>
+
+<b>Command working in the python scripts</b>
+<pre lang="bash">
+/Applications/Screaming\ Frog\ SEO\ Spider.app/Contents/MacOS/ScreamingFrogSEOSpiderLauncher --crawl http://flaven.fr
+--headless --save-crawl --output-folder
+"/Users/brunoflaven/Documents/01_work/blog_articles/python-automate-screaming-frog/reports/" --export-tabs
+"Internal:HTML" --overwrite --config
+"/Users/brunoflaven/Documents/01_work/blog_articles/python-automate-screaming-frog/seo_spider_config_3.seospiderconfig"
+</pre>
+
+
+<b>There are probably tons of explanations to find or to give about this issue but I'd rather move on as there is better to do!</b>
+
+
+<b>Add a shortcut for Screaming Frog for the mac console</b>
+<pre lang="bash">
+# go to /Users/[username]
+cd ~
+
+# check if .bash_profile is in this directory
+ls -la
+
+
+# open with vim or nano
+vim .bash_profile
+nano .bash_profile
+
+# using textedit native on mac
+open -e .bash_profile
+
+# using sublime text
+subl .bash_profile
+
+
+# adding an alias for Screaming Frog, I named it froggy
+alias froggy="/Applications/Screaming\ Frog\ SEO\ Spider.app/Contents/MacOS/ScreamingFrogSEOSpiderLauncher"
+source ~/.bash_profile
+
+# test the froggy shortcut
+froggy --help
+</pre>
+
+
+
+<pre lang="bash">
+# commands inside the console working
+froggy --crawl <url>
+froggy --crawl https://flaven.fr/
+froggy --headless --crawl https://flaven.fr/
+froggy --headless --save-crawl --output-folder /Users/brunoflaven/Documents/02_copy/_streamlit_ideas_for_app/ --timestamped-output --crawl https://flaven.fr/
+froggy --headless --save-crawl --timestamped-output --crawl https://flaven.fr/
+
+
+# full command working in the console
+froggy --crawl http://flaven.fr --headless --save-crawl --output-folder "/Users/brunoflaven/Documents/01_work/blog_articles/python-automate-screaming-frog/reports/" --export-tabs "Internal:HTML" --overwrite --config "/Users/brunoflaven/Documents/01_work/blog_articles/python-automate-screaming-frog/seo_spider_config_3.seospiderconfig"
+
+
+# open the app from the console
+open "/Applications/Screaming Frog SEO Spider.app"
+
+# testing the shortcut for Screaming Frog SEO Spider.app
+froggy --help
+</pre>
+
+
+<b>5.2 Make a shortcut on a MAC for Sublime Text</b>
+To use subl, the Sublime Text bin folder needs to be added to the path. For a typical installation of Sublime Text, this will be located at /Applications/Sublime Text.app/Contents/SharedSupport/bin.
+
+- BASH
+If using Bash, the default before macOS 10.15, the following command will add the bin folder to the PATH environment variable:
+
+
+
+<pre lang="bash">
+# add sublime directly in the console...
+echo 'export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"' >> ~/.bash_profile
+source ~/.bash_profile
+</pre>
+
+
+<pre lang="bash">
+# check
+subl --help
+</pre>
+
+
+Source: https://www.sublimetext.com/docs/command_line.html#mac
+
+
+
+<h2>Conclusion</h2>
+Few conclusions can be drawn from this POC:
+<ul>
+    <li>Python, Pandas, Numpy, Plotly and Streamlit... are strong enablers to build personal usage dedicated Software or
+        SaaS. It reduces drastically the entrance fee to the Software or SaaS market! I must admit that learning recent
+        web technologies bring me closer than ever to the "serious" software industry than I thought. I should say it the other way round that is more the Software Industry that shifts to SaaS, Cloud and web technologies since 20 years from now.... <b>after all any website is nothing more than a "software" running in a browser.</b></li>
+    <li><b>It reinforces me as a user centric PO and shapes me as an "improver", "tinker" or "builder" for added value tools to improve daily processes and focus on delivering quickly real value! It is F... Faith Declaration!</b></li>
+</ul>
+
+<h2>More infos</h2>
+<ul>
+
+
+
+<b>Screaming Frog SEO Spider</b>
+
+<li>Command line interface for screamingfrog<br><a href="https://www.screamingfrog.co.uk/seo-spider/user-guide/general/#command-line" target="_blank">https://www.screamingfrog.co.uk/seo-spider/user-guide/general/#command-line</a></li>
+
+<li>Making the Most of Screaming Frog’s Features in 2020<br><a href="https://www.growth-rocket.com/blog/making-the-most-of-screaming-frogs-features-in-2020/" target="_blank">https://www.growth-rocket.com/blog/making-the-most-of-screaming-frogs-features-in-2020/</a></li>
+
+
+<li>SEO Spider Configuration<br><a href="https://www.screamingfrog.co.uk/seo-spider/user-guide/configuration/" target="_blank">https://www.screamingfrog.co.uk/seo-spider/user-guide/configuration/</a></li>
+
+
+<li>How To Automate Crawl Reports In Data Studio<br><a href="https://www.screamingfrog.co.uk/how-to-automate-crawl-reports-in-data-studio/" target="_blank">https://www.screamingfrog.co.uk/how-to-automate-crawl-reports-in-data-studio/</a></li>
+
+
+<li>Search Solved GitHub Account<br><a href="https://github.com/searchsolved/search-solved-public-seo" target="_blank">https://github.com/searchsolved/search-solved-public-seo</a></li>
+
+
+<li>Keyword_Clustering_Steamlit by Search Solved<br><a href="https://github.com/searchsolved/search-solved-public-seo/tree/main/Keyword_Clustering_Steamlit" target="_blank">https://github.com/searchsolved/search-solved-public-seo/tree/main/Keyword_Clustering_Steamlit</a></li>
+
+
+<li>Screaming Frog SEO Spider Demo<br><a href="https://www.youtube.com/watch?v=tkil3pKSFDA" target="_blank">https://www.youtube.com/watch?v=tkil3pKSFDA</a></li>
+
+
+
+<b>Streamlit</b>
+
+
+<li>streamlit-cheat-sheet by daniellewisDL<br><a href="https://github.com/daniellewisDL/streamlit-cheat-sheet" target="_blank">https://github.com/daniellewisDL/streamlit-cheat-sheet</a></li>
+
+
+<li>Project-for-User-Auth by digipodium<br><a href="https://github.com/digipodium/Project-for-User-Auth" target="_blank">https://github.com/digipodium/Project-for-User-Auth</a></li>
+
+
+<li>discuss.streamlit.io - Format_func (function) - Examples Please<br><a href="https://discuss.streamlit.io/t/format-func-function-examples-please/11295/5" target="_blank">https://discuss.streamlit.io/t/format-func-function-examples-please/11295/5</a></li>
+
+<li>discuss.streamlit.io - How to use st.cache with sqlalchemy.orm objects<br><a href="https://discuss.streamlit.io/t/how-to-use-st-cache-with-sqlalchemy-orm-objects/3329/5" target="_blank">https://discuss.streamlit.io/t/how-to-use-st-cache-with-sqlalchemy-orm-objects/3329/5</a></li>
+
+
+<li>How to build interactive dashboards in Python using Streamlit<br><a href="https://towardsdatascience.com/how-to-build-interactive-dashboards-in-python-using-streamlit-1198d4f7061b" target="_blank">https://towardsdatascience.com/how-to-build-interactive-dashboards-in-python-using-streamlit-1198d4f7061b</a></li>
+
+<li>Charly Wargnier github account<br><a href="https://github.com/CharlyWargnier?tab=repositories"
+        target="_blank">https://github.com/CharlyWargnier?tab=repositories</a></li>
+
+
+<li>Streamlit with SQL and plotly express to make a dashboard<br><a href="https://github.com/mdsohelmahmood/mdsohelmahmood.github.io/blob/8b6e4d48d23c9ce2d009f1ee36fb5855593ade0f/_notebooks/2021-06-29-Streamlit-01.ipynb" target="_blank">https://github.com/mdsohelmahmood/mdsohelmahmood.github.io/blob/8b6e4d48d23c9ce2d009f1ee36fb5855593ade0f/_notebooks/2021-06-29-Streamlit-01.ipynb</a></li>
+
+
+
+
+
+<li>Customer Segment Profiling App with Streamlit<br><a href="https://antonsruberts.github.io/streamlit-audience/" target="_blank">https://antonsruberts.github.io/streamlit-audience/</a></li>
+
+
+
+<li>Dropdownmenu in Streamlit without brackets and quotes<br><a href="https://python.tutorialink.com/dropdownmenu-in-streamlit-without-brackets-and-quotes/" target="_blank">https://python.tutorialink.com/dropdownmenu-in-streamlit-without-brackets-and-quotes/</a></li>
+
+
+
+
+<li>How to build a multi-language dashboard with Streamlit<br><a href="https://blog.devgenius.io/how-to-build-a-multi-language-dashboard-with-streamlit-9bc087dd4243" target="_blank">https://blog.devgenius.io/how-to-build-a-multi-language-dashboard-with-streamlit-9bc087dd4243</a></li>
+
+
+<li>streamlit-gettext by fischerbach<br><a href="https://github.com/fischerbach/streamlit-gettext" target="_blank">https://github.com/fischerbach/streamlit-gettext</a></li>
+
+<li>Streamlit by mdsohelmahmood<br><a href="https://github.com/mdsohelmahmood/Streamlit" target="_blank">https://github.com/mdsohelmahmood/Streamlit</a></li>
+
+
+<li>streamlit-dashboard-template by amrrs
+<br><a href="https://github.com/amrrs/streamlit-dashboard-template" target="_blank">https://github.com/amrrs/streamlit-dashboard-template</a></li>
+
+
+<li>fast.ai<br><a href="https://github.com/fastai" target="_blank">https://github.com/fastai</a></li>
+
+
+<li>Dashboard using Streamlit with data from SQL database<br><a
+        href="https://towardsdatascience.com/dashboard-using-streamlit-with-data-from-sql-database-f5c1ee36b51"
+        target="_blank">https://towardsdatascience.com/dashboard-using-streamlit-with-data-from-sql-database-f5c1ee36b51</a>
+</li>
+
+
+
+<li>Build a Web App to Group & Plot Excel Files in Python with Streamlit<br><a href="https://www.youtube.com/watch?v=ZDffoP6gjxc" target="_blank">https://www.youtube.com/watch?v=ZDffoP6gjxc</a></li>
+
+<b>SQLite</b>
+
+<li>SQL Exercises: Find salesman commission details where customer grade is 200 or more<br><a href="https://www.w3resource.com/sql-exercises/sql-quering-on-multiple-table-exercise-7.php" target="_blank">https://www.w3resource.com/sql-exercises/sql-quering-on-multiple-table-exercise-7.php</a></li>
+
+
+<li>MySQL Sample Databases<br><a href="https://www3.ntu.edu.sg/home/ehchua/programming/sql/SampleDatabases.html" target="_blank">https://www3.ntu.edu.sg/home/ehchua/programming/sql/SampleDatabases.html</a></li>
+
+
+<li>Data modeling<br><a href="https://gquercini.github.io/courses/databases/tutorials/data-modeling/" target="_blank">https://gquercini.github.io/courses/databases/tutorials/data-modeling/</a></li>
+
+
+<li>MySQL Tutorial<br><a href="https://www.mysqltutorial.org/" target="_blank">https://www.mysqltutorial.org/</a></li>
+
+
+
+
+<b>SQLAlchemy</b>
+
+<li>SQLAlchemy — Python Tutorial<br><a href="https://towardsdatascience.com/sqlalchemy-python-tutorial-79a577141a91"
+        target="_blank">https://towardsdatascience.com/sqlalchemy-python-tutorial-79a577141a91</a></li>
+
+<li>SQLAlchemy. Guía de inicio (Spanish)<br><a href="https://j2logo.com/python/sqlalchemy-tutorial-de-python-sqlalchemy-guia-de-inicio/"
+        target="_blank">https://j2logo.com/python/sqlalchemy-tutorial-de-python-sqlalchemy-guia-de-inicio/</a></li>
+
+<li>SQLAlchemy Tutorial<br><a href="https://www.tutorialspoint.com/sqlalchemy/index.htm"
+        target="_blank">https://www.tutorialspoint.com/sqlalchemy/index.htm</a></li>
+<li>SQLAlchemy — Python Tutorial<br><a href="https://towardsdatascience.com/sqlalchemy-python-tutorial-79a577141a91"
+        target="_blank">https://towardsdatascience.com/sqlalchemy-python-tutorial-79a577141a91</a></li>
+
+
+
+<li>SQLalchemy + Python Tutorial (using Streamlit)<br><a href="https://www.youtube.com/watch?v=lIHGGcnCmFA"
+        target="_blank">https://www.youtube.com/watch?v=lIHGGcnCmFA</a></li>
+
+<li>streamlit_sqlalchemy_example<br><a href="https://github.com/digipodium/streamlit_sqlalchemy_example"
+                target="_blank">https://github.com/digipodium/streamlit_sqlalchemy_example</a></li>
+
+
+<li>sqlalchemy.org - The Python SQL Toolkit and Object Relational Mapper
+<br><a href="https://www.sqlalchemy.org/" target="_blank">https://www.sqlalchemy.org/</a></li>
+
+
+<li>analyse slqalchelmy<br><a
+        href="https://github.com/mdsohelmahmood/mdsohelmahmood.github.io/blob/8b6e4d48d23c9ce2d009f1ee36fb5855593ade0f/_notebooks/2021-06-29-Streamlit-01.ipynb"
+        target="_blank">https://github.com/mdsohelmahmood/mdsohelmahmood.github.io/blob/8b6e4d48d23c9ce2d009f1ee36fb5855593ade0f/_notebooks/2021-06-29-Streamlit-01.ipynb</a>
+</li>
+
+
+
+<li>SQLAlchemy ORM Tutorial for Python Developers<br><a href="https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/"
+        target="_blank">https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/</a></li>
+
+
+<li>Python SQLite – Travailler avec la date et la date et l’heure (French)<br><a href="https://fr.acervolima.com/python-sqlite-travailler-avec-la-date-et-la-date-et-l-heure/"
+        target="_blank">https://fr.acervolima.com/python-sqlite-travailler-avec-la-date-et-la-date-et-l-heure/</a></li>
+
+
+<b>Other</b>
+
+
+<li>Creating a Data Science Portfolio<br><a href="https://www.maartengrootendorst.com/blog/portfolio/" target="_blank">https://www.maartengrootendorst.com/blog/portfolio/</a></li>
+
+
+
+<li>Feature Value Analysis: the Supreme Growth Hack<br><a href="https://www.priceintelligently.com/blog/bid/191076/Feature-Value-Analysis-The-Supreme-Growth-Hack" target="_blank">https://www.priceintelligently.com/blog/bid/191076/Feature-Value-Analysis-The-Supreme-Growth-Hack</a></li>
+
+<b>Nudge theory</b>
+
+
+<li>Nudge theory<br><a href="https://en.wikipedia.org/wiki/Nudge_theory"
+        target="_blank">https://en.wikipedia.org/wiki/Nudge_theory</a></li>
+
+
+</ul>
+
+
+<!-- #################### // article #################### -->
+
+
+    </body>
+</html>
+

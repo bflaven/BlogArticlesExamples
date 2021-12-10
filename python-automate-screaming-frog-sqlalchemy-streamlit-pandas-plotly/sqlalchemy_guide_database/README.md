@@ -5,25 +5,24 @@
 **Another application which leverage on Streamlit and focus again on the connection to SQlite database. This a practical introduction to SQlite and playing with Streamlit**
 
 
-**Tree directory for the project `sqlalchemy_guide_database`**
-
-```bash
-.
-├── README.md
-├── automate_screaming_frog_1.txt
-├── sqlalchemy_data
-│   └── streamlit_sqlalchemy_guia_database_example.sqlite3
-├── sqlalchemy_guide_database.py
-└── sqlalchemy_guide_databasea_app.py
-```
-
-
 You will have to create an environment for the app, I am using Anaconda (Conda) to manage python and the packages.
 
 
+### 2. Requirements
+
+**2.1 Install environment and packages**
+
+For `streamlit_app_crawl_screamingfrog`, `date_time_sqlite` and `sqlalchemy_guide_database`, you need to install environment and packages see the point below.
+
+**2.2 Specific Configuration for `streamlit_app_crawl_screamingfrog`**
+
+You need to install SEO Spider General from Screaming Frog as the web application app leverage on it:
+[SEO Spider General's User Guide](https://www.screamingfrog.co.uk/seo-spider/user-guide/general/).
+
+Then you can change the configuration in `streamlit_app_crawl_screamingfrog/config_values/values_conf.py`
 
 
-### 2. Create your environment with Conda
+### 3. Create your environment with Conda
 
 **Go to the dir**
 It is just I found easier to be in same git directory to create my environment with Conda because I know better what are the packages required by the streamlit app.
@@ -32,8 +31,9 @@ It is just I found easier to be in same git directory to create my environment w
 
 ```bash
 # go to your directory
-cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly/sqlalchemy_guide_database
+cd /[your-path]/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly
 ```
+
 
 **Create your dev env with conda**
 ```bash
@@ -102,7 +102,60 @@ pip install altair
 pip install SQLAlchemy
 ```
 
-**Extra info for the app**
+
+### 3. Databases in SQLite
+The 3 projects `streamlit_app_crawl_screamingfrog`, `date_time_sqlite` and `sqlalchemy_guide_database` require a database in SQLite.
+
+In each directory you can find the database with the extension `.sqlite3` e.g. `screamingfrog_websites_crawls_all_new_1.sqlite3`. I use the extension `.sqlite3` because you can edit with Visual Studio Code.
+
+
+For each project and database, you can find a dump with the structure tables used in the database. Look for `.sql` e.g. `screamingfrog_websites_crawls_all_new_1.sql`
+
+
+
+```python
+# name of your database
+engine = create_engine(
+        'sqlite:///sqlalchemy_data/screamingfrog_websites_crawls_all_new_1.sqlite3')
+
+```
+
+A good practice is to put the db file in a directory then you find it easily e.g. data is my directory name for db
+files.
+
+```python
+# Valid SQLite URL forms are:
+sqlite:///:memory: (or, sqlite://)
+sqlite:///relative/path/to/file.db # or file.sqlite3
+sqlite:////absolute/path/to/file.db # or file.sqlite3
+```
+
+
+
+[More on SQLite Home Page](https://sqlite.org/index.html)
+
+
+
+### 4. Tree directory
+
+**Tree directory for `sqlalchemy_guide_database`**
+
+```bash
+.
+├── README.md
+├── automate_screaming_frog_1.txt
+├── sqlalchemy_data
+│   └── streamlit_sqlalchemy_guia_database_example.sqlite3
+├── sqlalchemy_guide_database.py
+├── sqlalchemy_guide_databasea_app.py
+└── streamlit_sqlalchemy_guia_database_example.sql
+
+```
+
+### 5. Packages list directory
+
+**Extra info for the app that provides all the packages required for the app. You can find this list inside each directory/app in `automate_screaming_frog_1.txt`** 
+
 
 ```bash
 # install the packages required to work with the streamlit app

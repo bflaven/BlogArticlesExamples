@@ -7,7 +7,7 @@
 *3 different projects are issued from this objective: `date_time_sqlite`, `sqlalchemy_guide_database`, `streamlit_app_crawl_screamingfrog`*
 
 
-**The background idea is always to chain actions between them in order to improve productivity and facilitate decision-making. The application `streamlit_app_crawl_screamingfrog` created is more on processing and automation than on pure data science area using algorithms... With the help of team, this experience can be the base on which you can improve your statistics on SEO and take actions...**
+**The background idea is always to chain actions between them in order to improve productivity and facilitate decision-making. The application `streamlit_app_crawl_screamingfrog` created is more on processing and automation than on pure data science area using algorithms! With the help of a team, this POC may be probably the base on which I will monitor SEO KPI's and take some actions to improve SEO.**
 
 
 - `date_time_sqlite`: First introduction to manage an SQLite database with Streamlit
@@ -16,16 +16,38 @@
 
 You will have to create an environment for the app, I am using Anaconda (Conda) to manage python and the packages.
 
-### 2. Create your environment with Conda
+
+### 2. Requirements
+
+**2.1 Install environment and packages**
+
+For `streamlit_app_crawl_screamingfrog`, `date_time_sqlite` and `sqlalchemy_guide_database`, you need to install environment and packages see the point below.
+
+**2.2 Specific Configuration for `streamlit_app_crawl_screamingfrog`**
+
+You need to install SEO Spider General from Screaming Frog as the web application app leverage on it:
+[SEO Spider General's User Guide](https://www.screamingfrog.co.uk/seo-spider/user-guide/general/).
+
+Then you can change the configuration in `streamlit_app_crawl_screamingfrog/config_values/values_conf.py`
+
+**2.3 About Screaming Frog SEO Spider**
+
+The Screaming Frog SEO Spider is a website crawler that helps you improve onsite SEO, by extracting data & auditing for common SEO issues. Download & crawl 500 URLs for free, or buy a licence to remove the limit & access advanced features.
+
+
+
+
+### 3. Create your environment with Conda
 
 **Go to the dir**
+
 It is just I found easier to be in same git directory to create my environment with Conda because I know better what are the packages required by the streamlit app.
 
 
 
 ```bash
 # go to your directory
-cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly
+cd /[your-path]/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly
 ```
 
 **Create your dev env with conda**
@@ -95,7 +117,79 @@ pip install altair
 pip install SQLAlchemy
 ```
 
-**Extra info for the app**
+### 3. Databases in SQLite
+The 3 projects `streamlit_app_crawl_screamingfrog`, `date_time_sqlite` and `sqlalchemy_guide_database` require a database in SQLite.
+
+In each directory you can find the database with the extension `.sqlite3` e.g. `screamingfrog_websites_crawls_all_new_1.sqlite3`. I use the extension `.sqlite3` because you can edit with Visual Studio Code.
+
+
+For each project and database, you can find a dump with the structure tables used in the database. Look for `.sql` e.g. `screamingfrog_websites_crawls_all_new_1.sql`
+
+
+
+```python
+# name of your database
+engine = create_engine(
+        'sqlite:///sqlalchemy_data/screamingfrog_websites_crawls_all_new_1.sqlite3')
+
+```
+
+A good practice is to put the db file in a directory then you find it easily e.g. data is my directory name for db
+files.
+
+```python
+# Valid SQLite URL forms are:
+sqlite:///:memory: (or, sqlite://)
+sqlite:///relative/path/to/file.db # or file.sqlite3
+sqlite:////absolute/path/to/file.db # or file.sqlite3
+```
+
+
+
+[More on SQLite Home Page](https://sqlite.org/index.html)
+
+
+### 4. Tree directory
+
+**Tree directory for the 3 projects `date_time_sqlite`, `sqlalchemy_guide_database`, `streamlit_app_crawl_screamingfrog`**
+
+```bash
+.
+├── README.md
+├── date_time_sqlite
+│   ├── 001_date_time_sqlite.py
+│   ├── README.md
+│   └── data
+│       └── StudentAssignment_1.sqlite3
+├── sqlalchemy_guide_database
+│   ├── README.md
+│   ├── sqlalchemy_data
+│   │   └── streamlit_sqlalchemy_guia_database_example.sqlite3
+│   ├── sqlalchemy_guide_database.py
+│   └── sqlalchemy_guide_databasea_app.py
+└── streamlit_app_crawl_screamingfrog
+    ├── README.md
+    ├── config_files_screamingfrog
+    │   └── seo_spider_config_3.seospiderconfig
+    ├── config_values
+    │   └── values_conf.py
+    ├── csv_screamingfrog_archives
+    │   ├── f24es_2021_12_09_06_16_45_crawl.seospider
+    │   ├── f24es_2021_12_09_06_16_45_internal_html.csv
+    │   ├── rfifr_2021_12_09_06_18_41_crawl.seospider
+    │   ├── rfifr_2021_12_09_06_18_41_internal_html.csv
+    │   ├── the99projectfromgg_2021_12_09_06_22_00_crawl.seospider
+    │   └── the99projectfromgg_2021_12_09_06_22_00_internal_html.csv
+    ├── csv_screamingfrog_output
+    ├── sqlalchemy_data
+    │   └── screamingfrog_websites_crawls_all_new_1.sqlite3
+    ├── streamlit_app_crawl_screamingfrog.py
+    └── streamlit_sqlalchemy_example_database.py
+```
+
+### 5. Packages list directory
+
+**Extra info for the app that provides all the packages required for the app. You can find this list inside each directory/app in `automate_screaming_frog_1.txt`** 
 
 ```bash
 # install the packages required to work with the streamlit app
@@ -195,38 +289,3 @@ webencodings==0.5.1
 widgetsnbextension==3.5.2
 ```
 
-**Tree directory for the 3 projects `date_time_sqlite`, `sqlalchemy_guide_database`, `streamlit_app_crawl_screamingfrog`**
-
-```bash
-.
-├── README.md
-├── date_time_sqlite
-│   ├── 001_date_time_sqlite.py
-│   ├── README.md
-│   └── data
-│       └── StudentAssignment_1.sqlite3
-├── sqlalchemy_guide_database
-│   ├── README.md
-│   ├── sqlalchemy_data
-│   │   └── streamlit_sqlalchemy_guia_database_example.sqlite3
-│   ├── sqlalchemy_guide_database.py
-│   └── sqlalchemy_guide_databasea_app.py
-└── streamlit_app_crawl_screamingfrog
-    ├── README.md
-    ├── config_files_screamingfrog
-    │   └── seo_spider_config_3.seospiderconfig
-    ├── config_values
-    │   └── values_conf.py
-    ├── csv_screamingfrog_archives
-    │   ├── f24es_2021_12_09_06_16_45_crawl.seospider
-    │   ├── f24es_2021_12_09_06_16_45_internal_html.csv
-    │   ├── rfifr_2021_12_09_06_18_41_crawl.seospider
-    │   ├── rfifr_2021_12_09_06_18_41_internal_html.csv
-    │   ├── the99projectfromgg_2021_12_09_06_22_00_crawl.seospider
-    │   └── the99projectfromgg_2021_12_09_06_22_00_internal_html.csv
-    ├── csv_screamingfrog_output
-    ├── sqlalchemy_data
-    │   └── screamingfrog_websites_crawls_all_new_1.sqlite3
-    ├── streamlit_app_crawl_screamingfrog.py
-    └── streamlit_sqlalchemy_example_database.py
-```
