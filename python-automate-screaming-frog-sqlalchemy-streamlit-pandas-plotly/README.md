@@ -288,3 +288,17 @@ webencodings==0.5.1
 widgetsnbextension==3.5.2
 ```
 
+## VIDEOS
+
+
+[Python, Screaming Frog, SEO, Automate, POC Part 1 Manipulating Data with Streamlit & SQLite with the help of SQLAlchemy](https://www.youtube.com/watch?v=jCmL4YMQ_rs)
+[![Python, Screaming Frog, SEO, Automate, POC Part 1 Manipulating Data with Streamlit & SQLite with the help of SQLAlchemy](howto_python_automate_screaming_frog_using_sql_lite_streamlit_good_001.png)](https://www.youtube.com/watch?v=jCmL4YMQ_rs)
+
+
+[Python, Screaming Frog, SEO, Automate, POC Part 2 Creating Database in SQLite with Streamlit and SQLAlchemy](https://www.youtube.com/watch?v=jCmL4YMQ_rs)
+[![Python, Screaming Frog, SEO, Automate, POC Part 2 Creating Database in SQLite with Streamlit and SQLAlchemy](howto_python_automate_screaming_frog_using_sql_lite_streamlit_002.png)](https://www.youtube.com/watch?v=jCmL4YMQ_rs)
+
+
+[Python, Screaming Frog, SEO, Automate, POC Part 3 Creating Database in SQLite with Streamlit and SQLAlchemy](https://www.youtube.com/watch?v=jCmL4YMQ_rs)
+[![Python, Screaming Frog, SEO, Automate, POC Part 3 Creating Database in SQLite with Streamlit and SQLAlchemy](howto_python_automate_screaming_frog_using_the_streamlit_003.png)](https://www.youtube.com/watch?v=jCmL4YMQ_rs)
+
