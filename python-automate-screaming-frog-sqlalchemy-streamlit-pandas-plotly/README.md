@@ -16,7 +16,6 @@
 
 You will have to create an environment for the app, I am using Anaconda (Conda) to manage python and the packages.
 
-
 ### 2. Requirements
 
 **2.1 Install environment and packages**

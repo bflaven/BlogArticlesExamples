@@ -44,7 +44,8 @@ from sqlalchemy_guide_database import Ingredientes
 # I use .sqlite3 as extension because i can edit through Visual Code Studio editor
 # use the same db file and path for database file
 engine = create_engine(
-    'sqlite:///sqlalchemy_data/streamlit_sqlalchemy_guia_database_example.sqlite3')
+    'sqlite:///sqlalchemy_data/streamlit_sqlalchemy_guia_database_example.sqlite3', connect_args={'check_same_thread': False}, echo=False)
+
 
 # connect to database
 Session = sessionmaker(bind=engine)
@@ -78,12 +79,12 @@ def main():
     
     st.info(
         '*enable some libraries :: streamlit, pandas, numpy, sqlalchemy*')
-    
+    # name
     nombre = st.text_input('Enter an name\'s ingredient', '', placeholder='Rice',
                         help='Type here a an name\'s ingredient')
 
 
-
+    # price
     precio = st.number_input('Enter the ingredient\'s price per kilo',
                             max_value=1000,
                             min_value=1,
@@ -97,7 +98,7 @@ def main():
             entry = Ingredientes(nombre=nombre, precio=precio)
             se.add(entry)
             se.commit()
-            # se.close()
+            # se.close() no needed in this app
             st.success("The data added to the database")
         except Exception as e:
             st.error(f"some error occurred: {e}")
@@ -130,20 +131,24 @@ def main():
 
         # QUERY_4
         # Aplicar filtros a una consulta
-        # ob = se.query(Ingredientes).filter_by(nombre='Riz').first()
+        # ob = se.query(Ingredientes).filter_by(nombre='Orange').first()
         # st.markdown("### "+ob.nombre+"")
         # st.write(f"precio: {ob.precio}")
-        
+
         # QUERY_4
-        results = se.query(Ingredientes).filter(Ingredientes.precio > 6).all()
+        # results = se.query(Ingredientes).filter(Ingredientes.precio > 6).all()
+        # results = se.query(Ingredientes).filter(Ingredientes.precio < 3).all()
+        # for item in results:
+        #     st.markdown("### "+item.nombre+"")
+        #     st.write(f"precio: {item.precio}")
+          
+        # QUERY_5  
+        results = se.query(Ingredientes).all()
         for item in results:
             st.markdown("### "+item.nombre+"")
             st.write(f"precio: {item.precio}")
 
-    
-    
-    
-    
+
 if __name__ == '__main__':
     main() 
     detectVersion()
