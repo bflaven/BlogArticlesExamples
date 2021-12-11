@@ -40,7 +40,9 @@ More advanced ::  streamlit_app_crawl_screamingfrog :: Creating an SEO Dashboard
 
 
 ### PATH CONSOLE
+```bash
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python-automate-screaming-frog-sqlalchemy-streamlit-pandas-plotly/
+```
 
 
 ### CONDA ENVIRONMENT
