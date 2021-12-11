@@ -35,19 +35,13 @@ class Ingredientes(Base):
     # name
     nombre = Column(String, nullable=False)
 
-    # video
-    video = Column(String, nullable=False)
-    
-    
     # price
     precio = Column(Float)
 
 # I use .sqlite3 as extension because i can edit through Visual Code Studio editor
 if __name__ == "__main__":
-    # engine = create_engine( 'sqlite:///sqlalchemy_data/streamlit_sqlalchemy_guia_database_example.sqlite3')
+    engine = create_engine( 'sqlite:///sqlalchemy_data/streamlit_sqlalchemy_guia_database_example.sqlite3')
    
-    engine = create_engine( 'sqlite:///sqlalchemy_data/streamlit_sqlalchemy_guia_database_example_new.sqlite3')
-    
     # this line create the empty tables
     Base.metadata.create_all(engine)
     
