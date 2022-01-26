@@ -18,14 +18,17 @@ Few examples gathered from different sources mostly books or github, made qith S
 
 
 ### 3. streamlit_eda_made_easy_pandas_profiling_4
-A great and robust library that do the job one for all. It generates automatically a tremendous amount of
+**A great and robust library that do the job one for all. It generates automatically a tremendous amount of
 information about the selected dataset. At the end, it outputs a nice interactive and structured report named
 "Pandas Profiling Report" with the following topics : Overview, Variables, Interactions, Correlations, Missing
-values, Sample. 
+values, Sample.** 
 
-**An handy "swiss army knife" to investigate quickly dataset and generate clean report.**
+An handy "swiss army knife" to investigate quickly dataset and generate clean report supported with Streamlit.
 
-**An app has been made with Streamlit**
+Most of the values are in a file named `values_conf.py`
+```bash
+config_values/values_conf.py
+```
 
 
 ### 4. streamlit_eda_made_easy_sweetviz_3
@@ -36,7 +39,7 @@ All my knowledge came from this article: <a href="https://coderzcolumn.com/tutor
 An example with a very basic data exploration to show how time consuming can be EDA where you want extract relevant information. Nevertheless, the advantage of do-it by yourself will provide you a good chance to fully understand all the operation required for a EDA.
 
 
-- The example is extracted form this article : [https://towardsdatascience.com/exploring-a-data-set-with-simple-pandas-and-plot-visualizations-features-73901ee76c6c](https://towardsdatascience.com/exploring-a-data-set-with-simple-pandas-and-plot-visualizations-features-73901ee76c6c)
+The example is extracted form this article : [https://towardsdatascience.com/exploring-a-data-set-with-simple-pandas-and-plot-visualizations-features-73901ee76c6c](https://towardsdatascience.com/exploring-a-data-set-with-simple-pandas-and-plot-visualizations-features-73901ee76c6c)
 
 
 ### 6. requirements
