@@ -11,7 +11,7 @@ config_values/values_conf.py
 ### 1. streamlit_eda_made_easy_1
 On GitHub, you can find different approach to build up an "Exploratory Data Analysis" (EDA in Data Science). This one is inspired by Marina Ramalhete from Brazil that is pretty advanced as is it designed with a Class. I have rework few elements to make it more readable and deliver more contextual information when checking the data.
 
-- [https://github.com/marinaramalhete/Exploratory-Data-Analysis-App](https://github.com/marinaramalhete/Exploratory-Data-Analysis-App)
+Source: [https://github.com/marinaramalhete/Exploratory-Data-Analysis-App](https://github.com/marinaramalhete/Exploratory-Data-Analysis-App)
 
 ### 2. streamlit_eda_made_easy_2
 Few examples gathered from different sources mostly books or github, made qith Streamlit.
@@ -50,7 +50,7 @@ pip freeze > requirements_1_streamlit_spacy_1.txt
 mv requirements_1_streamlit_spacy_1.txt requirements.txt
 
 ```
-### 7. env
+### 7. environment
 
 **I am using Conda to manage the env.**
 
@@ -68,8 +68,9 @@ source activate streamlit_spacy_1
 conda deactivate
 ```
 
-### 7. requirements
-**Directory tree**
+### 8. Directory tree
+
+**The directory tree for all the projects**
 ```bash
 .
 ├── README.md
