@@ -41,7 +41,7 @@ An example with a very basic data exploration to show how time consuming can be 
 
 ### 6. requirements
 
-**Save python requirements in a file name `requirements.txt`. I am using Conda to manage the env.**
+**Save python requirements in a file name `requirements.txt`.**
 ```bash
 # show what the requirements
 pip freeze > requirements_1_streamlit_spacy_1.txt

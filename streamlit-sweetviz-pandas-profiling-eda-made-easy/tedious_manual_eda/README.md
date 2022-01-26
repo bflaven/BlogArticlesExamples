@@ -4,3 +4,9 @@ An example with a very basic data exploration to show how time consuming can be 
 
 
 - The example is extracted form this article : [https://towardsdatascience.com/exploring-a-data-set-with-simple-pandas-and-plot-visualizations-features-73901ee76c6c](https://towardsdatascience.com/exploring-a-data-set-with-simple-pandas-and-plot-visualizations-features-73901ee76c6c)
+
+
+- **Most of the values are in a file named `values_conf.py`**
+```bash
+config_values/values_conf.py
+```
