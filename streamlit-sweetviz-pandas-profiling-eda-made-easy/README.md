@@ -1,19 +1,20 @@
 # streamlit-sweetviz-pandas-profiling-eda-made-easy
+**A quick overview on how-to generate an "Exploratory Data Analysis" (EDA in Data Science) with Streamlit and the 2 well-known libraries:  SWEETVIZ, PANDAS PROFILING.**
 
 
 
 
+### streamlit_eda_made_easy_1
+
+### streamlit_eda_made_easy_2
+
+### streamlit_eda_made_easy_pandas_profiling_4
+
+### streamlit_eda_made_easy_sweetviz_3
+
+### tedious_manual_eda
 
 
-## streamlit_eda_made_easy_1
-
-## streamlit_eda_made_easy_2
-
-## streamlit_eda_made_easy_pandas_profiling_4
-
-## streamlit_eda_made_easy_sweetviz_3
-
-## tedious_manual_eda
 
 
 **Save python requirements in a file name `requirements.txt`**
