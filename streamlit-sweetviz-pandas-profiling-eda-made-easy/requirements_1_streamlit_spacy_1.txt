@@ -88,7 +88,7 @@ patsy==0.5.1
 pexpect @ file:///home/conda/feedstock_root/build_artifacts/pexpect_1602535608087/work
 phik @ file:///home/conda/feedstock_root/build_artifacts/phik_1615724006677/work
 pickleshare @ file:///home/conda/feedstock_root/build_artifacts/pickleshare_1602536217715/work
-Pillow==8.3.2
+Pillow==9.0.0
 plotly==5.3.1
 preshed==3.0.5
 prometheus-client @ file:///home/conda/feedstock_root/build_artifacts/prometheus_client_1622586138406/work
