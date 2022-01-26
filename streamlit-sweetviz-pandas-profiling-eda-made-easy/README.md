@@ -2,8 +2,7 @@
 **A quick overview on how-to generate an "Exploratory Data Analysis" (EDA in Data Science) with Streamlit and the 2 well-known libraries:  SWEETVIZ, PANDAS PROFILING.**
 
 
-- **For each application, most of the values are in a file named `values_conf.py`**
-Commit your code to the repository and deploy it to Heroku using Git.
+**For each application, most of the values are in a file named `values_conf.py`**
 ```bash
 config_values/values_conf.py
 ```
@@ -32,8 +31,10 @@ config_values/values_conf.py
 
 
 ### 4. streamlit_eda_made_easy_sweetviz_3
-All my knowledge came from this article: <a href="https://coderzcolumn.com/tutorials/data-science/sweetviz-automate-exploratory-data-analysis-eda"
-    target="_blank">https://coderzcolumn.com/tutorials/data-science/sweetviz-automate-exploratory-data-analysis-eda</a>. Again, I strongly invite you to read this article that is the best I have found on the web. I have just extended some elements from this article by giving some information and migrate the all stuff presented into Streamlit framework.
+All my knowledge came from this article: [https://coderzcolumn.com/tutorials/data-science/sweetviz-automate-exploratory-data-analysis-eda](https://coderzcolumn.com/tutorials/data-science/sweetviz-automate-exploratory-data-analysis-eda).
+
+
+Again, I strongly invite you to read this article that is the best I have found on the web. I have just extended some elements from this article by giving some information and migrate the all stuff presented into Streamlit framework.
 
 ### 5. tedious_manual_eda
 An example with a very basic data exploration to show how time consuming can be EDA where you want extract relevant information. Nevertheless, the advantage of do-it by yourself will provide you a good chance to fully understand all the operation required for a EDA.
