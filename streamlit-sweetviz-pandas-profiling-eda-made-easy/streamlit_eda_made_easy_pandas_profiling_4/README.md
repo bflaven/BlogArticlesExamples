@@ -10,3 +10,8 @@ Most of the values are in a file named `values_conf.py`
 ```bash
 config_values/values_conf.py
 ```
+
+**Pandas Profiling**
+[https://libraries.io/pypi/sweetviz](https://libraries.io/pypi/sweetviz)
+
+
