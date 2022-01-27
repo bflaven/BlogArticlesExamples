@@ -1,6 +1,11 @@
 # streamlit-sweetviz-pandas-profiling-eda-made-easy
 **A quick overview on how-to generate an "Exploratory Data Analysis" (EDA in Data Science) with Streamlit and the 2 well-known libraries:  SWEETVIZ, PANDAS PROFILING.**
 
+**You can find this artcile on my blog "Exploratory Data Analysis or EDA in Data Science made easy with SWEETVIZ, PANDAS PROFILING and Streamlit" [https://flaven.fr/2022/01/exploratory-data-analysis-or-eda-in-data-science-made-easy-with-sweetviz-pandas-profiling-and-streamlit/](https://flaven.fr/2022/01/exploratory-data-analysis-or-eda-in-data-science-made-easy-with-sweetviz-pandas-profiling-and-streamlit/)**
+
+
+
+
 
 **For each application, most of the values are in a file named `values_conf.py`**
 ```bash
@@ -153,3 +158,71 @@ conda deactivate
     └── data
         └── Tennis_World_Number_1s.csv
 ```
+
+### 9. Extra stuff (readme as a notebook)
+Some commands that I always forget that I need to find quickly and easily. So, this readme will be used as a notebook, things to remember. No direct link with the post's topic and content directory.
+
+
+
+**9.1 In 2022, I always forget how to push on github**
+```bash
+# GIT 2022
+
+# suppose you have set a personal access token
+# https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+
+# go to the directory
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/streamlit-sweetviz-pandas-profiling-eda-made-easy/
+
+# create the directory
+git remote add origin streamlit-sweetviz-pandas-profiling-eda-made-easy
+
+# check for status
+git status
+
+# for any change just type this command
+git add .
+
+# add a commit with a message
+git commit -am "add usecase"
+git commit -am "add files"
+git commit -am "update files"
+git commit -am "add files and update readme"
+
+
+# push to github if your branch on github is master
+git push origin master
+
+```
+
+**9.2 In python, grab filename and split it**
+```python
+# grab filename and split it in python
+import os
+base=os.path.basename('/root/dir/sub/file.ext')
+base
+'file.ext'
+os.path.splitext(base)
+('file', '.ext')
+os.path.splitext(base)[0]
+'file'
+
+```
+
+**9.3 Split url in javascript using the console**
+```javascript
+// split url in js using the console
+let url = "https://flaven.fr/2021/12/quick-poc-for-a-all-in-one-that-provides-an-seo-dashboard-made-with-streamlit-managing-screaming-frog-automation-storing-results-in-a-database-sqlite-and-create-data-analysis-graphics-for-seo-repo/";
+console.log(url);
+
+let pathArray = url.split('/');
+console.log(pathArray);
+
+let last = pathArray.pop();
+console.log(last);
+
+```
+
+
+
