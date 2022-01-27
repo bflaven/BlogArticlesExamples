@@ -4,7 +4,6 @@
 
 Find the article on my blog @ "Extending Streamlit usage to create data science applications and other type of applications" :: [https://flaven.fr/2021/06/extending-streamlit-usage-to-create-data-science-applications-and-other-type-of-applications/](https://flaven.fr/2021/06/extending-streamlit-usage-to-create-data-science-applications-and-other-type-of-applications/)
 
-
 ### 001_nlp_spacy_python_realp
 A bunch of scripts extracted from an excellent article "Natural Language Processing With spaCy in Python"
 
@@ -33,7 +32,6 @@ Some examples with Spacy only.
 
 ### 009_countries_crud_streamlit_app
 It is to create a CRUD countries manager with Streamlit so this usecase give the main concepts to create a CRUD web application for any kind of content. It is a POC that is a proof concept that Streamlit can be used far beyond only ML or Data science application. You can make the best of it!
-
 
 ### 010_streamlit_design
 Some examples to see the Streamlit UX potential.
