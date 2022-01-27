@@ -178,6 +178,10 @@ cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/streamlit-sweetviz-p
 # create the directory
 git remote add origin streamlit-sweetviz-pandas-profiling-eda-made-easy
 
+# know your branch
+git branch
+
+
 # check for status
 git status
 
