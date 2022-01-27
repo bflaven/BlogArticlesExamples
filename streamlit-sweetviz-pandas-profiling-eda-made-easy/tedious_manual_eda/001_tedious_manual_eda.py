@@ -10,7 +10,7 @@ source activate streamlit_spacy_1
 conda deactivate
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/streamlit_eda_made_easy/tedious_manual_eda/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/streamlit-sweetviz-pandas-profiling-eda-made-easy/tedious_manual_eda/
 
 [file]
 python 001_tedious_manual_eda.py
