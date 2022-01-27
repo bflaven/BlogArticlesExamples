@@ -12,7 +12,7 @@ conda deactivate
 
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/streamlit_eda_made_easy/streamlit_eda_made_easy_2/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/streamlit-sweetviz-pandas-profiling-eda-made-easy/streamlit_eda_made_easy_2/
 
 
 [file]

@@ -85,6 +85,7 @@ conda deactivate
 ├── README.md
 ├── requirements_1_streamlit_spacy_1.txt
 ├── streamlit_eda_made_easy_1
+│   ├── README.md
 │   ├── config_values
 │   │   └── values_conf.py
 │   ├── data
@@ -103,6 +104,7 @@ conda deactivate
 │   ├── 006_all_streamlit_webapp_for_data_science.py
 │   ├── 007_all_streamlit_webapp_for_data_science.py
 │   ├── 008_all_streamlit_webapp_for_data_science.py
+│   ├── README.md
 │   ├── config_values
 │   │   └── values_conf.py
 │   └── data
@@ -131,11 +133,13 @@ conda deactivate
 │   ├── 002_pandas_profiling_report_202201221050_amazon_top_50_bestselling_books_with_categories.csv.html
 │   ├── 002_pandas_profiling_report_pokemon.csv.html
 │   ├── 002_streamlit_webapp_pandas_profiling.py
+│   ├── README.md
 │   └── config_values
 │       └── values_conf.py
 ├── streamlit_eda_made_easy_sweetviz_3
 │   ├── 009_streamlit_webapp_sweetviz.py
 │   ├── 010_streamlit_webapp_sweetviz.py
+│   ├── README.md
 │   ├── config_values
 │   │   └── values_conf.py
 │   ├── example_1_diabetes_df_streamlit_webapp_sweetviz.html
@@ -153,6 +157,7 @@ conda deactivate
     ├── 001_tedious_manual_eda.ipynb
     ├── 001_tedious_manual_eda.py
     ├── 002_tedious_manual_eda.ipynb
+    ├── README.md
     ├── config_values
     │   └── values_conf.py
     └── data

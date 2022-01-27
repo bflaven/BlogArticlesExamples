@@ -9,11 +9,8 @@ conda info --envs
 source activate streamlit_spacy_1
 conda deactivate
 
-
-
-
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/using_bert_streamlit/examples_eda_2/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/streamlit-sweetviz-pandas-profiling-eda-made-easy/streamlit_eda_made_easy_2/
 
 
 

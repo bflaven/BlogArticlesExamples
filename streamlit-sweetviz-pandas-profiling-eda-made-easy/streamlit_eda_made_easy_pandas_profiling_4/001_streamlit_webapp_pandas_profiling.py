@@ -10,7 +10,7 @@ source activate streamlit_spacy_1
 conda deactivate
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/streamlit_eda_made_easy/streamlit_eda_made_easy_pandas_profiling_4/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/streamlit-sweetviz-pandas-profiling-eda-made-easy/streamlit_eda_made_easy_pandas_profiling_4/
 
 [file]
 streamlit run 001_streamlit_webapp_pandas_profiling.py
