@@ -4,6 +4,36 @@
 **You can find this artcile on my blog "Exploratory Data Analysis or EDA in Data Science made easy with SWEETVIZ, PANDAS PROFILING and Streamlit" [https://flaven.fr/2022/01/exploratory-data-analysis-or-eda-in-data-science-made-easy-with-sweetviz-pandas-profiling-and-streamlit/](https://flaven.fr/2022/01/exploratory-data-analysis-or-eda-in-data-science-made-easy-with-sweetviz-pandas-profiling-and-streamlit/)**
 
 
+**For this application, you will need specific Python Environment. I am using Conda to manage the environment. My Conda Environment is named `eda_made_easy`**
+
+```bash
+# Conda Environment
+conda create --name eda_made_easy python=3.9.7
+conda info --envs
+source activate eda_made_easy
+conda deactivate
+# if needed to remove
+conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
+
+
+# install the libraries required
+
+pip install streamlit
+pip install watchdog
+pip install seaborn
+pip install pandas_profiling
+pip install streamlit-embedcode
+pip install streamlit-lottie
+pip install streamlit-pandas-profiling
+pip install streamlit-autorefresh
+pip install sklearn
+pip install plotly
+
+
+# or use the requirements requirements_eda_made_easy_1.txt
+# e.g pip install -r requirements_eda_made_easy_1.txt
+
+```
 
 
 
@@ -53,7 +83,8 @@ The example is extracted form this article : [https://towardsdatascience.com/exp
 **Save python requirements in a file name `requirements.txt`.**
 ```bash
 # show what the requirements
-pip freeze > requirements_1_streamlit_spacy_1.txt
+pip freeze > requirements_eda_made_easy_1.txt
+
 
 # rename the last version with the correct name requirements.txt, heroku only accept the filename requirements.txt
 mv requirements_1_streamlit_spacy_1.txt requirements.txt

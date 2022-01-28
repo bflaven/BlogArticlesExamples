@@ -3,12 +3,12 @@
 
 """
 [env]
-[env]
-# you have created a env with all the required packages
-conda create --name streamlit_spacy_1 python=3.9.7
+conda create --name eda_made_easy python=3.9.7
 conda info --envs
-source activate streamlit_spacy_1
+source activate eda_made_easy
 conda deactivate
+# if needed to remove
+conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
 
 [path]
@@ -19,7 +19,6 @@ cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/streamlit-sweetviz-p
 streamlit run 005_all_streamlit_webapp_for_data_science.py
 
 # installation required
-streamlit_pandas_profiling
 pip install streamlit-embedcode
 pip install streamlit-lottie
 pip install streamlit-pandas-profiling

@@ -3,8 +3,13 @@
 
 """
 [env]
-# you have created a env with all the required packages
-source activate streamlit_spacy_1
+conda create --name eda_made_easy python=3.9.7
+conda info --envs
+source activate eda_made_easy
+conda deactivate
+# if needed to remove
+conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
+
 
 
 [path]

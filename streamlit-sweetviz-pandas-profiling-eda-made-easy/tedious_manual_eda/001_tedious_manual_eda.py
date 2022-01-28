@@ -4,10 +4,13 @@
 """
 
 [env]
-conda create --name streamlit_spacy_1 python=3.9.7
+conda create --name eda_made_easy python=3.9.7
 conda info --envs
-source activate streamlit_spacy_1
+source activate eda_made_easy
 conda deactivate
+# if needed to remove
+conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
+
 
 [path]
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/streamlit-sweetviz-pandas-profiling-eda-made-easy/tedious_manual_eda/
