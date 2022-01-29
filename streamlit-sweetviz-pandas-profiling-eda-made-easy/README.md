@@ -46,7 +46,7 @@ config_values/values_conf.py
 
 ```bash
 # Below are all the sections and options you can have in ~/.streamlit/config.toml.
-# 
+ 
 streamlit config show
 ```
 
@@ -77,10 +77,6 @@ streamlit config show
 ls -l 
 
 # modify the theme or whatever
-
-
-
-
 
 ```
 
