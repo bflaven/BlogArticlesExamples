@@ -46,38 +46,23 @@ def main():
 
     # dataset
     df = load_csv()
-    # print(df)
+    print(df)
     
     # columns
-    df.drop ('Unnamed: 7', axis=1, inplace=True)
     columns = df.columns
-    # print(columns)
+    print(columns)
     
     # shape
     shape = df.shape
-    # print(shape)
+    print(shape)
     
     # non_available
     non_available = df.isna().sum()
-    # print(non_available)
+    print(non_available)
     
     # types
     types = df.dtypes
-    # print(types)
-
-    # PLAYING WITH COLUMNS
-    print("\n--- PLAYING WITH COLUMNS")
-
-    # 'Tennis_Player', 'Total_Weeks_at_No_1', 'Maximum_Consectutive_Weeks_at_no_1', 'Years_End_no_1','Careers_Wins_Losses', 'Titles', 'Prize_Money'
-    
-    # best player with the highest win matches in a career. Careers_Wins_Losses has to be split on -
-    
-    best_players = df[['Careers_Wins', 'Careers_Losses']] = df.Careers_Wins_Losses.str.split('-', expand=True).astype(float)
-    best_players = df[['Tennis_Player', 'Careers_Wins_Losses',
-                       'Careers_Wins', 'Careers_Losses']].head()
-    print(best_players)
-    
-    # JUMP TO JUPYTER NOTEBOOK
+    print(types)
 
     
    

@@ -6,4 +6,9 @@
 CVS_FILE_PATH = 'data/Tennis_World_Number_1s.csv'
 
 
+TEXT_TITLE_APP = "Tedious Manual EDA"
+TEXT_SUBHEADER_APP = "You need to code your EDA"
+
+
+
 

@@ -1,7 +1,7 @@
 # streamlit-sweetviz-pandas-profiling-eda-made-easy
 **A quick overview on how-to generate an "Exploratory Data Analysis" (EDA in Data Science) with Streamlit and the 2 well-known libraries:  SWEETVIZ, PANDAS PROFILING.**
 
-**You can find this artcile on my blog "Exploratory Data Analysis or EDA in Data Science made easy with SWEETVIZ, PANDAS PROFILING and Streamlit" [https://flaven.fr/2022/01/exploratory-data-analysis-or-eda-in-data-science-made-easy-with-sweetviz-pandas-profiling-and-streamlit/](https://flaven.fr/2022/01/exploratory-data-analysis-or-eda-in-data-science-made-easy-with-sweetviz-pandas-profiling-and-streamlit/)**
+**You can find this article on my blog "Exploratory Data Analysis or EDA in Data Science made easy with SWEETVIZ, PANDAS PROFILING and Streamlit" [https://flaven.fr/2022/01/exploratory-data-analysis-or-eda-in-data-science-made-easy-with-sweetviz-pandas-profiling-and-streamlit/](https://flaven.fr/2022/01/exploratory-data-analysis-or-eda-in-data-science-made-easy-with-sweetviz-pandas-profiling-and-streamlit/)**
 
 
 **For this application, you will need specific Python Environment. I am using Conda to manage the environment. My Conda Environment is named `eda_made_easy`**
@@ -41,6 +41,53 @@ pip install plotly
 ```bash
 config_values/values_conf.py
 ```
+
+**Sometimes, in Streamlit, you need to view all configuration options**
+
+```bash
+# Below are all the sections and options you can have in ~/.streamlit/config.toml.
+# 
+streamlit config show
+```
+
+
+
+**Sometimes, in Streamlit, you need build custom themes for your Streamlit application cause it is more fun, here the commands' sequence** 
+
+```bash
+# go to your app directory
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/streamlit-sweetviz-pandas-profiling-eda-made-easy/tedious_manual_eda/
+
+# make the config directory
+mkdir .streamlit
+
+# check out unix base existence of the directory
+ls -la
+
+# go to this need dir
+cd .streamlit
+
+# copy the config.toml inside the directory
+touch config.toml
+
+# copy and paste whait is output from this command into the config.toml
+streamlit config show
+
+# checkout result
+ls -l 
+
+# modify the theme or whatever
+
+
+
+
+
+```
+
+Source: [https://docs.streamlit.io/library/advanced-features/configuration](https://docs.streamlit.io/library/advanced-features/configuration)
+
+
+
 
 ### 1. streamlit_eda_made_easy_1
 On GitHub, you can find different approach to build up an "Exploratory Data Analysis" (EDA in Data Science). This one is inspired by Marina Ramalhete from Brazil that is pretty advanced as is it designed with a Class. I have rework few elements to make it more readable and deliver more contextual information when checking the data.
