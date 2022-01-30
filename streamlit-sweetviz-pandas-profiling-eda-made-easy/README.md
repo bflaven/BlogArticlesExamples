@@ -130,7 +130,7 @@ pip freeze > requirements_eda_made_easy_1.txt
 
 
 # rename the last version with the correct name requirements.txt, heroku only accept the filename requirements.txt
-mv requirements_1_streamlit_spacy_1.txt requirements.txt
+mv requirements_eda_made_easy_1.txt requirements.txt
 
 ```
 ### 7. environment
@@ -139,15 +139,15 @@ mv requirements_1_streamlit_spacy_1.txt requirements.txt
 
 ```bash
 # create the env
-conda create --name streamlit_spacy_1 python=3.9.7
+conda create --name eda_made_easy python=3.9.7
 
 # listing the envs
 conda info --envs
 
-# activate the env named streamlit_spacy_1
-source activate streamlit_spacy_1
+# activate the env named eda_made_easy
+source activate requirements_eda_made_easy_1
 
-# desactivate the env named streamlit_spacy_1
+# desactivate the env named eda_made_easy
 conda deactivate
 ```
 
@@ -157,10 +157,12 @@ conda deactivate
 ```bash
 .
 ├── README.md
-├── requirements_1_streamlit_spacy_1.txt
+├── requirements_eda_made_easy_1.txt
 ├── streamlit_eda_made_easy_1
 │   ├── README.md
 │   ├── config_values
+│   │   ├── __pycache__
+│   │   │   └── values_conf.cpython-39.pyc
 │   │   └── values_conf.py
 │   ├── data
 │   │   ├── amazon_top_50_bestselling_books_with_categories.csv
@@ -180,6 +182,8 @@ conda deactivate
 │   ├── 008_all_streamlit_webapp_for_data_science.py
 │   ├── README.md
 │   ├── config_values
+│   │   ├── __pycache__
+│   │   │   └── values_conf.cpython-39.pyc
 │   │   └── values_conf.py
 │   └── data
 │       ├── 202109211505gaWeeklyBachFmm.csv
@@ -209,6 +213,9 @@ conda deactivate
 │   ├── 002_streamlit_webapp_pandas_profiling.py
 │   ├── README.md
 │   └── config_values
+│       ├── __pycache__
+│       │   ├── values_conf.cpython-38.pyc
+│       │   └── values_conf.cpython-39.pyc
 │       └── values_conf.py
 ├── streamlit_eda_made_easy_sweetviz_3
 │   ├── 009_streamlit_webapp_sweetviz.py
@@ -230,12 +237,13 @@ conda deactivate
 └── tedious_manual_eda
     ├── 001_tedious_manual_eda.ipynb
     ├── 001_tedious_manual_eda.py
+    ├── 002_streamlit_tedious_manual_eda.py
     ├── 002_tedious_manual_eda.ipynb
     ├── README.md
     ├── config_values
+    │   ├── __pycache__
+    │   │   └── values_conf.cpython-39.pyc
     │   └── values_conf.py
-    └── data
-        └── Tennis_World_Number_1s.csv
 ```
 
 ### 9. Extra stuff (readme as a notebook)
