@@ -316,4 +316,21 @@ console.log(last);
 ```
 
 
+## VIDEOS
+
+Coming soon...
+
+<!-- [Part 1 Exploratory Data Analysis or EDA in Data Science made easy with SWEETVIZ, PANDAS PROFILING and Streamlit](https://www.youtube.com/watch?v=6R0HYHIVVUQ)
+[![Part 1 Exploratory Data Analysis or EDA in Data Science made easy with SWEETVIZ, PANDAS PROFILING and Streamlit](streamlit_eda_made_easy_001.png)](https://www.youtube.com/watch?v=6R0HYHIVVUQ)
+
+
+[Part 2 Exploratory Data Analysis or EDA in Data Science made easy with SWEETVIZ, PANDAS PROFILING and Streamlit](https://www.youtube.com/watch?v=i_WrW5-i2wY)
+[![Part 2 Exploratory Data Analysis or EDA in Data Science made easy with SWEETVIZ, PANDAS PROFILING and Streamlit](streamlit_eda_made_easy_001.png)](https://www.youtube.com/watch?v=i_WrW5-i2wY)
+
+
+[Part 3 Exploratory Data Analysis or EDA in Data Science made easy with SWEETVIZ, PANDAS PROFILING and Streamlit](https://www.youtube.com/watch?v=PMC36ZGDWQ8)
+[![Part 3 Exploratory Data Analysis or EDA in Data Science made easy with SWEETVIZ, PANDAS PROFILING and Streamlit](streamlit_eda_made_easy_001.png)](https://www.youtube.com/watch?v=PMC36ZGDWQ8) -->
+
+
+
 
