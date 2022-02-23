@@ -1,7 +1,11 @@
 # automate_po_job_demo_support
 
 
-**A post on how to work with effocientcy on customer suport with the help of streamlit, sqlalchemy and keyBert.**
+**A post on how to work with efficiency on customer support with the help of Streamlit, Sqlalchemy and keyBert. To answer as quick as possible to your consumer feedback!**
+
+
+
+
 
 **My first concern is "How can I optimize the support that I currently made as a PO?". I build an application to store mail templates' system.**
 
