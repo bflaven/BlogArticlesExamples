@@ -83,7 +83,7 @@ conda update -n base -c defaults conda
 
 ```bash
 .
-├── 001_all_in_one_automate_po_job_demo_support_keybert.py
+├── 001_all_in_one_automate_po_job_demo_support_keybert.py # the streamlit app
 ├── README.md
 ├── automate_po_job_streamlit_sqlalchemy_1.txt # the requirements
 ├── bert_flair_1.txt # the requirements
