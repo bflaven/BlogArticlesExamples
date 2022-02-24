@@ -3,21 +3,16 @@
 
 **Part of a post on how to work with efficiency on customer support with the help of Streamlit, Sqlalchemy and keyBert. The objective is to answer as quick as possible to your consumer feedback!**
 
+**The Streamlit application, presented below, has an simple objective : to leverage on automatic keyword generation. This principle is everywhere for multipurpose when you are dealing with texts from Chat solution to any text analysis solution. So, in my case, it will be analyze my users support's heavy burden.**
 
-
-The Streamlit application, presented below, has an simple objective : to leverage on automatic keyword generation. 
-
-
-This principle is everywhere for multipurpose when you are dealing with texts from Chat solution to any text analysis solution. So, in my case, it will be analyze my users support's heavy burden.
-
-
-Here are the requirements to make the application works.
-
+**The project leverages on these libraries.**
+- [Streamlit: https://streamlit.io/](https://streamlit.io/)
+- [KeyBERT: https://maartengr.github.io/KeyBERT/](https://maartengr.github.io/KeyBERT/index.html)
 
 ## 1. Create an environment with Conda
 **I am using Anaconda to manage the python environment**
 
-Check the official website at [Anaconda | The World&#039;s Most Popular Data Science Platform](https://www.anaconda.com/)
+Check the official website at [Anaconda: https://www.anaconda.com/](https://www.anaconda.com/)
 
 
 

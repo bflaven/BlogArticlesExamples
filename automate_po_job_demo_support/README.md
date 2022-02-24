@@ -1,14 +1,30 @@
 # automate_po_job_demo_support
 
 
-**A post on how to work with efficiency on customer support with the help of Streamlit, Sqlalchemy and keyBert. To answer as quick as possible to your consumer feedback!**
+**A post on how-to work with efficiency on customer support with the help of Streamlit, Sqlalchemy and keyBert. To answer as quick as possible to your consumer feedback!**
 
-**My first concern was "How can I optimize the support that I currently made as a PO?". I build an application to store a mailling support templates' system.**
+**Objective: My first concern was "How can I optimize the support that I currently made as a PO?". I build an application to store a mailing support templates' system.**
+
+**Two preliminary remarks that precise application's scope and purpose:**
+
+**1.  First:** the application does not to send any email because the added value for this POC is in the ability to connect the 2 projects not to handle security, network, environment, deployment issues. Feel free to modify it and do this evolution if necessary. Security, network, environment, deployment issues are complexities far beyond this POC.
+
+**2.  Second:** again for security reason, I cannot release the real templates that I have gathered for my own usage. Instead I have populated generic template, feel free to modify and adapt to our own use.
+
+
+**The project leverages on these libraries.**
+
+- [Streamlit: https://streamlit.io/](https://streamlit.io/)
+- [SQLAlchemy: https://www.sqlalchemy.org/](https://www.sqlalchemy.org/)
+
+
+
 
 ## 1. Create an environment with Conda
 **I am using Anaconda to manage the python environment**
 
-Check the official website at [Anaconda | The World&#039;s Most Popular Data Science Platform](https://www.anaconda.com/)
+Check the official website at [Anaconda: https://www.anaconda.com/](https://www.anaconda.com/)
+
 
 
 
@@ -54,12 +70,19 @@ conda update -n base -c defaults conda
 
 
 ## 3. details for each directory
-**Here is a quick presentation for each directory inside the project. Some directories are just POC to understand for instance how sqlalchemy works.**
+**Here is a quick presentation for each directory inside the project. Some directories are just POC to understand for instance how sqlalchemy works, you have always a set of commands as reminder because I keep forgetting how-to make things, especially working with database.**
+
+
 
 ### 3.1 Details for `001_sql_files`
-The idea is to give the way you can create a dump for each slqlite database used in the project.
+The idea is to give the way you can create a dump for each slqlite database used in the project. Check the official website at [SQLite](https://sqlite.org/index.html)
 
 
+
+
+
+
+**How to make dump with SQLite**
 ```bash
 
 # go to the directory where you want the dumps
@@ -121,7 +144,7 @@ sqlite3
 ```
 
 
-**sqlite's database description for the Streamlit application**
+**Quick SQLite's database description for the Streamlit application**
 
 ```sql
 
@@ -147,7 +170,7 @@ PRIMARY KEY("id" AUTOINCREMENT))
 """)
 ```
 
-**sqlite's commands to create table in database**
+**Other SQLite's commands to create table in database**
 ```sql
 --sqlite command_1
 PRAGMA foreign_keys=OFF;
@@ -177,7 +200,7 @@ CREATE TABLE "user_support_mail_templates" (
 COMMIT;
 ```
 
-**Set of useful commands to play with the sqlite databases**
+**Set of useful SQLite commands to play with the SQLite databases**
 
 ```bash
 # connect to sqlite
@@ -238,6 +261,9 @@ DROP TABLE user_support_mail_templates;
 ```
     
 ### 3.2 Details for `002_pythonspot`
+This directory presents a POC on how-to use SQLite with ORM SQLAlchemy. It is based on a post "ORM with SqlAlchemy" ["ORM with SqlAlchemy"](https://pythonspot.com/orm-with-sqlalchemy/)
+
+For more information, you can also check the official website: [SQLAlchemy: - https://www.sqlalchemy.org/](https://www.sqlalchemy.org/)
 
 
 ```bash
@@ -260,6 +286,8 @@ schema_pythonspot_tabledef.py
 
 
 ### 3.3 Details for `003_automate_po_job`
+
+This directory presents a POC on how-to use SQLite with ORM SQLAlchemy for the Streamlit application. For more information, you can also check the official website: [SQLAlchemy: - https://www.sqlalchemy.org/](https://www.sqlalchemy.org/)
 
 
 ```bash
@@ -298,6 +326,11 @@ db_scheme_support_mail.py
 
 ### 3.4 Details for `004_automate_po_job_streamlit_sqlalchemy_example_database`
 
+This directory presents a POC on how-to use Streamlit, SQLite with ORM SQLAlchemy for the mailling template system as a Streamlit application. 
+
+For more information, you can also check the official websites: 
+- [SQLAlchemy: - https://www.sqlalchemy.org/](https://www.sqlalchemy.org/)
+- [Streamlit: https://streamlit.io/](https://streamlit.io/)
 
 ```bash
 # go to the directory

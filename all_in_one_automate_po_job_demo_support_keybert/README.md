@@ -14,12 +14,24 @@
 (discovering_bert_and_keybert)<br><a href="https://github.com/bflaven/BlogArticlesExamples/tree/master/discovering_bert_and_keybert" target="_blank">discovering_bert_and_keybert</a>
 
 
+**Two preliminary remarks that precise application's scope and purpose:**
 
+**1.  First:** the application does not to send any email because the added value for this POC is in the ability to connect the 2 projects not to handle security, network, environment, deployment issues. Feel free to modify it and do this evolution if necessary. Security, network, environment, deployment issues are complexities far beyond this POC.
+
+**2.  Second:** again for security reason, I cannot release the real templates that I have gathered for my own usage. Instead I have populated generic template, feel free to modify and adapt to our own use.
+
+
+**The project leverages on these libraries.**
+- [Streamlit: https://streamlit.io/](https://streamlit.io/)
+- [SQLAlchemy: https://www.sqlalchemy.org/](https://www.sqlalchemy.org/)
+- [KeyBERT: https://maartengr.github.io/KeyBERT/](https://maartengr.github.io/KeyBERT/index.html)
+- [SQLite: https://sqlite.org/](https://sqlite.org/index.html)
 
 ## 1. Create an environment with Conda
 **I am using Anaconda to manage the python environment**
 
-Check the official website at [Anaconda | The World&#039;s Most Popular Data Science Platform](https://www.anaconda.com/)
+Check the official website at [Anaconda: https://www.anaconda.com/](https://www.anaconda.com/)
+
 
 
 
