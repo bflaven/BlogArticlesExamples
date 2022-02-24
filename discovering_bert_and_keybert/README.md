@@ -14,7 +14,7 @@ This principle is everywhere for multipurpose when you are dealing with texts fr
 Here are the requirements to make the application works.
 
 
-## 1. create an environment with Conda
+## 1. Create an environment with Conda
 **I am using Anaconda to manage the python environment**
 
 Check the official website at [Anaconda | The World&#039;s Most Popular Data Science Platform](https://www.anaconda.com/)
@@ -53,6 +53,11 @@ pip install -U sentence-transformers
 
 # to export requirements
 pip freeze > bert_flair_1.txt
+
+
+# to install requirements
+pip install -r bert_flair_1.txt
+
 
 ```
 
