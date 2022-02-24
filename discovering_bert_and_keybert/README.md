@@ -5,7 +5,10 @@
 
 
 
-**The Streamlit application, presented belwo, has an simple objective : to leverage on automatic keyword generation. This principle is everywhere for multipurpose when you are dealing with texts from Chat solution to any text analysis solution. So, in my case, it will be analyze my users support's heavy burden.**
+The Streamlit application, presented below, has an simple objective : to leverage on automatic keyword generation. 
+
+
+This principle is everywhere for multipurpose when you are dealing with texts from Chat solution to any text analysis solution. So, in my case, it will be analyze my users support's heavy burden.
 
 
 Here are the requirements to make the application works.
@@ -53,7 +56,7 @@ pip freeze > bert_flair_1.txt
 
 ```
 
-## 3. Files in `automate_po_job_demo_support`
+## 3. Files in `discovering_bert_and_keybert`
 **The project's structure with some indications for each file in comment.**
 
 ```bash
