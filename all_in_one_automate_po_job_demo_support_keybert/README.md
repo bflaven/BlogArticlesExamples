@@ -3,17 +3,27 @@
 **A post on how to work with efficiency on customer support with the help of Streamlit, Sqlalchemy and keyBert. To answer as quick as possible to your consumer feedback!**
 
 
-In each python file, you have the instructions to make it work. As an example, see below the header of `001_all_in_one_automate_po_job_demo_support_keybert.py`
+
+**The application below result from the merge of 2 projects: "KeyBERT Rough Text Analyzer" and "AUTOMATE P.O. JOB SUPPORT'S DEMO". The Streamlit application enables to manage a template mailing system for support coupled with a KeyBERT analyzer to not have to read the customer support mails in themselves.**
 
 
-```python
 
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
+1. The project "AUTOMATE P.O. JOB SUPPORT'S DEMO" (automate_po_job_demo_support)<br><a href="https://github.com/bflaven/BlogArticlesExamples/tree/master/automate_po_job_demo_support" target="_blank">automate_po_job_demo_support</a>
 
-"""
+2. The The project "KeyBERT Rough Text Analyzer"
+(discovering_bert_and_keybert)<br><a href="https://github.com/bflaven/BlogArticlesExamples/tree/master/discovering_bert_and_keybert" target="_blank">discovering_bert_and_keybert</a>
 
-[env]
+
+
+
+## 1. Create an environment with Conda
+**I am using Anaconda to manage the python environment**
+
+Check the official website at [Anaconda | The World&#039;s Most Popular Data Science Platform](https://www.anaconda.com/)
+
+
+
+```bash
 # Conda Environment
 conda create --name all_in_one_automate_po_job python=3.9.7
 conda info --envs
@@ -22,13 +32,15 @@ conda deactivate
 # if needed to remove
 conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
-[path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/all_in_one_automate_po_job_demo_support_keybert/
+```
 
-[file]
-streamlit run 001_all_in_one_automate_po_job_demo_support_keybert.py
 
-[required]
+## 2. Install the required modules in Python
+
+**You can either install manually all the modules or use the requirements files `automate_po_job_streamlit_sqlalchemy_1.txt` and `bert_flair_1.txt` to install all the modules.**
+
+```bash
+
 # install streamlit
 pip install streamlit
 pip install watchdog
@@ -62,6 +74,40 @@ pip install -r bert_flair_1.txt
 # update conda if needed by running
 conda update -n base -c defaults conda
 
-"""
+
 
 ```
+
+## 3. Files in `all_in_one_automate_po_job_demo_support_keybert`
+**The project's structure with some indications for each file in comment.**
+
+```bash
+.
+├── 001_all_in_one_automate_po_job_demo_support_keybert.py
+├── README.md
+├── automate_po_job_streamlit_sqlalchemy_1.txt # the requirements
+├── bert_flair_1.txt # the requirements
+├── config_values
+│   └── values_conf.py # confif values for the app
+├── db_scheme_support_mail.py
+├── keybert_functions # the keyber functions 
+│   └── required_keybert_functions.py
+├── sqlalchemy_data # the db 
+│   └── km_user_support_2.sqlite3
+├── stopwords # stop words for (it', 'fr', 'es', 'ru')
+│   ├── stopwords_es.txt
+│   ├── stopwords_fr.txt
+│   ├── stopwords_it.txt
+│   └── stopwords_ru.txt
+└── texts_examples_intl.py # text samples in ('en', 'it', 'fr', 'es', 'ru')
+
+```
+
+
+
+
+
+
+
+
+
