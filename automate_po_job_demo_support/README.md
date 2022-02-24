@@ -159,7 +159,7 @@ sqlite3
 --### mail_body
 --### mail_search_tags
 
---model
+-- SQLite model command
 --# Create empty tables
 db.execute("""
 CREATE TABLE IF NOT EXISTS "articles" (
@@ -172,7 +172,7 @@ PRIMARY KEY("id" AUTOINCREMENT))
 
 **Other SQLite's commands to create table in database**
 ```sql
---sqlite command_1
+--SQLite command_1
 PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
 CREATE TABLE user_support_mail_templates (
@@ -185,7 +185,7 @@ CREATE TABLE user_support_mail_templates (
 );
 COMMIT;
 
---sqlite command_2
+--SQLite command_2
 PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
 CREATE TABLE "user_support_mail_templates" (
