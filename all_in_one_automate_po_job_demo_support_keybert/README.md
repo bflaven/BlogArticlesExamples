@@ -78,7 +78,7 @@ conda update -n base -c defaults conda
 
 ```
 
-## 3. Files in `all_in_one_automate_po_job_demo_support_keybert`
+## 3. Directory tree for `all_in_one_automate_po_job_demo_support_keybert`
 **The project's structure with some indications for each file in comment.**
 
 ```bash

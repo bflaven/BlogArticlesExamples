@@ -61,7 +61,7 @@ pip install -r bert_flair_1.txt
 
 ```
 
-## 3. Files in `discovering_bert_and_keybert`
+## 3. Directory tree for `discovering_bert_and_keybert`
 **The project's structure with some indications for each file in comment.**
 
 ```bash
