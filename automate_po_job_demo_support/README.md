@@ -86,7 +86,7 @@ The idea is to give the way you can create a dump for each slqlite database used
 ```bash
 
 # go to the directory where you want the dumps
-cd /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/001_sql_files
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/001_sql_files/
 
 
 # dump_1 :: km_user_support_2.sql
@@ -95,11 +95,11 @@ cd /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_suppo
 sqlite3
 
 # connect to a specific DB
-.open /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/sqlalchemy_data/km_user_support_2.sqlite3
+.open /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/sqlalchemy_data/km_user_support_2.sqlite3
 
 
 # make a dump
-.output /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/001_sql_files/km_user_support_2.sql
+.output /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/001_sql_files/km_user_support_2.sql
 .dump
 
 
@@ -109,10 +109,10 @@ sqlite3
 sqlite3
 
 # connect to a specific DB
-.open /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/sqlalchemy_data/km_user_support_pythonspot_1.sqlite3
+.open /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/sqlalchemy_data/km_user_support_pythonspot_1.sqlite3
 
 # make a dump
-.output /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/001_sql_files/km_user_support_pythonspot_1.sql
+.output /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/001_sql_files/km_user_support_pythonspot_1.sql
 .dump
 
 
@@ -122,10 +122,10 @@ sqlite3
 sqlite3
 
 # connect to a specific DB
-.open /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/sqlalchemy_data/km_user_support_pythonspot_2.sqlite3
+.open /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/sqlalchemy_data/km_user_support_pythonspot_2.sqlite3
 
 # make a dump
-.output /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/001_sql_files/km_user_support_pythonspot_2.sql
+.output /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/001_sql_files/km_user_support_pythonspot_2.sql
 .dump
 
 
@@ -135,10 +135,10 @@ sqlite3
 sqlite3
 
 # connect to a specific DB
-.open /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/sqlalchemy_data/pythonspot_student_1.sqlite3
+.open /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/sqlalchemy_data/pythonspot_student_1.sqlite3
 
 # make a dump
-.output /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/001_sql_files/pythonspot_student_1.sql
+.output /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/001_sql_files/pythonspot_student_1.sql
 .dump
 
 ```
@@ -207,14 +207,14 @@ COMMIT;
 sqlite3
 
 # connect to a specific DB
-.open /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/sqlalchemy_data/km_user_support_2.sqlite3
+.open /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/sqlalchemy_data/km_user_support_2.sqlite3
 
-.open /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/sqlalchemy_data/km_user_support_pythonspot_1.sqlite3
+.open /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/sqlalchemy_data/km_user_support_pythonspot_1.sqlite3
 
-.open /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/sqlalchemy_data/km_user_support_pythonspot_2.sqlite3
+.open /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/sqlalchemy_data/km_user_support_pythonspot_2.sqlite3
 
 
-.open /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/sqlalchemy_data/pythonspot_student_1.sqlite3
+.open /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/sqlalchemy_data/pythonspot_student_1.sqlite3
 
 # to show the tables in SQLite
 .tables
@@ -246,11 +246,11 @@ DELETE FROM templates;
 VACUUM;
 
 # make a dump
-.output /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/001_sql_files/good_km_user_support_2.sql
+.output /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/001_sql_files/good_km_user_support_2.sql
 .dump
 
 # read and import a dump
-.read /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/001_sql_files/km_user_support_2.sql
+.read /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/001_sql_files/km_user_support_2.sql
 
 # drop table
 DROP TABLE user_support_mail_templates;
@@ -267,7 +267,7 @@ For more information, you can also check the official website: [SQLAlchemy: - ht
 
 
 ```bash
-cd  /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/002_pythonspot/
+cd  /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/002_pythonspot/
 
 ### create database and insert data (case_1)
 pythonspot_dummy.py
@@ -291,7 +291,7 @@ This directory presents a POC on how-to use SQLite with ORM SQLAlchemy for the S
 
 
 ```bash
-cd /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/003_automate_po_job/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/003_automate_po_job/
 
 ### create database and insert data (case_1)
 automate_po_job_dummy_1.py
@@ -334,7 +334,7 @@ For more information, you can also check the official websites:
 
 ```bash
 # go to the directory
-cd /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/004_automate_po_job_streamlit_sqlalchemy_example_database/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/automate_po_job_demo_support/004_automate_po_job_streamlit_sqlalchemy_example_database/
 
 # SQLALCHEMY ONLY
 ### create database
