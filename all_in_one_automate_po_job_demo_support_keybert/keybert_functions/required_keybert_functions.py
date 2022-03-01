@@ -67,7 +67,7 @@ class Keyword():
         keywords = self.model.extract_keywords(
             doc, stop_words=self.stopwords, top_n=number_kw_extracted, keyphrase_ngram_range=(number_min_ngram, number_max_ngram), use_maxsum=use_maxsum_selected, nr_candidates=nr_candidates_selected)
         # print(keywords)
-        st.write(keywords)
+        # st.write(keywords)
         return keywords
 
     # Maximal Marginal Relevance (use_mmr_selected, diversity_selected)
