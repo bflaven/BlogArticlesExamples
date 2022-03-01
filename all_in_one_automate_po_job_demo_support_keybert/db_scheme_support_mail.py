@@ -13,7 +13,7 @@ conda deactivate
 conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/automate_po_job_demo_support/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/all_in_one_automate_po_job_demo_support_keybert/
 
 
 [file]

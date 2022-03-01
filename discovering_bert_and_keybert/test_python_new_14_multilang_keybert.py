@@ -14,7 +14,7 @@ conda deactivate
 conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/discovering_bert_and_keybert/example_keybert/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/discovering_bert_and_keybert/
 
 
 [file]
