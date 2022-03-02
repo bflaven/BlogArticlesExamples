@@ -2,16 +2,19 @@
 
 **A post on how to work with efficiency on customer support with the help of Streamlit, Sqlalchemy and keyBert. To answer as quick as possible to your consumer feedback!**
 
+**This app is part of a post "A Streamlit application that Automate a User Support task  for P.O with an NLP KeyBERT Text Analyzer".**
 
+[Check the post at https://wp.me/p3Vuhl-39B](https://wp.me/p3Vuhl-39B)
 
 **The application below result from the merge of 2 projects: "KeyBERT Rough Text Analyzer" and "AUTOMATE P.O. JOB SUPPORT'S DEMO". The Streamlit application enables to manage a template mailing system for support coupled with a KeyBERT analyzer to not have to read the customer support mails in themselves.**
 
 
 
-1. The project "AUTOMATE P.O. JOB SUPPORT'S DEMO" (automate_po_job_demo_support)<br><a href="https://github.com/bflaven/BlogArticlesExamples/tree/master/automate_po_job_demo_support" target="_blank">automate_po_job_demo_support</a>
+1. The project "AUTOMATE P.O. JOB SUPPORT'S DEMO" (automate_po_job_demo_support)[https://github.com/bflaven/BlogArticlesExamples/tree/master/automate_po_job_demo_support](https://github.com/bflaven/BlogArticlesExamples/tree/master/automate_po_job_demo_support)
+
 
 2. The The project "KeyBERT Rough Text Analyzer"
-(discovering_bert_and_keybert)<br><a href="https://github.com/bflaven/BlogArticlesExamples/tree/master/discovering_bert_and_keybert" target="_blank">discovering_bert_and_keybert</a>
+(discovering_bert_and_keybert)[https://github.com/bflaven/BlogArticlesExamples/tree/master/discovering_bert_and_keybert](https://github.com/bflaven/BlogArticlesExamples/tree/master/discovering_bert_and_keybert)
 
 
 **Two preliminary remarks that precise application's scope and purpose:**
@@ -116,10 +119,19 @@ conda update -n base -c defaults conda
 ```
 
 
+## 4. Videos
+**3 additional videos to tackle this post**
 
 
+[Part 1 - The project  "AUTOMATE P.O. JOB SUPPORT’S DEMO" (automate_po_job_demo_support)](https://www.youtube.com/watch?v=YUmClVfNbN8)
+[![Part 1 - The project  "AUTOMATE P.O. JOB SUPPORT’S DEMO" (automate_po_job_demo_support)](streamlit_automate_user_support_keybert_001.png)](https://www.youtube.com/watch?v=YUmClVfNbN8)
 
 
+[Part 2 - The project  "KeyBERT Rough Text Analyzer"  (discovering_bert_and_keybert)](https://www.youtube.com/watch?v=k8L2_Hrvn-w)
+[![Part 2 - The project  "KeyBERT Rough Text Analyzer"  (discovering_bert_and_keybert)](streamlit_automate_user_support_keybert_002.png)](https://www.youtube.com/watch?v=k8L2_Hrvn-w)
 
+
+[Part 3 - The merge of the 2 projects:  "KeyBERT Rough Text Analyzer" and  "AUTOMATE P.O. JOB SUPPORT’S DEMO"  (all_in_one_automate_po_job_demo_support_keybert)](https://www.youtube.com/watch?v=XVfD0ubrjhg)
+[![Part 3 - The merge of the 2 projects:  "KeyBERT Rough Text Analyzer" and  "AUTOMATE P.O. JOB SUPPORT’S DEMO"  (all_in_one_automate_po_job_demo_support_keybert)](streamlit_automate_user_support_keybert_003.png)](https://www.youtube.com/watch?v=XVfD0ubrjhg)
 
 

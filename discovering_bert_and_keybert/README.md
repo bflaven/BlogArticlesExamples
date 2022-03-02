@@ -75,4 +75,17 @@ pip install -r bert_flair_1.txt
 
 ```
 
+## 4. Videos
+**3 additional videos to tackle this post**
 
+
+[Part 1 - The project  "AUTOMATE P.O. JOB SUPPORT’S DEMO" (automate_po_job_demo_support)](https://www.youtube.com/watch?v=YUmClVfNbN8)
+[![Part 1 - The project  "AUTOMATE P.O. JOB SUPPORT’S DEMO" (automate_po_job_demo_support)](streamlit_automate_user_support_keybert_001.png)](https://www.youtube.com/watch?v=YUmClVfNbN8)
+
+
+[Part 2 - The project  "KeyBERT Rough Text Analyzer"  (discovering_bert_and_keybert)](https://www.youtube.com/watch?v=k8L2_Hrvn-w)
+[![Part 2 - The project  "KeyBERT Rough Text Analyzer"  (discovering_bert_and_keybert)](streamlit_automate_user_support_keybert_002.png)](https://www.youtube.com/watch?v=k8L2_Hrvn-w)
+
+
+[Part 3 - The merge of the 2 projects:  "KeyBERT Rough Text Analyzer" and  "AUTOMATE P.O. JOB SUPPORT’S DEMO"  (all_in_one_automate_po_job_demo_support_keybert)](https://www.youtube.com/watch?v=XVfD0ubrjhg)
+[![Part 3 - The merge of the 2 projects:  "KeyBERT Rough Text Analyzer" and  "AUTOMATE P.O. JOB SUPPORT’S DEMO"  (all_in_one_automate_po_job_demo_support_keybert)](streamlit_automate_user_support_keybert_003.png)](https://www.youtube.com/watch?v=XVfD0ubrjhg)
