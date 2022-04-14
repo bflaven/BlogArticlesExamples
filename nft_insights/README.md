@@ -10,6 +10,9 @@
 # go to the directory
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights
 
+# move the HEAD to the latest commit of the master banch
+git checkout master
+
 
 # create the directory
 git remote add origin nft_insights
@@ -20,6 +23,10 @@ git branch
 
 # check for status
 git status
+
+# check for status
+git add 001_NFT_training
+
 
 # for any change just type this command
 git add .
