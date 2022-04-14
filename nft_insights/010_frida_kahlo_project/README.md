@@ -3,6 +3,8 @@
 
 **My subject is to create what is commonly called Generative Art Collections. It is a new way to create a collection of NFTs with scripts. This process is at the origin of the most popular collections such as CryptoPunks, Bored Ape Yacht Club... I looked for some resources in Python to generate my own collection. Here is a fraction of this search. For those who don't know what an NFT and some other concepts regarding the NFT ecosystem, you can read the article published on my own website [flaven.net](https://flaven.fr/) or you can grab the source for each NFT generator and some other resource on this GitHub account.**
 
+[Frida Kahlo roject](frida_kahlo_project.jpg)]
+
 
 ### 2. What is an NFT?
 
@@ -169,6 +171,21 @@ pip install -r nft_image_generator_requirements_1.txt
 ├── source_frida_kahlo.png
 └── source_lionel_messi.png
 ```
+
+### 5. Source images
+
+The NFT are a product of random between these 3 images...
+
+- [Frida Kahlo](source_frida_kahlo.png)]
+- [Dead Rosie](source_dead_rosie.png)]
+- [Lionel Messi](source_lionel_messi.png)]
+
+**Read more**
+- [Frida Kahlo](https://es.wikipedia.org/wiki/Frida_Kahlo)
+- [Dead Rosie](https://en.wikipedia.org/wiki/Rosie_the_Riveter)
+- [Lionel Messi](https://es.wikipedia.org/wiki/Lionel_Messi)
+
+
 
 <!-- 
 ## VIDEOS
