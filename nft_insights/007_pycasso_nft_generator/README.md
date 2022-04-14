@@ -4,7 +4,6 @@
 
 **My subject is to create what is commonly called Generative Art Collections. It is a new way to create a collection of NFTs with scripts. This process is at the origin of the most popular collections such as CryptoPunks, Bored Ape Yacht Club... I looked for some resources in Python to generate my own collection. Here is a fraction of this search. For those who don't know what an NFT and some other concepts regarding the NFT ecosystem, you can read the article published on my own website [flaven.net](https://flaven.fr/) or you can grab the source for each NFT generator and some other resource on this GitHub account.**
 
-This NFT generator came from [Island-generator](https://github.com/DavidKohler/Inkblot)
 
 ### 2. What is an NFT?
 
@@ -50,7 +49,7 @@ It is just I found easier to be in same git directory to create my environment w
 
 ```bash
 # go to your directory
-cd /[your-path]/008_rorschach_mask_project
+cd /[your-path]/007_pycasso_nft_generator
 ```
 
 **Create your dev env with conda**
@@ -96,19 +95,60 @@ pip install -r nft_image_generator_requirements_1.txt
 
 ```bash
 .
-├── 2022_04_06\ 05_50_02_762.png
 ├── README.md
-├── color_data.py
-├── colors.py
-├── island_generator_v4_1.py
-├── island_generator_v4_2.py
-├── island_generator_v4_3.py
-├── island_generator_v4_4.py
-├── island_generator_v4_5.py
-├── island_generator_v4_6.py
-├── using_pil_1.py
-├── using_pil_2.py
-└── using_pil_3.py
+├── config.py
+├── data.py
+├── generator.py
+├── output
+│   ├── pycasso-nft-data.json
+│   ├── pycasso_nft_1.png
+│   ├── pycasso_nft_2.png
+│   ├── pycasso_nft_3.png
+│   ├── pycasso_nft_4.png
+│   ├── pycasso_nft_5.png
+│   ├── pycasso_nft_6.png
+│   ├── pycasso_nft_7.png
+│   ├── pycasso_nft_8.png
+│   └── pycasso_nft_9.png
+└── pycasso
+    ├── background
+    │   ├── background_blue_1.png
+    │   ├── background_dust_6.png
+    │   ├── background_green_4.png
+    │   ├── background_orange_2.png
+    │   ├── background_pink_5.png
+    │   └── background_red_3.png
+    ├── eye
+    │   ├── picasso_trait_eye_1.png
+    │   ├── picasso_trait_eye_2.png
+    │   ├── picasso_trait_eye_3.png
+    │   ├── picasso_trait_eye_4.png
+    │   ├── picasso_trait_eye_5.png
+    │   └── picasso_trait_eye_6.png
+    ├── eyebrow
+    │   ├── picasso_trait_eyebrow_1.png
+    │   ├── picasso_trait_eyebrow_2.png
+    │   ├── picasso_trait_eyebrow_3.png
+    │   ├── picasso_trait_eyebrow_4.png
+    │   └── picasso_trait_eyebrow_5.png
+    ├── face
+    │   ├── picasso_trait_face_1.png
+    │   ├── picasso_trait_face_2.png
+    │   ├── picasso_trait_face_3.png
+    │   ├── picasso_trait_face_4.png
+    │   ├── picasso_trait_face_5.png
+    │   └── picasso_trait_face_6.png
+    ├── mouth
+    │   ├── picasso_trait_mouth_1.png
+    │   ├── picasso_trait_mouth_2.png
+    │   ├── picasso_trait_mouth_3.png
+    │   ├── picasso_trait_mouth_4.png
+    │   └── picasso_trait_mouth_5.png
+    └── nose
+        ├── picasso_trait_nose_1.png
+        ├── picasso_trait_nose_2.png
+        ├── picasso_trait_nose_3.png
+        └── picasso_trait_nose_4.png
 ```
 
 <!-- 

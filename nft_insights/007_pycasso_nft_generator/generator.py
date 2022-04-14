@@ -21,6 +21,10 @@ cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights/007_pyc
 [file]
 python generator.py
 
+# CAUTION 
+remove the output with generated image before using the script
+Check "Generate Amount": 5, # fix the amount of pycasso painting in config.py
+
 [source]
 https://github.com/DavidGameDev/py-nft-generator
 
