@@ -34,7 +34,7 @@ config = {
     "Output Directory": './output',
     "Output NFT Name": "fkp_nft_",
     "Output JSON Name": 'fkp-nft-data',
-    "Generate Amount": 55, # fix the amount of pycasso painting
+    "Generate Amount": 5, # fix the amount for NFT
     "Image Size": [1078,1358], # 300,300
     "Weighted Distribution": True,
     "Can Generate Empty": ["hair"],

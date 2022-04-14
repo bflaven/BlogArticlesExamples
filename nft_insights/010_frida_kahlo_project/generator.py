@@ -15,8 +15,12 @@ conda deactivate
 conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/nft_insights/010_frida_kahlo_project/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights/010_frida_kahlo_project/
 
+# CAUTION
+# check "Generate Amount": 55, # fix the amount for NFT in config.py
+# remove the output dir before
+rm -R output
 
 [file]
 python generator.py

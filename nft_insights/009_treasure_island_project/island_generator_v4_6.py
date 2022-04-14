@@ -14,7 +14,8 @@ conda deactivate
 conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/nft_insights/rorschach_project/Island-generator/
+cd cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights/Island-generator/
+
 
 [file]
 python island_generator_v4_6.py -r 5 -s [300,300] -b 20 -c [25,10,60]
