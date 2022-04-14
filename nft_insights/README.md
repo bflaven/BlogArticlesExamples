@@ -8,6 +8,37 @@ Recently, I had to take an interest in the metaverse, which obviously seems to b
 
 Read the full post on my own website [https://flaven.fr/2022/04/how-to-create-your-own-nft-generative-art-collections-with-python/](https://flaven.fr/2022/04/how-to-create-your-own-nft-generative-art-collections-with-python/)
 
+## Video using these NFTs
+
+These 4 videos where made during a workshop for the training for "Management de l’Innovation Technologique" at https://exed.polytechnique.edu/ for a project named MetaMuse. The baseline of the MetaMuse project was to offer to create virtual exhibition spaces or galleries, free and paid, of NFTs in the Metaverse.
+
+These videos were made with Sketchup and integrated some NFT created during the Workshop especially one extracted from 007_pycasso_nft_generator
+
+The code for the #NFT #Generative #Art #Collections is available for a fun discovering on how to create your own #NFT #Generative #Art #Collections with #Python and #streamlit on my Github account at https://bit.ly/3EbWSdd
+
+More attempts are also available for #NFT #Generative #Art #Collections with Frida #Kahlo and Lionel #Messi, Pablo #Picasso and even the #Rorschach Tests.
+
+Read the full post extracted from this experience on my own website at https://wp.me/p3Vuhl-3af
+
+
+**MetaMuse Project : The MetaMuse UX Guggenheim Modern Gallery experience**
+[MetaMuse Project : The MetaMuse Teaser Experience](https://www.youtube.com/watch?v=6R0HYHIVVUQ)
+[![MetaMuse Project : The MetaMuse Teaser Experience]](https://youtu.be/hzN8nn8wBVY)
+
+**MetaMuse Project : The MetaMuse UX Guggenheim Modern Gallery experience**
+
+[MetaMuse Project : The MetaMuse UX Guggenheim Modern Gallery experience](https://www.youtube.com/watch?v=p_FMgTVXxME)
+[![MetaMuse Project : The MetaMuse UX Guggenheim Modern Gallery experience]](https://youtu.be/p_FMgTVXxME)
+
+**MetaMuse Project : The MetaMuse Hermitage Museum No Wall Art Gallery experience**
+[MetaMuse Project : The MetaMuse Hermitage Museum No Wall Art Gallery experience](https://www.youtube.com/watch?v=yYh1KvsiqgQ)
+[![MetaMuse Project : The MetaMuse Hermitage Museum No Wall Art Gallery experience]](https://youtu.be/yYh1KvsiqgQ)
+
+**MetaMuse Project : The MetaMuse Ziggurat Building Hermitage Museum No Wall Art Gallery experience**
+[MetaMuse Project : The MetaMuse Ziggurat Building Hermitage Museum No Wall Art Gallery experience](https://www.youtube.com/watch?v=kSiDdjE7sdU)
+
+[![MetaMuse Project : The MetaMuse Ziggurat Building Hermitage Museum No Wall Art Gallery experience]](https://youtu.be/kSiDdjE7sdU)
+
 ## Git commands memo
 
 **In 2022, I always forget how to push on GitHub**
@@ -98,6 +129,7 @@ git add .
 
 # hint: add a commit with a message
 git commit -am "remove repo"
+git commit -am "add videos"
 git commit -am "add repo"
 git commit -am "add usecase"
 git commit -am "add files"

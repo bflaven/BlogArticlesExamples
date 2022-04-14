@@ -99,7 +99,11 @@ pip install -r nft_image_generator_requirements_1.txt
 
 ```bash
 .
-├── 2022_04_06\ 05_50_02_762.png
+├── 2022_04_14_11_00_01_166.png
+├── 2022_04_14_11_00_13_541.png
+├── 2022_04_14_11_00_25_787.png
+├── 2022_04_14_11_00_37_949.png
+├── 2022_04_14_11_00_50_191.png
 ├── README.md
 ├── color_data.py
 ├── colors.py
@@ -109,21 +113,10 @@ pip install -r nft_image_generator_requirements_1.txt
 ├── island_generator_v4_4.py
 ├── island_generator_v4_5.py
 ├── island_generator_v4_6.py
+├── treasure_island_project_1.py
 ├── using_pil_1.py
 ├── using_pil_2.py
 └── using_pil_3.py
 ```
 
-<!-- 
-## VIDEOS
-
-[Python, Screaming Frog, SEO, Automate, POC Part 1 Manipulating Data with Streamlit & SQLite with the help of SQLAlchemy](https://www.youtube.com/watch?v=6R0HYHIVVUQ)
-[![Python, Screaming Frog, SEO, Automate, POC Part 1 Manipulating Data with Streamlit & SQLite with the help of SQLAlchemy](howto_python_automate_screaming_frog_using_sql_lite_streamlit_good_001.png)](https://www.youtube.com/watch?v=6R0HYHIVVUQ)
-
-[Python, Screaming Frog, SEO, Automate, POC Part 2 Creating Database in SQLite with Streamlit and SQLAlchemy](https://www.youtube.com/watch?v=i_WrW5-i2wY)
-[![Python, Screaming Frog, SEO, Automate, POC Part 2 Creating Database in SQLite with Streamlit and SQLAlchemy](howto_python_automate_screaming_frog_using_sql_lite_streamlit_002.png)](https://www.youtube.com/watch?v=i_WrW5-i2wY)
-
-[Python, Screaming Frog, SEO, Automate, POC Part 3 Creating Database in SQLite with Streamlit and SQLAlchemy](https://www.youtube.com/watch?v=PMC36ZGDWQ8)
-[![Python, Screaming Frog, SEO, Automate, POC Part 3 Creating Database in SQLite with Streamlit and SQLAlchemy](howto_python_automate_screaming_frog_using_the_streamlit_003.png)](https://www.youtube.com/watch?v=PMC36ZGDWQ8)
- -->
 
