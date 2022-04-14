@@ -40,18 +40,33 @@ git rm --cached nft_insights/002_NFT_generator
 git submodule add <url> nft_insights/002_NFT_generator
 
 
+# hint: my dir list
+# 001_NFT_training
+# 002_NFT_generator
+# 002_NFT_generator_streamlit
+# 003_nft_image_generator
+# 006_nft_nature_article
+# 007_pycasso_nft_generator
+# 008_rorschach_mask_project
+# 009_treasure_island_project
+# 010_frida_kahlo_project
 
 # hint: create a subdirectory in the main repository
-# mkdir 002_NFT_generator_streamlit
-# cd 002_NFT_generator_streamlit
+# mkdir 003_nft_image_generator
+# cd 003_nft_image_generator
 # touch README.md
 # cd ..
+
+
+
+
+
 
 # hint: add to Github
 git add 001_NFT_training
 git add 002_NFT_generator
 git add 002_NFT_generator_streamlit
-
+git add 003_nft_image_generator
 
 
 # hint: know your branch
@@ -71,6 +86,7 @@ git commit -am "add usecase"
 git commit -am "add files"
 git commit -am "update files"
 git commit -am "update readme"
+git commit -am "add repo and add readme"
 git commit -am "add files and update readme"
 
 
