@@ -46,6 +46,8 @@ git remote add 001_NFT_training
 git remote add 002_NFT_generator
 
 
+
+
 # know your branch
 git branch
 
