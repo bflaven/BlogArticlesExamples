@@ -104,7 +104,6 @@ git commit -am "add files"
 git commit -am "update files"
 git commit -am "update readme"
 git commit -am "add repo and add readme"
-git commit -am "add repositories 006_nft_nature_article, 007_pycasso_nft_generator 008_rorschach_mask_project, 009_treasure_island_project, 010_frida_kahlo_project"
 git commit -am "add files and update readme"
 
 
