@@ -109,7 +109,7 @@ git commit -am "add repositories 006_nft_nature_article, 007_pycasso_nft_generat
 git commit -am "add files and update readme"
 
 
-# hint: push to github if your branch on github is master
+# hint: push to Github if your branch on Github is master
 git push origin master
 
 ```
