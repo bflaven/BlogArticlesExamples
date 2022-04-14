@@ -24,9 +24,9 @@ rm -R generated_2
 python launch_nft_generate.py [path_input_dir] [path_output_dir] [how_many_do_U_want]
 
 # command_1 by default take the size of the traits
-python generate.py source_1/ generated_1/ 35
-python generate.py source_2/ generated_2/ 10
-python generate.py source_3/ generated_3/ 12
+python launch_nft_generate.py source_1/ generated_1/ 35
+python launch_nft_generate.py source_2/ generated_2/ 10
+python launch_nft_generate.py source_3/ generated_3/ 12
 etc...
 
 [source]
