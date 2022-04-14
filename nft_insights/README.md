@@ -23,21 +23,22 @@ Read the full post extracted from this experience on my own website at https://w
 
 **MetaMuse Project : The MetaMuse UX Guggenheim Modern Gallery experience**
 [MetaMuse Project : The MetaMuse Teaser Experience](https://www.youtube.com/watch?v=6R0HYHIVVUQ)
-[![MetaMuse Project : The MetaMuse Teaser Experience]](https://youtu.be/hzN8nn8wBVY)
+[![MetaMuse Project : The MetaMuse Teaser Experience]](metamuse_teaser_cover_small.jpg)(https://youtu.be/hzN8nn8wBVY)
+
+
 
 **MetaMuse Project : The MetaMuse UX Guggenheim Modern Gallery experience**
 
 [MetaMuse Project : The MetaMuse UX Guggenheim Modern Gallery experience](https://www.youtube.com/watch?v=p_FMgTVXxME)
-[![MetaMuse Project : The MetaMuse UX Guggenheim Modern Gallery experience]](https://youtu.be/p_FMgTVXxME)
+[![MetaMuse Project : The MetaMuse UX Guggenheim Modern Gallery experience]](metamuse_ux_guggenheim_modern_gallery_cover_small.jpg)(https://youtu.be/p_FMgTVXxME)
 
 **MetaMuse Project : The MetaMuse Hermitage Museum No Wall Art Gallery experience**
 [MetaMuse Project : The MetaMuse Hermitage Museum No Wall Art Gallery experience](https://www.youtube.com/watch?v=yYh1KvsiqgQ)
-[![MetaMuse Project : The MetaMuse Hermitage Museum No Wall Art Gallery experience]](https://youtu.be/yYh1KvsiqgQ)
+[![MetaMuse Project : The MetaMuse Hermitage Museum No Wall Art Gallery experience]](metamuse_ux_hermitage_no_wall_art_gallery_cover_small.jpg)(https://youtu.be/yYh1KvsiqgQ)
 
 **MetaMuse Project : The MetaMuse Ziggurat Building Hermitage Museum No Wall Art Gallery experience**
 [MetaMuse Project : The MetaMuse Ziggurat Building Hermitage Museum No Wall Art Gallery experience](https://www.youtube.com/watch?v=kSiDdjE7sdU)
-
-[![MetaMuse Project : The MetaMuse Ziggurat Building Hermitage Museum No Wall Art Gallery experience]](https://youtu.be/kSiDdjE7sdU)
+[![MetaMuse Project : The MetaMuse Ziggurat Building Hermitage Museum No Wall Art Gallery experience]](metamuse_ux_ziggurat_hermitage_art_gallery_small.jpg)(https://youtu.be/kSiDdjE7sdU)
 
 ## Git commands memo
 
