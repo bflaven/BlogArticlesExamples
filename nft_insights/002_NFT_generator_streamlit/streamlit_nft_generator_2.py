@@ -14,7 +14,7 @@ conda deactivate
 conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/nft_insights/002_NFT_generator_streamlit/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights/002_NFT_generator_streamlit/
 
 
 [file]
