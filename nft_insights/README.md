@@ -10,9 +10,9 @@ Read the full post on my own website [https://flaven.fr/2022/04/how-to-create-yo
 
 ## Video using these NFTs
 
-These 4 videos where made during a workshop for the training for "Management de l’Innovation Technologique" at https://exed.polytechnique.edu/ for a project named MetaMuse. The baseline of the MetaMuse project was to offer to create virtual exhibition spaces or galleries, free and paid, of NFTs in the Metaverse.
+**These 4 videos where made during a workshop for the training for "Management de l’Innovation Technologique" at https://exed.polytechnique.edu/ for a project named MetaMuse. The baseline of the MetaMuse project was to offer to create virtual exhibition spaces or galleries, free and paid, of NFTs in the Metaverse.**
 
-These videos were made with Sketchup and integrated some NFT created during the Workshop especially one extracted from 007_pycasso_nft_generator
+*These videos were made with Sketchup and integrated some NFT created during the Workshop especially one extracted from 007_pycasso_nft_generator*
 
 The code for the #NFT #Generative #Art #Collections is available for a fun discovering on how to create your own #NFT #Generative #Art #Collections with #Python and #streamlit on my Github account at https://bit.ly/3EbWSdd
 
