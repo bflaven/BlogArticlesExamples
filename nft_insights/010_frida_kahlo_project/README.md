@@ -1,183 +1,184 @@
 # 010_frida_kahlo_project
+### 1. Intro
+
+**My subject is to create what is commonly called Generative Art Collections. It is a new way to create a collection of NFTs with scripts. This process is at the origin of the most popular collections such as CryptoPunks, Bored Ape Yacht Club... I looked for some resources in Python to generate my own collection. Here is a fraction of this search. For those who don't know what an NFT and some other concepts regarding the NFT ecosystem, you can read the article published on my own website [flaven.net](https://flaven.fr/) or you can grab the source for each NFT generator and some other resource on this GitHub account.**
 
 
+### 2. What is an NFT?
 
+An NFT is a tokenized digital asset that can be verified on the blockchain and is non-fungible, meaning it is unique and cannot be easily exchanged for a similar asset. NFTs live on the blockchain, a decentralized global computer network that maintains a public record, they cannot be tampered, destroyed, hacked or counterfeited.
 
-010_frida_kahlo_project
+### 3. Requirements
 
-- command list
-cd /Users/brunoflaven/Documents/01_work/blog_articles/nft_insights/010_frida_kahlo_project/fkp/background
-ls >> _list.txt
+**You need to install Python to take advantage of this NFT generator. Here is the way to install Python on a mac with Homebrew**
 
-- files list (DONE)
-fkp_bg_bath.png
-fkp_bg_blue.png
-fkp_bg_orange.png
-fkp_bg_pink.png
-fkp_bg_vert.png
+To install Homebrew, open Terminal or your favorite OS X terminal emulator and run
 
+```bash
+/bin/bash -c "$(curl -fsSL <https://raw.githubusercontent.com/Homebrew/install/master/install.sh>)"
+```
 
-- command list
-cd /Users/brunoflaven/Documents/01_work/blog_articles/nft_insights/010_frida_kahlo_project/fkp/cap/
-ls >> _list.txt
+The script will explain what changes it will make and prompt you before the installation begins. Once you’ve installed Homebrew, insert the Homebrew directory at the top of your PATH environment variable. You can do this by adding the following line at the bottom of your ~/.profile file
 
-- files list (DONE)
-frieda_traits_cap_1.png
-frieda_traits_cap_2.png
-frieda_traits_cap_3.png
-frieda_traits_cap_4.png
-frieda_traits_cap_5.png
+```bash
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+```
 
+If you have OS X 10.12 (Sierra) or older use this line instead
 
-- command list
-cd /Users/brunoflaven/Documents/01_work/blog_articles/nft_insights/010_frida_kahlo_project/fkp/hair/
-ls >> _list.txt
+```bash
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+```
 
-- files list (DONE)
-fkp_frieda_traits_hair_1.png
-fkp_frieda_traits_hair_2.png
-fkp_frieda_traits_hair_3.png
-fkp_frieda_traits_hair_4.png
-fkp_frieda_traits_hair_5.png
-fkp_messi_traits_hair_1.png
-fkp_messi_traits_hair_2.png
-fkp_messi_traits_hair_3.png
-fkp_messi_traits_hair_4.png
-fkp_messi_traits_hair_5.png
-fkp_skull_traits_cap_1.png
-fkp_skull_traits_cap_2.png
-fkp_skull_traits_cap_3.png
-fkp_skull_traits_cap_4.png
-fkp_skull_traits_cap_5.png
+Now, we can install Python 3:
 
-- command list
-cd /Users/brunoflaven/Documents/01_work/blog_articles/nft_insights/010_frida_kahlo_project/fkp/chin_lips/
-ls >> _list.txt
+```bash
+brew install python
+```
 
-- files list (DONE)
-fkp_frieda_traits_lips_1.png
-fkp_frieda_traits_lips_2.png
-fkp_frieda_traits_lips_3.png
-fkp_frieda_traits_lips_4.png
-fkp_frieda_traits_lips_5.png
-fkp_messi_traits_bear_1.png
-fkp_messi_traits_bear_2.png
-fkp_messi_traits_bear_3.png
-fkp_messi_traits_bear_4.png
-fkp_messi_traits_bear_5.png
-fkp_skull_traits_chin_1.png
-fkp_skull_traits_lips_1.png
+This will take a minute or two.
 
-- command list
-cd /Users/brunoflaven/Documents/01_work/blog_articles/nft_insights/010_frida_kahlo_project/fkp/eyes/
-ls >> _list.txt
+*Source : [SEO Spider General's User Guide](https://docs.python-guide.org/starting/install3/osx/)*
 
-- files list (DONE)
-fkp_messi_traits_eyes_1.png
-fkp_messi_traits_eyes_2.png
-fkp_messi_traits_eyes_3.png
-fkp_messi_traits_eyes_4.png
-fkp_messi_traits_eyes_5.png
-fkp_skull_traits_eyes_1.png
-fkp_skull_traits_eyes_2.png
+### 4. Create your environment with Conda
 
-- command list
-cd /Users/brunoflaven/Documents/01_work/blog_articles/nft_insights/010_frida_kahlo_project/fkp/eyebrows/
-ls >> _list.txt
+**Go to the dir**
 
-- files list (DONE)
-fkp_frieda_traits_eyebrows_1.png
-fkp_frieda_traits_eyebrows_2.png
-fkp_frieda_traits_eyebrows_3.png
-fkp_frieda_traits_eyebrows_4.png
-fkp_frieda_traits_eyebrows_5.png
+It is just I found easier to be in same git directory to create my environment with Conda.
 
+```bash
+# go to your directory
+cd /[your-path]/010_frida_kahlo_project
+```
 
-- image size
-cd /Users/brunoflaven/Documents/01_work/blog_articles/nft_insights/010_frida_kahlo_project/fkp/jewels/
-ls >> _list.txt
+**Create your dev env with conda**
 
-- files list (DONE)
-fkp_frieda_traits_earring_1.png
-fkp_frieda_traits_earring_2.png
-fkp_frieda_traits_earring_3.png
-fkp_frieda_traits_earring_4.png
-fkp_frieda_traits_earring_5.png
+```bash
 
+[env]
+# Conda Environment
+conda create --name nft_insights python=3.9.7
+conda info --envs
+source activate nft_insights
+conda deactivate
+# if needed to remove
+conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
+```
 
-- image size
-1078x1358
+**Install packages in your dev env**
 
+```bash
+# install the packages in the env
 
-- background
-fkp_bg_bath.png
-fkp_bg_blue.png
-fkp_bg_orange.png
-fkp_bg_pink.png
-fkp_bg_vert.png
+# install
+pip install numpy
+pip install pillow
+pip install streamlit
+pip install watchdog
+pip install python-dotenv
 
+```
 
+**Save python requirements in a file name `nft_image_generator_requirements_1.txt`**
 
-- cap_hair
-fkp_frieda_traits_hair_1.png
-fkp_frieda_traits_hair_2.png
-fkp_frieda_traits_hair_3.png
-fkp_frieda_traits_hair_4.png
-fkp_frieda_traits_hair_5.png
-fkp_messi_traits_cap_1.png
-fkp_skull_traits_cap_1.png
+```bash
 
-- chin_lips
-fkp_frieda_traits_lips_1.png
-fkp_frieda_traits_lips_2.png
-fkp_frieda_traits_lips_3.png
-fkp_frieda_traits_lips_4.png
-fkp_frieda_traits_lips_5.png
-fkp_messi_traits_bear_1.png
-fkp_skull_traits_chin_1.png
-fkp_skull_traits_lips_1.png
+# show what the requirements
+pip freeze > nft_image_generator_requirements_1.txt
+pip install -r nft_image_generator_requirements_1.txt
 
+```
 
+### 4. Tree directory
 
-- eyes
-fkp_frieda_traits_eyebrows_1.png
-fkp_messi_traits_eyes_1.png
-fkp_skull_traits_eyes_1.png
-fkp_skull_traits_eyes_2.png
+```bash
+.
+├── README.md
+├── config.py
+├── data.py
+├── fkp
+│   ├── background
+│   │   ├── fkp_bg_bath.png
+│   │   ├── fkp_bg_bath_opposite.png
+│   │   ├── fkp_bg_blue.png
+│   │   ├── fkp_bg_blue_opposite.png
+│   │   ├── fkp_bg_orange.png
+│   │   ├── fkp_bg_orange_opposite.png
+│   │   ├── fkp_bg_pink.png
+│   │   ├── fkp_bg_pink_opposite.png
+│   │   ├── fkp_bg_vert.png
+│   │   └── fkp_bg_vert_opposite.png
+│   ├── cap
+│   │   ├── fkp_skull_traits_cap_1.png
+│   │   ├── fkp_skull_traits_cap_2.png
+│   │   ├── fkp_skull_traits_cap_3.png
+│   │   ├── fkp_skull_traits_cap_4.png
+│   │   ├── fkp_skull_traits_cap_5.png
+│   │   ├── frieda_traits_cap_1.png
+│   │   ├── frieda_traits_cap_2.png
+│   │   ├── frieda_traits_cap_3.png
+│   │   ├── frieda_traits_cap_4.png
+│   │   └── frieda_traits_cap_5.png
+│   ├── chin_lips
+│   │   ├── fkp_frieda_traits_lips_1.png
+│   │   ├── fkp_frieda_traits_lips_2.png
+│   │   ├── fkp_frieda_traits_lips_3.png
+│   │   ├── fkp_frieda_traits_lips_4.png
+│   │   ├── fkp_frieda_traits_lips_5.png
+│   │   ├── fkp_messi_traits_bear_1.png
+│   │   ├── fkp_messi_traits_bear_2.png
+│   │   ├── fkp_messi_traits_bear_3.png
+│   │   ├── fkp_messi_traits_bear_4.png
+│   │   ├── fkp_messi_traits_bear_5.png
+│   │   ├── fkp_skull_traits_chin_1.png
+│   │   └── fkp_skull_traits_lips_1.png
+│   ├── eyes_eyebrows
+│   │   ├── fkp_frieda_traits_eyebrows_1.png
+│   │   ├── fkp_frieda_traits_eyebrows_2.png
+│   │   ├── fkp_frieda_traits_eyebrows_3.png
+│   │   ├── fkp_frieda_traits_eyebrows_4.png
+│   │   ├── fkp_frieda_traits_eyebrows_5.png
+│   │   ├── fkp_messi_traits_eyes_1.png
+│   │   ├── fkp_messi_traits_eyes_2.png
+│   │   ├── fkp_messi_traits_eyes_3.png
+│   │   ├── fkp_messi_traits_eyes_4.png
+│   │   ├── fkp_messi_traits_eyes_5.png
+│   │   ├── fkp_skull_traits_eyes_1.png
+│   │   └── fkp_skull_traits_eyes_2.png
+│   ├── hair
+│   │   ├── fkp_frieda_traits_hair_1.png
+│   │   ├── fkp_frieda_traits_hair_2.png
+│   │   ├── fkp_frieda_traits_hair_3.png
+│   │   ├── fkp_frieda_traits_hair_4.png
+│   │   ├── fkp_frieda_traits_hair_5.png
+│   │   ├── fkp_messi_traits_hair_1.png
+│   │   ├── fkp_messi_traits_hair_2.png
+│   │   ├── fkp_messi_traits_hair_3.png
+│   │   ├── fkp_messi_traits_hair_4.png
+│   │   └── fkp_messi_traits_hair_5.png
+│   └── jewels
+│       ├── fkp_frieda_traits_earring_1.png
+│       ├── fkp_frieda_traits_earring_2.png
+│       ├── fkp_frieda_traits_earring_3.png
+│       ├── fkp_frieda_traits_earring_4.png
+│       └── fkp_frieda_traits_earring_5.png
+├── frida_kahlo_project.jpg
+├── generator.py
+├── source_dead_rosie.png
+├── source_frida_kahlo.png
+└── source_lionel_messi.png
+```
 
+<!-- 
+## VIDEOS
 
-- jewels
-fkp_frieda_traits_earring_1.png
-fkp_frieda_traits_earring_2.png
-fkp_frieda_traits_earring_3.png
-fkp_frieda_traits_earring_4.png
-fkp_frieda_traits_earring_5.png
+[Python, Screaming Frog, SEO, Automate, POC Part 1 Manipulating Data with Streamlit & SQLite with the help of SQLAlchemy](https://www.youtube.com/watch?v=6R0HYHIVVUQ)
+[![Python, Screaming Frog, SEO, Automate, POC Part 1 Manipulating Data with Streamlit & SQLite with the help of SQLAlchemy](howto_python_automate_screaming_frog_using_sql_lite_streamlit_good_001.png)](https://www.youtube.com/watch?v=6R0HYHIVVUQ)
 
+[Python, Screaming Frog, SEO, Automate, POC Part 2 Creating Database in SQLite with Streamlit and SQLAlchemy](https://www.youtube.com/watch?v=i_WrW5-i2wY)
+[![Python, Screaming Frog, SEO, Automate, POC Part 2 Creating Database in SQLite with Streamlit and SQLAlchemy](howto_python_automate_screaming_frog_using_sql_lite_streamlit_002.png)](https://www.youtube.com/watch?v=i_WrW5-i2wY)
 
-
-
-! NAMING CONVENTION
-cheveux
-coiffe
-boucle d'oreilles
-sourcils
-lèvres
-
-- frieda
-hair
-cap
-earring
-eyebrows
-lips
-
-- skull
-earring
-eyes
-nose
-teeth
-mouth
-chin
-
-
-
+[Python, Screaming Frog, SEO, Automate, POC Part 3 Creating Database in SQLite with Streamlit and SQLAlchemy](https://www.youtube.com/watch?v=PMC36ZGDWQ8)
+[![Python, Screaming Frog, SEO, Automate, POC Part 3 Creating Database in SQLite with Streamlit and SQLAlchemy](howto_python_automate_screaming_frog_using_the_streamlit_003.png)](https://www.youtube.com/watch?v=PMC36ZGDWQ8)
+ -->
