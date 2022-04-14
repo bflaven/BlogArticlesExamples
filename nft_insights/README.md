@@ -51,6 +51,17 @@ git submodule add <url> nft_insights/002_NFT_generator
 # 009_treasure_island_project
 # 010_frida_kahlo_project
 
+
+# mkdir 006_nft_nature_article
+# mkdir 007_pycasso_nft_generator
+# mkdir 008_rorschach_mask_project
+# mkdir 009_treasure_island_project
+# mkdir 010_frida_kahlo_project
+
+
+
+
+
 # hint: create a subdirectory in the main repository
 # mkdir 003_nft_image_generator
 # cd 003_nft_image_generator
@@ -68,6 +79,12 @@ git add 002_NFT_generator
 git add 002_NFT_generator_streamlit
 git add 003_nft_image_generator
 
+# series
+git add 006_nft_nature_article
+git add 007_pycasso_nft_generator
+git add 008_rorschach_mask_project
+git add 009_treasure_island_project
+git add 010_frida_kahlo_project
 
 # hint: know your branch
 git branch
@@ -87,6 +104,7 @@ git commit -am "add files"
 git commit -am "update files"
 git commit -am "update readme"
 git commit -am "add repo and add readme"
+git commit -am "add repositories 006_nft_nature_article, 007_pycasso_nft_generator 008_rorschach_mask_project, 009_treasure_island_project, 010_frida_kahlo_project"
 git commit -am "add files and update readme"
 
 
