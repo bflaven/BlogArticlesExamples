@@ -57,7 +57,7 @@ git status
 
 # check for status
 git add 001_NFT_training
-
+git add 002_NFT_generator
 
 # for any change just type this command
 git add .
