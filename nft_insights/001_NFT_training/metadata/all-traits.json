@@ -1,0 +1,112 @@
+[
+    {
+        "Face": "White",
+        "Ears": "ears1",
+        "Eyes": "regular",
+        "Hair": "hair1",
+        "Mouth": "m2",
+        "Nose": "n1",
+        "Access": "acc3",
+        "Beard": "b8",
+        "tokenId": 0
+    },
+    {
+        "Face": "Black",
+        "Ears": "ears2",
+        "Eyes": "small",
+        "Hair": "hair7",
+        "Mouth": "m5",
+        "Nose": "n1",
+        "Access": "acc3",
+        "Beard": "b8",
+        "tokenId": 1
+    },
+    {
+        "Face": "Black",
+        "Ears": "ears1",
+        "Eyes": "regular",
+        "Hair": "hair1",
+        "Mouth": "m3",
+        "Nose": "n1",
+        "Access": "acc3",
+        "Beard": "b4",
+        "tokenId": 2
+    },
+    {
+        "Face": "White",
+        "Ears": "ears1",
+        "Eyes": "regular",
+        "Hair": "hair6",
+        "Mouth": "m3",
+        "Nose": "n1",
+        "Access": "acc3",
+        "Beard": "b8",
+        "tokenId": 3
+    },
+    {
+        "Face": "White",
+        "Ears": "ears1",
+        "Eyes": "regular",
+        "Hair": "hair12",
+        "Mouth": "m5",
+        "Nose": "n2",
+        "Access": "acc3",
+        "Beard": "b8",
+        "tokenId": 4
+    },
+    {
+        "Face": "White",
+        "Ears": "ears1",
+        "Eyes": "regular",
+        "Hair": "hair1",
+        "Mouth": "m3",
+        "Nose": "n1",
+        "Access": "acc3",
+        "Beard": "b8",
+        "tokenId": 5
+    },
+    {
+        "Face": "White",
+        "Ears": "ears1",
+        "Eyes": "regular",
+        "Hair": "hair11",
+        "Mouth": "m5",
+        "Nose": "n1",
+        "Access": "acc3",
+        "Beard": "b4",
+        "tokenId": 6
+    },
+    {
+        "Face": "White",
+        "Ears": "ears3",
+        "Eyes": "regular",
+        "Hair": "hair3",
+        "Mouth": "m1",
+        "Nose": "n1",
+        "Access": "acc3",
+        "Beard": "b8",
+        "tokenId": 7
+    },
+    {
+        "Face": "White",
+        "Ears": "ears1",
+        "Eyes": "focused",
+        "Hair": "hair4",
+        "Mouth": "m3",
+        "Nose": "n1",
+        "Access": "acc3",
+        "Beard": "b5",
+        "tokenId": 8
+    },
+    {
+        "Face": "Black",
+        "Ears": "ears1",
+        "Eyes": "regular",
+        "Hair": "hair12",
+        "Mouth": "m1",
+        "Nose": "n1",
+        "Access": "acc3",
+        "Beard": "b8",
+        "tokenId": 9
+    }
+]

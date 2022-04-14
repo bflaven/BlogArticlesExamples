@@ -1,0 +1,39 @@
+{
+    "image": "https://gateway.pinata.cloud/ipfs/QmcKH9bwdM3KGij799reUYA24jtufvHSoYmY5xMXEM7T4E/1.png",
+    "tokenId": 1,
+    "name": "NFT_CREATOR 1",
+    "attributes": [
+        {
+            "trait_type": "Face",
+            "value": "Black"
+        },
+        {
+            "trait_type": "Ears",
+            "value": "ears2"
+        },
+        {
+            "trait_type": "Eyes",
+            "value": "small"
+        },
+        {
+            "trait_type": "Hair",
+            "value": "hair7"
+        },
+        {
+            "trait_type": "Mouth",
+            "value": "m5"
+        },
+        {
+            "trait_type": "Nose",
+            "value": "n1"
+        },
+        {
+            "trait_type": "Access",
+            "value": "acc3"
+        },
+        {
+            "trait_type": "Beard",
+            "value": "b8"
+        }
+    ]
+}
