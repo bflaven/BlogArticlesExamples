@@ -25,7 +25,7 @@ Read the full post extracted from this experience on my own website at https://w
 
 
 - [MetaMuse Project : The MetaMuse UX Guggenheim Modern Gallery experience](https://www.youtube.com/watch?v=p_FMgTVXxME)
-[![MetaMuse Project : The MetaMuse UX Guggenheim Modern Gallery experience](metamuse_ux_hermitage_no_wall_art_gallery_cover_small.jpg)](https://www.youtube.com/watch?v=p_FMgTVXxME)
+[![MetaMuse Project : The MetaMuse UX Guggenheim Modern Gallery experience](metamuse_ux_guggenheim_modern_gallery_cover_small.jpg)](https://www.youtube.com/watch?v=p_FMgTVXxME)
 
 
 - [MetaMuse Project : The MetaMuse Hermitage Museum No Wall Art Gallery experience](https://www.youtube.com/watch?v=yYh1KvsiqgQ)
