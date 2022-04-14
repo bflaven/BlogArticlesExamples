@@ -15,14 +15,14 @@ Read the full post on my own website [flaven.net](https://flaven.fr/)
 ```bash
 # GIT 2022
 
-# suppose you have set a personal access token
+# hint: suppose you have set a personal access token
 # https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
 
-# go to the directory
+# hint: go to the directory
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights
 
-# move the HEAD to the latest commit of the master banch
+# hint: move the HEAD to the latest commit of the master banch
 git checkout master
 
 # hint: You've added another git repository inside your current repository.
@@ -36,44 +36,45 @@ index with:
 git rm --cached nft_insights/002_NFT_generator
 
 
-# # hint: See "git help submodule" for more information.
+# hint: See "git help submodule" for more information.
 git submodule add <url> nft_insights/002_NFT_generator
 
 
 
-# create a subdirectory in the main repository
+# hint: create a subdirectory in the main repository
 # mkdir 002_NFT_generator_streamlit
 # cd 002_NFT_generator_streamlit
 # touch README.md
 # cd ..
 
-# add to Github
+# hint: add to Github
 git add 001_NFT_training
 git add 002_NFT_generator
 git add 002_NFT_generator_streamlit
 
 
 
-# know your branch
+# hint: know your branch
 git branch
 
 
-# check for status
+# hint: check for status
 git status
 
-# for any change just type this command
+# hint: for any change just type this command
 git add .
 
-# add a commit with a message
+# hint: add a commit with a message
 git commit -am "remove repo"
 git commit -am "add repo"
 git commit -am "add usecase"
 git commit -am "add files"
 git commit -am "update files"
+git commit -am "update readme"
 git commit -am "add files and update readme"
 
 
-# push to github if your branch on github is master
+# hint: push to github if your branch on github is master
 git push origin master
 
 ```
