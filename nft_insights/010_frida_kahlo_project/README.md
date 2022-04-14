@@ -176,10 +176,14 @@ pip install -r nft_image_generator_requirements_1.txt
 The NFT are a product of random between these 3 images...
 
 
+- **Frida Kahlo**
+![Frida Kahlo](source_frida_kahlo.png "Frida Kahlo")
 
-- ![Frida Kahlo](source_frida_kahlo.png "Frida Kahlo")
-- ![Dead Rosie](source_dead_rosie.png "Dead Rosie")
-- ![Lionel Messi](source_lionel_messi.png "Lionel Messi")
+- **Dead Rosie the Riveter**
+![Dead Rosie the Riveter](source_dead_rosie.png "Dead Rosie the Riveter")
+
+- **Lionel Messi**
+![Lionel Messi](source_lionel_messi.png "Lionel Messi")
 
 **Read more**
 - [Frida Kahlo](https://es.wikipedia.org/wiki/Frida_Kahlo)
