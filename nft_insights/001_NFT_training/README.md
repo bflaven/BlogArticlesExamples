@@ -2,7 +2,7 @@
 
 ### 1. Intro
 
-**My subject is to create what is commonly called Generative Art Collections. It is a new way to create a collection of NFTs with scripts. This process is at the origin of the most popular collections such as CryptoPunks, Bored Ape Yacht Club... I looked for some resources in Python to generate my own collection. Here is a fraction of this search. For those who don't know what an NFT and some other concepts regarding the NFT ecosystem, you can read the article published on my own website [flaven.net](https://flaven.fr/)] or you can grab the source for each NFT generator and some other resource on this GitHub account.**
+**My subject is to create what is commonly called Generative Art Collections. It is a new way to create a collection of NFTs with scripts. This process is at the origin of the most popular collections such as CryptoPunks, Bored Ape Yacht Club... I looked for some resources in Python to generate my own collection. Here is a fraction of this search. For those who don't know what an NFT and some other concepts regarding the NFT ecosystem, you can read the article published on my own website [flaven.net](https://flaven.fr/) or you can grab the source for each NFT generator and some other resource on this GitHub account.**
 
 
 This NFT generator came from [SEO Spider General's User Guide](https://github.com/sonmh79/NFT_training/blob/master/nft_create.py)] (파이썬으로 NFT 만들어보기 Creating an NFT with Python)

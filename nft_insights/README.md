@@ -6,7 +6,7 @@ Recently, I had to take an interest in the metaverse, which obviously seems to b
 **I looked for some resources in Python to generate my own collection. Here is a fraction of this search. For those who don't know what an NFT and some other concepts regarding the NFT ecosystem below you can get quik definition and links to showcase some of today's most famous collections.**
 
 
-Read the full post on my own website [flaven.net](https://flaven.fr/)]
+Read the full post on my own website [flaven.net](https://flaven.fr/)
 
 ## Git commands memo
 
