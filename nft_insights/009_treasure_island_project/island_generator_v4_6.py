@@ -14,10 +14,11 @@ conda deactivate
 conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
 [path]
-cd cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights/Island-generator/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights/009_treasure_island_project/
 
 
 [file]
+python island_generator_v4_6.py -r 5 -s [200,200] -b 10 -c [20,15,60]
 python island_generator_v4_6.py -r 5 -s [300,300] -b 20 -c [25,10,60]
 python island_generator_v4_6.py -r 5 -s [200,200] -b 10 -c [5,45,10]
 python island_generator_v4_6.py -r 5 -s [300,300] -b 36 -c [67,45,78]

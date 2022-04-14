@@ -14,7 +14,7 @@ conda deactivate
 conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
 [path]
-cd cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights/Island-generator/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights/009_treasure_island_project/
 
 [file]
 python using_pil_3.py

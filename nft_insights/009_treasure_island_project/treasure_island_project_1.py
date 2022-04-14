@@ -18,10 +18,17 @@ cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights/009_tre
 
 
 [file]
-python island_generator_v4_3.py -r 5 -s [300,300] -b 20 -c [25,10,60]
-python island_generator_v4_3.py -r 5 -s [200,200] -b 10 -c [5,45,10]
-python island_generator_v4_3.py -r 5 -s [300,300] -b 36 -c [67,45,78]
-  
+python treasure_island_project_1.py -r 5 -s [200,200] -b 36 -c [20,15,60]
+python treasure_island_project_1.py -r 5 -s [200,200] -b 10 -c [20,15,60]
+python treasure_island_project_1.py -r 5 -s [300,300] -b 20 -c [25,10,60]
+python treasure_island_project_1.py -r 5 -s [200,200] -b 10 -c [5,45,10]
+python treasure_island_project_1.py -r 5 -s [300,300] -b 36 -c [67,45,78]
+python treasure_island_project_1.py -r 5 -s [200,200] -b 30 -c [30,14,55]
+python treasure_island_project_1.py -r 5 -s [200,200] -b 15 -c [25,10,60]
+python treasure_island_project_1.py -r 5 -s [200,200] -b 22 -c [67,45,78]
+python treasure_island_project_1.py -r 5 -s [200,200] -b 30 -c [30,14,55]
+python treasure_island_project_1.py -r 5 -s [300,300] -b 36 -c [67,45,78]
+
 : param repeat: number of countries generated
 : param size: dimensions of the map in pixels
 : param biom_size: radius of the biome point range in pixels
@@ -81,10 +88,11 @@ def save_img(image, size):
     img_obj = PIL_image.new("RGB", size, (0, 255, 255))
     img_obj.putdata(image)
 
-    date = replace_multiple(str(datetime.datetime.now()), [".", ":", "-"], "_")
+    date = replace_multiple(str(datetime.datetime.now()), [
+                            " ", ".", ":", "-"], "_")
     filename = date[:len(date) - 3] + ".png"
     img_obj.save(filename)
-    print(f"IMG saved as {filename}.")
+    print(f"IMG saved as {filename} ")
 
 
 def spread_dots(size, biom_size):
@@ -237,33 +245,51 @@ def main(repeat, size, biom_size, cluster):
     package = (size, biom_size)
     
     # SET_1
-    # colours = {
-    #     "blue": (0, 0, 200),
-    #     "green": (0, 200, 0),
-    #     "brown": (150, 100, 0),
-    #     "white": (200, 200, 200),
-    #     "fail": (200, 0, 0)
-    # }
-
-
+    colours = {"colorRandomOne": (0, 0, 200),
+               "colorRandomTwo": (0, 200, 0),
+               "colorRandomThree": (150, 100, 0),
+               "colorRandomFour": (200, 200, 200),
+               "colorRandomFive": (200, 0, 0)}
 
     # SET_2
     # colours = { 
-    #     "#548d44": (int(25), int(141), int(51)),
-    #     "#c95efb": (int(201), int(94), int(251)),
-    #     "#030764":  (int(3), int(7), int(100)),
-    #     "#fe019a": (int(254), int(1), int(154)),
-    #     "#0a888a": (int(10), int(136), int(138))
+    #     "colorRandomOne": (int(25), int(141), int(51)),
+    #     "colorRandomTwo": (int(201), int(94), int(251)),
+    #     "colorRandomThree":  (int(3), int(7), int(100)),
+    #     "colorRandomFour": (int(254), int(1), int(154)),
+    #     "colorRandomFive": (int(10), int(136), int(138))
     # }
 
     # SET_3
-    colours = {
-        "colorRandomOne": (123, 65, 189),
-        "colorRandomFour": (111, 55, 98),
-        "colorRandomThree": (90, 205, 3),
-        "colorRandomFive": (34, 254, 65),
-        "colorRandomTwo": (133, 89, 83)
-    }
+    # colours = {
+    #     "colorRandomOne": (int(random.randint(0, 255)), int(random.randint(0, 255)), int(random.randint(0, 255))),
+    #     "colorRandomTwo": (int(random.randint(0, 255)), int(random.randint(0, 255)), int(random.randint(0, 255))),
+    #     "colorRandomThree": (int(random.randint(0, 255)), int(random.randint(0, 255)), int(random.randint(0, 255))),
+    #     "colorRandomFour": (int(random.randint(0, 255)), int(random.randint(0, 255)), int(random.randint(0, 255))),
+    #     "colorRandomFive": (int(random.randint(0, 255)), int(random.randint(0, 255)), int(random.randint(0, 255)))
+    # }
+    
+    # SET_4
+    # colours = {
+    #     "colorRandomOne": (6, 154, 243),  # 069AF3 azure
+    #     "colorRandomTwo": (21, 176, 26),  # 15B01A green
+    #     "colorRandomThree": (169, 86, 30),  # A9561E sienna
+    #     "colorRandomFour": (200, 200, 200),  # FFFFFF white
+    #     "colorRandomFive": (197, 201, 199)  # C5C9C7 silver
+    # }
+    
+    # SET_5
+    # colours = {
+    #            "colorRandomOne": (0, 0, 200),
+    #            "colorRandomTwo": (0, 200, 0),
+    #            "colorRandomThree": (150, 100, 0),
+    #            "colorRandomFour": (200, 200, 200),
+    #            "colorRandomFive": (200, 0, 0)
+    # }
+    
+# https://matplotlib.org/stable/tutorials/colors/colors.html#comparison-between-x11-css4-and-xkcd-colors
+# https://colors-picker.com/hex-color-picker/
+    
     print(f":::\nWorking with values:\ns={size}\nb={biom_size}\nc={cluster}")
 
     for i in range(repeat):

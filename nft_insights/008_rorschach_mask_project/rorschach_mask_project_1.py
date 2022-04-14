@@ -14,10 +14,13 @@ conda deactivate
 conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/nft_insights/rorschach_project/Inkblot/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights/008_rorschach_mask_project/
 
 [file]
-python inkblots_mpl_6.py
+python rorschach_mask_project_1.py
+
+# CAUTION
+check nb_items = 5
 
 [source]
 https://github.com/DavidKohler/Inkblot
@@ -155,7 +158,10 @@ if __name__ == '__main__':
     #filename = 'mask_linewidth_' + \ str(linewidthSelected) + '_color_'+str(colorSelected) + '.png'
     # print(f"filename :: "+str(filename)+"")
 
-    nb_items = 20
+    # CAUTION nb of items
+    # nb_items = 20
+    nb_items = 5
+
     i = 1
     while (i <= nb_items):
         print(f"\n--- case_"+str(i)+"")
@@ -176,8 +182,7 @@ if __name__ == '__main__':
         print(f"num_of_walks :: "+str(num_of_walks)+"")
 
         # FILENAME
-        filename = 'mask_'+str(i)+'_linewidth_' + \
-            str(linewidthSelected) + '_color_'+str(colorSelected) + '.png'
+        filename = 'mask_'+str(i)+'_linewidth_' +str(linewidthSelected)+ '_color_'+str(colorSelected)+ '.png'
         print(f"filename :: "+str(filename)+"")
         
         # GENERATE MASK (v2)

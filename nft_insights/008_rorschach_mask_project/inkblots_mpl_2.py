@@ -14,7 +14,7 @@ conda deactivate
 conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/nft_insights/rorschach_project/Inkblot/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights/008_rorschach_mask_project/
 
 [file]
 python inkblots_mpl_2.py
