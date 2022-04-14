@@ -41,10 +41,16 @@ git submodule add <url> nft_insights/002_NFT_generator
 
 
 
-# create the directory
-git remote add 001_NFT_training
-git remote add 002_NFT_generator
+# create a subdirectory in the main repository
+# mkdir 002_NFT_generator_streamlit
+# cd 002_NFT_generator_streamlit
+# touch README.md
+# cd ..
 
+# add to Github
+git add 001_NFT_training
+git add 002_NFT_generator
+git add 002_NFT_generator_streamlit
 
 
 
@@ -54,10 +60,6 @@ git branch
 
 # check for status
 git status
-
-# check for status
-git add 001_NFT_training
-git add 002_NFT_generator
 
 # for any change just type this command
 git add .
