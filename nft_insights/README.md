@@ -25,9 +25,26 @@ cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights
 # move the HEAD to the latest commit of the master banch
 git checkout master
 
+# hint: You've added another git repository inside your current repository.
+# Clones of the outer repository will not contain the contents of
+# the embedded repository and will not know how to obtain it.
+# If you meant to add a submodule, use:
+git submodule add <url> nft_insights/002_NFT_generator
+
+# hint: If you added this path by mistake, you can remove it from the
+index with:
+git rm --cached nft_insights/002_NFT_generator
+
+
+# # hint: See "git help submodule" for more information.
+git submodule add <url> nft_insights/002_NFT_generator
+
+
 
 # create the directory
-git remote add origin nft_insights
+git remote add 001_NFT_training
+git remote add 002_NFT_generator
+
 
 # know your branch
 git branch
