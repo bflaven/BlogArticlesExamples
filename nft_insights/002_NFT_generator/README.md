@@ -8,6 +8,7 @@
 This NFT generator came from [NFT generator](https://github.com/yoyoismee/NFT-generator)
 
 
+![NFT Example generated with 002_NFT_generator](example_nft.png "NFT Example generated with 002_NFT_generator")
 
 
 ### 2. What is an NFT?

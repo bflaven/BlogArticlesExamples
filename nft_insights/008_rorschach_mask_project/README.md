@@ -12,6 +12,10 @@ This NFT generator came from [Island-generator](https://github.com/DavidKohler/I
 It has also an inspiration in the [Rorschach Test](https://en.wikipedia.org/wiki/Rorschach_test)
 
 
+![NFT Example generated with 008_rorschach_mask_project](mask_4_linewidth_6_color_#ca7b80.png "NFT Example generated with 008_rorschach_mask_project")
+
+
+
 ### 2. What is an NFT?
 
 An NFT is a tokenized digital asset that can be verified on the blockchain and is non-fungible, meaning it is unique and cannot be easily exchanged for a similar asset. NFTs live on the blockchain, a decentralized global computer network that maintains a public record, they cannot be tampered, destroyed, hacked or counterfeited.
