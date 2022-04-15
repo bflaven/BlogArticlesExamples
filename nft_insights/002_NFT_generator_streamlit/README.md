@@ -1,6 +1,4 @@
-# *NFT Example generated with 010_frida_kahlo_project*
-
-# 002_NFT_generator
+# 002_NFT_generator_streamlit
 
 ### 1. Intro
 
@@ -10,11 +8,9 @@
 
 This NFT generator came from [NFT generator](https://github.com/yoyoismee/NFT-generator)
 
-*NFT Example generated with 002_NFT_generator*
+*NFT Example generated with 002_NFT_generator_streamlit*
 
-![NFT Example generated with 002_NFT_generator](example_nft.png "NFT Example generated with 002_NFT_generator")
-
-
+![NFT Example generated with 002_NFT_generator_streamlit](example_nft.png "NFT Example generated with 002_NFT_generator_streamlit")
 
 
 ### 2. What is an NFT?
