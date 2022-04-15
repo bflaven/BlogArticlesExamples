@@ -8,7 +8,7 @@ Read the full post on my own website [https://flaven.fr/2022/04/how-to-create-yo
 
 This NFT generator came from [파이썬으로 NFT 만들어보기 Creating an NFT with Python](https://github.com/sonmh79/NFT_training/blob/master/nft_create.py)
 
-You can also find more information in this article [SEO Spider General's User Guide](https://betterprogramming.pub/create-your-own-nft-collection-with-python-82af40abf99f)
+You can also find more information in this article [Create Your Own NFT Collection With Python by Edward Jones](https://betterprogramming.pub/create-your-own-nft-collection-with-python-82af40abf99f)
 
 
 
