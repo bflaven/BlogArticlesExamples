@@ -11,6 +11,8 @@ This NFT generator came from [파이썬으로 NFT 만들어보기 Creating an NF
 You can also find more information in this article [Create Your Own NFT Collection With Python by Edward Jones](https://betterprogramming.pub/create-your-own-nft-collection-with-python-82af40abf99f)
 
 
+![NFT Example generated with 001_NFT_training](example_nft.png "NFT Example generated with 001_NFT_training")
+
 
 
 ### 2. What is an NFT?
