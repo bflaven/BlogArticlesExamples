@@ -8,6 +8,7 @@ Read the full post on my own website [https://flaven.fr/2022/04/how-to-create-yo
 
 This NFT generator came from [Island-generator](https://github.com/JohnVCZ/Island-generator)
 
+*NFT Example generated with 009_treasure_island_project*
 ![NFT Example generated with 009_treasure_island_project](2022_04_14_11_00_50_191.png "NFT Example generated with 009_treasure_island_project")
 
 ### 2. What is an NFT?

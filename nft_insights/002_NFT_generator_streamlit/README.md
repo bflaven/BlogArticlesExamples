@@ -1,84 +1,160 @@
-# NFT generator
+# *NFT Example generated with 010_frida_kahlo_project*
 
-this is the easiest way to generate a hell lotta image
+# 002_NFT_generator
 
-buckle up and follow me!
+### 1. Intro
 
-## how to
+**My subject is to create what is commonly called Generative Art Collections. It is a new way to create a collection of NFTs with scripts. This process is at the origin of the most popular collections such as CryptoPunks, Bored Ape Yacht Club... I looked for some resources in Python to generate my own collection. Here is a fraction of this search. For those who don't know what an NFT and some other concepts regarding the NFT ecosystem, you can read the article published on my own website [flaven.net](https://flaven.fr/) or you can grab the source for each NFT generator and some other resource on this GitHub account.**
 
-first have your image in .png (transparent background of course!)
+**This NFT generator is available through  [Streamlit](https://streamlit.io). Check `streamlit_nft_generator_2.py`**
 
-structure it in this way. in a folder create a sub-folder for each part of your NFT. layer will be sorted based on name.
-for simplicity I would recommend `[layer no]_whatever`
-then in each sub-folder just put our part options in there.
+This NFT generator came from [NFT generator](https://github.com/yoyoismee/NFT-generator)
 
-for example.
+![NFT Example generated with 002_NFT_generator](example_nft.png "NFT Example generated with 002_NFT_generator")
 
-```
-your_awesome_nft
-├── 01_body
-│   ├── body_1.png
-│   └── body_2.png
-└── 02_face
-    ├── face_1.png
-    └── face_2.png
-```
 
-ok all good?
 
-find a way to set up python [link](https://realpython.com/installing-python/)
 
-run this stuff (don't worry I'm not gonna hack you LOL)
+### 2. What is an NFT?
 
-```
-pip3 install -r requirement.txt
-python3 generate.py [input_dir] [output_dir] [how many do ya want]
+An NFT is a tokenized digital asset that can be verified on the blockchain and is non-fungible, meaning it is unique and cannot be easily exchanged for a similar asset. NFTs live on the blockchain, a decentralized global computer network that maintains a public record, they cannot be tampered, destroyed, hacked or counterfeited.
+
+### 3. Requirements
+
+**You need to install Python to take advantage of this NFT generator. Here is the way to install Python on a mac with Homebrew**
+
+To install Homebrew, open Terminal or your favorite OS X terminal emulator and run
+
+```bash
+/bin/bash -c "$(curl -fsSL <https://raw.githubusercontent.com/Homebrew/install/master/install.sh>)"
 ```
 
-## advance feature
+The script will explain what changes it will make and prompt you before the installation begins. Once you’ve installed Homebrew, insert the Homebrew directory at the top of your PATH environment variable. You can do this by adding the following line at the bottom of your ~/.profile file
 
-### option flag
-
-`--unique` generate unique combination only. however it will not be random. (will generate in predictable sequence) 
-
-### animation
-
-`--animate` to activate feature
-
-`--fps` for fps default 4
-
-`--n_frame` to specify no of frame you have. for now each part can be either static or animate, if animate each option
-must have `n_frame` in each folder
-
-the folder structure will be similar to normal one. but in each option you can have a sub-folder instate of a png.
-
-```
-stick_man_part
-├── 1_bg
-│   ├── bg_1.png
-│   └── bg_2.png
-└── 2_animate_part
-    ├── option1
-    │   ├── frame_1.png
-    │   └── frame_2.png
-    └── count_th
-        ├── frame_1.png
-        └── frame_2.png
+```bash
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 ```
 
-### GUI
+If you have OS X 10.12 (Sierra) or older use this line instead
+
+```bash
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+```
+
+Now, we can install Python 3:
+
+```bash
+brew install python
+```
+
+This will take a minute or two.
+
+*Source : [SEO Spider General's User Guide](https://docs.python-guide.org/starting/install3/osx/)*
+
+### 4. Create your environment with Conda
+
+**Go to the dir**
+
+It is just I found easier to be in same git directory to create my environment with Conda.
+
+```bash
+# go to your directory
+cd /[your-path]/001_NFT_training
+```
+
+**Create your dev env with conda**
+
+```bash
+
+[env]
+# Conda Environment
+conda create --name nft_insights python=3.9.7
+conda info --envs
+source activate nft_insights
+conda deactivate
+# if needed to remove
+conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
 ```
-pip3 install -r requirement_gui.txt
-streamlit run nft-generator-gui.py 
+
+**Install packages in your dev env**
+
+```bash
+# install the packages in the env
+
+pip install pillow
+pip install ipython
+pip jnstall streamlit
+
 ```
 
-and just follow the gui
+**Save python requirements in a file name `requirements.txt`**
 
-### MISC
+```bash
 
-my [FB](https://www.facebook.com/yoyoismee/) <- can talk to me, shill, or request new feature here.
+# show what the requirements
+pip freeze > nft_image_generator_requirements_1.txt
+pip install -r nft_image_generator_requirements_1.txt
 
-buy me coffee at `yoyoismee.eth` or `0x6647a7858a0B3846AbD5511e7b797Fc0a0c63a4b`
 
-(actually I might just use it to buy more NFT lol) 
+
+
+```
+
+### 4. Tree directory
+
+**Tree directory with a sample of generated NFTs. To start your own creation, you can remove the 2 directories: `images`, `metadata`**
+
+```bash
+.
+├── README.md
+├── config_values
+│   ├── __pycache__
+│   │   └── values_conf.cpython-39.pyc
+│   └── values_conf.py
+├── generated_6
+│   ├── No_0.png
+│   ├── No_1.png
+│   ├── No_2.png
+│   ├── No_3.png
+│   └── No_4.png
+├── generator.py
+├── launch_nft_generate.py
+├── source_3
+│   ├── background
+│   │   └── black.png
+│   ├── ball
+│   │   ├── red\ eye\ ball_sr.png
+│   │   └── white\ eye\ ball.png
+│   ├── bottom_lid
+│   │   ├── high\ bottom.png
+│   │   ├── low\ bottom.png
+│   │   └── tilted\ bottom_r.png
+│   ├── eye_color
+│   │   ├── cyan\ big.png
+│   │   ├── cyan\ small.png
+│   │   ├── green\ big.png
+│   │   ├── green\ small.png
+│   │   ├── pink\ big.png
+│   │   ├── pink\ small.png
+│   │   ├── purple\ big_r.png
+│   │   ├── purple\ small.png
+│   │   ├── red\ big_sr.png
+│   │   ├── red\ small.png
+│   │   ├── yellow\ big.png
+│   │   └── yellow\ small.png
+│   ├── iris
+│   │   ├── large.png
+│   │   ├── medium.png
+│   │   └── small.png
+│   ├── shine
+│   │   └── shapes.png
+│   └── top_lid
+│       ├── high\ top.png
+│       ├── low\ top.png
+│       └── tilted\ top_r.png
+├── streamlit_nft_generator_1.txt
+└── streamlit_nft_generator_2.py # launch the streamlit app
+```
+
+

@@ -6,6 +6,7 @@
 
 Read the full post on my own website [https://flaven.fr/2022/04/how-to-create-your-own-nft-generative-art-collections-with-python/](https://flaven.fr/2022/04/how-to-create-your-own-nft-generative-art-collections-with-python/)
 
+*NFT Example generated with 010_frida_kahlo_project*
 ![NFT Example generated with 007_pycasso_nft_generator](example_nft.png "NFT Example generated with 007_pycasso_nft_generator")
 ### 2. What is an NFT?
 

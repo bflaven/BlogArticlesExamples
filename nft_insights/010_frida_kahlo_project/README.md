@@ -5,6 +5,7 @@
 
 Read the full post on my own website [https://flaven.fr/2022/04/how-to-create-your-own-nft-generative-art-collections-with-python/](https://flaven.fr/2022/04/how-to-create-your-own-nft-generative-art-collections-with-python/)
 
+*NFT Example generated with 010_frida_kahlo_project*
 ![NFT Example generated with 010_frida_kahlo_project](fkp_nft_1.png "NFT Example generated with 010_frida_kahlo_project")
 #### Frida Kahlo Project
 

@@ -11,8 +11,8 @@ This NFT generator came from [Island-generator](https://github.com/DavidKohler/I
 
 It has also an inspiration in the [Rorschach Test](https://en.wikipedia.org/wiki/Rorschach_test)
 
-
-![NFT Example generated with 008_rorschach_mask_project](mask_4_linewidth_6_color_#ca7b80.png "NFT Example generated with 008_rorschach_mask_project")
+*NFT Example generated with 008_rorschach_mask_project*
+![NFT Example generated with 008_rorschach_mask_project](nft_example.png "NFT Example generated with 008_rorschach_mask_project")
 
 
 

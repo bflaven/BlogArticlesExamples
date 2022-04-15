@@ -32,7 +32,7 @@ https://github.com/yoyoismee/NFT-generator
 
 pip install pillow
 pip install ipython
-
+pip jnstall streamlit
 pip install -r requirements.txt
 
 # show what the requirements
