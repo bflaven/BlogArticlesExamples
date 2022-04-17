@@ -32,8 +32,8 @@ Read the full post extracted from this experience on my own website at https://w
 [![MetaMuse Project : The MetaMuse Hermitage Museum No Wall Art Gallery experience](metamuse_ux_hermitage_no_wall_art_gallery_cover_small.jpg)](https://www.youtube.com/watch?v=yYh1KvsiqgQ)
 
 
-- [MetaMuse Project : The MetaMuse Hermitage Museum No Wall Art Gallery experience](https://www.youtube.com/watch?v=kSiDdjE7sdU)
-[![MetaMuse Project : The MetaMuse Hermitage Museum No Wall Art Gallery experience](metamuse_ux_ziggurat_hermitage_art_gallery_small.jpg)](https://www.youtube.com/watch?v=kSiDdjE7sdU)
+- [MetaMuse Project : The MetaMuse Ziggurat Building Hermitage Museum No Wall Art Gallery experience](https://www.youtube.com/watch?v=kSiDdjE7sdU)
+[![MetaMuse Project : The MetaMuse Ziggurat Building Hermitage Museum No Wall Art Gallery experience](metamuse_ux_ziggurat_hermitage_art_gallery_small.jpg)](https://www.youtube.com/watch?v=kSiDdjE7sdU)
 
 
 ## Git commands memo
