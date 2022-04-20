@@ -14,7 +14,7 @@ conda deactivate
 conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/nft_insights/001_NFT_training/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights/001_NFT_training/
 
 [file]
 python nft_create_2.py
