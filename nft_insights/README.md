@@ -8,6 +8,22 @@ Recently, I had to take an interest in the metaverse, which obviously seems to b
 
 Read the full post on my own website [https://flaven.fr/2022/04/how-to-create-your-own-nft-generative-art-collections-with-python/](https://flaven.fr/2022/04/how-to-create-your-own-nft-generative-art-collections-with-python/)
 
+## videos for this code
+
+**3 additional videos to tackle this post**
+
+
+[Create NFT Generative Art Collections with Python: Using a simple NFT generator in Python through the MAC terminal](https://www.youtube.com/watch?v=sNGvM5OHf0E)
+[![Create NFT Generative Art Collections with Python: Using a simple NFT generator in Python through the MAC terminal](nft_generative_art_collections_python_1.png)](https://www.youtube.com/watch?v=sNGvM5OHf0E)
+
+
+[Create NFT Generative Art Collections with Python: Using a simple NFT generator, made with Streamlit](https://www.youtube.com/watch?v=i4m2TOdjC0s)
+[![Create NFT Generative Art Collections with Python: Using a simple NFT generator, made with Streamlit](nft_generative_art_collections_python_2.png)](https://www.youtube.com/watch?v=i4m2TOdjC0s)
+
+
+[Create NFT Generative Art Collections with Python: Using NFT generators with Frida Kahlo, Lionel Messi and Rosie the riveter or Pablo Picasso](https://www.youtube.com/watch?v=2HLym1_mwCA)
+[![Create NFT Generative Art Collections with Python: Using NFT generators with Frida Kahlo, Lionel Messi and Rosie the riveter or Pablo Picasso](nft_generative_art_collections_python_3.png)](https://www.youtube.com/watch?v=2HLym1_mwCA)
+
 ## Video using these NFTs
 
 **These 4 videos where made during a workshop for the training for "Management de l’Innovation Technologique" at https://exed.polytechnique.edu/ for a project named MetaMuse. The baseline of the MetaMuse project was to offer to create virtual exhibition spaces or galleries, free and paid, of NFTs in the Metaverse.**
