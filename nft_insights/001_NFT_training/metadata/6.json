@@ -13,11 +13,11 @@
         },
         {
             "trait_type": "Eyes",
-            "value": "regular"
+            "value": "small"
         },
         {
             "trait_type": "Hair",
-            "value": "hair11"
+            "value": "hair3"
         },
         {
             "trait_type": "Mouth",
@@ -29,7 +29,7 @@
         },
         {
             "trait_type": "Access",
-            "value": "acc3"
+            "value": "acc2"
         },
         {
             "trait_type": "Beard",

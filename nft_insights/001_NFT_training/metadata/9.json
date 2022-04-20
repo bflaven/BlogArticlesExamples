@@ -9,7 +9,7 @@
         },
         {
             "trait_type": "Ears",
-            "value": "ears2"
+            "value": "ears1"
         },
         {
             "trait_type": "Eyes",
@@ -17,15 +17,15 @@
         },
         {
             "trait_type": "Hair",
-            "value": "hair5"
+            "value": "hair2"
         },
         {
             "trait_type": "Mouth",
-            "value": "m3"
+            "value": "m1"
         },
         {
             "trait_type": "Nose",
-            "value": "n1"
+            "value": "n2"
         },
         {
             "trait_type": "Access",
@@ -33,7 +33,7 @@
         },
         {
             "trait_type": "Beard",
-            "value": "b4"
+            "value": "b8"
         }
     ]
 }

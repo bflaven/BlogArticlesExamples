@@ -154,7 +154,7 @@ class NFT:
     }
     ## Generate Traits
 
-    TOTAL_IMAGES = 25  # Number of random unique images we want to generate
+    TOTAL_IMAGES = 10  # Number of random unique images we want to generate
 
     all_images = []
 
