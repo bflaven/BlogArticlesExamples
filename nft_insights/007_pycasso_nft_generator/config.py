@@ -32,7 +32,7 @@ config = {
     "Output Directory": './output',
     "Output NFT Name": "pycasso_nft_",
     "Output JSON Name": 'pycasso-nft-data',
-    "Generate Amount": 100, # fix the amount of pycasso painting
+    "Generate Amount": 20, # fix the amount of pycasso painting
     "Image Size": [300, 300],
     "Weighted Distribution": True,
     "Can Generate Empty": ["Face"],
