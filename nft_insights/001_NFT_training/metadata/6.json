@@ -21,7 +21,7 @@
         },
         {
             "trait_type": "Mouth",
-            "value": "m5"
+            "value": "m3"
         },
         {
             "trait_type": "Nose",
@@ -33,7 +33,7 @@
         },
         {
             "trait_type": "Beard",
-            "value": "b4"
+            "value": "b8"
         }
     ]
 }

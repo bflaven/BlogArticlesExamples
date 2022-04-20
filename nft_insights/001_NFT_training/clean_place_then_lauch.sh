@@ -1,5 +1,5 @@
 #!/bin/bash
-# cd /Users/brunoflaven/Documents/01_work/blog_articles/nft_insights/001a_NFT_training/
+# cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/nft_insights/001_NFT_training/
 # sh clean_place_then_lauch.sh
 #
 STRING_BEGIN="\n\n=== BEGIN STARTING ===n\n"

@@ -13,15 +13,15 @@
         },
         {
             "trait_type": "Eyes",
-            "value": "regular"
+            "value": "small"
         },
         {
             "trait_type": "Hair",
-            "value": "hair1"
+            "value": "hair2"
         },
         {
             "trait_type": "Mouth",
-            "value": "m2"
+            "value": "m6"
         },
         {
             "trait_type": "Nose",
@@ -33,7 +33,7 @@
         },
         {
             "trait_type": "Beard",
-            "value": "b8"
+            "value": "b7"
         }
     ]
 }

@@ -5,11 +5,11 @@
     "attributes": [
         {
             "trait_type": "Face",
-            "value": "White"
+            "value": "Black"
         },
         {
             "trait_type": "Ears",
-            "value": "ears1"
+            "value": "ears2"
         },
         {
             "trait_type": "Eyes",
@@ -17,15 +17,15 @@
         },
         {
             "trait_type": "Hair",
-            "value": "hair12"
+            "value": "hair8"
         },
         {
             "trait_type": "Mouth",
-            "value": "m5"
+            "value": "m3"
         },
         {
             "trait_type": "Nose",
-            "value": "n2"
+            "value": "n1"
         },
         {
             "trait_type": "Access",
@@ -33,7 +33,7 @@
         },
         {
             "trait_type": "Beard",
-            "value": "b8"
+            "value": "b6"
         }
     ]
 }
