@@ -1,6 +1,13 @@
 # migration_codeceptsjs_to_cypress_write_javascript_class
 
 
+**I started seriously working with Cypress, another UAT (User Acceptance Testing) testing framework. Same exploration like I did with another UAT (User Acceptance Testing) testing framework named CodeceptsJS.**
+
+- CodeceptJS 3 ‐ supercharged End 2 End Testing [https://codecept.io](https://codecept.io/) 
+- Cypress - JavaScript End to End Testing Framework[https://www.cypress.io/](https://www.cypress.io/)
+
+Read the full post on my own website [https://flaven.fr](https://flaven.fr/)
+
 **In 2022, I always forget how to push on GitHub**
 
 ```bash
