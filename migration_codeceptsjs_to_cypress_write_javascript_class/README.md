@@ -38,5 +38,61 @@ git commit -am "add nft file examples in readme"
 git push origin master
 
 ```
+**Tree directory**
 
+```bash
+.
+├── README.md
+├── setup_js_env_1
+│   ├── README.md
+│   ├── example_js_class_007.html
+│   ├── index.html
+│   ├── package-lock.json
+│   └── package.json
+├── setup_js_env_2
+│   ├── README.md
+│   ├── dist
+│   │   ├── bundle.js
+│   │   ├── example_js_class_007.html
+│   │   └── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── src
+│   │   └── index.js
+│   └── webpack.config.js
+├── write_javascript_class_examples
+│   ├── README.md
+│   ├── example_js_class_001.html
+│   ├── example_js_class_002.html
+│   ├── example_js_class_003.html
+│   ├── example_js_class_003a.html
+│   ├── example_js_class_004.html
+│   ├── example_js_class_004a.html
+│   ├── example_js_class_005.html
+│   ├── example_js_class_005a.html
+│   ├── example_js_class_006.html
+│   ├── example_js_class_006a.html
+│   ├── example_js_class_007.html
+│   ├── example_js_class_cypress_001.html
+│   ├── example_js_class_cypress_002.html
+│   ├── example_js_class_cypress_003.html
+│   ├── example_js_class_cypress_004.html
+│   ├── example_js_class_cypress_012.html
+│   ├── example_js_date_001.html
+│   ├── example_js_date_002.html
+│   ├── example_js_date_003.html
+│   ├── example_js_date_004.html
+│   ├── example_js_date_005.html
+│   ├── example_js_random_time_001.html
+│   ├── example_js_random_time_002.html
+│   ├── example_js_switch_001.html
+│   ├── example_js_switch_002.html
+│   ├── example_js_switch_003.html
+│   └── example_js_switch_004.html
+└── write_python_class_examples
+    ├── README.md
+    └── example_python_class_cypress_002.py
+
+6 directories, 44 files
+```
 

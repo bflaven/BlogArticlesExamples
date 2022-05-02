@@ -14,7 +14,7 @@ conda deactivate
 conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/write_javascript_class/write_python_class_examples/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/migration_codeceptsjs_to_cypress_write_javascript_class/
 
 
 [file]
