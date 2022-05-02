@@ -10,7 +10,7 @@
 # The idea is to load an html file
 cd /Users/brunoflaven/Documents/01_work/blog_articles/write_javascript_class/
 
-# step_1 check the requirements
+# check the requirements
 node -v
 npm -v
 
