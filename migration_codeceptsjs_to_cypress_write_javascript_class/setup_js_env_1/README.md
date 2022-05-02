@@ -69,13 +69,6 @@ touch index.html
 
 # Step_6: install a server. I will go finally with http-server. Much more easy to use.
 
-
-# install lite server
-npm install -–save-dev lite-server 
-
-# to uninstall lite-server
-npm uninstall -–save-dev lite-server 
-
 # install another one
 npm install -–save-dev http-server
 
@@ -85,13 +78,6 @@ npm install -–save-dev http-server
 
 
 # Step_7: modify package.json file and add a shortcut to start the server
-
-
-"scripts": {
-    "start": "lite-server"
-  },
-
-
 
 "scripts": {
     "start": "http-server -o"
