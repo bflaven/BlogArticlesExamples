@@ -1,0 +1,20 @@
+{
+  "name": "setup_js_env_1",
+  "version": "1.0.0",
+  "description": "A setup_js_env_1 to develop locally some javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -o"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "console",
+    "chrome"
+  ],
+  "author": "bflaven",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.0"
+  }
+}

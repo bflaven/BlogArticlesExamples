@@ -1,0 +1,515 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_switch_002.html</br>
+
+  <script type="text/javascript">
+
+
+
+
+    class UtilityBach {
+
+         brandLang;
+         bachEntranceLinkXpath;
+         mainNavMenuLinkEntries;
+         accesPanelCollapseCreate;
+
+            constructor(brandLang, bachEntranceLinkXpath, mainNavMenuLinkEntries, accesPanelCollapseCreate){
+                this.brandLang = brandLang;
+                this.bachEntranceLinkXpath = bachEntranceLinkXpath;
+                this.mainNavMenuLinkEntries = mainNavMenuLinkEntries;
+                this.accesPanelCollapseCreate = accesPanelCollapseCreate;
+            }
+
+            getSelectionVerifier() {
+                // let brandLang = Cypress.env('BRAND_LANG':;
+                
+              switch (brandLang) {
+                
+                // F24
+                // F24_EN is default case
+                case 'F24_ES':
+                    return 'F24_ES';      
+                case 'F24_FR':
+                    return 'F24_FR'; 
+                case 'F24_AR':
+                    return 'F24_AR'; 
+                
+                // RFI
+                case 'RFI_FR':
+                    return 'RFI_FR'; 
+                case 'RFI_EN':
+                    return 'RFI_EN';
+                case 'RFI_CN':
+                    return 'RFI_CN';
+                case 'RFI_ES':
+                    return 'RFI_ES';
+                case 'RFI_FA':
+                    return 'RFI_FA';
+                case 'RFI_HA':
+                    return 'RFI_HA';
+                case 'RFI_KM':
+                    return 'RFI_KM';
+                case 'RFI_SW':
+                    return 'RFI_SW';
+                case 'RFI_MA':
+                    return 'RFI_MA';
+                case 'RFI_FF':
+                    return 'RFI_FF';
+                case 'RFI_PT':
+                    return 'RFI_PT';
+                case 'RFI_BR':
+                    return 'RFI_BR';
+                case 'RFI_RO':
+                    return 'RFI_RO';
+                case 'RFI_RU':
+                    return 'RFI_RU';
+                case 'RFI_VI':
+                    return 'RFI_VI';
+
+                // MCD
+                case 'MCD_AR':
+                    return 'MCD_AR';
+
+                // OBS
+                case 'OBS_FR':
+                    return 'OBS_FR';
+                case 'OBS_EN':
+                    return 'OBS_EN';
+                case 'OBS_AR':
+                    return 'OBS_AR';
+                case 'OBS_FA':
+                    return 'OBS_FA';
+                // Default
+                 default: 
+                    // F24_EN
+                    return 'F24_EN'; 
+
+                }// EOS   
+                    
+            }// EOF
+
+            getBachEntranceLinkXpath() {
+                // let brandLang = Cypress.env('BRAND_LANG':;
+                
+
+              switch (brandLang) {
+                
+                // F24
+                // F24_EN is default case
+                 case 'F24_ES':
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[3]';   
+                case 'F24_FR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[4]'; 
+                case 'F24_AR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[1]'; 
+                
+                // RFI
+                case 'RFI_FR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[7]'; 
+                case 'RFI_EN':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[3]';
+                case 'RFI_CN':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[2]';
+                case 'RFI_ES':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[4]';
+                case 'RFI_FA':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[5]';
+                case 'RFI_HA':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[8]';
+                case 'RFI_KM':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[9]';
+                case 'RFI_SW':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[14]';
+                case 'RFI_MA':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[10]';
+                case 'RFI_FF':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[6]';
+                case 'RFI_PT':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[11]';
+                case 'RFI_BR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[1]';
+                case 'RFI_RO':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[12]';
+                case 'RFI_RU':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[13]';
+                case 'RFI_VI':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[15]';
+
+                // MCD
+                case 'MCD_AR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[3]/div[2]/div/a';
+
+                // OBS
+                case 'OBS_FR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[5]';
+                case 'OBS_EN':
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[6]';
+                case 'OBS_AR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[7]';
+                case 'OBS_FA':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[16]';
+                // Default
+                 default: 
+                    // F24_EN
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[2]';
+
+              }//EOS
+
+
+            }// EOF
+
+            getMainNavMenuLinkEntries () {
+                // let brandLang = Cypress.env('BRAND_LANG':;
+
+                switch (brandLang) {
+                
+                // F24
+                // F24_EN is default case
+                case 'F24_ES':
+                    return 'F24_ES';      
+                case 'F24_FR':
+                    return 9;
+                case 'F24_AR':
+                    return 9;
+                
+                // RFI
+                case 'RFI_FR':
+                    return 9;
+                case 'RFI_EN':
+                    return 7;
+                case 'RFI_CN':
+                    return 7;
+                case 'RFI_ES':
+                    return 7; 
+                case 'RFI_FA':
+                    return 7;
+                case 'RFI_HA':
+                    return 7;
+                case 'RFI_KM':
+                    return 7;
+                case 'RFI_SW':
+                    return 7;
+                case 'RFI_MA':
+                    return 7;
+                case 'RFI_FF':
+                    return 7;
+                case 'RFI_PT':
+                    return 7;
+                case 'RFI_BR':
+                    return 7;
+                case 'RFI_RO':
+                    return 7;
+                case 'RFI_RU':
+                    return 7;
+                case 'RFI_VI':
+                    return 7;
+
+                // MCD
+                case 'MCD_AR':
+                     return 7; 
+
+                // OBS
+                case 'OBS_FR':
+                    return 8;
+                case 'OBS_EN':
+                    return 8;
+                case 'OBS_AR':
+                    return 8;
+                case 'OBS_FA':
+                    return 8;
+                // Default
+                default:  
+                    // F24_EN
+                    return 9;
+
+              }//EOS
+
+            }// EOF
+
+
+            getAccesPanelCollapseCreate () {
+                // let brandLang = Cypress.env('BRAND_LANG');
+                
+                switch (brandLang) {
+                // F24
+                // F24_EN is default case
+                case 'F24_ES':
+                    return 'F24_ES';      
+                case 'F24_FR':
+                    return 9;
+                case 'F24_AR':
+                    return 9;
+                
+                // RFI
+                case 'RFI_FR':
+                    return 9;
+                case 'RFI_EN':
+                    return 7;
+                case 'RFI_CN':
+                    return 7;
+                case 'RFI_ES':
+                    return 7; 
+                case 'RFI_FA':
+                    return 7;
+                case 'RFI_HA':
+                    return 7;
+                case 'RFI_KM':
+                    return 7;
+                case 'RFI_SW':
+                    return 7;
+                case 'RFI_MA':
+                    return 7;
+                case 'RFI_FF':
+                    return 7;
+                case 'RFI_PT':
+                    return 7;
+                case 'RFI_BR':
+                    
+                    // Article
+                    var articleAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[1]';
+                    // Urgent
+                    var urgentAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[2]';
+                    // Lien externe
+                    var linkAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[3]';
+                    // Edition
+                    var editionAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[4]';
+                    // Émission
+                    var programAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[5]';
+                    // Page 
+                    var pageAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[6]';
+                    // Diaporama
+                    var slideshowAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[7]';
+                    // Infographie
+                    var infographicAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[8]';
+                    // Tag
+                    var vocabulariesAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[9]';
+                    // Tag Metadata
+                    var tagmetadataAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[10]';
+                    // Vidéo
+                    var videoAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[11]';
+                    // Son
+                    var soundAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[12]';
+
+
+                    return {articleAccesPanelCollapse, urgentAccesPanelCollapse, linkAccesPanelCollapse, editionAccesPanelCollapse, programAccesPanelCollapse, pageAccesPanelCollapse, slideshowAccesPanelCollapse, infographicAccesPanelCollapse, vocabulariesAccesPanelCollapse, tagmetadataAccesPanelCollapse, videoAccesPanelCollapse, soundAccesPanelCollapse};
+                    
+                case 'RFI_RO':
+                    return 7;
+                case 'RFI_RU':
+                    return 7;
+                case 'RFI_VI':
+                    return 7;
+
+                // MCD
+                case 'MCD_AR':
+                     return 7; 
+
+                // OBS
+                case 'OBS_FR':
+
+                    // Article
+                    var articleAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[1]';
+                    // Urgent
+                    var urgentAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[2]';
+                    // Lien externe
+                    var linkAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[3]';
+                    // Edition
+                    var editionAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[4]';
+                    // Émission
+                    var programAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[5]';
+                    // Page 
+                    var pageAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[6]';
+                    // Diaporama
+                    var slideshowAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[7]';
+                    // Infographie
+                    var infographicAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[8]';
+                    // Tag
+                    var vocabulariesAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[9]';
+                    // Tag Metadata
+                    var tagmetadataAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[10]';
+                    // Vidéo
+                    var videoAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[11]';
+                    // Son
+                    var soundAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[12]';
+
+
+                    return {articleAccesPanelCollapse, urgentAccesPanelCollapse, linkAccesPanelCollapse, editionAccesPanelCollapse, programAccesPanelCollapse, pageAccesPanelCollapse, slideshowAccesPanelCollapse, infographicAccesPanelCollapse, vocabulariesAccesPanelCollapse, tagmetadataAccesPanelCollapse, videoAccesPanelCollapse, soundAccesPanelCollapse};
+
+
+                case 'OBS_EN':
+                    return 8;
+                case 'OBS_AR':
+                    return 8;
+                case 'OBS_FA':
+                    return 8;
+                // Default
+                default:  
+                    // F24_EN
+                    // Article
+                    var articleAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[1]';
+                    // Urgent
+                    var urgentAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[2]';
+                    // Lien externe
+                    var linkAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[3]';
+                    // Edition
+                    var editionAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[4]';
+                    // Émission
+                    var programAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[5]';
+                    // Page 
+                    var pageAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[6]';
+                    // Diaporama
+                    var slideshowAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[7]';
+                    // Infographie
+                    var infographicAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[8]';
+                    // Tag
+                    var vocabulariesAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[9]';
+                    // Tag Metadata
+                    var tagmetadataAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[10]';
+                    // Vidéo
+                    var videoAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[11]';
+                    // Son
+                    var soundAccesPanelCollapse='//*[@id="acces-panel-collapse"]/div/a[12]';
+
+
+                    return {articleAccesPanelCollapse, urgentAccesPanelCollapse, linkAccesPanelCollapse, editionAccesPanelCollapse, programAccesPanelCollapse, pageAccesPanelCollapse, slideshowAccesPanelCollapse, infographicAccesPanelCollapse, vocabulariesAccesPanelCollapse, tagmetadataAccesPanelCollapse, videoAccesPanelCollapse, soundAccesPanelCollapse};
+
+              }//EOS
+
+
+                
+
+
+            }// EOF
+
+
+    }// EOC
+
+
+    try {
+          // var brandLang ='F24_FR';
+           var brandLang ='OBS_FR';
+          // var brandLang ='MCD_AR';
+          // var brandLang ='';
+          // 
+          // 
+          const verifier = new UtilityBach().getSelectionVerifier();
+          const entrance = new UtilityBach().getBachEntranceLinkXpath();
+          const number = new UtilityBach().getMainNavMenuLinkEntries();
+
+          const buttonCreateContentNumber = new UtilityBach().getAccesPanelCollapseCreate();
+
+
+ 
+
+          console.log('verifier :: '+verifier+'');
+          console.log('entrance :: '+entrance+'');
+          console.log('number :: '+number+'');
+
+          console.log('----\n');
+          
+          console.log('buttonCreateContentNumber.articleAccesPanelCollapse :: '+buttonCreateContentNumber.articleAccesPanelCollapse+'');
+
+          console.log('buttonCreateContentNumber.urgentAccesPanelCollapse :: '+buttonCreateContentNumber.urgentAccesPanelCollapse+'');
+
+          console.log('buttonCreateContentNumber.linkAccesPanelCollapse :: '+buttonCreateContentNumber.linkAccesPanelCollapse+'');
+
+          console.log('buttonCreateContentNumber.editionAccesPanelCollapse :: '+buttonCreateContentNumber.editionAccesPanelCollapse+'');
+
+          
+          console.log('buttonCreateContentNumber.programAccesPanelCollapse :: '+buttonCreateContentNumber.programAccesPanelCollapse+'');
+
+          console.log('buttonCreateContentNumber.pageAccesPanelCollapse :: '+buttonCreateContentNumber.pageAccesPanelCollapse+'');
+          
+          
+          console.log('buttonCreateContentNumber.slideshowAccesPanelCollapse :: '+buttonCreateContentNumber.slideshowAccesPanelCollapse+'');
+          
+          console.log('buttonCreateContentNumber.infographicAccesPanelCollapse :: '+buttonCreateContentNumber.infographicAccesPanelCollapse+'');
+          
+          console.log('buttonCreateContentNumber.vocabulariesAccesPanelCollapse :: '+buttonCreateContentNumber.vocabulariesAccesPanelCollapse+'');
+          
+          console.log('buttonCreateContentNumber.tagmetadataAccesPanelCollapse :: '+buttonCreateContentNumber.tagmetadataAccesPanelCollapse+'');
+          
+          console.log('buttonCreateContentNumber.videoAccesPanelCollapse :: '+buttonCreateContentNumber.videoAccesPanelCollapse+'');
+          
+          console.log('buttonCreateContentNumber.soundAccesPanelCollapse :: '+buttonCreateContentNumber.soundAccesPanelCollapse+'');
+          
+          
+
+
+
+
+          console.log('----\n');
+
+
+    } catch(err) {
+      console.log('brandLang does not exist!');
+      // console.log('err.name :: '+err.name+'':;
+      // console.log('err.message :: '+err.message+'':;
+      // console.log('err.stack :: '+err.stack+'':;
+
+    }
+    
+
+
+      
+
+
+/*
+
+// Article
+// articleAccesPanelCollapse:'#acces-panel-collapse > div > a:nth-child(1)', // '+globalValues.articleAccesPanelCollapse+'
+articleAccesPanelCollapse:'//*[@id="acces-panel-collapse"]/div/a[1]', // '+globalValues.articleAccesPanelCollapse+'
+
+
+// Urgent
+urgentAccesPanelCollapse:'//*[@id="acces-panel-collapse"]/div/a[2]', // '+globalValues.urgentAccesPanelCollapse+'
+
+
+// Lien externe
+linkAccesPanelCollapse:'//*[@id="acces-panel-collapse"]/div/a[3]', // '+globalValues.linkAccesPanelCollapse+'
+// Edition
+editionAccesPanelCollapse:'//*[@id="acces-panel-collapse"]/div/a[4]', // '+globalValues.articleAccesPanelCollapse+'
+// Émission
+programAccesPanelCollapse:'//*[@id="acces-panel-collapse"]/div/a[5]', // '+globalValues.programAccesPanelCollapse+'
+
+// F24
+
+// Page 
+pageAccesPanelCollapse:'//*[@id="acces-panel-collapse"]/div/a[6]', // '+globalValues.pageAccesPanelCollapse+'
+
+// Diaporama
+slideshowAccesPanelCollapse:'//*[@id="acces-panel-collapse"]/div/a[7]', // '+globalValues.slideshowAccesPanelCollapse+'
+// Infographie
+infographicAccesPanelCollapse:'//*[@id="acces-panel-collapse"]/div/a[8]', // '+globalValues.infographicAccesPanelCollapse+'
+// Tag
+vocabulariesAccesPanelCollapse:'//*[@id="acces-panel-collapse"]/div/a[9]', // '+globalValues.vocabulariesAccesPanelCollapse+'
+// Tag Metadata
+tagmetadataAccesPanelCollapse:'//*[@id="acces-panel-collapse"]/div/a[10]', // '+globalValues.tagmetadataAccesPanelCollapse+'
+
+// Vidéo
+videoAccesPanelCollapse:'//*[@id="acces-panel-collapse"]/div/a[11]', // '+globalValues.videoAccesPanelCollapse+'
+// Son
+soundAccesPanelCollapse:'//*[@id="acces-panel-collapse"]/div/a[12]', // '+globalValues.soundAccesPanelCollapse+'
+
+// RFI LNG
+
+// Diaporama
+slideshowAccesPanelCollapseLng:'//*[@id="acces-panel-collapse"]/div/a[6]', // '+globalValues.slideshowAccesPanelCollapse+'
+// Infographie
+infographicAccesPanelCollapseLng:'//*[@id="acces-panel-collapse"]/div/a[7]', // '+globalValues.infographicAccesPanelCollapse+'
+// Tag
+vocabulariesAccesPanelCollapseLng:'//*[@id="acces-panel-collapse"]/div/a[8]', // '+globalValues.vocabulariesAccesPanelCollapse+'
+// Tag Metadata
+tagmetadataAccesPanelCollapseLng:'//*[@id="acces-panel-collapse"]/div/a[9]', // '+globalValues.tagmetadataAccesPanelCollapse+'
+
+// Vidéo
+videoAccesPanelCollapseLng:'//*[@id="acces-panel-collapse"]/div/a[10]', // '+globalValues.videoAccesPanelCollapse+'
+// Son
+soundAccesPanelCollapseLng:'//*[@id="acces-panel-collapse"]/div/a[11]', // '+globalValues.soundAccesPanelCollapse+'
+
+ */     
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_date_004.html</br>
+
+  <script type="text/javascript">
+
+    // https://iqcode.com/code/javascript/random-date-generator-javascript
+    // 
+function doBroadcastDateInput() {
+
+
+        //set a range of years
+        let min = 2022;
+        let max = 2071;
+
+        // Math.ceil prevents the value from being 0;
+        let month = Math.ceil(Math.random() * 12);
+        let day = Math.ceil(Math.random() * 28);
+        let year = Math.floor(Math.random() * (max - min) + min);
+
+        //this ensures that the format will stay mm/dd/yyyy;
+        if(month < 10) {
+            month = "0" + month;
+        }
+
+        if(day < 10) {
+            day = "0" + day;
+        }
+
+        pickUpRandomDate = ''+month+'/'+day+'/'+year+'';
+
+       return pickUpRandomDate
+
+}
+
+
+    
+    try {
+
+            let broadcastDateInput = doBroadcastDateInput();
+            
+           console.log('broadcastDateInput :: '+broadcastDateInput+'');
+
+
+
+    } catch(err) {
+      console.log('broadcastDateInput does not exist!');
+
+    }
+
+/*
+
+function filePathImage() {
+
+// returns a random integer from 1 to 50
+const RandomImageInsertUpload =''+(Math.floor(Math.random() * 18) + 0)+''; 
+const AnimalImageUpload =['animal_badger.jpg','animal_bear.jpg','animal_bird.jpg','animal_camel.jpg','animal_elephants.jpg','animal_fawn_deer.jpg','animal_fish_blobfish.jpg','animal_hyena.jpg','animal_nature_bird_flying_red.jpg','animal_pangolin.jpg','animal_red_panda.jpg','animal_reptile_chamaeleo.jpg','animal_rhino.jpg','animal_snake.jpg','animal_squirrel.jpg','animal_tapir_malaisie.jpg','animal_tiger.jpg','animal_zebra.jpg'];
+
+// let result = '';
+let filepath = 'pictures/'+AnimalImageUpload[RandomImageInsertUpload]+'';
+
+  return filepath;
+
+  }
+
+ */
+
+    // broadcastDateInput type 03/04/2022 (FR) or 2022/04/03 (EN)
+
+/*
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+todayFr = ''+mm+'/'+dd+'/'+ yyyy+'';
+todayEn = ''+yyyy+'/'+mm+'/'+dd+'';
+
+
+
+
+    try {
+           var todayFr;
+           var todayEn;
+
+          console.log('todayFr :: '+todayFr+'');
+          console.log('todayEn :: '+todayEn+'');
+
+    } catch(err) {
+      console.log('today does not exist!');
+
+    }
+*/
+
+    </script>
+    
+</body>
+</html>
+

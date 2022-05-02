@@ -1,0 +1,277 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_switch_002.html</br>
+
+  <script type="text/javascript">
+
+
+
+
+    class UtilityBach {
+
+         brandLang;
+         bachEntranceLinkXpath;
+         mainNavMenuLinkEntries;
+
+            constructor(brandLang, bachEntranceLinkXpath, mainNavMenuLinkEntries){
+                this.brandLang = brandLang;
+                this.bachEntranceLinkXpath = bachEntranceLinkXpath;
+                this.mainNavMenuLinkEntries = mainNavMenuLinkEntries;
+            }
+
+            getSelectionVerifier() {
+                // let brandLang = Cypress.env('BRAND_LANG':;
+                
+              switch (brandLang) {
+                
+                // F24
+                // F24_EN is default case
+                case 'F24_ES':
+                    return 'F24_ES';      
+                case 'F24_FR':
+                    return 'F24_FR'; 
+                case 'F24_AR':
+                    return 'F24_AR'; 
+                
+                // RFI
+                case 'RFI_FR':
+                    return 'RFI_FR'; 
+                case 'RFI_EN':
+                    return 'RFI_EN';
+                case 'RFI_CN':
+                    return 'RFI_CN';
+                case 'RFI_ES':
+                    return 'RFI_ES';
+                case 'RFI_FA':
+                    return 'RFI_FA';
+                case 'RFI_HA':
+                    return 'RFI_HA';
+                case 'RFI_KM':
+                    return 'RFI_KM';
+                case 'RFI_SW':
+                    return 'RFI_SW';
+                case 'RFI_MA':
+                    return 'RFI_MA';
+                case 'RFI_FF':
+                    return 'RFI_FF';
+                case 'RFI_PT':
+                    return 'RFI_PT';
+                case 'RFI_BR':
+                    return 'RFI_BR';
+                case 'RFI_RO':
+                    return 'RFI_RO';
+                case 'RFI_RU':
+                    return 'RFI_RU';
+                case 'RFI_VI':
+                    return 'RFI_VI';
+
+                // MCD
+                case 'MCD_AR':
+                    return 'MCD_AR';
+
+                // OBS
+                case 'OBS_FR':
+                    return 'OBS_FR';
+                case 'OBS_EN':
+                    return 'OBS_EN';
+                case 'OBS_AR':
+                    return 'OBS_AR';
+                case 'OBS_FA':
+                    return 'OBS_FA';
+                // Default
+                 default: 
+                    // F24_EN
+                    return 'F24_EN'; 
+
+                }// EOS   
+                    
+            }// EOF
+
+            getBachEntranceLinkXpath() {
+                // let brandLang = Cypress.env('BRAND_LANG':;
+                
+
+              switch (brandLang) {
+                
+                // F24
+                // F24_EN is default case
+                 case 'F24_ES':
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[3]';   
+                case 'F24_FR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[4]'; 
+                case 'F24_AR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[1]'; 
+                
+                // RFI
+                case 'RFI_FR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[7]'; 
+                case 'RFI_EN':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[3]';
+                case 'RFI_CN':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[2]';
+                case 'RFI_ES':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[4]';
+                case 'RFI_FA':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[5]';
+                case 'RFI_HA':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[8]';
+                case 'RFI_KM':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[9]';
+                case 'RFI_SW':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[14]';
+                case 'RFI_MA':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[10]';
+                case 'RFI_FF':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[6]';
+                case 'RFI_PT':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[11]';
+                case 'RFI_BR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[1]';
+                case 'RFI_RO':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[12]';
+                case 'RFI_RU':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[13]';
+                case 'RFI_VI':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[15]';
+
+                // MCD
+                case 'MCD_AR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[3]/div[2]/div/a';
+
+                // OBS
+                case 'OBS_FR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[5]';
+                case 'OBS_EN':
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[6]';
+                case 'OBS_AR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[7]';
+                case 'OBS_FA':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[16]';
+                // Default
+                 default: 
+                    // F24_EN
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[2]';
+
+              }//EOS
+
+
+            }// EOF
+
+            getMainNavMenuLinkEntries () {
+                // let brandLang = Cypress.env('BRAND_LANG':;
+
+                switch (brandLang) {
+                
+                // F24
+                // F24_EN is default case
+                case 'F24_ES':
+                    return 'F24_ES';      
+                case 'F24_FR':
+                    return 9;
+                case 'F24_AR':
+                    return 9;
+                
+                // RFI
+                case 'RFI_FR':
+                    return 9;
+                case 'RFI_EN':
+                    return 7;
+                case 'RFI_CN':
+                    return 7;
+                case 'RFI_ES':
+                    return 7; 
+                case 'RFI_FA':
+                    return 7;
+                case 'RFI_HA':
+                    return 7;
+                case 'RFI_KM':
+                    return 7;
+                case 'RFI_SW':
+                    return 7;
+                case 'RFI_MA':
+                    return 7;
+                case 'RFI_FF':
+                    return 7;
+                case 'RFI_PT':
+                    return 7;
+                case 'RFI_BR':
+                    return 7;
+                case 'RFI_RO':
+                    return 7;
+                case 'RFI_RU':
+                    return 7;
+                case 'RFI_VI':
+                    return 7;
+
+                // MCD
+                case 'MCD_AR':
+                     return 7; 
+
+                // OBS
+                case 'OBS_FR':
+                    return 8;
+                case 'OBS_EN':
+                    return 8;
+                case 'OBS_AR':
+                    return 8;
+                case 'OBS_FA':
+                    return 8;
+                // Default
+                default:  
+                    // F24_EN
+                    return 9;
+
+              }//EOS
+
+            }// EOF
+
+
+    }// EOC
+
+
+    try {
+          // var brandLang ='F24_FR';
+           var brandLang ='OBS_FR';
+          // var brandLang ='MCD_AR';
+          // var brandLang ='';
+          // 
+          // 
+          const verifier = new UtilityBach().getSelectionVerifier();
+          const entrance = new UtilityBach().getBachEntranceLinkXpath();
+          const number = new UtilityBach().getMainNavMenuLinkEntries();
+
+          console.log('verifier :: '+verifier+'');
+          console.log('entrance :: '+entrance+'');
+          console.log('number :: '+number+'');
+    } catch(err) {
+      console.log('brandLang does not exist!');
+      // console.log('err.name :: '+err.name+'':;
+      // console.log('err.message :: '+err.message+'':;
+      // console.log('err.stack :: '+err.stack+'':;
+
+    }
+    
+
+
+      
+
+
+/*
+
+//Import Utility from support folder
+import { Utility } from "../../../support/utility"
+
+//Call getBaseUrl() to get environment specific url value
+const url = new Utility().getBaseUrl();
+
+describe('Verify Environment Config' + url, () => {
+    it('Verify Environment', () => {
+        cy.visit(url); //use url variable
+    });
+});
+
+ */     
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_class_001.html</br>
+    <script type="text/javascript">
+      
+      class Student{
+         
+
+         constructor(){
+           console.log("I am in constructor")  
+         }
+        
+         name; 
+        
+              getStudentName(){
+                 console.log(this.name);
+              }
+
+       }//EOC
+
+      const student1 = new Student();
+      student1.name="Guido";
+      student1.getStudentName();
+
+      const student2 = new Student();
+      student2.name="Yossef";
+      student2.getStudentName();
+      
+      const student3 = new Student();
+      student3.name="Prisca";
+      student3.getStudentName();
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_date_001.html</br>
+
+  <script type="text/javascript">
+
+
+    // broadcastDateInput type 03/04/2022 (FR) or 2022/04/03 (EN)
+
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+todayFr = ''+mm+'/'+dd+'/'+ yyyy+'';
+todayEn = ''+yyyy+'/'+mm+'/'+dd+'';
+
+
+
+
+    try {
+           var todayFr;
+           var todayEn;
+
+          console.log('todayFr :: '+todayFr+'');
+          console.log('todayEn :: '+todayEn+'');
+
+    } catch(err) {
+      console.log('today does not exist!');
+
+    }
+    
+
+    </script>
+    
+</body>
+</html>

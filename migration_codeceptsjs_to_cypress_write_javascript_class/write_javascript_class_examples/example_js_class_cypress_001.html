@@ -1,0 +1,50 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_class_cypress_001.html</br>
+    <script type="text/javascript">
+
+
+
+
+        
+      class UtilityBach {
+    
+        getSelectionVerifier() {
+            // Get the value of environment variable e.g --env BRAND_LANG=F24_EN 
+            // let brandLang = Cypress.env('BRAND_LANG'); 
+            
+
+            if (brandLang == 'RFI_ES')
+                return 'RFI_ES';
+            else if (brandLang == 'RFI_FR')
+                return 'RFI_FR';
+            else if (brandLang == 'RFI_RU')
+                return 'RFI_RU';
+            // Exception F24_EN is the default case...
+            else if (brandLang == 'F24_FR')
+                return 'F24_FR';
+            else if (brandLang == 'F24_ES')
+                return 'F24_ES';
+            else if (brandLang == 'OBS_EN')
+                return 'OBS_EN';
+            else if (brandLang == 'MCD_AR')
+                return 'MCD_AR';
+            // Default case
+            else (brandLang == 'F24_EN')
+                return 'F24_EN';
+        }// EOF
+  }//EOC     
+
+
+
+var brandLang ='RFI_RU'; 
+const bachSelectionVerified = new UtilityBach().getSelectionVerifier();
+
+console.log('DATA FROM cypress/support/utilityGetStuffbach.js')
+console.log('bachSelectionVerified :: '+bachSelectionVerified+'')  
+
+
+
+    </script>
+</body>
+</html>

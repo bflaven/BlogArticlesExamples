@@ -1,0 +1,147 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_switch_002.html</br>
+
+  <script type="text/javascript">
+
+
+
+
+    class UtilityBach {
+
+         brandLang;
+         bachEntranceLinkXpath;
+         mainNavMenuLinkEntries;
+
+            constructor(brandLang, bachEntranceLinkXpath, mainNavMenuLinkEntries){
+                this.brandLang = brandLang;
+                this.bachEntranceLinkXpath = bachEntranceLinkXpath;
+                this.mainNavMenuLinkEntries = mainNavMenuLinkEntries;
+            }
+
+            getSelectionVerifier() {
+                // let brandLang = Cypress.env('BRAND_LANG');
+                
+              switch (brandLang) {
+                
+                case 'RFI_ES':
+                  return 'RFI_ES';
+                break;
+                
+                case 'F24_FR':
+                  return 'F24_FR'; 
+                break;
+                
+                case 'MCD_AR':
+                  return 'MCD_AR'; 
+                break;
+
+                default:
+                  // F24_EN
+                  return 'F24_EN'; 
+              }//EOS
+                
+
+               
+                    
+            }// EOF
+
+            getBachEntranceLinkXpath() {
+                // let brandLang = Cypress.env('BRAND_LANG');
+                
+
+              switch (brandLang) {
+                
+                case 'RFI_ES':
+                    return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[4]'; 
+                break;
+                
+                case 'F24_FR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[3]/div[2]/div/a'; 
+                break;
+                
+                case 'MCD_AR':
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[2]';
+                break;
+
+                default:
+                  // F24_EN
+                    return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[2]';
+
+              }//EOS
+
+
+            }// EOF
+
+            getMainNavMenuLinkEntries () {
+                // let brandLang = Cypress.env('BRAND_LANG');
+
+                switch (brandLang) {
+                
+                case 'RFI_ES':
+                    return 7; 
+                break;
+                
+                case 'F24_FR':
+                    return 9; 
+                break;
+                
+                case 'MCD_AR':
+                    return 5; 
+                break;
+
+                default:
+                  // F24_EN
+                    return 9; 
+
+              }//EOS
+
+            }// EOF
+
+
+    }// EOC
+
+
+    try {
+          // var brandLang ='F24_FR';
+          // var brandLang ='MCD_AR';
+          // var brandLang ='';
+          const verifier = new UtilityBach().getSelectionVerifier();
+          const entrance = new UtilityBach().getBachEntranceLinkXpath();
+          const number = new UtilityBach().getMainNavMenuLinkEntries();
+
+          console.log('verifier :: '+verifier+'');
+          console.log('entrance :: '+entrance+'');
+          console.log('number :: '+number+'');
+    } catch(err) {
+      console.log('brandLang does not exist!');
+      // console.log('err.name :: '+err.name+'');
+      // console.log('err.message :: '+err.message+'');
+      // console.log('err.stack :: '+err.stack+'');
+
+    }
+    
+
+
+      
+
+
+/*
+
+//Import Utility from support folder
+import { Utility } from "../../../support/utility"
+
+//Call getBaseUrl() to get environment specific url value
+const url = new Utility().getBaseUrl();
+
+describe('Verify Environment Config' + url, () => {
+    it('Verify Environment', () => {
+        cy.visit(url); //use url variable
+    });
+});
+
+ */     
+    </script>
+    
+</body>
+</html>

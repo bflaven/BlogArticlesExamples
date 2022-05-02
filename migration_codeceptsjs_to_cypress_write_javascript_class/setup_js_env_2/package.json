@@ -1,0 +1,28 @@
+{
+  "name": "setup_js_env_2",
+  "version": "1.0.0",
+  "description": "A setup_js_env_2 to develop locally some javascript",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "watch": "webpack --watch --mode=development",
+    "start": "webpack-dev-server --mode=development --open"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "console",
+    "chrome"
+  ],
+  "author": "bflaven",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.4",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  }
+}

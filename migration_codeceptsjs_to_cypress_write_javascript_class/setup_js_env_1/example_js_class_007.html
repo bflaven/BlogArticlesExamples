@@ -1,0 +1,198 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_class_001.html</br>
+    <script type="text/javascript">
+
+
+/*
+https://www.toolsqa.com/javascript/javascript-classes/
+
+ */
+
+/*
+class Cuboid:
+    def __init__(self, length, breadth, height, weight):
+        self.length=length
+        self.breadth=breadth
+        self.height=height
+        self.weight=weight
+
+    def volume(self):
+        x = self.length
+        y = self.breadth
+        z = self.height
+        v = x * y * z
+        print("The volume is:", v)
+
+    def density(self):
+        x = self.length
+        y = self.breadth
+        z = self.height
+        v = x * y * z
+        d = self.weight / v
+        print("Density is:", d)
+
+    def surface_area(self):
+        x = self.length
+        y = self.breadth
+        z = self.height
+        s = 2 * (x * y + y * z + x * z)
+        print("The surface area is:", s)
+
+# instatiate
+myCuboid = Cuboid(1, 2, 4,4.5)
+myCuboid.density()
+myCuboid.surface_area()
+myCuboid.volume()
+
+
+
+# https://www.w3schools.com/python/python_classes.asp
+class Student:
+    
+    'A simple student model.'
+  
+    def __init__(self, name, age, university, program):
+        self.name = name
+        self.age = age
+        self.university = university
+        self.program = program
+        
+
+
+# instatiate Class_2
+print('\n~~~ instatiate Class_2')
+p1 = Student("Prisca", 40, "Uni Heidelberg", "Philosophy")
+print(p1.name)
+print(p1.age)
+print(p1.university)
+print(p1.program)
+
+
+ */
+
+class Cuboid {
+        
+         length;
+         breadth;
+         height;
+         weight;
+          
+          constructor(length, breadth, height, weight){
+                this.length = length;
+                this.breadth = breadth;
+                this.height = height;
+                this.weight = weight;
+            }
+
+            volume () {
+
+               
+                  let x = this.length
+                  let y = this.breadth
+                  let z = this.height 
+                  let v = x * y * z
+
+                  // console.log(' x ::'+x+'');
+                  // console.log(' y ::'+y+'');
+                  // console.log(' z ::'+z+'');
+                  console.log('The volume (v) is:'+v+'');
+              
+         }//EOF
+
+
+            density() {
+
+               let x = this.length
+               let y = this.breadth
+               let z = this.height
+               let v = x * y * z
+               let d = this.weight / v
+               
+               console.log('Density is:'+d+'');
+            }//EOF
+
+            surface_area() {
+               let x = this.length
+               let y = this.breadth
+               let z = this.height
+               let s = 2 * (x * y + y * z + x * z)
+               console.log('The surface area is:'+s+'');
+            }//EOF  
+   }// EOC
+
+
+
+class Student {
+
+      /* A simple student model. */
+
+         name;
+         age;
+         university;
+         program;
+          
+          constructor(name, age, university, program){
+                this.name = name;
+                this.age = age;
+                this.university = university;
+                this.program = program;
+            }
+            
+            register() {
+                console.log(''+this.name+' is registred at '+this.university+'')
+            }
+
+            pass_exam() {
+                console.log(''+this.name+' has passed exam for '+this.program+'')
+            }
+
+      }// EOC
+
+
+
+
+   try {
+         // Output_2
+          
+         // myCube1 = new Cuboid(1,2,4,4.5);
+         // myCube1.volume();
+         // myCube1.density();
+         // myCube1.surface_area();
+
+
+   } catch(err) {
+         // console.log('There is an errors somewhere. It is not working...');
+         // console.log('err.name :: '+err.name+'');
+         // console.log('err.message :: '+err.message+'');
+         // console.log('err.stack :: '+err.stack+'');
+
+       }
+
+
+
+      try {
+            // Output_2
+            let p1 = new Student("Prisca", 40, "Uni Heidelberg", "Philosophy");
+            console.log(p1.name);
+            console.log(p1.age);
+            console.log(p1.university);
+            console.log(p1.program);
+
+            p1.register();
+            p1.pass_exam();
+
+
+      } catch(err) {
+
+      // console.log('There is an errors somewhere. It is not working...');
+            // console.log('err.name :: '+err.name+'');
+            // console.log('err.message :: '+err.message+'');
+            // console.log('err.stack :: '+err.stack+'');
+
+          }
+
+
+    </script>
+</body>
+</html>

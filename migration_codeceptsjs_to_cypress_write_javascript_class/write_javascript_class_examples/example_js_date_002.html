@@ -1,0 +1,114 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_date_002.html</br>
+
+  <script type="text/javascript">
+
+    // Return multiple variables from a JavaScript function?
+    // https://stackoverflow.com/questions/10221445/return-multiple-variables-from-a-javascript-function
+    
+
+
+    // How do I get the current date in JavaScript?
+    // https://stackoverflow.com/questions/1531093/how-do-i-get-the-current-date-in-javascript#4929629
+
+function doBroadcastDateInput() {
+
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+        
+        let todayFr = ''+mm+'/'+dd+'/'+ yyyy+'';
+        let todayEn = ''+yyyy+'/'+mm+'/'+dd+'';
+
+        // object
+        return {todayFr, todayEn};
+        
+        // array 
+        // return [todayFr, todayEn];
+         
+        /* USAGE
+        declare var today = doBroadcastDateInput()
+        // if object return {todayFr, todayEn};
+        console.log('todayFr :: '+today.todayFr+'');
+        console.log('todayEn :: '+today.todayEn+'');
+
+        if array // return [todayFr, todayEn];
+        console.log('todayFr :: '+today[0]+'');
+        console.log('todayEn :: '+today[1]+'');
+
+         */
+
+    }
+
+
+    try {
+
+            
+           var today = doBroadcastDateInput()
+
+
+          // if object return {todayFr, todayEn};
+          console.log('todayFr :: '+today.todayFr+'');
+          console.log('todayEn :: '+today.todayEn+'');
+
+          // if array // return [todayFr, todayEn];
+          // console.log('todayFr :: '+today[0]+'');
+          // console.log('todayEn :: '+today[1]+'');
+
+
+    } catch(err) {
+      console.log('today does not exist!');
+
+    }
+
+/*
+
+function filePathImage() {
+
+// returns a random integer from 1 to 50
+const RandomImageInsertUpload =''+(Math.floor(Math.random() * 18) + 0)+''; 
+const AnimalImageUpload =['animal_badger.jpg','animal_bear.jpg','animal_bird.jpg','animal_camel.jpg','animal_elephants.jpg','animal_fawn_deer.jpg','animal_fish_blobfish.jpg','animal_hyena.jpg','animal_nature_bird_flying_red.jpg','animal_pangolin.jpg','animal_red_panda.jpg','animal_reptile_chamaeleo.jpg','animal_rhino.jpg','animal_snake.jpg','animal_squirrel.jpg','animal_tapir_malaisie.jpg','animal_tiger.jpg','animal_zebra.jpg'];
+
+// let result = '';
+let filepath = 'pictures/'+AnimalImageUpload[RandomImageInsertUpload]+'';
+
+  return filepath;
+
+  }
+
+ */
+
+    // broadcastDateInput type 03/04/2022 (FR) or 2022/04/03 (EN)
+
+/*
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+todayFr = ''+mm+'/'+dd+'/'+ yyyy+'';
+todayEn = ''+yyyy+'/'+mm+'/'+dd+'';
+
+
+
+
+    try {
+           var todayFr;
+           var todayEn;
+
+          console.log('todayFr :: '+todayFr+'');
+          console.log('todayEn :: '+todayEn+'');
+
+    } catch(err) {
+      console.log('today does not exist!');
+
+    }
+*/
+
+    </script>
+    
+</body>
+</html>
+

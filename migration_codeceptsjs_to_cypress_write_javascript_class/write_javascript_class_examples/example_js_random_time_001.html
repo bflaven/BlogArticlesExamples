@@ -1,0 +1,41 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_random_time_001.html</br>
+
+  <script type="text/javascript">
+
+// https://stackoverflow.com/questions/45302779/javascript-random-generate-time-in-12-hour-format#45302945
+
+randomTime = () => {
+  let hrs = Math.round(Math.random() * 24);
+  let mins = Math.round(Math.random() * 60); 
+
+
+
+  var hFormat = (hrs<10 ? "0" : "");
+  var mFormat = (mins<10 ? "0" : "");
+  var pickUpRandomTime = String(hFormat+hrs+ ":" +mFormat+mins+ "");
+  
+  return pickUpRandomTime
+
+}
+
+
+
+
+    try {
+        
+        var resultTime = this.randomTime();
+        console.log('resultTime :: '+resultTime+'');
+
+    } catch(err) {
+      
+        console.log('resultTime does not exist!');
+
+    }
+    
+
+    </script>
+    
+</body>
+</html>

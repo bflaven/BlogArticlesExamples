@@ -1,0 +1,107 @@
+<html>
+   <meta charset="utf-8"/>
+<body> example_js_class_cypress_004.html</br>
+    <script type="text/javascript">
+
+/*
+
+### HOW-TO-USE
+- 2. parameter --env ex: --env ENV=staging
+! --env BRAND_LANG=RFI_ES 
+! --env BRAND_LANG=RFI_FR 
+! --env BRAND_LANG=RFI_RU 
+! --env BRAND_LANG=F24_EN 
+! --env BRAND_LANG=OBS_EN 
+! --env BRAND_LANG=MCD_AR 
+--- to be continued
+
+//Get the value of environment variable e.g --env BRAND_LANG=F24_EN 
+let brandLang = Cypress.env('BRAND_LANG'); 
+
+
+--- value_1 for getEntranceLink()
+- RFI_ES entrance
+//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[4]
+- RFI_FR entrance
+//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[7]
+- RFI_RU entrance
+//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[13]
+- F24_EN entrance
+//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[2]
+- OBS_EN entrance
+//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[6]
+- MCD_AR entrance
+//*[@id="container"]/div[4]/div[2]/div[3]/div[2]/div/a
+
+--- value_2
+! F24_EN :: main entries :: 9  mainNavMenuLinkEntries
+! RFI_FR :: main entries :: 9
+! RFI_ES :: main entries :: 7
+! RFI_RU :: main entries :: 6
+! RFI_RU :: main entries :: 7
+! MCD_AR :: main entries :: 7
+! OBS_EN :: main entries :: 8
+
+*/
+
+/*
+
+            let bachSelectionverified = 'RFI_RU';
+            let bachEntranceLinkXpath ='//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[13]';
+            let mainNavMenuLinkEntries = 6;
+
+ */
+
+
+
+      class UtilityBach{
+         
+         bachSelectionverified;
+         bachEntranceLinkXpath;
+         mainNavMenuLinkEntries;
+
+         constructor(bachSelectionverified, bachEntranceLinkXpath, mainNavMenuLinkEntries){
+           
+
+           this.bachSelectionverified = bachSelectionverified;
+           this.bachEntranceLinkXpath = bachEntranceLinkXpath;
+           this.mainNavMenuLinkEntries = mainNavMenuLinkEntries;
+           // console.log("I am in constructor")  
+         }
+
+          getUtility_bachSelectionverified(){
+             console.log(this.bachSelectionverified);
+          }
+
+          getUtility_bachEntranceLinkXpath(){
+             console.log(this.bachEntranceLinkXpath);
+          }
+
+          getUtility_mainNavMenuLinkEntries(){
+             console.log(this.mainNavMenuLinkEntries);
+          }
+
+       }
+
+
+      var site1 = new UtilityBach('RFI_RU', '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[13]', 6);
+      site1.getUtility_bachSelectionverified();
+      site1.getUtility_bachEntranceLinkXpath();
+      site1.getUtility_mainNavMenuLinkEntries();
+
+
+
+
+      var site2 = new UtilityBach('F24_EN','//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[2]]', 9);
+      site2.getUtility_bachSelectionverified();
+      site2.getUtility_bachEntranceLinkXpath();
+      site2.getUtility_mainNavMenuLinkEntries();
+      
+      var site3 = new UtilityBach('MCD_AR','//*[@id="container"]/div[4]/div[2]/div[3]/div[2]/div/a', 7);
+      site3.getUtility_bachSelectionverified();
+      site3.getUtility_bachEntranceLinkXpath();
+      site3.getUtility_mainNavMenuLinkEntries();
+      
+    </script>
+</body>
+</html>
