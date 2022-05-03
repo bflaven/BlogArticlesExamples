@@ -6,7 +6,9 @@
 - CodeceptJS 3 ‐ supercharged End 2 End Testing [https://codecept.io](https://codecept.io/) 
 - Cypress - JavaScript End to End Testing Framework[https://www.cypress.io/](https://www.cypress.io/)
 
-Read the full post on my own website [https://flaven.fr](https://flaven.fr/)
+Read the full post on my own website: [Prepare a migration from CodeceptJS to Cypress, making the best of the 2 UAT testing frameworks for an webapplication](https://flaven.fr/2022/05/prepare-a-migration-from-codeceptjs-to-cypress-making-the-best-of-the-2-uat-testing-frameworks-for-an-webapplication/)
+
+
 
 **In 2022, I always forget how to push on GitHub**
 

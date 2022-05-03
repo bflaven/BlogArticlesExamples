@@ -5,6 +5,7 @@ By analogy understanding the concepts behind the Class writing in Python and the
 
 This example was to decompose and learn how to write a Class in Python and then transfers the logic into Javascript. This example have been made to prepare a migration from CodeceptJS to Cypress, making the best of the 2 UAT testing frameworks for an webapplication.
 
+Read more in the post: [Prepare a migration from CodeceptJS to Cypress, making the best of the 2 UAT testing frameworks for an webapplication](https://flaven.fr/2022/05/prepare-a-migration-from-codeceptjs-to-cypress-making-the-best-of-the-2-uat-testing-frameworks-for-an-webapplication/)
 
 ```bash
 
