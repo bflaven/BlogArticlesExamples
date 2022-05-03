@@ -1,7 +1,7 @@
-# migration_codeceptsjs_to_cypress_write_javascript_class
+# migration_codeceptjs_to_cypress_write_javascript_class
 
 
-**I started seriously working with Cypress, another UAT (User Acceptance Testing) testing framework. Same exploration like I did with another UAT (User Acceptance Testing) testing framework named CodeceptsJS.**
+**I started seriously working with Cypress, another UAT (User Acceptance Testing) testing framework. Same exploration like I did with another UAT (User Acceptance Testing) testing framework named CodeceptJS.**
 
 - CodeceptJS 3 ‐ supercharged End 2 End Testing [https://codecept.io](https://codecept.io/) 
 - Cypress - JavaScript End to End Testing Framework[https://www.cypress.io/](https://www.cypress.io/)

@@ -10,7 +10,7 @@ The idea is to easily handle a javascript development environment with Node.
 # Step_1: install
 
 # The idea is to load an html file
-cd /Users/brunoflaven/Documents/01_work/blog_articles/write_javascript_class/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/migration_codeceptjs_to_cypress_write_javascript_class/
 
 # check the requirements
 node -v
