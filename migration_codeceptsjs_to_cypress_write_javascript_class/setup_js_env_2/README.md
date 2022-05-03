@@ -1,5 +1,7 @@
 # setup_js_env_2
 
+The idea is to easily handle a more advanced javascript development environment with Node.
+
 
 ```bash
 
