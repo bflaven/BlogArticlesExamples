@@ -4,8 +4,7 @@
 
 """
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/unit_testing/
-
+/Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python_explorations_audio_log_unit_test/unit_testing
 
 [file]
 python3 unit_test_area_test.py

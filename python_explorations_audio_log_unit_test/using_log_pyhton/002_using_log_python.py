@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 
-cd /Users/brunoflaven/Documents/01_work/blog_articles/using_log_pyhton/
-
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python_explorations_audio_log_unit_test/using_log_pyhton/
+s
 python3 002_using_log_python.py
 
 

@@ -18,7 +18,7 @@ conda update -n base -c defaults conda
 
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/speech_to_text_ppt_generate/speech_to_text/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python_explorations_audio_log_unit_test/speech_to_text/
 
 [file]
 python 004_speech_to_text.py
