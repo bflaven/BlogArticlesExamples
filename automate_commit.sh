@@ -5,12 +5,12 @@
 # sh automate_commit.sh
 # CHECK THE SOURCE FILES
 # TO GRAB THE NEW CONTENT
-# cd cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python_explorations_audio_log_unit_test/
+# cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/
 # git pull
 ### CONFIG ####
 
 # REPO FOR GITHUB
-REPO_NAME="/Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python_explorations_audio_log_unit_test";
+REPO_NAME="/Users/brunoflaven/Documents/03_git/BlogArticlesExamples";
 
 # DESCRIPTION FOR COMMIT
 COMMENT="update files";
