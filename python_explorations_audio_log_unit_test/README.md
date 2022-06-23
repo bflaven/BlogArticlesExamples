@@ -28,4 +28,7 @@ git push origin master
 
 
 
+# launch sh
+sh automate_commit.sh
+
 ```
