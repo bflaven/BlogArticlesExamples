@@ -48,8 +48,8 @@ git add .
 git commit -am "$COMMENT"
 
 # push to github if your branch on github is main
-git push origin main
-
+# git push origin main
+git push origin master
 
 
 
