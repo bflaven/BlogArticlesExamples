@@ -10,7 +10,7 @@
 ### CONFIG ####
 
 # REPO FOR GITHUB
-REPO_NAME="/Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python_explorations_audio_log_unit_test/";
+REPO_NAME="/Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python_explorations_audio_log_unit_test";
 
 # DESCRIPTION FOR COMMIT
 COMMENT="update files";
