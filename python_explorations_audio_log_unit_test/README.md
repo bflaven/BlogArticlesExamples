@@ -3,6 +3,10 @@
 
 **Some limited explorations in Python on AUDIO SPEECH-TO-TEXT, UNIT TESTING and USING LOG.**
 
+[Read more on flaven.fr](http://flaven.fr/2019/07/using-pandoc-to-generate-documentation-manuals-in-pdf-docx-html-from-markdown-documents)
+
+
+
 ```bash
 # GIT 2022
 
