@@ -7,6 +7,24 @@
 
 
 
+### Install the Python environment with anaconda
+
+```bash
+[env]
+# Conda Environment
+conda create --name speech_to_text python=3.9.7
+conda info --envs
+source activate speech_to_text
+conda deactivate
+# if needed to remove
+conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
+
+# update conda
+conda update -n base -c defaults conda
+```
+
+### Git commands memo
+
 ```bash
 # GIT 2022
 
