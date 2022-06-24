@@ -19,9 +19,27 @@ conda deactivate
 # if needed to remove
 conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
+# to export requirements
+pip freeze > requirements_speech_to_text.txt
+
+
+# to install
+pip install -r requirements_speech_to_text.txt
+
+
+
 # update conda
 conda update -n base -c defaults conda
+
+
 ```
+
+
+
+
+
+
+
 
 ### Git commands memo
 

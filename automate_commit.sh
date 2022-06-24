@@ -1,6 +1,6 @@
 #!/bin/sh
 # TO PUSH THE CHANGES
-# cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/python_explorations_audio_log_unit_test/
+# cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/
 # ls -l
 # sh automate_commit.sh
 # CHECK THE SOURCE FILES
