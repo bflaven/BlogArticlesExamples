@@ -3,7 +3,10 @@
 
 **Some limited explorations in Python on AUDIO SPEECH-TO-TEXT, UNIT TESTING and USING LOG.**
 
-[Read more on flaven.fr](http://flaven.fr/2019/07/using-pandoc-to-generate-documentation-manuals-in-pdf-docx-html-from-markdown-documents)
+
+*This code is part of an "hybrid" post named: "Learning Notes and experiments on Kanban, Voice assistant, Log, unit testing with Python"*
+
+[You can read more on flaven.fr](https://flaven.fr/2022/06/learning-notes-and-experiments-on-kanban-voice-assistant-log-unit-testing-with-python/)
 
 
 
