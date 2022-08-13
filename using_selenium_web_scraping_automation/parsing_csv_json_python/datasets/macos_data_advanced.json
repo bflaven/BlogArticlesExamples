@@ -1,0 +1,125 @@
+{
+    "updated": "2020-07-09",
+    "versions": [
+        {
+            "family": "macOS",
+            "version": "10.14",
+            "codename": "Mojave",
+            "announced":"2018-06-04",
+            "released": "2018-09-24",
+            "requirements": [
+                "iMac (Late 2012 or newer)",
+                "iMac Pro (2017)",
+                "Mac Mini (Late 2012 or newer)",
+                "Mac Pro (Late 2013; Mid 2010 and Mid 2012 models with recommended Metal-capable graphics cards)",
+                "MacBook (Early 2015 or newer)",
+                "MacBook Air (Mid 2012 or newer)",
+                "MacBook Pro (Mid 2012 or newer)",
+                "2 GB of memory",
+                "12.5 - 18.5 GB of available avaialable disk space",
+                "OS X 10.8 or later"
+            ],
+            "releases": [
+                {
+                    "version": "10.14",
+                    "build": "18A391",
+                    "darwin": "18.0.0",
+                    "released": "2018-09-24"
+                },
+                {
+                    "version": "10.14.1",
+                    "build": "18B75",
+                    "darwin": "18.2.0",
+                    "released": "2018-10-30"
+                },
+                {
+                    "version": "10.14.2",
+                    "build": "18C54",
+                    "darwin": "18.2.0",
+                    "released": "2018-12-05"
+                },
+                {
+                    "version": "10.14.3",
+                    "build": "18D42",
+                    "darwin": "18.2.0",
+                    "released": "2019-01-22"
+                },
+                {
+                    "version": "10.14.4",
+                    "build": "18E226",
+                    "darwin": "18.5.0",
+                    "released": "2019-03-25"
+                },
+                {
+                    "version": "10.14.5",
+                    "build": "18F132",
+                    "darwin": "18.6.0",
+                    "released": "2019-05-13"
+                },
+                {
+                    "version": "10.14.6",
+                    "build": "18G84",
+                    "darwin": "18.7.0",
+                    "released": "2019-07-22"
+                }
+            ]
+        },
+        {
+            "family": "macOS",
+            "version": "10.15",
+            "codename": "Catalina",
+            "announced":"2019-06-03",
+            "released": "2019-10-07",
+            "requirements": [
+                "iMac (Late 2012 or newer)",
+                "iMac Pro (2017)",
+                "Mac Mini (Late 2012 or newer)",
+                "Mac Pro (Late 2013)",
+                "MacBook (Early 2015 or newer)",
+                "MacBook Air (Mid 2012 or newer)",
+                "MacBook Pro (Mid 2012 or newer)",
+                "4 GB of memory",
+                "12.5 GB of available avaialable disk space",
+                "OS X 10.11.5 or later"
+            ],
+            "releases": [
+                {
+                    "version": "10.15",
+                    "build": "19A583",
+                    "darwin": "19.0.0",
+                    "released": "2019-10-07"
+                },
+                {
+                    "version": "10.15.1",
+                    "build": "19B88",
+                    "darwin": "19.0.0",
+                    "released": "2019-10-29"
+                },
+                {
+                    "version": "10.15.2",
+                    "build": "19C57",
+                    "darwin": "19.2.0",
+                    "released": "2019-12-10"
+                },
+                {
+                    "version": "10.15.3",
+                    "build": "19D76",
+                    "darwin": "19.3.0",
+                    "released": "2020-01-28"
+                },
+                {
+                    "version": "10.15.4",
+                    "build": "19E266",
+                    "darwin": "19.4.0",
+                    "released": "2020-03-24"
+                },
+                {
+                    "version": "10.15.5",
+                    "build": "19F96",
+                    "darwin": "19.5.0",
+                    "released": "2020-05-26"
+                }
+            ]
+        }
+    ]
+}

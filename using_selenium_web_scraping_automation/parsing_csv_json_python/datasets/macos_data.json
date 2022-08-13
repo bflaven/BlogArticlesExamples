@@ -1,0 +1,19 @@
+{
+    "updated": "2020-07-09",
+    "versions": [
+        {
+            "family": "macOS",
+            "version": "10.14",
+            "codename": "Mojave",
+            "announced": "2018-06-04",
+            "released": "2018-09-24"
+        },
+        {
+            "family": "macOS",
+            "version": "10.15",
+            "codename": "Catalina",
+            "announced": "2019-06-03",
+            "released": "2019-10-07"
+        }
+    ]
+}
