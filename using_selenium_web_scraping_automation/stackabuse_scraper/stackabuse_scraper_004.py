@@ -21,7 +21,7 @@ conda update -n base -c defaults conda
 
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/using_selenium_web_scraping_automation/stackabuse_scraper/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/using_selenium_web_scraping_automation/stackabuse_scraper/
 
 
 [file]
