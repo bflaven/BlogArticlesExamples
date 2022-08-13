@@ -31,7 +31,7 @@ In order to become familiar with change management
 Toyota's Anedocte :: "What they need to see is not visible." Kanban, Value Stream Mapping, 5S are only apparent solutions. Toyota's results is a thought process, not the thought itself.
 
 
-**All solutions are good, but not for everyone. Indeed, it is essential to understand the process that has enabled others to define a practice. A solution is nothing other than the result of a reflection applied in a given context, so be careful before copying practices outside your home. It's not what you do but what you learn by doing that matters.**
+**All solutions are good, but not for everyone. Indeed, it is essential to understand the process that has enabled others to define a practice. A solution is nothing other than the result of a reflection applied in a given context. So, be careful before copying practices whitout defining the context. It's not what you do but what you learn by doing that matters.**
 
 
 *More on 5S*
