@@ -29,32 +29,29 @@ In order to become familiar with change management
 
 - *Possible critic :: May have a social cost, as the idea behind this is to weaken us, by breaking the solidarity and isolating everyone, we become in fact much more manipulable. The group or team more easily ostracizes/ejects an isolated and unsupported individual.*
 
+Toyota's Anedocte :: "What they need to see is not visible." Kanban, Value Stream Mapping, 5S are only apparent solutions. Toyota's results is a thought process, not the thought itself.
+
+
+**All solutions are good, but not for everyone. Indeed, it is essential to understand the process that has enabled others to define a practice. A solution is nothing other than the result of a reflection applied in a given context, so be careful before copying practices outside your home. It's not what you do but what you learn by doing that matters.**
+
+
+*More on 5S*
+
+
+https://en.wikipedia.org/wiki/5S
+
+- WHAT ARE THE FIVE S'S (5S) OF LEAN [https://asq.org/quality-resources/lean/five-s-tutorial](https://asq.org/quality-resources/lean/five-s-tutorial)
+- 5S (methodology) [https://en.wikipedia.org/wiki/5S_(methodology)](https://en.wikipedia.org/wiki/5S_(methodology)) 
+
+
+##### 2. PRINCIPLE #2 PopcornFlow :: The urgency of continuous improvement (kaizen)
 
 
 
-
----  Anedocte toyota
---- Ce qu'ils ont besoin de voir n'est pas visible.
-
-Le Kanban, le Value Stream Mapping, le 5S ne sont que des solutions apparentes, résultats de la démarche de pensée de Toyota, pas la pensée elle-même. 
+Le concept de l'inertie est le deuxième principe popcornflow. Notre plus grand ennemi c'est une tendance naturelle à ne rien faire ou à ne pas changer.
 
 
-Toutes les solutions sont bonnes, mais pas pour tout le monde. En effet, il est primordial de comprendre la démarche qui a permis à d'autres de définir une pratique. Une solution n'est autre que le résultat d'une réflexion appliquée dans un contexte donné, faites donc bien attention avant de copier des pratiques extérieures chez vous. 
-
---- Ce n'est pas ce que l'on fait mais plutôt ce que l'on apprend en le faisant qui importe.
-
-- WHAT ARE THE FIVE S'S (5S) OF LEAN
-https://asq.org/quality-resources/lean/five-s-tutorial
-https://fr.wikipedia.org/wiki/5S
-
-
-+ 2. L'urgence d'amélioration continue (kaizen) (PRINCIPE_2 PopcornFlow)
-
-
-Le concept de l'inertie est le deuxieme principe popcornflow. Notre plus grand ennemi c'est une tendance naturelle à ne rien faire ou à ne pas changer.
-
-
-L'énormité du chnagement à accomplir nous dissuade d'agir, la tendance naturelle est le statu-quo. Rester dans une situation inconfortable mais connue.
+L'énormité du changement à accomplir nous dissuade d'agir, la tendance naturelle est le statu-quo. Rester dans une situation inconfortable mais connue.
 
 Il faut sans doute se désaxer et regarder les effets que le changement produit plutôt que le changement lui-même.
 
