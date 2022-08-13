@@ -86,8 +86,6 @@ Ex: UAT tests do not exist, tickets are elusive, backlog management is time-cons
 
 You have to force yourself to find 3 possible options or solutions to solve the problem.
 
-
-
 > "Having a choice is not a choice; having two choices is a dilemma; and having three choices opens up new possibilities." 
 > *Virginia Satir*
 
@@ -107,101 +105,73 @@ s
 [https://expertprogrammanagement.com/2018/10/satir-change-model/](https://expertprogrammanagement.com/2018/10/satir-change-model/)
 
 
-#### 3. Expérimentations possibles
-A partir des options, on définit des expérimentations permettant de les explorer. 
+#### 3. Possible experiments
+Based on the options, experiments are defined to explore them. This is a crucial step because you gave yourself as a team the chance to explore your options. We link with the well-known Build-Measure-Learn Feedback Loop from Lean Startup.
 
-This is a crucial step because you gave yourself as a team the chance to explore your options.
+Ex: "Let's have a team meeting every morning", "Let's do Pair Programming for 3 days"
 
-We link with the wellknown Build-Measure-Learn Feedback Loop from Lean Startup.
+#### 4. Commitment or Committed
 
-Ex : "Faisons une réunion d'équipe tous les matins", "Faisons du Pair Programming pendant 3 jours"
+We must be committed in full transparency :) That is the agile motto. Remember that agile's values Transparency and Commitment
 
-
-
-
-#### 4. Engagement (Committed)
-
-Il faut s'engager en toute transparence. 
-
-Remeber that agile's values Transparency and Commitment
-
---- Transparency
+- (i) Transparency
 Without full transparency there are lots of bad things that happen, including:
 
-Lack of trust with the Product Owner
-Team has to get caught-up in politics instead of focusing on what needs to be delivered
-Team morale can suffer
-Measuring future work is more difficult
-The team’s true velocity is not known
+	+ Lack of trust with the Product Owner
+	+ Team has to get caught-up in politics instead of focusing on what needs to be delivered
+	+ Team morale can suffer
+	+ Measuring future work is more difficult
+	+ The team’s true velocity is not known
 
 
---- Commitment
+- (ii) Commitment
 
 With respect to Scrum, commitment means the Scrum Team is devoted to achieving a specific goal. The Scrum Team members commit to collaborate with each other and learn to do the best in every activity.
 
 They commit to the Product Goal and the Sprint Goal; and look for continuous improvements. They stay committed to Agile values and principles, and Scrum practices. And they commit to complete the work within time, ensure transparency, and challenge each other the status quo and move towards continuous improvement.
 
 
-
-Engagé, cad toute faire pour mettre en oeuvre les options choisies et garantir un apprentissage.
-Il faut aussi que les attentes soient mesurables quantitativement ou qualitativement et répondre à la question : est-ce que cela a marché ?
+**Committed, e.g. doing everything possible to implement the options chosen and guarantee learning. Expectations must also be quantitatively or qualitatively measurable and answer the question: did it work?**
 
 
+#### 4. Ongoing
+It is show time! The time has come for practice.
+
+#### 5. Review
+Arrived at the review date, we take stock of the results of the experiment by comparing what we obtained with what we expected or hoped for.
+
+Here are the types of questions you can ask yourself:
+
+- What experiments did we plan to do?
+- What did we actually do?
+- What did we expect to happen?
+- What really happened?
+- What have we learned?
+
+**Note: This can also be done as part of retrospectives.**
 
 
-#### 4. En cours (Ongoing)
-Il est venu le temps de l'expérimentation ou de la pratique.
+#### 6. Next
+Based on what we learned, what are we going to do next?
 
-#### 5. Revue
+Several options are then available to us:
 
-
-Arrivés à la date de revue, on fait un point sur les résultats de l'expérience en comparant ce que l'on a obtenu avec ce que l'on attendait ou espérait.
-
-Voici le type de questions que l'on peut se poser :
-
-Quelles expérimentations avions-nous prévu de faire ?
-Qu'avons-nous réellement fait ?
-Qu'attendions-nous qu'il se passe ?
-Que s'est-il réellement passé ?
-Qu'avons-nous appris ?
-Note : Cela peut également être effectué dans le cadre des rétrospectives.
-
-#### 6. Après (Next)
+The results are not obvious, maybe it deserves to be extended for X days/weeks!
+Let's re-evaluate our options!
+Let's re-evaluate our experiments!
+Choose new experiments!
+Are there others that we hadn't thought of before?
+Let's re-evaluate our problem!
 
 
-Basé sur ce que l'on a appris, qu'allons nous faire après ?
+#### 7. Why does it work?
+PopcornFlow helps people engage with their issues rather than just talking about them.
 
-Plusieurs options s'offrent alors à nous :
+This is another way to visualize and materialize ideas/problems in this case by writing them on Post-its and moving them on a board. PopcornFlow works when there is a desire to learn and improve. The question is no longer to do or not to do something but rather to choose the option that seems best to us!
 
-Les résultats ne sont pas flagrants, peut-être que cela mériterait d'être prolongé de X jours/semaines !
-Ré-évaluons nos options !
-Ré-évaluons nos expérimentations !
-Choisissons de nouvelles expérimentations !
-Y en existe t'il d'autres auxquelles nous n'avions pas pensé jusque là ?
-Ré-évaluons notre problème !
-
-
-
-#### 7. Pourquoi ça marche ?
-
-PopcornFlow permet d'engager les personnes vis à vis de leurs problèmes plutôt que simplement en parler. 
-
-
-C'est une autre manière de visualiser et matérialiser des idées / problèmes dans ce cas-ci en les inscrivant sur des Post-it et en les déplaçant sur un tableau. 
-
-PopcornFlow fonctionne dés qu'il y a une volonté d'apprendre et de s'améliorer. 
-
-La question n'est plus de faire ou de ne pas faire quelque chose mais plutôt de choisir l'option qui nous paraît la meilleure !
-
---- Ce n'est pas ce que l'on fait mais plutôt ce que l'on apprend en le faisant qui importe. Mais alors…
---- Ce que l'on fait avec ce que l'on apprend qui importe.
-
-- Above the learning by doing, it is what you do with what you learn that matters.
+- It's not what you do but what you learn by doing that matters. More it is what you do with what you learn that matters! Above the learning by doing, it is what you do with what you learn that matters.
 
 *Source: [https://oyomy.fr/2016/05/popcornflow-levolution-continue/](https://oyomy.fr/2016/05/popcornflow-levolution-continue/)*
-
-
-
 
 ## 2. The Law of Two Feet
 **The mention is often this one: Follow your feet or the law of two feet.**
@@ -213,5 +183,6 @@ In details, the original defition is thes follwing. From Open Space Technology: 
 
 > If you are in a discussion group and you are neither learning nor contributing, your knowledge and energy are too important to us to have it wasted. Use the Law of Two Feet to take yourself to where you are learning or contributing. You have ways of being mobile, use those ways so that you can get the best benefit from this experience, and so the others can get the best benefit from you. You might end up being like a butterfly and alighting somewhere not seeming to do anything, but we trust that you are in exactly the right place to be learning or contributing. You might be like a bumblebee and go from group to group to group, cross-pollinating many discussions. We trust that it is exactly right for you to be moving frequently as you choose how you learn and contribute. With all of us using the Law of Two Feet, we respect that this is an important behavior to get the greatest benefit during an OST meeting. At no time is anyone's knowledge or energy wasted when we all pay attention to this law.
 
+*Other Source: [https://medium.com/never-feed-him-after-midnight/how-to-lure-a-persnickety-it-beast-without-creating-a-jira-ticket-6a9265b8db0c](https://medium.com/never-feed-him-after-midnight/how-to-lure-a-persnickety-it-beast-without-creating-a-jira-ticket-6a9265b8db0c)*
 
 
