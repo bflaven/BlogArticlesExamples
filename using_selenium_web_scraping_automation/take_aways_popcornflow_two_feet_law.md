@@ -1,6 +1,8 @@
 # take_aways_popcornflow_two_feet_law
+**Some take-aways on Popcorn Flow and The Law of Two Feet**
 
-## 1. PopcornFlow
+
+## I. PopcornFlow
 
 **Popcorn Flow by Claudio Perrone**
 
@@ -176,7 +178,7 @@ This is another way to visualize and materialize ideas/problems in this case by 
 
 *Source: [https://oyomy.fr/2016/05/popcornflow-levolution-continue/](https://oyomy.fr/2016/05/popcornflow-levolution-continue/)*
 
-## 2. The Law of Two Feet
+## II. The Law of Two Feet
 **The mention is often this one: Follow your feet or the law of two feet.**
 
 > Take care of yourself and know how to move when you no longer learn anything or you no longer contribute in order to value your time and that of others.
