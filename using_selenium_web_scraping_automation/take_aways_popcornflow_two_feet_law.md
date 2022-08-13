@@ -102,6 +102,7 @@ s
 
 
 *More on Virginia Satir*
+
 [https://expertprogrammanagement.com/2018/10/satir-change-model/](https://expertprogrammanagement.com/2018/10/satir-change-model/)
 
 
@@ -128,7 +129,9 @@ Without full transparency there are lots of bad things that happen, including:
 
 With respect to Scrum, commitment means the Scrum Team is devoted to achieving a specific goal. The Scrum Team members commit to collaborate with each other and learn to do the best in every activity.
 
-They commit to the Product Goal and the Sprint Goal; and look for continuous improvements. They stay committed to Agile values and principles, and Scrum practices. And they commit to complete the work within time, ensure transparency, and challenge each other the status quo and move towards continuous improvement.
+	+ They commit to the Product Goal and the Sprint Goal; and look for continuous improvements. 
+	+ They stay committed to Agile values and principles, and Scrum practices. 
+	+ And they commit to complete the work within time, ensure transparency, and challenge each other the status quo and move towards continuous improvement.
 
 
 **Committed, e.g. doing everything possible to implement the options chosen and guarantee learning. Expectations must also be quantitatively or qualitatively measurable and answer the question: did it work?**
