@@ -46,21 +46,17 @@ Kanban, Value Stream Mapping, 5S are only apparent solutions. Toyota's results i
 
 #### PRINCIPLE #2 PopcornFlow :: The urgency of continuous improvement (kaizen)
 
+**The concept of inertia is the second popcornflow principle. Our greatest enemy is a natural tendency to do nothing or change.**
 
+The enormity of the change to be accomplished dissuades us from acting, the natural tendency is the status quo. Staying in an uncomfortable but known situation.
 
-Le concept de l'inertie est le deuxième principe popcornflow. Notre plus grand ennemi c'est une tendance naturelle à ne rien faire ou à ne pas changer.
+It is probably necessary to get out of alignment and look at the effects that the change produces rather than the change itself.
 
+Don't we need to have perfect information to be able to start progressing? Validation or invalidation goes through practice.
 
-L'énormité du changement à accomplir nous dissuade d'agir, la tendance naturelle est le statu-quo. Rester dans une situation inconfortable mais connue.
+Everyone has the right to have an opinion, but... a shared opinion is a fact.
 
-Il faut sans doute se désaxer et regarder les effets que le changement produit plutôt que le changement lui-même.
-
-
-On n'a pas besoin d'avoir une information parfaite pour pouvoir commencer à progresser ? La validation ou l'invalidation passe par la pratique.
-
-Tout le monde a le droit d'avoir une opinion, mais... une opinion partagée est un fait.
-
-L'idée est donc de partager son opinion sur un élément que l'on pense devoir être amélioré à l'équipe. Si l'équipe partage cette opinion, alors on peut la considérer comme un fait et commencer à traiter le problème. En effet, au lieu de passer des heures à analyser pour savoir si le problème est bien un problème, expérimentons ! Permettons-nous d'avoir une hypothèse imparfaite, peut-être que nous convergerons ensemble sur un résultat qui nous conviendra à tous !
+The idea is therefore to share your opinion on an element that you think should be improved in the team. If the team shares this opinion, then we can take it as a fact and start dealing with the problem. Indeed, instead of spending hours analyzing to find out if the problem is indeed a problem, let's experiment! Let us have an imperfect hypothesis, maybe we will converge together on a result that will suit us all!
 
 #### PRINCIPLE #3 PopcornFlow :: The skateboarder
 
