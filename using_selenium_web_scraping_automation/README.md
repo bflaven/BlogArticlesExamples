@@ -3,7 +3,7 @@
 The code for the post "Using Selenium with Python for Web Scraping and Form Automation Completion" released on [http://flaven.fr/](http://flaven.fr/)
 
 
-Using Selenium with Python for Web Scraping and Form Automation Completion [https://flaven.fr/2022/08/using-selenium-with-python-for-web-scraping-and-form-automation-completion/](https://flaven.fr/2022/08/using-selenium-with-python-for-web-scraping-and-form-automation-completion/)
+**Using Selenium with Python for Web Scraping and Form Automation Completion [https://flaven.fr/2022/08/using-selenium-with-python-for-web-scraping-and-form-automation-completion/](https://flaven.fr/2022/08/using-selenium-with-python-for-web-scraping-and-form-automation-completion/)**
 
 And to see some extra notes on PopcornFlow and on The Law of Two Feet, check out `take_aways_popcornflow_two_feet_law.md`
 
