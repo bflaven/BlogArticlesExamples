@@ -59,22 +59,15 @@ Tout le monde a le droit d'avoir une opinion, mais... une opinion partagée est 
 
 L'idée est donc de partager son opinion sur un élément que l'on pense devoir être amélioré à l'équipe. Si l'équipe partage cette opinion, alors on peut la considérer comme un fait et commencer à traiter le problème. En effet, au lieu de passer des heures à analyser pour savoir si le problème est bien un problème, expérimentons ! Permettons-nous d'avoir une hypothèse imparfaite, peut-être que nous convergerons ensemble sur un résultat qui nous conviendra à tous !
 
+##### 2. PRINCIPLE #3 PopcornFlow :: The skateboarder
 
-+ 2. le skateur (PRINCIPE_3 PopcornFlow)
+Can we really claim that we will never fail? How else can we view failure? Of course, to relativize the scope of failure, we must highlight the value of learning.
 
+As long as you don't learn anything from your failure. This is the purpose of the retrospective in an agile management mode. An event whose value and scope is not always well applied or understood because it involves doing a reasonable and sincere examination of what happened in the last sprint.
 
-Peut-on vraiment prétendre que l'on échouera jamais ? Comment pouvons-nous voir l'échec autrement ?
+**So, the principle is no longer exactly "Fail Fast, Fail Cheap" but more "Learn Fast, Learn Often" you even try the "Learn Fast, Learn Cheap".**
 
---- Bien sur pour relativiser la portée de l'échec, il faut mettre en avant la valeu d'apprentisage.
-
---- A partir du moment où on ne tire aucun enseignement de son échec. C'est le but de la rétrospective dans un mode de gestion agile. Un éventement dont la valeur et la portée n’est pas toujours bien appliqué voir comprise parce que cela suppose de d'effectuer un examen raisonnable et sincère sur ce qui s'est produit lors du dernier sprint.
-
---- Le principe n'est plus exactement "Fail Fast, Fail Cheap" but more "Learn Fast, Learn Often" you even try the "Learn Fast, Learn Cheap".
-
---- Primauté donné à l’action qui reste la meilleur moyen apprentissage toutefois votre vie n'est pas extensible à l’infini. C’est une des raisons pour laquelle la société du présent permanent fuit la mort comme la peste.
-
-
---- L'imagination, la contemplation donc l'art du "fare niente" sont rarement promues. Ces valeurs semblent incompatibles pour susciter etat d'esprit entrepreneur. De là à valoriser la non-pensée...
+*Possible limit :: Primacy given to action which remains the best way to learn, however your life is not infinitely expandable. This is one of the reasons why the society of the permanent present shuns death like the plague. Imagination, contemplation and therefore the art of "fare niente" are rarely promoted. These values seem incompatible to create an entrepreneur mindset. From there to value the non-thought... :)*
 
 
 
@@ -216,6 +209,9 @@ La question n'est plus de faire ou de ne pas faire quelque chose mais plutôt de
 --- Ce que l'on fait avec ce que l'on apprend qui importe.
 
 - Above the learning by doing, it is what you do with what you learn that matters.
+
+*Source: [https://oyomy.fr/2016/05/popcornflow-levolution-continue/](https://oyomy.fr/2016/05/popcornflow-levolution-continue/)*
+
 
 
 
