@@ -1,5 +1,9 @@
 # using_selenium_web_scraping_automation
 
+The code for the post "Using Selenium with Python for Web Scraping and Form Automation Completion" released on [http://flaven.fr/](http://flaven.fr/)
+
+And to see some extra notes on PopcornFlow and on The Law of Two Feet, check out `take_aways_popcornflow_two_feet_law.md`
+
 
 ### Install XAMPP to have a local WP Frontend and Backend
 You need to have a local WP installed and declare in your hosts file the domain e.g https://cypress.mydomain.priv/wordpress/ that leads to WP.
