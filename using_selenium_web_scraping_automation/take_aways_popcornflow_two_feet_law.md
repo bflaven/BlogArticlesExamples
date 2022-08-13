@@ -18,8 +18,7 @@
 #### PRINCIPLE #1 PopcornFlow :: The virus of change
 
 
-In order to become familiar with change management
-
+In order to become familiar with change management, should change the mindset with these 2 commandments: 
 
 - As change is difficult, it must be made continuous.
 - By dint of repetition, training, it becomes easy to apprehend and transform change into a series of non-events. Indeed, the more a thing is repeated, the less we will pay attention!
@@ -28,7 +27,9 @@ In order to become familiar with change management
 **The important thing is the process, not necessarily the result, even if the objective pursued is success. Our actions do not convey values, everything goes through action otherwise we are left with a declaration of principle.**
 
 
-Toyota's Anedocte :: "What they need to see is not visible." Kanban, Value Stream Mapping, 5S are only apparent solutions. Toyota's results is a thought process, not the thought itself.
+Toyota's Anedocte :: "What they need to see is not visible." 
+
+Kanban, Value Stream Mapping, 5S are only apparent solutions. Toyota's results is a thought process, not the thought itself.
 
 
 **All solutions are good, but not for everyone. Indeed, it is essential to understand the process that has enabled others to define a practice. A solution is nothing other than the result of a reflection applied in a given context. So, be careful before copying practices whitout defining the context. It's not what you do but what you learn by doing that matters.**
