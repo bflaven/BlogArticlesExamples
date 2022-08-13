@@ -64,6 +64,14 @@ git commit -am "update files"
 git push origin master
 
 
+# connect or reconnect
+# git clone https://github.com/username/repo.git
+git init https://github.com/bflaven/BlogArticlesExamples.git
+
+Username: your_username
+Password: your_token
+
+
 
 # launch sh
 sh automate_commit.sh
