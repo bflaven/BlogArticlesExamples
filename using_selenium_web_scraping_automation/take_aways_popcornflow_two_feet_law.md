@@ -72,49 +72,39 @@ As long as you don't learn anything from your failure. This is the purpose of th
 
 ### B. THE PROCESS
 
-#### 1. Problèmes & observations
---- Première étape, il faut identifier les problèmes ou les points d'améliorations.
+#### 1. Issues & Observations
+- First step, it is necessary to identify the problems or the points of improvement.
+- Converge on shared problems: as a team we must find problems that are unanimous within a team.
+- In any case, the improvement's implementation will necessarily cost time and money.
+- The agreement can be made on a "false" or "imperfect" postulate but it must win the whole team's support. This is a fact, a "corner stone" on which the whole team agrees since it must initially be only a working hypothesis in order to push us to action.
 
---- Converger vers des problèmes partagés. Des problèmes qu font l’unanimité au sein d'une équipe.
---- De toutes les façons la mise en place des points d’amélioration coûtera nécessairement du temps et de l'argent.
---- L'accord peut se faire sur un postulat "faux" ou "imparfait" mais qui remporte l'adhésion de toute l'équipe. C'est un fait sur lequel toute l'équipe s'entend puisque ce ne doit être au départ qu'une hypothèse de travail afin de nous pousser à l’action.
+Ex: UAT tests do not exist, tickets are elusive, backlog management is time-consuming, no quality objective... etc.
 
-
-
-Ex : Les test UAT n'existent pas, la gestion du backlog est chronophage, pas d'objectif de qualité... etc.
 
 #### 2. Options
 
 
-Il faut se forcer à trouver 3 options ou solutions possibles pour résoudre le problème.
-
-Virginia Satir :
-
---- "Avoir un choix n'est pas un choix; avoir deux choix est un dilemme; et avoir trois choix offre de nouvelles possibilités."
-
---- Having a choice is not a choice; having two choices is a dilemma; and having three choices opens up new possibilities.
+You have to force yourself to find 3 possible options or solutions to solve the problem.
 
 
-! The Rule Of Three
+
+> "Having a choice is not a choice; having two choices is a dilemma; and having three choices opens up new possibilities." 
+> *Virginia Satir*
+
+
+**The Rule Of Three**
 
 Before deciding on a course of action, come up with three alternatives. Here are three ways of thinking about The Rule Of Three. 
 
 - (i). Family therapist Virginia Satir encouraged people to have at least three choices. She said: ... to have one choice is no choice; to have two choices is a dilemma; and to have three choices offers new possibilities. – The Satir Model, Virginia Satir
-
-
-
+s
 - (ii). Jerry Weinberg : If you can't think of three things that might go wrong with your plans, then there's something wrong with your thinking. 
-
-
 
 - (iii). One more formulation: If you don’t have three options for a solution to a problem, you don’t understand it well enough yet, and you might need to explore it more.
 
 
---- Virginia Satir
---- https://nospensees.fr/les-9-meilleures-phrases-pour-reflechir-de-virginia-satir/
-
---- https://expertprogrammanagement.com/2018/10/satir-change-model/
-
+*More on Virginia Satir*
+[https://expertprogrammanagement.com/2018/10/satir-change-model/](https://expertprogrammanagement.com/2018/10/satir-change-model/)
 
 
 #### 3. Expérimentations possibles
