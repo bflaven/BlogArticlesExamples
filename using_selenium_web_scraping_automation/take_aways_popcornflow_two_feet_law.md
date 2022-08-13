@@ -13,7 +13,11 @@
 
 **The observation:** Everyone knows that change is difficult. In work more than elsewhere, it is always extremely complex to get rid of habits.
 
-##### 1. PRINCIPLE #1 PopcornFlow :: The virus of change
+
+##### A. PRINCIPLES
+
+
+###### PRINCIPLE #1 PopcornFlow :: The virus of change
 
 
 In order to become familiar with change management
@@ -41,7 +45,7 @@ Toyota's Anedocte :: "What they need to see is not visible." Kanban, Value Strea
 *Possible critic :: May have a social cost, as the idea behind this is to weaken us, by breaking the solidarity and isolating everyone, we become in fact much more manipulable. The group or team more easily ostracizes/ejects an isolated and unsupported individual.*
 
 
-##### 2. PRINCIPLE #2 PopcornFlow :: The urgency of continuous improvement (kaizen)
+###### PRINCIPLE #2 PopcornFlow :: The urgency of continuous improvement (kaizen)
 
 
 
@@ -59,7 +63,7 @@ Tout le monde a le droit d'avoir une opinion, mais... une opinion partagée est 
 
 L'idée est donc de partager son opinion sur un élément que l'on pense devoir être amélioré à l'équipe. Si l'équipe partage cette opinion, alors on peut la considérer comme un fait et commencer à traiter le problème. En effet, au lieu de passer des heures à analyser pour savoir si le problème est bien un problème, expérimentons ! Permettons-nous d'avoir une hypothèse imparfaite, peut-être que nous convergerons ensemble sur un résultat qui nous conviendra à tous !
 
-##### 2. PRINCIPLE #3 PopcornFlow :: The skateboarder
+###### PRINCIPLE #3 PopcornFlow :: The skateboarder
 
 Can we really claim that we will never fail? How else can we view failure? Of course, to relativize the scope of failure, we must highlight the value of learning.
 
@@ -70,11 +74,9 @@ As long as you don't learn anything from your failure. This is the purpose of th
 *Possible limit :: Primacy given to action which remains the best way to learn, however your life is not infinitely expandable. This is one of the reasons why the society of the permanent present shuns death like the plague. Imagination, contemplation and therefore the art of "fare niente" are rarely promoted. These values seem incompatible to create an entrepreneur mindset. From there to value the non-thought... :)*
 
 
+##### B. THE PROCESS
 
-- Le Processus
-
-
-- 1. Problèmes & observations
+###### 1. Problèmes & observations
 --- Première étape, il faut identifier les problèmes ou les points d'améliorations.
 
 --- Converger vers des problèmes partagés. Des problèmes qu font l’unanimité au sein d'une équipe.
@@ -85,7 +87,7 @@ As long as you don't learn anything from your failure. This is the purpose of th
 
 Ex : Les test UAT n'existent pas, la gestion du backlog est chronophage, pas d'objectif de qualité... etc.
 
-- 2. Options
+###### 2. Options
 
 
 Il faut se forcer à trouver 3 options ou solutions possibles pour résoudre le problème.
@@ -101,15 +103,15 @@ Virginia Satir :
 
 Before deciding on a course of action, come up with three alternatives. Here are three ways of thinking about The Rule Of Three. 
 
-- 1. Family therapist Virginia Satir encouraged people to have at least three choices. She said: ... to have one choice is no choice; to have two choices is a dilemma; and to have three choices offers new possibilities. – The Satir Model, Virginia Satir
+- (i). Family therapist Virginia Satir encouraged people to have at least three choices. She said: ... to have one choice is no choice; to have two choices is a dilemma; and to have three choices offers new possibilities. – The Satir Model, Virginia Satir
 
 
 
-- 2. Jerry Weinberg : If you can't think of three things that might go wrong with your plans, then there's something wrong with your thinking. 
+- (ii). Jerry Weinberg : If you can't think of three things that might go wrong with your plans, then there's something wrong with your thinking. 
 
 
 
-- 3. One more formulation: If you don’t have three options for a solution to a problem, you don’t understand it well enough yet, and you might need to explore it more.
+- (iii). One more formulation: If you don’t have three options for a solution to a problem, you don’t understand it well enough yet, and you might need to explore it more.
 
 
 --- Virginia Satir
@@ -119,7 +121,7 @@ Before deciding on a course of action, come up with three alternatives. Here are
 
 
 
-- 3. Expérimentations possibles
+###### 3. Expérimentations possibles
 A partir des options, on définit des expérimentations permettant de les explorer. 
 
 This is a crucial step because you gave yourself as a team the chance to explore your options.
@@ -131,7 +133,7 @@ Ex : "Faisons une réunion d'équipe tous les matins", "Faisons du Pair Programm
 
 
 
-- 4. Engagement (Committed)
+###### 4. Engagement (Committed)
 
 Il faut s'engager en toute transparence. 
 
@@ -161,10 +163,10 @@ Il faut aussi que les attentes soient mesurables quantitativement ou qualitative
 
 
 
-- 4. En cours (Ongoing)
+###### 4. En cours (Ongoing)
 Il est venu le temps de l'expérimentation ou de la pratique.
 
-- 5. Revue
+###### 5. Revue
 
 
 Arrivés à la date de revue, on fait un point sur les résultats de l'expérience en comparant ce que l'on a obtenu avec ce que l'on attendait ou espérait.
@@ -178,7 +180,7 @@ Que s'est-il réellement passé ?
 Qu'avons-nous appris ?
 Note : Cela peut également être effectué dans le cadre des rétrospectives.
 
-- 6. Après (Next)
+###### 6. Après (Next)
 
 
 Basé sur ce que l'on a appris, qu'allons nous faire après ?
@@ -194,7 +196,7 @@ Ré-évaluons notre problème !
 
 
 
-- 7. Pourquoi ça marche ?
+###### 7. Pourquoi ça marche ?
 
 PopcornFlow permet d'engager les personnes vis à vis de leurs problèmes plutôt que simplement en parler. 
 
