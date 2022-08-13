@@ -38,9 +38,9 @@ Toyota's Anedocte :: "What they need to see is not visible." Kanban, Value Strea
 - WHAT ARE THE FIVE S'S (5S) OF LEAN [https://asq.org/quality-resources/lean/five-s-tutorial](https://asq.org/quality-resources/lean/five-s-tutorial)
 - 5S (methodology) [https://en.wikipedia.org/wiki/5S_(methodology)](https://en.wikipedia.org/wiki/5S_(methodology)) 
 
-*Possible limit :: Reforming the system is almost impossible, no doubt that by correcting the errors, we influence the system but very marginally in any case this should never be the objective.*
+*Possible limit :: Reforming the system is almost impossible. No doubt that by correcting the errors, we influence the system but very marginally. In any case reforming the system should be a declared objective (Taqîya).*
 
-*Possible critic :: May have a social cost, as the idea behind this is to weaken us, by breaking the solidarity and isolating everyone, we become in fact much more manipulable. The group or team more easily ostracizes/ejects an isolated and unsupported individual.*
+*Possible critic :: May have a social cost. The untold idea behind is to weaken people (team for instance) and treat each member as individual. By breaking solidarity and isolating everyone, team become in fact much more manipulable. No one in the group or team will protest if someone is ostracized, isolated and unsupported. It can serve more a management objective than one for team building.*
 
 
 #### PRINCIPLE #2 PopcornFlow :: The urgency of continuous improvement (kaizen)
