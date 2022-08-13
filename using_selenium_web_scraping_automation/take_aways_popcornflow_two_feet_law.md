@@ -13,22 +13,24 @@
 
 **The observation:** Everyone knows that change is difficult. In work more than elsewhere, it is always extremely complex to get rid of habits.
 
-+ 1. The virus of change (PRINCIPLE #1 PopcornFlow)
-Afin de se familiariser à la conduite du changement
+##### 1. PRINCIPLE #1 PopcornFlow :: The virus of change
 
 
-- Comme le changement est difficile, il faut le rendre continu.
-- A force de repetition, d'entrainement, il devient facile d'appréhender et le transformer le changement en une suite de non-événement. En effet, plus une chose sera répétée, moins on prêtera attention!
+In order to become familiar with change management
 
 
-CRITIQUE :: L'idée derrière cela est bien de nous fagiliser, en cassant les soildarités et en isolant chacun, on devinet de fait beacoup plus maniupalble.
-La groupe ou l'equipe otrascise/ejecte plus facilement un individu isolé et sans appui/
+- As change is difficult, it must be made continuous.
+- By dint of repetition, training, it becomes easy to apprehend and transform change into a series of non-events. Indeed, the more a thing is repeated, the less we will pay attention!
 
 
-- L'important est la démarche, pas nécessairement le résultat, même si l’objectif poursuivi est le succès. Nos actions sont porteuses de valeurs pas, tout passe par l’action sinon on en reste à une déclaration de principe.
+**The important thing is the process, not necessarily the result, even if the objective pursued is success. Our actions do not convey values, everything goes through action otherwise we are left with a declaration of principle.**
+
+- *Possible limit :: Reforming the system is almost impossible, no doubt that by correcting the errors, we influence the system but very marginally in any case this should never be the objective.*
+
+- *Possible critic :: May have a social cost, as the idea behind this is to weaken us, by breaking the solidarity and isolating everyone, we become in fact much more manipulable. The group or team more easily ostracizes/ejects an isolated and unsupported individual.*
 
 
---- Réformer le système est quasi impossible, sans doute que en corrigeant les erreurs, on influe sur la systeme mais trés à la marge en tous les cas cela ne doit jamais être l'objectif.
+
 
 
 ---  Anedocte toyota
