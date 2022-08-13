@@ -1,7 +1,35 @@
 # using_selenium_web_scraping_automation
 
 
+### Install XAMPP to have a local WP Frontend and Backend
+You need to have a local WP installed and declare in your hosts file the domain e.g https://cypress.mydomain.priv/wordpress/ that leads to WP.
 
+- Download XAMPP [https://www.apachefriends.org/download.html](https://www.apachefriends.org/download.html)
+- Download WordPress [https://wordpress.org/download/](https://wordpress.org/download/)
+
+```bash
+# edit your hosts on a mac
+sudo -s
+vi /etc/hosts
+
+
+# type I for insert
+
+# cut and paste the domain cypress.mydomain.priv
+127.0.0.1 cypress.mydomain.priv
+
+# save ctrl+C then :wq
+# you are good
+
+# quit the root session
+exit
+
+# just ping in the console, to ensure that it is OK
+ping localhost
+ping 127.0.0.1
+ping cypress.mydomain.priv
+
+```
 
 
 ### Install the Python environment with anaconda
