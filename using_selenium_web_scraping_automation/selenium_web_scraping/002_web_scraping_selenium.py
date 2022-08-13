@@ -18,7 +18,8 @@ conda update -n base -c defaults conda
 
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/using_selenium_web_scraping_automation/selenium_web_scraping/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/using_selenium_web_scraping_automation/selenium_web_scraping/
+
 
 [file]
 python 002_web_scraping_selenium.py
