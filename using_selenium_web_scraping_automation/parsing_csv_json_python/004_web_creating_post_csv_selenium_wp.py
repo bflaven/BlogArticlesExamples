@@ -28,7 +28,7 @@ conda update -n base -c defaults conda
 
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/web_scraping_selenium/parsing_csv_json_python/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/using_selenium_web_scraping_automation/parsing_csv_json_python/
 
 
 [file]
