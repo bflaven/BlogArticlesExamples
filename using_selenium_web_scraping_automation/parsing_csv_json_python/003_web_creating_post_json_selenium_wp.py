@@ -100,7 +100,7 @@ def randomword(length):
 options = webdriver.ChromeOptions()
 
 # show the browser or not
-options.headless = False # True or False
+options.headless = False  # True (show in browser) or False (not show in browser)
 
 options.add_argument('--ignore-certificate-errors')
 options.add_argument("--test-type")

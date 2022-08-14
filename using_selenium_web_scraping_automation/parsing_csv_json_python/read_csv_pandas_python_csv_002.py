@@ -35,8 +35,6 @@ conda update -n base -c defaults conda
 # install pandas
 pip install pandas
 
-
-
 # to export requirements
 pip freeze > web_scraping_selenium_1.txt
 

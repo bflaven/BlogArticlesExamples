@@ -7,8 +7,10 @@ The code for the post "Using Selenium with Python for Web Scraping and Form Auto
 
 And to see some extra notes on PopcornFlow and on The Law of Two Feet, check out `take_aways_popcornflow_two_feet_law.md`
 
+## REQUIREMENTS
+If you want to be in the same development environment, you can follow the step 1 and step 2 below.
 
-### Install XAMPP to have a local WP Frontend and Backend
+### 1. Install XAMPP to have a local WP Frontend and Backend
 You need to have a local WP installed and declare in your hosts file the domain e.g https://cypress.mydomain.priv/wordpress/ that leads to WP.
 
 - Download XAMPP [https://www.apachefriends.org/download.html](https://www.apachefriends.org/download.html)
@@ -39,7 +41,9 @@ ping cypress.mydomain.priv
 ```
 
 
-### Install the Python environment with anaconda
+### 2. Install the Python environment with anaconda
+
+You can install ANACONDA to handle different python development environments. It is free for download [https://www.anaconda.com/](https://www.anaconda.com/)
 
 ```bash
 [env]
@@ -66,6 +70,38 @@ conda update -n base -c defaults conda
 
 ```
 
+### 3. Install Python packages (Selenium, Pandas... etc)
+You can find the Python requirements at the root of this directory but you can also install individually the Python packages in a new anaconda environment.
+
+
+```python
+# install pandas
+pip install pandas
+
+
+# BeautifulSoup
+pip install bs4
+
+# other module
+pip install requests
+pip install selenium
+pip install datetime
+
+# more for selenimum
+
+# download selenimum
+curl https://files.pythonhosted.org/packages/ed/9c/9030520bf6ff0b4c98988448a93c04fcbd5b13cd9520074d8ed53569ccfe/selenium-3.141.0.tar.gz > selenium.tar.gz
+
+# unpack selenimum
+tar -xzvf selenium.tar.gz
+
+# install selenimum
+cd selenium-3.141.0
+python setup.py install
+
+
+brew --cask install chromedriver
+```
 
 ### Project's Tree Directory
 
