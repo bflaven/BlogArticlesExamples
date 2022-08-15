@@ -114,7 +114,8 @@ def randomword(length):
 options = webdriver.ChromeOptions()
 
 # show the browser or not
-options.headless = False # True or False
+# True (NO show in browser) or False (YES show in browser)
+options.headless = False
 
 options.add_argument('--ignore-certificate-errors')
 options.add_argument("--test-type")
@@ -178,11 +179,12 @@ for i, _post in df.iterrows():
       title_field = browser.find_element(By.CSS_SELECTOR, '#title') 
       title_field.send_keys(''+str(todayDate)+' '+unique_insert+' '+_post["post_title"]+'')
       time.sleep(2)
-
+      
       # body
       body_field = browser.find_element(By.CSS_SELECTOR, '#content') 
       body_field.send_keys(''+str(todayDate) +' '+unique_insert+' '+_post["post_content"]+'')
       time.sleep(2)
+
 
       # click on submit button
       submit = browser.find_element(By.XPATH, '//*[@id="publish"]') 

@@ -1,0 +1,139 @@
++ Using Selenium with Python for Web Scraping and Form Automation Completion
+
+! 1. RESSOURCES
+- ARTICLE :: http://flaven.fr/2022/08/using-selenium-with-python-for-web-scraping-and-form-automation-completion/
+- CODE :: https://github.com/bflaven/BlogArticlesExamples/tree/master/using_selenium_web_scraping_automation
+
+
+! 2. INTRO
+--- description
+- The 2 main actions I wanted to implement with Selenium was:
+--- 1 - Scraping web pages: You can definitely use Selenium combined with Beautiful Soup to scraping elements from pages'web application. Good for data-science, testing purpose or any kind of job that require online data!
+--- 2 - Task Automation: Anyway, the more I discovered Selenium the more I was wondering: What is the practical and learning value regarding automation some P.O boring daily tasks jobs?
+
+--- My post is a subject within a subject... The Russian Doll, Matriochka, a doll within a doll!
+--- Forrest Gump: "Life is like a box of chocolates. You never know what you're gonna get"
+
+
+! 3. REQUIREMENTS
+--- description
+- some requirements to be just like in the video tutorial
+
+--- 1. INSTALL LOCAL WP
+
+- install the environment
+--- Download XAMPP https://www.apachefriends.org
+--- Download WordPress https://wordpress.org/download/
+
+
+- add the domain name ot your hosts
+# edit your hosts on a mac
+sudo -s
+vi /etc/hosts
+
+
+# type I for insert
+# cut and paste the domain cypress.mydomain.priv
+127.0.0.1 cypress.mydomain.priv
+127.0.0.1 local.bruno.flaven.google.com
+127.0.0.1 local.bflaven.google.com
+
+
+
+# save ctrl+C then :wq
+# you are good
+
+# quit the root session
+exit
+
+# just ping in the console, to ensure that it is OK
+ping localhost
+ping 127.0.0.1
+ping cypress.mydomain.priv
+ping local.bruno.flaven.priv
+ping local.bruno.flaven.google.com
+ping local.bflaven.google.com
+
+# for instance
+# ping local.bruno.flaven.google.com
+
+
+--- 2. MANAGE PYTHON WITH ENVIRONMENTS WITH ANACONDA
+Install ANACONDA to handle different python development environments.
+--- Download https://www.anaconda.com/
+
+
+
+! 4. RESSOURCES
+
+--- 1. parsing_csv_json_python
+
+--- description
+- POC on parsing a .cvs file or .json with Python to grab content and at least inject into a WP running locally (http://cypress.mydomain.priv)
+
+--- path
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/using_selenium_web_scraping_automation/parsing_csv_json_python/
+
++ single parsing source experience
+--- csv
+python read_csv_pandas_python_csv_002.py
+
+--- json
+python read_posts_json_python_001.py
+
+
++ combined with selenium
+--- selenium with csv
+python 004_web_creating_post_csv_selenium_wp.py
+
+--- selenium with json 
+python 003_web_creating_post_json_selenium_wp.py
+
+
+--- 2. stackabuse_scraper
+
+--- description
+- Very introduction to BeautifulSoup based on a stackabuse.com post. Parsing a local file, if you want to practice.
+
+--- path
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/using_selenium_web_scraping_automation/stackabuse_scraper/
+
+
+# local 
+python3 stackabuse_scraper_004.py 
+# with anaconda env
+python stackabuse_scraper_004.py
+
+
+--- 3. selenium_web_scraping
+
+--- description
+- Some scraping experiences on live website (http://flaven.fr) or local website both (http://cypress.mydomain.priv) to provide information for data-science or writing UAT testing with Cypress, CodeceptJS or Codeception :)
+
+--- path
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/using_selenium_web_scraping_automation/selenium_web_scraping
+
+- attempt for webscraping with selenium
+python 002_web_scraping_selenium.py
+
+- attempt for webscraping with selenium
+python 003_web_scraping_selenium.py
+
+- more advanced webscraping with selenium on local website
+python 017_web_scraping_selenium_wp.py pt_PT
+
+
+
+! 5. CONCLUSION
+- What work for me may not work for the other... That automation is maybe overkill and as a P.O, I should push the team to execute this stuff instead of doing it by myself. 
+- Anyway, it freed me up a lot of free time for other things than work while building trust within the whole team! No complaint.
+
+
+! 6. VIDEOS
+--- using_selenium_web_scraping_automation_requirements_001.mov
+--- using_selenium_web_scraping_automation_parsing_csv_json_python_002.mov
+--- using_selenium_web_scraping_automation_stackabuse_scraper_selenium_web_scraping_003.mov
+
+
+
+

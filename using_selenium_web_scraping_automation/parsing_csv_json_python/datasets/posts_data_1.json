@@ -1,8 +1,8 @@
 {
    "updated": "2022-08-10",
    "posts": [{
-         "post_title": "POST ONE JSON :: Title Cypress New 3i9plvtr0d",
-         "post_content": "POST ONE :: Body Cypress New Test Text Cypress Body Test Text Cypress Body Test Text Cypress",
+         "post_title": "POST ONE JSON YOUTUBE :: Title Cypress New 3i9plvtr0d",
+         "post_content": "POST ONE YOUTUBE :: Body Cypress New Test Text Cypress Body Test Text Cypress Body Test Text Cypress",
          "post_categories": "CMS,Information,NLP,PHP,Testing,Wordpress",
          "post_tags": "Agile,Automation,Beautiful Soup,Cypress"
       },
@@ -33,6 +33,24 @@
       {
          "post_title": "POST SIX JSON :: Title Cypress New e5vc816r74",
          "post_content": "POST SIX :: Body Cypress New Test Text Cypress Body Test Text Cypress Body Test Text Cypress",
+         "post_categories": "CMS,Information,NLP,PHP,Testing,Wordpress",
+         "post_tags": "Agile,Automation,Beautiful Soup,Cypress"
+      },
+      {
+         "post_title": "POST SEVEN JSON :: Title Cypress New e5vc816r74",
+         "post_content": "POST SEVEN :: Body Cypress New Test Text Cypress Body Test Text Cypress Body Test Text Cypress",
+         "post_categories": "CMS,Information,NLP,PHP,Testing,Wordpress",
+         "post_tags": "Agile,Automation,Beautiful Soup,Cypress"
+      },
+      {
+         "post_title": "POST EIGHT JSON :: Title Cypress New e5vc816r74",
+         "post_content": "POST EIGHT :: Body Cypress New Test Text Cypress Body Test Text Cypress Body Test Text Cypress",
+         "post_categories": "CMS,Information,NLP,PHP,Testing,Wordpress",
+         "post_tags": "Agile,Automation,Beautiful Soup,Cypress"
+      },
+      {
+         "post_title": "POST NINE YOUTUBE JSON :: Title Cypress New e5vc816r74",
+         "post_content": "POST NINE YOUTUBE :: Body Cypress New Test Text Cypress Body Test Text Cypress Body Test Text Cypress",
          "post_categories": "CMS,Information,NLP,PHP,Testing,Wordpress",
          "post_tags": "Agile,Automation,Beautiful Soup,Cypress"
       }

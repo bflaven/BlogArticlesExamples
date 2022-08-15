@@ -67,6 +67,8 @@ https://sodocumentation.net/beautifulsoup/topic/1940/locating-elements
 https://stackabuse.com/guide-to-parsing-html-with-beautifulsoup-in-python/
 https://stackabuse.com/guide-to-parsing-html-with-beautifulsoup-in-python/
 
+https://beautiful-soup-4.readthedocs.io/en/latest/
+
 """
 
 from bs4 import BeautifulSoup

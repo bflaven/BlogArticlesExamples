@@ -4,3 +4,8 @@ emp_name,emp_email,emp_job_profile
 "Joe","joe@test.com","dev"
 "Brian","brian@test.com","PO"
 "Thomas","thomas@testman.com","full time"
+"Fred","fred@testman.com","part-time PO"
+"Dan","dan@testman.com","dev"
+"David","david@testman.com","P.O."
+"Danny","danny@testman.com","part-time PO"
+"Steve","steve@test.com","PO"

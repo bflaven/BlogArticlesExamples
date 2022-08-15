@@ -96,6 +96,8 @@ def test_search_wp():
     search_button = driver.find_element(By.XPATH, '//*[@id="search-2"]/form/button')
 
     search_box.send_keys("WordPress")
+    # search_box.send_keys("Python")
+
     search_button.click()
 
     driver.quit()
