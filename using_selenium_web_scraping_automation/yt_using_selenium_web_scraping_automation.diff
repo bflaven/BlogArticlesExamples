@@ -8,7 +8,9 @@
 ! 2. INTRO
 --- description
 - The 2 main actions I wanted to implement with Selenium was:
+
 --- 1 - Scraping web pages: You can definitely use Selenium combined with Beautiful Soup to scraping elements from pages'web application. Good for data-science, testing purpose or any kind of job that require online data!
+
 --- 2 - Task Automation: Anyway, the more I discovered Selenium the more I was wondering: What is the practical and learning value regarding automation some P.O boring daily tasks jobs?
 
 --- My post is a subject within a subject... The Russian Doll, Matriochka, a doll within a doll!
@@ -36,7 +38,10 @@ vi /etc/hosts
 # cut and paste the domain cypress.mydomain.priv
 127.0.0.1 cypress.mydomain.priv
 127.0.0.1 local.bruno.flaven.google.com
-127.0.0.1 local.bflaven.google.com
+
+# type I for insert
+# cut and paste the domain cypress.mydomain.priv
+127.0.0.1 local.yt.bflaven.google.com
 
 
 
@@ -53,6 +58,8 @@ ping cypress.mydomain.priv
 ping local.bruno.flaven.priv
 ping local.bruno.flaven.google.com
 ping local.bflaven.google.com
+
+ping local.yt.bflaven.google.com
 
 # for instance
 # ping local.bruno.flaven.google.com
