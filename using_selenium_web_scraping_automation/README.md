@@ -7,6 +7,34 @@ The code for the post "Using Selenium with Python for Web Scraping and Form Auto
 
 And to see some extra notes on PopcornFlow and on The Law of Two Feet, check out `take_aways_popcornflow_two_feet_law.md`
 
+## VIDEOS
+
+[#1 Requirements Using Selenium with Python for Web Scraping and Form Automation Completion](https://www.youtube.com/watch?v=gobL6g0kVBs)
+[![#1 Requirements Using Selenium with Python for Web Scraping and Form Automation Completion](001_using_selenium_web_scraping_automation_requirements.png)](https://www.youtube.com/watch?v=gobL6g0kVBs)
+
+<!-- #1 Requirements Using Selenium with Python for Web Scraping and Form Automation Completion
+https://youtu.be/gobL6g0kVBs
+001_using_selenium_web_scraping_automation_requirements.png -->
+
+
+[#2 Parsing .cvs or .json source Using Selenium with Python for Web Scraping and Form Automation Completion](https://www.youtube.com/watch?v=DLgm-s2v-U4)
+[![#2 Parsing .cvs or .json source Using Selenium with Python for Web Scraping and Form Automation Completion](002_using_selenium_web_scraping_automation_parsing_csv_json_python.png)](https://www.youtube.com/watch?v=DLgm-s2v-U4)
+
+<!-- #2 Parsing .cvs or .json source Using Selenium with Python for Web Scraping and Form Automation Completion
+https://youtu.be/DLgm-s2v-U4
+002_using_selenium_web_scraping_automation_parsing_csv_json_python.png -->
+
+
+[#3 Create a Selenium WebScraper Using Selenium with Python for Web Scraping and Form Automation Completion](https://www.youtube.com/watch?v=w-hK_7t_biQ)
+[![#3 Create a Selenium WebScraper Using Selenium with Python for Web Scraping and Form Automation Completion](003_using_selenium_web_scraping_automation_stackabuse_scraper_selenium_web_scraping.png)](https://www.youtube.com/watch?v=w-hK_7t_biQ)
+
+
+<!-- #3 Create a Selenium WebScraper Using Selenium with Python for Web Scraping and Form Automation Completion
+https://youtu.be/w-hK_7t_biQ
+003_using_selenium_web_scraping_automation_stackabuse_scraper_selenium_web_scraping.png
+ -->
+
+
 ## REQUIREMENTS
 If you want to be in the same development environment, you can follow the step 1 and step 2 below.
 
