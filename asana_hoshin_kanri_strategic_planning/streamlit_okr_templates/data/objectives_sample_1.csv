@@ -1,0 +1,11 @@
+obj_idx,ObjIsTrue,ObjName,Objectives,Status,Comments
+1,true,OBJ-1,Flawless sign-up flow,Ready, Comments for OBJ-1
+2,true,OBJ-2,Flawless feedbach form,Ready, Comments for OBJ-2
+3,true,OBJ-3,Improve Our Testing Procedure,Ready, Comments for OBJ-3
+4,true,OBJ-4,Drive quality for new features in each new product's release,Ready, Comments for OBJ-4
+5,true,OBJ-5,Increase Efficiency of the QA's Processes,Ready, Comments for OBJ-5
+6,true,OBJ-6,Reduce Time Taken To Test New Feature,Ready, Comments for OBJ-6
+7,true,OBJ-7,Implement 0 Bugs Policy,Ready, Comments for OBJ-7
+8,true,OBJ-8,Test As Early As Possible,Ready, Comments for OBJ-8
+9,true,OBJ-9,Improve Software Application Performance,Ready, Comments for OBJ-9
+10,true,OBJ-10,Increase Quality Of Releases And Make Sure They Are Timely,Ready, Comments for OBJ-10

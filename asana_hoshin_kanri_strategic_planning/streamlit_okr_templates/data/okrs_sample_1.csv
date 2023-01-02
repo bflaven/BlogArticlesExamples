@@ -1,0 +1,6 @@
+obj_idx,kr_idx,ObjIsTrue,Objectives,Key_Results,Owner,Teams,Time,Status,Comments
+01,,true,Drive increased customer satisfaction,,,,,""
+01,01_1,false,Drive increased customer satisfaction,Release with 0 bugs,Boris Sterneim,Engineering,Q2 2022,0.3,"0 Bugs support reported by Customer Support, via Jira, for the entire 3 months."
+02,,true,Improve Our Testing Procedure,,,,,""
+02,02_1,false,Improve Our Testing Procedure,Increase unit test coverage to 75% of code,Boris Sterneim,Engineering,Q2 2022,0.6,"Comments about this KR"
+02,02_2,false,Improve Our Testing Procedure,Implement test driven development for any newcomer in the development team,Michael Michalescu,Engineering,Q2 2022,0.1,"Comments about this KR"

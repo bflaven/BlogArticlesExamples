@@ -1,0 +1,13 @@
+id,strategic_objective,Owner,Teams,Key_Results,OKR_Score
+0, strategic_objective-1, Owner-1,Teams-1, Key_Results-1-1, 0.1
+1, strategic_objective-1, Owner-1,Teams-1, Key_Results-1-2, 0.7
+2, strategic_objective-1, Owner-2,Teams-1, Key_Results-1-3, 0.5
+3, strategic_objective-1, Owner-2,Teams-1, Key_Results-1-4, 0.3
+4, strategic_objective-2, Owner-3,Teams-1, Key_Results-2-1, 0.8
+5, strategic_objective-2, Owner-3,Teams-1, Key_Results-2-2, 1
+6, strategic_objective-2, Owner-4,Teams-2, Key_Results-2-3, 0.9
+7, strategic_objective-2, Owner-4,Teams-2, Key_Results-2-4, 0.5
+8, strategic_objective-3, Owner-5,Teams-2, Key_Results-3-1, 0.7
+9, strategic_objective-3, Owner-5,Teams-2, Key_Results-3-2, 0.2
+10, strategic_objective-3, Owner-6,Teams-3, Key_Results-3-3, 0.9
+11, strategic_objective-3, Owner-6,Teams-3, Key_Results-3-4, 0.8
