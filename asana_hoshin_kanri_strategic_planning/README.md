@@ -47,15 +47,6 @@ sh automate_commit.sh
 # Create an empty Git repository or reinitialize an existing one
 git init
 
-
-git_damm_personal_5
-user :: bflaven@mgmail.com
-token :: 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
-https://docs.github.com/en
-
-
-
-
 # hint: know your branch
 git branch
 
@@ -80,7 +71,7 @@ git commit -am "add files and update readme"
 git commit -am "add nft file examples in readme"
 
 # hint: push to Github if your branch on Github is main
-git push origin main
+# git push origin main
 
 # hint: push to Github if your branch on Github is master
 git push origin master
