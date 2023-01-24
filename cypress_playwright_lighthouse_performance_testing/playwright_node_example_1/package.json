@@ -1,0 +1,29 @@
+{
+  "name": "playwright_node_example_1",
+  "version": "1.0.0",
+  "description": "Sample project to run playwright tests using playwright runner.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --config=./playwright.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bflaven/"
+  },
+  "keywords": [
+    "playwright",
+    "attempt",
+    "PO",
+    "E2E-PLAYWRIGHT",
+    "e2e-playwright"
+  ],
+  "author": "bflaven",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.29.2"
+  },
+  "dependencies": {
+    "playwright-chromium": "^1.29.2",
+    "playwright": "^1.24.0"
+  }
+}
