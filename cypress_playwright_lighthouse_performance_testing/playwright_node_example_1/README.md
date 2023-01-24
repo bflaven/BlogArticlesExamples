@@ -1,4 +1,4 @@
-# cypress_playwright_lighthouse_performance_testing
+# playwright_node_example_1
 
 
 ## Git reminder

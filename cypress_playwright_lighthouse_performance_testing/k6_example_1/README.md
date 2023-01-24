@@ -1,4 +1,4 @@
-# cypress_playwright_lighthouse_performance_testing
+# k6_example_1
 
 
 ## Git reminder
