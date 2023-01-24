@@ -1,30 +1,4 @@
-# asana_hoshin_kanri_strategic_planning
-
-## Introduction
-
-I released a book named “Learning and Building E2E test automation with Cypress & OKR – Define, Code & Apply an E2E strategy with Cypress & Objectives Key Results with PO mindset focus on Quality” at the beginning of this month December 2022.
-
-To write the very first chapters, I had to focus on OKRs and the ability to build them for Q/A management.
-
-**Here some code both in python and javascript in order to show on dashboard key figures on OKRs.**
-
-
-- [See the post on my blog "Notes and Takeaways on Hoshin Kanri, OKRs..."](https://flaven.fr/2023/01/notes-and-takeaways-on-hoshin-kanri-okrs/)
-
-
-## Ressources
-
-- [source{d} OKR methodology](https://github.com/src-d/okrs)
-- [My personal Objectives and Key Results (OKRs), tracked on GitHub](https://github.com/AnandChowdhary/okrs)
-
-```bash
-# for upload
-node -v
-npm install --save-dev fs
-```
-
-- [How to read and write JSON file using Node.js ?](https://www.geeksforgeeks.org/how-to-read-and-write-json-file-using-node-js/)
-- [How to read and write JSON files in Node.js](https://attacomsian.com/blog/nodejs-read-write-json-files)
+# cypress_playwright_lighthouse_performance_testing
 
 
 ## Git reminder
