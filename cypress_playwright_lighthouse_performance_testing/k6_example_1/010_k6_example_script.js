@@ -3,7 +3,7 @@
  * @usage
 * 
 * step_1 :: go to the dir where cypress is installed
-cd /Users/brunoflaven/Documents/01_work/blog_articles/cypress_playwright_lighthouse_performance_testing/k6_example_1/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/cypress_playwright_lighthouse_performance_testing/k6_example_1/
 *
 *
 * launch K6 once installed
