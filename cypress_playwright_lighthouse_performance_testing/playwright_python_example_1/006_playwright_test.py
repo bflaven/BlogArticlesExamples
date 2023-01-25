@@ -23,7 +23,7 @@ pip install -r requirements_for_tuto.txt
 
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/cypress_playwright_lighthouse_performance_testing/playwright_python_example_1/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/cypress_playwright_lighthouse_performance_testing/playwright_python_example_1/
 
 
 
