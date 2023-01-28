@@ -1,9 +1,24 @@
 # cypress_playwright_lighthouse_performance_testing
 
 
+As PO, my last top-of-mind professional concerns’ inventory: load testing principles, starting K6 for load testing, a quick playwright discovery both with Python and Node, how-to to connect lighthouse with Cypress, how-to to test Google Analytics and Google Tag Manager with Cypress
 
 
+I know the title sound like a clickbait!
 
+**The constrain was simple: "Can I do it with Cypress only and not with a tedious integration of new tool or framework for such performance testing?" As it is p... in the a... to manage several tool Ooops!**
+
+**Anyway, during this exploration, I had the chance to document:**
+
+
+- load testing principles
+- using K6 for load testing
+- a quick playwright  discovery both with Python and Node
+- how to connect lighthouse with Cypress
+- how to test Google Analytics with Cypress
+
+
+[Read more on flaven.fr: https://flaven.fr/2023/01/as-po-my-last-top-of-mind-professional-concerns-inventory-load-testing-principles-starting-k6-for-load-testing-a-quick-playwright-discovery-both-with-python-and-node-how-to-to-connect-lighthous/](https://flaven.fr/2023/01/as-po-my-last-top-of-mind-professional-concerns-inventory-load-testing-principles-starting-k6-for-load-testing-a-quick-playwright-discovery-both-with-python-and-node-how-to-to-connect-lighthous/)
 
 
 
