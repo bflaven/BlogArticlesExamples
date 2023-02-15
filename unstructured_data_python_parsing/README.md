@@ -2,7 +2,7 @@
 
 
 ## Explanation
-Just reminder
+Just a reminder on this subject of parsing unstructured data with python for data-science. Grab, Clean, Analyse...
 
 
 ## Ressources
