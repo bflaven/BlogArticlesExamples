@@ -4,6 +4,7 @@
 
 ```bash
 .
+├── README.md
 ├── example_jira_ticket_templates
 │   ├── 001_generate_code_ia_jira_ticket_improve_image_loading.txt
 │   ├── 002_generate_code_ia_jira_ticket_image_library.txt
@@ -46,22 +47,26 @@
 │   ├── source_codeceptjs_2_to_gherkin_feature_to_cypress.js
 │   ├── source_codeceptjs_commented_1.js
 │   └── source_codeceptjs_to_cypress_1.js
-├── plagiarism_checker_python
-│   ├── _plagiarism_checker_python_1.diff
-│   ├── output_checker_data_6.csv
-│   ├── output_checker_data_7.csv
-│   ├── plagiarism_checker_python_1.py
-│   ├── plagiarism_checker_python_2.py
-│   ├── plagiarism_checker_python_3.py
-│   ├── source_codes
-│   │   ├── bruno_code.txt
-│   │   ├── dirk_code.txt
-│   │   └── fatma_code.txt
-│   └── source_papers
-│       ├── bruno.txt
-│       ├── dirk.txt
-│       ├── fatma.txt
-│       ├── john.txt
-│       └── juma.txt
-└── requirements_plagiarism_checker_python.txt
+└── plagiarism_checker_python
+    ├── README.md
+    ├── output
+    │   └── plagiarism_checker_python_4_result.csv
+    ├── plagiarism_checker_python_1.py
+    ├── plagiarism_checker_python_2.py
+    ├── plagiarism_checker_python_3.py
+    ├── plagiarism_checker_python_4.py
+    ├── requirements_plagiarism_checker_python.txt
+    ├── source_codes
+    │   ├── bruno_code.txt
+    │   ├── dirk_code.txt
+    │   └── fatma_code.txt
+    └── source_papers
+        ├── bruno.txt
+        ├── david.txt
+        ├── dirk.txt
+        ├── fatma.txt
+        ├── john.txt
+        └── juma.txt
+
+9 directories, 54 files
 ```
