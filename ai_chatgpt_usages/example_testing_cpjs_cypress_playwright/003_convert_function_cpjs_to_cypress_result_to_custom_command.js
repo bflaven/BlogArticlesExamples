@@ -1,4 +1,4 @@
-// convert_function_cpjs_to_cypress_3_result_to_custom_command.js
+// 003_convert_function_cpjs_to_cypress_result_to_custom_command.js
 // result for GPT query convert_function_cpjs_to_cypress_3.js
 // Convert these functions written in Cypress into custom command, please generate logical and comenred code: 
 

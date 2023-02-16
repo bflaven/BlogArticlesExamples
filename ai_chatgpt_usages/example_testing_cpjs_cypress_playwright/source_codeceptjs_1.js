@@ -1,3 +1,9 @@
+// source_codeceptjs_1.js
+// source for GPT query
+// Convert function written in Codeceptjs to Cypress. Source codeceptjs commented by GPT
+
+
+
 /* REQUIREMENTS */
 let assert = require('assert');
 let expect = require("chai").expect;
@@ -7,13 +13,13 @@ const { globalVariables, globalValues, Login, Edition, Article, Functions, Advan
 
 
 
-Scenario('03 :: Check BACH Backoffice :: ARTICLE :: SCHEDULED', async (I, Functions) => { 
+Scenario('03 :: Check CRAW Backoffice :: ARTICLE :: SCHEDULED', async (I, Functions) => { 
 
     I.say('--- going to schedule article with '+globalVariables.RandomString+'');
     // I.wait(5);
 
-    if( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site FRANCE24 EN') {
-             I.say('\n--- FRANCE24');
+    if( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site in EN') {
+             I.say('\n--- EN');
 
              const resultItem = await I.grabTextFrom('//*[@id="DataTables_Table_0"]/tbody/tr[1]');
                 I.say('--- listing should contain '+globalVariables.RandomString+' in '+resultItem+'');
@@ -23,8 +29,8 @@ Scenario('03 :: Check BACH Backoffice :: ARTICLE :: SCHEDULED', async (I, Functi
             I.click('#DataTables_Table_1 tbody tr td.text-center.text-nowrap #edit-content-btn--0');
             I.wait(5);
 
-        } else if ( globalValues.TITLE_LABEL_WEBSITE == 'Aller sur le site MCD AR') {
-             I.say('\n--- MCD');
+        } else if ( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site in AR') {
+             I.say('\n--- AR');
              const resultItem = await I.grabTextFrom('//*[@id="DataTables_Table_0"]/tbody/tr[1]');
                 I.say('--- listing should contain '+globalVariables.RandomString+' in '+resultItem+'');
                 // Edit_1
@@ -34,8 +40,8 @@ Scenario('03 :: Check BACH Backoffice :: ARTICLE :: SCHEDULED', async (I, Functi
             I.wait(5);
 
         
-        } else if ( globalValues.TITLE_LABEL_WEBSITE == 'Aller sur le site RFI FR') {
-             I.say('\n--- RFI FR');
+        } else if ( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site in FR') {
+             I.say('\n--- FR');
              const resultItem = await I.grabTextFrom('//*[@id="DataTables_Table_0"]/tbody/tr[1]');
                 I.say('--- listing should contain '+globalVariables.RandomString+' in '+resultItem+'');
                 // Edit_1
@@ -45,10 +51,10 @@ Scenario('03 :: Check BACH Backoffice :: ARTICLE :: SCHEDULED', async (I, Functi
             I.wait(5);
 
                     
-        } else if ( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site OBSERVERS EN') {
+        } else if ( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site in ES') {
 
-        I.say('\n--- OBSERVERS');
-        I.say('--- xpath specific for OBS', 'red');
+        I.say('\n--- ES');
+        I.say('--- xpath specific ', 'red');
         const resultItem = await I.grabTextFrom('//*[@id="DataTables_Table_1"]/tbody/tr[1]');
             I.say('--- listing should contain '+globalVariables.RandomString+' in '+resultItem+'');
             // Edit_1
@@ -58,7 +64,7 @@ Scenario('03 :: Check BACH Backoffice :: ARTICLE :: SCHEDULED', async (I, Functi
             I.wait(5);
 
         } else {
-             I.say('\n--- RFI ES');
+             I.say('\n--- OTHER LNG');
              const resultItem = await I.grabTextFrom('//*[@id="DataTables_Table_0"]/tbody/tr[1]');
                 I.say('--- listing should contain '+globalVariables.RandomString+' in '+resultItem+'');
                 // Edit_1

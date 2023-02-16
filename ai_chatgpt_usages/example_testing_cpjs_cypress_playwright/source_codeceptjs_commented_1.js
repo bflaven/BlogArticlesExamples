@@ -1,16 +1,18 @@
-// GPT result :: Source codeceptjs commented by GPT
+// source_codeceptjs_commented_1.js
+// source for GPT query
+// Convert function written in Codeceptjs to Cypress. Source codeceptjs commented by GPT
 
 // Importing constants, functions, and classes needed for the scenario
 const { globalVariables, globalValues, Login, Edition, Article, Functions, AdvancedLogin } = inject();
 
 // Defining the scenario to check the back office of BACH and schedule an article
-Scenario('03 :: Check BACH Backoffice :: ARTICLE :: SCHEDULED', async (I, Functions) => {
+Scenario('03 :: Check CRAW Backoffice :: ARTICLE :: SCHEDULED', async (I, Functions) => {
 // Indicating that the scenario is about to schedule an article with a specified string
 I.say('--- going to schedule article with '+globalVariables.RandomString+'');
 
 // Checking the website title to determine the appropriate action to take
-if( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site FRANCE24 EN') {
-    I.say('\n--- FRANCE24');
+if( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site in EN') {
+    I.say('\n--- EN');
 
     // Grabbing the first item in the listing and checking if it contains the specified string
     const resultItem = await I.grabTextFrom('//*[@id="DataTables_Table_0"]/tbody/tr[1]');
@@ -22,34 +24,34 @@ if( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site FRANCE24 EN') {
     I.wait(5);
 
 // Repeat the same actions for each website title
-} else if ( globalValues.TITLE_LABEL_WEBSITE == 'Aller sur le site MCD AR') {
-    I.say('\n--- MCD');
+} else if ( globalValues.TITLE_LABEL_WEBSITE == 'Aller sur le site in AR') {
+    I.say('\n--- AR');
     const resultItem = await I.grabTextFrom('//*[@id="DataTables_Table_0"]/tbody/tr[1]');
     I.say('--- listing should contain '+globalVariables.RandomString+' in '+resultItem+'');
     I.say('\n--- Edit content', 'red');
     I.click('#DataTables_Table_1 tbody tr td.text-center.text-nowrap #edit-content-btn--0');
     I.wait(5);
 
-} else if ( globalValues.TITLE_LABEL_WEBSITE == 'Aller sur le site RFI FR') {
-    I.say('\n--- RFI FR');
+} else if ( globalValues.TITLE_LABEL_WEBSITE == 'Aller sur le site in FR') {
+    I.say('\n--- FR');
     const resultItem = await I.grabTextFrom('//*[@id="DataTables_Table_0"]/tbody/tr[1]');
     I.say('--- listing should contain '+globalVariables.RandomString+' in '+resultItem+'');
     I.say('\n--- Edit content', 'red');
     I.click('#DataTables_Table_1 tbody tr td.text-center.text-nowrap #edit-content-btn--0');
     I.wait(5);
     
-} else if ( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site OBSERVERS EN') {
-    I.say('\n--- OBSERVERS');
-    I.say('--- xpath specific for OBS', 'red');
+} else if ( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site ES') {
+    I.say('\n--- ES');
+    I.say('--- xpath specific ', 'red');
     const resultItem = await
 
 
     // GPT stop here, lazy bitch
     
-    } else if ( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site OBSERVERS EN') {
+    } else if ( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site RU') {
 
-        I.say('\n--- OBSERVERS');
-        I.say('--- xpath specific for OBS', 'red');
+        I.say('\n--- RU');
+        I.say('--- xpath specific', 'red');
         const resultItem = await I.grabTextFrom('//*[@id="DataTables_Table_1"]/tbody/tr[1]');
             I.say('--- listing should contain '+globalVariables.RandomString+' in '+resultItem+'');
             // Edit_1
@@ -59,7 +61,7 @@ if( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site FRANCE24 EN') {
             I.wait(5);
 
         } else {
-             I.say('\n--- RFI ES');
+             I.say('\n--- OTHER LNG');
              const resultItem = await I.grabTextFrom('//*[@id="DataTables_Table_0"]/tbody/tr[1]');
                 I.say('--- listing should contain '+globalVariables.RandomString+' in '+resultItem+'');
                 // Edit_1
@@ -78,7 +80,7 @@ if( globalValues.TITLE_LABEL_WEBSITE == 'Go to the site FRANCE24 EN') {
     I.click('//*[@id="radio-SCHEDULED"]');
     I.wait(5);
 
-    // DATE YYYY/MM/DD e.g 2020/12/03
+// DATE YYYY/MM/DD e.g 2020/12/03
 let monthNumbers = ["01", "02", "03", "04", "05", "06","07", "08", "09", "10", "11", "12"];
 let dayNumbers = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"];
 // HOUR 

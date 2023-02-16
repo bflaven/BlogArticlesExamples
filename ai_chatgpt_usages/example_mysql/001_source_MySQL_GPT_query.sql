@@ -4,7 +4,7 @@
 
 
 
-# Sure, here's the code to create a MySQL table named "users" with the specified fields:
+--- Sure, here's the code to create a MySQL table named "users" with the specified fields:
 
 
 CREATE TABLE users (
@@ -17,5 +17,5 @@ CREATE TABLE users (
 );
 
 
-# This code creates a table with six columns: "id" (the primary key), "FirstName", "LastName", "email", "address", and "country". The "id" column is defined as an auto-incrementing integer, which means that it will automatically generate a new, unique value for each new row that is inserted into the table.
+--- This code creates a table with six columns: "id" (the primary key), "FirstName", "LastName", "email", "address", and "country". The "id" column is defined as an auto-incrementing integer, which means that it will automatically generate a new, unique value for each new row that is inserted into the table.
 

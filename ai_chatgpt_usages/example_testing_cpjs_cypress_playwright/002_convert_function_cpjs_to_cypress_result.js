@@ -1,4 +1,4 @@
-// convert_function_cpjs_to_cypress_3_result.js
+// 002_convert_function_cpjs_to_cypress_result.js
 // result for GPT query convert_function_cpjs_to_cypress_3.js
 // Convert function written in Codeceptjs to Cypress.
 

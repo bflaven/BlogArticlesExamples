@@ -1,12 +1,15 @@
-// source for GPT query 
+// 001_convert_function_cpjs_to_cypress.js
+// source for GPT query
+// Convert function written in Codeceptjs to Cypress:
 
 
-describe('03 :: Check BACH Backoffice :: ARTICLE :: SCHEDULED', () => {
+
+describe('03 :: Check CRAW Backoffice :: ARTICLE :: SCHEDULED', () => {
   it('schedules an article', () => {
     cy.log('--- going to schedule article with ' + globalVariables.RandomString)
 
-    if (globalValues.TITLE_LABEL_WEBSITE === 'Go to the site FRANCE24 EN') {
-      cy.log('\n--- FRANCE24')
+    if (globalValues.TITLE_LABEL_WEBSITE === 'Go to the site in EN') {
+      cy.log('\n--- EN')
       
       cy.get('#DataTables_Table_1 tbody tr td.text-center.text-nowrap #edit-content-btn--0')
         .then(resultItem => {
@@ -15,8 +18,8 @@ describe('03 :: Check BACH Backoffice :: ARTICLE :: SCHEDULED', () => {
           cy.click('#DataTables_Table_1 tbody tr td.text-center.text-nowrap #edit-content-btn--0')
           cy.wait(5)
         })
-    } else if (globalValues.TITLE_LABEL_WEBSITE === 'Aller sur le site MCD AR') {
-      cy.log('\n--- MCD')
+    } else if (globalValues.TITLE_LABEL_WEBSITE === 'Go to the site in AR') {
+      cy.log('\n--- AR')
       cy.get('#DataTables_Table_1 tbody tr td.text-center.text-nowrap #edit-content-btn--0')
         .then(resultItem => {
           cy.log('--- listing should contain ' + globalVariables.RandomString + ' in ' + resultItem)
@@ -24,8 +27,8 @@ describe('03 :: Check BACH Backoffice :: ARTICLE :: SCHEDULED', () => {
           cy.click('#DataTables_Table_1 tbody tr td.text-center.text-nowrap #edit-content-btn--0')
           cy.wait(5)
         })
-    } else if (globalValues.TITLE_LABEL_WEBSITE === 'Aller sur le site RFI FR') {
-      cy.log('\n--- RFI FR')
+    } else if (globalValues.TITLE_LABEL_WEBSITE === 'Go to the site in FR') {
+      cy.log('\n--- FR')
       cy.get('#DataTables_Table_1 tbody tr td.text-center.text-nowrap #edit-content-btn--0')
         .then(resultItem => {
           cy.log('--- listing should contain ' + globalVariables.RandomString + ' in ' + resultItem)
@@ -33,9 +36,9 @@ describe('03 :: Check BACH Backoffice :: ARTICLE :: SCHEDULED', () => {
           cy.click('#DataTables_Table_1 tbody tr td.text-center.text-nowrap #edit-content-btn--0')
           cy.wait(5)
         })
-    } else if (globalValues.TITLE_LABEL_WEBSITE === 'Go to the site OBSERVERS EN') {
-      cy.log('\n--- OBSERVERS')
-      cy.log('--- xpath specific for OBS', 'red')
+    } else if (globalValues.TITLE_LABEL_WEBSITE === 'Go to the site in ES') {
+      cy.log('\n--- ES')
+      cy.log('--- xpath specific', 'red')
       cy.get('#DataTables_Table_1 tbody tr td.text-center.text-nowrap #edit-content-btn--0')
         .then(resultItem => {
           cy.log('--- listing should contain ' + globalVariables.RandomString + ' in ' + resultItem)
@@ -44,7 +47,7 @@ describe('03 :: Check BACH Backoffice :: ARTICLE :: SCHEDULED', () => {
           cy.wait(5)
         })
       } else {
-            cy.log('\n--- RFI ES')
+            cy.log('\n--- OTHER LNG')
             // to be continued
       
       } 
@@ -54,32 +57,32 @@ describe('03 :: Check BACH Backoffice :: ARTICLE :: SCHEDULED', () => {
 
 // THE MOST DIFFICULT PART OF THE TESTING SCRIPT
 Cypress.Commands.add('fillArticleTitle', () => {
-cy.get('#article_title').type('SCHEDULED ' + new Date().toLocaleDateString() + ' Test Article title CodeceptJS');
+  cy.get('#article_title').type('SCHEDULED ' + new Date().toLocaleDateString() + ' Test Article title CodeceptJS');
 });
 
 Cypress.Commands.add('clickScheduledRadioButton', () => {
-cy.get('#radio-SCHEDULED').click();
+  cy.get('#radio-SCHEDULED').click();
 });
 
 Cypress.Commands.add('fillScheduledDate', () => {
-cy.get('#scheduledDateInput').type(new Date().toLocaleDateString());
+  cy.get('#scheduledDateInput').type(new Date().toLocaleDateString());
 });
 
 Cypress.Commands.add('fillScheduledHour', () => {
-let currentHour = new Date().getHours();
-let currentMinutes = new Date().getMinutes();
-let nextMinutes = currentMinutes + 5;
-if (nextMinutes >= 60) {
-nextMinutes = nextMinutes % 60;
-currentHour += 1;
+  let currentHour = new Date().getHours();
+  let currentMinutes = new Date().getMinutes();
+  let nextMinutes = currentMinutes + 5;
+  if (nextMinutes >= 60) {
+  nextMinutes = nextMinutes % 60;
+  currentHour += 1;
 }
 cy.get('#scheduledHourInput').type(currentHour + ':' + nextMinutes);
 });
 
 Cypress.Commands.add('fillArticleTitle', () => {
-cy.fillArticleTitle();
-cy.clickScheduledRadioButton();
-cy.wait(5);
-cy.fillScheduledDate();
-cy.fillScheduledHour();
+  cy.fillArticleTitle();
+  cy.clickScheduledRadioButton();
+  cy.wait(5);
+  cy.fillScheduledDate();
+  cy.fillScheduledHour();
 });

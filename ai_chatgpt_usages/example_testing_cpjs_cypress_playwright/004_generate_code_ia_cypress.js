@@ -1,4 +1,4 @@
-// generate_code_ia_cypress.js
+// 004_generate_code_ia_cypress.js
 // source for GPT query
 // Generate a login test with Cypress testing Framework:
 
