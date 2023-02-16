@@ -8,7 +8,8 @@ QUERY :: In Python, write the code for a function that pick randomly one element
 
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/bard_ai_chatgpt_usages/example_python/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/ai_chatgpt_usages/example_python
+
 
 
 [file]

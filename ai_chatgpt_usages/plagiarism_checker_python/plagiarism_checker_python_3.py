@@ -17,7 +17,7 @@ conda update -n base -c defaults conda
 
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/bard_ai_chatgpt_usages/plagiarism_checker_python
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/ai_chatgpt_usages/plagiarism_checker_python
 
 
 [file]
