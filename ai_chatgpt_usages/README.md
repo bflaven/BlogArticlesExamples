@@ -1,4 +1,4 @@
-# bard_ai_chatgpt_usages
+# ai_chatgpt_usages
 
 ## directory listing
 
