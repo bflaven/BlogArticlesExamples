@@ -59,36 +59,29 @@ Feel free to change the sources...
 ## Other sources from projects for plagiarism checker in python
 
 - **kalebu_plagiarism_checker_python**
-
 [https://github.com/Kalebu/Plagiarism-checker-Python](https://github.com/Kalebu/Plagiarism-checker-Python)
 
 
 
 - **Python-Plagiarism-Checker by Copyleaks**
-
 [https://github.com/Copyleaks/Python-Plagiarism-Checker](https://github.com/Copyleaks/Python-Plagiarism-Checker)
 	+ [https://pypi.org/project/copyleaks/](https://pypi.org/project/copyleaks/)
 	+ [https://api.copyleaks.com/](https://api.copyleaks.com/)
 
 - **secretsquirrel_plagiarismchecker**
-
 [https://github.com/secretsquirrel/PlagiarismChecker](https://github.com/secretsquirrel/PlagiarismChecker)
 
 
 - **alphasaur666_plagiarismchecker**
-
 [https://github.com/alphasaur666/PlagiarismChecker](https://github.com/alphasaur666/PlagiarismChecker)
 
 
 - **wazzabeee_plagiarism_checker**
-
 [https://github.com/Wazzabeee/plagiarism_checker](https://github.com/Wazzabeee/plagiarism_checker)
 
 
 - **me_badsha_plagiarism_checker**
-
 [https://github.com/me-badsha/Plagiarism-checker](https://github.com/me-badsha/Plagiarism-checker)
 
 - **Repositories Python plagiarism-checker on github.com**
-
 [https://github.com/search?l=Python&q=plagiarism-checker&type=Repositories](https://github.com/search?l=Python&q=plagiarism-checker&type=Repositories)
