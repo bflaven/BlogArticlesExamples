@@ -76,12 +76,12 @@ Feel free to change the sources...
 [https://github.com/alphasaur666/PlagiarismChecker](https://github.com/alphasaur666/PlagiarismChecker)
 
 
-**wazzabeee_plagiarism_checker**
+- **wazzabeee_plagiarism_checker**
 [https://github.com/Wazzabeee/plagiarism_checker](https://github.com/Wazzabeee/plagiarism_checker)
 
 
-**me_badsha_plagiarism_checker**
+- **me_badsha_plagiarism_checker**
 [https://github.com/me-badsha/Plagiarism-checker](https://github.com/me-badsha/Plagiarism-checker)
 
-**Repositories Python plagiarism-checker on github.com**
+- **Repositories Python plagiarism-checker on github.com**
 [https://github.com/search?l=Python&q=plagiarism-checker&type=Repositories](https://github.com/search?l=Python&q=plagiarism-checker&type=Repositories)
