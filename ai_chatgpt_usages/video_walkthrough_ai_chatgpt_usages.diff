@@ -44,7 +44,6 @@ First, asking Chat GPT about moral issues is pointless and sometimes ludicrous!
 Second, still about the "corpus", as we do not know exactly the corpus of texts on which ChatGPT was trained to perfect its learning, it is certainly obvious that all the documentation relating to the development languages has been included (SQL, PHP, Python, JavaScript and so on... etc.) but that they do not necessarily integrate the latest developments.
 
 
-
 + 2 + HOW TO DETECT PLAGIARISM?
 The idea naturally came because of using GPT chat https://chat.openai.com/ is how do we ensure that is has been made by a real person or by an IA?
 Consequently, the massive use of GPT Chat or any other form of AI device necessarily brings its corollary of control which comes down to the following question: Is it a human who wrote all or part of the text or code that I have under the eyes?
@@ -53,7 +52,7 @@ Consequently, the massive use of GPT Chat or any other form of AI device necessa
 
 - 1. PO: generate Jira tickets for user stories, tasks, and bugs
 
-! # Write a Jira ticket to create a button that add automatically the author tag to the editing content. The ticket must give a precise DOR (definition of ready) and DOD (definition of done) to clarify the Acceptance Criteria.
+! # Write a Jira ticket to create a button that automatically add the author tag to the editing content. The ticket must give a precise DOR (definition of ready) and DOD (definition of done) to clarify the Acceptance Criteria.
 
 # 004_generate_code_ia_jira_ticket_add_tag_me_button.txt
 # source for GPT query
@@ -90,11 +89,9 @@ Documentation for the feature is up-to-date and accurate
 
 - 2. Q/A: Some testing examples
 
-! Write the cypress code to test that the fields in the post content: title, body, tags has been properly filled by the user and then save the post content created as draft
+! Write the Cypress code to test that the fields in the post content: title, body, tags has been properly filled by the user and then save the post content created as draft
 
 # 005_generate_code_ia_cypress_check_post_draft.js
-
-
 
 - 3. DEV: Some Coding examples
 --- 1 – Coding: Query example for GPT to generate code for MySQL
