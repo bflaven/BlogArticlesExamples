@@ -40,36 +40,43 @@ pip install -r requirements_plagiarism_checker_python.txt
 
 ! CONTENT
 
-
-
-+ 1 + Two remarks on ChatGPT
++ 1 + TWO REMARKS ON CHATGPT
 First, asking Chat GPT about moral issues is pointless and sometimes ludicrous!
 
 Second, still about the "corpus", as we do not know exactly the corpus of texts on which ChatGPT was trained to perfect its learning, it is certainly obvious that all the documentation relating to the development languages has been included (SQL, PHP, Python, JavaScript and so on... etc.) but that they do not necessarily integrate the latest developments.
 
 
 
-+ 2 + How to detect plagiarism?
++ 2 + HOW TO DETECT PLAGIARISM?
 The idea naturally came because of using GPT chat https://chat.openai.com/ is how do we ensure that is has been made by a real person or by an IA?
 Consequently, the massive use of GPT Chat or any other form of AI device necessarily brings its corollary of control which comes down to the following question: Is it a human who wrote all or part of the text or code that I have under the eyes?
 
-+ 3 + Examples generated with ChatGPT
++ 3 + EXAMPLES GENERATED WITH CHATGPT FOR PRODUCT OWNER, DEVELOPER...
 
-1. PO: generate Jira tickets for user stories, tasks, and bugs
-2. Q/A: Some testing examples
-3. DEV: Some Coding examples
-– 1 – Coding: Query example for GPT to generate code for MySQL
-– 2 – Coding: Query example for GPT to generate code in Python
-– 3 – Coding: Query example for GPT to generate code in PHP for a plugin WordPress named “MySocialBuddy”
-– 4 – Coding: Other attempts…
+- 1. PO: generate Jira tickets for user stories, tasks, and bugs
+- 2. Q/A: Some testing examples
+- 3. DEV: Some Coding examples
+--- 1 – Coding: Query example for GPT to generate code for MySQL
+--- 2 – Coding: Query example for GPT to generate code in Python
+--- 3 – Coding: Query example for GPT to generate code in PHP for a plugin WordPress named “MySocialBuddy”
+- 4 – Coding: Other attempts...
+
++ 4. DEV: ERRORS EXPLAINED
+
+--- Some errors searchings quicker to look in stackoverflow.com. The error can be explained by ChatGPT, it is complementary source of information with stackoverflow.com for instance
+
+# sample for errors...
+--- Explain the python error "TypeError: Protocols cannot be instantiated"
+--- Explain the python error "TypeError: Protocols cannot be instantiated for Streamlit what is the solution?"
+--- How to update python in anaconda (conda)?
 
 
-4. DEV: Errors explained
++ 5. SUPPORT: MAILS FOR SUPPORT
+--- 1 - Support: Query example for GPT to generate support mail for 2FA authentication
+--- 2 - Support: Query example for GPT to generate support mail for user to explain how-to to login/logout and start private session
+--- 3 - Support: Query example for GPT to generate support mail
 
-5. SUPPORT: mails for Support
-– 1 – Support: Query example for GPT to generate support mail
-– 2 – Support: Query example for GPT to generate support mail
-– 3 – Support: Query example for GPT to generate support mail
+
 
 
 ! EXTRA
