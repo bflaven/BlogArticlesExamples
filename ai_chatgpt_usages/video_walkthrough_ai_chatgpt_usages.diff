@@ -173,7 +173,12 @@ In this code, the "id" field is defined as the primary key with the "INTEGER" da
 ! # Model: https://github.com/bflaven/PluginWordpressForFun/blob/master/johann_flags_header/johann_flags_header.php
 
 
-# 007_generate_php_plugin_wordpress_flags_header.php
+# FIRST CODE GENERATION
+# 005_generate_php_plugin_wordpress_flags_header.php
+
+# SECOND CODE GENERATION
+# 006_generate_php_plugin_wordpress_flags_header.php
+
 
 
 - 4 – Coding: Other attempts...
