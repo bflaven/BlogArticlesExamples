@@ -1,0 +1,92 @@
+! # Tutorial Video Walkthrough
+! # video_walkthrough_ai_chatgpt_usages.diff
+
+- TITLE
++ Using ChatGPT on a daily work as a P.O, Developer or for Q/A or Support and checking plagiarism if needed with Python
+--- See more on the post at https://wp.me/p3Vuhl-3dF
+
+- URLs
++ ARTICLE :: https://wp.me/p3Vuhl-3dF
++ CODE :: https://bit.ly/3YI5Ubl
++ WEBSITE ::  https://flaven.fr/
+
+- QUICK DESCRIPTION
+
+--- OBJECTIVE :: How to use ChatGPT to replace tedious work by IA + checking plagiarism if needed with Python
+
+--- OUPUT :: Numerous example from Jira ticket for P.O, Q/A testing script in JS, WP plugin in PHP, Pyhton stuff, SQL code...
+
+--- AUDIENCE :: Anyone who want to use ChatGPT on a daily basis.
+
+"'s ease-of-use, performance and overall variety of algorithms implemented has proved invaluable [...]."
+
+
+- TEK GUIDELINES
+--- ChatGPT :: https://chat.openai.com
+--- Streamlit :: https://streamlit.io/
+--- scikit-learn :: hhttps://scikit-learn.org/stable/index.html
+
+
+- PATH CONSOLE
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/ai_chatgpt_usages/
+
+
+- CONDA ENVIRONMENT
+--- requirement using conda to manage development environment
+--- create requirements file for the apps
+pip freeze > requirements_plagiarism_checker_python.txt
+pip install -r requirements_plagiarism_checker_python.txt
+
+
+! CONTENT
+
+
+
++ 1 + Two remarks on ChatGPT
+First, asking Chat GPT about moral issues is pointless and sometimes ludicrous!
+
+Second, still about the "corpus", as we do not know exactly the corpus of texts on which ChatGPT was trained to perfect its learning, it is certainly obvious that all the documentation relating to the development languages has been included (SQL, PHP, Python, JavaScript and so on... etc.) but that they do not necessarily integrate the latest developments.
+
+
+
++ 2 + How to detect plagiarism?
+The idea naturally came because of using GPT chat https://chat.openai.com/ is how do we ensure that is has been made by a real person or by an IA?
+Consequently, the massive use of GPT Chat or any other form of AI device necessarily brings its corollary of control which comes down to the following question: Is it a human who wrote all or part of the text or code that I have under the eyes?
+
++ 3 + Examples generated with ChatGPT
+
+1. PO: generate Jira tickets for user stories, tasks, and bugs
+2. Q/A: Some testing examples
+3. DEV: Some Coding examples
+– 1 – Coding: Query example for GPT to generate code for MySQL
+– 2 – Coding: Query example for GPT to generate code in Python
+– 3 – Coding: Query example for GPT to generate code in PHP for a plugin WordPress named “MySocialBuddy”
+– 4 – Coding: Other attempts…
+
+
+4. DEV: Errors explained
+
+5. SUPPORT: mails for Support
+– 1 – Support: Query example for GPT to generate support mail
+– 2 – Support: Query example for GPT to generate support mail
+– 3 – Support: Query example for GPT to generate support mail
+
+
+! EXTRA
+
+- HASHTAGS
+An #experimentation and #POC for #plagiarism #checker #ScikitLearn #Python #Streamlit, https://bit.ly/3YI5Ubl
+
+Using #ChatGPT on a #daily #work as a #PO, #Developer, for #QA or #Support and #checking #plagiarism if needed with #Python, https://wp.me/p3Vuhl-3dF
+
+- GIT COMMIT
+git status
+git branch
+git add .
+git commit -am "updates files make it work for video"
+git commit -am "change on several README files"
+git push origin master
+
+
+
+
