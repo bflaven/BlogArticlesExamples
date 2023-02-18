@@ -52,18 +52,66 @@ Consequently, the massive use of GPT Chat or any other form of AI device necessa
 + 3 + EXAMPLES GENERATED WITH CHATGPT FOR PRODUCT OWNER, DEVELOPER...
 
 - 1. PO: generate Jira tickets for user stories, tasks, and bugs
+
+! # Write a Jira ticket to create a button that add automatically the author tag to the editing content. The ticket must give a precise DOR (definition of ready) and DOD (definition of done) to clarify the Acceptance Criteria.
+
 - 2. Q/A: Some testing examples
+
+! Write the cypress code to test that the fields: title, body, tags has been properly filled by the user and then save the content created as draft
+
 - 3. DEV: Some Coding examples
 --- 1 – Coding: Query example for GPT to generate code for MySQL
+! WordPress custom SQL query examples
+
+! # Explain with simple words the following code
+global $wpdb;
+$wpdb->insert(
+    $wpdb->foods,
+    array(
+        'fruit' => 'apple',
+        'year' => 2012
+    ),
+    array(
+        '%s',
+        '%d'
+    )
+);
+
+! # Create table https://github.com/bflaven/BlogArticlesExamples/blob/e0d7c9858285eb547730db268ea0114ef8d5d3a2/extending_streamlit_usage/009_countries_crud_streamlit_app/sqlite_try_3_create_table.py
+
+sql_create_countries_table = """CREATE TABLE IF NOT EXISTS countries (
+                                    id INTEGER PRIMARY KEY,
+                                    name TEXT NOT NULL,
+                                    tld TEXT NOT NULL UNIQUE,
+                                    cca2 TEXT NOT NULL UNIQUE,
+                                    capital TEXT NOT NULL UNIQUE,
+                                    callingCode INTEGER,
+                                    FOREIGN KEY (id) REFERENCES countries (id)
+                                );"""
+
 --- 2 – Coding: Query example for GPT to generate code in Python
+! Write python wit comments using beautyfulsoup, read a file name example_3.html and find out the H5 tag and H6 tag in the HTML? source. The H5 is called a smallBookTitles, it has to be inject in a loop to create a list for all the books showed in the page example_3.html
+
+! # Model: https://github.com/bflaven/BlogArticlesExamples/blob/34fe0f51a53b0ae38af614e66b9eeaf16facf97d/webscraping_with_python/slurpThatSoup_6.py
+
+
+
 --- 3 – Coding: Query example for GPT to generate code in PHP for a plugin WordPress named “MySocialBuddy”
+
+! Write a WordPress plugin that enable to manage different languages with flags
+
+! # Write in PHP, a Wordpress plugin with comments, named MyFlagsSiteVersion. This Plugin MyFlagsSiteVersion will add a new entry in the main administration menu in "Settings". The name of the entrance will be MyFlagsSiteVersion. The purpose of this plugin is to manipulate 3 custom fields for different languages with flags accounts: myflagssiteversion_fr, myflagssiteversion_en, myflagssiteversion_sp. You can you write also tips for this field and general explanation at the beginning of the plugin page settings to explain how does the plugin work.
+
+! # Model: https://github.com/bflaven/PluginWordpressForFun/blob/master/johann_flags_header/johann_flags_header.php
+
 - 4 – Coding: Other attempts...
+
 
 + 4. DEV: ERRORS EXPLAINED
 
 --- Some errors searchings quicker to look in stackoverflow.com. The error can be explained by ChatGPT, it is complementary source of information with stackoverflow.com for instance
 
-# sample for errors...
+! # sample for errors...
 --- Explain the python error "TypeError: Protocols cannot be instantiated"
 --- Explain the python error "TypeError: Protocols cannot be instantiated for Streamlit what is the solution?"
 --- How to update python in anaconda (conda)?
