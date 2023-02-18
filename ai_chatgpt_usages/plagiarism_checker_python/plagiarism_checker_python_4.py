@@ -68,11 +68,11 @@ file_output = 'output/plagiarism_checker_python_4_result.csv'
 path_text = "./source_papers"
 path_code = "./source_codes"
 
-dir_list = os.listdir(path_text)
+dir_list = os.listdir(path_code)
 
 source_files = [doc for doc in dir_list if doc.endswith('.txt')]
 source_content = [open(_file, encoding='utf-8').read()
-                  for _file in Path(path_text).glob('*.txt')]
+                  for _file in Path(path_code).glob('*.txt')]
 
 
 
@@ -167,10 +167,12 @@ if show:
         # add a function to generate the second indicator
         conclusion(progress_value)
             
-        st.markdown("_Visual rendering for Plagiarism for Case_" +
-                    str(index)+"_")
-        # st.progress(progress_value, text="Plagiarism Checker Result between "+label_student_a+" and "+label_student_b+" ")
-        st.progress(progress_value)
+
+        # NOT SIGNIFICANT
+        # st.markdown("_Visual rendering for Plagiarism for Case_" + str(index)+"_")
+        # st.progress(int(progress_value), text="Plagiarism Checker Result between "+label_student_a+" and "+label_student_b+" ")
+        
+        # st.progress((int(progress_value)))
 
 # In the above code, we first load a sample data file and display a dropdown to select the column to compare. Then, we iterate through each row in the selected column and create a progress bar using the st.progress function. The value of the progress bar is set to the value of the selected column for that row. This will display a progress bar for each row in the selected column, ranging from grey to red color based on the value of the column.
 

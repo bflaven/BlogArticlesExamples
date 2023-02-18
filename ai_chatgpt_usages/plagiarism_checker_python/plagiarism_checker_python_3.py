@@ -169,10 +169,14 @@ if show:
         # add a function to generate the second indicator
         conclusion(progress_value)
             
-        st.markdown("_Visual rendering for Plagiarism for Case_" +
-                    str(index)+"_")
-        # st.progress(progress_value, text="Plagiarism Checker Result between "+label_student_a+" and "+label_student_b+" ")
-        st.progress(progress_value)
+        
+        
+        # NOT SIGNIFICANT
+        # st.markdown("_Visual rendering for Plagiarism for Case_" + str(index)+"_")
+        # st.progress(int(progress_value), text="Plagiarism Checker Result between "+label_student_a+" and "+label_student_b+" ")
+
+        # st.progress((int(progress_value)))
+
 
 # In the above code, we first load a sample data file and display a dropdown to select the column to compare. Then, we iterate through each row in the selected column and create a progress bar using the st.progress function. The value of the progress bar is set to the value of the selected column for that row. This will display a progress bar for each row in the selected column, ranging from grey to red color based on the value of the column.
 
