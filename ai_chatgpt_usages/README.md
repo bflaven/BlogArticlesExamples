@@ -23,7 +23,7 @@ _Never forget that modern capitalism loves creative destruction and see AI as a 
 
 [#1 Using ChatGPT for P.O: Generate Jira tickets for user stories & some Q/A testing scripts (Cypress)](https://www.youtube.com/watch?v=dpQL2BK7wpk)[![#1 Using ChatGPT for P.O: Generate Jira tickets for user stories & some Q/A testing scripts (Cypress)](001_ai_chatgpt_usages_po_qa_cypress.png)](https://www.youtube.com/watch?v=dpQL2BK7wpk)
 
-[#2 Using ChatGPT for coding: Generate Python code with comments using Beautiful Soup & SQL command for SQLite](https://www.youtube.com/watch?v=fjht2WMZlic)[![#2 Using ChatGPT for coding: Generate Python code with comments using Beautiful Soup & SQL command for SQLite](001_ai_chatgpt_usages_po_qa_cypress.png)](https://www.youtube.com/watch?v=fjht2WMZlic)
+[#2 Using ChatGPT for coding: Generate Python code with comments using Beautiful Soup & SQL command for SQLite](https://www.youtube.com/watch?v=fjht2WMZlic)[![#2 Using ChatGPT for coding: Generate Python code with comments using Beautiful Soup & SQL command for SQLite](002_ai_chatgpt_usages_python.png)](https://www.youtube.com/watch?v=fjht2WMZlic)
 
 
 [#3 Using ChatGPT: Generate simple PHP for WordPress Plugin code to extend Dashboard WP features](https://www.youtube.com/watch?v=drtNkrSgT8Q)[![#3 Using ChatGPT: Generate simple PHP for WordPress Plugin code to extend Dashboard WP features](003_ai_chatgpt_usages_php_wp_plugin.png)](https://www.youtube.com/watch?v=drtNkrSgT8Q)
