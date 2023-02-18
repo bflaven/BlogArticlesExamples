@@ -64,9 +64,9 @@ Feel free to change the sources...
 
 
 - **Python-Plagiarism-Checker by Copyleaks**
-- [https://github.com/Copyleaks/Python-Plagiarism-Checker](https://github.com/Copyleaks/Python-Plagiarism-Checker)
-- [https://pypi.org/project/copyleaks/](https://pypi.org/project/copyleaks/)
-- [https://api.copyleaks.com/](https://api.copyleaks.com/)
+[https://github.com/Copyleaks/Python-Plagiarism-Checker](https://github.com/Copyleaks/Python-Plagiarism-Checker)
+	+ [https://pypi.org/project/copyleaks/](https://pypi.org/project/copyleaks/)
+	+ [https://api.copyleaks.com/](https://api.copyleaks.com/)
 
 - **secretsquirrel_plagiarismchecker**
 [https://github.com/secretsquirrel/PlagiarismChecker](https://github.com/secretsquirrel/PlagiarismChecker)
