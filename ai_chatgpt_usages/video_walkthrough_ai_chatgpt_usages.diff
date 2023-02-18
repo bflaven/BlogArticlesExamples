@@ -176,6 +176,11 @@ In this code, the "id" field is defined as the primary key with the "INTEGER" da
 # 007_generate_php_plugin_wordpress_flags_header.py
 
 
+
+
+
+
+
 - 4 – Coding: Other attempts...
 
 
@@ -216,4 +221,7 @@ git push origin master
 
 ! VIDEO
 001_ai_chatgpt_usages_po_qa_cypress.mov
+002_ai_chatgpt_usages_python.mov
+003_ai_chatgpt_usages_php_wp_plugin.mov
+
 
