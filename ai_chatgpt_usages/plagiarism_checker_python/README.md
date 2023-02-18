@@ -19,7 +19,11 @@ path_code = "./source_codes"
 ## Abstract
 The idea naturally came as a result of using GPT chat [https://chat.openai.com/](https://chat.openai.com/) Indeed the massive use of GPT chat or any other form of AI device necessarily brings its corollary of control which comes down to the following question: is it a human who wrote all or part of the text or code that I have under the eyes ?
 
-Many algorithms are already in use in many sectors: reading and summarizing legal documents, profiling individuals in the field of surveillance, reading and checking course materials in training, reading and automatic summarization of scenarios in audiovisual production , verification of copy writing in marketing, press release in the communication sector automatic reading of CVs and cover letters in the HRD sector... The examples of application are innumerable. If not, now is the time to get started. Indeed, this "monitoring" task will become a recurring task for a PO or a product manager, as is today the writing of "user stories" for example.
+For sure, I suppose that many algorithms are already in use in many sectors: reading and summarizing legal documents, profiling individuals in marketing and tracking, reading and checking course materials and students materials in a training, reading and automatic summary for scenarios in TV production, verification of copy-writing in PR or writing press release in the communication sector, automatic reading of CVs and cover letters in the HRD sector… if it is not the case, it will become soon!
+
+The IA’s examples list for usages is endless and indeed, this “monitoring” task will become a recurring task for a P.O, a product manager or in all sorts of job. So, for my personal use, I have a made a quick and dirty plagiarism checker with Python, Streamlit and Scikit-learn.
+
+
 
 
 ## How-to
