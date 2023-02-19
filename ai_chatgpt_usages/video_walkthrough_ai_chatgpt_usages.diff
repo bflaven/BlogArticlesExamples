@@ -1,6 +1,8 @@
 ! # Tutorial Video Walkthrough
 ! # video_walkthrough_ai_chatgpt_usages.diff
 
+This file keep track of all the infos given in the videos....
+
 - TITLE
 + Using ChatGPT on a daily work as a P.O, Developer or for Q/A or Support and checking plagiarism if needed with Python
 --- See more on the post at https://wp.me/p3Vuhl-3dF
@@ -224,11 +226,62 @@ git push origin master
 
 
 
-! VIDEO
-001_ai_chatgpt_usages_po_qa_cypress.mov
-002_ai_chatgpt_usages_python.mov
-003_ai_chatgpt_usages_php_wp_plugin.mov
-004_ai_chatgpt_usages_plagiarism_checker_python.mov
+! VIDEOS
+
+--- 001_ai_chatgpt_usages_po_qa_cypress.mov
++ https://youtu.be/dpQL2BK7wpk
+- 001_ai_chatgpt_usages_po_qa_cypress.png
+- 001_ai_chatgpt_usages_po_qa_cypress.mp4
+#1 Using ChatGPT for P.O: Generate Jira tickets for user stories & some Q/A testing scripts (Cypress)
+KW: ChatGPT, Cypress, P.O, Jira, mail, suport, ChatGPT, Developer, P.O, plagiarism, python, Q/A, support, usage, work
+
+--- 002_ai_chatgpt_usages_python.mov
++ https://youtu.be/fjht2WMZlic
+- 002_ai_chatgpt_usages_python.png
+- 002_ai_chatgpt_usages_python_good.mov
+#2 Using ChatGPT for coding Generate Python code with comments using 
+Beautiful Soup & SQL command for SQLite
+
+
+--- 003_ai_chatgpt_usages_php_wp_plugin.mov
++ https://youtu.be/drtNkrSgT8Q
+- 003_ai_chatgpt_usages_php_wp_plugin.png
+- 003_ai_chatgpt_usages_php_wp_plugin_good.mov
+#3 Using ChatGPT to generate simple PHP  WordPress Plugin code to extend Dashboard WP features
+
+--- 004_ai_chatgpt_usages_plagiarism_checker_python.mov
++ https://youtu.be/RTvFSqW4u2I
+- 004_ai_chatgpt_usages_plagiarism_checker_python.png
+- 004_ai_chatgpt_usages_plagiarism_checker_python_good.mov
+#4 After using ChatGPT a Quick POC to check Plagiarism with Python
+
+
+! MUSIC
+you_re_not_that_funky_otis_mcdonald.mp3
+
+
+! HASHTAGS
+An #experimentation and #POC for #plagiarism #checker #ScikitLearn #Python #Streamlit, https://bit.ly/3YI5Ubl
+Using #ChatGPT on a #daily #work as a #PO, #Developer, for #QA or #Support and #checking #plagiarism if needed with #Python, https://wp.me/p3Vuhl-3dF
 
 
 
+! OTHER
+- OUTRO
+Thanks for watching.
+
+This video is part of the post 
+"Using ChatGPT on a daily work as a P.O, Developer or for Q/A or Support and checking plagiarism if needed with Python"
+
+Check my blog @ http://www.flaven.fr
+Check my Github @ http://github.com/bflaven/
+
+Music
+You're not that Funky
+Otis McDonald
+Royalty Free Music
+
+Plus que jamais, prenez soin de vous et des vôtres,
+Take care of yourself and the ones you loved.
+
+© Flaven.fr February 2023
