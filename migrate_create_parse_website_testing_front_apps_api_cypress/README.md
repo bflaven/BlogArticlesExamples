@@ -195,3 +195,75 @@ See more on [Obsidian](https://obsidian.md/)
 └── README.md
 ```
 
+
+## GIT COMMANDS MEMO
+
+
+```bash
+# FOR NEWBIE IN GIT COMMANDS MAINLY POS
+
+# CASE_1 MAKE A COMMIT 
+# step_1 check the existing code
+git status
+
+# step_2 keep the changes made in code
+git stash 
+
+# step_2 check the existing code always do before commit
+git pull
+
+# step_4  call the stash to add the changes in existing code
+git stash pop
+
+# step_5 check the existing code with the changes made
+git status
+
+# step_6 add the changes in the existing code with a message
+git commit -am "update code message"
+
+# step_7 send the changes to repo git
+git push
+
+# step_8 check the updated code
+git status
+
+
+# CASE_2 CREATE A BRANCH
+
+# create branch named bruno-test
+git branch bruno-test
+
+# work on branch named bruno-test
+git checkout bruno-test
+
+# check the status
+git status
+
+# add new files if needed
+git add .
+
+# check the status
+git status
+
+# commit the changes
+git commit -am "changes bf"
+
+# push the changes
+git push
+# push the changes forced if needed
+# git push --set-upstream origin bruno-test
+
+# CASE_3 MAKE A MERGE REQUEST
+
+# go to your branch bruno-test
+git checkout bruno-test
+
+# rebuild bruno-test from main
+git rebase main
+
+# if you need to rebase
+git rebase --continue
+
+# check if the version is update
+git status
+```
