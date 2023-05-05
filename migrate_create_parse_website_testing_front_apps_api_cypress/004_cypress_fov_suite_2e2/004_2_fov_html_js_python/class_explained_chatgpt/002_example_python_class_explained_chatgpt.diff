@@ -1,0 +1,129 @@
++ example_query_openai_1
+
+! INPUT query open ai
+
+--- in Python
+- FR
+L’exemple est le suivant : il y a deux sites en deux langues différentes et sur deux marques différentes (RFI_FR, F24_ES). Chacun des deux sites (RFI_FR, F24_ES) possèdent des pages de section différentes dont la liste est contenue dans la variable NavActualitesSlugNewsByRegion. Pour chacune des pages de section pour les des deux sites (RFI_FR, F24_ES), il existe aussi un jeu de deux variables avec comme de title_tag et property_tag.
+Peux-tu écrire, en Python, une Class du nom de UtilityFov avec des commentaire pour chaque ligne, pour cet exemple.
+
+- EN
+The example is as follows: there are two sites in two different languages and on two different brands (RFI_FR, F24_ES). Each of the two sites (RFI_FR, F24_ES) have different section pages, the list of which is contained in the NavActualitesSlugNewsByRegion variable. For each of the section pages for the two sites (RFI_FR, F24_ES), there is also a set of two variables with title_tag and property_tag.
+Can you write, in Python, a Class named UtilityFov with comments for each line, for this example.
+Below the NavActualitesSlugNewsByRegion for RFI_FR, F24_ES.
+
+
+
+For RFI_FR
+var NavActualitesSlugNewsByRegion = [
+                              ['page_afrique', 'afrique/'],
+                              ['page_asie_pacifique','asie-pacifique/'],
+                              ['page_monde','monde/']
+                        ];
+
+For F24_ES
+ var NavActualitesSlugNewsByRegion = [
+                              ['page_france','francia/'],
+                              ['page_europe','europa/'],
+                              ['page_sports','deportes/']
+                        ];
+
+
+- meta
+var MetaStuff = [
+            // title
+            ['title_tag','title', 'RFI - Actualités, info, news en direct - Radio France Internationale'],
+            // property
+            ['property_tag','og:image', 'https://static.rfi.fr/meta_og_twcards/RFI_TW.png'], 
+    ];
+- RFI_FR
+var NavActualitesSlugNewsByRegion = [
+                              ['page_afrique', 'afrique/'],
+                              ['page_ameriques','am%C3%A9riques/'],
+                              ['page_asie_pacifique','asie-pacifique/'],
+                              ['page_europe','europe/'],
+                              ['page_moyen_orient','moyen-orient/'],
+                              ['page_france','france/'],
+                              ['page_monde','monde/']
+                        ];
+
+- F24_ES
+ var NavActualitesSlugNewsByRegion = [
+                              ['page_ameriques', 'am%C3%A9ricas/'],
+                              ['page_france','francia/'],
+                              ['page_europe','europa/'],
+                              ['page_environnement','medioambiente/'],
+                              ['page_sante','salud/'],
+                              ['page_culture','cultura/'],
+                              ['page_economie','econom%C3%ADa/'],
+                              ['page_sports','deportes/']
+                        ];
+                        
+
+
+! OUTPUT query open ai
+
+Sure, here's an example implementation of the UtilityFov class in Python:
+
+'''
+class UtilityFov:
+    def __init__(self, site, region):
+        self.site = site
+        self.region = region
+        self.section_pages = self.get_section_pages()
+        self.title_tag = self.get_title_tag()
+        self.property_tag = self.get_property_tag()
+
+    def get_section_pages(self):
+        if self.site == 'RFI_FR':
+            section_pages = {
+                'page_afrique': 'afrique/',
+                'page_asie_pacifique': 'asie-pacifique/',
+                'page_monde': 'monde/'
+            }
+        elif self.site == 'F24_ES':
+            section_pages = {
+                'page_france': 'francia/',
+                'page_europe': 'europa/',
+                'page_sports': 'deportes/'
+            }
+        else:
+            raise ValueError(f"Invalid site: {self.site}")
+        return section_pages
+
+    def get_title_tag(self):
+        return f"{self.site} {self.region} noticias"
+
+    def get_property_tag(self):
+        return f"{self.site} noticias {self.region}"
+'''
+
+Here's a brief explanation of what each method in this class does:
+
+The __init__ method initializes the UtilityFov object with the given site and region. It also calls the get_section_pages, get_title_tag, and get_property_tag methods to populate the object's section_pages, title_tag, and property_tag attributes.
+
+The get_section_pages method returns a dictionary of section pages for the current site. It checks the site attribute to determine which set of pages to return.
+
+The get_title_tag method returns a string representing the title tag for the current site and region. It concatenates the site and region attributes with the word "noticias" (which means "news" in Spanish and French).
+
+The get_property_tag method returns a string representing the property tag for the current site and region. It concatenates the site, "noticias", and region attributes.
+
+To use this class, you could create a new instance with the desired site and region, like so:
+
+'''
+fov = UtilityFov('RFI_FR', 'afrique/')
+'''
+
+Then, you could access the object's attributes:
+
+'''
+print(fov.section_pages)
+# Output: {'page_afrique': 'afrique/', 'page_asie_pacifique': 'asie-pacifique/', 'page_monde': 'monde/'}
+
+print(fov.title_tag)
+# Output: "RFI_FR afrique/ noticias"
+
+print(fov.property_tag)
+# Output: "RFI_FR noticias afrique/"
+'''
+

@@ -1,0 +1,125 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_class_explained_chatgpt_011_fov.html</br>
+    <script type="text/javascript">
+
+/*
+In javascript, how do you organise the following data in arrays in the most efficient way.
+There are 2 variables brandLang (F24_FR, RFI_ES). Each of the brandLang contains 2 sections 01_page_section, 02_page_section. For each of these 01_page_section, 02_page_section, it loads 2 specific variables for meta:  title and property_tag.
+
+F24_FR
+    01_page_section_F24_FR
+        01_page_section_F24_FR_title, 01_page_section_F24_FR_property_tag
+
+    02_page_section_F24_FR
+        02_page_section_F24_FR_title, 02_page_section_F24_FR_property_tag
+
+RFI_ES
+    01_page_section_RFI_ES
+        01_page_section_RFI_ES_title, 01_page_section_RFI_ES_property_tag
+
+        
+    02_page_section_RFI_ES
+        02_page_section_RFI_ES_title, 02_page_section_RFI_ES_property_tag
+
+
+RFI_FR
+    01_page_section_RFI_FR
+        01_page_section_RFI_FR_title, 01_page_section_RFI_FR_property_tag
+        
+    02_page_section_RFI_FR
+        02_page_section_RFI_FR_title, 02_page_section_RFI_FR_property_tag
+        
+
+MCD_AR
+    01_page_section_MCD_AR
+        01_page_section_MCD_AR_title, 01_page_section_MCD_AR_property_tag
+
+
+    02_page_section_MCD_AR
+        02_page_section_MCD_AR_title, 02_page_section_MCD_AR_property_tag
+
+
+
+// title
+['title_tag','title', 'RFI - Actualités, info, news en direct - Radio France Internationale'],
+// property
+['property_tag','og:image', 'https://static.rfi.fr/meta_og_twcards/RFI_TW.png'], 
+['property_tag','og:locale', 'fr_FR'], 
+['property_tag', 'og:site_name', 'RFI'], 
+            
+
+ */
+
+/* 
+* 
+* brandLang :: F24_FR, RFI_ES, RFI_FR (Default)
+* deviceType :: mobile, tablet, desktop
+* */
+
+
+
+
+/**
+ * One way to organize this data in arrays is to use nested objects. You can create an object for each brandLang, with keys for each section, and values that are objects containing the title and property_tag variables.
+ 
+ * Here's an example code snippet that shows how you can organize the data:
+
+ */
+
+
+
+const data = {
+  F24_FR: {
+    '01_page_section_F24_FR': {
+      title: '01_page_section_F24_FR_title',
+      property_tag: '01_page_section_F24_FR_property_tag'
+    },
+    '02_page_section_F24_FR': {
+      title: '02_page_section_F24_FR_title',
+      property_tag: '02_page_section_F24_FR_property_tag'
+    }
+  },
+  RFI_ES: {
+    '01_page_section_RFI_ES': {
+      title: '01_page_section_RFI_ES_title',
+      property_tag: '01_page_section_RFI_ES_property_tag'
+    },
+    '02_page_section_RFI_ES': {
+      title: '02_page_section_RFI_ES_title',
+      property_tag: '02_page_section_RFI_ES_property_tag'
+    }
+  }
+};
+
+
+/*
+With this structure, you can access the data for a specific brandLang and section using the following syntax:
+
+ */
+
+
+const title = data.F24_FR['01_page_section_F24_FR'].title;
+const propertyTag = data.RFI_ES['02_page_section_RFI_ES'].property_tag;
+
+
+console.log(title);
+console.log(propertyTag);
+
+/*
+This approach makes it easy to access and modify the data, and also allows for easy iteration over the sections for each brandLang using loops.
+*/
+
+
+
+
+
+
+
+
+        
+        
+        
+    </script>
+</body>
+</html>

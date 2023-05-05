@@ -1,0 +1,134 @@
+
+
+--- USE A MINIFIER
+1. Google Closure Compiler
+2. UglifyJS
+3. Microsoft AJAX Minifier
+
+https://kinsta.com/fr/blog/minifier-javascript/
+https://www.upwork.com/resources/javascript-optimization-tips
+
+
+
+
++ CASE_1 EXTEND THE CLASS FILE
+
+! INPUT
+In javascript, how can use a class named "UtilityFov" in a file named "utilityGetStuffForFov.js" with 2 methods named: "getSelectionVerifier", "getDeviceType" then extends this Class "UtilityFov" in another file named "OneUtilityGetStuffForFov.js" that will call the Class "UtilityFov" but extends it with another method name "oneGetSetInitPerBrandLang" ?
+
+! OUTPUT
+
+Here is an example of how you can define, extend, and use classes in JavaScript:
+
+In utilityGetStuffForFov.js:
+
+
+
+class UtilityFov {
+  getSelectionVerifier() {
+    // implementation
+  }
+
+  getDeviceType() {
+    // implementation
+  }
+}
+
+module.exports = UtilityFov;
+
+
+In OneUtilityGetStuffForFov.js:
+
+const UtilityFov = require('./utilityGetStuffForFov');
+
+class OneUtilityGetStuffForFov extends UtilityFov {
+  oneGetSetInitPerBrandLang() {
+    // implementation
+  }
+}
+
+module.exports = OneUtilityGetStuffForFov;
+
+In your main program file, you can then use the UtilityFov and OneUtilityGetStuffForFov classes as follows:
+
+
+const UtilityFov = require('./utilityGetStuffForFov');
+const OneUtilityGetStuffForFov = require('./OneUtilityGetStuffForFov');
+
+const utility = new UtilityFov();
+utility.getSelectionVerifier(); // calls the getSelectionVerifier method
+
+const oneUtility = new OneUtilityGetStuffForFov();
+oneUtility.getSelectionVerifier(); // calls the getSelectionVerifier method inherited from UtilityFov
+oneUtility.oneGetSetInitPerBrandLang(); // calls the oneGetSetInitPerBrandLang method defined in OneUtilityGetStuffForFov
+
+
+Note that the module.exports statement is used to export the classes from their respective files, and the require statement is used to import them into other files.
+
+
+
+
+
+
++ CASE_1 SPLIT THE CLASS FILE
+
+! INPUT
+In javascript, how can we split a file containing class named "UtilityFov" in a file named "utilityGetStuffForFov.js" into multiple files as the file "utilityGetStuffForFov.js" is exceeding the max of 500KB?
+
+! OUTPUT
+To split a file containing a class named "UtilityFov" into multiple files in JavaScript, you can follow these steps:
+
+Create new files: Create new files to split the code into smaller pieces. For example, you can create a file named "UtilityFov.js" and move the "UtilityFov" class into this new file.
+
+Import and Export: Use the import and export statements to access the classes and functions from different files. In the original "utilityGetStuffForFov.js" file, you can export the "UtilityFov" class using the export statement like this:
+
+// utilityGetStuffForFov.js
+export class UtilityFov {
+  // class implementation
+}
+
+
+And then in the new "UtilityFov.js" file, you can import the "UtilityFov" class like this:
+
+
+// UtilityFov.js
+import { UtilityFov } from './utilityGetStuffForFov.js';
+
+// use the UtilityFov class here
+
+
+Repeat for other classes or functions: If there are other classes or functions that are related to the "UtilityFov" class, you can follow the same process to split them into separate files and use import and export statements to access them from other files.
+
+Update file references: Finally, make sure to update any references to the original file in your project's codebase. For example, if there was a reference to the "UtilityFov" class in another file, you will need to update it to import the class from the new "UtilityFov.js" file instead of the original "utilityGetStuffForFov.js" file.
+
+
+
+
+
+
+--- [BABEL] Note: The code generator has deoptimised the styling of /Users/brunoflaven/Documents/02_copy/_cypress_fov_suite_2e2/fov_suite_2e2_working_version_1/cypress/support/utilityGetStuffForFov.js as it exceeds the max of 500KB.
+
+
+/*
+// const OneUtilityGetStuffForFov = require('./OneUtilityGetStuffForFov');
+
+// const UtilityFov = require('./utilityGetStuffForFov');
+
+
+// const oneUtility = new OneUtilityGetStuffForFov();
+
+
+// import UtilityFov from './utilityGetStuffForFov';
+// const UtilityFov = new UtilityFov();
+
+// oneUtility.oneGetSetInitPerBrandLang();
+
+// oneUtility.getSelectionVerifier(); // calls the getSelectionVerifier method inherited from UtilityFov
+// oneUtility.oneGetSetInitPerBrandLang(); // calls the oneGetSetInitPerBrandLang method defined in OneUtilityGetStuffForFov
+ 
+        
+// console.log('\n--- YEP for '+brandLang+' and '+deviceType+' ')
+
+
+
+ */

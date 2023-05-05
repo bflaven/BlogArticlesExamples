@@ -1,0 +1,173 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_class_explained_chatgpt_003_fov.html</br>
+    <script type="text/javascript">
+      
+      class UtilityFov {
+
+        // Define a constructor function that takes in two parameters:
+        // languageCode (string) and brandName (string)
+        constructor(languageCode, brandName) {
+                this.languageCode = languageCode; // Store the language code as a property of the class instance
+                this.brandName = brandName; // Store the brand name as a property of the class instance
+                this.NavActualitesSlugNewsByRegion = null; // Initialize the NavActualitesSlugNewsByRegion property to null
+                this.title_tag = null; // Initialize the title_tag property to null
+                this.property_tag = null; // Initialize the property_tag property to null
+        }// EOF
+
+        // Define a function that sets the NavActualitesSlugNewsByRegion property based on the current language and brand
+        setNavActualitesSlugNewsByRegion() {
+            if (this.languageCode === 'FR' && this.brandName === 'RFI') {
+              this.NavActualitesSlugNewsByRegion = [
+                ['page_afrique', 'afrique/'],
+                ['page_asie_pacifique','asie-pacifique/'],
+                ['page_monde','monde/']
+              ];
+            } else if (this.languageCode === 'ES' && this.brandName === 'F24') {
+              this.NavActualitesSlugNewsByRegion = [
+                ['page_france','francia/'],
+                ['page_europe','europa/'],
+                ['page_sports','deportes/']
+              ];
+            } else {
+              console.error('ERROR :: Unsupported language and brand combination'); // Log an error message if the language and brand combination is not supported
+            }
+        }// EOF
+
+        // Define a function that sets the title_tag and property_tag properties based on the provided section page
+        setTagsForSectionPage(sectionPage) {
+            if (!this.NavActualitesSlugNewsByRegion) {
+              console.error('ERROR :: NavActualitesSlugNewsByRegion property not set'); // Log an error message if the NavActualitesSlugNewsByRegion property is not set
+              return;
+            }
+
+            const matchingSection = this.NavActualitesSlugNewsByRegion.find((section) => section[0] === sectionPage);
+
+            if (!matchingSection) {
+              console.error(`ERROR :: Section page "${sectionPage}" not found in NavActualitesSlugNewsByRegion`); // Log an error message if the section page is not found in the NavActualitesSlugNewsByRegion
+              return;
+            }
+
+            if (this.languageCode === 'FR') {
+              this.title_tag = `Actualités en ${matchingSection[0].replace('_', ' ')}`; // Set the title_tag property for RFI_FR
+              this.property_tag = `https://www.rfi.fr/${matchingSection[1]}`; // Set the property_tag property for RFI_FR
+            } else if (this.languageCode === 'ES') {
+              this.title_tag = `Noticias de ${matchingSection[0].replace('_', ' ')}`; // Set the title_tag property for F24_ES
+              this.property_tag = `https://www.france24.com/es/${matchingSection[1]}`; // Set the property_tag property for F24_ES
+            } else {
+              console.error('ERROR :: Unsupported language'); // Log an error message if the language is not supported
+            }
+        }// EOF
+
+
+        }// EOC
+
+
+
+        /*
+        
+         * 1. Create a new instance of the UtilityFov class by
+         * calling the constructor function and passing in the
+         * required parameters: languageCode and brandName. For
+         * example:
+        */
+        const myUtilityFov = new UtilityFov('FR', 'RFI');
+        
+        /*
+        * 2. Call the setNavActualitesSlugNewsByRegion method on the
+        * myUtilityFov instance to set the NavActualitesSlugNewsByRegion
+        * property based on the current language and brand. For example:
+        */
+        myUtilityFov.setNavActualitesSlugNewsByRegion();
+        
+        /* 
+        * 3. Call the setTagsForSectionPage method on the myUtilityFov instance and
+        * pass in the desired section page as a parameter to set the title_tag and
+        * property_tag properties based on the provided section page. For example:
+        * 
+        *  */
+
+
+        myUtilityFov.setTagsForSectionPage('page_afrique');
+
+        /* 
+        * 4. Use console.log() to print the title_tag 
+        * and property_tag properties 
+        * to the console. For example:
+        * 
+        * */
+
+        console.log('\n--- YEP')
+        console.log(myUtilityFov.title_tag);
+        console.log(myUtilityFov.property_tag);
+      
+        /* 
+        * This should log the following output to the console:
+        * Actualités en page afrique
+        * https://www.rfi.fr/afrique/
+        */
+       
+
+
+        /* 
+        * An example that does not work would be: 
+        * */
+
+        console.log('\n--- NOPE')
+        const myUtilityFov2 = new UtilityFov('MCD', 'AR');
+        myUtilityFov2.setNavActualitesSlugNewsByRegion();
+        myUtilityFov2.setTagsForSectionPage('page_sports');
+        console.log(myUtilityFov2.title_tag);
+        
+        /*
+         *
+         * This would log the error message 
+         * "Unsupported language and brand combination" 
+         * to the console and the title_tag property would be undefined.
+         * 
+         **/
+
+
+
+      /*
+      *
+      * DEPOT
+      * 
+       */
+          
+
+       // const fov = new UtilityFov('FR','RFI');
+        // const fov = new UtilityFov('ES','F24');
+
+        // output
+
+        // console.log('fov :: '+fov)
+
+        // console.log(fov.setNavActualitesSlugNewsByRegion);
+        
+        
+
+        // console.log('fov.NavActualitesSlugNewsByRegion :: '+fov.NavActualitesSlugNewsByRegion) 
+
+        
+/*
+* Examples
+ * RFI_FR
+ * F24_ES
+ * Variables for class
+languageCode :: FR
+brandName :: RFI
+
+const fov = new UtilityFov('FR','RFI');
+const fov = new UtilityFov('ES','F24');
+
+ */
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+
++ OBJECTIVE: 
+- parsing html to scrap content with the help of css selector to elaborate Cypress E2E suite.
+
+
++ COMMANDS: 
+--- JQUERY SELECT ELEMENTS
+$$('body > div.o-header > header > div > h1 > a > span');
+$$('body > div.o-bottom-bar > div:nth-child(1) > div > a');
+$$('body > div.o-bottom-bar > div:nth-child(2) > div > a');
+$$('body > div.o-bottom-bar > div:nth-child(4) > div > button');
+
+- css selectors
+// Logo
+body > div.o-header > header > div > h1 > a > span
+
+// Homepage
+body > div.o-bottom-bar > div:nth-child(1) > div > a
+
+// Podcasts
+body > div.o-bottom-bar > div:nth-child(2) > div > a
+
+// Par région
+body > div.o-bottom-bar > div:nth-child(4) > div > button
+
+--- For RFI_FR only
+// direct  monde
+body > div.o-bottom-bar > div.o-bottom-bar__item.o-bottom-bar__item--live > div:nth-child(1) > div > div > button > span > div
+
+// direct  afrique
+body > div.o-bottom-bar > div.o-bottom-bar__item.o-bottom-bar__item--live > div:nth-child(2) > div > div > button > span > span > svg > path:nth-child(3)
+
+--- other commands
+$$('body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--start > button');
+
+$$('body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--end > button');
+
+// languages selection
+body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--start > button
+
+// settings selection
+body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--end > button
+
+// burger menu
+body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--main.o-header__site-nav-link--desktop-only > button
+
++ LAUNCH CYPRESS:  
+
+- launch cypress
+# go to the dir
+cd /Users/brunoflaven/Documents/01_work/blog_articles/parse_website_testing_front_cypress
+
+# launch Cypress once installed
+npx cypress open
+
+
+
+- install cypress
+# install generate the package.json
+# generated a package.json and node_modules directory
+npm init 
+
+# fill the package.json
+# description: This attempt made for E2E-CYPRESS-FOV, runnings cypress tests on FOV, FMM websites. Better generated a package.json and node_modules directory
+# keywords: cypress, attempt, PO, E2E-CYPRESS-FOV, e2e-cypress-fov
+
+# author: bflaven
+# git: https://github.com/FranceMediasMonde/fov-cypress/
+
+# install the last version
+npm install --save-dev cypress
+
+
+# launch Cypress once installed
+npx cypress open
+
+
+
+- update npm
+npm install -g npm@latest
+
+
+-  resources websites examples
+https://www.rfi.fr/br/
+https://www.france24.com/es/
+
+
+- css selectors
+body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--start
+
+body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--end
+
+body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--main.o-header__site-nav-link--desktop-only
+
+
+#main-content > div
+#main-content > section:nth-child(2)
+#main-content > section:nth-child(3)
+#main-content > section:nth-child(17)
+#site-nav-menu > div:nth-child(2) > div > div > ul
+
+

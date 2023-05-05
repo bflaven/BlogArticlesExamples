@@ -1,0 +1,76 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_parse_001_model.html</br>
+    <script type="text/javascript">
+      
+/*
+
+- og (DONE)
+<meta property="og:image" content="https://static.rfi.fr/meta_og_twcards/RFI_TW.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="RFI">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RFI - Actualités, info, news en direct - Radio France Internationale">
+<meta property="og:description" content="Suivez toute l&#039;information politique, culturelle, sportive en direct et en continu sur RFI. Les dernières informations, news et actualités en France et à l&#039;international.">
+<meta property="og:url" content="https://www.rfi.fr/fr/">
+
+- fb
+<meta property="fb:app_id" content="113191652055439">
+<meta property="fb:pages" content="67334499441">
+
+- twitter
+<meta name="twitter:card" content="summary"><meta name="twitter:site" content="@RFI"><meta name="twitter:creator" content="@RFI">
+
+- seo
+<meta name="keywords" content="homepage,accueil,actualités,news,reportages,radio,dossiers,international,monde,info"><meta name="description" content="Suivez toute l&#039;information politique, culturelle, sportive en direct et en continu sur RFI. Les dernières informations, news et actualités en France et à l&#039;international.">
+
+
+- other
+<meta name="apple-mobile-web-app-title" content="RFI"><meta name="application-name" content="RFI"><meta name="msapplication-TileColor" content="#e2001a"><meta name="theme-color" content="#ffffff"><meta name="apple-mobile-web-app-capable" content="yes">
+ */
+
+
+// Sample HTML code
+// const htmlCode = '<meta property="fb:app_id" content="113191652055439"><meta property="fb:pages" content="67334499441">';
+
+// const htmlCode = '<meta name="twitter:card" content="summary"><meta name="twitter:site" content="@RFI"><meta name="twitter:creator" content="@RFI">';
+
+// const htmlCode = '<meta name="keywords" content="homepage,accueil,actualités,news,reportages,radio,dossiers,international,monde,info"><meta name="description" content="Suivez toute l&#039;information politique, culturelle, sportive en direct et en continu sur RFI. Les dernières informations, news et actualités en France et à l&#039;international.">';
+
+const htmlCode = '<meta name="apple-mobile-web-app-title" content="RFI"><meta name="application-name" content="RFI"><meta name="msapplication-TileColor" content="#e2001a"><meta name="theme-color" content="#ffffff"><meta name="apple-mobile-web-app-capable" content="yes">';
+
+
+// Regular expression pattern to match property and content values
+// const regex = /property="([^"]*)" content="([^"]*)"/g;
+const regex = /name="([^"]*)" content="([^"]*)"/g;
+
+// Initialize empty arrays to store property and content values
+const property_properties = [];
+const content_values = [];
+
+// Loop through all matches of the regex pattern and push the values into the corresponding arrays
+let match;
+while ((match = regex.exec(htmlCode)) !== null) {
+  // property_values.push(match[1]);
+  // content_values.push(match[2]);
+  property_properties.push('\''+match[1]+'\'');
+  content_values.push('\''+match[2]+'\'');
+
+}
+
+// Output the arrays to the console
+// console.log(property_values); // ["og:image", "og:locale", "og:site_name", "og:type", "og:title", "og:description", "og:url"]
+// console.log(content_values); // ["https://static.rfi.fr/meta_og_twcards/RFI_TW.png", "fr_FR", "RFI", "website", "RFI - Actualités, info, news en direct - Radio France Internationale", "Suivez toute l'information politique, culturelle, sportive en direct et en continu sur RFI. Les dernières informations, news
+
+
+console.log('property_properties = ['+property_properties+']')
+console.log('content_values = ['+content_values+']')
+
+/*
+
+
+
+ */
+    </script>
+</body>
+</html>

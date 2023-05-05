@@ -1,0 +1,204 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_parse_001_model.html</br>
+    <script type="text/javascript">
+      
+/*
+
+<meta property="og:image" content="https://static.rfi.fr/meta_og_twcards/RFI_TW.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="RFI">
+<meta property="og:type" content="website">
+<meta property="og:title" content="L&#039;actualité économique et politique en Afrique et au Maghreb en direct - RFI">
+<meta property="og:description" content="Suivez l&#039;actualité en direct dédiée au continent africain - Les derniers reportages, news et informations au Maghreb, Sahel, Afrique centrale et de l&#039;Ouest">
+<meta property="og:url" content="https://www.rfi.fr/fr/afrique/">
+<meta property="fb:app_id" content="113191652055439">
+<meta property="fb:pages" content="67334499441">
+<meta name="description" content="Suivez l&#039;actualité en direct dédiée au continent africain - Les derniers reportages, news et informations au Maghreb, Sahel, Afrique centrale et de l&#039;Ouest">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@RFI">
+<meta name="twitter:creator" content="@RFI">
+<meta name="keywords" content="Afrique,information,actualités,news,Maghreb,Sahel,Congo,Algérie,Maroc,Soudan,Lybie,Egypte,Nigeria,Mauritanie">
+<meta name="apple-mobile-web-app-title" content="RFI">
+<meta name="application-name" content="RFI">
+<meta name="msapplication-TileColor" content="#e2001a">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+ */
+
+
+// Sample HTML code
+
+const htmlCode = '<meta property="og:image" content="https://static.rfi.fr/meta_og_twcards/RFI_TW.png"><meta property="og:locale" content="fr_FR"><meta property="og:site_name" content="RFI"><meta property="og:type" content="website"><meta property="og:title" content="L&#039;actualité économique et politique en Afrique et au Maghreb en direct - RFI"><meta property="og:description" content="Suivez l&#039;actualité en direct dédiée au continent africain - Les derniers reportages, news et informations au Maghreb, Sahel, Afrique centrale et de l&#039;Ouest"><meta property="og:url" content="https://www.rfi.fr/fr/afrique/"><meta property="fb:app_id" content="113191652055439"><meta property="fb:pages" content="67334499441"><meta name="description" content="Suivez l&#039;actualité en direct dédiée au continent africain - Les derniers reportages, news et informations au Maghreb, Sahel, Afrique centrale et de l&#039;Ouest"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@RFI"><meta name="twitter:creator" content="@RFI"><meta name="keywords" content="Afrique,information,actualités,news,Maghreb,Sahel,Congo,Algérie,Maroc,Soudan,Lybie,Egypte,Nigeria,Mauritanie"><meta name="apple-mobile-web-app-title" content="RFI"><meta name="application-name" content="RFI"><meta name="msapplication-TileColor" content="#e2001a"><meta name="theme-color" content="#ffffff"><meta name="apple-mobile-web-app-capable" content="yes">';
+
+
+// Regular expression pattern to match property and content values
+const regex = /property="([^"]*)" content="([^"]*)"/g;
+// const regex = /name="([^"]*)" content="([^"]*)"/g;
+
+// Initialize empty arrays to store property and content values
+const property_properties = [];
+const content_values = [];
+
+// Loop through all matches of the regex pattern and push the values into the corresponding arrays
+let match;
+while ((match = regex.exec(htmlCode)) !== null) {
+  // property_values.push(match[1]);
+  // content_values.push(match[2]);
+  property_properties.push('\''+match[1]+'\'');
+  content_values.push('\''+match[2]+'\'');
+
+}
+
+// Output the arrays to the console
+// console.log(property_values); // ["og:image", "og:locale", "og:site_name", "og:type", "og:title", "og:description", "og:url"]
+// console.log(content_values); // ["https://static.rfi.fr/meta_og_twcards/RFI_TW.png", "fr_FR", "RFI", "website", "RFI - Actualités, info, news en direct - Radio France Internationale", "Suivez toute l'information politique, culturelle, sportive en direct et en continu sur RFI. Les dernières informations, news
+
+
+// console.log('property_properties = ['+property_properties+']')
+// console.log('content_values = ['+content_values+']')
+
+/*
+
+// Set_1 for property_properties
+set_1_property_properties = ['og:image','og:locale','og:site_name','og:type','og:title','og:description','og:url','fb:app_id','fb:pages']
+
+
+// Set_2 for property_properties
+set_2_property_properties = ['description','twitter:card','twitter:site','twitter:creator','keywords','apple-mobile-web-app-title','application-name','msapplication-TileColor','theme-color','apple-mobile-web-app-capable']
+
+
+// Set_1 for content_values
+set_1_content_values = ['https://static.rfi.fr/meta_og_twcards/RFI_TW.png','fr_FR','RFI','website','L&#039;actualité économique et politique en Afrique et au Maghreb en direct - RFI','Suivez l&#039;actualité en direct dédiée au continent africain - Les derniers reportages, news et informations au Maghreb, Sahel, Afrique centrale et de l&#039;Ouest','https://www.rfi.fr/fr/afrique/','113191652055439','67334499441']
+
+// Set_2 for content_values
+set_2_content_values = ['Suivez l&#039;actualité en direct dédiée au continent africain - Les derniers reportages, news et informations au Maghreb, Sahel, Afrique centrale et de l&#039;Ouest','summary','@RFI','@RFI','Afrique,information,actualités,news,Maghreb,Sahel,Congo,Algérie,Maroc,Soudan,Lybie,Egypte,Nigeria,Mauritanie','RFI','RFI','#e2001a','#ffffff','yes']
+
+
+
+
+
+
+
+
+# query_ai_js_1
+
+Can you write the code in javascript that merge two arrays...
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const mergedArray = array1.concat(array2);
+console.log(mergedArray); // Output: [1, 2, 3, 4, 5, 6]
+
+
+
+
+ */
+
+// Example_1
+/*
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const mergedArray = array1.concat(array2);
+// console.log(mergedArray); // Output: [1, 2, 3, 4, 5, 6]
+console.log('merged_array = ['+mergedArray+']')
+*/
+
+// Set_1 for property_properties
+set_1_property_properties = ['og:image','og:locale','og:site_name','og:type','og:title','og:description','og:url','fb:app_id','fb:pages']
+
+
+// Set_2 for property_properties
+set_2_property_properties = ['description','twitter:card','twitter:site','twitter:creator','keywords','apple-mobile-web-app-title','application-name','msapplication-TileColor','theme-color','apple-mobile-web-app-capable']
+
+// const mergedArray = set_1_property_properties.concat(set_2_property_properties);
+// console.log('property_properties = ['+mergedArray+']')
+
+// property_properties = [og:image,og:locale,og:site_name,og:type,og:title,og:description,og:url,fb:app_id,fb:pages,description,twitter:card,twitter:site,twitter:creator,keywords,apple-mobile-web-app-title,application-name,msapplication-TileColor,theme-color,apple-mobile-web-app-capable]
+
+// Set_1 for content_values
+set_1_content_values = ['https://static.rfi.fr/meta_og_twcards/RFI_TW.png','fr_FR','RFI','website','L&#039;actualité économique et politique en Afrique et au Maghreb en direct - RFI','Suivez l&#039;actualité en direct dédiée au continent africain - Les derniers reportages, news et informations au Maghreb, Sahel, Afrique centrale et de l&#039;Ouest','https://www.rfi.fr/fr/afrique/','113191652055439','67334499441']
+
+// Set_2 for content_values
+set_2_content_values = ['Suivez l&#039;actualité en direct dédiée au continent africain - Les derniers reportages, news et informations au Maghreb, Sahel, Afrique centrale et de l&#039;Ouest','summary','@RFI','@RFI','Afrique,information,actualités,news,Maghreb,Sahel,Congo,Algérie,Maroc,Soudan,Lybie,Egypte,Nigeria,Mauritanie','RFI','RFI','#e2001a','#ffffff','yes']
+
+
+// const mergedArray = set_1_content_values.concat(set_2_content_values);
+// console.log('content_values = ['+mergedArray+']')
+
+
+// content_values = [https://static.rfi.fr/meta_og_twcards/RFI_TW.png,fr_FR,RFI,website,L&#039;actualité économique et politique en Afrique et au Maghreb en direct - RFI,Suivez l&#039;actualité en direct dédiée au continent africain - Les derniers reportages, news et informations au Maghreb, Sahel, Afrique centrale et de l&#039;Ouest,https://www.rfi.fr/fr/afrique/,113191652055439,67334499441,Suivez l&#039;actualité en direct dédiée au continent africain - Les derniers reportages, news et informations au Maghreb, Sahel, Afrique centrale et de l&#039;Ouest,summary,@RFI,@RFI,Afrique,information,actualités,news,Maghreb,Sahel,Congo,Algérie,Maroc,Soudan,Lybie,Egypte,Nigeria,Mauritanie,RFI,RFI,#e2001a,#ffffff,yes]
+
+
+
+
+/* recreate the array */
+
+/* recreate the array */
+
+var property_properties_array = ['og:image','og:locale','og:site_name','og:type','og:title','og:description','og:url','fb:app_id','fb:pages','description','twitter:card','twitter:site','twitter:creator','keywords','apple-mobile-web-app-title','application-name','msapplication-TileColor','theme-color','apple-mobile-web-app-capable'];
+
+
+var content_values_array = [
+'https://static.rfi.fr/meta_og_twcards/RFI_TW.png',
+'fr_FR',
+'RFI',
+'website',
+'L&#039;actualité économique et politique en Afrique et au Maghreb en direct - RFI',
+'L&#039;actualité économique et politique en Afrique et au Maghreb en direct - RFI,Suivez l&#039;actualité en direct dédiée au continent africain - Les derniers reportages, news et informations au Maghreb, Sahel, Afrique centrale et de l&#039;Ouest',
+'https://www.rfi.fr/fr/afrique/',
+'113191652055439',
+'67334499441',
+'Suivez l&#039;actualité en direct dédiée au continent africain - Les derniers reportages, news et informations au Maghreb, Sahel, Afrique centrale et de l&#039;Ouest',
+'summary',
+'@RFI',
+'@RFI',
+'Afrique,information,actualités,news,Maghreb,Sahel,Congo,Algérie,Maroc,Soudan,Lybie,Egypte,Nigeria,Mauritanie',
+'RFI',
+'RFI',
+'#e2001a',
+'#ffffff',
+'yes'
+   ];
+
+/*
+<meta property="og:image" content="https://static.rfi.fr/meta_og_twcards/RFI_TW.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="RFI">
+<meta property="og:type" content="website">
+<meta property="og:title" content="L&#039;actualité économique et politique en Afrique et au Maghreb en direct - RFI">
+<meta property="og:description" content="Suivez l&#039;actualité en direct dédiée au continent africain - Les derniers reportages, news et informations au Maghreb, Sahel, Afrique centrale et de l&#039;Ouest">
+<meta property="og:url" content="https://www.rfi.fr/fr/afrique/">
+<meta property="fb:app_id" content="113191652055439">
+<meta property="fb:pages" content="67334499441">
+<meta name="description" content="Suivez l&#039;actualité en direct dédiée au continent africain - Les derniers reportages, news et informations au Maghreb, Sahel, Afrique centrale et de l&#039;Ouest">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@RFI">
+<meta name="twitter:creator" content="@RFI">
+<meta name="keywords" content="Afrique,information,actualités,news,Maghreb,Sahel,Congo,Algérie,Maroc,Soudan,Lybie,Egypte,Nigeria,Mauritanie">
+<meta name="apple-mobile-web-app-title" content="RFI">
+<meta name="application-name" content="RFI">
+<meta name="msapplication-TileColor" content="#e2001a">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+*/
+
+// console.log('property_properties_array.length :: '+property_properties_array.length);
+// console.log('content_values_array.length :: '+content_values_array.length);
+
+
+   property_properties_array.forEach((value, index) => {
+
+            console.log('--- index :: '+index);
+            console.log('--- value :: '+value);
+            console.log('--- put :: '+content_values_array[index]);
+           
+            
+
+          });
+     
+    </script>
+</body>
+</html>

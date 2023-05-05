@@ -1,0 +1,271 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_class_explained_chatgpt_009_fov.html</br>
+    <script type="text/javascript">
+
+/*
+In javascript, how do you organise the following data in arrays in the most efficient way.
+There are 2 variables brandLang (F24_FR, RFI_ES). Each of the brandLang contains 2 sections 01_page_section, 02_page_section. For each of these 01_page_section, 02_page_section, it loads 2 specific variables for meta:  title and property_tag.
+
+F24_FR
+    01_page_section_F24_FR
+        01_page_section_F24_FR_title, 01_page_section_F24_FR_property_tag
+
+    02_page_section_F24_FR
+        02_page_section_F24_FR_title, 02_page_section_F24_FR_property_tag
+
+RFI_ES
+    01_page_section_RFI_ES
+        01_page_section_RFI_ES_title, 01_page_section_RFI_ES_property_tag
+
+        
+    02_page_section_RFI_ES
+        02_page_section_RFI_ES_title, 02_page_section_RFI_ES_property_tag
+
+
+RFI_FR
+    01_page_section_RFI_FR
+        01_page_section_RFI_FR_title, 01_page_section_RFI_FR_property_tag
+        
+    02_page_section_RFI_FR
+        02_page_section_RFI_FR_title, 02_page_section_RFI_FR_property_tag
+        
+
+MCD_AR
+    01_page_section_MCD_AR
+        01_page_section_MCD_AR_title, 01_page_section_MCD_AR_property_tag
+
+
+    02_page_section_MCD_AR
+        02_page_section_MCD_AR_title, 02_page_section_MCD_AR_property_tag
+
+
+
+// title
+['title_tag','title', 'RFI - Actualités, info, news en direct - Radio France Internationale'],
+// property
+['property_tag','og:image', 'https://static.rfi.fr/meta_og_twcards/RFI_TW.png'], 
+['property_tag','og:locale', 'fr_FR'], 
+['property_tag', 'og:site_name', 'RFI'], 
+            
+
+ */
+
+/* 
+* 
+* brandLang :: F24_FR, RFI_ES, RFI_FR (Default)
+* deviceType :: mobile, tablet, desktop
+* */
+
+
+
+// variables coming  from  allValues.js
+// var coming from .env
+// let brandLang = globalValues.BRAND_LANG;
+// let deviceType = globalValues.DEVICE_TYPE;
+
+// let brandLang;
+// let deviceType;
+
+// let brandLang = 'RFI_FR';
+// let deviceType = 'desktop';
+
+// let brandLang = 'RFI_ES';
+// let deviceType = 'tablet';
+
+// let brandLang = 'F24_FR';
+// let deviceType = 'mobile';
+
+let brandLang = 'MCD_AR';
+let deviceType = 'mobile';
+
+// UtilityFov.js
+
+class UtilityFov {
+  #brandLang;
+  #deviceType;
+
+
+    constructor() {
+        if (typeof brandLang === 'undefined') {
+        throw new Error('ERROR :: Brand language must be defined in allValues.js');
+        }//EOE
+      
+      if (typeof deviceType === 'undefined') {
+        throw new Error('ERROR :: Device type must be defined in allValues.js');
+
+      }//EOE
+
+      this.#brandLang = brandLang;
+      this.#deviceType = deviceType;
+    }//EOE
+
+    // Other methods of the UtilityFov class go here
+    getDeviceType() {
+      
+      // return this.#deviceType;
+      switch (this.#deviceType) {
+
+            case 'mobile':
+                
+                
+                var userAgent = 'iphone-6';
+                var userAgentOrientation = 'portrait'; // portrait or landscape
+                var viewportWidth = 375;
+                var viewportHeight = 667;
+                
+                return {userAgent,userAgentOrientation,viewportWidth,viewportHeight};
+               
+
+            case 'tablet':
+                
+                var userAgent = 'ipad-2';
+                var userAgentOrientation = 'landscape'; // portrait or landscape
+                var viewportWidth = 768;
+                var viewportHeight = 1024;
+                
+                return {userAgent,userAgentOrientation,viewportWidth,viewportHeight};
+               
+                
+
+            // Default is desktop
+            default:
+                // desktop
+                var userAgent = 'macbook-13';
+                var userAgentOrientation = 'portrait'; // useless
+                var viewportWidth = 1280;
+                var viewportHeight = 800;
+
+                
+
+                return {userAgent,userAgentOrientation,viewportWidth,viewportHeight};
+                
+
+
+            }// EOS
+
+    }// EOF
+
+    getSetInitPerBrandLang() {
+        // let brandLang = Cypress.env('BRAND_LANG');
+
+    switch (this.#brandLang) { 
+
+      case 'F24_FR':
+        
+        var fakeVar = 'fakeVara_'+brandLang;
+
+        return {brandLang, fakeVar};
+
+        break;
+      case 'RFI_ES':
+
+        var fakeVar = 'fakeVara_'+brandLang;
+        
+        return {brandLang, fakeVar};
+
+        break;
+      case 'MCD_AR':
+        
+        var fakeVar = 'fakeVara_'+brandLang;
+        
+        return {brandLang, fakeVar};
+
+        break;
+      
+      // RFI_FR (Default)
+      default:
+        
+        var fakeVar = 'fakeVara_'+brandLang;
+
+        const MetaStuffData = {
+          page_france: [
+            ['page_france','france/'], 
+            ['page_afrique', 'afrique/']
+          ],
+          page_afrique: [
+            ['page_france', 'francia/'], 
+            ['page_europe', 'europa/']
+          ]
+        };
+
+        return {brandLang, fakeVar, MetaStuffData};
+               
+
+        break;
+    }
+                    
+        }// EOF
+
+}//EOC
+ 
+
+ 
+
+        console.log('\n--- YEP for '+brandLang+' and '+deviceType+' ')
+
+        /* V2 */
+        const myUtilityFov = new UtilityFov(brandLang);        
+        console.log(myUtilityFov.getDeviceType(deviceType));
+        
+        console.log(myUtilityFov.getSetInitPerBrandLang(brandLang));
+ 
+
+
+
+
+
+
+
+
+
+/*
+setNavActualitesSlugNewsByRegion() {
+            if (this.languageCode === 'FR' && this.brandName === 'RFI') {
+              this.NavActualitesSlugNewsByRegion = [
+                ['page_afrique', 'afrique/'],
+                ['page_asie_pacifique','asie-pacifique/'],
+                ['page_monde','monde/']
+              ];
+            } else if (this.languageCode === 'ES' && this.brandName === 'F24') {
+              this.NavActualitesSlugNewsByRegion = [
+                ['page_france','francia/'],
+                ['page_europe','europa/'],
+                ['page_sports','deportes/']
+              ];
+            } else {
+              console.error('ERROR :: Unsupported language and brand combination'); // Log an error message if the language and brand combination is not supported
+            }
+        }// EOF
+
+
+  getSetInitPerBrandLang() {
+    switch (this.#brandLang) { // use switch to expose different cases based on brandLang
+      case 'en':
+        // logic for en language
+        
+        break;
+      case 'fr':
+        // logic for fr language
+        
+        break;
+      case 'de':
+        // logic for de language
+        
+        break;
+      default:
+        // default logic
+        
+
+
+        break;
+    }
+  }//EOF
+
+ */
+        
+        
+        
+    </script>
+</body>
+</html>

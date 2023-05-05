@@ -1,0 +1,2043 @@
+
++ 1. QUERY OPENAI 
+
+- QUERY_1 :: In JavaScript, write down a variable named  randomPaginationTag that can take only a random number between 10 to 15
+
+--- ANWSER_1
+
+let randomPaginationTag = Math.floor(Math.random() * 6) + 10;
+
+
+- QUERY_2 :: In Cypress, write down a script that grab the href value from a link that selected with this css selector "#main-content > section > div.t-content__list-content > div > div:nth-child(1) > div > a" and return this value in a variable named href_extracted into the cypress console like cy.log(href_extracted)
+
+---  ANWSER_2
+describe('Example Test', () => {
+  it('should extract href value from a link', () => {
+    cy.visit('https://www.example.com')
+
+    cy.get('#main-content > section > div.t-content__list-content > div > div:nth-child(1) > div > a')
+      .invoke('attr', 'href')
+      .as('href_extracted')
+
+    cy.get('@href_extracted')
+      .then((href) => {
+        cy.log(href)
+      })
+  })
+})
+
+- QUERY_3 :: In Cypress, rewrite the script so it enable to use the varibale href_extracted_value outside the scope of the extraction like describe below: 
+
+---  ANWSER_3
+let front_url = globalValues.FOV_FULL_DOMAIN+globalValues.SHORTY_FOV_GET_TAG_SLUG+randomPaginationTag+globalValues.SHORTY_FOV__GET_TAG_SLUG_PAGER;
+
+        cy.visit(''+front_url+'')
+        cy.origin(''+front_url+'', () => {
+            cy.get('#didomi-notice-agree-button > span', {timeout: 10000}).click({force: true})
+
+
+            cy.get('#main-content > section > div.t-content__list-content > div > div:nth-child(1) > div > a')
+              .invoke('attr', 'href')
+              .as('href_extracted')
+
+              cy.get('@href_extracted')
+              .then((href) => {
+              // cy.log(href)
+              let href_extracted_value = href
+
+            })
+        })
+
+        cy.visit(globalValues.BACH_FULL_DOMAIN)
+        cy.wait(globalValues.contentTimerDraft)
+        cy.log('\n---' + href_extracted_value)
+
+- QUERY_4 :: In cypress, at the bottom of the script, I cannot access to the variable href_extracted_value can you fix this ?
+
+
+---  ANWSER_4
+let href_extracted_value;
+        let front_url = globalValues.FOV_FULL_DOMAIN+globalValues.SHORTY_FOV_GET_TAG_SLUG+randomPaginationTag+globalValues.SHORTY_FOV__GET_TAG_SLUG_PAGER;
+
+        cy.visit(''+front_url+'')
+        cy.origin(''+front_url+'', () => {
+            cy.get('#didomi-notice-agree-button > span', {timeout: 10000}).click({force: true})
+
+            cy.get('#main-content > section > div.t-content__list-content > div > div:nth-child(1) > div > a')
+              .invoke('attr', 'href')
+              .as('href_extracted')
+
+              cy.get('@href_extracted')
+              .then((href) => {
+                // cy.log(href)
+                href_extracted_value = href
+              })
+        })
+
+        cy.visit(globalValues.BACH_FULL_DOMAIN)
+        cy.wait(globalValues.timerNavigation)
+        cy.log('\n--- href_extracted_value :: ' + href_extracted_value)
+        cy.get('#find_url_url').type( globalValues.FOV_FULL_DOMAIN + href_extracted_value);
+        cy.get('#find_url_submit', {timeout: 10000}).click({force: true})
+        cy.wait(globalValues.timerNavigation)
+
+
+- QUERY_4 :: integrate the device notion 
+--- mobile, mobile-landscape, tablet, tablet-landscape, desktop, default
+
+--- HUMAN ANSWER :)
+npx cypress open --env BRAND_LANG="F24_FR",DEVICE_TYPE="mobile" --config-file "config/RFI_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress open --env BRAND_LANG="RFI_FR",DEVICE_TYPE="desktop" --config-file "config/RFI_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+! SOURCE CHECK THE MOBILE/TABLET/DESKTOP ISSUE
+https://maxschmitt.me/posts/cypress-testing-mobile-tablet-desktop
+
+
+
+! COMMAND
+
+# go to the dir
+cd /Users/brunoflaven/Documents/02_copy/_cypress_fov_suite_2e2/fov_suite_2e2_working_version_1
+
+- default
+RFI_FR
+npx cypress open
+
+
++ LIST
+- 001_cypress_fov_main_navigation.cy.js
+001_1  @sections @main @html @zone @enumeration ::  HTML OPTIMIZATION ZONING (FovCodeHtmlOptimizationStructure)
+
+- 002_cypress_fov_xxx.cy.js
+001_2  @player @main @actions :: FULL PLAYER HEADER ACTIONS BUTTONS (FullPlayerHeaderActionsButtons)
+
+- 003_cypress_fov_xxx.cy.js
+001_3  @player @main @actions :: PLAYER HEADER ACTIONS BUTTONS (FovMainNavLinksLanguagesSelectionClick, FovMainNavLinksSettingsSelection)
+
+- 004_cypress_fov_xxx.cy.js
+001_4 @burger @menu @main @actions :: BURGER MENU HEADER LINKS (FovMainNavLinksBurgerMenu)
+
+- 005_cypress_fov_xxx.cy.js
+001_5  @navigation @page @section @slug :: CHECK SLUGS (FovMainNavLinksBurgerMenuSlug) 
+
+- 006_cypress_fov_xxx.cy.js
+001_6  @meta @html @code @social @mobile :: CHECK META-DATA CODE (FovCodeHtmlOptimizationStructureCheckMeta)
+
+
+- 007_cypress_fov_xxx.cy.js
+001_7 @seo @page @section @slug :: CHECK SLUGS SEO (FovMainNavLinksBurgerMenuSlugSeo)
+
+- 008_cypress_fov_xxx.cy.js
+001_8 @web_vitals @performance :: Web Vitals :: SHOULD PASS THE AUDITS
+
+
+
+! ADD TO THE FOV E2E SUITE
+
+- 1. WEB-VITALS-CYPRESS
+
+1. npm install --save-dev cypress-web-vitals cypress-real-events
+2. Import to /cypress/support/e2e.js
+
+// Web Vitals
+// Source: https://web.dev/vitals/
+import "cypress-web-vitals";
+
+
+
+--- Source: https://www.npmjs.com/package/cypress-web-vitals
+--- Source: https://dev.to/craigmorten/web-vitals-cypress-testing-3bpj
+
+- 2. PERFORMANCE-TESTS-CYPRESS LIGHTHOUSE
+
+1. npm install --force cypress-lighthouse
+2. Import to /cypress/support/e2e.js
+
+3. npm uninstall --save-dev cypress-lighthouse
+4. npm uninstall --force cypress-lighthouse
+4. npm uninstall --force cypress-audit
+5. npm uninstall --force cypress-audit/lighthouse
+6. npm uninstall --force cypress-audit/pa11y
+
+
+"@cypress-audit/lighthouse": "^1.3.1",
+"@cypress-audit/pa11y": "^1.3.1",
+
+
+--- Source : https://spin.atomicobject.com/2021/04/21/writing-performance-tests-cypress/
+
+
+! TESTING cy.FovMainNavLinksBurgerMenuSlugSeo()
+
+--- possible code
+const url = 'https://www.xxx/xxxx/xxx/1234'
+const slug = url.split('/').pop()
+expect(slug).to.eq('1234')    // ok
+
+
+- FLE (DONE)
++--- FLE_FR
++--- FLE_AR
++--- FLE_BR
++--- FLE_CN
++--- FLE_EN
++--- FLE_ES
++--- FLE_RU
+
+npx cypress open --env BRAND_LANG="FLE_RU",DEVICE_TYPE="desktop" --config-file "config/FLE_RU.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+- OBS (DONE)
++--- OBS_FR
++--- OBS_EN
++--- OBS_AR
++--- OBS_FA
+
+npx cypress open --env BRAND_LANG="OBS_AR",DEVICE_TYPE="desktop" --config-file "config/OBS_AR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+- MCD (DONE)
++ --- MCD_AR
+
+npx cypress open --env BRAND_LANG="MCD_AR",DEVICE_TYPE="desktop" --config-file "config/MCD_AR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+- F24 (DONE)
++--- F24_FR
++--- F24_EN
++--- F24_ES
++--- F24_AR
+
+npx cypress open --env BRAND_LANG="F24_FR",DEVICE_TYPE="desktop" --config-file "config/F24_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+- RFI (DONE)
+--- RFI_FR
+--- RFI_BR 
+--- RFI_CN
+--- RFI_EN
+--- RFI_ES 
+--- RFI_FA
+--- RFI_FF  
+--- RFI_HA
+--- RFI_KM
+--- RFI_MA
+--- RFI_PT
+--- RFI_RO
+--- RFI_RU
+--- RFI_SW
+--- RFI_TW 
+--- RFI_UK
+--- RFI_VI
+
+npx cypress open --env BRAND_LANG="RFI_RU",DEVICE_TYPE="desktop" --config-file "config/RFI_RU.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
++ KEEP AHEAD
+! LAUNCH
+- launch cypress
+
++ 03/23 ACTIVE TESTING BRANDS :: F24_FR, RFI_ES, RFI_FR (Default)
+
+
+
+--- # go to the dir
+cd /Users/brunoflaven/Documents/02_copy/_cypress_fov_suite_2e2/fov_suite_2e2_working_version_1/
+
+--- # launch Cypress once installed
+npx cypress open
+
+
+
+
+! 2. NICE-TO-HAVE (seo and capture)
++ DONE :: TODO_1 ::  Add a test on the slug when visiting each page to verify the slug, validate the SEO and de facto the fov_parameter without postman test.
+--- Add to this function FovMainNavLinksBurgerMenuSlug()
+- Add fov_seo.js and FovMainNavLinksBurgerMenuSlugSeo
+
++ DONE :: TODO_2 ::  Add a capture when visiting each page for a possible visual human check to validate the SEO and de facto the fov_parameter without postman test.
+--- Add capture to this function FovMainNavLinksBurgerMenuSlug (done)
+
+
+cy.(fileName)
+
+! ALL TESTS
+- RFI
+--- RFI_FR :: FLAWLESS
+
+npx cypress open --env BRAND_LANG="RFI_FR",DEVICE_TYPE="mobile" --config-file "config/RFI_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+npx cypress open --env BRAND_LANG="RFI_FR",DEVICE_TYPE="desktop" --config-file "config/RFI_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress open --env BRAND_LANG="RFI_ES",DEVICE_TYPE="desktop" --config-file "config/RFI_ES.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+
+
+- F24
+--- F24_FR :: FLAWLESS 04/04/23
+npx cypress open --env BRAND_LANG="F24_FR",DEVICE_TYPE="desktop" --config-file "config/F24_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress run --env BRAND_LANG="F24_ES",DEVICE_TYPE="desktop" --config-file "config/F24_ES.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress run --env BRAND_LANG="F24_AR",DEVICE_TYPE="desktop" --config-file "config/F24_AR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress run --env BRAND_LANG="F24_EN",DEVICE_TYPE="desktop" --config-file "config/F24_EN.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+! 001_1 (OK)
+! 001_2 (OK)
+! 001_3 (OK)
+
+
+- OBS
+--- OBS_FR  :: FLAWLESS 04/04/23
+--- OBS_FR, OBS_AR, OBS_EN, OBS_FA
+
+npx cypress open --env BRAND_LANG="OBS_FR",DEVICE_TYPE="desktop" --config-file "config/OBS_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+npx cypress open --env BRAND_LANG="OBS_FA",DEVICE_TYPE="desktop" --config-file "config/OBS_FA.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+! 001_2 (OK)
+! 001_3 (OK)
+
+
+- FLE
+--- FLE_ES :: FLAWLESS 04/04/23
+--- FLE_ES, FLE_FR, FLE_BR, FLE_CN
+npx cypress open --env BRAND_LANG="FLE_RU",DEVICE_TYPE="desktop" --config-file "config/FLE_RU.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+! 001_2 (OK)
+! 001_3 (OK)
+
+
+- MCD
+--- MCD_AR  :: FLAWLESS 04/04/23
+npx cypress open --env BRAND_LANG="MCD_AR",DEVICE_TYPE="desktop" --config-file "config/MCD_AR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+! 001_2 (OK)
+! 001_3 (OK)
+
++ HTML OPTIMIZATION 
+
+
+- REFINE NAV WORK with var in 
+
+-FLE
+-+ FLE_FR
++ FLE_AR
+-+ FLE_BR
++ FLE_CN
++ FLE_EN
++ FLE_ES
+-+ FLE_RU
+
+npx cypress open --env BRAND_LANG="FLE_ES",DEVICE_TYPE="desktop" --config-file "config/FLE_ES.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+- OBS
+--- + OBS_FR
+--- + OBS_EN
+--- + OBS_AR
+--- + OBS_FA
+
+
+npx cypress open --env BRAND_LANG="OBS_FA",DEVICE_TYPE="desktop" --config-file "config/OBS_FA.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+- MCD (DONE)
+
+--- MCD_AR
+npx cypress open --env BRAND_LANG="MCD_AR",DEVICE_TYPE="desktop" --config-file "config/MCD_AR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+- F24 (DONE)
+--- F24_FR
+--- F24_EN
+--- F24_ES
+--- F24_AR
+
+
+
+
+npx cypress open --env BRAND_LANG="F24_AR",DEVICE_TYPE="desktop" --config-file "config/F24_AR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+/**
+*
+* *** HTML OPTIMIZATION ***
+* */
+
+NavActualitesSlugNewsByRegionTestingZoning: [
+        ['homepage', '', 2, 17],
+        ['page_france', 'france/', 4, 11],
+        ['page_afrique', 'afrique/', 4, 11],
+        ['page_moyen_orient', 'moyen-orient/', 4, 11], 
+        ['page_europe', 'europe/', 4, 11],
+        ['page_ameriques', 'am%C3%A9riques/', 4, 11],
+        ['page_asie_pacifique', 'asie-pacifique/', 4, 11]
+    ],
+
+
+
+
+- RFI (DONE)
+--- RFI_FR
+--- RFI_BR 
+--- RFI_CN
+--- RFI_EN
+--- RFI_ES 
+--- RFI_FA
+--- RFI_FF  
+--- RFI_HA
+--- RFI_KM
+--- RFI_MA
+--- RFI_PT
+--- RFI_RO
+--- RFI_RU
+--- RFI_SW
+--- RFI_TW 
+! RFI_UK
+--- RFI_VI
+
+npx cypress open --env BRAND_LANG="RFI_PT",DEVICE_TYPE="desktop" --config-file "config/RFI_PT.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+#main-content > section:nth-child(2)
+
+/**
+*
+* *** HTML OPTIMIZATION ***
+* */
+
+NavActualitesSlugNewsByRegionTestingZoning: [
+        ['homepage', '', 1, 5],
+        ['page_france', 'fran%C3%A7a/', 3, 8],
+        ['page_bresil', 'brasil/', 3, 8],
+        ['page_amerique', 'am%C3%A9ricas/', 3, 8],
+        ['page_monde', 'mundo/', 3, 8],
+        ['page_culture', 'cultura/', 3, 8],
+        ['page_sciences', 'ci%C3%AAncias/', 3, 8]
+    ],
+
+
+
+
+! 1. ERRORS
+
+
++ ERREUR_1 sur le site RFI_MA, liens podcasts dans player par vers la page podcasts de RFI_VI
+--- OK https://www.rfi.fr/ma/j%C9%9Bmukanw/; --- KO https://www.rfi.fr/vi/t%E1%BA%A1p-ch%C3%AD/
+
++ ERREUR_2 sur le site RFI_CN, 视频, #site-nav-menu > div:nth-child(1) > div > div > ul > li:nth-child(23) 
+--- https://www.rfi.fr/cn/%E8%A7%86%E9%A2%91/
+
+--- + ERREUR_3 sur le site RFI_ES, Medioambiente, #site-nav-menu > div:nth-child(3) > div > div > ul > li:nth-child(3) Erreur_3 corrigé
+--- https://www.rfi.fr/es/Medioambiente/
+
++ ERREUR_4 sur le site OBS_FA, erreur 404, #site-nav-menu > div:nth-child(1) > div > div > ul > li:nth-child(2)
+https://observers.rfi.fr/fa/
+
+
+
+! 2. NICE-TO-HAVE (seo and capture)
+--- TODO_1 ::  Rajouter un test sur le slug lors de la visite de chaque page pour vérifier le slug, valider le SEO et de facto le fov_paramter sans test postman.
+
+--- TODO_2 ::  Rajouter une capture lors de la visite de chaque page pour un visaul human check éventuel pour valider le SEO et de facto le fov_paramter sans test postman.
+
++ --- DONE :: TODO_3 :: ajouter de var NavPlayerLinks to all files e.g datas_var_RFI_ES.js 
++ --- DONE :: TODO_4 :: podcast link transfert de var PlayerItemsActionButtons to all files e.g datas_var_RFI_ES.js because of RFI_TW, RFI_CN, RFI_BR
++ --- DONE :: TODO_5 ::  ajouter NavPlayerLinks to to all files e.g datas_var_RFI_ES.js 
++ --- DONE :: TODO_6 ::  Move values for RFI ONLY to to to data file for RFI e.g datas_var_RFI_ES.js 
++ --- DONE :: TODO_7 :: refine 001_3 function FovMainNavLinksBurgerMenu, add all the values from RFI_FF model see ALL NAVIGATION FOV
+
+
+
+npx cypress open
+
+
+- REFINE NAV WORK with var in 
+
+-FLE
++ FLE_FR
++ FLE_AR
++ FLE_BR
++ FLE_CN
++ FLE_EN
++ FLE_ES
++ FLE_RU
+
+npx cypress open --env BRAND_LANG="FLE_RU",DEVICE_TYPE="desktop" --config-file "config/FLE_RU.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+- OBS
++ OBS_FR
++ OBS_EN
++ OBS_AR
++ OBS_FA
+
+
+npx cypress open --env BRAND_LANG="OBS_FA",DEVICE_TYPE="desktop" --config-file "config/OBS_FA.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+- MCD (done)
+
++ --- MCD_AR
+npx cypress open --env BRAND_LANG="MCD_AR",DEVICE_TYPE="desktop" --config-file "config/MCD_AR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+- F24 (done)
++ --- F24_FR
++ --- F24_EN
++ --- F24_ES
++ --- F24_AR
+
+npx cypress open --env BRAND_LANG="F24_AR",DEVICE_TYPE="desktop" --config-file "config/F24_AR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+- RFI (redo)
+! --- RFI_BR 
+! --- RFI_CN
+! --- RFI_EN
+! --- RFI_ES 
+! --- RFI_FA
+! --- RFI_FF 
+! --- RFI_FR 
+! --- RFI_HA
+! --- RFI_KM
++ ! --- RFI_MA
+! --- RFI_PT
+! --- RFI_RO
+! --- RFI_RU
++ ! --- RFI_SW
+! --- RFI_TW 
+! --- RFI_UK
+! --- RFI_VI
+
+npx cypress open --env BRAND_LANG="RFI_SW",DEVICE_TYPE="desktop" --config-file "config/RFI_SW.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+
+
+
+--- nope
+URL_RESSOURCE_DATA:'data/datas_var_RFI_FR',',// populate speciifc elements to Brand and Language in var called urlRessource
+
+--- nope
+npx cypress open --env BRAND_LANG="RFI_FR",DEVICE_TYPE="desktop",URL_RESSOURCE_DATA="data/datas_var_RFI_FR'," --config-file "config/RFI_FR.conf.env.cypress.config.js'," --config video=false,screenshotOnRunFailure=false
+
+
+
+
+
+- F24
+F24_FR
+F24_AR
+F24_ES
+F24_EN
+
+
+
+npx cypress run --env BRAND_LANG="F24_AR",DEVICE_TYPE="desktop" --config-file "config/F24_AR.conf.env.cypress.config.js"," --config video=false,screenshotOnRunFailure=false
+
+npx cypress run --env BRAND_LANG="F24_ES",DEVICE_TYPE="desktop" --config-file "config/F24_ES.conf.env.cypress.config.js"  --config video=false,screenshotOnRunFailure=false
+
+npx cypress run --env BRAND_LANG="F24_EN",DEVICE_TYPE="desktop" --config-file "config/F24_EN.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress run --env BRAND_LANG="F24_FR",DEVICE_TYPE="desktop" --config-file "config/F24_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+- FLE
+FLE_FR
+FLE_BR
+FLE_EN
+FLE_BR
+
+npx cypress run --env BRAND_LANG="FLE_FR",DEVICE_TYPE="desktop" --config-file "config/FLE_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress run --env BRAND_LANG="FLE_BR",DEVICE_TYPE="desktop" --config-file "config/FLE_BR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress run --env BRAND_LANG="FLE_EN",DEVICE_TYPE="desktop" --config-file "config/FLE_EN.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress run --env BRAND_LANG="FLE_BR",DEVICE_TYPE="desktop" --config-file "config/FLE_BR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+- MCD
+MCD_AR
+
+- RFI
+
+RFI_CN
+RFI_ES
+RFI_RU
+
+- OBS
+OBS_FR
+OBS_EN
+
+
+
+
++ F24
+--- datas_var_F24_AR', (export OK)
+--- datas_var_F24_EN', (export OK)
+--- datas_var_F24_ES', (export OK)
+--- datas_var_F24_FR', (export OK)
+
++ FLE
+---  datas_var_FLE_AR', (export OK)
+---  datas_var_FLE_BR', (export OK)
+---  datas_var_FLE_CN', (export OK)
+---  datas_var_FLE_EN', (export OK)
+---  datas_var_FLE_ES', (export OK)
+---  datas_var_FLE_FR', (export OK)
+---  datas_var_FLE_RU', (export OK)
+
+npx cypress open --env BRAND_LANG="FLE_RU",DEVICE_TYPE="desktop" --config-file "config/FLE_RU.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
++ MCD
+---  datas_var_MCD_AR', (export OK)
+
+npx cypress run --env BRAND_LANG="MCD_AR",DEVICE_TYPE="desktop" --config-file "config/MCD_AR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
++ OBS
+--- datas_var_OBS_AR', (export OK)
+--- datas_var_OBS_EN', (export OK)
+--- datas_var_OBS_FA', (export OK)
+--- datas_var_OBS_FR', (export OK)
+
+npx cypress run --env BRAND_LANG="OBS_FR",DEVICE_TYPE="desktop" --config-file "config/OBS_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+
++ RFI
+--- datas_var_RFI_FR', (export OK)
+--- datas_var_RFI_BR', (export OK)
+--- datas_var_RFI_CN', (export OK)
+--- datas_var_RFI_EN', (export OK)
+--- datas_var_RFI_ES', (export OK)
+--- datas_var_RFI_FA', (export OK)
+--- datas_var_RFI_FF', (export OK)
+--- datas_var_RFI_HA', (export OK)
+--- datas_var_RFI_KM', (export OK)
+--- datas_var_RFI_MA', (export OK)
+--- datas_var_RFI_PT', (export OK)
+--- datas_var_RFI_RO', (export OK)
+--- datas_var_RFI_RU', (export OK)
+--- datas_var_RFI_SW', (export OK)
+--- datas_var_RFI_UK', (export OK)
+--- datas_var_RFI_VI', (export OK)
+
+npx cypress run --env BRAND_LANG="RFI_VI",DEVICE_TYPE="desktop" --config-file "config/RFI_VI.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+! # F24
+--- datas_var_F24_EN',
+--- datas_var_F24_ES',
+--- 'F24_AR',
+--- 'F24_FR',
+
+! # FLE
+--- datas_var_FLE_FR',
+--- 'FLE_ES',
+--- 'FLE_RU',
+--- 'FLE_EN',
+--- datas_var_FLE_BR',
+
+
+
+! # MCD
+--- datas_var_MCD_AR',
+
+! # RFI
+--- datas_var_RFI_FR',
+'RFI_EN',
+'RFI_CN',
+'RFI_ES',
+'RFI_FA',
+'RFI_HA',
+'RFI_KM',
+'RFI_SW',
+'RFI_MA',
+'RFI_FF',
+'RFI_PT',
+'RFI_BR',
+'RFI_RO',
+'RFI_RU',
+'RFI_UK',
+'RFI_VI',
+
+
+
+! # OBS
+--- 'OBS_FR',
+--- 'OBS_EN',
+--- 'OBS_AR',
+--- 'OBS_FA',
+
+
+--- test
+- F24_EN
+npx cypress open --env BRAND_LANG="F24_EN",DEVICE_TYPE="desktop" --config-file "config/F24_EN.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress open --env BRAND_LANG="F24_ES",DEVICE_TYPE="desktop" --config-file "config/F24_ES.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+- MCD_AR
+npx cypress open --env BRAND_LANG="MCD_AR",DEVICE_TYPE="desktop" --config-file "config/MCD_AR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+- FLE_FR
+npx cypress run --env BRAND_LANG="FLE_FR",DEVICE_TYPE="desktop" --config-file "config/FLE_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+
+! SOURCE
+https://www.stanleyulili.com/node/node-modules-import-and-use-functions-from-another-file/
+
+
+
+
+
+- Try enabling experimentalMemoryManagement in your config file.
+- Try lowering numTestsKeptInMemory in your config file.
+
+
++ *** FILES FOR OBS_FR ***
+
+
+--- OBS_FR (DONE)
+npx cypress open --env BRAND_LANG="OBS_FR",DEVICE_TYPE="desktop" --config-file "config/OBS_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+--- OBS_EN (DONE)
+npx cypress open --env BRAND_LANG="OBS_EN",DEVICE_TYPE="desktop" --config-file "config/OBS_EN.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+--- OBS_AR (DONE)
+npx cypress open --env BRAND_LANG="OBS_AR",DEVICE_TYPE="desktop" --config-file "config/OBS_AR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+--- OBS_FA (DONE)
+npx cypress open --env BRAND_LANG="OBS_FA",DEVICE_TYPE="desktop" --config-file "config/OBS_FA.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+- create files
+touch grab_meta_section_OBS_FR',
+touch grab_meta_section_OBS_EN',
+touch grab_meta_section_OBS_AR',
+touch grab_meta_section_OBS_FA',
+
+
+https://observers.france24.com/en/tag/environment/
+
+--- OBS_FR (DONE)
+var NavActualitesSlugNewsByRegion = [
+        ['page_tous_les_articles', 'tous-les-articles/'], 
+        ['page_tag_europe', 'europe/'], 
+        ['page_tag_environnement', '/environnement/'],
+        ['page_tag_droits_homme', 'droits-de-l-homme/']
+    ];
+--- OBS_EN (DONE)
+
+var NavActualitesSlugNewsByRegion = [
+        ['page_all_articles', 'all-articles/'],
+        ['page_tag_africa', 'africa/'],
+        ['page_tag_environment', 'tag/environment/'],
+        ['page_tag_human_rights', '/tag/human-rights/']
+    ];
+
+--- OBS_AR (DONE)
+https://observers.france24.com/ar/%D8%AA%D8%A7%D8%BA/%D8%A8%D9%8A%D8%A6%D8%A9/
+https://observers.france24.com/ar/%D9%87%D9%84-%D8%AA%D9%88%D8%AF-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%87%D9%85%D8%A9/
+
+https://observers.france24.com/ar/تاغ/بيئة/
+https://observers.france24.com/ar/هل-تود-المساهمة
+
+page_tag_environnement
+page_want_to_contribute
+
+
+// OBS_AR
+var NavActualitesSlugNewsByRegion = [
+        ['page_tag_environnement', '%D8%AA%D8%A7%D8%BA/%D8%A8%D9%8A%D8%A6%D8%A9/'],
+        ['page_want_to_contribute', '%D9%87%D9%84-%D8%AA%D9%88%D8%AF-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%87%D9%85%D8%A9']
+    ];
+
+--- OBS_FA (DONE)
+https://observers.rfi.fr/fa/%DA%AF%D8%B1%D9%88%D9%87-%D9%88%D8%A7%DA%98%D9%87/%D8%B4%D8%A7%DB%8C%D8%B9%D9%87/
+https://observers.rfi.fr/fa/%D8%B9%D8%B6%D9%88-%D9%86%D8%A7%D8%B8%D8%B1%D8%A7%D9%86-%D8%B4%D9%88%DB%8C%D8%AF
+
+https://observers.rfi.fr/fa/گروه-واژه/شایعه/
+https://observers.rfi.fr/fa/عضو-ناظران-شوید
+
+page_tag_rumeur
+page_devenir_un_observateur
+
+
+// OBS_FA
+var NavActualitesSlugNewsByRegion = [
+        ['page_tag_rumeur', '%DA%AF%D8%B1%D9%88%D9%87-%D9%88%D8%A7%DA%98%D9%87/%D8%B4%D8%A7%DB%8C%D8%B9%D9%87/'],
+        ['page_devenir_un_observateur', '%D8%B9%D8%B6%D9%88-%D9%86%D8%A7%D8%B8%D8%B1%D8%A7%D9%86-%D8%B4%D9%88%DB%8C%D8%AF']
+    ];
+
+
+- good ressources
+https://chat.openai.com/chat
+https://www.urldecoder.io/
+
+! ERROR ['property_tag', 'article:tag', 'Yvan Amar'],
+
++ --- FLE_FR (DONE)
+npx cypress open --env BRAND_LANG="FLE_FR",DEVICE_TYPE="desktop" --config-file "config/FLE_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
++ --- FLE_AR (DONE)
+npx cypress open --env BRAND_LANG="FLE_AR",DEVICE_TYPE="desktop" --config-file "config/FLE_AR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
++ --- FLE_RU (DONE)
+npx cypress open --env BRAND_LANG="FLE_RU",DEVICE_TYPE="desktop" --config-file "config/FLE_RU.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
++ --- FLE_BR (DONE)
+npx cypress open --env BRAND_LANG="FLE_BR",DEVICE_TYPE="desktop" --config-file "config/FLE_BR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
++ --- FLE_EN (DONE)
+npx cypress open --env BRAND_LANG="FLE_EN",DEVICE_TYPE="desktop" --config-file "config/FLE_EN.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
++ --- FLE_ES (DONE)
+npx cypress open --env BRAND_LANG="FLE_ES",DEVICE_TYPE="desktop" --config-file "config/FLE_ES.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+--- update cypress
+npm install -D cypress@12.9.0
+
+
+
+
+
+! TODO
+--- change ['url', 'slug', 'france/'] (done)       
+--- replace [['url', 'slug', WITH ['url', 'slug'
+!  done for RFI
+--- replace ']] WITH ']
+!  todo for RFI 29/03/23
+--- go to https://jsonlint.com/ to make the MetaDataStuff look good
+
+// FLE_FR
+var NavActualitesSlugNewsByRegion = [
+        ['page_podcasts_journal_français_facile','podcasts/journal-en-fran%C3%A7ais-facile/'],
+        ['page_podcasts_selection','podcasts/s%C3%A9lection/'],
+        ['page_exercices','exercices/'],
+        ['page_diplomes_tests','dipl%C3%B4mes-tests/'],
+        ['page_tester_son_niveau','tester-son-niveau/'],
+        ['page_comprendre_actualite_français','comprendre-actualit%C3%A9-fran%C3%A7ais/'],
+        ['page_communiquer_quotidien','communiquer-quotidien/'],
+        ['page_reviser','r%C3%A9viser/'],
+        ['page_enseigner','enseigner/'],
+        ['page_exercices_a1','exercices/a1/'],
+        ['page_exercices_a2','exercices/a2/'],
+        ['page_exercices_b1','exercices/b1/'],
+        ['page_exercices_b2','exercices/b2/'],
+        ['page_exercices_c1c2','exercices/c1c2/'],
+        ['page_podcasts_mots_actualite','podcasts/les-mots-de-l-actualit%C3%A9/']
+];
+/**
+*
+* * META
+* */
+
+var MetaDataStuff = {
+  homepage: [
+
+  ],
+  page_podcasts_journal_français_facile: [
+
+  ],
+  page_podcasts_selection: [
+
+  ],
+  page_exercices: [
+
+  ],
+
+  page_diplomes_tests: [
+
+  ],
+  page_tester_son_niveau: [
+
+  ],
+  page_comprendre_actualite_français: [
+
+  ],
+  page_communiquer_quotidien: [
+
+  ],
+  page_reviser: [
+
+  ],
+  page_enseigner: [
+
+  ],
+  page_exercices_a1: [
+
+  ],
+  page_exercices_a2: [
+
+  ],
+  page_exercices_b1: [
+
+  ],
+  page_exercices_b2: [
+
+  ],
+  page_exercices_c1c2: [
+
+  ],
+  page_podcasts_mots_actualite: [
+
+  ]
+
+
+};
+
+
+
+
+
+
+
+
++ DONE udate utilityGetStuffForFov',
+--- OBS_NavActualitesSlugNewsByRegion_1',
+--- MCD_NavActualitesSlugNewsByRegion_1',
+--- FLE_NavActualitesSlugNewsByRegion_1',
+--- F24_NavActualitesSlugNewsByRegion_1',
+--- RFI_NavActualitesSlugNewsByRegion_1',
+
+
+--- HOW_TO
+1. cut and paste https://www.urldecoder.io/
+2. then translate https://translate.google.com/
+
+
+! LAUNCH E2E-CYPRESS-FOV
+cd /Users/brunoflaven/Documents/02_copy/_cypress_fov_suite_2e2/fov_suite_2e2_working_version_1/
+
+- desktop
+npx cypress open --env BRAND_LANG="RFI_BR",DEVICE_TYPE="desktop" --config-file "config/RFI_BR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress run --env BRAND_LANG="RFI_BR",DEVICE_TYPE="desktop" --config-file "config/RFI_BR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress open --env BRAND_LANG="RFI_KM",DEVICE_TYPE="desktop" --config-file "config/RFI_KM.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress open --env BRAND_LANG="RFI_MA",DEVICE_TYPE="desktop" --config-file "config/RFI_MA.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress open --env BRAND_LANG="RFI_FF",DEVICE_TYPE="desktop" --config-file "config/RFI_FF.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+npx cypress open --env BRAND_LANG="RFI_PT",DEVICE_TYPE="desktop" --config-file "config/RFI_PT.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress open --env BRAND_LANG="RFI_BR",DEVICE_TYPE="desktop" --config-file "config/RFI_BR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress open --env BRAND_LANG="RFI_RU",DEVICE_TYPE="desktop" --config-file "config/RFI_RU.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+npx cypress open --env BRAND_LANG="RFI_VI",DEVICE_TYPE="desktop" --config-file "config/RFI_VI.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+npx cypress open --env BRAND_LANG="MCD_AR",DEVICE_TYPE="desktop" --config-file "config/MCD_AR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+- mobile
+npx cypress open --env BRAND_LANG="RFI_BR",DEVICE_TYPE="mobile" --config-file "config/RFI_BR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+npx cypress open --env BRAND_LANG="RFI_FR",DEVICE_TYPE="mobile" --config-file "config/RFI_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+npx cypress open --env BRAND_LANG="RFI_FR",DEVICE_TYPE="desktop" --config-file "config/RFI_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+npx cypress run --env BRAND_LANG="RFI_FR",DEVICE_TYPE="desktop" --config-file "config/RFI_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+- mobile + F24_FR
+npx cypress open --env BRAND_LANG="F24_FR",DEVICE_TYPE="mobile" --config-file "config/F24_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress open --env BRAND_LANG="F24_EN",DEVICE_TYPE="mobile" --config-file "config/F24_EN.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress open --env BRAND_LANG="F24_ES",DEVICE_TYPE="mobile" --config-file "config/F24_ES.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+npx cypress open --env BRAND_LANG="F24_AR",DEVICE_TYPE="mobile" --config-file "config/F24_AR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+- tablet
+npx cypress open --env BRAND_LANG="RFI_BR",DEVICE_TYPE="tablet" --config-file "config/RFI_BR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+- if missing parameter error_1 fallback_1 --env BRAND_LANG="RFI_BR",DEVICE_TYPE="desktop"
+npx cypress open --config-file "config/RFI_BR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+- if missing parameter error_2 fallback_2 --env BRAND_LANG="RFI_FR",DEVICE_TYPE="desktop"
+npx cypress open
+
+
++ CLEANING CODE
+
+// remove cy.FovCodeOptimizationSocialNetworks() cy.FovCodeOptimizationSocialNetworksFull()
+
+! QUESTIONS
+
+- comment
+
+/**
+* ### NOTE ON DOCUMENTATION ###
+*  FUNCTIONNAL functionnal functional priorities (main nav)
+* OPTIMIZATION code and structure des pages for reseaux sociaux, tracking... etc
+* DEVICES responsive for page (mobile, web, tablet)
+* UX/CONTENT content EM element validation 
+*/
+
+
+
+                    
+/**
+* Goal :: Tesing the code and structure OPTIMIZATION and SEO
+* OPTIMIZATION :: all values that concern check the metadata in HTML code and structure des pages for reseaux sociaux, tracking... 
+* SEO :: all values that concern check the metadata in HTML code
+* */
+
+
+--- 1 - DONE :: Add the brandLang in the function. Possible?
+
+1.1 Dans utilityGetStuffForFov',, toutes les valeurs en tableau commencent par une donnée d'information qui peut s'exprimer dans la console pour le debug ou l'analyse des logs afin de donner du contexte, cela permet aussi une meilleure gestion du multilinguisme. Pour comprendre la valeur qui est ensuite passé. Pour cette nomemclature, c'est du FR sans accent et sans espace qui est retenu. Ex le live pour F24_ES
+
+    var NavPlayerLinks = [
+                        ['en_direct', 'en-vivo']
+                        ];
+
+1.2 Dans utilityGetStuffForFov',, autre exemple les urls où la problématique de compréhension des slugs encoded et dans des langues étrangères est problématique. Pour cette nomemclature, c'est du FR sans accent et sans espace qui est retenu.
+
+
+var NavActualitesSlugNewsByRegion = [
+                              'page_afrique', 'afrique/',
+                              'page_ameriques','am%C3%A9riques/',
+                              'page_asie_pacifique','asie-pacifique/',
+                              'page_europe','europe/',
+                              'page_moyen_orient','moyen-orient/',
+                              'page_france','france/',
+                              'page_monde','monde/'
+                        ];
+
+
+
+--- 2 - TODO ::  How to you handle the pages section for each brandLang.
+
+
+var MetaDataStuff = {
+                                  homepage: [
+                                            ['slug','/'],
+                                            // title
+                                            ['title_tag','title', 'XXX_TEXT'],
+                                            // property
+                                            ['property_tag','og:image', 'XXX_TEXT'], 
+                                            ['property_tag','og:locale', 'XXX_TEXT'], 
+                                            ['property_tag', 'og:site_name', 'XXX_TEXT'], 
+                                            ['property_tag', 'og:type', 'website', 'XXX_TEXT'],
+                                            ['property_tag', 'og:title', 'XXX_TEXT'], 
+                                            ['property_tag', 'og:description', "XXX_TEXT"], 
+                                            ['property_tag', 'og:url', 'XXX_TEXT'], 
+                                            ['property_tag', 'fb:app_id', 'XXX_TEXT'], 
+                                            ['property_tag', 'fb:pages', 'XXX_TEXT'], 
+                                            // name
+                                            ['name_tag', 'description', "XXX_TEXT"], 
+                                            ['name_tag', 'twitter:card', 'summary'], 
+                                            ['name_tag', 'twitter:site', 'XXX_TEXT'], 
+                                            ['name_tag', 'twitter:creator', 'XXX_TEXT'], 
+                                            ['name_tag', 'keywords', 'XXX_TEXT'], 
+                                            ['name_tag', 'apple-mobile-web-app-title', 'XXX_TEXT'], 
+                                            ['name_tag', 'application-name', 'XXX_TEXT'], 
+                                            ['name_tag', 'msapplication-TileColor', 'XXX_TEXT'], 
+                                            ['name_tag', 'theme-color', 'XXX_TEXT'], 
+                                            ['name_tag', 'apple-mobile-web-app-capable', 'XXX_TEXT']
+                                    ],
+                                  page_france: [
+                                    ['slug','france/']
+                                    ],
+                                  page_afrique: [
+                                    ['slug','afrique/']
+                                  ]
+                            };
+
+
+                            
+--- 3 - DONE ::  Add some info label as yo know now how to use the double or triple arrey. Possible?
+-  4 - TODO :: Add and refactoring charles test scripts
+
++ ROUGH IDEAS FOR OKR STRATEGIC THINKING FOR Q/A
+- 1 - FUNCTIONAL functionnal priorities (main nav, player)
+
+
+
+
+
+
+! BURGER MENU (FovMainNavLinksBurgerMenu)
+
+# hot-tag
+#site-nav-menu > div:nth-child(1) > div > div > ul
+
+# listen (ÉCOUTER)
+#site-nav-menu > div:nth-child(2) > div > div > ul
+
+# thematic (THÉMATIQUES)
+#site-nav-menu > div:nth-child(3) > div > div > ul
+
+! PLAYER
+
+--- For RFI_FR only
+// direct  monde
+FOV_HEADER_MAIN_NAV_PLAYER_DIRECT_MONDE
+body > div.o-bottom-bar > div.o-bottom-bar__item.o-bottom-bar__item--live > div:nth-child(1) > div > div > button > span > div
+
+// In the player
+
+// play btn
+#root-audio-player > div > div.o-audio-player__content > div.o-audio-player__actions.o-audio-player__actions--live > button > span > svg > path.s-center
+
+
+cy.get( css_selector , {timeout: 10000}).should('exist');
+cy.get(css_selector, { timeout: 10000 }).should('be.visible');
+
+
+NavActualitesSlugNewsByRegion
+
+NavPlayerLinks
+
+https://www.rfi.fr/fr/direct-monde
+https://www.rfi.fr/fr/direct-afrique
+
+/**
+*
+* * PLAYER
+* */            
+                        var NavPlayerLinks = [
+                              'direct-monde',
+                              'direct-afrique'
+                        ];
+
+
+https://www.rfi.fr/es/en-vivo
+https://www.rfi.fr/vi/ph%C3%A1t-tr%E1%BB%B1c-ti%E1%BA%BFp
+
+
+
+
+
+// Écouter le direct
+LIVE_LISTEN_LIVE_ITEM: '#main-content > section:nth-child(3) > div > div.o-live__cta > div > button > p';
+
+
+
+
+// Découvrez nos podcasts
+LIVE_DISCOVER_PODCASTS_ITEM: '#main-content > section:nth-child(3) > div > div.o-live__cta > a';
+
+
+// direct  afrique
+FOV_HEADER_MAIN_NAV_PLAYER_DIRECT_AFRIQUE
+
+body > div.o-bottom-bar > div.o-bottom-bar__item.o-bottom-bar__item--live > div:nth-child(2) > div > div > button > span > span > svg > path:nth-child(3)
+
+
+- // languages selection
+
+#site-nav-language > div > div > div > ul
+
+
+
+#site-nav-language > div > div > div > ul > li:nth-child(1)
+#site-nav-language > div > div > div > ul > li:nth-child(15)
+#site-nav-language > div > div > div > ul > li:nth-child(17)
+
+- Can you extract this hreflang value from this chunk of HTML code and put it in JavaScript array named href_lang_values
+<ul class="m-nav-list__list">
+<li class="m-nav-list__list__item">
+<a href="/fr/" class="a-nav-link a-nav-link--active" hreflang="fr" tabindex="0" data-menu-link="" data-tms-tr="">Français</a>
+</li><li class="m-nav-list__list__item">
+<a href="/en/" class="a-nav-link " hreflang="en" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">English</a>
+</li><li class="m-nav-list__list__item">
+<a href="/es/" class="a-nav-link " hreflang="es" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Español</a>
+</li><li class="m-nav-list__list__item">
+<a href="/pt/" class="a-nav-link " hreflang="pt" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Português</a>
+</li><li class="m-nav-list__list__item">
+<a href="/br/" class="a-nav-link " hreflang="pt-BR" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Português do Brasil</a>
+</li><li class="m-nav-list__list__item">
+<a href="/ha/" class="a-nav-link " hreflang="ha" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Hausa</a>
+</li><li class="m-nav-list__list__item">
+<a href="/sw/" class="a-nav-link " hreflang="sw" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Kiswahili</a>
+</li><li class="m-nav-list__list__item">
+<a href="/ma/" class="a-nav-link " hreflang="bm" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Mandenkan</a>
+</li><li class="m-nav-list__list__item">
+<a href="/ff/" class="a-nav-link " hreflang="ff" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Fulfulde</a>
+</li><li class="m-nav-list__list__item">
+<a href="https://www.rfi.ro/" class="a-nav-link " hreflang="ro" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">România</a>
+</li><li class="m-nav-list__list__item">
+<a href="/ru/" class="a-nav-link " hreflang="ru" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Русский</a>
+</li><li class="m-nav-list__list__item">
+<a href="/uk/" class="a-nav-link " hreflang="uk" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Українською</a>
+</li><li class="m-nav-list__list__item">
+<a href="/vi/" class="a-nav-link " hreflang="vi" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Tiếng Việt</a>
+</li><li class="m-nav-list__list__item">
+<a href="/cn/" class="a-nav-link " hreflang="zh-Hans" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">华语</a>
+</li><li class="m-nav-list__list__item">
+<a href="/tw/" class="a-nav-link " hreflang="zh-Hant" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">華語</a>
+</li><li class="m-nav-list__list__item">
+<a href="/km/" class="a-nav-link " hreflang="km" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">ភាសាខ្មែរ</a>
+</li><li class="m-nav-list__list__item">
+<a href="/fa/" class="a-nav-link " hreflang="fa" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-menu-link-last="" data-tms-tr="">فارسی</a>
+</li>    </ul>
++ openAI
+- Peux-tu écrire en Cypress, le test qui atteste extraire de la div specifié par ce selecteur css "#main-content > section:nth-child(2) > div > div.o-layout-list.o-banana-split__main-articles" la liste des div enfants
+
+
+! number of element inside of zone inside a page (#main-content)
+#main-content > section:nth-child(2)
+#main-content > section:nth-child(3)
+#main-content > section:nth-child(4)
+#main-content > section:nth-child(5)
+#main-content > section:nth-child(19)
+
+
+            // Zone for PdS
+            let MAIN_CONTENT_CSS_SELECTORS = [
+            '#main-content > section:nth-child(2)',
+            '#main-content > section:nth-child(3)',
+            '#main-content > section:nth-child(4)',
+            '#main-content > section:nth-child(5)',
+            '#main-content > section:nth-child(6)'
+            // to be continued
+            ];
+
+            cy.log('\n--- HTML :: Main sections');
+                MAIN_CONTENT_CSS_SELECTORS.forEach((css_selector, index) => {
+                    // cy.log('--- css_selector :: '+css_selector);
+                    // cy.log('--- index :: '+index);
+                    cy.get(css_selector, { timeout: 10000 }).should('exist');
+                    cy.get(css_selector, { timeout: 10000 }).should('be.visible');
+
+                });
+
+
+[Array(10).keys()].forEach((num) => {
+  console.log(num + 1);
+});
+
+- OPENAI EXPLANATION JS
+# What is i stand for in this code: for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+In the code snippet you provided, i stands for the index or counter variable in a for loop.
+
+The for loop is used to execute a block of code repeatedly for a specified number of times. In this case, the loop will execute the code inside the curly braces {} 5 times.
+
+At the beginning of each iteration of the loop, the i variable is initialized to 0 (let i = 0). The loop then continues to execute the code inside the curly braces as long as i is less than 5 (i < 5).
+
+After each iteration of the loop, the i variable is incremented by 1 (i++). So, in the first iteration, i will be 0, in the second iteration, i will be 1, and so on.
+
+In the code snippet you provided, the i variable is used to concatenate the string "The number is " with the value of i and a line break <br>, and then append the resulting string to the text variable. This will result in the text variable containing the concatenated string "The number is 0", "The number is 1", "The number is 2", "The number is 3", and "The number is 4", each on a new line.
+
+
+
+--- functionnal optimization for this code
+
+/*
+                    // Zones for HP
+                    let  MAIN_CONTENT_CSS_SELECTORS=[];
+                    let i=0;
+                    for (i=2; i < 19; i++) {
+                        // cy.log(i)
+                        cy.log('#main-content > section:nth-child('+i+')')
+                        MAIN_CONTENT_CSS_SELECTORS.push('#main-content > section:nth-child('+i+')');
+
+                    }// EOL
+
+                cy.log('MAIN_CONTENT_CSS_SELECTORS = ['+MAIN_CONTENT_CSS_SELECTORS+']')
+                cy.log('\n--- HTML :: Main sections');
+                        MAIN_CONTENT_CSS_SELECTORS.forEach((css_selector, index) => {
+                            // cy.log('--- css_selector :: '+css_selector);
+                            // cy.log('--- index :: '+index);
+                            cy.get(css_selector, { timeout: 10000 }).should('exist');
+                            cy.get(css_selector, { timeout: 10000 }).should('be.visible');
+
+                        }); 
+                
+*/
+
+                
+                
+                    // Zones for PdS
+                    /*
+                
+                    let  BANANA_SPLIT_CSS_SELECTORS=[];
+                    let j=0;
+                    for (j=2; j < 7; j++) {
+                                // cy.log(i)
+                                cy.log('#main-content > section:nth-child(2) > div > div.o-layout-list.o-banana-split__main-articles > div:nth-child('+j+')')
+                                BANANA_SPLIT_CSS_SELECTORS.push('#main-content > section:nth-child('+j+')');
+                            }
+                    
+
+                cy.log('BANANA_SPLIT_CSS_SELECTORS = ['+BANANA_SPLIT_CSS_SELECTORS+']')
+                        BANANA_SPLIT_CSS_SELECTORS.forEach((css_selector, index) => {
+                            // cy.log('--- css_selector :: '+css_selector);
+                            // cy.log('--- index :: '+index);
+                            cy.get(css_selector, { timeout: 10000 }).should('exist');
+                            cy.get(css_selector, { timeout: 10000 }).should('be.visible');
+
+                    
+                        }); 
+       
+               
+
+*/
+
+! list of elements inside the zone_1 (banana-split)
+#main-content > section:nth-child(2) > div > div.o-layout-list.o-banana-split__main-articles > div.o-layout-list__item.o-layout-list__item--main-item
+
+#main-content > section:nth-child(2) > div > div.o-layout-list.o-banana-split__main-articles > div:nth-child(2)
+
+#main-content > section:nth-child(2) > div > div.o-layout-list.o-banana-split__main-articles > div:nth-child(7)
+
+- 2 - DEVICES responsive for page (mobile, web, tablet)
+
+--- Source:  https://maxschmitt.me/posts/cypress-testing-mobile-tablet-desktop
+--- Introduce device type
+isMobile: device === 'mobile',
+isTablet: device === 'tablet',
+isDesktop: device === 'desktop',
+
+
+userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1',
+viewportWidth: 320,
+viewportHeight: 568,
+
+
+var userAgent = 'macbook-13'
+var userAgentOrientation = 'portrait'
+var viewportWidth = '1280'
+var viewportHeight = '800'
+
+
+
+// var isDevice = ('macbook-13','portrait','1280','800')
+// cy.viewport(preset, orientation, options)
+
+
+                
+
+- orientation // portrait or landscape
+
+- orientation // portrait or landscape
+
+                                
+---  https://docs.cypress.io/api/commands/viewport
+Preset  width height
+ipad-2  768 1024
+ipad-mini 768 1024
+iphone-3  320 480
+iphone-4  320 480
+iphone-5  320 568
+iphone-6  375 667
+iphone-6+ 414 736
+iphone-7  375 667
+iphone-8  375 667
+iphone-x  375 812
+iphone-xr 414 896
+iphone-se2  375 667
+macbook-11  1366  768
+macbook-13  1280  800
+macbook-15  1440  900
+macbook-16  1536  960
+samsung-note9 414 846
+samsung-s10 360 760
+cy.viewport('iphone-6', 'landscape')
+
+
+- 3 - OPTIMIZATION code and structure des pages for reseaux sociaux, tracking... etc. It includes SEO concerns
+
+- 4 - UX/CONTENT content EM element validation
+
+
+<meta property="og:image" content="https://static.rfi.fr/meta_og_twcards/RFI_TW.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="RFI">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RFI - Actualités, info, news en direct - Radio France Internationale">
+<meta property="og:description" content="Suivez toute l&#039;information politique, culturelle, sportive en direct et en continu sur RFI. Les dernières informations, news et actualités en France et à l&#039;international.">
+<meta property="og:url" content="https://www.rfi.fr/fr/">
+<meta property="fb:app_id" content="113191652055439">
+<meta property="fb:pages" content="67334499441">
+
+<meta name="description" content="Suivez toute l&#039;information politique, culturelle, sportive en direct et en continu sur RFI. Les dernières informations, news et actualités en France et à l&#039;international.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@RFI">
+<meta name="twitter:creator" content="@RFI">
+<meta name="keywords" content="homepage,accueil,actualités,news,reportages,radio,dossiers,international,monde,info">
+<meta name="apple-mobile-web-app-title" content="RFI">
+<meta name="application-name" content="RFI">
+<meta name="msapplication-TileColor" content="#e2001a">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
++ QUERY_OPENAI_1
+- # Can you write in Cypress code, the following test: check if the HTML value <meta property="og:locale" content="fr_FR"> is existing in the code and is properly filled with content equal to fr_FR
+
+--- source code
+
+- og
+<meta property="og:image" content="https://static.rfi.fr/meta_og_twcards/RFI_TW.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="RFI">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RFI - Actualités, info, news en direct - Radio France Internationale">
+<meta property="og:description" content="Suivez toute l&#039;information politique, culturelle, sportive en direct et en continu sur RFI. Les dernières informations, news et actualités en France et à l&#039;international.">
+<meta property="og:url" content="https://www.rfi.fr/fr/">
+
+- property
+<meta property="fb:app_id" content="113191652055439">
+<meta property="fb:pages" content="67334499441">
+<meta name="description" content="Suivez toute l&#039;information politique, culturelle, sportive en direct et en continu sur RFI. Les dernières informations, news et actualités en France et à l&#039;international.">
+
+- twitter
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@RFI">
+<meta name="twitter:creator" content="@RFI">
+
+- name
+<meta name="keywords" content="homepage,accueil,actualités,news,reportages,radio,dossiers,international,monde,info">
+
+- other
+<meta name="apple-mobile-web-app-title" content="RFI">
+<meta name="application-name" content="RFI">
+<meta name="msapplication-TileColor" content="#e2001a">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+--- code generated by openai  for QUERY_OPENAI_1
+describe('Meta tag test', () => {
+  it('Checks if meta tag exists and has correct content', () => {
+    cy.visit('https://www.example.com')
+    cy.get('meta[property="og:locale"]').should('exist')
+    cy.get('meta[property="og:locale"]').should('have.attr', 'content', 'fr_FR')
+  })
+})
+
++ QUERY_OPENAI_2
+
+- # Can you write in JavaScript code that extract in a first array named property_values the value contained in "property" and extract in a second array named content_values the value contained in "content" for this HTML code: 
+
+
+<meta property="og:image" content="https://static.rfi.fr/meta_og_twcards/RFI_TW.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="RFI">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RFI - Actualités, info, news en direct - Radio France Internationale">
+<meta property="og:description" content="Suivez toute l&#039;information politique, culturelle, sportive en direct et en continu sur RFI. Les dernières informations, news et actualités en France et à l&#039;international.">
+<meta property="og:url" content="https://www.rfi.fr/fr/">
+
+
+// Sample HTML code
+const htmlCode = '<meta property="og:image" content="https://static.rfi.fr/meta_og_twcards/RFI_TW.png"><meta property="og:locale" content="fr_FR"><meta property="og:site_name" content="RFI"><meta property="og:type" content="website"><meta property="og:title" content="RFI - Actualités, info, news en direct - Radio France Internationale"><meta property="og:description" content="Suivez toute l&#039;information politique, culturelle, sportive en direct et en continu sur RFI. Les dernières informations, news et actualités en France et à l&#039;international."><meta property="og:url" content="https://www.rfi.fr/fr/">';
+
+// Regular expression pattern to match property and content values
+const regex = /property="([^"]*)" content="([^"]*)"/g;
+
+// Initialize empty arrays to store property and content values
+const property_values = [];
+const content_values = [];
+
+// Loop through all matches of the regex pattern and push the values into the corresponding arrays
+let match;
+while ((match = regex.exec(htmlCode)) !== null) {
+  property_values.push(match[1]);
+  content_values.push(match[2]);
+}
+
+// Output the arrays to the console
+console.log(property_values); // ["og:image", "og:locale", "og:site_name", "og:type", "og:title", "og:description", "og:url"]
+console.log(content_values); // ["https://static.rfi.fr/meta_og_twcards/RFI_TW.png", "fr_FR", "RFI", "website", "RFI - Actualités, info, news en direct - Radio France Internationale", "Suivez toute l'information politique, culturelle, sportive en direct et en continu sur RFI. Les dernières informations, news
+
+
+! GIT E2E-FOV-CYPRESS
+
+cd /Users/brunoflaven/Documents/02_copy/_cypress_fov_suite_2e2/
+
+git clone https://github.com/FranceMediasMonde/fov-cypress.git fov-cypress
+
+! USING CLASS
+var MyVarOne = "RFI_FR_MyVarOne";
+var MyArrayOne = [
+                              '001_RFI_FR_MyArrayOne',
+                              '002_RFI_FR_MyArrayOne',
+                              '003_RFI_FR_MyArrayOne'
+                        ];
+
+var MyArrayTwo = [
+                              '001_RFI_FR_MyArrayTwo',
+                              '002_RFI_FR_MyArrayTwo',
+                              '003_RFI_FR_MyArrayTwo'
+                        ];
+
+
+
+
+
+
++ Class in JavaScript (course)
+https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Classes
+
+
+
++ ADVICES + JHZ ADICES
+
+
+- BEST PRACTISES
+1. Build function names pattern on css-selector e.g : o--nav-link o-header__site-nav-link--start, it becomes the function cy.FovMainNavLinksHeaderSite()
+2. Add specific fucntion not in commands', but create a specific file e.g fov_navigation', for RFI, F24, MCD... main navigation
+
+
+- BEST PRACTISES OUTPUT
+! for RFI, F24, MCD... main navigation main navigation in fov_navigation',
+
+
+--- /* STEP_1 ::  Accept didomi notice agree button click (prod) */
+            cy.FovBrowseDidomiNoticeAgreeButton()
+
+
+--- /* STEP_2 ::  Check the 4 first links including logo */
+           cy.FovSelectLng()
+
+--- /* STEP_3 :: Check the 4 first links including logo */
+cy.FovMainNavLinksBottomBarItem()
+
+--- /* STEP_4 :: Check 3 links (languages, setting, burger_menu) */
+cy.FovMainNavLinksHeaderSite()
+
+
+--- /* STEP_5 :: Check existing links for actualités (news) - Move into links from Actualites links (Afrique, Amériques...) */
+// cy.FovMainNavLinksBottomBarItemActualites()
+
+#site-nav-actualites > div > div > div > ul
+#site-nav-actualites > div > div > div > ul > li:nth-child(1) > a
+#site-nav-actualites > div > div > div > ul > li:nth-child(7) > a
+
+
+- RFI_ES
+https://www.rfi.fr/es/am%C3%A9ricas/
+https://www.rfi.fr/es/francia/
+https://www.rfi.fr/es/europa/
+https://www.rfi.fr/es/medioambiente/
+https://www.rfi.fr/es/salud/
+https://www.rfi.fr/es/cultura/
+https://www.rfi.fr/es/econom%C3%ADa/
+https://www.rfi.fr/es/deportes/
+
+- F24_FR
+https://www.france24.com/fr/france/
+https://www.france24.com/fr/afrique/
+https://www.france24.com/fr/moyen-orient/
+https://www.france24.com/fr/europe/
+https://www.france24.com/fr/am%C3%A9riques/
+https://www.france24.com/fr/asie-pacifique/
+
+--- /* STEP_6 :: Check slug and visit pages for actualités (news) - Move into links from Actualites links (Afrique, Amériques...) */
+            cy.FovMainNavLinksBottomBarItemActualitesBySlug()
+
+- TODO_1 Good for SEO purpose, avoid brittle for css-selector for links. Put in the class because you have to handle SLUG_NEWS_BY_REGION per BRAND_LANG. 
+- TODO_1 Need top grab all main section for each BRAND_LANG
+--- descripiton :: news by region :: actualité par régions
+
+
+! CONFIG
+
+--- F24_AR.conf.env.cypress.config',
+--- F24_EN.conf.env.cypress.config',
+--- F24_ES.conf.env.cypress.config',
+--- F24_FR.conf.env.cypress.config',
+--- FLE_FR.conf.env.cypress.config',
+--- FLE_ES.conf.env.cypress.config',
+--- FLE_RU.conf.env.cypress.config',
+--- FLE_AR.conf.env.cypress.config',
+--- FLE_EN.conf.env.cypress.config',
+--- FLE_BR.conf.env.cypress.config',
+--- FLE_CN.conf.env.cypress.config',
+--- MCD_AR.conf.env.cypress.config',
+--- OBS_AR.conf.env.cypress.config',
+--- OBS_EN.conf.env.cypress.config',
+--- OBS_FA.conf.env.cypress.config',
+--- OBS_FR.conf.env.cypress.config',
+--- RFI_BR.conf.env.cypress.config',
+--- RFI_CN.conf.env.cypress.config',
+--- RFI_EN.conf.env.cypress.config',
+--- RFI_ES.conf.env.cypress.config',
+--- RFI_FA.conf.env.cypress.config',
+--- RFI_FF.conf.env.cypress.config',
+--- RFI_FR.conf.env.cypress.config',
+--- RFI_HA.conf.env.cypress.config',
+--- RFI_KM.conf.env.cypress.config',
+--- RFI_MA.conf.env.cypress.config',
+--- RFI_PT.conf.env.cypress.config',
+--- RFI_RO.conf.env.cypress.config',
+--- RFI_RU.conf.env.cypress.config',
+--- RFI_SW.conf.env.cypress.config',
+--- RFI_UK.conf.env.cypress.config',
+--- RFI_VI.conf.env.cypress.config',
+
+
+
+
+
+
+
++ STRATEGIC THINKING
+
+
+# rough ideas
+- code and structure des pages
+- responsive for page (mobile, web, tablet)
+- SEO concerns
+- EM element validation
+- functional priorities (main nav)
+
+
+! ADVICES
++ FEEDBACK ON CYPRESS (feedback de JHZ)
+To test the CK editor more than anywhere, you shall use CSS selector instead of XPATH selector.
+you shall always use CSS selector instead of XPATH selector.
+Do not sue too much reload that prevent from preserving the screens.
+Reduce latency times but do not use reload.
+Click with no force better avoiding clicking on hidden.
+No cy.wait() but more {timeout: 10000}
+
+! ATTEMPT
+
++ RFI_FR
+
+FOV_HEADER_MAIN_NAV_LOGO
+FOV_HEADER_MAIN_NAV_HOMEPAGE
+FOV_HEADER_MAIN_NAV_PODCASTS
+FOV_HEADER_MAIN_NAV_PAR_REGION
+FOV_HEADER_MAIN_NAV_PLAYER_DIRECT_MONDE
+FOV_HEADER_MAIN_NAV_PLAYER_DIRECT_AFRIQUE
+
+
+$$('body > div.o-header > header > div > h1 > a > span');
+$$('body > div.o-bottom-bar > div:nth-child(1) > div > a');
+$$('body > div.o-bottom-bar > div:nth-child(2) > div > a');
+$$('body > div.o-bottom-bar > div:nth-child(4) > div > button');
+
+// Logo
+body > div.o-header > header > div > h1 > a > span
+
+// Homepage
+body > div.o-bottom-bar > div:nth-child(1) > div > a
+
+// Podcasts
+body > div.o-bottom-bar > div:nth-child(2) > div > a
+
+// Par région
+body > div.o-bottom-bar > div:nth-child(4) > div > button
+
+
+
+--- For RFI_FR only
+// direct  monde
+body > div.o-bottom-bar > div.o-bottom-bar__item.o-bottom-bar__item--live > div:nth-child(1) > div > div > button > span > div
+
+// direct  afrique
+body > div.o-bottom-bar > div.o-bottom-bar__item.o-bottom-bar__item--live > div:nth-child(2) > div > div > button > span > span > svg > path:nth-child(3)
+
+
+
+
+$$('body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--start > button');
+
+$$('body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--end > button');
+
+// languages selection
+body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--start > button
+
+// settings selection
+body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--end > button
+
+// burger menu
+body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--main.o-header__site-nav-link--desktop-only > button
+
+
+! INSTALL
+
+- install cypress
+# install generate the package',on
+# generated a package',on and node_modules directory
+npm init 
+
+# fill the package',on
+# description: This attempt made for E2E-CYPRESS-FOV, runnings cypress tests on FOV, FMM websites. Better generated a package',on and node_modules directory
+# keywords: cypress, attempt, PO, E2E-CYPRESS-FOV, e2e-cypress-fov
+
+# author: bflaven
+# git: https://github.com/FranceMediasMonde/fov-cypress/
+
+# install the last version
+npm install --save-dev cypress
+
+
+# launch Cypress once installed
+npx cypress open
+
+
+
+! DEPOT
+
+- update npm
+npm install -g npm@latest
+
+
+- ask chatGPT
+001_parse_website.py
+source Python for GPT query  
+QUERY :: In Python, can you elaborate a html parser with the library Beautiful Soup. This html parser functioning will be the following: first, at the beginning the script, define in an external variable named "css_selector_input", the value of the CSS selector. As an example, the value can be equaled to "body > div.o-header > header". Second, based on the "css_selector_input" retrieve the content inside the CSS selector and output the founded elements inside a Python list.
+
+
+
+
+- learn python
+https://python.doctor/page-apprendre-listes-list-tableaux-tableaux-liste-array-python-cours-debutant
+
+
+
+
++ parsing html to scrap css selector to elaborate Cypress E2E suite.
+https://www.rfi.fr/fr/
+https://www.france24.com/fr/
+
+
+body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--start
+
+body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--end
+
+body > div.o-header > header > div > div.o-header__site-nav-link.o-header__site-nav-link--main.o-header__site-nav-link--desktop-only
+
+
+#main-content > div
+#main-content > section:nth-child(2)
+#main-content > section:nth-child(3)
+#main-content > section:nth-child(17)
+
+
+#site-nav-menu > div:nth-child(2) > div > div > ul
+
+
+- CLASS CALL VARIABLES
+cy.log(' -- getSetInitPerBrandLangValue.MyVarOne :: '+getSetInitPerBrandLangValue.MyVarOne+' --')
+cy.log(' -- getSetInitPerBrandLangValue.MyArrayOne :: '+getSetInitPerBrandLangValue.MyArrayOne+' --')
+cy.log(' -- getSetInitPerBrandLangValue.MyArrayTwo :: '+getSetInitPerBrandLangValue.MyArrayTwo+' --')
+
+cy.log(' -- getSetInitPerBrandLangValue.MyArrayTwo[0] :: '+getSetInitPerBrandLangValue.MyArrayTwo[0]+' --')
+cy.log(' -- getSetInitPerBrandLangValue.MyArrayTwo[1] :: '+getSetInitPerBrandLangValue.MyArrayTwo[1]+' --')
+cy.log(' -- getSetInitPerBrandLangValue.MyArrayTwo[3] :: '+getSetInitPerBrandLangValue.MyArrayTwo[2]+' --')
+
+
++ example_query_openai_1
+! INPUT query open ai
+
+-  Can you convert this javascript code into a python list named and you can remove the javascript comment and replace it by python comment: 
+            // F24
+            case 'F24_EN':
+                return 'F24_EN';
+            case 'F24_ES':
+                return 'F24_ES';
+            case 'F24_FR':
+                return 'F24_FR';
+            case 'F24_AR':
+                return 'F24_AR';
+
+            // RFI
+            case 'RFI_EN':
+                return 'RFI_EN';
+            case 'RFI_CN':
+                return 'RFI_CN';
+            case 'RFI_ES':
+                return 'RFI_ES';
+            case 'RFI_FA':
+                return 'RFI_FA';
+            case 'RFI_HA':
+                return 'RFI_HA';
+            case 'RFI_KM':
+                return 'RFI_KM';
+            case 'RFI_SW':
+                return 'RFI_SW';
+            case 'RFI_MA':
+                return 'RFI_MA';
+            case 'RFI_FF':
+                return 'RFI_FF';
+            case 'RFI_PT':
+                return 'RFI_PT';
+            case 'RFI_BR':
+                return 'RFI_BR';
+            case 'RFI_RO':
+                return 'RFI_RO';
+            case 'RFI_RU':
+                return 'RFI_RU';
+            case 'RFI_UK':
+                return 'RFI_UK';
+            case 'RFI_VI':
+                return 'RFI_VI';
+
+            // MCD
+            case 'MCD_AR':
+                return 'MCD_AR';
+
+            // FLE
+            case 'FLE_FR':
+                return 'FLE_FR';
+
+            case 'FLE_ES':
+                return 'FLE_ES';
+
+            case 'FLE_RU':
+                return 'FLE_RU';
+
+            case 'FLE_AR':
+                return 'FLE_AR';
+
+            case 'FLE_EN':
+                return 'FLE_EN';
+
+            case 'FLE_BR':
+                return 'FLE_BR';
+
+            // OBS
+            case 'OBS_FR':
+                return 'OBS_FR';
+            case 'OBS_EN':
+                return 'OBS_EN';
+            case 'OBS_AR':
+                return 'OBS_AR';
+            case 'OBS_FA':
+                return 'OBS_FA';
+            // Default
+            default:
+                // RFI_FR
+                return 'RFI_FR';
+
+! OUPUT
+- This is a switch statement in JavaScript, we can convert it to a Python list of tuples where the first element of each tuple is the case label, and the second element is the return value.
+
+- Note that we included an empty string as the label for the default case, as there is no default case label in Python.
+
+language_map = [
+('F24_EN', 'F24_EN'),
+('F24_ES', 'F24_ES'),
+('F24_FR', 'F24_FR'),
+('F24_AR', 'F24_AR'),
+('RFI_EN', 'RFI_EN'),
+('RFI_CN', 'RFI_CN'),
+('RFI_ES', 'RFI_ES'),
+('RFI_FA', 'RFI_FA'),
+('RFI_HA', 'RFI_HA'),
+('RFI_KM', 'RFI_KM'),
+('RFI_SW', 'RFI_SW'),
+('RFI_MA', 'RFI_MA'),
+('RFI_FF', 'RFI_FF'),
+('RFI_PT', 'RFI_PT'),
+('RFI_BR', 'RFI_BR'),
+('RFI_RO', 'RFI_RO'),
+('RFI_RU', 'RFI_RU'),
+('RFI_UK', 'RFI_UK'),
+('RFI_VI', 'RFI_VI'),
+('MCD_AR', 'MCD_AR'),
+('FLE_FR', 'FLE_FR'),
+('FLE_ES', 'FLE_ES'),
+('FLE_RU', 'FLE_RU'),
+('FLE_AR', 'FLE_AR'),
+('FLE_EN', 'FLE_EN'),
+('FLE_BR', 'FLE_BR'),
+('OBS_FR', 'OBS_FR'),
+('OBS_EN', 'OBS_EN'),
+('OBS_AR', 'OBS_AR'),
+('OBS_FA', 'OBS_FA'),
+# Default
+('', 'RFI_FR')
+]
+
++ example_query_openai_1
+! INPUT query open ai
+
+In python, write a loop that print out for this list language_map = [
+('F24_EN', 'F24_EN'),
+('F24_ES', 'F24_ES'),
+('F24_FR', 'F24_FR'),
+('F24_AR', 'F24_AR'),
+('RFI_EN', 'RFI_EN'),
+('RFI_CN', 'RFI_CN'),
+('RFI_ES', 'RFI_ES'),
+('RFI_FA', 'RFI_FA'),
+('RFI_HA', 'RFI_HA'),
+('RFI_KM', 'RFI_KM'),
+('RFI_SW', 'RFI_SW'),
+('RFI_MA', 'RFI_MA'),
+('RFI_FF', 'RFI_FF'),
+('RFI_PT', 'RFI_PT'),
+('RFI_BR', 'RFI_BR'),
+('RFI_RO', 'RFI_RO'),
+('RFI_RU', 'RFI_RU'),
+('RFI_UK', 'RFI_UK'),
+('RFI_VI', 'RFI_VI'),
+('MCD_AR', 'MCD_AR'),
+('FLE_FR', 'FLE_FR'),
+('FLE_ES', 'FLE_ES'),
+('FLE_RU', 'FLE_RU'),
+('FLE_AR', 'FLE_AR'),
+('FLE_EN', 'FLE_EN'),
+('FLE_BR', 'FLE_BR'),
+('OBS_FR', 'OBS_FR'),
+('OBS_EN', 'OBS_EN'),
+('OBS_AR', 'OBS_AR'),
+('OBS_FA', 'OBS_FA'),
+# Default
+('', 'RFI_FR')
+]
+
+! OUPUT
+language_map = [
+    ('F24_EN', 'F24_EN'),
+    ('F24_ES', 'F24_ES'),
+    ('F24_FR', 'F24_FR'),
+    ('F24_AR', 'F24_AR'),
+    ('RFI_EN', 'RFI_EN'),
+    ('RFI_CN', 'RFI_CN'),
+    ('RFI_ES', 'RFI_ES'),
+    ('RFI_FA', 'RFI_FA'),
+    ('RFI_HA', 'RFI_HA'),
+    ('RFI_KM', 'RFI_KM'),
+    ('RFI_SW', 'RFI_SW'),
+    ('RFI_MA', 'RFI_MA'),
+    ('RFI_FF', 'RFI_FF'),
+    ('RFI_PT', 'RFI_PT'),
+    ('RFI_BR', 'RFI_BR'),
+    ('RFI_RO', 'RFI_RO'),
+    ('RFI_RU', 'RFI_RU'),
+    ('RFI_UK', 'RFI_UK'),
+    ('RFI_VI', 'RFI_VI'),
+    ('MCD_AR', 'MCD_AR'),
+    ('FLE_FR', 'FLE_FR'),
+    ('FLE_ES', 'FLE_ES'),
+    ('FLE_RU', 'FLE_RU'),
+    ('FLE_AR', 'FLE_AR'),
+    ('FLE_EN', 'FLE_EN'),
+    ('FLE_BR', 'FLE_BR'),
+    ('OBS_FR', 'OBS_FR'),
+    ('OBS_EN', 'OBS_EN'),
+    ('OBS_AR', 'OBS_AR'),
+    ('OBS_FA', 'OBS_FA'),
+    # Default
+    ('', 'RFI_FR')
+]
+
+for item in language_map:
+    print(item)
+
+--- This will print out each element of the language_map list, which consists of tuples containing two strings each. If you want to print out only the first element of each tuple, you can modify the loop like this:
+
+for item in language_map:
+    print(item[0])
+
+! In python, convert this code into a simple list without being a tuples containing two strings each. Leave just one string the item[1]: 
+
+language_map = [
+    ('F24_EN', 'F24_EN_caca'),
+    ('F24_ES', 'F24_ES'),
+    ('F24_FR', 'F24_FR'),
+    ('F24_AR', 'F24_AR'),
+    ('RFI_EN', 'RFI_EN'),
+    ('RFI_CN', 'RFI_CN'),
+    ('RFI_ES', 'RFI_ES'),
+    ('RFI_FA', 'RFI_FA'),
+    ('RFI_HA', 'RFI_HA'),
+    ('RFI_KM', 'RFI_KM'),
+    ('RFI_SW', 'RFI_SW'),
+    ('RFI_MA', 'RFI_MA'),
+    ('RFI_FF', 'RFI_FF'),
+    ('RFI_PT', 'RFI_PT'),
+    ('RFI_BR', 'RFI_BR'),
+    ('RFI_RO', 'RFI_RO'),
+    ('RFI_RU', 'RFI_RU'),
+    ('RFI_UK', 'RFI_UK'),
+    ('RFI_VI', 'RFI_VI'),
+    ('MCD_AR', 'MCD_AR'),
+    ('FLE_FR', 'FLE_FR'),
+    ('FLE_ES', 'FLE_ES'),
+    ('FLE_RU', 'FLE_RU'),
+    ('FLE_AR', 'FLE_AR'),
+    ('FLE_EN', 'FLE_EN'),
+    ('FLE_BR', 'FLE_BR'),
+    ('OBS_FR', 'OBS_FR'),
+    ('OBS_EN', 'OBS_EN'),
+    ('OBS_AR', 'OBS_AR'),
+    ('OBS_FA', 'OBS_FA'),
+    # Default
+    ('', 'RFI_FR')
+]
+
+! OUTPUT
+You can use list comprehension to extract the second element (item[1]) of each tuple in the language_map list and create a new list:
+
+language_list = [item[1] for item in language_map]
+
+This will give you a list containing only the second element (a string) of each tuple in the original language_map list.
+
++ example_query_openai_2
+! INPUT query open ai
+
+- In command line, with npx, inside a console, how to stop the execution of this command: npx cypress open --env BRAND_LANG="RFI_FR",DEVICE_TYPE="mobile" --config-file "config/RFI_FR.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+!  OUTPUT
+To stop the execution of the npx command, you can press Ctrl + C on your keyboard. This will send a signal to the command line interface to stop the running process.
+
+Once you press Ctrl + C, the console should display a message indicating that the process has been terminated, and you should be able to enter commands again.
+
++ example_query_openai_3
+- In command line, with python, inside a console, how to execute the equivalant when you press "Ctrl + C"
+
+In a Python console running in the command line, pressing "Ctrl + C" is the keyboard interrupt (SIGINT) signal, which interrupts the currently running program and returns control to the console.
+
+You can simulate this behavior programmatically by using the KeyboardInterrupt exception. To do this, you can simply raise the KeyboardInterrupt exception by typing raise KeyboardInterrupt in the console.
+
+Here's an example:
+
+python
+Copy code
+>>> while True:
+...     try:
+...         # Some long-running operation
+...     except KeyboardInterrupt:
+...         print("Keyboard interrupt received. Stopping operation...")
+...         break
+
+In the above example, the while loop continues to run until the user presses "Ctrl + C" to raise the KeyboardInterrupt exception, which is caught by the try-except block and the loop is stopped with a message.
+
+
++ example_query_openai_4
+- In python how to pass the command "Ctrl + C" ?
+
+
+In Python, you can simulate the "Ctrl + C" keyboard interrupt by sending a signal to the running process using the os module. Here's an example code snippet:
+
+
+import os
+import signal
+
+# Define the signal handler function
+def signal_handler(sig, frame):
+    print('You pressed Ctrl+C!')
+
+# Set the signal handler for SIGINT (Ctrl+C)
+signal.signal(signal.SIGINT, signal_handler)
+
+# Wait for a signal to be received
+print('Waiting for Ctrl+C...')
+signal.pause()
+
+
+In this example, we define a signal handler function that will be called when the SIGINT signal is received (which is what happens when you press "Ctrl+C" on the keyboard). We then set this signal handler using the signal.signal function, which tells the program to call our signal handler function whenever the SIGINT signal is received.
+
+Finally, we call the signal.pause() function to wait for a signal to be received. When you run this code and press "Ctrl+C" in the terminal, you should see the message "You pressed Ctrl+C!" printed to the console.
+

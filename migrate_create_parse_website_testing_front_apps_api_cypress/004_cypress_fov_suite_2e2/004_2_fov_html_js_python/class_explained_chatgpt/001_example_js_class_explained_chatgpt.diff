@@ -1,0 +1,131 @@
++ example_query_openai_1
+
+! INPUT query open ai
+
+--- in JavaScript
+- FR
+L’exemple est le suivant : il y a deux sites en deux langues différentes et sur deux marques différentes (RFI_FR, F24_ES). Chacun des deux sites (RFI_FR, F24_ES) possèdent des pages de section différentes dont la liste est contenue dans la variable NavActualitesSlugNewsByRegion. Pour chacune des pages de section pour les des deux sites (RFI_FR, F24_ES), il existe aussi un jeu de deux variables avec comme de title_tag et property_tag.
+Peux-tu écrire, en JavaScript, une Class du nom de UtilityFov avec des commentaire pour chaque ligne, pour cet exemple.
+
+- EN
+The example is as follows: there are two sites in two different languages and on two different brands (RFI_FR, F24_ES). Each of the two sites (RFI_FR, F24_ES) have different section pages, the list of which is contained in the NavActualitesSlugNewsByRegion variable. For each of the section pages for the two sites (RFI_FR, F24_ES), there is also a set of two variables with title_tag and property_tag.
+Can you write, in JavaScript, a Class named UtilityFov with comments for each line, for this example.
+Below the NavActualitesSlugNewsByRegion for RFI_FR, F24_ES.
+
+
+For RFI_FR
+var NavActualitesSlugNewsByRegion = [
+                              ['page_afrique', 'afrique/'],
+                              ['page_asie_pacifique','asie-pacifique/'],
+                              ['page_monde','monde/']
+                        ];
+
+For F24_ES
+ var NavActualitesSlugNewsByRegion = [
+                              ['page_france','francia/'],
+                              ['page_europe','europa/'],
+                              ['page_sports','deportes/']
+                        ];
+
+
+- meta
+var MetaStuff = [
+            // title
+            ['title_tag','title', 'RFI - Actualités, info, news en direct - Radio France Internationale'],
+            // property
+            ['property_tag','og:image', 'https://static.rfi.fr/meta_og_twcards/RFI_TW.png'], 
+    ];
+- RFI_FR
+var NavActualitesSlugNewsByRegion = [
+                              ['page_afrique', 'afrique/'],
+                              ['page_ameriques','am%C3%A9riques/'],
+                              ['page_asie_pacifique','asie-pacifique/'],
+                              ['page_europe','europe/'],
+                              ['page_moyen_orient','moyen-orient/'],
+                              ['page_france','france/'],
+                              ['page_monde','monde/']
+                        ];
+
+- F24_ES
+ var NavActualitesSlugNewsByRegion = [
+                              ['page_ameriques', 'am%C3%A9ricas/'],
+                              ['page_france','francia/'],
+                              ['page_europe','europa/'],
+                              ['page_environnement','medioambiente/'],
+                              ['page_sante','salud/'],
+                              ['page_culture','cultura/'],
+                              ['page_economie','econom%C3%ADa/'],
+                              ['page_sports','deportes/']
+                        ];
+                        
+
+
+! OUTPUT query open ai
+
+Sure, here's an example implementation of a UtilityFov class in JavaScript, based on the provided information:
+
+'''
+// Define the UtilityFov class
+class UtilityFov {
+  // Define a constructor function that takes in two parameters:
+  // languageCode (string) and brandName (string)
+  constructor(languageCode, brandName) {
+    this.languageCode = languageCode; // Store the language code as a property of the class instance
+    this.brandName = brandName; // Store the brand name as a property of the class instance
+    this.NavActualitesSlugNewsByRegion = null; // Initialize the NavActualitesSlugNewsByRegion property to null
+    this.title_tag = null; // Initialize the title_tag property to null
+    this.property_tag = null; // Initialize the property_tag property to null
+  }
+
+  // Define a function that sets the NavActualitesSlugNewsByRegion property based on the current language and brand
+  setNavActualitesSlugNewsByRegion() {
+    if (this.languageCode === 'FR' && this.brandName === 'RFI') {
+      this.NavActualitesSlugNewsByRegion = [
+        ['page_afrique', 'afrique/'],
+        ['page_asie_pacifique','asie-pacifique/'],
+        ['page_monde','monde/']
+      ];
+    } else if (this.languageCode === 'ES' && this.brandName === 'F24') {
+      this.NavActualitesSlugNewsByRegion = [
+        ['page_france','francia/'],
+        ['page_europe','europa/'],
+        ['page_sports','deportes/']
+      ];
+    } else {
+      console.error('Unsupported language and brand combination'); // Log an error message if the language and brand combination is not supported
+    }
+  }
+
+  // Define a function that sets the title_tag and property_tag properties based on the provided section page
+  setTagsForSectionPage(sectionPage) {
+    if (!this.NavActualitesSlugNewsByRegion) {
+      console.error('NavActualitesSlugNewsByRegion property not set'); // Log an error message if the NavActualitesSlugNewsByRegion property is not set
+      return;
+    }
+
+    const matchingSection = this.NavActualitesSlugNewsByRegion.find((section) => section[0] === sectionPage);
+
+    if (!matchingSection) {
+      console.error(`Section page "${sectionPage}" not found in NavActualitesSlugNewsByRegion`); // Log an error message if the section page is not found in the NavActualitesSlugNewsByRegion
+      return;
+    }
+
+    if (this.languageCode === 'FR') {
+      this.title_tag = `Actualités en ${matchingSection[0].replace('_', ' ')}`; // Set the title_tag property for RFI_FR
+      this.property_tag = `https://www.rfi.fr/${matchingSection[1]}`; // Set the property_tag property for RFI_FR
+    } else if (this.languageCode === 'ES') {
+      this.title_tag = `Noticias de ${matchingSection[0].replace('_', ' ')}`; // Set the title_tag property for F24_ES
+      this.property_tag = `https://www.france24.com/es/${matchingSection[1]}`; // Set the property_tag property for F24_ES
+    } else {
+      console.error('Unsupported language'); // Log an error message if the language is not supported
+    }
+  }
+}
+'''
+
+This implementation assumes that the NavActualitesSlugNewsByRegion variable is set outside of the class and passed in as a property value. Here's an example of how you could create an instance
+
+
+
+
+

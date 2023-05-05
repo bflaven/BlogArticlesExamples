@@ -1,0 +1,162 @@
+
+- path for bplanet
+/Users/brunoplanet/Cypress-Apps
+
+
+
+(**
+ * This file is part of the book package: "Learning and Building E2E test automation with Cypress & OKR"
+ * Introduction to a "testing" framework Cypress. Usecase with WordPress."
+ * (c) Bruno Flaven <info@flaven.fr>
+ * 
+ * Check the book at https://www.amazon.com/dp/B0BP216HCW/
+ *
+ * @package E2E-CYPRESS-APPS
+ * @subpackage APPS
+ * @since Cypress 12.10.0, Node v18.12.1 
+ **)
+
+
+
++ QUERY_2 CHATGPT 
+
+
+How to launch, in the Mac console, a a file with the extension .applescript or a file with the extension .scpt
+give a full explanation for each command and prin the full command for each file.
+
+
+osascript /path/to/script.applescript
+
+
+- npm run cy:open
+- npm run cy:open:chrome
+
+
+
+
+
+-- Go to working directory defined in goToDir
+    do script "cd " & quoted form of goToDir in front window
+    delay 1 -- pause for a second
+    
+    -- Print the current working directory
+    do script "pwd" in front window
+    delay 1 -- pause for a second
+    
+    -- List the contents of the directory
+    do script "ls -l" in front window
+
+
+
+
+tell application "Terminal"
+  
+  activate
+  
+  do script "blahblah blah" in front window
+  
+  delay 1 -- pause for a second
+  
+  do script "passwordhere" in front window
+  
+end tell
+
+
+
+  do shell script "/path/to/command" with administrative privileges password "passwordhere"
+
+
+
+
++ QUERY_2 CHATGPT 
+
+In Applescript, first of all the script must be executed in the same Mac window terminal and Mac window terminal opened will have the profile homebrew then in this unique Mac window terminal so can you write a script that open the Mac terminal then launch this command_1 as "cd goToDir" where "goToDir" is variable set earlier goToDir "/Users/username/Documents/02_copy/_cypress_apps_suite_2e2/app_suite_2e2_working_version_1/" then launch this command_2 "pwd" then launch this command_23 "ls -l". Make comment inside the script for each line. 
+
+
+Sure, here's an AppleScript that should do what you've described:
+
+-- Open a new terminal window with the homebrew profile
+tell application "Terminal"
+    do script with command "export TERM_PROGRAM=homebrew; clear"
+    activate
+end tell
+
+-- Set the directory to navigate to
+set goToDir to "/Users/username/Documents/02_copy/_cypress_apps_suite_2e2/app_suite_2e2_working_version_1/"
+
+-- Navigate to the directory, print the current working directory, and list the contents
+tell application "Terminal"
+    activate
+    tell window 1
+        -- Navigate to the directory
+        do script "cd " & quoted form of goToDir
+
+        -- Print the current working directory
+        do script "pwd"
+
+        -- List the contents of the directory
+        do script "ls -l"
+    end tell
+end tell
+
+
+
+Here's a breakdown of what each section of the script does:
+
+Open a new Terminal window with the homebrew profile using the do script command and the export command to set the TERM_PROGRAM environment variable to "homebrew".
+Activate the Terminal application using the activate command.
+Set the goToDir variable to the directory path you specified.
+Activate the Terminal application again using the activate command.
+Tell Terminal to navigate to the directory specified in the goToDir variable using the cd command and the quoted form of command to ensure that any spaces in the directory path are properly escaped.
+Tell Terminal to print the current working directory using the pwd command.
+Tell Terminal to list the contents of the directory using the ls -l command.
+Each section of the script is commented to help explain what it does. Note that you'll need to replace "username" in the goToDir variable with your actual username.
+
+
+
+
+
+
+
+
++ QUERY_1 CHATGPT 
+
+--- In Applescript, can you write a script that open the Mac terminal then launch this command_1 as "cd goToDir" where "goToDir" is variable set earlier goToDir "/Users/username/Documents/02_copy/_cypress_apps_suite_2e2/app_suite_2e2_working_version_1/" then launch this command_2 "pwd" then launch this command_23 "ls -l"
+
+
+https://github.com/sisoe24/Nukepy-Applescript-Launcher
+
+
+
+- result
+-- Set the directory to navigate to
+set goToDir to "/Users/username/Documents/02_copy/_cypress_apps_suite_2e2/app_suite_2e2_working_version_1/"
+
+-- Open the Terminal and execute commands
+tell application "Terminal"
+    activate
+    delay 0.5 -- add a short delay to give Terminal time to open
+    do script "cd " & quoted form of goToDir
+    do script "pwd"
+    do script "ls -l"
+end tell
+
+
+! SOURCE
+https://stackoverflow.com/questions/22693509/how-can-i-launch-an-applescript-application-and-run-shell-scripts-from-another-a#22698574
+
+do shell script "/path/to/shell/script" with administrator privileges
+
+tell application "Finder" to set theSel to selection
+
+tell application "Terminal"
+ set theFol to POSIX path of ((item 1 of theSel) as text)
+ if (count of windows) is not 0 then
+  do script "cd " & quoted form of theFol & ";clear" in window 1
+ else
+  do script "cd " & quoted form of theFol & ";clear"
+ end if
+ activate
+end tell
+
+

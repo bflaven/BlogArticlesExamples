@@ -1,0 +1,794 @@
+
+- 2. Install Gherkin
+
+
+
+--- live.cy.js
+- 005_check_content_live.feature
+
+header direct monde, header direct afrique, smartfeed
+
+header_direct_monde
+header_direct_afrique
+smartfeed
+
+
+checkLiveHeaderDirectMonde(url)
+checkLiveHeaderDirectAfrique(url)
+checkLiveSmartfeed(url)
+
+
+--- nav.cy.js
+- 006_check_content_nav.feature
+
+header, bottom-bar
+
+
+header
+bottom_bar
+
+checkNavHeader(url)
+checkNavBottomBar(url)
+
+--- sections.cy.js
+- 007_check_content_sections.feature
+
+section
+
+checkSection(url)
+
+--- tags.cy.js
+- 008_check_content_tags.feature
+thematic
+
+checkThematicTags(url)
+
+! CACHE ISSUE
+- corrections
+npm install --force uuid@latest
+npm install @cypress/grep
+npm fund
+
+
+npm cache clean --force
+npm install -g npm
+npm install
+
+cd /Users/brunoflaven/Library/Application\ Support/Cypress/cy/production/projects/fov_suite_2e2_working_version_5-85850037da5c52719176750505b6704f/bundles/cypress/e2e/fov/002_cypress_fov_player_actions.cy.js
+rm -R fov_suite_2e2_working_version_5-85850037da5c52719176750505b6704f
+
+- cypress cache issue command
+npm cache verify
+// cy.exec('npm cache clean')
+        // Clear the Cypress cache
+        cy.cache.clear()
+
+! ACCESS
+cd /Users/brunoflaven/Documents/02_copy/_cypress_fov_suite_2e2/fov_suite_2e2_working_version_2/
+
+cd /Users/brunoflaven/Documents/02_copy/_cypress_fov_suite_2e2/fov_suite_2e2_working_version_3/
+
+cd /Users/brunoflaven/Documents/02_copy/_cypress_fov_suite_2e2/fov_suite_2e2_working_version_4/
+
+cd /Users/brunoflaven/Documents/02_copy/_cypress_fov_suite_2e2/fov_suite_2e2_working_version_5/
+
+cd /Users/brunoflaven/Documents/02_copy/_cypress_fov_suite_2e2/fov_suite_2e2_working_version_6/
+
+npm run cy:open:F24_EN:d
+npx cypress open
+
+
+/Users/brunoflaven/Library/Application Support/Cypress/cy/production/projects/fov_suite_2e2_working_version_4-5a3305b4bef50e7b6eced66112dd58a9/bundles/cypress/support/e2e.js'
+
+
+
+--- DONE :: step_1 :: Change the package
+
+"@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+"@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",    
+
+npm install
+
+--- DONE :: step_2 :: Cut and Paste the .cypress-cucumber-preprocessorrc.json
+
+--- DONE :: step_3 :: Add to cypress.config.js
+
+// Gherkin Install
+const { defineConfig } = require("cypress");
+const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
+const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
+const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild");
+
+// Gherkin Install
+async function setupNodeEvents(on, config) {
+  // This is required for the preprocessor to be able to generate JSON reports after each run, and more,
+  await preprocessor.addCucumberPreprocessorPlugin(on, config);
+
+  on(
+    "file:preprocessor",
+    createBundler({
+      plugins: [createEsbuildPlugin.default(config)],
+    })
+  );
+  // allureWriter(on, config);
+
+  // Make sure to return the config object as it might have been modified by the plugin.
+  return config;
+}
+
+
+module.exports = defineConfig({
+   // Gherkin Install :: other config options...
+  externals: {
+    // mark @badeball/cypress-cucumber-preprocessor/steps as external
+    "@badeball/cypress-cucumber-preprocessor/steps": "commonjs2 @badeball/cypress-cucumber-preprocessor/steps",
+    // "@helpers/Debug": "commonjs2 @helpers/Debug"
+  },
+
+  });
+
+--- DONE :: step_4 :: Add or not the same code as step_3 to F24_AR.conf.env.cypress.config.js... ect
+
+! required do the changes for all files...
+
+
+--- DONE :: step_5 :: Add the Gherkin files and see if works without errors in the console.
+
+Add in cypress/e2e
+features
+step_definitions
+
+Add in cypress/
+helpers
+
+
+--- DONE :: step_6 :: Change in the package.json the values : setupNodeEvents and specPattern to let the .features show up.
+
+
+setupNodeEvents,
+baseUrl: 'https://www.rfi.fr/fr/',
+screenshotsFolder :'po_screenshots',
+specPattern: ['cypress/e2e/features/*.feature','cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'],
+
+! required do the changes for all files...
+
+
+
+- 2. Testing the changes
+
+! ALL CONFIG ARE OK
+
+--- npm run cy:open:RFI_FR:d
+--- npm run cy:open:RFI_BR:d
+--- npm run cy:open:RFI_CN:d
+--- npm run cy:open:RFI_EN:d
+--- npm run cy:open:RFI_ES:d
+--- npm run cy:open:RFI_FA:d
+--- npm run cy:open:RFI_FF:d
+--- npm run cy:open:RFI_HA:d
+--- npm run cy:open:RFI_KM:d
+--- npm run cy:open:RFI_MA:d
+--- npm run cy:open:RFI_PT:d
+--- npm run cy:open:RFI_RO:d
+--- npm run cy:open:RFI_RU:d
+--- npm run cy:open:RFI_SW:d
+--- npm run cy:open:RFI_TW:d
+--- npm run cy:open:RFI_UK:d
+--- npm run cy:open:RFI_VI:d
+--- npm run cy:open:F24_FR:d
+--- npm run cy:open:F24_EN:d
+--- npm run cy:open:F24_ES:d
+--- npm run cy:open:F24_AR:d
+--- npm run cy:open:FLE_FR:d
+--- npm run cy:open:FLE_AR:d
+--- npm run cy:open:FLE_BR:d
+--- npm run cy:open:FLE_CN:d
+--- npm run cy:open:FLE_EN:d
+--- npm run cy:open:FLE_ES:d
+--- npm run cy:open:FLE_RU:d
+--- npm run cy:open:OBS_FR:d
+--- npm run cy:open:OBS_EN:d
+--- npm run cy:open:OBS_AR:d
+--- npm run cy:open:OBS_FA:d
+--- npm run cy:open:MCD_AR:d
+
+
+
+- 1. Change the call to object globalDataTest
+
+
+
+
+
+
+--- + DONE :: step_1 :: In /, add in cypress.config.js, the default case
+
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_FR');
+
+--- + DONE :: step_2 :: In /config/, add in F24_AR.conf.env.cypress.config.js, FLE_RU.conf.env.cypress.config.js  etc...
+
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_F24_AR');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_F24_EN');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_F24_ES');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_F24_FR');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_FLE_AR');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_FLE_BR');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_FLE_CN');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_FLE_EN');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_FLE_ES');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_FLE_FR');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_FLE_RU');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_MCD_AR');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_OBS_AR');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_OBS_EN');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_OBS_FA');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_OBS_FR');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_BR');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_CN');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_EN');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_ES');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_FA');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_FF');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_FR');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_HA');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_KM');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_MA');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_PT');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_RO');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_RU');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_SW');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_TW');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_UK');
+// Load extra data
+const { globalDataTest } = require('cypress/fixtures/all_values_elements/datas_var_RFI_VI');
+(base) brunoflaven@MacBook-Air _html_js_python % python 001_example_print_loop.py
+
+--- result
+
+datas_var_F24_AR.js
+datas_var_F24_EN.js
+datas_var_F24_ES.js
+datas_var_F24_FR.js
+datas_var_FLE_AR.js
+datas_var_FLE_BR.js
+datas_var_FLE_CN.js
+datas_var_FLE_EN.js
+datas_var_FLE_ES.js
+datas_var_FLE_FR.js
+datas_var_FLE_RU.js
+datas_var_MCD_AR.js
+datas_var_OBS_AR.js
+datas_var_OBS_EN.js
+datas_var_OBS_FA.js
+datas_var_OBS_FR.js
+datas_var_RFI_BR.js
+datas_var_RFI_CN.js
+datas_var_RFI_EN.js
+datas_var_RFI_ES.js
+datas_var_RFI_FA.js
+datas_var_RFI_FF.js
+datas_var_RFI_FR.js
+datas_var_RFI_HA.js
+datas_var_RFI_KM.js
+datas_var_RFI_MA.js
+datas_var_RFI_PT.js
+datas_var_RFI_RO.js
+datas_var_RFI_RU.js
+datas_var_RFI_SW.js
+datas_var_RFI_TW.js
+datas_var_RFI_UK.js
+datas_var_RFI_VI.js
+
+
+--- + DONE :: step_3 :: In /cypress/fixtures/allValues.js, add in allValues.js the globalDataTest value as a .env environment.
+
+
+- V1 (GOOD)
+GLOBAL_DATA_TEST: Cypress.env('globalDataTest'), // '+globalValues.GLOBAL_DATA_TEST+'
+
+- V0
+globalDataTest: Cypress.env('globalDataTest'), // '+globalValues.globalDataTest+'
+
++ step_4 :: (i) Declare the variable as env and change the call to the variable globalDataTest by globalValues.GLOBAL_DATA_TEST inside the files (test) and wherever it is called. (ii) Disable the export of globalDataTest as it is no more a const export but a env variable
+
+
+// make it work
+let globalDataTest = globalValues.GLOBAL_DATA_TEST;
+
+- change files
+utilsVariables.js
+utilityGetStuffForFov.js
+commands.js
+fov_debug.js
+
+001_cypress_fov_main_navigation.cy.js
+002_cypress_fov_player_actions.cy.js
+003_cypress_fov_player_header_actions.cy.js
+004_cypress_fov_burger_menu.cy.js
+005_cypress_fov_navigation_page_section_slug.cy.js
+006_cypress_fov_meta_html_code_social.cy.js
+007_cypress_fov_seo_page_section.cy.js
+008_cypress_fov_web_vitals_performance.cy.js
+
+
+
++ step_5 :: should be good! Add this value in datas_var_F24_AR.js to check th env when cypress is loaded
+
+See the value....
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_F24_AR',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_F24_EN',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_F24_ES',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_F24_FR',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_FLE_AR',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_FLE_BR',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_FLE_CN',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_FLE_EN',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_FLE_ES',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_FLE_FR',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_FLE_RU',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_MCD_AR',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_OBS_AR',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_OBS_EN',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_OBS_FA',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_OBS_FR',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_BR',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_CN',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_EN',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_ES',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_FA',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_FF',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_FR',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_HA',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_KM',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_MA',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_PT',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_RO',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_RU',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_SW',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_TW',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_UK',
+
+// Make it work
+FILE_NAME_GLOBAL_DATA_TEST:'datas_var_RFI_VI',
+
+
+
++ CHAT GPT QUERY
+
+In cypress, how do you load javascript file e.g. datas_var_F24_AR.js into the config like module cypress.config.js so you can access to an object defined in the file datas_var_F24_AR.js
+
+
+To load a JavaScript file in Cypress and access an object defined in that file from your cypress.config.js file, you can use the require function to import the file and assign the object to a variable.
+
+First, make sure that the datas_var_F24_AR.js file is located in the fixtures directory, which is the default directory for storing static test data in Cypress.
+
+Then, in your cypress.config.js file, use the require function to import the datas_var_F24_AR.js file and assign the object to a variable. Here's an example:
+
+
+// cypress.config.js
+
+const data = require('./fixtures/datas_var_F24_AR.js')
+
+module.exports = {
+  // ... other config options
+  env: {
+    data: data // make the data object available as an environment variable
+  }
+}
+
+In the above code, we're importing the datas_var_F24_AR.js file using the require function and assigning it to a variable called data. We're then setting the data object as an environment variable in our cypress.config.js file using the env property. This makes the data object accessible from within our tests using Cypress.env('data').
+
+To use the data object in your tests, you can do something like this:
+
+
+// my-test.spec.js
+
+describe('My Test', () => {
+  it('should access data object', () => {
+    const myData = Cypress.env('data')
+    // ... use myData object in your test
+  })
+})
+
+
+
+In the above test, we're using Cypress.env('data') to access the data object that we set as an environment variable in our cypress.config.js file. We're then assigning it to a variable called myData and using it in our test as needed.
+
+
+! COMMAND
+
+
+# go to the dir
+cd /Users/brunoflaven/Documents/02_copy/_cypress_fov_suite_2e2/fov_suite_2e2_working_version_1
+
+cd /Users/brunoflaven/Documents/02_copy/_cypress_fov_suite_2e2/fov_suite_2e2_working_version_2/
+
+# update cypress install
+npm install
+
+- default RFI_FR
+npx cypress open
+npx cypress open
+
+
+npm install
+npm run cy:open:RFI_FR:d
+npm run cy:open:F24_EN:d
+
+
+
+
+
+
+
+"cy:open": "cypress open",
+"cy:open:chrome": "cypress open --e2e --browser chrome",
+"cy:run:js": "cypress run --spec \"cypress/e2e/**/*.cy.js\"",
+"cy:run:feature": "cypress run --spec \"cypress/e2e/features/*.feature\"",
+"cy:run:all": "cypress run --spec \"cypress/e2e/features/*.feature,cypress/e2e/**/*.cy.js\""
+
+
+
+
+
+
+
+- TODO_1 ::  Add some shortcut commands to the E2E-FOV-CYPRESS inside the file package.json. Use python and chatGPT to generate the code and the shortcuts
+
+
+--- BRAND_LANG VALUES
+# VALUES FOR e.g. --env BRAND_LANG="FLE_RU"
+# For information, default case is RFI_FR
+
+# ***  BRAND_LANG FOR RFI ***
+# RFI_FR
+# RFI_BR 
+# RFI_CN
+# RFI_EN
+# RFI_ES 
+# RFI_FA
+# RFI_FF  
+# RFI_HA
+# RFI_KM
+# RFI_MA
+# RFI_PT
+# RFI_RO
+# RFI_RU
+# RFI_SW
+# RFI_TW 
+# RFI_UK
+# RFI_VI
+
+# *** BRAND_LANG FOR F24 *** 
+# F24_FR
+# F24_EN
+# F24_ES
+# F24_AR
+
+# *** BRAND_LANG FOR FLE ***
+# FLE_FR
+# FLE_AR
+# FLE_BR
+# FLE_CN
+# FLE_EN
+# FLE_ES
+# FLE_RU
+
+# *** BRAND_LANG FOR OBS ***
+# OBS_FR
+# OBS_EN
+# OBS_AR
+# OBS_FA
+
+# *** BRAND_LANG FOR MCD ***
+# MCD_AR
+
+--- DEVICE_TYPE VALUES
+desktop
+tablet
+mobile
+mobile-landscape
+tablet-landscape
+
+--- COMPLETE EXAMPLES
+npx cypress run --env BRAND_LANG="RFI_PT",DEVICE_TYPE="desktop" --config-file "config/RFI_PT.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+npx cypress run --env BRAND_LANG="F24_ES",DEVICE_TYPE="desktop" --config-file "config/F24_ES.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+npx cypress open --env BRAND_LANG="RFI_PT",DEVICE_TYPE="mobile-landscape" --config-file "config/RFI_PT.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+npx cypress open --env BRAND_LANG="RFI_PT",DEVICE_TYPE="tablet-landscape" --config-file "config/RFI_PT.conf.env.cypress.config.js" --config video=false,screenshotOnRunFailure=false
+
+
+
+! MODEL
+
+- example of shortcuts
+# In Console, Shortcuts to run with brandlang and device 
+npm run cy:open:F24_EN
+npm run cy:open:F24_ES
+npm run cy:open:RFI_BR
+npm run cy:open:OBS_FR
+npm run cy:open:MCD_AR
+
+
+# In Runner, Shortcuts to run with brandlang and device 
+npm run cy:run:F24_EN
+npm run cy:run:F24_ES
+npm run cy:run:RFI_BR
+npm run cy:run:OBS_FR
+npm run cy:run:MCD_AR
+
+
+
+- example of subcommands
+"cy:open:F24_EN": "cypress open --env BRAND_LANG=\"F24_EN\" --config-file \"config/F24_EN.conf.env.cypress.config.js\"",
+"cy:run:F24_EN": "cypress run  --browser chromium --config video=false,screenshotOnRunFailure=false --env BRAND_LANG=\"F24_EN\" --config-file \"config/F24_EN.conf.env.cypress.config.js\"",
+
+
+getGlobalDataTest(brandLang) {
+        // let brandLang = Cypress.env('BRAND_LANG');
+    switch (brandLang) {
+
+            // F24
+            case 'F24_EN':
+                console.log(brandLang);
+                
+                // const { globalDataTest } = require('../fixtures/all_values_elements/all_values_elements/datas_var_F24_EN.js');
+
+                import {globalDataTest} from '../fixtures/all_values_elements/all_values_elements/datas_var_F24_EN';
+                
+                // import globalDataTest from '../fixtures/all_values_elements/datas_var_F24_EN';
+            break;
+            case 'F24_ES':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_F24_ES.js');
+                // import {globalDataTest} from '../fixtures/all_values_elements/datas_var_F24_ES';
+
+            break;
+            case 'F24_FR':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_F24_FR.js');
+
+            break;
+            case 'F24_AR':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_F24_AR.js');
+            break;
+
+            // RFI
+            case 'RFI_EN':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_EN.js');
+            break;
+            case 'RFI_CN':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_CN.js');
+            break;
+            case 'RFI_TW':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_TW.js');
+            break;
+            case 'RFI_ES':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_ES.js');
+            break;
+            case 'RFI_FA':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_FA.js');
+            break;
+            case 'RFI_HA':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_MA.js');
+            break;
+            case 'RFI_KM':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_KM.js');
+            break;
+            case 'RFI_SW':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_SW.js');
+            break;
+            case 'RFI_MA':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_HA.js');
+            break;
+            case 'RFI_FF':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_FF.js');
+            break;
+            case 'RFI_PT':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_PT.js');
+            break;
+            case 'RFI_BR':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_BR.js');
+            break;
+            case 'RFI_RO':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_RO.js');
+            break;
+            case 'RFI_RU':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_RU.js');
+            break;
+            case 'RFI_UK':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_UK.js');
+            break;
+            case 'RFI_VI':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_VI.js');
+            break;
+
+            // MCD
+            case 'MCD_AR':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_MCD_AR.js');
+            break;
+
+            // FLE
+            case 'FLE_FR':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_FLE_FR.js');
+            break;
+
+            case 'FLE_ES':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_FLE_ES.js');
+            break;
+
+            case 'FLE_RU':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_FLE_RU.js');
+            break;
+
+            case 'FLE_AR':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_FLE_AR.js');
+            break;
+
+            case 'FLE_EN':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_FLE_EN.js');
+            break;
+
+            case 'FLE_BR':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_FLE_BR.js');
+            break;
+
+            case 'FLE_CN':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_FLE_CN.js');
+            break;
+            
+            // OBS
+            case 'OBS_FR':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_OBS_FR.js');
+            break;
+            case 'OBS_EN':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_OBS_EN.js');
+            break;
+            case 'OBS_AR':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_OBS_AR.js');
+            break;
+            case 'OBS_FA':
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_OBS_FA.js');
+            break;
+            // Default
+            default:
+                // RFI_FR
+                console.log(brandLang);
+                // const { globalDataTest } = require('../fixtures/all_values_elements/datas_var_RFI_FR.js');
+
+
+
+            break;
+
+        }// EOS
+    }// EOF

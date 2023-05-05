@@ -1,0 +1,96 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_class_008_fov.html</br>
+    <script type="text/javascript">
+      
+      class UtilityFov {
+
+        brandLang;
+        NavActualitesSlugNewsByRegion;
+        
+        constructor(brandLang, NavActualitesSlugNewsByRegion) {
+            this.brandLang = brandLang;
+            this.NavActualitesSlugNewsByRegion = NavActualitesSlugNewsByRegion;
+
+
+            switch (brandLang) {
+
+            case 'RFI_ES':
+
+                this.brandLang="RFI_ES";
+                this.NavActualitesSlugNewsByRegion=[
+                                    'RFI_ES_am%C3%A9ricas/',
+                                    'RFI_ES_francia/',
+                                    'RFI_ES_europa/',
+                                    'RFI_ES_medioambiente/',
+                                    'RFI_ES_salud/',
+                                    'RFI_ES_cultura/',
+                                    'RFI_ES_econom%C3%ADa/',
+                                    'RFI_ES_deportes/'
+                                ];
+
+                
+
+            case 'F24_FR':
+
+                    this.brandLang="F24_FR";
+
+                    this.NavActualitesSlugNewsByRegion = [
+                            'F24_FR_france/',
+                            'F24_FR_afrique/',
+                            'F24_FR_moyen-orient/',
+                            'F24_FR_europe/',
+                            'F24_FR_am%C3%A9riques/',
+                            'F24_FR_asie-pacifique/'
+                        ];
+            
+            // Default
+            default: 
+            // F24_EN
+                    
+                    this.brandLang="F24_EN";
+
+                    this.NavActualitesSlugNewsByRegion = [
+                            'F24_EN_france/',
+                            'F24_EN_afrique/',
+                            'F24_EN_moyen-orient/',
+                            'F24_EN_europe/',
+                            'F24_EN_am%C3%A9riques/',
+                            'F24_EN_asie-pacifique/'
+                        ];
+
+
+        }//EOS
+
+        }// EOF
+
+        
+        getBrandLang(){
+              console.log(this.brandLang);
+           }
+
+        getNavActualitesSlugNewsByRegion() { 
+                console.log(this.NavActualitesSlugNewsByRegion);
+        }
+
+
+        }// EOC
+
+
+
+         
+        
+
+        var brandLang ='RFI_RU'; 
+        const fov = new UtilityFov();
+        
+
+
+
+        // output
+        fov.getBrandLang();
+        fov.getNavActualitesSlugNewsByRegion();
+
+    </script>
+</body>
+</html>

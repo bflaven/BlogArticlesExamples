@@ -1,0 +1,201 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_parse_001_model.html</br>
+    <script type="text/javascript">
+
+HREF_LANG_VALUES = ["fr", "en", "es", "pt", "pt-BR", "ha", "sw", "bm", "ff", "ro", "ru", "uk", "vi", "zh-Hans", "zh-Hant", "km", "fa"]; // globalValues.FOV_HEADER_MAIN_NAV_BURGER_SELECTION
+
+HREF_LANG_VALUES_SLUG = ["fr", "en", "es", "pt", "br", "ha", "sw", "bm", "ff", "ro", "ru", "uk", "vi", "cn", "tw", "km", "fa"]; // globalValues.FOV_HEADER_MAIN_NAV_BURGER_SELECTION
+            
+/*  convert this python code into javascript
+language_map = [
+    ('F24_EN', 'F24_EN'),
+    ('F24_ES', 'F24_ES'),
+    ('F24_FR', 'F24_FR'),
+    ('F24_AR', 'F24_AR'),
+    ('RFI_EN', 'RFI_EN'),
+    ('RFI_CN', 'RFI_CN'),
+    ('RFI_ES', 'RFI_ES'),
+    ('RFI_FA', 'RFI_FA'),
+    ('RFI_HA', 'RFI_HA'),
+    ('RFI_KM', 'RFI_KM'),
+    ('RFI_SW', 'RFI_SW'),
+    ('RFI_MA', 'RFI_MA'),
+    ('RFI_FF', 'RFI_FF'),
+    ('RFI_PT', 'RFI_PT'),
+    ('RFI_BR', 'RFI_BR'),
+    ('RFI_RO', 'RFI_RO'),
+    ('RFI_RU', 'RFI_RU'),
+    ('RFI_UK', 'RFI_UK'),
+    ('RFI_VI', 'RFI_VI'),
+    ('MCD_AR', 'MCD_AR'),
+    ('FLE_FR', 'FLE_FR'),
+    ('FLE_ES', 'FLE_ES'),
+    ('FLE_RU', 'FLE_RU'),
+    ('FLE_AR', 'FLE_AR'),
+    ('FLE_EN', 'FLE_EN'),
+    ('FLE_BR', 'FLE_BR'),
+    ('OBS_FR', 'OBS_FR'),
+    ('OBS_EN', 'OBS_EN'),
+    ('OBS_AR', 'OBS_AR'),
+    ('OBS_FA', 'OBS_FA'),
+    // Default
+    ('', 'RFI_FR')
+]
+*/
+
+// Here's the equivalent code in JavaScript:
+
+const language_map = [
+['F24_EN', 'F24_EN'],
+['F24_ES', 'F24_ES'],
+['F24_FR', 'F24_FR'],
+['F24_AR', 'F24_AR'],
+['RFI_EN', 'RFI_EN'],
+['RFI_CN', 'RFI_CN'],
+['RFI_ES', 'RFI_ES'],
+['RFI_FA', 'RFI_FA'],
+['RFI_HA', 'RFI_HA'],
+['RFI_KM', 'RFI_KM'],
+['RFI_SW', 'RFI_SW'],
+['RFI_MA', 'RFI_MA'],
+['RFI_FF', 'RFI_FF'],
+['RFI_PT', 'RFI_PT'],
+['RFI_BR', 'RFI_BR'],
+['RFI_RO', 'RFI_RO'],
+['RFI_RU', 'RFI_RU'],
+['RFI_UK', 'RFI_UK'],
+['RFI_VI', 'RFI_VI'],
+['MCD_AR', 'MCD_AR'],
+['FLE_FR', 'FLE_FR'],
+['FLE_ES', 'FLE_ES'],
+['FLE_RU', 'FLE_RU'],
+['FLE_AR', 'FLE_AR'],
+['FLE_EN', 'FLE_EN'],
+['FLE_BR', 'FLE_BR'],
+['OBS_FR', 'OBS_FR'],
+['OBS_EN', 'OBS_EN'],
+['OBS_AR', 'OBS_AR'],
+['OBS_FA', 'OBS_FA'],
+// Default
+['', 'RFI_FR']
+];
+
+/* 
+* How do we loop in javascript into this array. Can you show me how to print in the console the first value but also the second value ? 
+
+* OUPUT
+
+const language_map = [
+['F24_EN', 'F24_EN'],
+['F24_ES', 'F24_ES'],
+['F24_FR', 'F24_FR'],
+['F24_AR', 'F24_AR'],
+['RFI_EN', 'RFI_EN'],
+['RFI_CN', 'RFI_CN'],
+['RFI_ES', 'RFI_ES'],
+['RFI_FA', 'RFI_FA'],
+['RFI_HA', 'RFI_HA'],
+['RFI_KM', 'RFI_KM'],
+['RFI_SW', 'RFI_SW'],
+['RFI_MA', 'RFI_MA'],
+['RFI_FF', 'RFI_FF'],
+['RFI_PT', 'RFI_PT'],
+['RFI_BR', 'RFI_BR'],
+['RFI_RO', 'RFI_RO'],
+['RFI_RU', 'RFI_RU'],
+['RFI_UK', 'RFI_UK'],
+['RFI_VI', 'RFI_VI'],
+['MCD_AR', 'MCD_AR'],
+['FLE_FR', 'FLE_FR'],
+['FLE_ES', 'FLE_ES'],
+['FLE_RU', 'FLE_RU'],
+['FLE_AR', 'FLE_AR'],
+['FLE_EN', 'FLE_EN'],
+['FLE_BR', 'FLE_BR'],
+['OBS_FR', 'OBS_FR'],
+['OBS_EN', 'OBS_EN'],
+['OBS_AR', 'OBS_AR'],
+['OBS_FA', 'OBS_FA'],
+// Default
+['', 'RFI_FR']
+];
+
+# OUPUT
+To loop through the language_map array in JavaScript, you can use the forEach method or a traditional for loop. Here's an example of how to print the first and second values of each array in the language_map array using forEach method:
+
+language_map.forEach(function(lang) {
+  console.log(lang[0]); // prints the first value
+  console.log(lang[1]); // prints the second value
+});
+
+
+And here's an example of how to do the same thing using a traditional for loop:
+
+for (var i = 0; i < language_map.length; i++) {
+  console.log(language_map[i][0]); // prints the first value
+  console.log(language_map[i][1]); // prints the second value
+}
+Both of these code snippets will output the first and second values of each array in the language_map array to the console.
+ */
+        
+
+        // METHOD_1
+        language_map.forEach(function(lang) {
+                console.log(lang[0]); // prints the first value
+                console.log(lang[1]); // prints the second value
+        });
+
+
+        // METHOD_2
+        for (var i = 0; i < language_map.length; i++) {
+                console.log(language_map[i][0]); // prints the first value
+                console.log(language_map[i][1]); // prints the second value
+        }
+
+/*
+        // HREF_LANG_VALUES
+        // cy.log(globalValues.HREF_LANG_VALUES)
+        // let  values=[HREF_LANG_VALUES];
+        // console.log(values)
+         
+        HREF_LANG_VALUES.forEach((value, index) => {
+                console.log('--- value :: '+value);
+                console.log('--- index :: '+index);
+                // cy.get(css_selector, { timeout: 10000 }).should('exist')
+                // cy.get(css_selector, { timeout: 10000 }).should('be.visible')
+            }); 
+                
+        // HREF_LANG_VALUES_SLUG
+        console.log(HREF_LANG_VALUES_SLUG)
+ */    
+    </script>
+
+    <!-- 
+
+Write in python a script that convert this HTML code into a list of double arrays as a first value is the field name of the meta and the second is the value that is in content: 
+
+
+<meta property="og:image" content="https://static.rfi.fr/meta_og_twcards/RFI_TW.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="RFI">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RFI - Actualités, info, news en direct - Radio France Internationale">
+<meta property="og:description" content="Suivez toute l&#039;information politique, culturelle, sportive en direct et en continu sur RFI. Les dernières informations, news et actualités en France et à l&#039;international.">
+<meta property="og:url" content="https://www.rfi.fr/fr/">
+<meta property="fb:app_id" content="113191652055439">
+<meta property="fb:pages" content="67334499441">
+                    <meta name="description" content="Suivez toute l&#039;information politique, culturelle, sportive en direct et en continu sur RFI. Les dernières informations, news et actualités en France et à l&#039;international.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@RFI">
+<meta name="twitter:creator" content="@RFI">
+<meta name="keywords" content="homepage,accueil,actualités,news,reportages,radio,dossiers,international,monde,info">
+<meta name="apple-mobile-web-app-title" content="RFI">
+<meta name="application-name" content="RFI">
+<meta name="msapplication-TileColor" content="#e2001a">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+     -->
+</body>
+</html>

@@ -1,0 +1,128 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_class_cypress_003.html</br>
+    <script type="text/javascript">
+
+
+
+
+        
+      class UtilityBach {
+    
+        getFovMainNavLinksBottomBarItemActualitesBySlug() {
+            // Get the value of environment variable e.g --env BRAND_LANG=F24_EN 
+            // let brandLang = Cypress.env('BRAND_LANG'); 
+        
+                switch (brandLang) {
+                        
+                        // F24
+                        // F24_EN is default case
+                         case 'F24_ES':
+                            return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[3]';   
+                        case 'F24_FR':
+                            return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[4]'; 
+                        case 'F24_AR':
+                            return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[1]'; 
+                        
+                        // RFI
+                        case 'RFI_FR':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[7]'; 
+                        case 'RFI_EN':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[3]';
+                        case 'RFI_CN':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[2]';
+                        case 'RFI_ES':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[4]';
+                        case 'RFI_FA':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[5]';
+                        case 'RFI_HA':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[8]';
+                        case 'RFI_KM':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[9]';
+                        case 'RFI_SW':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[14]';
+                        case 'RFI_MA':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[10]';
+                        case 'RFI_FF':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[6]';
+                        case 'RFI_PT':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[11]';
+                        case 'RFI_BR':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[1]';
+                        case 'RFI_RO':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[12]';
+                        case 'RFI_RU':
+                            
+
+                            // return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[13]';
+                            let NavActualitesSlugNewsByRegion = [
+                              'afrique/',
+                              'am%C3%A9riques/',
+                              'asie-pacifique/',
+                              'europe/',
+                              'moyen-orient/',
+                              'france/',
+                              'monde/'
+                        ];
+
+                        return {
+                                NavActualitesSlugNewsByRegion
+                            };
+
+
+
+                        case 'RFI_VI':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[15]';
+
+                        // MCD
+                        case 'MCD_AR':
+                            return '//*[@id="container"]/div[4]/div[2]/div[3]/div[2]/div/a';
+
+                        // OBS
+                        case 'OBS_FR':
+                            return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[5]';
+                        case 'OBS_EN':
+                            return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[6]';
+                        case 'OBS_AR':
+                            return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[7]';
+                        case 'OBS_FA':
+                            return '//*[@id="container"]/div[4]/div[2]/div[1]/div[2]/div/a[16]';
+                        // Default
+                         default: 
+                            // F24_EN
+                            return '//*[@id="container"]/div[4]/div[2]/div[2]/div[2]/div/a[2]';
+
+                      }//EOS
+
+
+                    }// EOF
+
+    }//EOC     
+
+
+
+var brandLang ='RFI_RU'; 
+const NavActualitesSlugNewsByRegion = new UtilityBach().getFovMainNavLinksBottomBarItemActualitesBySlug();
+
+console.log('DATA FROM cypress/support/utilityGetStuffbach.js')
+// console.log('NavActualitesSlugNewsByRegion :: '+NavActualitesSlugNewsByRegion+'')  
+// console.log('NavActualitesSlugNewsByRegion :: '+NavActualitesSlugNewsByRegion[2]+'')  
+
+
+    data = JSON.stringify(NavActualitesSlugNewsByRegion);
+    // console.log(data);
+    var values = [];
+
+    JSON.parse(data, function (key, value) {
+
+                    if (typeof(value) != "object") {
+                        // values.push({[key]:value});
+                        // values.push(value); //if you need a value array
+                        console.log(value);
+                    }  
+    });
+
+
+    </script>
+</body>
+</html>

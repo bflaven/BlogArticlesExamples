@@ -1,0 +1,27 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_parse_001_model.html</br>
+    <script type="text/javascript">
+
+HREF_LANG_VALUES = ["fr", "en", "es", "pt", "pt-BR", "ha", "sw", "bm", "ff", "ro", "ru", "uk", "vi", "zh-Hans", "zh-Hant", "km", "fa"]; // globalValues.FOV_HEADER_MAIN_NAV_BURGER_SELECTION
+
+HREF_LANG_VALUES_SLUG = ["fr", "en", "es", "pt", "br", "ha", "sw", "bm", "ff", "ro", "ru", "uk", "vi", "cn", "tw", "km", "fa"]; // globalValues.FOV_HEADER_MAIN_NAV_BURGER_SELECTION
+            
+        // HREF_LANG_VALUES
+        // cy.log(globalValues.HREF_LANG_VALUES)
+        // let  values=[HREF_LANG_VALUES];
+        // console.log(values)
+
+        HREF_LANG_VALUES.forEach((value, index) => {
+                console.log('--- value :: '+value);
+                console.log('--- index :: '+index);
+                // cy.get(css_selector, { timeout: 10000 }).should('exist')
+                // cy.get(css_selector, { timeout: 10000 }).should('be.visible')
+            }); 
+                
+        // HREF_LANG_VALUES_SLUG
+        console.log(HREF_LANG_VALUES_SLUG)
+     
+    </script>
+</body>
+</html>

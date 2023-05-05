@@ -1,0 +1,126 @@
+
+! QUERY_3
+In Python, write a script that print "devices" and "devices_shortcuts" at the same level in the loop then create a loop that print these 2 lists and all the possibilities with the list "brands_languages" on each line.
+
+devices = ['desktop', 'tablet', 'mobile',
+           'mobile-landscape', 'tablet-landscape']
+devices_shortcuts = ['d', 't', 'm', 'ml', 'tl']
+brands_languages = ['F24_FR', 'F24_EN', 'F24_ES', 'F24_AR']
+
+
+
+
+
+! QUERY_2
+
+In Python, put the following data into one list named "brands_languages"
+
+# ***  BRAND_LANG FOR RFI ***
+# RFI_FR
+# RFI_BR
+# RFI_CN
+# RFI_EN
+# RFI_ES
+# RFI_FA
+# RFI_FF
+# RFI_HA
+# RFI_KM
+# RFI_MA
+# RFI_PT
+# RFI_RO
+# RFI_RU
+# RFI_SW
+# RFI_TW
+# RFI_UK
+# RFI_VI
+# *** BRAND_LANG FOR F24 ***
+# F24_FR
+# F24_EN
+# F24_ES
+# F24_AR
+# *** BRAND_LANG FOR FLE ***
+# FLE_FR
+# FLE_AR
+# FLE_BR
+# FLE_CN
+# FLE_EN
+# FLE_ES
+# FLE_RU
+# *** BRAND_LANG FOR OBS ***
+# OBS_FR
+# OBS_EN
+# OBS_AR
+# OBS_FA
+# *** BRAND_LANG FOR MCD ***
+# MCD_AR
+
+
+! QUERY_1
+
+In Python, put the following data into 2 different lists "devices" and the other one 
+"brands_languages" then create a loop that print these 2 lists but with all possible on each line  e.g  
+desktop, RFI_FR 
+desktop, RFI_BR
+etc...
+
+
+- devices
+desktop
+tablet
+mobile
+mobile-landscape
+tablet-landscape
+- brands_languages
+# *** BRAND_LANG FOR F24 ***
+# F24_FR
+# F24_EN
+# F24_ES
+# F24_AR
+
+
+
+- brands_languages
+
+
+# ***  BRAND_LANG FOR RFI ***
+# RFI_FR
+# RFI_BR
+# RFI_CN
+# RFI_EN
+# RFI_ES
+# RFI_FA
+# RFI_FF
+# RFI_HA
+# RFI_KM
+# RFI_MA
+# RFI_PT
+# RFI_RO
+# RFI_RU
+# RFI_SW
+# RFI_TW
+# RFI_UK
+# RFI_VI
+# *** BRAND_LANG FOR F24 ***
+# F24_FR
+# F24_EN
+# F24_ES
+# F24_AR
+# *** BRAND_LANG FOR FLE ***
+# FLE_FR
+# FLE_AR
+# FLE_BR
+# FLE_CN
+# FLE_EN
+# FLE_ES
+# FLE_RU
+# *** BRAND_LANG FOR OBS ***
+# OBS_FR
+# OBS_EN
+# OBS_AR
+# OBS_FA
+# *** BRAND_LANG FOR MCD ***
+# MCD_AR
+
+
+
+

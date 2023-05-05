@@ -1,0 +1,120 @@
+<html>
+   <meta charset="utf-8"/>
+<body>001_example_js_decode_encode_javascript_chatgpt_fov.html</br>
+    <script type="text/javascript">
+
+
+
+var NavActualitesSlugNewsByRegion = [
+            ['page_france', '%D9%81%D8%B1%D9%86%D8%B3%D8%A7/'],
+            ['page_maghreb', '%D8%A7%D9%84%D9%85%D8%BA%D8%A7%D8%B1%D8%A8%D9%8A%D8%A9/'],
+            ['page_moyen_orient', '%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/'],
+            ['page_afrique', '%D8%A3%D9%81%D8%B1%D9%8A%D9%82%D9%8A%D8%A7/'],
+            ['page_europe', '%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7/'],
+            ['page_usa', '%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7/'],
+            ['page_asie', '%D8%A2%D8%B3%D9%8A%D8%A7/']
+        ];
+
+
+        let slug_encoded = NavActualitesSlugNewsByRegion; 
+
+
+        slug_encoded.forEach((slug, index) => {
+            console.log('--- index :: '+index);
+            console.log('--- slug_encoded :: '+slug);
+            console.log('--- slug_decoded :: '+decodeURIComponent(slug));
+
+            // let slug_decoded = decodeURIComponent(slug_encoded);
+
+            // console.log('--- slug_decoded :: '+slug_decoded);
+            
+          });
+
+         
+
+
+    </script>
+
+<!-- 
+In javascript, can you write a script with the Cypress testing framework that 
+decode an array of slugs named "NavActualitesSlugNewsByRegion" with the decodedUrl function then test the slug decoded obtained against a string that contains the same string in an array named "NavActualitesSlugNewsByRegionVersus"
+
+
+
++ query openai encode/decode seo FOV
+In javascript, can you write a script with the Cypress testing framework that 
+decode an array of slugs named "NavActualitesSlugNewsByRegion" with the decodedUrl function then test the slug decoded obtained against a string that contains the same string in an array named "NavActualitesSlugNewsByRegionVersus"
+
+
+NavActualitesSlugNewsByRegion: [
+            ['page_france', '%D9%81%D8%B1%D9%86%D8%B3%D8%A7/'],
+            ['page_maghreb', '%D8%A7%D9%84%D9%85%D8%BA%D8%A7%D8%B1%D8%A8%D9%8A%D8%A9/']
+            ], 
+
+NavActualitesSlugNewsByRegionVersus: [
+            ['page_france', 'فرنسا/'],
+            ['page_maghreb', 'المغاربية/']
+            ], 
+
++ answer openai encode/decode seo FOV
+
+Yes, it is possible to write a script with the Cypress testing framework to decode an array of slugs and test them against a string.
+
+Here's an example of how you can accomplish this:
+
+describe('Test NavActualitesSlugNewsByRegion', () => {
+  it('decodes slugs and compares with NavActualitesSlugNewsByRegionVersus', () => {
+    const NavActualitesSlugNewsByRegion = [
+      ['page_france', '%D9%81%D8%B1%D9%86%D8%B3%D8%A7/'],
+      ['page_maghreb', '%D8%A7%D9%84%D9%85%D8%BA%D8%A7%D8%B1%D8%A8%D9%8A%D8%A9/']
+    ];
+
+    const NavActualitesSlugNewsByRegionVersus = [
+      ['page_france', 'فرنسا/'],
+      ['page_maghreb', 'المغاربية/']
+    ];
+
+    NavActualitesSlugNewsByRegion.forEach(([key, value], index) => {
+      const decoded = decodeURIComponent(value);
+
+      expect(decoded).to.equal(NavActualitesSlugNewsByRegionVersus[index][1]);
+    });
+  });
+});
+
+In this script, we use the describe and it functions provided by Cypress to create a test suite and a test case respectively. Inside the test case, we define two arrays: NavActualitesSlugNewsByRegion and NavActualitesSlugNewsByRegionVersus.
+
+Then, we loop through each item in the NavActualitesSlugNewsByRegion array using the forEach function. For each item, we decode the slug using the decodeURIComponent function and compare it to the corresponding value in the NavActualitesSlugNewsByRegionVersus array using the expect function provided by Cypress.
+
+If the decoded slug matches the expected value, the test passes. If not, the test fails and Cypress will log an error message.
+
+Note that this script assumes that the decodeURIComponent function can properly decode the encoded URLs. If the encoding format changes or is incorrect, the test may fail even if the slugs are correctly encoded and decoded.
+
+
+
+To encode or decode a URL in JavaScript, you can use the built-in encodeURIComponent() and decodeURIComponent() functions respectively.
+
+Here is an example of how to encode a URL using encodeURIComponent():
+
+const url = 'https://www.example.com/search?q=JavaScript tutorial';
+const encodedUrl = encodeURIComponent(url);
+
+console.log(encodedUrl); // prints "https%3A%2F%2Fwww.example.com%2Fsearch%3Fq%3DJavaScript%20tutorial"
+
+
+And here is an example of how to decode a URL using decodeURIComponent():
+
+
+
+const encodedUrl = 'https%3A%2F%2Fwww.example.com%2Fsearch%3Fq%3DJavaScript%20tutorial';
+const decodedUrl = decodeURIComponent(encodedUrl);
+
+console.log(decodedUrl); // prints "https://www.example.com/search?q=JavaScript tutorial"
+
+
+
+Note that encodeURIComponent() and decodeURIComponent() are used to encode and decode the entire URL, including the query parameters. If you only want to encode or decode the query parameters, you can use encodeURI() and decodeURI() instead.
+
+ -->
+</body>
+</html>

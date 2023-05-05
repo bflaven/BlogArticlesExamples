@@ -1,0 +1,73 @@
+<html>
+   <meta charset="utf-8"/>
+<body>example_js_parse_001_model.html</br>
+    <script type="text/javascript">
+/*
+Can you extract this hreflang value from this chunk of HTML code and put it in JavaScript array named href_lang_values
+<ul class="m-nav-list__list">
+<li class="m-nav-list__list__item">
+<a href="/fr/" class="a-nav-link a-nav-link--active" hreflang="fr" tabindex="0" data-menu-link="" data-tms-tr="">Français</a>
+</li><li class="m-nav-list__list__item">
+<a href="/en/" class="a-nav-link " hreflang="en" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">English</a>
+</li><li class="m-nav-list__list__item">
+<a href="/es/" class="a-nav-link " hreflang="es" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Español</a>
+</li><li class="m-nav-list__list__item">
+<a href="/pt/" class="a-nav-link " hreflang="pt" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Português</a>
+</li><li class="m-nav-list__list__item">
+<a href="/br/" class="a-nav-link " hreflang="pt-BR" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Português do Brasil</a>
+</li><li class="m-nav-list__list__item">
+<a href="/ha/" class="a-nav-link " hreflang="ha" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Hausa</a>
+</li><li class="m-nav-list__list__item">
+<a href="/sw/" class="a-nav-link " hreflang="sw" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Kiswahili</a>
+</li><li class="m-nav-list__list__item">
+<a href="/ma/" class="a-nav-link " hreflang="bm" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Mandenkan</a>
+</li><li class="m-nav-list__list__item">
+<a href="/ff/" class="a-nav-link " hreflang="ff" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Fulfulde</a>
+</li><li class="m-nav-list__list__item">
+<a href="https://www.rfi.ro/" class="a-nav-link " hreflang="ro" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">România</a>
+</li><li class="m-nav-list__list__item">
+<a href="/ru/" class="a-nav-link " hreflang="ru" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Русский</a>
+</li><li class="m-nav-list__list__item">
+<a href="/uk/" class="a-nav-link " hreflang="uk" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Українською</a>
+</li><li class="m-nav-list__list__item">
+<a href="/vi/" class="a-nav-link " hreflang="vi" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">Tiếng Việt</a>
+</li><li class="m-nav-list__list__item">
+<a href="/cn/" class="a-nav-link " hreflang="zh-Hans" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">华语</a>
+</li><li class="m-nav-list__list__item">
+<a href="/tw/" class="a-nav-link " hreflang="zh-Hant" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">華語</a>
+</li><li class="m-nav-list__list__item">
+<a href="/km/" class="a-nav-link " hreflang="km" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-tms-tr="">ភាសាខ្មែរ</a>
+</li><li class="m-nav-list__list__item">
+<a href="/fa/" class="a-nav-link " hreflang="fa" target="_top" rel="noopener" tabindex="0" data-menu-link="" data-menu-link-last="" data-tms-tr="">فارسی</a>
+</li>    </ul>
+
+ */
+
+/*
+Yes, it is possible to extract the hreflang value from the given HTML code and store it in a JavaScript array named href_lang_values. Here's one way to do it:
+ */ 
+
+// Get all the 'a' tags with the class 'a-nav-link' inside the 'ul' tag with the class 'm-nav-list__list'
+const anchorTags = document.querySelectorAll('ul.m-nav-list__list a.a-nav-link');
+
+// Create an empty array to store the hreflang values
+const href_lang_values = [];
+
+// Loop through each 'a' tag and push its hreflang value into the array
+anchorTags.forEach(function(tag) {
+  href_lang_values.push(tag.getAttribute('hreflang'));
+});
+
+// Display the array in the console
+console.log(href_lang_values);
+
+
+            
+
+      // This will output the array of hreflang values:
+      // ["fr", "en", "es", "pt", "pt-BR", "ha", "sw", "bm", "ff", "ro", "ru", "uk", "vi", "zh-Hans", "zh-Hant", "km", "fa"]
+
+     
+    </script>
+</body>
+</html>

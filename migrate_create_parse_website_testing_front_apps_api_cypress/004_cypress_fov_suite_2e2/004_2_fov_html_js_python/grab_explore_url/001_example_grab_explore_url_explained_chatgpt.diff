@@ -1,0 +1,116 @@
++ EXAMPLE_QUERY_OPENAI
+- FR
+En python, écrire un script pour fusionner les deux listes list_one et list_two en respectant l'ordre.
+
+In python, write a script to merge the two lists list_one and list_two respecting the order :
+
+list_one = ['page_podcasts_journal_français_facile',
+'page_podcasts_selection',
+'page_exercices'
+]
+
+list_one = ['podcasts/journal-en-fran%C3%A7ais-facile/', 
+'podcasts/s%C3%A9lection/', 
+'exercices/'
+] 
+
+
+
+
+'page_podcasts_journal_français_facile',
+'page_podcasts_selection',
+'page_exercices',
+'page_diplomes_tests',
+'page_tester_son_niveau',
+'page_comprendre_actualite_français',
+'page_communiquer_quotidien',
+'page_reviser',
+'page_enseigner',
+'page_exercices_a1',
+'page_exercices_a2',
+'page_exercices_b1',
+'page_exercices_b2',
+'page_exercices_c1c2',
+'page_podcasts_mots_actualite',
+
+
+'podcasts/journal-en-fran%C3%A7ais-facile/', 
+'podcasts/s%C3%A9lection/', 
+'exercices/', 
+'dipl%C3%B4mes-tests/', 
+'tester-son-niveau/', 
+'comprendre-actualit%C3%A9-fran%C3%A7ais/', 
+'communiquer-quotidien/', 
+'r%C3%A9viser/', 
+'enseigner/', 
+'exercices/a1/', 
+'exercices/a2/', 
+'exercices/b1/', 
+'exercices/b2/', 
+'exercices/c1c2/', 
+'podcasts/les-mots-de-l-actualit%C3%A9/'
+
+
+! INPUT_2 query open ai
+--- In Python
+- EN
+In Python, can you transform this slug list into a string without space replaced by underscore, without trailing slash replaced by underscore. each string created must start with the string "page_" : 
+
+urls_explore_page = ['podcasts/journal-en-français-facile/', 'comprendre-actualité-français/']
+
+
+urls_explore_page = ['podcasts/journal-en-français-facile/', 'podcasts/sélection/', 'exercices/', 'diplômes-tests/', 'tester-son-niveau/', 'comprendre-actualité-français/', 'communiquer-quotidien/', 'réviser/', 'enseigner/', 'exercices/a1/', 'exercices/a2/', 'exercices/b1/', 'exercices/b2/', 'exercices/c1c2/', 'podcasts/les-mots-de-l-actualité/']
+
+
+! OUTPUT_2 query open ai
+
+
+urls_explore_page = ['podcasts/journal-en-français-facile/', 'comprendre-actualité-français/']
+
+# Remove trailing slashes and replace spaces with underscores
+cleaned_urls = [url.strip().replace(' ', '_').rstrip('/') for url in urls_explore_page]
+
+# Add "page_" prefix to each string and join them with commas
+string_output = ','.join(['page_' + url for url in cleaned_urls])
+
+print(string_output)
+
+
+
+! INPUT_1 query open ai
+
+--- In Python
+- EN
+In Python, can you extract the slug after the chain "/fr/" from this list named "urls_explore" below : 
+
+urls_explore = [ 
+'https://francaisfacile.rfi.fr/fr/podcasts/journal-en-fran%C3%A7ais-facile/',
+'https://francaisfacile.rfi.fr/fr/podcasts/s%C3%A9lection/',
+'https://francaisfacile.rfi.fr/fr/exercices/',
+'https://francaisfacile.rfi.fr/fr/dipl%C3%B4mes-tests/',
+'https://francaisfacile.rfi.fr/fr/tester-son-niveau/',
+'https://francaisfacile.rfi.fr/fr/comprendre-actualit%C3%A9-fran%C3%A7ais/',
+'https://francaisfacile.rfi.fr/fr/communiquer-quotidien/',
+'https://francaisfacile.rfi.fr/fr/r%C3%A9viser/',
+'https://francaisfacile.rfi.fr/fr/enseigner/',
+'https://francaisfacile.rfi.fr/fr/exercices/a1/',
+'https://francaisfacile.rfi.fr/fr/exercices/a2/',
+'https://francaisfacile.rfi.fr/fr/exercices/b1/',
+'https://francaisfacile.rfi.fr/fr/exercices/b2/',
+'https://francaisfacile.rfi.fr/fr/exercices/c1c2/',
+'https://francaisfacile.rfi.fr/fr/podcasts/les-mots-de-l-actualit%C3%A9/',
+]
+
+
+                      
+
+
+! OUTPUT_1 query open ai
+
+Yes, you can extract the slug after the chain "/fr/" using Python. Here's one way to do it:
+
+slugs = [url.split('/fr/')[1] for url in urls_explore if '/fr/' in url]
+
+This code will create a list called slugs that contains the slugs extracted from each URL in urls_explore that contains the "/fr/" chain. The split() method is used to split the URL into two parts based on the "/fr/" chain, and then the second part (i.e., the slug) is selected with [1]. The if statement ensures that only URLs that contain "/fr/" are processed.
+
+
