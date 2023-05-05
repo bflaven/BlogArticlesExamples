@@ -1,7 +1,7 @@
 # migrate_create_parse_website_testing_front_apps_api_cypress
 
 
-
+## INTRO
 These are mostly working documents but to me, it presents to advantages:
 - 1. To archive part of searches made with ChatGPT's help.
 - 2. To refine the working method by integrating AI and any additional programming resources that can increase productivity and achievement in obtaining a result, however minimal it may be.
@@ -10,7 +10,20 @@ These are mostly working documents but to me, it presents to advantages:
 
 See more on [Obsidian](https://obsidian.md/)
 
+## CODE
 
+- `001_python_parse_web`
+
+- `002_package_json_python`
+
+- `003_launcher_suite_cypress`
+
+- `004_cypress_fov_suite_2e2`
+
+- `README.md`
+
+
+## TREE AND FILES
 ```bash
 .
 ├── 001_python_parse_web
