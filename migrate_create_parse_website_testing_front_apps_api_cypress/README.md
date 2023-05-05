@@ -1,2 +1,172 @@
 # migrate_create_parse_website_testing_front_apps_api_cypress
 
+
+```bash
+.
+├── 001_python_parse_web
+│   ├── 001_parse_website.py
+│   ├── 002_parse_website.py
+│   ├── 003_parse_website.py
+│   ├── README.md
+│   └── _queries_python_parse_web.diff
+├── 002_package_json_python
+│   ├── 000_generate_package.py
+│   ├── 001_generate_package.py
+│   ├── 002_generate_package.py
+│   ├── README.md
+│   ├── _queries_package_json_python.diff
+│   ├── package_0.json
+│   ├── package_1.json
+│   ├── package_2.json
+│   └── po_launcher_e2e_cypress.txt
+├── 003_launcher_suite_cypress
+│   ├── README.md
+│   ├── _queries_launcher_suite_cypress_210423.diff
+│   ├── launch_cypress_cp_15.applescript
+│   └── launcher_e2e_cypress_apps.applescript
+├── 004_cypress_fov_suite_2e2
+│   ├── 004_1_archives_for_code_queries
+│   │   ├── _depot_code_1.js
+│   │   ├── _queries_cypress_fov_suite_2e2_2.diff
+│   │   └── _queries_cypress_fov_suite_2e2_3.diff
+│   └── 004_2_fov_html_js_python
+│       ├── 001_example_print_loop.py
+│       ├── archives
+│       │   ├── example_js_class_004a_model.html
+│       │   ├── example_js_class_005_fov.html
+│       │   ├── example_js_class_006_fov.html
+│       │   ├── example_js_class_007_fov.html
+│       │   ├── example_js_class_008_fov.html
+│       │   ├── example_js_class_cypress_001_bach.html
+│       │   ├── example_js_class_cypress_002_bach.html
+│       │   ├── example_js_class_cypress_003_bach.html
+│       │   ├── example_js_class_cypress_004_bach.html
+│       │   ├── example_js_class_cypress_005_bach.html
+│       │   ├── example_js_parse_001_model.html
+│       │   ├── example_js_parse_002_model.html
+│       │   ├── example_js_parse_003_model.html
+│       │   ├── example_js_parse_004_model.html
+│       │   ├── example_js_parse_005_model.html
+│       │   ├── example_js_parse_006_model.py
+│       │   └── utilityGetStuffForFov.js
+│       ├── class_explained_chatgpt
+│       │   ├── 001_example_js_class_explained_chatgpt.diff
+│       │   ├── 002_example_python_class_explained_chatgpt.diff
+│       │   ├── 002_example_python_class_explained_chatgpt.py
+│       │   ├── 003_example_python_class_explained_chatgpt.diff
+│       │   ├── MODEL_example_js_class_explained_chatgpt_001_fov.html
+│       │   ├── _backup_example_js_class_explained_chatgpt.diff
+│       │   ├── example_js_class_explained_chatgpt_002_fov.html
+│       │   ├── example_js_class_explained_chatgpt_003_fov.html
+│       │   ├── example_js_class_explained_chatgpt_004_fov.html
+│       │   ├── example_js_class_explained_chatgpt_005_fov.html
+│       │   ├── example_js_class_explained_chatgpt_006_fov.html
+│       │   ├── example_js_class_explained_chatgpt_007_fov.html
+│       │   ├── example_js_class_explained_chatgpt_008_fov.html
+│       │   ├── example_js_class_explained_chatgpt_009_fov.html
+│       │   ├── example_js_class_explained_chatgpt_010_fov.html
+│       │   ├── example_js_class_explained_chatgpt_011_fov.html
+│       │   ├── example_js_class_explained_chatgpt_012_fov.html
+│       │   ├── example_js_class_explained_chatgpt_013_fov.html
+│       │   ├── example_js_class_explained_chatgpt_014_fov.html
+│       │   └── example_js_class_explained_chatgpt_015_fov.html
+│       ├── decode_encode_javascript
+│       │   ├── 001_example_js_decode_encode_javascript_chatgpt_fov.html
+│       │   ├── 001_example_js_decode_encode_javascript_chatgpt_fov.py
+│       │   ├── 002_example_js_decode_encode_javascript_chatgpt_fov.py
+│       │   ├── _MODEL_004_web_scraping_beautifulsoup.py
+│       │   └── _MODEL_example_js_class_explained_chatgpt_015_fov.html
+│       ├── grab_explore_url
+│       │   ├── 001_example_grab_explore_url_explained_chatgpt.diff
+│       │   └── 001_example_grab_explore_url_explained_chatgpt.py
+│       ├── parse_complex_var
+│       │   ├── 001_parse_complex_var.html
+│       │   ├── 002_parse_complex_var.js
+│       │   ├── all_values_elements
+│       │   │   ├── datas_var_F24_AR.js
+│       │   │   ├── datas_var_F24_EN.js
+│       │   │   ├── datas_var_F24_ES.js
+│       │   │   ├── datas_var_F24_FR.js
+│       │   │   ├── datas_var_FLE_AR.js
+│       │   │   ├── datas_var_FLE_BR.js
+│       │   │   ├── datas_var_FLE_CN.js
+│       │   │   ├── datas_var_FLE_EN.js
+│       │   │   ├── datas_var_FLE_ES.js
+│       │   │   ├── datas_var_FLE_FR.js
+│       │   │   ├── datas_var_FLE_RU.js
+│       │   │   ├── datas_var_MCD_AR.js
+│       │   │   ├── datas_var_OBS_AR.js
+│       │   │   ├── datas_var_OBS_EN.js
+│       │   │   ├── datas_var_OBS_FA.js
+│       │   │   ├── datas_var_OBS_FR.js
+│       │   │   ├── datas_var_RFI_BR.js
+│       │   │   ├── datas_var_RFI_CN.js
+│       │   │   ├── datas_var_RFI_EN.js
+│       │   │   ├── datas_var_RFI_ES.js
+│       │   │   ├── datas_var_RFI_FA.js
+│       │   │   ├── datas_var_RFI_FF.js
+│       │   │   ├── datas_var_RFI_FR.js
+│       │   │   ├── datas_var_RFI_HA.js
+│       │   │   ├── datas_var_RFI_KM.js
+│       │   │   ├── datas_var_RFI_MA.js
+│       │   │   ├── datas_var_RFI_PT.js
+│       │   │   ├── datas_var_RFI_RO.js
+│       │   │   ├── datas_var_RFI_RU.js
+│       │   │   ├── datas_var_RFI_SW.js
+│       │   │   ├── datas_var_RFI_TW.js
+│       │   │   ├── datas_var_RFI_UK.js
+│       │   │   └── datas_var_RFI_VI.js
+│       │   ├── data_0.js
+│       │   ├── hello.js
+│       │   └── main.js
+│       ├── split_class
+│       │   ├── _backup_elements_class
+│       │   │   ├── 000_nope_utilityGetStuffForFov_v8.js
+│       │   │   ├── datas_var_F24_EN.js
+│       │   │   ├── datas_var_F24_ES.js
+│       │   │   ├── datas_var_FLE_BR.js
+│       │   │   ├── datas_var_FLE_FR.js
+│       │   │   ├── datas_var_MCD_AR.js
+│       │   │   └── datas_var_RFI_FR.js
+│       │   ├── _backup_utilityGetStuffForFov
+│       │   │   ├── 000_nope_utilityGetStuffForFov_v8.js
+│       │   │   ├── _NOPE_fov_sub_class_F24_EN.js
+│       │   │   ├── _backup_charles_main_section_fovs_1.js
+│       │   │   ├── _backup_utilityGetStuffForFov_v1.js
+│       │   │   ├── _backup_utilityGetStuffForFov_v2.js
+│       │   │   ├── _backup_utilityGetStuffForFov_v3.js
+│       │   │   ├── _backup_utilityGetStuffForFov_v4.js
+│       │   │   ├── _backup_utilityGetStuffForFov_v5.js
+│       │   │   ├── _backup_utilityGetStuffForFov_v6.js
+│       │   │   ├── _backup_utilityGetStuffForFov_v7.js
+│       │   │   └── _backup_utilityGetStuffForFov_v9.js
+│       │   ├── _split_class.diff
+│       │   ├── try_1
+│       │   │   ├── OneUtilityGetStuffForFov.js
+│       │   │   ├── attemptOutput.js
+│       │   │   └── utilityGetStuffForFov.js
+│       │   ├── try_2
+│       │   │   ├── OneUtilityGetStuffForFov.js
+│       │   │   ├── attemptOutput.js
+│       │   │   └── utilityGetStuffForFov.js
+│       │   ├── try_3
+│       │   │   ├── OneUtilityGetStuffForFov.js
+│       │   │   ├── attemptOutput.js
+│       │   │   └── utilityGetStuffForFov.js
+│       │   └── utilityGetStuffForFov.js
+│       └── web_scraping_python
+│           ├── GOOD_003_META_web_scraping_beautifulsoup.py
+│           ├── GOOD_004_web_scraping_make_urls_beautifulsoup.py
+│           ├── nav_1.html
+│           └── old
+│               ├── 001_META_web_scraping_beautifulsoup.py
+│               ├── 001_web_scraping_beautifulsoup.diff
+│               ├── 001_web_scraping_beautifulsoup.py
+│               ├── 002_transform_array_META_web_scraping_beautifulsoup.py
+│               ├── 002_web_scraping_beautifulsoup.py
+│               ├── 003_META_web_scraping_beautifulsoup.py
+│               ├── 004_web_scraping_beautifulsoup.py
+│               └── _model_016_web_scraping_selenium_wp.py
+└── README.md
+```
+
