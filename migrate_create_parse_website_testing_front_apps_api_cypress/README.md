@@ -1,7 +1,9 @@
 # migrate_create_parse_website_testing_front_apps_api_cypress
 
-
 ## INTRO
+
+
+## NOTE
 These are mostly working documents but to me, it presents to advantages:
 - 1. To archive part of searches made with ChatGPT's help.
 - 2. To refine the working method by integrating AI and any additional programming resources that can increase productivity and achievement in obtaining a result, however minimal it may be.
