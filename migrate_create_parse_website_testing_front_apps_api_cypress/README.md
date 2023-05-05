@@ -6,7 +6,7 @@ These are mostly working documents but to me, it presents to advantages:
 - 1. To archive part of searches made with ChatGPT's help.
 - 2. To refine the working method by integrating AI and any additional programming resources that can increase productivity and achievement in obtaining a result, however minimal it may be.
 
-*But I fully understand that these same documents are sometimes of more than limited interest for any other person, especially developers. One day maybe this information will be semi-structured or structured using Obsidian but probably it's due to laziness or lack of time :)*
+*At the same time, I fully understand that these same documents are sometimes present also more than limited interest for any other person than me! One day, this information will be semi-structured or structured using Obsidian but for now on it has this form... due both to some laziness and a lack of time :)*
 
 See more on [Obsidian](https://obsidian.md/)
 
