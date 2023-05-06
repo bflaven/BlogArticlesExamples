@@ -4,6 +4,8 @@
 
 **As #PO, for a personal challenge, writing a #E2E suite for #websites and for #mobile #apps with #Cypress and #ChatGPT turned me as a #PromptEngineer, https://wp.me/p3Vuhl-3ex**
 
+**The code is here with some #ChatGPT #Prompts regarding some issues encountered, #SecondHand & #SecondBrain https://bit.ly/3LAagfj**
+
 
 This is the directory of an experience, related in a post on my personal blog. It was a challenge launched to me, born from personal and professional factors simultaneous conjunction:
 
