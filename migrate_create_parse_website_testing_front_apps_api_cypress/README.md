@@ -2,6 +2,36 @@
 
 ## INTRO
 
+This is the directory of an experience, related in a post on my personal blog. It was a challenge launched to me, born from personal and professional factors simultaneous conjunction:
+
+Following the writing of the book "Learning and Building E2E test automation with Cypress & OKR" which expanded my understanding of the OKRs method and at the same time reinforced my Cypress testing framework's understading and for like any one working in the digital industry... The ChatGPT-induced disruption to the landscape of my purring working routine!
+
+<b>So, I decided to apply the method explained in the book with the help of ChatGPT under a harsh time constraint in order to measure ChatGPT's gross help given. Intuitively, my feeling was that what has taken me months should only at least take weeks, solely in duo with AI.</b>
+
+
+**Read more on https://flaven.fr/**
+
+
+
+## WORKING DIRECTORIES
+You can find the following working directories: 
+
+
+<ul>
+<li><b>001_python_parse_web:</b> how to grab semi-structured data from a  website to use  in tests.</li>
+<li><b>002_package_json_python:</b> handy scripts to generate shortcuts for tedious commands to launch cypress suite with parameters.</li>
+<li><b>003_launcher_suite_cypress:</b> a simple applescript to automate the E2E suite launching.</li>
+<li><b>004_cypress_fov_suite_2e2:</b> A very extensive directory including a large number of working documents. Those are milestones form the creation process of the E2E suites, in particular the prompts to ChatGPT: javascript class explained, decode encode in javascript, grab explore url in python,  parse complex variable in javascript, split class, web scraping in python
+</li>
+</ul>
+
+The directories <b>004_cypress_fov_suite_2e2</b> is slpitted in 2:
+
+<ol>
+    <li><b>004_1_archives_for_code_queries:</b> _depot_code_1.js, _queries_cypress_fov_suite_2e2_2.diff, _queries_cypress_fov_suite_2e2_3.diff</li>
+    <li><b>004_2_fov_html_js_python:</b> 001_example_print_loop.py, archives, class_explained_chatgpt, decode_encode_javascript, grab_explore_url, parse_complex_var, split_class, web_scraping_python</li>
+</ol>
+
 
 ## NOTE
 These are mostly working documents but to me, it presents to advantages:
