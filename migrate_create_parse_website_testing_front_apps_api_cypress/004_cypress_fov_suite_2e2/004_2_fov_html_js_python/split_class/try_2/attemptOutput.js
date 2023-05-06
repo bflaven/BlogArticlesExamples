@@ -1,7 +1,7 @@
 
 /*
 
-cd /Users/brunoflaven/Documents/02_copy/_cypress_fov_suite_2e2/_html_js_python/split_class/try_2/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/migrate_create_parse_website_testing_front_apps_api_cypress/004_cypress_fov_suite_2e2/004_2_fov_html_js_python/split_class/try_2
 
 node  utilityGetStuffForFov.js
 node OneUtilityGetStuffForFov.js

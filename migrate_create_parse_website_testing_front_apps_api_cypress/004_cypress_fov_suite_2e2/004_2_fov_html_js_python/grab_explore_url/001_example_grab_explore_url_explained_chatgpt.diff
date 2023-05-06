@@ -1,7 +1,5 @@
 + EXAMPLE_QUERY_OPENAI
-- FR
-En python, écrire un script pour fusionner les deux listes list_one et list_two en respectant l'ordre.
-
+- EN
 In python, write a script to merge the two lists list_one and list_two respecting the order :
 
 list_one = ['page_podcasts_journal_français_facile',
@@ -13,9 +11,6 @@ list_one = ['podcasts/journal-en-fran%C3%A7ais-facile/',
 'podcasts/s%C3%A9lection/', 
 'exercices/'
 ] 
-
-
-
 
 'page_podcasts_journal_français_facile',
 'page_podcasts_selection',
@@ -106,7 +101,6 @@ urls_explore = [
 
 
 ! OUTPUT_1 query open ai
-
 Yes, you can extract the slug after the chain "/fr/" using Python. Here's one way to do it:
 
 slugs = [url.split('/fr/')[1] for url in urls_explore if '/fr/' in url]

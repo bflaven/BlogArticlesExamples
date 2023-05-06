@@ -254,10 +254,6 @@ console.log(getGlobalDataTest(brandLang))
 // const { globalDataTest } = require('./all_values_elements/datas_var_RFI_VI.js');
 
 
-/*
-
-
- */
 
 /* 
 *
@@ -267,9 +263,6 @@ console.log(getGlobalDataTest(brandLang))
 */
 
 /*
-
-
-
 ##### ERRORS
 datas_var_RFI_TW.js
 datas_var_MCD_AR.js
