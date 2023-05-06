@@ -2,6 +2,9 @@
 
 ## INTRO
 
+**As #PO, for a personal challenge, writing a #E2E suite for #websites and for #mobile #apps with #Cypress and #ChatGPT turned me as a #PromptEngineer, https://wp.me/p3Vuhl-3ex**
+
+
 This is the directory of an experience, related in a post on my personal blog. It was a challenge launched to me, born from personal and professional factors simultaneous conjunction:
 
 Following the writing of the book "Learning and Building E2E test automation with Cypress & OKR" which expanded my understanding of the OKRs method and at the same time reinforced my Cypress testing framework's understading and for like any one working in the digital industry... The ChatGPT-induced disruption to the landscape of my purring working routine!
