@@ -34,7 +34,7 @@ conda update -n base -c defaults conda
 
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/migrate_create_parse_website_testing_front_cypress/python_parse_web/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/migrate_create_parse_website_testing_front_apps_api_cypress/001_python_parse_web
 
 
 

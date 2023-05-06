@@ -23,12 +23,21 @@ conda deactivate
 conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
 
 
+# to export requirements
+pip freeze > parse_website.txt
+conda update -n base -c defaults conda
+
+# to export requirements
+pip freeze > parse_website.txt
+
 # update conda 
 conda update -n base -c defaults conda
 
 
+
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/migrate_create_parse_website_testing_front_cypress/python_parse_web/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/migrate_create_parse_website_testing_front_apps_api_cypress/001_python_parse_web
+
 
 
 [file]
