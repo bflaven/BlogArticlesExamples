@@ -2,7 +2,7 @@
 # google_trends_sitemap
 =============================================
 
-Different explorations on Google Trends with Python (Pytrends, Streamlit), Chainlit (a competitor for Streamlit), D3 Tree in javascript and how to generate a sitemap with Python.
+Different explorations on Google Trends with Python (Pytrends, Streamlit), Chainlit (a competitor for Streamlit), D3 Tree in javascript and how to generate a sitemap with Python.clezr
 
 ## Code
 ---------------------
