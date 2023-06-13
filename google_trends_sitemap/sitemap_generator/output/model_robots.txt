@@ -1,0 +1,5 @@
+
+#indicate the index sitemap for google, yahoo...
+Sitemap: http://flaven.fr/sitemap.xml
+
+

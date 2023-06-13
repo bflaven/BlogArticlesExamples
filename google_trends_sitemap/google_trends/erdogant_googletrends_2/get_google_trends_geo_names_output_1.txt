@@ -1,0 +1,16 @@
+# get_google_trends_geo_names_output_1.txt
+
+    code               country
+0     AD               andorra
+1     AE  united arab emirates
+2     AF           afghanistan
+3     AR             argentina
+4     AO                angola
+..   ...                   ...
+251   YE                 yemen
+252   YT               mayotte
+253   ZA          south africa
+254   ZM                zambia
+255   ZW              zimbabwe
+
+[256 rows x 2 columns]
