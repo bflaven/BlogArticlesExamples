@@ -5,6 +5,20 @@
 
 
 
+[Read more on flaven.fr: https://flaven.fr/2023/07/some-ideas-on-the-probable-future-of-journalism-facing-ia-and-how-to-create-a-prompt-facilitation-application-for-chatgpt-with-streamlit/](https://flaven.fr/2023/07/some-ideas-on-the-probable-future-of-journalism-facing-ia-and-how-to-create-a-prompt-facilitation-application-for-chatgpt-with-streamlit/)
+
+
+
+
+## EXPLANATIONS
+- ai_chatgpt_prompts_requirements.txt: the requirements to load the environment `ai_chatgpt_prompts_requirements.txt`.
+- extras_files: some secondary scripts.
+- project_1_python_documentation_chatgpt_api: Some unique examples with ChatGPT API with Python.
+- project_2_node_documentation_chatgpt_api: Exploration of the  ChatGPT API with Node.
+- project_3_streamlit: Few attempts to query ChatGPT with the help of Streamlit. Check the Python Class in `010_project_3_python_streamlit_app_chatgpt_api.py` to enable an easy query of the ChatGPT API.
+- project_4_chainlit: Few attempts to query ChatGPT API with the help of Chainlit 
+
+
 ## VIDEOS
 **Coming soon**
 
