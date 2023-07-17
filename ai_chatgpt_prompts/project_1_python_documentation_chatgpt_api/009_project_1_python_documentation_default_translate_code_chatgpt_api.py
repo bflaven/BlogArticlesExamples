@@ -35,9 +35,6 @@ https://platform.openai.com/examples
 
 
 """
-# OPENAI_ORGANIZATION = 'org-HcXi3tfxyIzF8xYJn59XWWfZ'
-# OPENAI_API_KEY = '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'
-
 import os
 import openai
 
