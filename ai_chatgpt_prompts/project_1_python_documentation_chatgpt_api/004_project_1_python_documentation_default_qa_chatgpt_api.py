@@ -35,9 +35,6 @@ Answer questions based on existing knowledge.
 https://platform.openai.com/examples/default-qa
 
 """
-# OPENAI_ORGANIZATION = 'org-HcXi3tfxyIzF8xYJn59XWWfZ'
-# OPENAI_API_KEY = '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'
-
 import os
 import openai
 
@@ -46,10 +43,10 @@ import openai
 
 # quick and dirty
 # PUT YOUR OWN ID FOR YOUR ORGANIZATION
-openai.organization = 'org-L2P-YOUR_OPENAI_ORGANIZATION'
+openai.organization = 'YOUR_OPENAI_ORGANIZATION'
 
 # PUT YOUR OWN PAID LICENCE AND DO NOT DISPLAY
-openai.api_key = 'hj-jh87jk8XXX-YOUR_OPENAI_API_KEY-JqJ8d5456'
+openai.api_key = 'YOUR_OPENAI_API_KEY'
 
 
 # print os.environ

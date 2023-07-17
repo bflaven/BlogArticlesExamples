@@ -39,10 +39,10 @@ import openai
 # quick and dirty installation
 
 # PUT YOUR OWN ID FOR YOUR ORGANIZATION
-openai.organization = 'org-L2P-YOUR_OPENAI_ORGANIZATION'
+openai.organization = 'YOUR_OPENAI_ORGANIZATION'
 
 # PUT YOUR OWN PAID LICENCE AND DO NOT DISPLAY
-openai.api_key = 'hj-jh87jk8XXX-YOUR_OPENAI_API_KEY-JqJ8d5456'
+openai.api_key = 'YOUR_OPENAI_API_KEY'
 
 
 

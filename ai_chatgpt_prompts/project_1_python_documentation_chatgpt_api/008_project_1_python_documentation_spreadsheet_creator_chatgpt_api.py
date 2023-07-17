@@ -34,9 +34,6 @@ https://platform.openai.com/examples
 
 
 """
-# OPENAI_ORGANIZATION = 'org-HcXi3tfxyIzF8xYJn59XWWfZ'
-# OPENAI_API_KEY = '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'
-
 import os
 import openai
 
@@ -44,8 +41,12 @@ import openai
 # PROMPT_INPUT = 'A two-column spreadsheet of top science fiction movies and the year of release:\n\nTitle |  Year of release'
 PROMPT_INPUT = 'A four-column spreadsheet with a random choice of 5 countries with their name in english, name in spanish, capital and their top-level domains:\n\nNAME (English) | NOMBRE (Spanish) | CAPITAL | TLD'
 
+# quick and dirty
+# PUT YOUR OWN ID FOR YOUR ORGANIZATION
+openai.organization = 'YOUR_OPENAI_ORGANIZATION'
+
 # PUT YOUR OWN PAID LICENCE AND DO NOT DISPLAY
-openai.api_key = 'hj-jh87jk8XXX-YOUR_OPENAI_API_KEY-JqJ8d5456'
+openai.api_key = 'YOUR_OPENAI_API_KEY'
 
 
 response = openai.Completion.create(

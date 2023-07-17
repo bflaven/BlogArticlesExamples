@@ -33,13 +33,6 @@ Source : https://platform.openai.com/docs/api-reference/introduction
 
 
 """
-# quick and dirty
-# PUT YOUR OWN ID FOR YOUR ORGANIZATION
-# OPENAI_ORGANIZATION = 'org-L2P-YOUR_OPENAI_ORGANIZATION'
-
-# PUT YOUR OWN PAID LICENCE AND DO NOT DISPLAY
-# OPENAI_API_KEY = 'hj-jh87jk8XXX-YOUR_OPENAI_API_KEY-JqJ8d5456'
-
 import os
 import openai
 
@@ -51,12 +44,12 @@ import openai
 # print(os.environ['HOME'])
 # print(os.environ)
 
-# quick and dirty 
-openai.organization = 'org-L2P-YOUR_OPENAI_ORGANIZATION'
-# openai.api_key = os.getenv("OPENAI_API_KEY")
+# quick and dirty
+# PUT YOUR OWN ID FOR YOUR ORGANIZATION
+openai.organization = 'YOUR_OPENAI_ORGANIZATION'
 
-# PAID ONE DO NOT DISPLAY
-openai.api_key = 'hj-jh87jk8XXX-YOUR_OPENAI_API_KEY-JqJ8d5456'
+# PUT YOUR OWN PAID LICENCE AND DO NOT DISPLAY
+openai.api_key = 'YOUR_OPENAI_API_KEY'
 
 
 openai.Model.list()

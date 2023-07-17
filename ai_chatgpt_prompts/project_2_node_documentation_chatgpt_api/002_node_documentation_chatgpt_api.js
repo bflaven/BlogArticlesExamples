@@ -9,10 +9,10 @@ node 002_node_documentation_chatgpt_api.js
 
 # quick and dirty
 # PUT YOUR OWN ID FOR YOUR ORGANIZATION
-# OPENAI_ORGANIZATION = 'org-L2P-YOUR_OPENAI_ORGANIZATION'
+openai.organization = 'YOUR_OPENAI_ORGANIZATION'
 
 # PUT YOUR OWN PAID LICENCE AND DO NOT DISPLAY
-# OPENAI_API_KEY = 'hj-jh87jk8XXX-YOUR_OPENAI_API_KEY-JqJ8d5456'
+openai.api_key = 'YOUR_OPENAI_API_KEY'
 
 
 
@@ -21,7 +21,10 @@ node 002_node_documentation_chatgpt_api.js
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
-   apiKey:  "hj-jh87jk8XXX-YOUR_OPENAI_API_KEY-JqJ8d5456",
+   // apiKey: process.env.OPENAI_API_KEY,
+    organization: "YOUR_OPENAI_ORGANIZATION",
+    // apiKey: process.env.OPENAI_API_KEY,
+    apiKey:  "YOUR_OPENAI_API_KEY",
 });
 const openai = new OpenAIApi(configuration);
 
