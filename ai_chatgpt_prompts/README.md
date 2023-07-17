@@ -32,6 +32,7 @@
 
 .
 ├── README.md
+├── ai_chatgpt_prompts_requirements.txt
 ├── extras_files
 │   ├── 001_modify_data.py
 │   └── 002_modify_data.py
@@ -69,11 +70,7 @@
 │   ├── 004_project_3_python_streamlit_app_chatgpt_api.py
 │   ├── 009_project_3_python_streamlit_app_chatgpt_api.py
 │   ├── 010_project_3_python_streamlit_app_chatgpt_api.py
-│   ├── __pycache__
-│   │   └── all_functions.cpython-39.pyc
 │   ├── config_values
-│   │   ├── __pycache__
-│   │   │   └── values_conf.cpython-39.pyc
 │   │   └── values_conf.py
 │   ├── test_1_buggy_function.py
 │   ├── test_1_class_switch.py
@@ -96,6 +93,5 @@
         ├── index_store.json
         └── vector_store.json
 
-10 directories, 54 files
-
+8 directories, 53 files
 ```
