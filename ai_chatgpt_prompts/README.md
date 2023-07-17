@@ -12,7 +12,7 @@
 
 
 
-## directory listing
+## DIRECTORY LISTING
 
 ```bash
 
