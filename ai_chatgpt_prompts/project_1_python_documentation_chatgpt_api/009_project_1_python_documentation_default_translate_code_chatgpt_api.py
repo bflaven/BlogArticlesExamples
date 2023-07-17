@@ -38,17 +38,12 @@ https://platform.openai.com/examples
 import os
 import openai
 
-
 # quick and dirty
 # PUT YOUR OWN ID FOR YOUR ORGANIZATION
 openai.organization = 'YOUR_OPENAI_ORGANIZATION'
 
 # PUT YOUR OWN PAID LICENCE AND DO NOT DISPLAY
 openai.api_key = 'YOUR_OPENAI_API_KEY'
-
-
-
-
 
 PROMPT_INPUT = '##### Translate this function  from Python into Haskell\n### Python\n\ndef predict_proba(X: Iterable[str]):\n  return np.array([predict_one_probas(tweet) for tweet in X])\n\n### Haskell'
 
