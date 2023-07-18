@@ -2,21 +2,15 @@
 
 001_node_documentation_chatgpt_api.js
 
-cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/ai_chatgpt_prompts/project_2_node_documentation_chatgpt_api/
+cd /Users/brunoflaven/Documents/01_work/blog_articles/ai_chatgpt_prompts/project_2_node_documentation_chatgpt_api/
+
 
 node 001_async_function.js
 
-
-# quick and dirty
-# PUT YOUR OWN ID FOR YOUR ORGANIZATION
-openai.organization = 'YOUR_OPENAI_ORGANIZATION'
-
-# PUT YOUR OWN PAID LICENCE AND DO NOT DISPLAY
-openai.api_key = 'YOUR_OPENAI_API_KEY'
-
-
-
 */
+
+const { globalValues } = require('./allValues');
+
 
 async function myfunction() {
   console.log('Inside of myfunction');
@@ -40,6 +34,14 @@ function start() {
   await start();
   
   console.log('after start');
+
+  // Debug
+  console.log (globalValues.TOTEM_SHRUG_MAN_SIMPLE_CHAT_GPT)
+  console.log (globalValues.OPENAI_ORGANIZATION)
+  console.log (globalValues.OPENAI_API_KEY)
+
+
+
 })();
 
 

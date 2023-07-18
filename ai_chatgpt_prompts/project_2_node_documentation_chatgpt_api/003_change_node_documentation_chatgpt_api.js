@@ -1,8 +1,8 @@
 /* 
 
-001_node_documentation_chatgpt_api.js
+003_change_node_documentation_chatgpt_api.js
 
-cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/ai_chatgpt_prompts/project_2_node_documentation_chatgpt_api/
+cd /Users/brunoflaven/Documents/01_work/blog_articles/ai_chatgpt_prompts/project_2_node_documentation_chatgpt_api/
 
 
 node 003_change_node_documentation_chatgpt_api.js
@@ -10,20 +10,13 @@ node 003_change_node_documentation_chatgpt_api.js
 + GREAT EXAMPLE FROM OPENAI.COM
 https://platform.openai.com/examples
 
-# quick and dirty
-# PUT YOUR OWN ID FOR YOUR ORGANIZATION
-openai.organization = 'YOUR_OPENAI_ORGANIZATION'
-
-# PUT YOUR OWN PAID LICENCE AND DO NOT DISPLAY
-openai.api_key = 'YOUR_OPENAI_API_KEY'
-
-
 */
-
+const { globalValues } = require('./allValues');
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
-   apiKey:  "YOUR_OPENAI_API_KEY",
+  organization: globalValues.OPENAI_ORGANIZATION,
+  apiKey:  globalValues.OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
