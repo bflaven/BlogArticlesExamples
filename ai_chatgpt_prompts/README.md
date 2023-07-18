@@ -61,6 +61,7 @@
 │   ├── 002_node_documentation_chatgpt_api.js
 │   ├── 003_change_node_documentation_chatgpt_api.js
 │   ├── 004_change_node_documentation_chatgpt_api.js
+│   ├── allValues.js
 │   ├── package-lock.json
 │   └── package.json
 ├── project_3_streamlit
@@ -93,5 +94,5 @@
         ├── index_store.json
         └── vector_store.json
 
-8 directories, 53 files
+8 directories, 54 files
 ```
