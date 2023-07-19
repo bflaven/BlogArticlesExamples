@@ -58,7 +58,7 @@ import chainlit as cl
 
 # PAID ONE DO NOT DISPLAY
 # add your own api key for open ai
-os.environ["OPENAI_API_KEY"] = 'hj-jh87jk8XXX-YOUR_OPENAI_API_KEY-JqJ8d5456'
+os.environ["OPENAI_API_KEY"] = 'OPENAI_API_KEY'
 
 template = """Question: {question}
 
