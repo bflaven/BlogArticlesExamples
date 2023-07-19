@@ -21,8 +21,7 @@ conda update -n base -c defaults conda
 014_project_1_python_documentation_classification_chatgpt_api.py
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
-
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
 
 [run]
 python 014_project_1_python_documentation_classification_chatgpt_api.py
@@ -31,11 +30,6 @@ pip install Random
 
 + GREAT EXAMPLE FROM OPENAI.COM
 https://platform.openai.com/examples
-
-
-
-
-
 
 """
 

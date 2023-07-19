@@ -21,8 +21,7 @@ conda update -n base -c defaults conda
 012_project_1_python_documentation_default_movie_to_emoji_chatgpt_api.py
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
-
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
 
 [run]
 python 012_project_1_python_documentation_default_movie_to_emoji_chatgpt_api.py
@@ -48,11 +47,6 @@ import json
 
 
 """
-# quick and dirty
-openai.organization = 'org-HcXi3tfxyIzF8xYJn59XWWfZ'
-
-# PAID ONE DO NOT DISPLAY
-openai.api_key = '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'
 
 response = openai.Completion.create(
     model="text-davinci-003",

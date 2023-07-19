@@ -21,7 +21,8 @@ conda update -n base -c defaults conda
 015_project_1_python_documentation_python_to_natural_language_chatgpt_api.py
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
+
 
 
 [run]

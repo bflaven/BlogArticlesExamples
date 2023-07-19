@@ -21,8 +21,7 @@ conda update -n base -c defaults conda
 001_project_1_python_documentation_chatgpt_api.py
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
-
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
 
 [run]
 python 001_project_1_python_documentation_chatgpt_api.py
@@ -64,7 +63,7 @@ print(model_list)
 #QUERY_1
 curl https://api.openai.com/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer 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" \
+  -H "Authorization: Bearer OPENAI_API_KEY" \
   -d '{
      "model": "gpt-3.5-turbo",
      "messages": [{"role": "user", "content": "Say this is a test!"}],
@@ -74,7 +73,7 @@ curl https://api.openai.com/v1/chat/completions \
 #QUERY_2
 curl https://api.openai.com/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer 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" \
+  -H "Authorization: Bearer OPENAI_API_KEY" \
   -d '{
      "model": "gpt-3.5-turbo",
      "messages": [{"role": "user", "content": "Say my name is Bond, James Bond"}],

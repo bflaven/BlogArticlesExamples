@@ -21,8 +21,7 @@ conda update -n base -c defaults conda
 005_project_1_python_documentation_default_summarize_chatgpt_api.py
 
 [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
-
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
 
 [run]
 python 005_project_1_python_documentation_default_summarize_chatgpt_api.py
@@ -34,9 +33,6 @@ https://platform.openai.com/examples
 
 
 """
-# OPENAI_ORGANIZATION = 'org-HcXi3tfxyIzF8xYJn59XWWfZ'
-# OPENAI_API_KEY = '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'
-
 import os
 import openai
 
