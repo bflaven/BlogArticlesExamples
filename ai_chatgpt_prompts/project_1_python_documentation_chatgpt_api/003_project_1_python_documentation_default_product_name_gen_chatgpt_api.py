@@ -21,12 +21,11 @@ conda update -n base -c defaults conda
 003_project_1_python_documentation_default_product_name_gen_chatgpt_api.py
 
 [path]
-cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
+cd /Users/brunoflaven/Documents/01_work/blog_articles/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
 
 
 [run]
-003_project_1_python_documentation_default_product_name_gen_chatgpt_api.py
-
+python 003_project_1_python_documentation_default_product_name_gen_chatgpt_api.py
 
 Source : https://platform.openai.com/docs/api-reference/introduction
 
@@ -38,16 +37,19 @@ import os
 import openai
 
 
+# personal configuration
+import config_values.values_conf as conf
+
+OPENAI_ORGANIZATION = conf.OPENAI_ORGANIZATION
+OPENAI_API_KEY = conf.OPENAI_API_KEY
+
 # quick and dirty
-# PUT YOUR OWN ID FOR YOUR ORGANIZATION
-openai.organization = 'YOUR_OPENAI_ORGANIZATION'
-
-# PUT YOUR OWN PAID LICENCE AND DO NOT DISPLAY
-openai.api_key = 'YOUR_OPENAI_API_KEY'
+openai.organization = OPENAI_ORGANIZATION
+# PAID ONE DO NOT DISPLAY
+openai.api_key = OPENAI_API_KEY
 
 
 
-# openai.api_key = os.getenv("OPENAI_API_KEY")
 
 response = openai.Completion.create(
     model="text-davinci-003",

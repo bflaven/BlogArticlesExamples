@@ -21,7 +21,7 @@ conda update -n base -c defaults conda
 018_project_1_python_documentation_default_explain_code_code_chatgpt_api.py
 
 [path]
-cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
+cd /Users/brunoflaven/Documents/01_work/blog_articles/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
 
 
 [run]
@@ -43,12 +43,16 @@ https://platform.openai.com/examples
 import os
 import openai
 
-# quick and dirty
-# PUT YOUR OWN ID FOR YOUR ORGANIZATION
-openai.organization = 'YOUR_OPENAI_ORGANIZATION'
+# personal configuration
+import config_values.values_conf as conf
 
-# PUT YOUR OWN PAID LICENCE AND DO NOT DISPLAY
-openai.api_key = 'YOUR_OPENAI_API_KEY'
+OPENAI_ORGANIZATION = conf.OPENAI_ORGANIZATION
+OPENAI_API_KEY = conf.OPENAI_API_KEY
+
+# quick and dirty
+openai.organization = OPENAI_ORGANIZATION
+# PAID ONE DO NOT DISPLAY
+openai.api_key = OPENAI_API_KEY
 
 
 response = openai.Completion.create(

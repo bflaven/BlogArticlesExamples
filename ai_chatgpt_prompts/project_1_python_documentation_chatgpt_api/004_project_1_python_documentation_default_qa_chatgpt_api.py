@@ -21,7 +21,7 @@ conda update -n base -c defaults conda
 004_project_1_python_documentation_default_qa_chatgpt_api.py
 
 [path]
-cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
+cd /Users/brunoflaven/Documents/01_work/blog_articles/ai_chatgpt_prompts/project_1_python_documentation_chatgpt_api/
 
 
 [run]
@@ -35,26 +35,26 @@ Answer questions based on existing knowledge.
 https://platform.openai.com/examples/default-qa
 
 """
+# OPENAI_ORGANIZATION = 'org-HcXi3tfxyIzF8xYJn59XWWfZ'
+# OPENAI_API_KEY = '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'
+
 import os
 import openai
 
-# openai.organization = OPENAI_ORGANIZATION
-# openai.api_key = os.getenv(OPENAI_API_KEY)
+# personal configuration
+import config_values.values_conf as conf
+
+OPENAI_ORGANIZATION = conf.OPENAI_ORGANIZATION
+OPENAI_API_KEY = conf.OPENAI_API_KEY
 
 # quick and dirty
-# PUT YOUR OWN ID FOR YOUR ORGANIZATION
-openai.organization = 'YOUR_OPENAI_ORGANIZATION'
-
-# PUT YOUR OWN PAID LICENCE AND DO NOT DISPLAY
-openai.api_key = 'YOUR_OPENAI_API_KEY'
-
-
-# print os.environ
-# print(os.environ['HOME'])
-# print(os.environ)
+openai.organization = OPENAI_ORGANIZATION
+# PAID ONE DO NOT DISPLAY
+openai.api_key = OPENAI_API_KEY
 
 # working
 # print(model_list)
+
 
 # response = openai.Completion.create(
 #     model="text-davinci-003",
