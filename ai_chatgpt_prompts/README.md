@@ -20,9 +20,18 @@
 
 
 ## VIDEOS
-**Coming soon**
 
-<!-- [#1 Using ChatGPT for P.O: Generate Jira tickets for user stories & some Q/A testing scripts (Cypress)](https://www.youtube.com/watch?v=dpQL2BK7wpk)[![#1 Using ChatGPT for P.O: Generate Jira tickets for user stories & some Q/A testing scripts (Cypress)](001_ai_chatgpt_usages_po_qa_cypress.png)](https://www.youtube.com/watch?v=dpQL2BK7wpk) -->
+
+[#1 ChatGPT with Streamlit: Two ways to manage the ChatGPT API KEY license with Streamlit with the .env & the secrets.toml file](https://www.youtube.com/watch?v=ytI8QDiA6dw)[![#1 ChatGPT with Streamlit: Two ways to manage the ChatGPT API KEY license with Streamlit with the .env & the secrets.toml file](001_videos_ai_chatgpt_prompts_manage_chatgpt_license_streamlit.png)](https://www.youtube.com/watch?v=ytI8QDiA6dw)
+
+[#2 ChatGPT with Streamlit: Leverage on ChatGPT examples with Python](https://www.youtube.com/watch?v=4WlFRNyyHnY)[![#2 ChatGPT with Streamlit: Leverage on ChatGPT examples with Python](002_videos_ai_chatgpt_prompts_project_1_python_documentation_chatgpt_api.png)](https://www.youtube.com/watch?v=4WlFRNyyHnY)
+
+
+[#3 ChatGPT with Streamlit: In Streamlit, load with a Python Class all the ChatGPT examples](https://www.youtube.com/watch?v=qPxADJ7JWGI)[![#3 ChatGPT with Streamlit: In Streamlit, load with a Python Class all the ChatGPT examples](003_videos_ai_chatgpt_prompts_project_3_streamlit.png)](https://www.youtube.com/watch?v=qPxADJ7JWGI)
+
+
+[#4 ChatGPT with Streamlit: In Streamlit, load with a Python Class all the ChatGPT examples](https://www.youtube.com/watch?v=eauteYKUGm0)[![#4 ChatGPT with Streamlit: In Streamlit, load with a Python Class all the ChatGPT examples](004_videos_ai_chatgpt_prompts_project_2_node_documentation_chatgpt_api.png)](https://www.youtube.com/watch?v=eauteYKUGm0)
+
 
 
 
