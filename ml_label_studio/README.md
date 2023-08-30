@@ -1,11 +1,6 @@
 # ml_label_studio
 
-Ci-dessous, une description rapide du contenu des répertoires et des fichiers.
-
-
-
-
-
+**Below, a quick description for each content: mix of directories and files.**
 
 - 00_kw_extractor_spacy_linguistic_features : a simple keywords extractor made with Spacy.
 
