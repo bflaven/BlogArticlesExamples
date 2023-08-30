@@ -1,9 +1,42 @@
 # ml_label_studio
 
+Ci-dessous, une description rapide du contenu des répertoires et des fichiers.
+
+
+
+
+
+
+- 00_kw_extractor_spacy_linguistic_features : a simple keywords extractor made with Spacy.
+
+- 01_spacy_tagging_entity_extraction: some examples found on the web to explore Custom NER, NLP notions...etc
+
+- 02_using_label_studio: how-to use Label Studio.
+
+- 03_using_label_studio_spacy: convert data from label studio format to Spacy format.
+
+- 04_label_studio_source_text_file: some text files to test annotating.
+
+- A-common-pipeline-for-annotating-data-and-building-models-with-machine-learning.png: picture describing a common pipeline for annotating data and building models with machine learning.
+
+- labeling_process.png: picture describing the "simplest" Labeling Process with 6 Steps.
+
+- labeling_process_small.png: same picture but small format published in the post.
+
+- requirements_ml_with_label_studio.txt: requirements to manage the anaconda environment to use Label Studio.
+
+- requirements_tagging_entity_extraction.txt: requirements to manage the anaconda environment to use Spacy for custom NER.
+
+[The importance of the Labeling process or annotating inside an ML pipeline plus an example with NER made for Spacy
+](https://flaven.fr/2023/08/the-importance-of-the-labeling-process-or-annotating-inside-an-ml-pipeline-plus-an-example-with-ner-made-for-spacy/)
+
+
 **The order of this readme reflects the chaotic path of my progression which goes from the specific to the general as often.**
 
 *Starting from case studies on how to create a "custom" NER or Named Entity Recognition for Spacy, I wanted to understand the creation of .conllu files and treebanks, files which are based on Spacy. The crucial knot is being able to make annotations in order to eventually create these files. One thing led to another, I ended up establishing a viable pipeline in ML/IA. So from exploring Spacy, I went directly to the alternative annotation applications to Prodigy (https://prodi.gy/) looking for a free alternatives like Doccano (https://github.com/doccano /doccano) or especially Label Studio (https://labelstud.io/) & Dagshub (https://dagshub.com/dashboard).*
 
+
+**Below some projects that I have explore for this post.**
 
 
 
