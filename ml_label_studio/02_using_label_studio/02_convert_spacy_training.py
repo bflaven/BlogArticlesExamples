@@ -37,8 +37,6 @@ cd /Users/brunoflaven/Documents/01_work/blog_articles/ml_label_studio/02_using_l
 
 python 02_convert_spacy_training.py
 
-# extra stuff
-pip install jupyter 
 
 
 In python count the number of item in a json object
@@ -81,7 +79,7 @@ from tqdm import tqdm
 import json
 
 # SET THE VALUES
-INPUTFILE_SPACY_JSON = 'spacy_output_format.json'
+INPUTFILE_SPACY_JSON = 'spacy_output_format_crypto.json'
 
 
 

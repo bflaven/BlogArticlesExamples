@@ -6,7 +6,11 @@
 
 For the text, there are 2 texts one in Portuguese the other in English.
 
-- In Portuguese, use case is inspired by this article, especially for the data but the text to annoted is in Portuguese. https://medium.com/@johnidouglasmarangon/train-a-custom-named-entity-recognition-with-spacy-v3-ea48dfce67a5
+- In Portuguese, use case is inspired by this article, especially for the data but the text to annoted is in Portuguese. https://medium.com/@johnidouglasmarangon/train-a-custom-named-entity-recognition-with-spacy-v3-ea48dfce67a5. The code is available at https://gist.github.com/johnidm/27e3b2ff50e592bc37183907ba97d31d
+
+- Still in Portuguese, you can find the excellent Jupyter Notebook
+https://gist.github.com/johnidm/27e3b2ff50e592bc37183907ba97d31d
+
 
 - In English, I try with a text about African football extracted randomly from this article. https://www.bbc.com/sport/football/47415221
 

@@ -81,8 +81,9 @@ import json
 
 
 # SET THE VALUES
-INPUTFILE_LABEL_STUDIO_EXPORT_JSON = 'label_studio_export_json_ner/example_4_project-1-at-2023-08-26-14-32-91a0a933.json'
-OUPUTFILE_SPACY_JSON = "spacy_output_format.json"
+INPUTFILE_LABEL_STUDIO_EXPORT_JSON = 'label_studio_export_json_ner/example_2_project-6-at-2023-07-27-11-27-d2025d2a.json'
+
+OUPUTFILE_SPACY_JSON = "spacy_output_format_crypto.json"
 
 with open(INPUTFILE_LABEL_STUDIO_EXPORT_JSON, 'r') as f:
 

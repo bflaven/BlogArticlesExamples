@@ -41,8 +41,8 @@ from spacy import displacy
 
 
 # SET THE VALUES
-INPUTFILE_DISPLACY_SOURCE = "label_studio_source_text_file/source_african_football_2.txt"
-OUTPUTFILE_DISPLACY_HTML = 'using_label_studio_data_custom_ner_01.html'
+INPUTFILE_DISPLACY_SOURCE = "label_studio_source_text_file/source_pt_johnidm_3.txt"
+OUTPUTFILE_DISPLACY_HTML = 'PT_using_label_studio_data_custom_ner_01.html'
 
 
 
@@ -54,11 +54,11 @@ with open(INPUTFILE_DISPLACY_SOURCE, "r", encoding="utf-8") as file:
     document = file.read()
 
 doc = nlp(document)
-# colors = {"CRYPTO": "linear-gradient(315deg, #f5d020, #f53803)"}
-# options = {"ents": ["CRYPTO"], "colors": colors}
+colors = {"CRYPTO": "linear-gradient(315deg, #f5d020, #f53803)"}
+options = {"ents": ["CRYPTO"], "colors": colors}
 
-colors = {"ORG": "linear-gradient(315deg, #f5d020, #f53803)"}
-options = {"ents": ["ORG"], "colors": colors}
+# colors = {"ORG": "linear-gradient(315deg, #f5d020, #f53803)"}
+# options = {"ents": ["ORG"], "colors": colors}
 
 # PER
 # ORG

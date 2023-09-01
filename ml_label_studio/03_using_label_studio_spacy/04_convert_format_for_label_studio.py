@@ -33,13 +33,9 @@ pip install -r requirements_tagging_entity_extraction.txt
 # [path]
 cd /Users/brunoflaven/Documents/01_work/blog_articles/using_label_studio_spacy/
 
-# V0
-python 01_convert_format_for_label_studio.py reddit_r_cooking_sample.jsonl
-
-python 01_convert_format_for_label_studio.py reddit_r_cooking_sample.jsonl > using_label_studio_spacy_samples_1.json
 
 # V1
-python 03_convert_format_for_label_studio.py
+python 04_convert_format_for_label_studio.py
 
 
 
@@ -60,11 +56,14 @@ import sys
 # print(df)
 # docs = [{ 'data': {'text': text } } for text in df['text']]
 
+# SET THE VALUES
+INPUTFILE_LABEL_STUDIO_SOURCE = "reddit_r_cooking_sample.jsonl"
+OUTPUTFILE_LABEL_STUDIO = '002_label_studio_samples.json'
 
 # V1
 
 # Read the JSON file into a DataFrame
-df = pd.read_json('reddit_r_cooking_sample.jsonl', lines=True)
+df = pd.read_json(INPUTFILE_LABEL_STUDIO_SOURCE, lines=True)
 
 new_df = [{'data': {'text': text}} for text in df['text']]
 
@@ -72,6 +71,7 @@ new_df = [{'data': {'text': text}} for text in df['text']]
 # print(new_df)
 
 # Output the list of JSON objects to a file
-output_file = "002_label_studio_samples.json"
-with open(output_file, 'w') as f:
+with open(OUTPUTFILE_LABEL_STUDIO, 'w') as f:
     json.dump(new_df, f)
+
+print(f'Output has been created with {OUTPUTFILE_LABEL_STUDIO} successfully.')

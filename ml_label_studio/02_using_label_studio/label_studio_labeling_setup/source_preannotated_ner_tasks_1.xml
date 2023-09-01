@@ -1,7 +1,7 @@
 <View>
   <View style="display:flex;align-items:start;gap:8px;flex-direction:column-reverse">
   <Labels name="label" toName="text" showInline="true">
-    <Label value="CRYPTO" background="yellow"></Label>
+    <Label value="CRYPTO" background="#ff00d0"></Label>
     <Label value="PER" background="#f58c8c"></Label>
     <Label value="ORG" background="darkred"></Label>
     <Label value="FACT" background="#6e31ff"></Label>
