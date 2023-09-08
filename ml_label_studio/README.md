@@ -35,7 +35,7 @@
 
 **Coming soon**
 
-[#1 Machine Learning for NLP: Labeling process to train a "custom" NER for Spacy with Label Studio](https://www.youtube.com/watch?v=xxx)[![#1 Machine Learning for NLP: Labeling process to train a "custom" NER for Spacy with Label Studio](001_workflow_label_studio_custom_ner_spacy.png)](https://www.youtube.com/watch?v=xxx)
+[#1 Machine Learning for NLP: Labeling process to train a "custom" NER for Spacy with Label Studio](https://www.youtube.com/watch?v=-LdELEtZMTg)[![#1 Machine Learning for NLP: Labeling process to train a "custom" NER for Spacy with Label Studio](001_workflow_label_studio_custom_ner_spacy.png)](https://www.youtube.com/watch?v=-LdELEtZMTg)
 
 [#2 Machine Learning for NLP: Export & convert data from Label Studio to Spacy training format to create a custom NER](https://www.youtube.com/watch?v=xxx)[![#2 Machine Learning for NLP: Export & convert data from Label Studio to Spacy training format to create a custom NER](002_workflow_label_studio_custom_ner_spacy.png)](https://www.youtube.com/watch?v=xxx)
 
