@@ -34,6 +34,9 @@
 ## VIDEOS
 
 **Coming soon**
+
+You can find my WALKTHROUGHS for these four videos walkthrough_ml_label_studio_spacy_custom_ner.diff (Video #1, Video #2) and walkthrough_ml_label_studio_annotation_server.diff (Video #3, Video #4)
+
 <!-- 
 [#1 Machine Learning for NLP: Labeling process to train a "custom" NER for Spacy with Label Studio](https://www.youtube.com/watch?v=-LdELEtZMTg)[![#1 Machine Learning for NLP: Labeling process to train a "custom" NER for Spacy with Label Studio](001_workflow_label_studio_custom_ner_spacy.png)](https://www.youtube.com/watch?v=-LdELEtZMTg)
 
