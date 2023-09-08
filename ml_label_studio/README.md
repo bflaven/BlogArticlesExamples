@@ -31,19 +31,31 @@
 *Starting from case studies on how to create a "custom" NER or Named Entity Recognition for Spacy, I wanted to understand the creation of .conllu files and treebanks, files which are based on Spacy. The crucial knot is being able to make annotations in order to eventually create these files. One thing led to another, I ended up establishing a viable pipeline in ML/IA. So from exploring Spacy, I went directly to the alternative annotation applications to Prodigy (https://prodi.gy/) looking for a free alternatives like Doccano (https://github.com/doccano /doccano) or especially Label Studio (https://labelstud.io/) & Dagshub (https://dagshub.com/dashboard).*
 
 
+## VIDEOS
+
+**Coming soon**
+
+[#1 Machine Learning for NLP: Labeling process to train a "custom" NER for Spacy with Label Studio](https://www.youtube.com/watch?v=xxx)[![#1 Machine Learning for NLP: Labeling process to train a "custom" NER for Spacy with Label Studio](001_workflow_label_studio_custom_ner_spacy.png)](https://www.youtube.com/watch?v=xxx)
+
+[#2 Machine Learning for NLP: Export & convert data from Label Studio to Spacy training format to create a custom NER](https://www.youtube.com/watch?v=xxx)[![#2 Machine Learning for NLP: Export & convert data from Label Studio to Spacy training format to create a custom NER](002_workflow_label_studio_custom_ner_spacy.png)](https://www.youtube.com/watch?v=xxx)
+
+[#3 Machine Learning for NLP: Work with a dataset in Label Studio for a Pytorch Sentiment Analysis](https://www.youtube.com/watch?v=xxx)[![#3 Machine Learning for NLP: Work with a dataset in Label Studio for a Pytorch Sentiment Analysis](003_worklfow_label_studio_custom_sentiment_analysis_manual.png)](https://www.youtube.com/watch?v=xxx)
+
+[#4 Machine Learning for NLP: Running & Connecting a ML Backend to Label Studio for a Pytorch Sentiment Analysis](https://www.youtube.com/watch?v=xxx)[![#4 Machine Learning for NLP: Running & Connecting a ML Backend to Label Studio for a Pytorch Sentiment Analysis](004_worklfow_label_studio_custom_sentiment_analysis_ml_server.png)](https://www.youtube.com/watch?v=xxx)
+
+## OTHER RESSOURCES
+
 **Below some projects that I have explore for this post.**
-
-
 
 The other elements in the readme are responding to FOMO syndrome and are just here for the record.
 
-## Project :: TM2TB
+### Project :: TM2TB
 **tm2tb is a term extraction module with a focus on bilingual data.**
 
 https://www.tm2tb.com/
 https://github.com/luismond/tm2tb
 
-## SPACY :: Project Templates from spaCy
+### SPACY :: Project Templates from spaCy
 
 **spaCy projects let you manage and share end-to-end spaCy workflows for different use cases and domains, and orchestrate training, packaging and serving your custom pipelines.**
 
