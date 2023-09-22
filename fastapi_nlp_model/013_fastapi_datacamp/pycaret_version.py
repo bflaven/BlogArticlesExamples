@@ -17,7 +17,7 @@ pip freeze > requirements_ner-service.txt
 pip install -r requirements_ner-service.txt
 
 # [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/013_fastapi_datacamp/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/013_fastapi_datacamp/
 
 
 

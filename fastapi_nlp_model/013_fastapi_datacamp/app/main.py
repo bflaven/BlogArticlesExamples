@@ -17,7 +17,7 @@ pip freeze > requirements_fastapi_datacamp.txt
 pip install -r requirements_fastapi_datacamp.txt
 
 # [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/013_fastapi_datacamp/app/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/013_fastapi_datacamp/app/
 
 
 # launch the app

@@ -29,7 +29,7 @@ pip freeze > requirements_ner-service.txt
 pip install -r requirements_tagging_entity_extraction.txt
 
 # [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/008_anaconda_MKTR-ai_YT_Maj9v-Ev7-4/ner-service/src
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/008_anaconda_MKTR-ai_YT_Maj9v-Ev7-4/ner-service/src
 
 
 # LAUNCH THE API

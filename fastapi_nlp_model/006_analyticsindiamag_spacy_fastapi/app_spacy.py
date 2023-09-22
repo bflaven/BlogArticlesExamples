@@ -25,7 +25,7 @@ pip freeze > custom_spacy_ner_fastapi.txt
 pip install -r custom_spacy_ner_fastapi.txt
 
 # [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/006_analyticsindiamag_spacy_fastapi/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/006_analyticsindiamag_spacy_fastapi/
 
 # LAUNCH THE API
 uvicorn app_spacy:api --reload

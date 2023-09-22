@@ -25,7 +25,7 @@ pip freeze > requirements_ner_service.txt
 pip install -r requirements_ner_service.txt
 
 # [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/003_juliensalinas_spacy_fastapi/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/003_juliensalinas_spacy_fastapi/
 
 # launch the api
 uvicorn app:api --reload

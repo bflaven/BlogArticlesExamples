@@ -24,7 +24,7 @@ pip freeze > requirements_streamlit_fastapi.txt
 pip install -r requirements_streamlit_fastapi.txt
 
 # [path]
-cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/017_chatGPT_fastapi_nlp_model/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/017_chatGPT_fastapi_nlp_model/
 
 # LAUNCH THE API
 uvicorn main:app --reload
