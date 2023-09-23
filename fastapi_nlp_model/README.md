@@ -1,7 +1,7 @@
 # fastapi_nlp_model
 
 ## Intro
-An article exploring the ability to build a POC for an API, made with FastAPI. The objective is to expose ML app build & deployment, especially with Spacy.
+An article exploring the ability to build a POC for an API, made with FastAPI. The objective is to expose ML app build & deployment locally first, especially with Spacy.
 
 **You can read the article on my blog**
 [How to expose NLP Machine Learning Models mostly for Spacy by quickly building an API with FastAPI and then play with them](https://flaven.fr/2023/09/how-to-expose-nlp-machine-learning-models-mostly-for-spacy-by-quickly-building-an-api-with-fastapi-and-then-play-with-them/)
