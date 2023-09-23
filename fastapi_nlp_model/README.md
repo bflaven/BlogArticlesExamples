@@ -3,7 +3,7 @@
 ## Intro
 An article exploring the ability to build a POC for an API, made with FastAPI. The objective is to expose ML app build & deployment, especially with Spacy.
 
-**Here are a quick description per GitHub directory.**
+
 
 
 **Note**
@@ -12,6 +12,8 @@ So, I have browse many projects especially those made with Spacy. The last one "
 Here is the prompt below the "017_chatGPT_fastapi_nlp_model" project
 > Write in python with the best practices a FastAPI that enable 4 languages with Spacy and provide four differents endpoints like summary function, "normal" NER function and “custom” NER function.
 
+## FastAPI Projects Digest
+**Here are a quick description per GitHub directory.**
 
 <ul>
 
