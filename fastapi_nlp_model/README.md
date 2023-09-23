@@ -52,4 +52,21 @@ Here is the prompt below the "017_chatGPT_fastapi_nlp_model" project
 
 </ul>
 
+## Additional Resources
 
+
+**A very basic workflow with the FastAPI's API future place (ml_fastapi_front_schema_small.png)**
+[![A very basic workflow with the FastAPI's API future place (ml_fastapi_front_schema_small.png)](ml_fastapi_front_schema_small.png)]
+
+
+**Some capture screens to remember how to query an API made with FastAPI via postman this new API :) I always forget it.**
+
+[![#1 How to query an API made with FastAPI via postman (fastapi_postman_remember_1.png)](fastapi_postman_remember_1.png)]
+
+[![#2 How to query an API made with FastAPI via postman (fastapi_postman_remember_1.png)](fastapi_postman_remember_2.png)]
+
+[![#2 How to query an API made with FastAPI via postman (fastapi_postman_remember_1.png)](fastapi_postman_remember_3.png)]
+
+
+## Videos
+TODO require extra time :)
