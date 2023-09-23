@@ -19,10 +19,10 @@ conda env remove -n ai_chatgpt_prompts
 conda update -n base -c defaults conda
 
 # to export requirements
-pip freeze > requirements_ner_service.txt
+pip freeze > requirements.txt
 
 # to install
-pip install -r requirements_ner_service.txt
+pip install -r requirements.txt
 
 # [path]
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/003_juliensalinas_spacy_fastapi/

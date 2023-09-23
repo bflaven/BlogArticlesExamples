@@ -18,10 +18,10 @@ conda env remove -n ner_service
 conda update -n base -c defaults conda
 
 # to export requirements
-pip freeze > requirements_ner_service.txt
+pip freeze > requirements.txt
 
 # to install
-pip install -r requirements_ner_service.txt
+pip install -r requirements.txt
 
 # [path]
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/002_bamimoretomi_spacy_fastapi
