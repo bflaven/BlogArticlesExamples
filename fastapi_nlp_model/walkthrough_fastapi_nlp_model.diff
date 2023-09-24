@@ -3,10 +3,41 @@
 https://flaven.fr/2023/09/how-to-expose-nlp-machine-learning-models-mostly-for-spacy-by-quickly-building-an-api-with-fastapi-and-then-play-with-them/
 
 
++ create the env with anaconda
+[env]
+# Conda Environment
+conda create --name ner_service python=3.9.13
+conda info --envs
+source activate ner_service
+source activate streamlit_fastapi
+conda deactivate
+
+# if needed to remove
+conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
+conda env remove -n ner_service
+conda env remove -n streamlit_fastapi
+
+# update conda 
+conda update -n base -c defaults conda
+
+# to export requirements
+pip freeze > requirements_ner_service.txt
+
+# to install
+pip install -r requirements_ner_service.txt
+
+
+
 + 017_chatGPT_fastapi_nlp_model:
 --- fastapi_nlp_model_1.mov
 
-- commands
+CODE: https://github.com/bflaven/BlogArticlesExamples/tree/master/fastapi_nlp_model/017_chatGPT_fastapi_nlp_model
+
+CODE: https://github.com/Bamimore-Tomi/inteligencia
+
+
+
+- CONSOLE_SCREEN (commands)
 
 # GO TO DIR
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/017_chatGPT_fastapi_nlp_model/
@@ -22,6 +53,12 @@ I already mention this POC. The files are a mix between logical code written by 
 
 + 009_streamlit_fastapi_basic_calculator:
 --- fastapi_nlp_model_2.mov
+
+POST: https://medium.com/codex/streamlit-fastapi-%EF%B8%8F-the-ingredients-you-need-for-your-next-data-science-recipe-ffbeb5f76a92
+
+CODE: https://github.com/afaqueumer
+
+- description
 A very simple, educational and hybrid project that demonstrate how-to create an API with FastAPI (backend) that will backed a web app made with Streamlit. Nice source of inspiration and a basic illustration of the FRONTEND, API, MODEL workflow.
 
 - CONSOLE_SCREEN_1 (blue)
@@ -53,6 +90,20 @@ http://localhost:8501/
 
 + 011_cookiecutter_spacy_fastapi:
 --- fastapi_nlp_model_3.mov
+
+CODE: https://github.com/microsoft/cookiecutter-spacy-fastapi
+
+- description
 I only grab the API and the test (pytest) from this project. In reality, it is a bit more extended project, made by Microsoft's people to promote Azure platform, using cookiecutter. Here is the full description of the initial project: "A python cookiecutter API for quick deployments of spaCy models with FastAPI. The API interface is compatible with Azure Search Cognitive Skills."
 
+- CONSOLE_SCREEN (commands)
+
+# GO TO DIR
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/011_cookiecutter_spacy_fastapi
+
+# LAUNCH THE ENV
+source activate ner_service
+
+# LAUNCH THE API
+uvicorn nlp_api:app --reload
 

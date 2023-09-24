@@ -27,7 +27,7 @@ pip install -r requirements.txt
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/009_streamlit_fastapi_basic_calculator/
 
 # LAUNCH THE API
-uvicorn fast_main:app --reload
+uvicorn fast_api:app --reload
 
 Check 
 http://127.0.0.1:8000/docs
