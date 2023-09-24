@@ -84,3 +84,451 @@ I already mention this POC. The files are a mix between logical code written by 
 
 ## Videos
 TODO require extra time :)
+
+## Code
+
+**Some commands and operation modes are just here to be keep as archives and command lines.**
+
+**SENTENCES_EXAMPLES**
+```
+# SENTENCES_EXAMPLES
+# sentences_example_1
+Apple is looking at buying U.K. startup for $1 billion
+
+# sentences_example_2
+Alphabet sets profit record, plans $50 billion buyback
+
+# sentences_example_3
+K-everything: the rise and rise of Korean culture: From music to movies, technology to food, the world has fallen in love with everything South Korean. Ahead of a big London exhibition, Tim Adams visits Seoul in search of the origins of hallyu – the Korean wave.
+
+# Top 12 NLP Project Ideas in 2023 [with Source Code]
+# https://www.knowledgehut.com/blog/data-science/nlp-projects
+
+
+```
+**010_spacy_projects**
+
+```
+# 010_spacy_projects :: Spacy Project
+
+# create dir
+cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/010_spacy_projects
+
+# clone dir
+git clone https://github.com/explosion/projects.git examples_from_spacy
+
+# make testing dir
+mkdir _testing_projects
+
+# activate the env
+source activate streamlit_fastapi
+
+
+# complete the env with requirements
+cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/010_spacy_projects/examples_from_spacy/
+
+# Conda Environment
+conda create --name streamlit_fastapi python=3.9.13
+conda info --envs
+source activate streamlit_fastapi
+source activate streamlit_fastapi
+conda deactivate
+
+# to export requirements
+pip freeze > requirements_fastapi_datacamp.txt
+
+# to install
+pip install -r requirements.txt
+
+
+# check spacy
+python -m spacy validate
+
+# clone the spacy "ner_double" project
+python -m spacy project clone tutorials/ner_double _testing_projects/ner_double
+
+python -m spacy project clone integrations/fastapi _testing_projects/spacy_fastapi_integration
+
+# fetch the assets
+python -m spacy project assets _testing_projects/spacy_fastapi_integration
+
+# go to the project's directory
+cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/010_spacy_projects/_testing_projects/ner_double
+
+# launch the project
+python -m spacy project run start
+
+```
+
+**PROMPTS FOR CHATGPT**
+
+```
+# PROMPT_1 FOR CHATGPT FastAPI NLP API V2
+# In python, can you write an API that load Spacy in French and enable the following endpoint "http://127.0.0.1:8000/api/extract_keywords" on the same URL. This endpoint "http://127.0.0.1:8000/api/extract_keywords" will be able to extract the keywords from a text so you need to write a function named extract keywords that retrieve the most used keywords inside a text.
+
+# required package
+pip install fastapi spacy
+
+# install the FR version
+python -m spacy download fr_core_news_sm
+
+# to validate the spacy install
+python -m spacy validate
+
+```
+
+```
+# PROMPT_2 FOR CHATGPT FastAPI NLP API V2
+Write in python with the best practices a FastAPI that enable 4 languages with Spacy and provide four differents endpoints like summary function, "normal" NER function and “custom” NER function.
+
+
+# requirements
+pip install fastapi[all] spacy
+python -m spacy download en_core_web_sm
+python -m spacy download es_core_news_sm
+python -m spacy download fr_core_news_sm
+python -m spacy download de_core_news_sm
+
+
+# brief
+# - Place multiple languages: FR, ES, EN, RU
+# - functions available on the API built with FastAPI
+# --- provide a summary function
+# --- provide a keyword extraction function
+# --- provide a "normal" NER function
+# --- provide a “custom” NER function
+```
+
+**014_fastapi_kinsta**
+
+
+```
+# 014_fastapi_kinsta :: Build an App With FastAPI for Python
+
+# http://127.0.0.1:8000/docs
+# http://127.0.0.1:8000/
+# http://127.0.0.1:8000/api/v1/users
+
+# Example of json
+{
+  "first_name": "Jane",
+  "last_name": "Campion",
+  "gender": [
+    "female"
+  ],
+  "roles": [
+    "admin",
+    "user"
+  ]
+}
+
+# Source: https://kinsta.com/blog/fastapi/
+```
+
+**013_fastapi_datacamp**
+
+```
+# 013_fastapi_datacamp :: FastAPI Tutorial: An Introduction to Using FastAPI
+# --- Source: https://www.datacamp.com/tutorial/introduction-fastapi-tutorial
+
+# go to dir
+cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/013_fastapi_datacamp/
+
+# create env
+[ENV]
+# Conda Environment
+conda create --name fastapi_datacamp python=3.9.13
+conda info --envs
+source activate fastapi_datacamp
+conda deactivate
+
+# install pycaret
+pip install pycaret
+
+# requirements
+pip install accelerate==0.20.3
+pip install pydantic==1.10.12
+
+# launch pycaret to create a pycaret model with fastapi
+python insurance_prediction_model.py
+
+# Full Source for pycaret
+# https://pycaret.gitbook.io/docs/
+```
+
+**011_cookiecutter_spacy_fastapi**
+
+```
+# 011_cookiecutter_spacy_fastapi :: Using FastAPI to Build Python Web APIs
+# --- Source: https://github.com/microsoft/cookiecutter-spacy-fastapi/tree/master
+
+# clone dir
+git clone https://github.com/microsoft/cookiecutter-spacy-fastapi.git
+
+# create env
+[ENV]
+# Conda Environment
+conda create --name cookiecutter_spacy_fastapi_testing python=3.9.13
+conda info --envs
+source activate cookiecutter_spacy_fastapi_testing
+source activate ner_service
+conda deactivate
+
+# if needed to remove
+conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
+conda env remove -n cookiecutter_spacy_fastapi_testing
+
+# to export requirements
+pip freeze > requirements.txt
+pip freeze > requirements_no_spacy.txt
+
+# to install
+pip install -r requirements.txt
+
+
+# Using docker
+
+# --- MODEL docker build -t mikenemke/ex-ner-service:latest .
+# --- MODEL docker build -t bflaven/ex-ner-service:latest .
+# command
+docker build -t bflaven/spacy-fastapi-only:latest .
+
+
+# --- MODEL docker run -d -p 80:80 mikenemke/ex-ner-service:latest
+# --- MODEL docker run -d -p 80:80 bflaven/ex-ner-service:latest
+# command
+docker run -d -p 80:80 bflaven/spacy-fastapi-only:latest
+
+# launch uvicorn
+uvicorn main:app --reload
+
+
+# leverage on the api
+# Open your browser to http://localhost:8000/docs to view the OpenAPI UI.
+# http://localhost:8000/docs
+# http://localhost:8000/redoc
+
+
+# for test add starlette in the requirements
+pip install starlette
+pip install httpx
+pip install fastapi
+pip install pytest
+
+# other commands
+pip show spacy
+python -m spacy info
+python -m spacy --version
+
+
+# some commands for docker
+docker ps
+docker rm -f 
+
+# remove image
+docker rmi -f 99d8622e139f
+
+docker ps -a                
+# Lists containers (and tells you which images they are spun from)
+
+docker images               
+# Lists images 
+
+docker rm <container_id>    
+# Removes a stopped container
+
+docker rm -f <container_id> 
+# Forces the removal of a running container (uses SIGKILL)
+
+docker rmi <image_id>       
+# Removes an image 
+# Will fail if there is a running instance of that image i.e. container
+
+docker rmi -f <image_id>    
+# Forces removal of image even if it is referenced in multiple repositories, 
+# i.e. same image id given multiple names/tags 
+# Will still fail if there is a docker container referencing image
+
+```
+
+**008_anaconda_MKTR-ai_YT_Maj9v-Ev7-4**
+
+```
+
+# 008_anaconda_MKTR-ai_YT_Maj9v-Ev7-4 :: Rapidly build & deploy an NLP / Machine Learning App with Poetry, FastAPI, Docker, Spacy & GCP
+# --- Source: https://www.youtube.com/watch?v=Maj9v-Ev7-4
+
+# - path
+cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/008_anaconda_MKTR-ai_YT_Maj9v-Ev7-4
+
+# launch the app
+uvicorn main:app --reload
+
+
+
+# INSTALL WITH ANACONDA (WAY_2)
+mkdir 008_anaconda_MKTR-ai_YT_Maj9v-Ev7-4
+
+[ENV_1]
+# Conda Environment
+conda create --name ner_service python=3.9.13
+conda info --envs
+source activate ner_service
+conda deactivate
+
+# if needed to remove
+conda env remove -n [NAME_OF_THE_CONDA_ENVIRONMENT]
+conda env remove -n ner_service
+
+
+
+# update conda
+conda update -n base -c defaults conda
+
+# to export requirements
+pip freeze > requirements_ner-service.txt
+pip install -r requirements_ner-service.txt
+
+
+# --- Source: https://www.youtube.com/watch?v=Maj9v-Ev7-4
+# --- Code: https://github.com/JayThibs/spacy-example-deployed-service/tree/master
+https://github.com/mrn18d/example-nlp-project
+
+# check python version
+python --version 
+
+
+# INSTALL WITH POETRY (WAY_1)
+
+# STEP_1 install poetry (method_2 via brew)
+https://formulae.brew.sh/formula/poetry
+brew install poetry
+poetry --version
+
+
+# STEP_2 NLP stuff
+# - install the dir
+mkdir 007_MKTR-ai_YT_Maj9v-Ev7-4
+cd 007_MKTR-ai_YT_Maj9v-Ev7-4
+mkdir ner-service
+
+# - init poetry 
+poetry init 
+# --- Fill up the elements, say no to the 2 last questions
+
+# - shell poetry 
+poetry shell
+# --- to go out from the env
+exit
+
+# - create files
+mkdir src
+cd src
+
+touch __init__.py
+touch main.py
+
+# - install spacy 
+# --- to go out from the env
+exit
+# --- install spacy
+poetry add spacy
+# --- install the nlp dependency
+python -m spacy download en_core_web_sm
+
+# - install fastapi
+# --- install fastapi
+poetry shell
+poetry add fastapi
+# --- install uvicorn
+poetry add uvicorn
+
+# - launch fastapi
+uvicorn main:app --reload
+
+# - get to the api
+http://127.0.0.1:8000/docs
+
+
+# CONTENT
+# --- samples phrases from F24 EN
+# General Brice Oligui Nguema, who led a coup last week that toppled Gabon's 55-year-old dynasty, took the oath of office as interim president on Monday, promising to hold "free... (and) transparent elections" after an unspecified period.
+
+# https://www.france24.com/en/africa/20230904-gabon-coup-leader-general-oligui-to-be-sworn-in-as-transitional-president
+
+
+# France flew five Afghan women who had been \"threatened by the Taliban\" from Pakistan to Paris, where they were due to arrive on Monday, French immigration authority chief Didier Leschi told AFP.
+
+# https://www.france24.com/en/middle-east/20230904-france-evacuates-to-paris-five-afghan-women-threatened-by-taliban
+
+# La France a transporté cinq Afghanes \"menacées par les talibans\" du Pakistan vers Paris, où elles devaient arriver lundi, a déclaré à l'AFP le chef des services français de l'immigration, Didier Leschi.
+# Ivory Coast's ruling party appeared set for a landslide victory according to partial results Sunday from local elections expected to gauge support two years from presidential elections, electoral commission data showed.
+
+# json model
+{
+  "data": [
+    {
+      "post_url": "string1",
+      "content": "General Brice Oligui Nguema, who led a coup last week that toppled Gabon's 55-year-old dynasty, took the oath of office as interim president on Monday, promising to hold \"free... (and) transparent elections\" after an unspecified period."
+    },
+    {
+      "post_url": "string2",
+      "content": "France flew five Afghan women who had been \"threatened by the Taliban\" from Pakistan to Paris, where they were due to arrive on Monday, French immigration authority chief Didier Leschi told AFP."
+    },
+        {
+      "post_url": "string3",
+      "content": "Ivory Coast's ruling party appeared set for a landslide victory according to partial results Sunday from local elections expected to gauge support two years from presidential elections, electoral commission data showed."
+    }
+  ]
+}
+
+# STEP_2 NLP stuff
+# ! Install WAY_2 using a pyproject.toml file completed
+
+# - shell poetry 
+poetry shell
+# --- to go out from the env
+exit
+
+# - update poetry 
+poetry update
+
+# --- example_fr_1
+{
+  "data": [
+    {
+      "post_url": "string1",
+      "content": "La France a transporté cinq Afghanes \"menacées par les talibans\" du Pakistan vers Paris, où elles devaient arriver lundi, a déclaré à l'AFP le chef des services français de l'immigration, Didier Leschi."
+    }
+  ]
+}
+
+# --- example_fr_2
+{
+  "data": [
+    {
+      "post_url": "string_fr_1",
+      "content": "Le Premier ministre chinois, Li Qiang, conduira la délégation de Pékin lors de la réunion des dirigeants du G20 le week-end prochain en Inde, a annoncé lundi le ministère chinois des Affaires étrangères, ce qui laisse entendre que Xi Jinping, le président chinois, ne s'y rendrait pas."
+    }
+  ]
+}
+
+# STEP_3 Using docker
+
+# --- MODEL docker build -t mikenemke/ex-ner-service:latest .
+docker build -t bflaven/ex-ner-service:latest .
+
+# --- MODEL docker run -d -p 80:80 mikenemke/ex-ner-service:latest
+docker run -d -p 80:80 bflaven/ex-ner-service:latest
+
+# some commands
+docker ps
+docker rm -f 
+
+```
+
+
+
+
+
+
