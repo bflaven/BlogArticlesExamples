@@ -453,12 +453,10 @@ http://127.0.0.1:8000/docs
 # CONTENT
 # --- samples phrases from F24 EN
 # General Brice Oligui Nguema, who led a coup last week that toppled Gabon's 55-year-old dynasty, took the oath of office as interim president on Monday, promising to hold "free... (and) transparent elections" after an unspecified period.
-
 # https://www.france24.com/en/africa/20230904-gabon-coup-leader-general-oligui-to-be-sworn-in-as-transitional-president
 
 
 # France flew five Afghan women who had been \"threatened by the Taliban\" from Pakistan to Paris, where they were due to arrive on Monday, French immigration authority chief Didier Leschi told AFP.
-
 # https://www.france24.com/en/middle-east/20230904-france-evacuates-to-paris-five-afghan-women-threatened-by-taliban
 
 # La France a transporté cinq Afghanes \"menacées par les talibans\" du Pakistan vers Paris, où elles devaient arriver lundi, a déclaré à l'AFP le chef des services français de l'immigration, Didier Leschi.
