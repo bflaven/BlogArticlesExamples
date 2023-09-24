@@ -29,6 +29,10 @@ cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/00
 # Launch the streamlit app
 streamlit run stream_lit.py
 
+# check
+http://localhost:8501/
+
+
 """
 import streamlit as st
 import json
