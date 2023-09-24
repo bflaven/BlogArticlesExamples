@@ -112,7 +112,7 @@ K-everything: the rise and rise of Korean culture: From music to movies, technol
 # 010_spacy_projects :: Spacy Project
 
 # create dir
-cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/010_spacy_projects
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/010_spacy_projects
 
 # clone dir
 git clone https://github.com/explosion/projects.git examples_from_spacy
@@ -125,7 +125,7 @@ source activate streamlit_fastapi
 
 
 # complete the env with requirements
-cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/010_spacy_projects/examples_from_spacy/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/010_spacy_projects/examples_from_spacy/
 
 # Conda Environment
 conda create --name streamlit_fastapi python=3.9.13
@@ -153,7 +153,7 @@ python -m spacy project clone integrations/fastapi _testing_projects/spacy_fasta
 python -m spacy project assets _testing_projects/spacy_fastapi_integration
 
 # go to the project's directory
-cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/010_spacy_projects/_testing_projects/ner_double
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/010_spacy_projects/_testing_projects/ner_double
 
 # launch the project
 python -m spacy project run start
@@ -232,7 +232,7 @@ python -m spacy download de_core_news_sm
 # --- Source: https://www.datacamp.com/tutorial/introduction-fastapi-tutorial
 
 # go to dir
-cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/013_fastapi_datacamp/
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/013_fastapi_datacamp/
 
 # create env
 [ENV]
@@ -359,7 +359,7 @@ docker rmi -f <image_id>
 # --- Source: https://www.youtube.com/watch?v=Maj9v-Ev7-4
 
 # - path
-cd /Users/brunoflaven/Documents/01_work/blog_articles/fastapi_nlp_model/008_anaconda_MKTR-ai_YT_Maj9v-Ev7-4
+cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/008_anaconda_MKTR-ai_YT_Maj9v-Ev7-4
 
 # launch the app
 uvicorn main:app --reload
