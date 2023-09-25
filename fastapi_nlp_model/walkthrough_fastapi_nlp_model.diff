@@ -59,7 +59,7 @@ POST: https://medium.com/codex/streamlit-fastapi-%EF%B8%8F-the-ingredients-you-n
 CODE: https://github.com/afaqueumer
 
 - description
-A very simple, educational and hybrid project that demonstrate how-to create an API with FastAPI (backend) that will backed a web app made with Streamlit. Nice source of inspiration and a basic illustration of the FRONTEND, API, MODEL workflow.
+A very simple, educational and hybrid project that demonstrate how-to create an API with FastAPI (backend) that will back a web app made with Streamlit. Nice source of inspiration and a basic illustration of the FRONTEND, API, MODEL workflow.
 
 - CONSOLE_SCREEN_1 (blue)
 # GO TO DIR
@@ -106,4 +106,10 @@ source activate ner_service
 
 # LAUNCH THE API
 uvicorn nlp_api:app --reload
+
++ Social
+
+After tinkering a lot on #IA, #Spacy, #NLP, #ML, quick explanation on how to expose Machine Learning Models and play with them through an #API with #FastAPI.  Post: https://wp.me/p3Vuhl-3fO, Code: https://bit.ly/3ENHrZR
+
+As a personal conclusion, I will say that this "exploration" has a secondary objective: indeed as an ordinary #PO, the market clearly indicates the way to follow: transform yourself a bit or totally at least into #Data & #AI #ProductOwner :)
 
