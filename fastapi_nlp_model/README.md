@@ -83,7 +83,20 @@ I already mention this POC. The files are a mix between logical code written by 
 
 
 ## Videos
-TODO require extra time :)
+
+
+You can find my WALKTHROUGHS for these 3 videos walkthrough_fastapi_nlp_model.diff (Video #1, Video #2, Video #3)
+
+
+[#1 How to expose NLP Machine Learning Models mostly for Spacy by quickly building an API with FastAPI](https://www.youtube.com/watch?v=o8NNzvVI0Ac)[![#1 How to expose NLP Machine Learning Models mostly for Spacy by quickly building an API with FastAPI](001_fastapi_nlp_model_chatgpt_spacy.png)](https://www.youtube.com/watch?v=o8NNzvVI0Ac)
+
+
+[#2 How-to create an API with FastAPI (backend) that will back a web app made with Streamlit](https://www.youtube.com/watch?v=_gFFv61AWt4)[![#2 How-to create an API with FastAPI (backend) that will back a web app made with Streamlit](002_fastapi_nlp_model_streamlit.png)](https://www.youtube.com/watch?v=_gFFv61AWt4)
+
+[#3 How-to create an API with FastAPI and start testing it with pytest](https://www.youtube.com/watch?v=W7mAMECbNsY)[![#3 How-to create an API with FastAPI and start testing it with pytest](003_fastapi_nlp_model_pytest.png)](https://www.youtube.com/watch?v=W7mAMECbNsY)
+
+
+
 
 ## Code
 
