@@ -51,7 +51,9 @@ You'll need to replace the summarize_text and extract_custom_entities functions 
 --- provide a “custom” NER function
 
 - requirements for fastapi
-pip install fastapi[all] spacy
+pip install fastapi
+pip install spacy
+
 
 - requirements for Spacy
 python -m spacy download en_core_web_lg
