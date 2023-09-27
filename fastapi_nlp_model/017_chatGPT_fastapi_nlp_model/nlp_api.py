@@ -18,10 +18,10 @@ conda env remove -n ner_service
 conda update -n base -c defaults conda
 
 # to export requirements
-pip freeze > requirements_ner_service.txt
+pip freeze > requirements.txt
 
 # to install
-pip install -r requirements_ner_service.txt
+pip install -r requirements.txt
 
 # [path]
 cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/fastapi_nlp_model/017_chatGPT_fastapi_nlp_model/
@@ -50,9 +50,11 @@ You'll need to replace the summarize_text and extract_custom_entities functions 
 --- provide a "normal" NER function
 --- provide a “custom” NER function
 
-- requirements
+- requirements for fastapi
 pip install fastapi[all] spacy
 
+- requirements for Spacy
+python -m spacy download en_core_web_lg
 python -m spacy download en_core_web_sm
 python -m spacy download es_core_news_sm
 python -m spacy download fr_core_news_sm
@@ -60,6 +62,10 @@ python -m spacy download ru_core_news_sm
 
 # check install
 python -m spacy validate
+
+- requirements for audio (tospeech)
+pip install gTTS
+
 
 """
 ####################################### IMPORT #################################
