@@ -254,7 +254,7 @@ async def get_custom_ner(text: str, lang: str):
     custom_entities = extract_custom_entities(doc)
     return {"custom_entities": custom_entities}
 
-# Custom NER endpoint
+# Keywords endpoint
 @app.get("/keywords/{lang}", tags=['keywords'])
 async def get_keywords(text: str, lang: str):
     nlp = get_nlp_model(lang)
