@@ -2,7 +2,7 @@
 
 **Still exploring the FastAPI's capabilities to be use as a wrapper for data science API and expose NLP features as a RESTFUL microservice. But, this I have extended the scope and decide to interface an API's POC, leveraging on Spacy's NLP features, with a Sqlite or MySQL database through an ORM like SQLAlchemy or Peewee**
 
-[Check the article on Flaven.fr](https://flaven.fr/)
+[Check the article on Flaven.fr: POC with FastAPI for an NLP API with Spacy, SQLAlchemy, Sqlite and… Streamlit](https://flaven.fr/2023/10/poc-with-fastapi-for-an-nlp-api-with-spacy-sqlalchemy-sqlite-and-streamlit/)
 
 
 **The prompt behind the fastAPI POC in "011_openai_sqlite_nlp_fastapi_streamlit"**
