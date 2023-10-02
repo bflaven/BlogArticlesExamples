@@ -1,0 +1,377 @@
+{
+  "name": "JavaScript",
+  "children": [
+    {"name": "identifier",
+        "children": [
+          {"name": "case-sensitive"},
+        {
+          "name": "starts with: ",
+          "children": [
+            {"name": "letters"},
+            {"name": "_"},
+            {"name": "$"}
+          ]
+        },
+        {
+          "name": "key words",
+          "children": [
+            {"name": "break"},
+            {"name": "case"},
+            {"name": "catch"},
+            {"name": "continue"},
+            {"name": "default"},
+            {"name": "delete"},
+            {"name": "do"},
+            {"name": "else"},
+            {"name": "finally"},
+            {"name": "for"},
+            {"name": "function"},
+            {"name": "if"},
+            {"name": "in"},
+            {"name": "instanceof"},
+            {"name": "new"},
+            {"name": "return"},
+            {"name": "switch"},
+            {"name": "this"},
+            {"name": "throw"},
+            {"name": "try"},
+            {"name": "typeof"},
+            {"name": "var"},
+            {"name": "void"},
+            {"name": "while"},
+            {"name": "with"}
+          ]
+        },
+        {
+          "name": "reserved words",
+          "children": [
+            {
+              "name": "non-strict",
+              "children": [
+                {"name": "class"},
+                {"name": "const"},
+                {"name": "enum"},
+                {"name": "export"},
+                {"name": "extends"},
+                {"name": "import"},
+                {"name": "super"}
+              ]
+            },
+            {
+              "name": "use strict",
+              "children": [
+                {"name": "implements"},
+                {"name": "interface"},
+                {"name": "let"},
+                {"name": "package"},
+                {"name": "private"},
+                {"name": "protected"},
+                {"name": "public"},
+                {"name": "static"},
+                {"name": "yield"}
+              ]
+            }
+          ]
+        },
+        {
+         "name": "variables",
+         "children": [
+           {"name": "local"},
+           {"name": "global"}
+         ]
+       }
+     ]
+   },
+   { "name": "comments",
+     "children": [
+       {"name": "// single line"},
+       {"name": "/* multi-line */"}
+     ]
+   },
+   { "name": "data type",
+     "children": [
+       {"name": "number",
+         "children": [
+           {"name": "typeof"},
+           {"name": "value",
+             "children": [
+               {"name": "integer: 0"},
+               {"name": "double: 3.04"},
+               {"name": "starts with 0: 054"},
+               {"name": "binary???: 0x56"},
+               {"name": "scientific: notation"},
+               {"name": "NaN"}
+             ]
+           },
+           {"name": "Number()",
+             "children": [
+               {"name": "parseInt()"},
+               {"name": "parseFloat()"},
+               {"name": "isNaN()"}
+             ]
+           },
+           {"name": "arithmetic operators",
+             "children": [
+               {"name": "add: +"},
+               {"name": "subtract: -"},
+               {"name": "multipy: *"},
+               {"name": "modulus: %"},
+               {"name": "divide: /"}
+             ]
+           },
+           {"name": "comparison operators",
+             "children": [
+               {"name": "greater than: >"},
+               {"name": "less than: <"},
+               {"name": "greater than or equal to: >="},
+               {"name": "less than or equal to: <="},
+               {"name": "equal to: =="},
+               {"name": "not equal to: !="}
+             ]
+           }
+         ]
+       },
+       {"name": "string",
+         "children": [
+           {"name": "typeof"},
+           {"name": "value",
+           "children": [
+             {"name": "single quotes"},
+             {"name": "double quotes"}
+           ]
+          },
+          {"name": "String()",
+          "children": [
+            {"name": "toString()"}
+          ]
+          },
+          {"name": "immutable"},
+          {"name": "concatenate: + "},
+          {"name": "comparison operators",
+            "children": [
+              {"name": "greater than: >"},
+              {"name": "less than: <"},
+              {"name": "greater than or equal to: >="},
+              {"name": "less than or equal to: <="},
+              {"name": "equal to: =="},
+              {"name": "not equal to: !="}
+            ]
+          }
+        ]
+       },
+       {"name": "boolean",
+         "children": [
+           {"name": "typeof"},
+           {"name": "value",
+           "children": [
+             {"name": "true"},
+             {"name": "false"}
+           ]
+          },
+          {"name": "Boolean()",
+            "children": [
+              {"name": "number",
+                "children": [
+                  {"name": "0 => false"},
+                  {"name": "NaN => false"},
+                  {"name": "!0 => true"}
+                ]
+              },
+              {"name": "string",
+                "children": [
+                  {"name": "'' => false"},
+                  {"name": "'*' => true"}
+                ]
+              },
+              {"name": "object",
+                "children": [
+                  {"name": "null => false"},
+                  {"name": "{} => true"}
+                ]
+              },
+              {"name": "undefined",
+                "children": [
+                  {"name": "undefined => false"}
+                ]
+              }
+            ]
+          }
+        ]
+       },
+       {"name": "undefined",
+         "children": [
+           {"name": "typeof"},
+           {"name": "value",
+           "children": [
+             {"name": "undefined"}
+           ]
+          },
+          {"name": "undefined != not defined"}
+         ]
+       },
+       {"name": "object",
+         "children": [
+           {"name": "typeof"},
+           {"name": "{}"},
+           {"name": "new Object()"},
+           {"name": "Null",
+             "children": [
+               {"name": "typeof"},
+               {"name": "value"},
+               {"name": "undefined object",
+                 "children": [
+                   {"name": "null == undefined => true"}
+                 ]
+               }
+             ]
+           }
+         ]
+       },
+       {"name": "function",
+         "children": [
+           {"name": "typeof"},
+           {"name": "create/define"},
+           {"name": "inside function",
+             "children": [
+               {"name": "arguments",
+                 "children": [
+                   {"name": "by order"},
+                   {"name": "undefined"},
+                   {"name": "arguments"}
+                 ]
+               },
+               {"name": "return"}
+             ]
+           }
+         ]
+       }
+     ]
+   },
+   { "name": "operators",
+     "children": [
+       {"name": "arithmetic",
+         "children": [
+           {"name": "add: +"},
+           {"name": "subtract: -"},
+           {"name": "multipy: *"},
+           {"name": "modulus: %"},
+           {"name": "divide: /"}
+         ]
+       },
+       {"name": "incrementor",
+         "children": [
+           {"name": "++"},
+           {"name": "--"},
+           {"name": "+="},
+           {"name": "-="}
+         ]
+       },
+       {"name": "comparison",
+        "children": [
+          {"name": ">, >=, <, <="},
+          {"name": "==, !="},
+          {"name": "===, !=="},
+          {"name": "casting"}
+        ]
+       },
+       {"name": "logical",
+         "children": [
+           {"name": "!"},
+           {"name": "&&"},
+           {"name": "||"}
+         ]
+       }
+     ]
+   },
+   { "name": "reference type",
+     "children": [
+       {"name": "Function",
+         "children": [
+           {"name": "typeof"},
+           {"name": "properties",
+             "children": [
+               {"name": "length"}
+             ]
+           },
+           {"name": "as value (callback)"},
+           {"name": "methods",
+             "children": [
+               {"name": "apply"},
+               {"name": "call"},
+               {"name": "bind"}
+             ]
+           }
+         ]
+       },
+       {"name": "Array",
+         "children": [
+           {"name": "typeof"},
+           {"name": "var a = []"},
+           {"name": "var a = new Array([])"},
+           {"name": "properties",
+             "children": [
+               {"name": "length"}
+             ]
+           },
+           {"name": "methods",
+             "children": [
+               {"name": "a[i]"},
+               {"name": "a[i][j]"},
+               {"name": ".slice(a, b)"},
+               {"name": ".indexOf()"},
+               {"name": ".push()"},
+               {"name": ".pop()"},
+               {"name": ".join()"},
+               {"name": ".concat([])"},
+               {"name": "iterates w/callback",
+                 "children": [
+                   {"name": ".map(callback(element, index, array){}), thisObj)"},
+                   {"name": ".reduce(callback(prev, curr, index, array){}), init)"},
+                   {"name": ".filter(callback(element, index, array){}), thisObj)"},
+                   {"name": ".some(callback(element, index, array){}), thisObj)"},
+                   {"name": ".every(callback(element, index, array){}), thisObj)"}
+                 ]
+               },
+               {"name": "changes array",
+                 "children": [
+                   {"name": ".shift()"},
+                   {"name": ".unshift()"},
+                   {"name": ".sort()"},
+                   {"name": ".reverse()"},
+                   {"name": ".splice()"}
+                 ]
+               }
+             ]
+           },
+           {"name": "iteration",
+             "children": [
+               {"name": "for (start; end; iterator){}"},
+               {"name": ".forEach(function(element){})"}
+             ]
+           }
+         ]
+       },
+       {"name": "Object (OOP)",
+         "children": [
+           {"name": "root of everything"},
+           {"name": "Constructor",
+             "children": [
+               {"name": "prototype"},
+               {"name": "inheritance"}
+             ]
+           }
+         ]
+       }
+     ]
+   },
+   { "name": "flow control",
+     "children": [
+       {"name": "if"},
+       {"name": "switch"},
+       {"name": "while"},
+       {"name": "for"},
+       {"name": "try/catch/finally"}
+     ]
+   }
+  ]
+}
