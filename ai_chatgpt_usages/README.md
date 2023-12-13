@@ -1,7 +1,7 @@
 # ai_chatgpt_usages
 
 **For convenience, the repository has been moved, here is the new address
-[https://github.com/bflaven/ia_usages/](https://github.com/bflaven/ia_usages/tree/main/fastapi_nlp_model)**
+[https://github.com/bflaven/ia_usages/](https://github.com/bflaven/ia_usages/)**
 
 
 - You can find all the code for these videos at [https://github.com/bflaven/ia_usages](https://github.com/bflaven/ia_usages)
