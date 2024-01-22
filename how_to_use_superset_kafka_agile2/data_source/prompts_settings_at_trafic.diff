@@ -1,0 +1,274 @@
++ PROMPTS
+
+! CAUTION
+The prompts have been on mistral-openorca:latest with the help of Ollama.
+
+
+# PROMPT_1
+- PROMPT: Convert the line below into a MySQL Table named "kaggle_tweet_sample":
+"Tweet Id","Tweet URL","Tweet Posted Time (UTC)","Tweet Content","Tweet Type",Client,"Retweets Received","Likes Received","Tweet Location","Tweet Language","User Id",Name,Username,"User Bio","Verified or Non-Verified","Profile URL","Protected or Non-protected","User Followers","User Following","User Account Creation Date","Impressions"
+
+# PROMPT_1a
+- PROMPT: Convert the line below into a MySQL Table named "kaggle_tweet_sample" with a incremental and unique named "ID" and the rest of the fields below:
+"Tweet Id","Tweet URL","Tweet Posted Time (UTC)","Tweet Content","Tweet Type",Client,"Retweets Received","Likes Received","Tweet Location","Tweet Language","User Id",Name,Username,"User Bio","Verified or Non-Verified","Profile URL","Protected or Non-protected","User Followers","User Following","User Account Creation Date","Impressions"
+
+
+# OUTPUT
+CREATE TABLE content_tweet_sample (
+    ID int NOT NULL AUTO_INCREMENT,
+    TweetId varchar(255) NOT NULL,
+    TweetURL varchar(255) NOT NULL,
+    TweetPostedTimeUTC datetime NOT NULL,
+    TweetContent text NOT NULL,
+    TweetType varchar(20) NOT NULL,
+    Client varchar(20) NOT NULL,
+    RetweetsReceived int NOT NULL,
+    LikesReceived int NOT NULL,
+    TweetLocation varchar(255) NOT NULL,
+    TweetLanguage varchar(255) NOT NULL,
+    UserId int NOT NULL,
+    Name varchar(255) NOT NULL,
+    Username varchar(255) NOT NULL,
+    UserBio text NOT NULL,
+    Verified TinyInt NOT NULL DEFAULT 0,
+    ProfileURL varchar(255) NOT NULL,
+    Protected TinyInt NOT NULL DEFAULT 0,
+    UserFollowers int NOT NULL,
+    UserFollowing int NOT NULL,
+    UserAccountCreationDate datetime NOT NULL,
+    Impressions int NOT NULL,
+    PRIMARY KEY (ID),
+    UNIQUE KEY TweetId (TweetId)
+);
+
+
+
+# PROMPT_1b
+- PROMPT: How do we drop a table named "content_tweet_sample"?
+DROP TABLE content_tweet_sample;
+TRUNCATE content_tweet_sample;
+
+# OUTPUT_1
+CREATE TABLE content_tweet_sample (
+    TweetId int NOT NULL,
+    TweetURL varchar(255) NOT NULL,
+    TweetPostedTimeUTC datetime NOT NULL,
+    TweetContent text NOT NULL,
+    TweetType varchar(20) NOT NULL,
+    Client varchar(20) NOT NULL,
+    RetweetsReceived int NOT NULL,
+    LikesReceived int NOT NULL,
+    TweetLocation varchar(100),
+    TweetLanguage varchar(5) NOT NULL,
+    UserId int NOT NULL,
+    Name varchar(50) NOT NULL,
+    Username varchar(20) NOT NULL,
+    UserBio text,
+    Verified bit NOT NULL DEFAULT 0,
+    ProfileURL varchar(255),
+    Protected bit NOT NULL DEFAULT 0,
+    UserFollowers int NOT NULL,
+    UserFollowing int NOT NULL,
+    UserAccountCreationDate datetime NOT NULL,
+    Impressions int NOT NULL
+);
+
+# PROMPT_2
+- PROMPT: How to show tables in a MySQL console?
+SHOW TABLES;
+
+# PROMPT_3
+- PROMPT: How to import a csv file in a MySQL console?
+LOAD DATA LOCAL INFILE '/Users/brunoflaven/Documents/01_work/blog_articles/how_to_use_superset/data_dera_source/kaggle_tweet_sample_2.csv' INTO TABLE content_tweet_sample FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES
+TERMINATED BY '\n';
+
+
+LOAD DATA LOCAL INFILE '/Users/brunoflaven/Documents/01_work/blog_articles/how_to_use_superset/data_dera_source/kaggle_tweet_sample_3.csv' INTO TABLE content_tweet_sample FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES
+TERMINATED BY '\n';
+
+
+LOAD DATA LOCAL INFILE '/Users/brunoflaven/Documents/01_work/blog_articles/how_to_use_superset/data_dera_source/kaggle_tweet_sample_4.csv' INTO TABLE content_tweet_sample FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES
+TERMINATED BY '\n';
+
+LOAD DATA LOCAL INFILE '/Users/brunoflaven/Documents/01_work/blog_articles/how_to_use_superset/data_dera_source/kaggle_tweet_sample_5.csv' INTO TABLE content_tweet_sample FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES
+TERMINATED BY '\n';
+
+# PROMPT_4
+- PROMPT: How do we count records inside a table named "content_tweet_sample"?
+SELECT COUNT(*) FROM content_tweet_sample;
+
+# PROMPT_5
+- PROMPT: How do we show the fields from a table named "content_tweet_sample"?
+DESCRIBE content_tweet_sample;
+
+
+# PROMPT_5
+- PROMPT: How do select the fields "TweetId", "TweetContent", "Client" from a table named "content_tweet_sample" and show the 20 first rows?
+
+SELECT TweetId, TweetContent, Client FROM content_tweet_sample LIMIT 20;
+
+SELECT TweetId, TweetContent, Client FROM content_tweet_sample LIMIT 20;
+SELECT * FROM content_tweet_sample LIMIT 5;
+SELECT ID, TweetId, Client FROM content_tweet_sample WHERE ID=287;
+SELECT ID, TweetId, TweetLocation Client FROM content_tweet_sample WHERE ID=152;
+SELECT ID, TweetId, TweetLocation Client FROM content_tweet_sample WHERE ID=287;
+
+
+! 2. MANUAL COMMANDS
+
+- create database for kaggle_tweet_sample_2.csv
+CREATE DATABASE kaggle_tweet_sample;
+USE kaggle_tweet_sample;
+
+
+- model_query_1
+SELECT DATE_TRUNC('quarter', order_date) AS __timestamp,
+       sum(sales) AS "SUM(Sales)"
+FROM public.cleaned_sales_data
+GROUP BY DATE_TRUNC('quarter', order_date)
+ORDER BY "SUM(Sales)" DESC
+LIMIT 10000;
+
+- model_query_2
+SELECT country_code AS country_code,
+       sum("SP_RUR_TOTL_ZS") AS "sum__SP_RUR_TOTL_ZS",
+       sum("SP_RUR_TOTL") AS "Rural Population"
+FROM public.wb_health_population
+WHERE year >= TO_TIMESTAMP('2014-01-01 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.US')
+  AND year < TO_TIMESTAMP('2014-01-02 00:00:00.000000', 'YYYY-MM-DD HH24:MI:SS.US')
+GROUP BY country_code
+LIMIT 50000;
+
+- query example
+Make the mariadb SQL query that sums the rows from a table named "at_trafic_csv" and filter by field "d_geo_continent" where d_geo_continent is equal to "Africa, Asia, Europe".. etc
+
+SELECT d_geo_continent, SUM(m_visits) AS total_sum FROM at_trafic_csv WHERE  d_geo_continent IN ('Africa', 'Asia', 'Europe', 'Oceania', 'America') GROUP BY d_geo_continent;
+
+
+- model_query_3
+USE mydatabase_try_mariadb;
+- model_query_4
+LOAD data local infile '/Users/brunoflaven/Documents/01_work/blog_articles/how_to_use_superset/data_dera_source/at_trafic_mois_en_cours_nov_23_v3_2.csv' into TABLE at_trafic_csv fields terminated by ',' ignore 1 lines;
+
+
+SELECT * FROM at_trafic_csv;
+SELECT count(*) FROM at_trafic_csv;
+TRUNCATE at_trafic_csv;
+
+Load csv file into mariadb where the first line all fields are protected by ""
+
+"d_time_month","d_time_year","d_site","d_source","d_space_l2","env","d_geo_continent","m_bounces","m_page_views","m_time_spent","m_visitors","m_visits"
+"December","2023","France 24 EN - Anglais","40digest.intl.20231203.rank","Desktop","N/A","Africa","1","1","0","1","1"
+
+- model_query_5
+LOAD DATA INFILE '/Users/brunoflaven/Documents/01_work/blog_articles/how_to_use_superset/data_dera_source/at_trafic_mois_en_cours_nov_23_v3_2.csv' INTO TABLE at_trafic_csv FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES;
+
+- model_query_§
+LOAD data local infile '/Users/brunoflaven/Documents/01_work/blog_articles/how_to_use_superset/data_dera_source/at_trafic_mois_en_cours_nov_23_v3_2.csv' into TABLE at_trafic_csv fields terminated by ',' enclosed by '"' ignore 1 lines;
+
+
+
+# PROMPT EXAMPLE
+Convert the fields and values below into a table mariadb sql structure 
+
+d_time_month : December
+d_time_year : 2023
+d_site : France 24 EN - Anglais
+d_source : 40digest.intl.20231203.rank 
+d_space_l2 : Desktop
+env : N/A
+d_geo_continent	 : Africa
+m_bounces	 :  1
+m_page_views : 	1
+m_time_spent : 	0
+m_visitors	 : 1
+m_visits : 1
+
+
+CREATE TABLE at_trafic_csv (
+    d_time_month VARCHAR(255),
+    d_time_year INT,
+    d_site VARCHAR(255),
+    d_source VARCHAR(255),
+    d_space_l2 VARCHAR(255),
+    env VARCHAR(255),
+    d_geo_continent VARCHAR(255),
+    m_bounces INT,
+    m_page_views INT,
+    m_time_spent INT,
+    m_visitors INT,
+    m_visits INT
+);
+
+INSERT INTO at_trafic_csv VALUES (
+    'December', -- d_time_month
+    2023, -- d_time_year
+    'France 24 EN - Anglais', -- d_site
+    '40digest.intl.20231203.rank', -- d_source
+    'Desktop', -- d_space_l2
+    'N/A', -- env
+    'Africa', -- d_geo_continent
+    1, -- m_bounces
+    1, -- m_page_views
+    0, -- m_time_spent
+    1, -- m_visitors
+    1 -- m_visits
+);
+
+
+
+# PROMPT EXAMPLES
+Convert these mysql commands into postgres syntax 
+
+DROP TABLE IF EXISTS `node_countries`;
+
+CREATE TABLE `node_countries` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `tld` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `cca2` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `capital` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `callingCode` int(3) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+INSERT INTO `node_countries` (`id`, `name`, `tld`, `cca2`, `capital`, `callingCode`)
+VALUES
+    (NULL,'Afghanistan','.af','AF','Kabul',93),
+    (NULL,'Italy','.it','IT','Rome',39),
+    (NULL,'France','.fr','FR','Rome',33),
+  (NULL,'Malaysia','.my','MY','Kuala Lumpur',60),
+  (NULL,'Mauritania','.mr','MR','Nouakchott',222),
+  (NULL,'Tunisia','.tn','TN','Tunis',216),
+  (NULL,'Tanzania','.tz','TZ','Dodoma',255),
+  (NULL,'Seychelles','.sc','SC','Victoria',248),
+  (NULL,'Norway','.no','NO','Oslo',47),
+  (NULL,'Nepal','.np','NP','Kathmandu',977);
+
+
+DROP TABLE IF EXISTS node_countries;
+
+CREATE TABLE node_countries (
+  id bigserial PRIMARY KEY,
+  name varchar(255) NOT NULL DEFAULT '',
+  tld varchar(100) NOT NULL DEFAULT '',
+  cca2 varchar(100) NOT NULL DEFAULT '',
+  capital varchar(255) NOT NULL DEFAULT '',
+  callingCode int NOT NULL DEFAULT 0
+);
+
+INSERT INTO node_countries (name, tld, cca2, capital, callingCode)
+VALUES
+    ('Afghanistan','.af','AF','Kabul',93),
+    ('Italy','.it','IT','Rome',39),
+    ('France','.fr','FR','Rome',33),
+    ('Malaysia','.my','MY','Kuala Lumpur',60),
+    ('Mauritania','.mr','MR','Nouakchott',222),
+    ('Tunisia','.tn','TN','Tunis',216),
+    ('Tanzania','.tz','TZ','Dodoma',255),
+    ('Seychelles','.sc','SC','Victoria',248),
+    ('Norway','.no','NO','Oslo',47),
+    ('Nepal','.np','NP','Kathmandu',977);
+
+
