@@ -58,7 +58,9 @@ brew doctor
 
 To Install Homebrew if you haven't already: https://brew.sh/
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/main/install.sh)"
+
+# To Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Update the Homebrew formulae:
 brew update
