@@ -25,7 +25,7 @@ entrypoints==0.4
 executing==0.8.3
 fastjsonschema==2.15.3
 gitdb==4.0.9
-GitPython==3.1.27
+GitPython==3.1.30
 gTTS==2.2.4
 h11==0.13.0
 idna==3.3
